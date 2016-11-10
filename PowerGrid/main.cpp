@@ -30,7 +30,7 @@ HWND InitWindow(HINSTANCE hInst, char winName[])
 	InitWinMain(hInst, winName);
 
 	DWORD windowStyle = WS_OVERLAPPEDWINDOW;
-	RECT windowRect = { 1, 1, 1300, 670 };
+	RECT windowRect = { 1, 1, 1300, 660 };
 	AdjustWindowRect(&windowRect, windowStyle, false);
 	HWND hWnd = CreateWindow(
 		winName,
@@ -64,7 +64,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	UpdateWindow(hWnd);
 
 	Board *board = new Board(true, true, true, false, false, false, "USAPowerGrid.png");
-	Game *game = new Game(6, board, hWnd);
+	Game *game = new Game(3, board, hWnd);
 
 	// Main message loop:
 	MSG msg;

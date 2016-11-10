@@ -38,3 +38,38 @@ PowerPlant* Player::GetPowerPlant(int index)
 {
 	return &_powerPlants[index];
 }
+
+Player::Color Player::GetColor()
+{
+	return _color;
+}
+
+int Player::GetAmountOfCoal()
+{
+	return _amountOfCoal;
+}
+
+int Player::GetAmountOfOil()
+{
+	return _amountOfOil;
+}
+
+int Player::GetAmountOfGarbage()
+{
+	return _amountOfGarbage;
+}
+
+int Player::GetAmountOfUran()
+{
+	return _amountOfUran;
+}
+
+int Player::GetAmountOfElektro()
+{
+	return _amountOfElektro;
+}
+
+int Player::GetNumberOfSuppliedCities()
+{
+	return _numberOfSuppliedCities;
+}

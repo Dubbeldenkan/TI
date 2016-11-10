@@ -16,13 +16,25 @@ private:
 	int _amountOfElektro;
 	PowerPlant _powerPlants[numberOfPowerPlants];
 
+	int _amountOfCoal = 0;
+	int _amountOfOil = 0;
+	int _amountOfGarbage = 0;
+	int _amountOfUran = 0;
+
 public:
 	Player(char*, Color);
 	~Player() {};
 	int GetNumberOfCitiesInNetwork();
+	int GetNumberOfSuppliedCities();
 	int GetNumberFromHighestPowerPlant();
 	char* GetName();
 	PowerPlant* GetPowerPlant(int);
+	Player::Color GetColor();
+	int GetAmountOfElektro();
+	int GetAmountOfCoal();
+	int GetAmountOfOil();
+	int GetAmountOfGarbage();
+	int GetAmountOfUran();
 
 };
 

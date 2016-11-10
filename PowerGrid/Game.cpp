@@ -17,9 +17,6 @@ void Game::InitPlayers(int numberOfPlayers)
 	_pv.push_back(Player("Dennis", Player::red));
 	_pv.push_back(Player("Alida", Player::blue));
 	_pv.push_back(Player("Edwin", Player::green));
-	_pv.push_back(Player("Dennis", Player::red));
-	_pv.push_back(Player("Alida", Player::blue));
-	_pv.push_back(Player("Edwin", Player::green));
 }
 
 void Game::RunTurn()

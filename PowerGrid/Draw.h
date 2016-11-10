@@ -15,7 +15,12 @@ class Draw
 {
 	Graphics* _g;
 	Image _cityLabel;
-	Image _playerLabel;
+	Image _playerLabelRed;
+	Image _playerLabelBlue;
+	Image _playerLabelGreen;
+	Image _playerLabelYellow;
+	Image _playerLabelBlack;
+	Image _playerLabelPurple;
 	struct Pos
 	{
 		int x;

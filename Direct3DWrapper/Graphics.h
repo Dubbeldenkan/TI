@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <D3dx9math.h>
 #include <vector>
+#include <string>
 
 class Graphics
 {
@@ -40,9 +41,11 @@ public:
 
 	void Draw(Image*, int, int, float);
 
-	void PrintText(int, int, char*, D3DCOLOR);
+	void PrintText(char*, int, int, D3DCOLOR);
 
-	void PrintText(int, int, char*, D3DCOLOR, int);
+	void PrintText(char*, int, int, D3DCOLOR, int);
+
+	void PrintText(int, int, int, D3DCOLOR, int);
 };
 
 #endif

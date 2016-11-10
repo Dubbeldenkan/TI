@@ -144,7 +144,7 @@ void Graphics::StopDrawing()
 
 void Graphics::Draw(Image* image, int x, int y, float scale)
 {
-	D3DXVECTOR3 position(x, y, 0);
+	D3DXVECTOR3 position(x/scale, y/scale, 0);
 	_sprite->Begin(0);
 	D3DXMATRIX transformMatrix;
 	D3DXMatrixScaling(&transformMatrix, scale, scale, 0.0f);
@@ -158,7 +158,7 @@ void Graphics::Draw(Image* image, int x, int y, float scale)
 	_sprite->End();
 }
 
-void Graphics::PrintText(int xPos, int yPos, char* text, D3DCOLOR color)
+void Graphics::PrintText(char* text, int xPos, int yPos, D3DCOLOR color)
 {
 	RECT rectangle = { xPos, yPos, 0, 0 };
 	_font->DrawText(
@@ -170,7 +170,7 @@ void Graphics::PrintText(int xPos, int yPos, char* text, D3DCOLOR color)
 		color); 
 }
 
-void Graphics::PrintText(int xPos, int yPos, char* text, D3DCOLOR color, int size)
+void Graphics::PrintText(char* text, int xPos, int yPos, D3DCOLOR color, int size)
 {
 	int logicalHeight = -MulDiv(size, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
 	HRESULT hr = D3DXCreateFont(_d3dDevice,	logicalHeight, 0, 0, 1, 0, ANSI_CHARSET,
@@ -179,7 +179,7 @@ void Graphics::PrintText(int xPos, int yPos, char* text, D3DCOLOR color, int siz
 	{
 		OutputDebugString("Unable to setup font\n\n");
 	}
-	PrintText(xPos, yPos, text, color);
+	PrintText(text, xPos, yPos, color);
 	logicalHeight = -MulDiv(FONT_SIZE, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
 	hr = D3DXCreateFont(_d3dDevice, logicalHeight, 0, 0, 1, 0, ANSI_CHARSET,
 		OUT_TT_ONLY_PRECIS, 0, 0, "Helvetica", &_font);
@@ -187,4 +187,12 @@ void Graphics::PrintText(int xPos, int yPos, char* text, D3DCOLOR color, int siz
 	{
 		OutputDebugString("Unable to setup font\n\n");
 	}
+}
+
+void Graphics::PrintText(int number, int xPos, int yPos, D3DCOLOR color, int size)
+{
+	std::string str;
+	str = std::to_string(number);
+	const char* buffer = str.c_str();
+	PrintText((char*) buffer, xPos, yPos, color, size);
 }

@@ -5,7 +5,12 @@ Draw::Draw(HWND hWnd, Board* board)
 	_g = new Graphics(hWnd);
 	board->SetMapImage(_g->LoadImage(board->GetMapName()));
 	_cityLabel = _g->LoadImage("CityLabel.png");
-	_playerLabel = _g->LoadImage("PlayerLabel.png");
+	_playerLabelRed = _g->LoadImage("PlayerLabelRed.png");
+	_playerLabelBlue = _g->LoadImage("PlayerLabelBlue.png");
+	_playerLabelGreen = _g->LoadImage("PlayerLabelGreen.png");
+	_playerLabelYellow = _g->LoadImage("PlayerLabelYellow.png");
+	_playerLabelBlack = _g->LoadImage("PlayerLabelBlack.png");
+	_playerLabelPurple = _g->LoadImage("PlayerLabelPurple.png");
 }
 
 void Draw::DrawWholeBoard(Board* board, std::vector<Player*> players, 
@@ -37,19 +42,69 @@ void Draw::DrawCity(City* city)
 {
 	_g->Draw(&_cityLabel, city->GetXPos(), city->GetYPos(), 1);
 	//TODO:: gör något snyggare sätt att lägga in + 13
-	_g->PrintText(city->GetXPos() + 1, city->GetYPos() + 18, city->GetName(), Graphics::WHITE);
+	_g->PrintText(city->GetName(), city->GetXPos() + 1, city->GetYPos() + 18, Graphics::WHITE);
 
 }
 
 void Draw::DrawPlayer(Player* player, int playerIndex)
 {
-	//TODO rita ut så att man ser vilket ärg som tillhör vilken spelare.
-	Pos playerDiff = Pos(0, 110);
+	int FontSize = 15;
+	Pos playerDiff = Pos(0, 65);
 	Pos powerPlantDiff = Pos(20, 0);
-	Pos nameDiff = Pos(15, 30);
-	_g->Draw(&_playerLabel, _firstPlayerPos.x, _firstPlayerPos.y + playerIndex * playerDiff.y, 1);
-	_g->PrintText(_firstPlayerPos.x + nameDiff.x, _firstPlayerPos.y + playerIndex * playerDiff.y + nameDiff.y, 
-		player->GetName(), Graphics::WHITE);
+	Pos nameDiff = Pos(6, 6);
+	Pos firstRes = Pos(140, 6);
+	Pos resDiff = Pos(30, 0);
+	Pos elektroPos = Pos(220, 25);
+	Pos suppliedcitiesPos = Pos(210, 45);
+	Pos plusPos = Pos(225, 45);
+	Pos citiesInNetworkPos = Pos(235, 45);
+	Image* tempPlayerLabel;
+	switch (player->GetColor())
+	{
+	case Player::red:
+		tempPlayerLabel = &_playerLabelRed;
+		break;
+	case Player::blue:
+		tempPlayerLabel = &_playerLabelBlue;
+		break;
+	case Player::green:
+		tempPlayerLabel = &_playerLabelGreen;
+		break;
+	case Player::yellow:
+		tempPlayerLabel = &_playerLabelYellow;
+		break;
+	case Player::black:
+		tempPlayerLabel = &_playerLabelBlack;
+		break;
+	case Player::purple:
+		tempPlayerLabel = &_playerLabelPurple;
+		break;
+	default:
+		tempPlayerLabel = &_playerLabelBlack;
+		break;
+	}
+	_g->Draw(tempPlayerLabel, _firstPlayerPos.x, _firstPlayerPos.y + playerIndex * playerDiff.y, 1);
+	_g->PrintText(player->GetName(), _firstPlayerPos.x + nameDiff.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + nameDiff.y, Graphics::WHITE, 15);
+
+	_g->PrintText(player->GetAmountOfCoal(), _firstPlayerPos.x + firstRes.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + firstRes.y, Graphics::WHITE, 15);
+	_g->PrintText(player->GetAmountOfOil(), _firstPlayerPos.x + firstRes.x + resDiff.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + firstRes.y, Graphics::WHITE, 15);
+	_g->PrintText(player->GetAmountOfGarbage(), _firstPlayerPos.x + firstRes.x + 2*resDiff.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + firstRes.y, Graphics::BLACK, 15);
+	_g->PrintText(player->GetAmountOfGarbage(), _firstPlayerPos.x + firstRes.x + 3 * resDiff.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + firstRes.y, Graphics::WHITE, 15);
+
+	_g->PrintText(player->GetAmountOfElektro(), _firstPlayerPos.x + elektroPos.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + elektroPos.y, Graphics::BLACK, 15);
+
+	_g->PrintText(player->GetNumberOfSuppliedCities(), _firstPlayerPos.x + suppliedcitiesPos.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + suppliedcitiesPos.y, Graphics::BLACK, 13);
+	_g->PrintText("+", _firstPlayerPos.x + plusPos.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + plusPos.y, Graphics::BLACK, 13);
+	_g->PrintText(player->GetNumberOfCitiesInNetwork(), _firstPlayerPos.x + citiesInNetworkPos.x,
+		_firstPlayerPos.y + playerIndex * playerDiff.y + citiesInNetworkPos.y, Graphics::BLACK, 13);
 	for (int index = 0; index < player->numberOfPowerPlants; index++)
 	{
 		DrawPowerPlant(player->GetPowerPlant(index),
@@ -63,13 +118,13 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 	if (powerPlant->GetPowerPlantNumber() > 0)
 	{
 		int diff = 10;
-		_g->PrintText(xPos, yPos, (char*)powerPlant->GetPowerPlantNumber(), Graphics::BLACK);
+		_g->PrintText((char*)powerPlant->GetPowerPlantNumber(), xPos, yPos, Graphics::BLACK, 15);
 		std::string str;
 		str = std::to_string(powerPlant->GetPowerPlantConsumption());
 		str += "->" + std::to_string(powerPlant->GetPowerPlantProduction());
 		const char* buffer = str.c_str();
 
-		_g->PrintText(xPos, yPos + diff, (char*)buffer, Graphics::BLACK);
+		_g->PrintText((char*)buffer, xPos, yPos + diff, Graphics::BLACK, 12);
 	}
 }
 
