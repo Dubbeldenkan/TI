@@ -46,7 +46,6 @@ Graphics::Graphics(HWND hWnd)
 	//Makes it possible to print text
 	_hdc = GetDC(0);
 	int logicalHeight = -MulDiv(FONT_SIZE, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
-	_font;
 	hr = D3DXCreateFont(
 		_d3dDevice,
 		logicalHeight,
@@ -168,5 +167,24 @@ void Graphics::PrintText(int xPos, int yPos, char* text, D3DCOLOR color)
 		-1,
 		&rectangle,
 		DT_NOCLIP, 
-		color); 
+		color); 
+}
+
+void Graphics::PrintText(int xPos, int yPos, char* text, D3DCOLOR color, int size)
+{
+	int logicalHeight = -MulDiv(size, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
+	HRESULT hr = D3DXCreateFont(_d3dDevice,	logicalHeight, 0, 0, 1, 0, ANSI_CHARSET,
+		OUT_TT_ONLY_PRECIS,	0, 0, "Helvetica", &_font);
+	if (FAILED(hr))
+	{
+		OutputDebugString("Unable to setup font\n\n");
+	}
+	PrintText(xPos, yPos, text, color);
+	logicalHeight = -MulDiv(FONT_SIZE, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
+	hr = D3DXCreateFont(_d3dDevice, logicalHeight, 0, 0, 1, 0, ANSI_CHARSET,
+		OUT_TT_ONLY_PRECIS, 0, 0, "Helvetica", &_font);
+	if (FAILED(hr))
+	{
+		OutputDebugString("Unable to setup font\n\n");
+	}
 }

@@ -41,6 +41,8 @@ public:
 	void Draw(Image*, int, int, float);
 
 	void PrintText(int, int, char*, D3DCOLOR);
+
+	void PrintText(int, int, char*, D3DCOLOR, int);
 };
 
 #endif
