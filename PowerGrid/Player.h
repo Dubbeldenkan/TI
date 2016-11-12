@@ -21,7 +21,7 @@ private:
 	int _amountOfGarbage = 0;
 	int _amountOfUran = 0;
 
-	int _selectedPowerPlant;
+	int _selectedPowerPlant = 0;
 
 public:
 	Player(char*, Color);
@@ -40,6 +40,7 @@ public:
 
 	int GetSelectedPowerPlant();
 	void ResetSelectedPowerPlant();
+	void SetSelectedPowerPlant(int);
 };
 
 #endif // !PLAYER_H

@@ -65,14 +65,14 @@ PowerPlantMarket::PowerPlantMarket()
 	_ppDeck.push_back(PowerPlant(0, PowerPlant::phase3, 0, 0));
 }
 
-PowerPlant PowerPlantMarket::GetPowerPlantCurrentDeck(int index)
+PowerPlant* PowerPlantMarket::GetPowerPlantCurrentDeck(int index)
 {
-	return _currentMarket[index];
+	return &_currentMarket[index];
 }
 
-PowerPlant PowerPlantMarket::GetPowerPlantFutureDeck(int index)
+PowerPlant* PowerPlantMarket::GetPowerPlantFutureDeck(int index)
 {
-	return _futureMarket[index];
+	return &_futureMarket[index];
 }
 
 int PowerPlantMarket::GetNumberInCurrentMarket()

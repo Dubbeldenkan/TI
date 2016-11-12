@@ -1,12 +1,10 @@
 #include "Game.h"
 
-Game::Game(int numberOfPlayers, HWND hWnd, Input* input)
+Game::Game(int numberOfPlayers, HWND hWnd)
 {
 	//init rand
 	srand(time(NULL));
 	
-	//TODO fixa denna 
-	_input = input;
 	_numberOfPlayers = numberOfPlayers;
 	_board = Board(true, true, true, false, false, false, "USAPowerGrid.png");
 	_draw = Draw(&hWnd, &_board);
@@ -20,9 +18,35 @@ void Game::InitPlayers(int numberOfPlayers)
 	_pv.push_back(Player("Dennis", Player::red));
 	_pv.push_back(Player("Alida", Player::blue));
 	_pv.push_back(Player("Edwin", Player::green));
+	_playerInTurn = &_pv[0];
 }
 
-void Game::RunTurn()
+int Game::GetCurrentPhase()
+{
+	return _gamePhase;
+}
+
+Game::GameSubPhase Game::GetCurrentSubPhase()
+{
+	return _gameSubPhase;
+}
+
+int Game::GetCurrentStep()
+{
+	return _gameStep;
+}
+
+Draw* Game::GetDraw()
+{
+	return &_draw;
+}
+
+Player* Game::GetPlayerInTurn()
+{
+	return _playerInTurn;
+}
+
+void Game::Run()
 {
 	switch (_gamePhase)
 	{
@@ -44,7 +68,7 @@ void Game::DrawBoard()
 	{
 		tempVector.push_back(&_pv[i]);
 	}
-	_draw.DrawWholeBoard(&_board, tempVector, &_ppm, _rm);
+	_draw.DrawWholeBoard(&_board, tempVector, _playerInTurn, &_ppm, _selectedPowerPlant - 1, _rm);
 }
 
 void Game::Phase1()
@@ -52,7 +76,6 @@ void Game::Phase1()
 	std::vector<Player> tempPv;
 	if (_gameTurn == 1)
 	{
-		DrawBoard();
 		int startIndex = rand() % _numberOfPlayers;
 		for (int i = 0; i < _numberOfPlayers; i++)
 		{
@@ -114,7 +137,8 @@ void Game::Phase2()
 		{
 			_tempPlayerVector.push_back(&_pv[i]);
 		}
-		choosePowerPlant;
+		_gameSubPhase = choosePowerPlant;
+		_playerInTurn = _tempPlayerVector[0];
 		break;
 	}
 	case choosePowerPlant:
@@ -127,13 +151,16 @@ void Game::Phase2()
 			{
 				_gameSubPhase = Game::nextPhase;
 			}
+			DrawBoard();
 		}
 		else if(_playerInTurn->GetSelectedPowerPlant() > 0)
 		{
-			//TOOO Draw somwthing around the choosen powerplant
 			_selectedPowerPlant = _playerInTurn->GetSelectedPowerPlant();
 			_playerInTurn->ResetSelectedPowerPlant();
-			_gameSubPhase = Game::bid;
+			_gameSubPhase = bid;
+			//TODO
+			//SetNextPlayerInTurn();
+			DrawBoard();
 		}
 		break;
 	}

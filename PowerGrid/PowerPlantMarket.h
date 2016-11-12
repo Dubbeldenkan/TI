@@ -16,8 +16,8 @@ public:
 	PowerPlantMarket();
 	~PowerPlantMarket() {};
 
-	PowerPlant GetPowerPlantCurrentDeck(int);
-	PowerPlant GetPowerPlantFutureDeck(int);
+	PowerPlant* GetPowerPlantCurrentDeck(int);
+	PowerPlant* GetPowerPlantFutureDeck(int);
 	int GetNumberInCurrentMarket();
 };
 #endif // !POWER_PLANT_MARKET_H

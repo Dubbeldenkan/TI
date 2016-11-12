@@ -11,7 +11,9 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 	HWND hWnd = InitWindow(&hInstance, windowName, input);
 
-	Game *game = new Game(3, hWnd, input);
+	Game *game = new Game(3, hWnd);
+	
+	input->SetGame(game);
 
 	ShowWindow(hWnd,
 		nCmdShow);
@@ -22,7 +24,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	bool isRunning = true;
 	while(true)
 	{
-		game->RunTurn();
+		game->Run();
 		MSG msg = { 0 };
 		if (PeekMessage(&msg, 0, 0, 0, PM_REMOVE))
 		{

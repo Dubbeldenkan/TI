@@ -6,7 +6,6 @@
 #include "PowerPlantMarket.h"
 #include "Player.h"
 #include "Draw.h"
-#include "Input.h"
 
 #include <vector>
 #include <stdlib.h>
@@ -14,8 +13,10 @@
 
 class Game
 {
+public:
 	enum GameSubPhase {initPhase, choosePowerPlant, bid, nextPhase};
 
+private:
 	int _numberOfPlayers;
 	int _gameTurn = 1;
 	int _gameStep = 1;
@@ -28,17 +29,22 @@ class Game
 	ResourceMarket* _rm;
 	PowerPlantMarket _ppm = PowerPlantMarket();
 	Draw _draw = Draw();
-	Input* _input;
 	std::vector<Player> _pv;
 	std::vector<Player*> _tempPlayerVector;
 
 	int _selectedPowerPlant;
 
 public:
-	Game(int, HWND, Input*);
+	Game(int, HWND);
 	~Game() {};
 
-	void RunTurn();
+	void Run();
+
+	int GetCurrentPhase();
+	GameSubPhase GetCurrentSubPhase();
+	int GetCurrentStep();
+	Draw* GetDraw();
+	Player* GetPlayerInTurn();
 
 private:
 	void InitPlayers(int);

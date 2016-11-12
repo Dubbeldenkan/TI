@@ -83,3 +83,8 @@ void Player::ResetSelectedPowerPlant()
 {
 	_selectedPowerPlant = 0;
 }
+
+void Player::SetSelectedPowerPlant(int powerPlant)
+{
+	_selectedPowerPlant = powerPlant;
+}

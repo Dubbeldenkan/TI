@@ -3,28 +3,23 @@
 
 #include <Windows.h>
 
-/*#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>*/
-
 #include "Player.h"
+#include "Game.h"
+#include "Draw.h"
 
 class Input
 {
-	//buttons
-	const int PASS_ID = 0;
-	const int BID_ID = 1;
-	const int POWER_PLANT_1_ID = 10;
-	const int POWER_PLANT_2_ID = 11;
-	const int POWER_PLANT_3_ID = 12;
-	const int POWER_PLANT_4_ID = 13;
+	static Game* _game;
 
-	//static int _selectedPowerPlant;
-	static Player _currentPlayer;
+	static Draw::Pos _mousePos;
 
 public:
 	Input();
 	~Input() {};
+
+	void SetGame(Game*);
+	static void MouseClick();
+	static int CheckPowerPlantPos();
 
 	static LRESULT CALLBACK MsgProc(HWND, UINT, WPARAM, LPARAM);
 };

@@ -13,6 +13,7 @@ Draw::Draw(HWND* hWnd, Board* board)
 	_playerLabelYellow = _g->LoadImage("PlayerLabelYellow.png");
 	_playerLabelBlack = _g->LoadImage("PlayerLabelBlack.png");
 	_playerLabelPurple = _g->LoadImage("PlayerLabelPurple.png");
+	_playerMarker = _g->LoadImage("PlayerMarker.png");
 
 	//Load power plant images
 	_powerPlantCoalImage = _g->LoadImage("PowerPlantCoalImage.png");
@@ -23,8 +24,26 @@ Draw::Draw(HWND* hWnd, Board* board)
 	_powerPlantEcoImage = _g->LoadImage("PowerPlantEcoImage.png");
 }
 
+Draw::Pos Draw::GetFirstCurrentPlantPos()
+{
+	return _firstCurrentPlantPos;
+}
+
+Draw::Pos Draw::GetSizeOfPowerPlant()
+{
+	//TODO kanske göra denna uträkning lite snyggare
+	Pos pos = Pos(_powerPlantCoalImage.GetxSize(), _powerPlantCoalImage.GetYSize());
+	return pos;
+}
+
+Draw::Pos Draw::GetPlantDiff()
+{
+	return _plantDiff;
+}
+
 void Draw::DrawWholeBoard(Board* board, std::vector<Player*> players, 
-	PowerPlantMarket* powerPlantMarket, ResourceMarket* resourceMarket)
+	Player* playerInTurn, PowerPlantMarket* powerPlantMarket, int plantForSale,
+	ResourceMarket* resourceMarket)
 {
 	_g->StartDrawing();
 	DrawBoard(board);
@@ -32,7 +51,12 @@ void Draw::DrawWholeBoard(Board* board, std::vector<Player*> players,
 	{
 		DrawPlayer(players[i], i);
 	}
+	PrintPlayerInTurn(playerInTurn);
 	DrawPowerPlantMarket(powerPlantMarket);
+	if (plantForSale > -1)
+	{
+		PrintPlantForSale(powerPlantMarket->GetPowerPlantCurrentDeck(plantForSale));
+	}
 	DrawResourceMarket(resourceMarket);
 	_g->StopDrawing();
 	_g->Flip();
@@ -52,16 +76,13 @@ void Draw::DrawCity(City* city)
 {
 	Pos cityNamePos = Pos(1, 18);
 	_g->Draw(&_cityLabel, city->GetXPos(), city->GetYPos(), 1);
-	//TODO:: gör något snyggare sätt att lägga in + 13
 	_g->PrintText(city->GetName(), city->GetXPos() + cityNamePos.x, 
 		city->GetYPos() + cityNamePos.y, Graphics::WHITE);
-
 }
 
 void Draw::DrawPlayer(Player* player, int playerIndex)
 {
 	int FontSize = 15;
-	Pos playerDiff = Pos(0, 65);
 	Pos powerPlantDiff = Pos(20, 0);
 	Pos nameDiff = Pos(6, 6);
 	Pos firstRes = Pos(140, 6);
@@ -95,34 +116,50 @@ void Draw::DrawPlayer(Player* player, int playerIndex)
 		tempPlayerLabel = &_playerLabelBlack;
 		break;
 	}
-	_g->Draw(tempPlayerLabel, _firstPlayerPos.x, _firstPlayerPos.y + playerIndex * playerDiff.y, 1);
+	_g->Draw(tempPlayerLabel, _firstPlayerPos.x, _firstPlayerPos.y + playerIndex * _playerPosDiff.y, 1);
 	_g->PrintText(player->GetName(), _firstPlayerPos.x + nameDiff.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + nameDiff.y, Graphics::WHITE, 15);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + nameDiff.y, Graphics::WHITE, 15);
 
 	_g->PrintText(player->GetAmountOfCoal(), _firstPlayerPos.x + firstRes.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + firstRes.y, Graphics::WHITE, 15);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
 	_g->PrintText(player->GetAmountOfOil(), _firstPlayerPos.x + firstRes.x + resDiff.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + firstRes.y, Graphics::WHITE, 15);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
 	_g->PrintText(player->GetAmountOfGarbage(), _firstPlayerPos.x + firstRes.x + 2*resDiff.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + firstRes.y, Graphics::BLACK, 15);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::BLACK, 15);
 	_g->PrintText(player->GetAmountOfGarbage(), _firstPlayerPos.x + firstRes.x + 3 * resDiff.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + firstRes.y, Graphics::WHITE, 15);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
 
 	_g->PrintText(player->GetAmountOfElektro(), _firstPlayerPos.x + elektroPos.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + elektroPos.y, Graphics::BLACK, 15);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + elektroPos.y, Graphics::BLACK, 15);
 
 	_g->PrintText(player->GetNumberOfSuppliedCities(), _firstPlayerPos.x + suppliedcitiesPos.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + suppliedcitiesPos.y, Graphics::BLACK, 13);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + suppliedcitiesPos.y, Graphics::BLACK, 13);
 	_g->PrintText("+", _firstPlayerPos.x + plusPos.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + plusPos.y, Graphics::BLACK, 13);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + plusPos.y, Graphics::BLACK, 13);
 	_g->PrintText(player->GetNumberOfCitiesInNetwork(), _firstPlayerPos.x + citiesInNetworkPos.x,
-		_firstPlayerPos.y + playerIndex * playerDiff.y + citiesInNetworkPos.y, Graphics::BLACK, 13);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + citiesInNetworkPos.y, Graphics::BLACK, 13);
 	for (int index = 0; index < player->numberOfPowerPlants; index++)
 	{
 		DrawPowerPlant(player->GetPowerPlant(index),
 			_firstPlayerPos.x + _firstPlayerPowerPlantPos.x + powerPlantDiff.x*index,
-			_firstPlayerPos.y + _firstPlayerPowerPlantPos.y + playerDiff.y*playerIndex);
+			_firstPlayerPos.y + _firstPlayerPowerPlantPos.y + _playerPosDiff.y*playerIndex);
 	}
+}
+
+void Draw::PrintPlayerInTurn(Player* player)
+{
+	std::string str = "Nuvarande spelare är ";
+	std::string strName(player->GetName());
+	str = str + strName;
+	_g->PrintText((char*) str.c_str(), _playerInTurnPos.x, _playerInTurnPos.y, Graphics::WHITE, 15);
+}
+
+void Draw::PrintPlantForSale(PowerPlant* powerPlant)
+{
+	std::string str = "Kraftverket till salu är nr ";
+	std::string strNumber = std::to_string(powerPlant->GetPowerPlantNumber());
+	str = str + strNumber;
+	_g->PrintText((char*)str.c_str(), _plantForSalePos.x, _plantForSalePos.y, Graphics::WHITE, 15);
 }
 
 void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
@@ -160,18 +197,14 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm)
 {
 	//current market
-	Pos firstCurrentPlantPos = Pos(550, 530);
-
-	Pos firstFuturePlantPos = Pos(850, 530);
-	Pos plantDiff = Pos(100, 50);
 	for (int index = 0; index < ppm->GetNumberInCurrentMarket(); index++)
 	{
-		int xDiff = (index % 2)*plantDiff.x;
-		int yDiff = (index / 2)*plantDiff.y;
-		DrawPowerPlant(&ppm->GetPowerPlantCurrentDeck(index), firstCurrentPlantPos.x + xDiff,
-			firstCurrentPlantPos.y + yDiff);
-		DrawPowerPlant(&ppm->GetPowerPlantFutureDeck(index), firstFuturePlantPos.x + xDiff,
-			firstFuturePlantPos.y + yDiff);
+		int xDiff = (index % 2)*_plantDiff.x;
+		int yDiff = (index / 2)*_plantDiff.y;
+		DrawPowerPlant(ppm->GetPowerPlantCurrentDeck(index), _firstCurrentPlantPos.x + xDiff,
+			_firstCurrentPlantPos.y + yDiff);
+		DrawPowerPlant(ppm->GetPowerPlantFutureDeck(index), _firstFuturePlantPos.x + xDiff,
+			_firstFuturePlantPos.y + yDiff);
 	}
 }
 
