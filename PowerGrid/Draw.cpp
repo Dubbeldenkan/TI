@@ -45,6 +45,7 @@ void Draw::DrawWholeBoard(Board* board, std::vector<Player*> players,
 	Player* playerInTurn, PowerPlantMarket* powerPlantMarket, int plantForSale,
 	ResourceMarket* resourceMarket)
 {
+	_g->Clear();
 	_g->StartDrawing();
 	DrawBoard(board);
 	for (int i = 0; i < players.size(); i++)

@@ -47,6 +47,7 @@ public:
 	Player* GetPlayerInTurn();
 
 private:
+	void SetNextPlayerInTurn();
 	void InitPlayers(int);
 	void DrawBoard();
 	void Phase1();

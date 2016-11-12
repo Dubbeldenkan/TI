@@ -46,6 +46,26 @@ Player* Game::GetPlayerInTurn()
 	return _playerInTurn;
 }
 
+void Game::SetNextPlayerInTurn()
+{
+	int currentPlayerPos;
+	for (int index = 0; index < _tempPlayerVector.size(); index++)
+	{
+		if (_tempPlayerVector[index] == _playerInTurn)
+		{
+			currentPlayerPos = index;
+		}
+	}
+	if (currentPlayerPos == (_tempPlayerVector.size() - 1))
+	{
+		_playerInTurn = _tempPlayerVector[0];
+	}
+	else
+	{
+		_playerInTurn = _tempPlayerVector[currentPlayerPos + 1];
+	}
+}
+
 void Game::Run()
 {
 	switch (_gamePhase)
@@ -158,8 +178,7 @@ void Game::Phase2()
 			_selectedPowerPlant = _playerInTurn->GetSelectedPowerPlant();
 			_playerInTurn->ResetSelectedPowerPlant();
 			_gameSubPhase = bid;
-			//TODO
-			//SetNextPlayerInTurn();
+			SetNextPlayerInTurn();
 			DrawBoard();
 		}
 		break;
