@@ -13,14 +13,6 @@
 
 class Draw
 {
-	Graphics* _g;
-	Image _cityLabel;
-	Image _playerLabelRed;
-	Image _playerLabelBlue;
-	Image _playerLabelGreen;
-	Image _playerLabelYellow;
-	Image _playerLabelBlack;
-	Image _playerLabelPurple;
 	struct Pos
 	{
 		int x;
@@ -40,6 +32,22 @@ class Draw
 			s = sIn;
 		}
 	};
+
+	Graphics* _g;
+	Image _cityLabel;
+	Image _playerLabelRed;
+	Image _playerLabelBlue;
+	Image _playerLabelGreen;
+	Image _playerLabelYellow;
+	Image _playerLabelBlack;
+	Image _playerLabelPurple;
+
+	Image _powerPlantCoalImage;
+	Image _powerPlantOilImage;
+	Image _powerPlantCoalOilImage;
+	Image _powerPlantGarbageImage;
+	Image _powerPlantUranImage;
+	Image _powerPlantEcoImage;
 
 	Pos _mapPos = Pos(0, 0, 0.5);
 	Pos _firstPlayerPos = Pos(1025, 0);

@@ -15,6 +15,8 @@ public:
 	const static int FONT_SIZE = 8;
 	const static D3DCOLOR WHITE = D3DCOLOR_XRGB(255, 255, 255);
 	const static D3DCOLOR BLACK = D3DCOLOR_XRGB(0, 0, 0);
+	const static D3DCOLOR RED = D3DCOLOR_XRGB(255, 0, 0);
+	const static D3DCOLOR BLUE = D3DCOLOR_XRGB(0, 0, 255);
 
 	LPDIRECT3D9 _d3d;
 	LPDIRECT3DDEVICE9 _d3dDevice;

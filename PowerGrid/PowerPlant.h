@@ -20,6 +20,7 @@ public:
 	int GetPowerPlantNumber();
 	int GetPowerPlantConsumption();
 	int GetPowerPlantProduction();
+	EnergySource GetType();
 };
 
 #endif // !POWER_PLANT

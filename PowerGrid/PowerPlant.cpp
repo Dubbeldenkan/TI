@@ -27,3 +27,8 @@ int PowerPlant::GetPowerPlantProduction()
 {
 	return _generatedEnergy;
 }
+
+PowerPlant::EnergySource PowerPlant::GetType()
+{
+	return _energySource;
+}

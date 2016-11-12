@@ -5,12 +5,22 @@ Draw::Draw(HWND hWnd, Board* board)
 	_g = new Graphics(hWnd);
 	board->SetMapImage(_g->LoadImage(board->GetMapName()));
 	_cityLabel = _g->LoadImage("CityLabel.png");
+
+	//load player images
 	_playerLabelRed = _g->LoadImage("PlayerLabelRed.png");
 	_playerLabelBlue = _g->LoadImage("PlayerLabelBlue.png");
 	_playerLabelGreen = _g->LoadImage("PlayerLabelGreen.png");
 	_playerLabelYellow = _g->LoadImage("PlayerLabelYellow.png");
 	_playerLabelBlack = _g->LoadImage("PlayerLabelBlack.png");
 	_playerLabelPurple = _g->LoadImage("PlayerLabelPurple.png");
+
+	//Load power plant images
+	_powerPlantCoalImage = _g->LoadImage("PowerPlantCoalImage.png");
+	_powerPlantOilImage = _g->LoadImage("PowerPlantOilImage.png");
+	_powerPlantCoalOilImage = _g->LoadImage("PowerPlantCoalOilImage.png");
+	_powerPlantGarbageImage = _g->LoadImage("PowerPlantGarbageImage.png");
+	_powerPlantUranImage = _g->LoadImage("PowerPlantUranImage.png");
+	_powerPlantEcoImage = _g->LoadImage("PowerPlantEcoImage.png");
 }
 
 void Draw::DrawWholeBoard(Board* board, std::vector<Player*> players, 
@@ -40,9 +50,11 @@ void Draw::DrawBoard(Board* board)
 
 void Draw::DrawCity(City* city)
 {
+	Pos cityNamePos = Pos(1, 18);
 	_g->Draw(&_cityLabel, city->GetXPos(), city->GetYPos(), 1);
 	//TODO:: gör något snyggare sätt att lägga in + 13
-	_g->PrintText(city->GetName(), city->GetXPos() + 1, city->GetYPos() + 18, Graphics::WHITE);
+	_g->PrintText(city->GetName(), city->GetXPos() + cityNamePos.x, 
+		city->GetYPos() + cityNamePos.y, Graphics::WHITE);
 
 }
 
@@ -117,20 +129,50 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 {
 	if (powerPlant->GetPowerPlantNumber() > 0)
 	{
-		int diff = 10;
-		_g->PrintText((char*)powerPlant->GetPowerPlantNumber(), xPos, yPos, Graphics::BLACK, 15);
+		Image* tempImage = &_powerPlantCoalImage;
+		switch (powerPlant->GetType())
+		{
+		case PowerPlant::coal:
+			tempImage = &_powerPlantCoalImage;
+			break;
+		case PowerPlant::coalOrOil:
+			tempImage = &_powerPlantCoalOilImage;
+			break;
+		case PowerPlant::oil:
+			tempImage = &_powerPlantOilImage;
+			break;
+		case PowerPlant::garbage:
+			tempImage = &_powerPlantGarbageImage;
+			break;
+		}
+		Pos plantTextPos = Pos(15, 10);
+		_g->Draw(tempImage, xPos, yPos, 1);
+		_g->PrintText(powerPlant->GetPowerPlantNumber(), xPos, yPos, Graphics::BLACK, 15);
 		std::string str;
 		str = std::to_string(powerPlant->GetPowerPlantConsumption());
 		str += "->" + std::to_string(powerPlant->GetPowerPlantProduction());
 		const char* buffer = str.c_str();
 
-		_g->PrintText((char*)buffer, xPos, yPos + diff, Graphics::BLACK, 12);
+		_g->PrintText((char*)buffer, xPos + plantTextPos.x, yPos + plantTextPos.y, Graphics::RED, 15);
 	}
 }
 
 void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm)
 {
-	//TODO
+	//current market
+	Pos firstCurrentPlantPos = Pos(600, 530);
+
+	Pos firstFuturePlantPos = Pos(900, 530);
+	Pos plantDiff = Pos(100, 50);
+	for (int index = 0; index < ppm->GetNumberInCurrentMarket(); index++)
+	{
+		int xDiff = (index % 2)*plantDiff.x;
+		int yDiff = (index / 2)*plantDiff.y;
+		DrawPowerPlant(&ppm->GetPowerPlantCurrentDeck(index), firstCurrentPlantPos.x + xDiff,
+			firstCurrentPlantPos.y + yDiff);
+		DrawPowerPlant(&ppm->GetPowerPlantFutureDeck(index), firstFuturePlantPos.x + xDiff,
+			firstFuturePlantPos.y + yDiff);
+	}
 }
 
 void Draw::DrawResourceMarket(ResourceMarket* rm)
