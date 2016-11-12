@@ -1,12 +1,15 @@
 #include "Game.h"
 
-Game::Game(int numberOfPlayers, Board* board, HWND hWnd)
+Game::Game(int numberOfPlayers, HWND hWnd, Input* input)
 {
+	//init rand
 	srand(time(NULL));
-
+	
+	//TODO fixa denna 
+	_input = input;
 	_numberOfPlayers = numberOfPlayers;
-	_draw = Draw(hWnd, board);
-	_board = board;
+	_board = Board(true, true, true, false, false, false, "USAPowerGrid.png");
+	_draw = Draw(&hWnd, &_board);
 	_ppm = PowerPlantMarket();
 	_rm = new ResourceMarket(numberOfPlayers, ResourceMarket::USA);
 	InitPlayers(numberOfPlayers);
@@ -41,7 +44,7 @@ void Game::DrawBoard()
 	{
 		tempVector.push_back(&_pv[i]);
 	}
-	_draw.DrawWholeBoard(_board, tempVector, &_ppm, _rm);
+	_draw.DrawWholeBoard(&_board, tempVector, &_ppm, _rm);
 }
 
 void Game::Phase1()
@@ -97,12 +100,50 @@ void Game::Phase1()
 			}
 		}
 	}
+	DrawBoard();
 	_gamePhase++;
 }
 
 void Game::Phase2()
 {
+	switch (_gameSubPhase)
+	{
+	case initPhase:
+	{
+		for (int i = 0; i < _numberOfPlayers; i++)
+		{
+			_tempPlayerVector.push_back(&_pv[i]);
+		}
+		choosePowerPlant;
+		break;
+	}
+	case choosePowerPlant:
+	{
+		//player passes
+		if (_playerInTurn->GetSelectedPowerPlant() == -1)
+		{
+			_tempPlayerVector.erase(_tempPlayerVector.begin());
+			if (_tempPlayerVector.size() == 0)
+			{
+				_gameSubPhase = Game::nextPhase;
+			}
+		}
+		else if(_playerInTurn->GetSelectedPowerPlant() > 0)
+		{
+			//TOOO Draw somwthing around the choosen powerplant
+			_selectedPowerPlant = _playerInTurn->GetSelectedPowerPlant();
+			_playerInTurn->ResetSelectedPowerPlant();
+			_gameSubPhase = Game::bid;
+		}
+		break;
+	}
+	case bid:
+	{
 
+	}
+	default:
+		break;
+	}
 }
 
 void Game::Phase3()

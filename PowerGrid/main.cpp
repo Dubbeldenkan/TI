@@ -1,51 +1,5 @@
-#include "Windows.h"
 #include "Game.h"
-
-LRESULT CALLBACK MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM
-	lParam)
-{
-	switch (msg)
-	{
-	case WM_DESTROY:
-		PostQuitMessage(0);
-		return 0;
-	case WM_PAINT:
-		ValidateRect(hWnd, 0);
-		return 0;
-	}
-	return DefWindowProc(hWnd, msg, wParam, lParam);
-}
-
-void InitWinMain(HINSTANCE hInst, char winName[])
-{
-	WNDCLASS wc = { 0 };
-	wc.lpfnWndProc = MsgProc;
-	wc.hInstance = hInst;
-	wc.lpszClassName = winName;
-	RegisterClass(&wc);
-}
-
-HWND InitWindow(HINSTANCE hInst, char winName[])
-{
-	InitWinMain(hInst, winName);
-
-	DWORD windowStyle = WS_OVERLAPPEDWINDOW;
-	RECT windowRect = { 1, 1, 1300, 660 };
-	AdjustWindowRect(&windowRect, windowStyle, false);
-	HWND hWnd = CreateWindow(
-		winName,
-		"Direct3D",
-		windowStyle,
-		CW_USEDEFAULT, CW_USEDEFAULT,
-		windowRect.right - windowRect.left,
-		windowRect.bottom - windowRect.top,
-		NULL,
-		NULL,
-		hInst,
-		NULL);
-
-	return hWnd;
-}
+#include "Input.h"
 
 int WINAPI WinMain(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
@@ -53,18 +7,15 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	int nCmdShow)
 {
 	char windowName[] = "Power Grid";
-	HWND hWnd = InitWindow(hInstance, windowName);
+	Input* input = new Input();
 
-	//Graphics* graphics = new Graphics(hWnd);
+	HWND hWnd = InitWindow(&hInstance, windowName, input);
 
-	//Image image = graphics->LoadImage("USA.png");
+	Game *game = new Game(3, hWnd, input);
 
 	ShowWindow(hWnd,
 		nCmdShow);
 	UpdateWindow(hWnd);
-
-	Board *board = new Board(true, true, true, false, false, false, "USAPowerGrid.png");
-	Game *game = new Game(3, board, hWnd);
 
 	// Main message loop:
 	MSG msg;
@@ -72,10 +23,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	while(true)
 	{
 		game->RunTurn();
-		/*graphics->StartDrawing();
-		graphics->Draw(&image, 100, 0, 0.5);
-		graphics->StopDrawing();
-		graphics->Flip();*/
 		MSG msg = { 0 };
 		if (PeekMessage(&msg, 0, 0, 0, PM_REMOVE))
 		{
@@ -88,7 +35,6 @@ int WINAPI WinMain(HINSTANCE hInstance,
 		}
 		else
 		{
-			//graphics->Flip();
 		}
 		Sleep(10);
 	}

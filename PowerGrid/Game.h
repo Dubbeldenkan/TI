@@ -6,26 +6,36 @@
 #include "PowerPlantMarket.h"
 #include "Player.h"
 #include "Draw.h"
+#include "Input.h"
+
 #include <vector>
 #include <stdlib.h>
 #include <time.h> 
 
 class Game
 {
+	enum GameSubPhase {initPhase, choosePowerPlant, bid, nextPhase};
+
 	int _numberOfPlayers;
 	int _gameTurn = 1;
 	int _gameStep = 1;
 	int _gamePhase = 1;
-	int _playerInTurn = 0;
 
-	Board* _board;
+	GameSubPhase _gameSubPhase = initPhase;
+	Player* _playerInTurn = 0;
+
+	Board _board = Board();
 	ResourceMarket* _rm;
-	PowerPlantMarket _ppm = PowerPlantMarket();;
+	PowerPlantMarket _ppm = PowerPlantMarket();
 	Draw _draw = Draw();
+	Input* _input;
 	std::vector<Player> _pv;
+	std::vector<Player*> _tempPlayerVector;
+
+	int _selectedPowerPlant;
 
 public:
-	Game(int, Board*, HWND);
+	Game(int, HWND, Input*);
 	~Game() {};
 
 	void RunTurn();

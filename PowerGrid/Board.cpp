@@ -1,5 +1,8 @@
 #include "Board.h"
 
+Board::Board()
+{};
+
 Board::Board(bool region1Used, bool region2Used, bool region3Used,
 	bool region4Used, bool region5Used, bool region6Used, char* fileName)
 {

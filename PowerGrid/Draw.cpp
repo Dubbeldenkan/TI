@@ -1,8 +1,8 @@
 #include "Draw.h"
 
-Draw::Draw(HWND hWnd, Board* board)
+Draw::Draw(HWND* hWnd, Board* board)
 {
-	_g = new Graphics(hWnd);
+	_g = new Graphics(*hWnd);
 	board->SetMapImage(_g->LoadImage(board->GetMapName()));
 	_cityLabel = _g->LoadImage("CityLabel.png");
 
@@ -145,7 +145,7 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 			tempImage = &_powerPlantGarbageImage;
 			break;
 		}
-		Pos plantTextPos = Pos(15, 10);
+		Pos plantTextPos = Pos(0, 18);
 		_g->Draw(tempImage, xPos, yPos, 1);
 		_g->PrintText(powerPlant->GetPowerPlantNumber(), xPos, yPos, Graphics::BLACK, 15);
 		std::string str;
@@ -153,16 +153,16 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 		str += "->" + std::to_string(powerPlant->GetPowerPlantProduction());
 		const char* buffer = str.c_str();
 
-		_g->PrintText((char*)buffer, xPos + plantTextPos.x, yPos + plantTextPos.y, Graphics::RED, 15);
+		_g->PrintText((char*)buffer, xPos + plantTextPos.x, yPos + plantTextPos.y, Graphics::BLACK, 8);
 	}
 }
 
 void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm)
 {
 	//current market
-	Pos firstCurrentPlantPos = Pos(600, 530);
+	Pos firstCurrentPlantPos = Pos(550, 530);
 
-	Pos firstFuturePlantPos = Pos(900, 530);
+	Pos firstFuturePlantPos = Pos(850, 530);
 	Pos plantDiff = Pos(100, 50);
 	for (int index = 0; index < ppm->GetNumberInCurrentMarket(); index++)
 	{

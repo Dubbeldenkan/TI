@@ -73,3 +73,13 @@ int Player::GetNumberOfSuppliedCities()
 {
 	return _numberOfSuppliedCities;
 }
+
+int Player::GetSelectedPowerPlant()
+{
+	return _selectedPowerPlant;
+}
+
+void Player::ResetSelectedPowerPlant()
+{
+	_selectedPowerPlant = 0;
+}

@@ -55,7 +55,7 @@ class Draw
 
 public:
 	Draw() {};
-	Draw(HWND, Board*);
+	Draw(HWND*, Board*);
 	~Draw() {};
 
 	void DrawWholeBoard(Board*, std::vector<Player*>, PowerPlantMarket*, ResourceMarket*);

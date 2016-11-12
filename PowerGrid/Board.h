@@ -14,6 +14,7 @@ class Board
 	std::map<char*, int> EdgeDict;
 
 public:
+	Board();
 	Board(bool, bool, bool, bool, bool, bool, char*);
 	~Board() {};
 
