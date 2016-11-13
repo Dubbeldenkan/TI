@@ -88,7 +88,17 @@ void Game::DrawBoard()
 	{
 		tempVector.push_back(&_pv[i]);
 	}
-	_draw.DrawWholeBoard(&_board, tempVector, _playerInTurn, &_ppm, _selectedPowerPlant - 1, _rm);
+	Draw::DrawInput dI;
+	dI._board = &_board;
+	dI._playerVector = tempVector;
+	dI._playerInTurn = _playerInTurn;
+	dI._powerPlantMarket = &_ppm;
+	dI._resourceMarket = _rm;
+
+	dI._selectedPowerPlant = _phase2Struct._selectedPowerPlant - 1;
+	dI._currentPowerPlantBiddingPrice = _phase2Struct._bidForSelectedPowerPlant;
+	dI._lastBiddingPlayer = _phase2Struct._lastBiddingPlayer;
+	_draw.DrawWholeBoard(&dI);
 }
 
 void Game::Phase1()
@@ -175,8 +185,11 @@ void Game::Phase2()
 		}
 		else if(_playerInTurn->GetSelectedPowerPlant() > 0)
 		{
-			_selectedPowerPlant = _playerInTurn->GetSelectedPowerPlant();
+			_phase2Struct._selectedPowerPlant = _playerInTurn->GetSelectedPowerPlant();
+			_phase2Struct._bidForSelectedPowerPlant = 
+				_ppm.GetPowerPlantCurrentDeck(_phase2Struct._selectedPowerPlant - 1)->GetPowerPlantNumber();
 			_playerInTurn->ResetSelectedPowerPlant();
+			_phase2Struct._lastBiddingPlayer = _playerInTurn;
 			_gameSubPhase = bid;
 			SetNextPlayerInTurn();
 			DrawBoard();

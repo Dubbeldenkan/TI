@@ -13,7 +13,7 @@ Draw::Draw(HWND* hWnd, Board* board)
 	_playerLabelYellow = _g->LoadImage("PlayerLabelYellow.png");
 	_playerLabelBlack = _g->LoadImage("PlayerLabelBlack.png");
 	_playerLabelPurple = _g->LoadImage("PlayerLabelPurple.png");
-	_playerMarker = _g->LoadImage("PlayerMarker.png");
+	_redButton = _g->LoadImage("RedButton.png");
 
 	//Load power plant images
 	_powerPlantCoalImage = _g->LoadImage("PowerPlantCoalImage.png");
@@ -41,24 +41,24 @@ Draw::Pos Draw::GetPlantDiff()
 	return _plantDiff;
 }
 
-void Draw::DrawWholeBoard(Board* board, std::vector<Player*> players, 
-	Player* playerInTurn, PowerPlantMarket* powerPlantMarket, int plantForSale,
-	ResourceMarket* resourceMarket)
+void Draw::DrawWholeBoard(DrawInput* dI)
 {
 	_g->Clear();
 	_g->StartDrawing();
-	DrawBoard(board);
-	for (int i = 0; i < players.size(); i++)
+	DrawBoard(dI->_board);
+	for (int i = 0; i < dI->_playerVector.size(); i++)
 	{
-		DrawPlayer(players[i], i);
+		DrawPlayer(dI->_playerVector[i], i);
 	}
-	PrintPlayerInTurn(playerInTurn);
-	DrawPowerPlantMarket(powerPlantMarket);
-	if (plantForSale > -1)
+	PrintPlayerInTurn(dI->_playerInTurn);
+	DrawPowerPlantMarket(dI->_powerPlantMarket);
+	if (dI->_selectedPowerPlant > -1)
 	{
-		PrintPlantForSale(powerPlantMarket->GetPowerPlantCurrentDeck(plantForSale));
+		PrintPlantForSale(dI->_powerPlantMarket->GetPowerPlantCurrentDeck(dI->_selectedPowerPlant),
+			dI->_currentPowerPlantBiddingPrice, dI->_lastBiddingPlayer->GetName());
+		DrawBidButtons();
 	}
-	DrawResourceMarket(resourceMarket);
+	DrawResourceMarket(dI->_resourceMarket);
 	_g->StopDrawing();
 	_g->Flip();
 }
@@ -155,11 +155,16 @@ void Draw::PrintPlayerInTurn(Player* player)
 	_g->PrintText((char*) str.c_str(), _playerInTurnPos.x, _playerInTurnPos.y, Graphics::WHITE, 15);
 }
 
-void Draw::PrintPlantForSale(PowerPlant* powerPlant)
+void Draw::PrintPlantForSale(PowerPlant* powerPlant, int bidingPrice, char* playerName)
 {
-	std::string str = "Kraftverket till salu är nr ";
+	std::string str = "Verk nr ";
 	std::string strNumber = std::to_string(powerPlant->GetPowerPlantNumber());
 	str = str + strNumber;
+	str = str + " för ";
+	strNumber = std::to_string(bidingPrice);
+	str = str + strNumber;
+	str = str + " elek till ";
+	str = str + std::string(playerName);
 	_g->PrintText((char*)str.c_str(), _plantForSalePos.x, _plantForSalePos.y, Graphics::WHITE, 15);
 }
 
@@ -207,6 +212,21 @@ void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm)
 		DrawPowerPlant(ppm->GetPowerPlantFutureDeck(index), _firstFuturePlantPos.x + xDiff,
 			_firstFuturePlantPos.y + yDiff);
 	}
+}
+
+void Draw::DrawBidButtons()
+{
+	DrawButton(&_redButton, "Bjud", _bidButtonPos);
+	DrawButton(&_redButton, "Pass", _passButtonPos);
+	DrawButton(&_redButton, "Öka", _increaseButtonPos);
+	DrawButton(&_redButton, "Minska", _decreaseButtonPos);
+}
+
+void Draw::DrawButton(Image* image, char* text, Pos pos)
+{
+	Pos textDiff = Pos(2, 10);
+	_g->Draw(image, pos.x, pos.y, 1);
+	_g->PrintText(text, pos.x + textDiff.x, pos.y + textDiff.x, Graphics::BLACK, 15);
 }
 
 void Draw::DrawResourceMarket(ResourceMarket* rm)

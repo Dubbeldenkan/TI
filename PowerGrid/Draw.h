@@ -33,6 +33,18 @@ public:
 			s = sIn;
 		}
 	};
+	struct DrawInput
+	{
+		Board* _board;
+		std::vector<Player*> _playerVector;
+		Player* _playerInTurn;
+		PowerPlantMarket* _powerPlantMarket;
+		ResourceMarket* _resourceMarket;
+
+		int _selectedPowerPlant;
+		int _currentPowerPlantBiddingPrice;
+		Player* _lastBiddingPlayer;
+	};
 private:
 
 	Pos _firstCurrentPlantPos = Pos(550, 530);
@@ -47,6 +59,11 @@ private:
 	Pos _playerInTurnPos = Pos(1025, 500);
 	Pos _plantForSalePos = Pos(1025, 550);
 
+	Pos _bidButtonPos = Pos(1050, 400);
+	Pos _passButtonPos = Pos(1050, 450);
+	Pos _increaseButtonPos = Pos(1200, 400);
+	Pos _decreaseButtonPos = Pos(1200, 450);
+
 	Graphics* _g;
 	Image _cityLabel;
 	Image _playerLabelRed;
@@ -55,7 +72,7 @@ private:
 	Image _playerLabelYellow;
 	Image _playerLabelBlack;
 	Image _playerLabelPurple;
-	Image _playerMarker;
+	Image _redButton;
 
 	Image _powerPlantCoalImage;
 	Image _powerPlantOilImage;
@@ -69,8 +86,7 @@ public:
 	Draw(HWND*, Board*);
 	~Draw() {};
 
-	void DrawWholeBoard(Board*, std::vector<Player*>, Player*, 
-		PowerPlantMarket*, int, ResourceMarket*);
+	void DrawWholeBoard(DrawInput*);
 
 	Pos GetFirstCurrentPlantPos();
 	Pos GetSizeOfPowerPlant();
@@ -84,7 +100,9 @@ private:
 	void DrawBoard(Board*);
 	void DrawResourceMarket(ResourceMarket*);
 	void DrawPowerPlantMarket(PowerPlantMarket*);
-	void PrintPlantForSale(PowerPlant*);
+	void DrawBidButtons();
+	void DrawButton(Image*, char*, Pos);
+	void PrintPlantForSale(PowerPlant*, int, char*);
 };
 
 #endif // !DRAW_H

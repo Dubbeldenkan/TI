@@ -17,6 +17,13 @@ public:
 	enum GameSubPhase {initPhase, choosePowerPlant, bid, nextPhase};
 
 private:
+	struct Phase2Struct
+	{
+		int _selectedPowerPlant;
+		int _bidForSelectedPowerPlant;
+		Player* _lastBiddingPlayer;
+	}_phase2Struct;
+
 	int _numberOfPlayers;
 	int _gameTurn = 1;
 	int _gameStep = 1;
@@ -31,8 +38,6 @@ private:
 	Draw _draw = Draw();
 	std::vector<Player> _pv;
 	std::vector<Player*> _tempPlayerVector;
-
-	int _selectedPowerPlant;
 
 public:
 	Game(int, HWND);
