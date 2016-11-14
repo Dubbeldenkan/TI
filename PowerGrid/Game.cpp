@@ -46,24 +46,61 @@ Player* Game::GetPlayerInTurn()
 	return _playerInTurn;
 }
 
-void Game::SetNextPlayerInTurn()
+PowerPlantMarket* Game::GetPowerPlantMarket()
+{
+	return &_ppm;
+}
+
+void Game::BidButtonPressed()
+{
+	if (_phase2Struct._nextBid <= _playerInTurn->GetAmountOfElektro())
+	{
+		_phase2Struct._bidButtonPressed = true;
+	}
+}
+
+void Game::IncreaseNextBid(int change)
+{
+	_phase2Struct._buttonPressed = true;
+	_phase2Struct._nextBid = std::max(_phase2Struct._nextBid + change,
+		_phase2Struct._bidForSelectedPowerPlant + 1);
+}
+
+void Game::SetNextPlayerInTurn(std::vector<Player*> *tempVector)
 {
 	int currentPlayerPos;
-	for (int index = 0; index < _tempPlayerVector.size(); index++)
+	for (int index = 0; index < tempVector->size(); index++)
 	{
-		if (_tempPlayerVector[index] == _playerInTurn)
+		if ((*tempVector)[index] == _playerInTurn)
 		{
 			currentPlayerPos = index;
+			break;
 		}
 	}
-	if (currentPlayerPos == (_tempPlayerVector.size() - 1))
+	if (currentPlayerPos == (tempVector->size() - 1))
 	{
-		_playerInTurn = _tempPlayerVector[0];
+		_playerInTurn = (*tempVector)[0];
 	}
 	else
 	{
-		_playerInTurn = _tempPlayerVector[currentPlayerPos + 1];
+		_playerInTurn = (*tempVector)[currentPlayerPos + 1];
 	}
+}
+
+void Game::RemovePlayerFromTempVector(std::vector<Player*> *tempVector)
+{
+	_playerInTurn->ResetPassed();
+	int currentPlayerPos;
+	for (int index = 0; index < tempVector->size(); index++)
+	{
+		if ((*tempVector)[index] == _playerInTurn)
+		{
+			currentPlayerPos = index;
+			break;
+		}
+	}
+	SetNextPlayerInTurn(tempVector);
+	tempVector->erase(tempVector->begin() + currentPlayerPos);
 }
 
 void Game::Run()
@@ -94,10 +131,13 @@ void Game::DrawBoard()
 	dI._playerInTurn = _playerInTurn;
 	dI._powerPlantMarket = &_ppm;
 	dI._resourceMarket = _rm;
+	dI._gamePhase = _gamePhase;
 
 	dI._selectedPowerPlant = _phase2Struct._selectedPowerPlant - 1;
 	dI._currentPowerPlantBiddingPrice = _phase2Struct._bidForSelectedPowerPlant;
 	dI._lastBiddingPlayer = _phase2Struct._lastBiddingPlayer;
+	dI._nextBid = _phase2Struct._nextBid;
+
 	_draw.DrawWholeBoard(&dI);
 }
 
@@ -153,8 +193,8 @@ void Game::Phase1()
 			}
 		}
 	}
-	DrawBoard();
 	_gamePhase++;
+	DrawBoard();
 }
 
 void Game::Phase2()
@@ -174,9 +214,9 @@ void Game::Phase2()
 	case choosePowerPlant:
 	{
 		//player passes
-		if (_playerInTurn->GetSelectedPowerPlant() == -1)
+		if (_playerInTurn->GetPassed())
 		{
-			_tempPlayerVector.erase(_tempPlayerVector.begin());
+			RemovePlayerFromTempVector(&_tempPlayerVector);
 			if (_tempPlayerVector.size() == 0)
 			{
 				_gameSubPhase = Game::nextPhase;
@@ -190,15 +230,47 @@ void Game::Phase2()
 				_ppm.GetPowerPlantCurrentDeck(_phase2Struct._selectedPowerPlant - 1)->GetPowerPlantNumber();
 			_playerInTurn->ResetSelectedPowerPlant();
 			_phase2Struct._lastBiddingPlayer = _playerInTurn;
+			_phase2Struct._nextBid = _phase2Struct._bidForSelectedPowerPlant + 1;
 			_gameSubPhase = bid;
-			SetNextPlayerInTurn();
+			_phase2Struct._bidPlayerVector = _tempPlayerVector;
+			SetNextPlayerInTurn(&_tempPlayerVector);
 			DrawBoard();
 		}
 		break;
 	}
 	case bid:
 	{
-
+		if (_playerInTurn->GetPassed())
+		{
+			RemovePlayerFromTempVector(&_phase2Struct._bidPlayerVector);
+			_phase2Struct._nextBid = _phase2Struct._bidForSelectedPowerPlant + 1;
+			DrawBoard();
+		}
+		else if (_phase2Struct._buttonPressed)
+		{
+			_phase2Struct._buttonPressed = false;
+			DrawBoard();
+		}
+		else if (_phase2Struct._bidButtonPressed)
+		{
+			_phase2Struct._bidButtonPressed = false;
+			_phase2Struct._bidForSelectedPowerPlant = _phase2Struct._nextBid;
+			_phase2Struct._lastBiddingPlayer = _playerInTurn;
+			_phase2Struct._nextBid = _phase2Struct._bidForSelectedPowerPlant + 1;
+			SetNextPlayerInTurn(&_phase2Struct._bidPlayerVector);
+			DrawBoard();
+		}
+		else if (_phase2Struct._bidPlayerVector.size() == 1)
+		{
+			_playerInTurn->AddPowerPlant(_ppm.GetPowerPlantCurrentDeck(_phase2Struct._selectedPowerPlant - 1), 
+				_phase2Struct._bidForSelectedPowerPlant);
+			_ppm.RemovePowerPlant(_phase2Struct._selectedPowerPlant - 1);
+			RemovePlayerFromTempVector(&_tempPlayerVector);
+			_phase2Struct._selectedPowerPlant = 0;
+			_gameSubPhase = choosePowerPlant;
+			DrawBoard();
+			break;
+		}
 	}
 	default:
 		break;

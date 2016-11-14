@@ -41,6 +41,26 @@ Draw::Pos Draw::GetPlantDiff()
 	return _plantDiff;
 }
 
+Draw::Pos Draw::GetPassButtonPos()
+{
+	return _passButtonPos;
+}
+
+Draw::Pos Draw::GetIncreaseBidButtonPos()
+{
+	return _increaseButtonPos;
+}
+
+Draw::Pos Draw::GetDecreaseBidButtonPos()
+{
+	return _decreaseButtonPos;
+}
+
+Draw::Pos Draw::GetBidButtonPos()
+{
+	return _bidButtonPos;
+}
+
 void Draw::DrawWholeBoard(DrawInput* dI)
 {
 	_g->Clear();
@@ -52,11 +72,15 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	}
 	PrintPlayerInTurn(dI->_playerInTurn);
 	DrawPowerPlantMarket(dI->_powerPlantMarket);
+	if (dI->_gamePhase == 2 || dI->_gamePhase == 3 || dI->_gamePhase == 4)
+	{
+		DrawButton(&_redButton, "Pass", _passButtonPos);
+	}
 	if (dI->_selectedPowerPlant > -1)
 	{
 		PrintPlantForSale(dI->_powerPlantMarket->GetPowerPlantCurrentDeck(dI->_selectedPowerPlant),
 			dI->_currentPowerPlantBiddingPrice, dI->_lastBiddingPlayer->GetName());
-		DrawBidButtons();
+		DrawBidButtons(dI->_nextBid);
 	}
 	DrawResourceMarket(dI->_resourceMarket);
 	_g->StopDrawing();
@@ -214,12 +238,12 @@ void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm)
 	}
 }
 
-void Draw::DrawBidButtons()
+void Draw::DrawBidButtons(int nextBid)
 {
 	DrawButton(&_redButton, "Bjud", _bidButtonPos);
-	DrawButton(&_redButton, "Pass", _passButtonPos);
 	DrawButton(&_redButton, "Öka", _increaseButtonPos);
 	DrawButton(&_redButton, "Minska", _decreaseButtonPos);
+	_g->PrintText(nextBid, _nextBidPos.x, _nextBidPos.y, Graphics::WHITE, 15);
 }
 
 void Draw::DrawButton(Image* image, char* text, Pos pos)

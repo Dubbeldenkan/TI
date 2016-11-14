@@ -40,10 +40,12 @@ public:
 		Player* _playerInTurn;
 		PowerPlantMarket* _powerPlantMarket;
 		ResourceMarket* _resourceMarket;
+		int _gamePhase;
 
 		int _selectedPowerPlant;
 		int _currentPowerPlantBiddingPrice;
 		Player* _lastBiddingPlayer;
+		int _nextBid;
 	};
 private:
 
@@ -54,7 +56,7 @@ private:
 
 	Pos _mapPos = Pos(0, 0, 0.5);
 	Pos _firstPlayerPos = Pos(1025, 0);
-	Pos _firstPlayerPowerPlantPos = Pos(10, 10);
+	Pos _firstPlayerPowerPlantPos = Pos(10, 29);
 	Pos _playerPosDiff = Pos(0, 65);
 	Pos _playerInTurnPos = Pos(1025, 500);
 	Pos _plantForSalePos = Pos(1025, 550);
@@ -63,6 +65,7 @@ private:
 	Pos _passButtonPos = Pos(1050, 450);
 	Pos _increaseButtonPos = Pos(1200, 400);
 	Pos _decreaseButtonPos = Pos(1200, 450);
+	Pos _nextBidPos = Pos(1130, 403);
 
 	Graphics* _g;
 	Image _cityLabel;
@@ -89,8 +92,12 @@ public:
 	void DrawWholeBoard(DrawInput*);
 
 	Pos GetFirstCurrentPlantPos();
-	Pos GetSizeOfPowerPlant();
 	Pos GetPlantDiff();
+	Pos GetSizeOfPowerPlant();
+	Pos GetPassButtonPos();
+	Pos GetIncreaseBidButtonPos();
+	Pos GetDecreaseBidButtonPos();
+	Pos GetBidButtonPos();
 
 private:
 	void DrawPowerPlant(PowerPlant*, int, int);
@@ -100,7 +107,7 @@ private:
 	void DrawBoard(Board*);
 	void DrawResourceMarket(ResourceMarket*);
 	void DrawPowerPlantMarket(PowerPlantMarket*);
-	void DrawBidButtons();
+	void DrawBidButtons(int);
 	void DrawButton(Image*, char*, Pos);
 	void PrintPlantForSale(PowerPlant*, int, char*);
 };

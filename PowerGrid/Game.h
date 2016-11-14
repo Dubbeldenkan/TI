@@ -1,6 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
+#define NOMINMAX
+
 #include "Board.h"
 #include "ResourceMarket.h"
 #include "PowerPlantMarket.h"
@@ -10,6 +12,7 @@
 #include <vector>
 #include <stdlib.h>
 #include <time.h> 
+#include <algorithm>
 
 class Game
 {
@@ -17,11 +20,17 @@ public:
 	enum GameSubPhase {initPhase, choosePowerPlant, bid, nextPhase};
 
 private:
+	static const int MAX_PLAYERS = 6;
+
 	struct Phase2Struct
 	{
 		int _selectedPowerPlant;
 		int _bidForSelectedPowerPlant;
 		Player* _lastBiddingPlayer;
+		int _nextBid;
+		bool _buttonPressed;
+		bool _bidButtonPressed;
+		std::vector<Player*> _bidPlayerVector;
 	}_phase2Struct;
 
 	int _numberOfPlayers;
@@ -50,10 +59,16 @@ public:
 	int GetCurrentStep();
 	Draw* GetDraw();
 	Player* GetPlayerInTurn();
+	PowerPlantMarket* GetPowerPlantMarket();
+
+	void IncreaseNextBid(int);
+	void BidButtonPressed();
 
 private:
-	void SetNextPlayerInTurn();
+	void SetNextPlayerInTurn(std::vector<Player*>*);
+	void RemovePlayerFromTempVector(std::vector<Player*>*);
 	void InitPlayers(int);
+
 	void DrawBoard();
 	void Phase1();
 	void Phase2();

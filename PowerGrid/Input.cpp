@@ -13,14 +13,82 @@ void Input::SetGame(Game* game)
 
 void Input::MouseClick()
 {
-	if (_game->GetCurrentPhase() == 2 && _game->GetCurrentSubPhase() == Game::choosePowerPlant)
+	if (PassedBeenPressed())
 	{
-		int plantPos = CheckPowerPlantPos();
-		if (plantPos > 0)
+		_game->GetPlayerInTurn()->SetPassed();
+	}
+	else if (_game->GetCurrentPhase() == 2)
+	{
+		if (_game->GetCurrentSubPhase() == Game::choosePowerPlant)
 		{
-			_game->GetPlayerInTurn()->SetSelectedPowerPlant(plantPos);
+			int plantPos = CheckPowerPlantPos();
+			if ((plantPos > 0) && 
+				(_game->GetPowerPlantMarket()->GetPowerPlantCurrentDeck(plantPos - 1)->GetPowerPlantNumber()
+					<= _game->GetPlayerInTurn()->GetAmountOfElektro()))
+			{
+				_game->GetPlayerInTurn()->SetSelectedPowerPlant(plantPos);
+			}
+		}
+		else if (_game->GetCurrentSubPhase() == Game::bid)
+		{
+			if (IncreaseBidPressed())
+			{
+				_game->IncreaseNextBid(1);
+			}
+			else if (DecreaseBidPressed())
+			{
+				_game->IncreaseNextBid(-1);
+			}
+			else if (BidPressed())
+			{
+				_game->BidButtonPressed();
+			}
 		}
 	}
+}
+
+bool Input::PassedBeenPressed()
+{
+	bool xPosTrue = (_mousePos.x > _game->GetDraw()->GetPassButtonPos().x) &&
+		(_mousePos.x < (_game->GetDraw()->GetPassButtonPos().x + _game->GetDraw()->GetSizeOfPowerPlant().x));
+
+	bool yPosTrue = (_mousePos.y >
+		(_game->GetDraw()->GetPassButtonPos().y ) &&
+		(_mousePos.y < (_game->GetDraw()->GetPassButtonPos().y + _game->GetDraw()->GetSizeOfPowerPlant().y)));
+	return xPosTrue && yPosTrue;
+}
+
+bool Input::IncreaseBidPressed()
+{
+	bool xPosTrue = (_mousePos.x > _game->GetDraw()->GetIncreaseBidButtonPos().x) &&
+		(_mousePos.x < (_game->GetDraw()->GetIncreaseBidButtonPos().x + _game->GetDraw()->GetSizeOfPowerPlant().x));
+
+	bool yPosTrue = (_mousePos.y >
+		(_game->GetDraw()->GetIncreaseBidButtonPos().y) &&
+		(_mousePos.y < (_game->GetDraw()->GetIncreaseBidButtonPos().y + _game->GetDraw()->GetSizeOfPowerPlant().y)));
+	return xPosTrue && yPosTrue;
+}
+
+bool Input::DecreaseBidPressed()
+{
+	bool xPosTrue = (_mousePos.x > _game->GetDraw()->GetDecreaseBidButtonPos().x) &&
+		(_mousePos.x < (_game->GetDraw()->GetDecreaseBidButtonPos().x + _game->GetDraw()->GetSizeOfPowerPlant().x));
+
+	bool yPosTrue = (_mousePos.y >
+		(_game->GetDraw()->GetDecreaseBidButtonPos().y) &&
+		(_mousePos.y < (_game->GetDraw()->GetDecreaseBidButtonPos().y + _game->GetDraw()->GetSizeOfPowerPlant().y)));
+	return xPosTrue && yPosTrue;
+}
+
+bool Input::BidPressed()
+{
+	bool xPosTrue = (_mousePos.x > _game->GetDraw()->GetBidButtonPos().x) &&
+		(_mousePos.x < (_game->GetDraw()->GetBidButtonPos().x + _game->GetDraw()->GetSizeOfPowerPlant().x));
+
+	bool yPosTrue = (_mousePos.y >
+		(_game->GetDraw()->GetBidButtonPos().y) &&
+		(_mousePos.y < (_game->GetDraw()->GetBidButtonPos().y + _game->GetDraw()->GetSizeOfPowerPlant().y)));
+	return xPosTrue && yPosTrue;
 }
 
 int Input::CheckPowerPlantPos()

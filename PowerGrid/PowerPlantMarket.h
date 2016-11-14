@@ -8,9 +8,11 @@ class PowerPlantMarket
 {
 	//TODO gör så att denna ändras till sex
 	int _numberInCurrentMarket = 4;
+	int _highestNumberedPowerPlant;
 	std::vector<PowerPlant> _ppDeck;
 	std::vector<PowerPlant> _currentMarket;
 	std::vector<PowerPlant> _futureMarket;
+	int FindLowestPowerPlantNumber(std::vector<PowerPlant>);
 
 public:
 	PowerPlantMarket();
@@ -18,6 +20,7 @@ public:
 
 	PowerPlant* GetPowerPlantCurrentDeck(int);
 	PowerPlant* GetPowerPlantFutureDeck(int);
+	void RemovePowerPlant(int);
 	int GetNumberInCurrentMarket();
 };
 #endif // !POWER_PLANT_MARKET_H

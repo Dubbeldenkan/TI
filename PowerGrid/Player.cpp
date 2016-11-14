@@ -9,6 +9,7 @@ Player::Player(char* name, Color color)
 	{
 		_powerPlants[i] = PowerPlant();
 	}
+	_passed = false;
 }
 
 int Player::GetNumberOfCitiesInNetwork()
@@ -79,6 +80,21 @@ int Player::GetSelectedPowerPlant()
 	return _selectedPowerPlant;
 }
 
+bool Player::GetPassed()
+{
+	return _passed;
+}
+
+void Player::SetPassed()
+{
+	_passed = true;
+}
+
+void Player::ResetPassed()
+{
+	_passed = false;
+}
+
 void Player::ResetSelectedPowerPlant()
 {
 	_selectedPowerPlant = 0;
@@ -87,4 +103,11 @@ void Player::ResetSelectedPowerPlant()
 void Player::SetSelectedPowerPlant(int powerPlant)
 {
 	_selectedPowerPlant = powerPlant;
+}
+
+void Player::AddPowerPlant(PowerPlant* powerPlant, int cost)
+{
+	_powerPlants[0] = *powerPlant;
+	_amountOfElektro -= cost;
+	//TODO remove old powerPlants
 }

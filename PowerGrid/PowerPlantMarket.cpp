@@ -55,9 +55,15 @@ PowerPlantMarket::PowerPlantMarket()
 	tempPowerPlantVector.push_back(PowerPlant(46, PowerPlant::coalOrOil, 3, 7));
 	tempPowerPlantVector.push_back(PowerPlant(50, PowerPlant::none, 0, 6));
 
+	_highestNumberedPowerPlant = 0;
+
 	while (!tempPowerPlantVector.empty())
 	{
 		int index = rand() % tempPowerPlantVector.size();
+		if (_highestNumberedPowerPlant < tempPowerPlantVector[index].GetPowerPlantNumber())
+		{
+			_highestNumberedPowerPlant = tempPowerPlantVector[index].GetPowerPlantNumber();
+		}
 		_ppDeck.push_back(tempPowerPlantVector[index]);
 		tempPowerPlantVector.erase(tempPowerPlantVector.begin() + index);
 	}
@@ -78,4 +84,27 @@ PowerPlant* PowerPlantMarket::GetPowerPlantFutureDeck(int index)
 int PowerPlantMarket::GetNumberInCurrentMarket()
 {
 	return _numberInCurrentMarket;
+}
+
+void PowerPlantMarket::RemovePowerPlant(int powerPlantPos)
+{
+	_currentMarket.erase(_currentMarket.begin() + powerPlantPos);
+	_futureMarket.push_back(_ppDeck[0]);
+	_ppDeck.erase(_ppDeck.begin() + 0);
+	int lowestPowerPlantPos = FindLowestPowerPlantNumber(_futureMarket);
+	_currentMarket.push_back(_futureMarket[lowestPowerPlantPos]);
+	_futureMarket.erase(_futureMarket.begin() + lowestPowerPlantPos);
+}
+
+int PowerPlantMarket::FindLowestPowerPlantNumber(std::vector<PowerPlant> ppVector)
+{
+	int lowestNumber = _highestNumberedPowerPlant + 1;
+	for (int index = 0; index < ppVector.size(); index++)
+	{
+		if (ppVector[index].GetPowerPlantNumber() < lowestNumber)
+		{
+			lowestNumber = index;
+		}
+	}
+	return lowestNumber;
 }

@@ -18,10 +18,17 @@ public:
 	~Input() {};
 
 	void SetGame(Game*);
-	static void MouseClick();
-	static int CheckPowerPlantPos();
 
 	static LRESULT CALLBACK MsgProc(HWND, UINT, WPARAM, LPARAM);
+
+private:
+	static void MouseClick();
+	
+	static int CheckPowerPlantPos();
+	static bool Input::PassedBeenPressed();
+	static bool Input::IncreaseBidPressed();
+	static bool Input::DecreaseBidPressed();
+	static bool Input::BidPressed();
 };
 
 void InitWinMain(HINSTANCE*, char*, Input*);

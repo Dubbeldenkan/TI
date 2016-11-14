@@ -11,6 +11,7 @@ public:
 private:
 	Color _color;
 	char* _playerName;
+	bool _passed;
 	int _numberOfSuppliedCities = 0;
 	int _numberOfCitiesInNetwork = 0;
 	int _amountOfElektro;
@@ -38,9 +39,15 @@ public:
 	int GetAmountOfGarbage();
 	int GetAmountOfUran();
 
+	bool GetPassed();
+	void SetPassed();
+	void ResetPassed();
+
 	int GetSelectedPowerPlant();
 	void ResetSelectedPowerPlant();
 	void SetSelectedPowerPlant(int);
+
+	void AddPowerPlant(PowerPlant*, int);
 };
 
 #endif // !PLAYER_H
