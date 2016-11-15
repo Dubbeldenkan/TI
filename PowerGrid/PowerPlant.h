@@ -10,7 +10,6 @@ private:
 	EnergySource _energySource;
 	int _consumption;
 	int _generatedEnergy;
-	int _savedResources = 0;
 
 public:
 	PowerPlant();

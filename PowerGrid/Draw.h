@@ -46,6 +46,7 @@ public:
 		int _currentPowerPlantBiddingPrice;
 		Player* _lastBiddingPlayer;
 		int _nextBid;
+		bool _placePowerPlant;
 	};
 private:
 
@@ -56,12 +57,13 @@ private:
 
 	Pos _mapPos = Pos(0, 0, 0.5);
 	Pos _firstPlayerPos = Pos(1025, 0);
+	Pos _playerPowerPlantDiff = Pos(67, 0);
 	Pos _firstPlayerPowerPlantPos = Pos(10, 29);
 	Pos _playerPosDiff = Pos(0, 65);
 	Pos _playerInTurnPos = Pos(1025, 500);
-	Pos _plantForSalePos = Pos(1025, 550);
+	Pos _infoTextPos = Pos(1025, 550);
 
-	Pos _bidButtonPos = Pos(1050, 400);
+	Pos _continueButtonPos = Pos(1050, 400);
 	Pos _passButtonPos = Pos(1050, 450);
 	Pos _increaseButtonPos = Pos(1200, 400);
 	Pos _decreaseButtonPos = Pos(1200, 450);
@@ -98,6 +100,10 @@ public:
 	Pos GetIncreaseBidButtonPos();
 	Pos GetDecreaseBidButtonPos();
 	Pos GetBidButtonPos();
+	Pos GetFirstPlayerPos();
+	Pos GetPlayerDiff();
+	Pos GetFirstPlayerPowerPlantPos();
+	Pos GetPlayerPowerPlantDiff();
 
 private:
 	void DrawPowerPlant(PowerPlant*, int, int);
@@ -110,6 +116,7 @@ private:
 	void DrawBidButtons(int);
 	void DrawButton(Image*, char*, Pos);
 	void PrintPlantForSale(PowerPlant*, int, char*);
+	void PrintPlacePowerPlant();
 };
 
 #endif // !DRAW_H

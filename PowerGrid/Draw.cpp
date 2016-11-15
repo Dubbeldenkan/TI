@@ -58,7 +58,27 @@ Draw::Pos Draw::GetDecreaseBidButtonPos()
 
 Draw::Pos Draw::GetBidButtonPos()
 {
-	return _bidButtonPos;
+	return _continueButtonPos;
+}
+
+Draw::Pos Draw::GetFirstPlayerPos()
+{
+	return _firstPlayerPos;
+}
+
+Draw::Pos Draw::GetPlayerDiff()
+{
+	return _playerPosDiff;
+}
+
+Draw::Pos Draw::GetFirstPlayerPowerPlantPos()
+{
+	return _firstPlayerPowerPlantPos;
+}
+
+Draw::Pos Draw::GetPlayerPowerPlantDiff()
+{
+	return _playerPowerPlantDiff;
 }
 
 void Draw::DrawWholeBoard(DrawInput* dI)
@@ -76,11 +96,15 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	{
 		DrawButton(&_redButton, "Pass", _passButtonPos);
 	}
-	if (dI->_selectedPowerPlant > -1)
+	if (dI->_selectedPowerPlant > -1 && !dI->_placePowerPlant)
 	{
 		PrintPlantForSale(dI->_powerPlantMarket->GetPowerPlantCurrentDeck(dI->_selectedPowerPlant),
 			dI->_currentPowerPlantBiddingPrice, dI->_lastBiddingPlayer->GetName());
 		DrawBidButtons(dI->_nextBid);
+	}
+	else if (dI->_placePowerPlant)
+	{
+		PrintPlacePowerPlant();
 	}
 	DrawResourceMarket(dI->_resourceMarket);
 	_g->StopDrawing();
@@ -108,7 +132,6 @@ void Draw::DrawCity(City* city)
 void Draw::DrawPlayer(Player* player, int playerIndex)
 {
 	int FontSize = 15;
-	Pos powerPlantDiff = Pos(20, 0);
 	Pos nameDiff = Pos(6, 6);
 	Pos firstRes = Pos(140, 6);
 	Pos resDiff = Pos(30, 0);
@@ -166,7 +189,7 @@ void Draw::DrawPlayer(Player* player, int playerIndex)
 	for (int index = 0; index < player->numberOfPowerPlants; index++)
 	{
 		DrawPowerPlant(player->GetPowerPlant(index),
-			_firstPlayerPos.x + _firstPlayerPowerPlantPos.x + powerPlantDiff.x*index,
+			_firstPlayerPos.x + _firstPlayerPowerPlantPos.x + _playerPowerPlantDiff.x*index,
 			_firstPlayerPos.y + _firstPlayerPowerPlantPos.y + _playerPosDiff.y*playerIndex);
 	}
 }
@@ -189,7 +212,12 @@ void Draw::PrintPlantForSale(PowerPlant* powerPlant, int bidingPrice, char* play
 	str = str + strNumber;
 	str = str + " elek till ";
 	str = str + std::string(playerName);
-	_g->PrintText((char*)str.c_str(), _plantForSalePos.x, _plantForSalePos.y, Graphics::WHITE, 15);
+	_g->PrintText((char*)str.c_str(), _infoTextPos.x, _infoTextPos.y, Graphics::WHITE, 15);
+}
+
+void Draw::PrintPlacePowerPlant()
+{
+	_g->PrintText("Välj position för verket.", _infoTextPos.x, _infoTextPos.y, Graphics::WHITE,	15);
 }
 
 void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
@@ -240,7 +268,7 @@ void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm)
 
 void Draw::DrawBidButtons(int nextBid)
 {
-	DrawButton(&_redButton, "Bjud", _bidButtonPos);
+	DrawButton(&_redButton, "Bjud", _continueButtonPos);
 	DrawButton(&_redButton, "Öka", _increaseButtonPos);
 	DrawButton(&_redButton, "Minska", _decreaseButtonPos);
 	_g->PrintText(nextBid, _nextBidPos.x, _nextBidPos.y, Graphics::WHITE, 15);

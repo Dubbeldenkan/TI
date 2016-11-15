@@ -19,17 +19,20 @@ void Input::MouseClick()
 	}
 	else if (_game->GetCurrentPhase() == 2)
 	{
-		if (_game->GetCurrentSubPhase() == Game::choosePowerPlant)
+		switch (_game->GetCurrentSubPhase())
+		{
+		case Game::choosePowerPlant:
 		{
 			int plantPos = CheckPowerPlantPos();
-			if ((plantPos > 0) && 
+			if ((plantPos > 0) &&
 				(_game->GetPowerPlantMarket()->GetPowerPlantCurrentDeck(plantPos - 1)->GetPowerPlantNumber()
 					<= _game->GetPlayerInTurn()->GetAmountOfElektro()))
 			{
 				_game->GetPlayerInTurn()->SetSelectedPowerPlant(plantPos);
 			}
+			break;
 		}
-		else if (_game->GetCurrentSubPhase() == Game::bid)
+		case Game::bid:
 		{
 			if (IncreaseBidPressed())
 			{
@@ -41,10 +44,49 @@ void Input::MouseClick()
 			}
 			else if (BidPressed())
 			{
-				_game->BidButtonPressed();
+				_game->GetPlayerInTurn()->SetBid(_game->GetBidForSelectedPowerPlant());
 			}
+			break;
+		}
+		case  Game::placePowerPlant:
+		{
+			int tempPowerPlantPos = PowerPlantPressed();
+			if (tempPowerPlantPos > -1)
+			{
+				_game->GetPlayerInTurn()->SetNewPowerPlantPos(tempPowerPlantPos);
+			}
+			break;
+		}
 		}
 	}
+}
+
+int Input::PowerPlantPressed()
+{
+	int powerPlantNumber = -1;
+	int firstPowerPlantPosX = _game->GetDraw()->GetFirstPlayerPos().x + 
+		_game->GetDraw()->GetFirstPlayerPowerPlantPos().x;
+	int powerPlantDiffX = _game->GetDraw()->GetPlayerPowerPlantDiff().x;
+
+	int firstPowerPlantPosY = _game->GetDraw()->GetFirstPlayerPos().y + 
+		_game->GetDraw()->GetPlayerDiff().y*_game->GetPlayerInTurnPosition() +
+		_game->GetDraw()->GetFirstPlayerPowerPlantPos().y;
+	for (int index = 0; index < Player::numberOfPowerPlants; index++)
+	{
+		
+		bool xPosTrue = (_mousePos.x > (firstPowerPlantPosX + powerPlantDiffX*index) &&
+			(_mousePos.x < (firstPowerPlantPosX + powerPlantDiffX*index + _game->GetDraw()->GetSizeOfPowerPlant().x)));
+
+		bool yPosTrue = (_mousePos.y >
+			(firstPowerPlantPosY) &&
+			(_mousePos.y < (firstPowerPlantPosY + _game->GetDraw()->GetSizeOfPowerPlant().y)));
+		if (xPosTrue && yPosTrue)
+		{
+			powerPlantNumber = index;
+			break;
+		}
+	}
+	return powerPlantNumber;
 }
 
 bool Input::PassedBeenPressed()

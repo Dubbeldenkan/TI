@@ -105,9 +105,38 @@ void Player::SetSelectedPowerPlant(int powerPlant)
 	_selectedPowerPlant = powerPlant;
 }
 
+bool Player::NewBid()
+{
+	return _newBid;
+}
+
+void Player::SetBid(int bid)
+{
+	if (bid <= _amountOfElektro)
+	{
+		_newBid = true;
+	}
+}
+
+void Player::ResetBid()
+{
+	_newBid = false;
+}
+
 void Player::AddPowerPlant(PowerPlant* powerPlant, int cost)
 {
-	_powerPlants[0] = *powerPlant;
+	_powerPlants[_newPowerPlantPos] = *powerPlant;
 	_amountOfElektro -= cost;
+	_newPowerPlantPos = -1;
 	//TODO remove old powerPlants
+}
+
+int Player::GetNewPowerPlantPos()
+{
+	return _newPowerPlantPos;
+}
+
+void Player::SetNewPowerPlantPos(int pos)
+{
+	_newPowerPlantPos = pos;
 }

@@ -29,6 +29,7 @@ private:
 	static bool Input::IncreaseBidPressed();
 	static bool Input::DecreaseBidPressed();
 	static bool Input::BidPressed();
+	static int PowerPlantPressed();
 };
 
 void InitWinMain(HINSTANCE*, char*, Input*);

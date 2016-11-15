@@ -51,12 +51,9 @@ PowerPlantMarket* Game::GetPowerPlantMarket()
 	return &_ppm;
 }
 
-void Game::BidButtonPressed()
+int Game::GetBidForSelectedPowerPlant()
 {
-	if (_phase2Struct._nextBid <= _playerInTurn->GetAmountOfElektro())
-	{
-		_phase2Struct._bidButtonPressed = true;
-	}
+	return _phase2Struct._bidForSelectedPowerPlant;
 }
 
 void Game::IncreaseNextBid(int change)
@@ -85,6 +82,20 @@ void Game::SetNextPlayerInTurn(std::vector<Player*> *tempVector)
 	{
 		_playerInTurn = (*tempVector)[currentPlayerPos + 1];
 	}
+}
+
+int Game::GetPlayerInTurnPosition()
+{
+	int playerInTurnPosition;
+	for (int index = 0; index < _numberOfPlayers; index++)
+	{
+		if (_playerInTurn == &_pv[index])
+		{
+			playerInTurnPosition = index;
+			break;
+		}
+	}
+	return playerInTurnPosition;
 }
 
 void Game::RemovePlayerFromTempVector(std::vector<Player*> *tempVector)
@@ -137,6 +148,7 @@ void Game::DrawBoard()
 	dI._currentPowerPlantBiddingPrice = _phase2Struct._bidForSelectedPowerPlant;
 	dI._lastBiddingPlayer = _phase2Struct._lastBiddingPlayer;
 	dI._nextBid = _phase2Struct._nextBid;
+	dI._placePowerPlant = _gameSubPhase == placePowerPlant;
 
 	_draw.DrawWholeBoard(&dI);
 }
@@ -251,9 +263,9 @@ void Game::Phase2()
 			_phase2Struct._buttonPressed = false;
 			DrawBoard();
 		}
-		else if (_phase2Struct._bidButtonPressed)
+		else if (_playerInTurn->NewBid())
 		{
-			_phase2Struct._bidButtonPressed = false;
+			_playerInTurn->ResetBid();
 			_phase2Struct._bidForSelectedPowerPlant = _phase2Struct._nextBid;
 			_phase2Struct._lastBiddingPlayer = _playerInTurn;
 			_phase2Struct._nextBid = _phase2Struct._bidForSelectedPowerPlant + 1;
@@ -262,15 +274,24 @@ void Game::Phase2()
 		}
 		else if (_phase2Struct._bidPlayerVector.size() == 1)
 		{
-			_playerInTurn->AddPowerPlant(_ppm.GetPowerPlantCurrentDeck(_phase2Struct._selectedPowerPlant - 1), 
+			_gameSubPhase = placePowerPlant;
+			DrawBoard();
+		}
+		break;
+	}
+	case placePowerPlant:
+	{
+		if (_playerInTurn->GetNewPowerPlantPos() > -1)
+		{
+			_playerInTurn->AddPowerPlant(_ppm.GetPowerPlantCurrentDeck(_phase2Struct._selectedPowerPlant - 1),
 				_phase2Struct._bidForSelectedPowerPlant);
 			_ppm.RemovePowerPlant(_phase2Struct._selectedPowerPlant - 1);
 			RemovePlayerFromTempVector(&_tempPlayerVector);
 			_phase2Struct._selectedPowerPlant = 0;
 			_gameSubPhase = choosePowerPlant;
 			DrawBoard();
-			break;
 		}
+		break;
 	}
 	default:
 		break;

@@ -17,7 +17,7 @@
 class Game
 {
 public:
-	enum GameSubPhase {initPhase, choosePowerPlant, bid, nextPhase};
+	enum GameSubPhase {initPhase, choosePowerPlant, bid, placePowerPlant, nextPhase};
 
 private:
 	static const int MAX_PLAYERS = 6;
@@ -29,7 +29,6 @@ private:
 		Player* _lastBiddingPlayer;
 		int _nextBid;
 		bool _buttonPressed;
-		bool _bidButtonPressed;
 		std::vector<Player*> _bidPlayerVector;
 	}_phase2Struct;
 
@@ -62,7 +61,8 @@ public:
 	PowerPlantMarket* GetPowerPlantMarket();
 
 	void IncreaseNextBid(int);
-	void BidButtonPressed();
+	int GetBidForSelectedPowerPlant();
+	int GetPlayerInTurnPosition();
 
 private:
 	void SetNextPlayerInTurn(std::vector<Player*>*);
