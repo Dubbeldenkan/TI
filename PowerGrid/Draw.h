@@ -8,8 +8,10 @@
 #include "Graphics.h"
 #include "PowerPlant.h"
 #include "City.h"
+
 #include <vector>
 #include <string>
+#include <algorithm> 
 
 class Draw
 {
@@ -50,7 +52,7 @@ public:
 	};
 private:
 
-	Pos _firstCurrentPlantPos = Pos(550, 530);
+	Pos _firstCurrentPlantPos = Pos(600, 530);
 
 	Pos _firstFuturePlantPos = Pos(850, 530);
 	Pos _plantDiff = Pos(100, 50);
@@ -69,6 +71,13 @@ private:
 	Pos _decreaseButtonPos = Pos(1200, 450);
 	Pos _nextBidPos = Pos(1130, 403);
 
+	Pos _firstResourceCoalPos = Pos(2, 532);
+	Pos _firstResourceOilPos = Pos(2, 552);
+	Pos _firstResourceGarbagePos = Pos(2, 572);
+	Pos _firstResourceUranPos = Pos(2, 592);
+	Pos _resourceDiff = Pos(21, 0);
+	Pos _uranDiff = Pos(63, 42);
+
 	Graphics* _g;
 	Image _cityLabel;
 	Image _playerLabelRed;
@@ -78,6 +87,7 @@ private:
 	Image _playerLabelBlack;
 	Image _playerLabelPurple;
 	Image _redButton;
+	Image _blueButton;
 
 	Image _powerPlantCoalImage;
 	Image _powerPlantOilImage;
@@ -85,6 +95,11 @@ private:
 	Image _powerPlantGarbageImage;
 	Image _powerPlantUranImage;
 	Image _powerPlantEcoImage;
+
+	Image _coalImage;
+	Image _oilImage;
+	Image _garbageImage;
+	Image _uranImage;
 
 public:
 	Draw() {};
@@ -117,6 +132,7 @@ private:
 	void DrawButton(Image*, char*, Pos);
 	void PrintPlantForSale(PowerPlant*, int, char*);
 	void PrintPlacePowerPlant();
+	void DrawResource(int, ResourceMarket::Resource);
 };
 
 #endif // !DRAW_H

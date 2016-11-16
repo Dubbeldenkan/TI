@@ -6,7 +6,7 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 	srand(time(NULL));
 	
 	_numberOfPlayers = numberOfPlayers;
-	_board = Board(true, true, true, false, false, false, "USAPowerGrid.png");
+	_board = Board(true, true, true, false, false, false, "Map/USAPowerGrid.png");
 	_draw = Draw(&hWnd, &_board);
 	_ppm = PowerPlantMarket();
 	_rm = new ResourceMarket(numberOfPlayers, ResourceMarket::USA);

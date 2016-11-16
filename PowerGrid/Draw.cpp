@@ -4,24 +4,31 @@ Draw::Draw(HWND* hWnd, Board* board)
 {
 	_g = new Graphics(*hWnd);
 	board->SetMapImage(_g->LoadImage(board->GetMapName()));
-	_cityLabel = _g->LoadImage("CityLabel.png");
+	_cityLabel = _g->LoadImage("Map/CityLabel.png");
 
 	//load player images
-	_playerLabelRed = _g->LoadImage("PlayerLabelRed.png");
-	_playerLabelBlue = _g->LoadImage("PlayerLabelBlue.png");
-	_playerLabelGreen = _g->LoadImage("PlayerLabelGreen.png");
-	_playerLabelYellow = _g->LoadImage("PlayerLabelYellow.png");
-	_playerLabelBlack = _g->LoadImage("PlayerLabelBlack.png");
-	_playerLabelPurple = _g->LoadImage("PlayerLabelPurple.png");
+	_playerLabelRed = _g->LoadImage("Player/PlayerLabelRed.png");
+	_playerLabelBlue = _g->LoadImage("Player/PlayerLabelBlue.png");
+	_playerLabelGreen = _g->LoadImage("Player/PlayerLabelGreen.png");
+	_playerLabelYellow = _g->LoadImage("Player/PlayerLabelYellow.png");
+	_playerLabelBlack = _g->LoadImage("Player/PlayerLabelBlack.png");
+	_playerLabelPurple = _g->LoadImage("Player/PlayerLabelPurple.png");
 	_redButton = _g->LoadImage("RedButton.png");
+	_blueButton = _g->LoadImage("BlueButton.png");
 
 	//Load power plant images
-	_powerPlantCoalImage = _g->LoadImage("PowerPlantCoalImage.png");
-	_powerPlantOilImage = _g->LoadImage("PowerPlantOilImage.png");
-	_powerPlantCoalOilImage = _g->LoadImage("PowerPlantCoalOilImage.png");
-	_powerPlantGarbageImage = _g->LoadImage("PowerPlantGarbageImage.png");
-	_powerPlantUranImage = _g->LoadImage("PowerPlantUranImage.png");
-	_powerPlantEcoImage = _g->LoadImage("PowerPlantEcoImage.png");
+	_powerPlantCoalImage = _g->LoadImage("PowerPlant/PowerPlantCoalImage.png");
+	_powerPlantOilImage = _g->LoadImage("PowerPlant/PowerPlantOilImage.png");
+	_powerPlantCoalOilImage = _g->LoadImage("PowerPlant/PowerPlantCoalOilImage.png");
+	_powerPlantGarbageImage = _g->LoadImage("PowerPlant/PowerPlantGarbageImage.png");
+	_powerPlantUranImage = _g->LoadImage("PowerPlant/PowerPlantUranImage.png");
+	_powerPlantEcoImage = _g->LoadImage("PowerPlant/PowerPlantEcoImage.png");
+
+	//Resources
+	_coalImage = _g->LoadImage("Resources/Coal.png");
+	_oilImage = _g->LoadImage("Resources/Oil.png");
+	_garbageImage = _g->LoadImage("Resources/Garbage.png");
+	_uranImage = _g->LoadImage("Resources/Uran.png");
 }
 
 Draw::Pos Draw::GetFirstCurrentPlantPos()
@@ -283,5 +290,117 @@ void Draw::DrawButton(Image* image, char* text, Pos pos)
 
 void Draw::DrawResourceMarket(ResourceMarket* rm)
 {
-	//TODO
+	Pos firstMarketMarker = Pos(0, 530);
+	Pos marketMarkerDiff = Pos(63, 32);
+	Pos firstMarketNumber = Pos(50, 530);
+	for (int index = 0; index < rm->GetSizeOfMarket(); index++)
+	{
+		Image* tempImage;
+		if (index % 2 == 0)
+		{
+			tempImage = &_redButton;
+		}
+		else
+		{
+			tempImage = &_blueButton;
+		}
+		_g->Draw(tempImage, firstMarketMarker.x + index*marketMarkerDiff.x, firstMarketMarker.y, 1);
+		_g->Draw(tempImage, firstMarketMarker.x + index*marketMarkerDiff.x,
+			firstMarketMarker.y + marketMarkerDiff.y, 1);
+		_g->Draw(tempImage, firstMarketMarker.x + index*marketMarkerDiff.x,
+			firstMarketMarker.y + 1.5*marketMarkerDiff.y, 1);
+	}
+
+	DrawResource(rm->GetAmountOfCoal(), ResourceMarket::coal);
+	DrawResource(rm->GetAmountOfOil(), ResourceMarket::oil);
+	DrawResource(rm->GetAmountOfGarbage(), ResourceMarket::garbage);
+	DrawResource(rm->GetAmountOfUran(), ResourceMarket::uranium);
+
+	for(int index = 0; index < rm->GetSizeOfMarket(); index++)
+	{
+		if (index < (rm->GetSizeOfMarket() - 1))
+		{
+			_g->PrintText(index + 1, firstMarketNumber.x + index*marketMarkerDiff.x,
+				firstMarketNumber.y, Graphics::BLACK, 15);
+		}
+		else
+		{
+			for (int i = index + 2; i < ResourceMarket::MAX_AMOUNT_URAN + 5; i += 2)
+			{
+				int xDiff = marketMarkerDiff.x / max(((i - index) % 4), 1) - 10;
+				int yDiff = GetSizeOfPowerPlant().y*min(1, max(0, i - 13));
+				_g->PrintText(i, firstMarketNumber.x + (index - 1)*marketMarkerDiff.x + xDiff,
+					firstMarketNumber.y + yDiff, Graphics::BLACK, 15);
+			}
+		}
+	}
+}
+
+void Draw::DrawResource(int numberOfResources, ResourceMarket::Resource type)
+{
+	Image* tempImage = new Image();
+	int maxNumberOfResources = ResourceMarket::MAX_AMOUNT_RESOURCE;;
+	Pos firstPos = Pos(0, 0);
+	Pos resourceDiff = _resourceDiff;
+	bool uranium = false;
+	switch (type)
+	{
+	case ResourceMarket::coal:
+	{
+		tempImage = &_coalImage;
+		firstPos = _firstResourceCoalPos;
+		break;
+	}
+	case ResourceMarket::oil:
+	{
+		tempImage = &_oilImage;
+		firstPos = _firstResourceOilPos;
+		break;
+	}
+	case ResourceMarket::garbage:
+	{
+		tempImage = &_garbageImage;
+		firstPos = _firstResourceGarbagePos;
+		break;
+	}
+	case ResourceMarket::uranium:
+	{
+		tempImage = &_uranImage;
+		maxNumberOfResources = ResourceMarket::MAX_AMOUNT_URAN;
+		firstPos = _firstResourceUranPos;
+		resourceDiff = _uranDiff;
+		uranium = true;
+		break;
+	}
+		break;
+	default:
+		break;
+	}
+	if (!uranium)
+	{
+		for (int index = 0; index < maxNumberOfResources; index++)
+		{
+			if (index >= (maxNumberOfResources - numberOfResources))
+			{
+				_g->Draw(tempImage, firstPos.x + resourceDiff.x*index, firstPos.y, 1);
+			}
+		}
+	}
+	else
+	{
+		for (int index = 0; index < maxNumberOfResources; index++)
+		{
+			if((index >= maxNumberOfResources - 4) && 
+				(index >= (maxNumberOfResources - numberOfResources)))
+			{
+				int xDiff = firstPos.x + resourceDiff.x*8 + resourceDiff.x/2*((index - 8) % 2);
+				int yDiff = resourceDiff.y*min(0, max(-1, index - 10));
+				_g->Draw(tempImage, xDiff, firstPos.y + yDiff, 1);
+			}
+			else if (index >= (maxNumberOfResources - numberOfResources))
+			{
+				_g->Draw(tempImage, firstPos.x + resourceDiff.x*index, firstPos.y, 1);
+			}
+		}
+	}
 }

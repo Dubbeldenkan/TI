@@ -10,7 +10,7 @@ ResourceMarket::ResourceMarket(int numberOfPlayers, GameBoard gameBoard)
 		_amountOfCoal = 24;
 		_amountOfOil = 18;
 		_amountOfGarbage = 6;
-		_amountOfUranium = 2;
+		_amountOfUranium = 12;
 		break;
 	}
 	default:
@@ -20,18 +20,18 @@ ResourceMarket::ResourceMarket(int numberOfPlayers, GameBoard gameBoard)
 	}
 }
 
-int ResourceMarket::getPrice(Resource resource, int amount)
+int ResourceMarket::GetPrice(Resource resource, int amount)
 {
 	int resultAmount = 0;
-	int firstPos = getFirstResPos(resource);
+	int firstPos = GetFirstResPos(resource);
 	for (int currentPos = firstPos; currentPos < currentPos + amount; currentPos++)
 	{
-		resultAmount = getPriceForPos(resource, currentPos);
+		resultAmount = GetPriceForPos(resource, currentPos);
 	}
 	return resultAmount;
 }
 
-int ResourceMarket::getPriceForPos(Resource resource, int pos)
+int ResourceMarket::GetPriceForPos(Resource resource, int pos)
 {
 	switch (resource)
 	{
@@ -50,7 +50,7 @@ int ResourceMarket::getPriceForPos(Resource resource, int pos)
 	}
 }
 
-int ResourceMarket::getFirstResPos(Resource resource)
+int ResourceMarket::GetFirstResPos(Resource resource)
 {
 	switch (resource)
 	{
@@ -73,7 +73,7 @@ int ResourceMarket::getFirstResPos(Resource resource)
 	}
 }
 
-void ResourceMarket::reSupplyResourceMarket(int step)
+void ResourceMarket::ReSupplyResourceMarket(int step)
 {
 	_amountOfCoal += resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::coal];
 	_amountOfOil += resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::oil];
@@ -84,4 +84,29 @@ void ResourceMarket::reSupplyResourceMarket(int step)
 	_amountOfOil = min(_amountOfOil, MAX_AMOUNT_RESOURCE);
 	_amountOfGarbage = min(_amountOfGarbage, MAX_AMOUNT_RESOURCE);
 	_amountOfUranium = min(_amountOfUranium, MAX_AMOUNT_URAN);
+}
+
+int ResourceMarket::GetSizeOfMarket()
+{
+	return _marketSize;
+}
+
+int ResourceMarket::GetAmountOfCoal()
+{
+	return _amountOfCoal;
+}
+
+int ResourceMarket::GetAmountOfOil()
+{
+	return _amountOfOil;
+}
+
+int ResourceMarket::GetAmountOfGarbage()
+{
+	return _amountOfGarbage;
+}
+
+int ResourceMarket::GetAmountOfUran()
+{
+	return _amountOfUranium;
 }
