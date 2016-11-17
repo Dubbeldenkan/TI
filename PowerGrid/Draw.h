@@ -120,6 +120,14 @@ public:
 	Pos GetFirstPlayerPowerPlantPos();
 	Pos GetPlayerPowerPlantDiff();
 
+	Pos GetFirstCoalPos();
+	Pos GetFirstOilPos();
+	Pos GetFirstGarbagePos();
+	Pos GetFirstUranPos();
+	Pos GetUranDiff();
+	Pos GetResourceDiff();
+	Pos GetSizeOfResource();
+
 private:
 	void DrawPowerPlant(PowerPlant*, int, int);
 	void DrawCity(City*);

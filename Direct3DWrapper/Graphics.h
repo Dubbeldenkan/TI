@@ -48,6 +48,8 @@ public:
 	void PrintText(char*, int, int, D3DCOLOR, int);
 
 	void PrintText(int, int, int, D3DCOLOR, int);
+
+	void SetTextSize(int);
 };
 
 #endif

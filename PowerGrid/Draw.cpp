@@ -88,8 +88,45 @@ Draw::Pos Draw::GetPlayerPowerPlantDiff()
 	return _playerPowerPlantDiff;
 }
 
+Draw::Pos Draw::GetFirstCoalPos()
+{
+	return _firstResourceCoalPos;
+}
+
+Draw::Pos Draw::GetFirstOilPos()
+{
+	return _firstResourceOilPos;
+}
+
+Draw::Pos Draw::GetFirstGarbagePos()
+{
+	return _firstResourceGarbagePos;
+}
+
+Draw::Pos Draw::GetFirstUranPos()
+{
+	return _firstResourceUranPos;
+}
+
+Draw::Pos Draw::GetUranDiff()
+{
+	return _uranDiff;
+}
+
+Draw::Pos Draw::GetResourceDiff()
+{
+	return _resourceDiff;
+}
+
+Draw::Pos Draw::GetSizeOfResource()
+{
+	Pos pos = Pos(_coalImage.GetxSize(), _coalImage.GetYSize());
+	return pos;
+}
+
 void Draw::DrawWholeBoard(DrawInput* dI)
 {
+	_g->SetTextSize(8);
 	_g->Clear();
 	_g->StartDrawing();
 	DrawBoard(dI->_board);
@@ -99,9 +136,13 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	}
 	PrintPlayerInTurn(dI->_playerInTurn);
 	DrawPowerPlantMarket(dI->_powerPlantMarket);
-	if (dI->_gamePhase == 2 || dI->_gamePhase == 3 || dI->_gamePhase == 4)
+	if (dI->_gamePhase == 2 && !dI->_placePowerPlant)
 	{
 		DrawButton(&_redButton, "Pass", _passButtonPos);
+	}
+	else if (dI->_gamePhase == 3 || dI->_gamePhase == 4)
+	{
+		DrawButton(&_redButton, "Klar", _passButtonPos);
 	}
 	if (dI->_selectedPowerPlant > -1 && !dI->_placePowerPlant)
 	{
@@ -175,13 +216,13 @@ void Draw::DrawPlayer(Player* player, int playerIndex)
 	_g->PrintText(player->GetName(), _firstPlayerPos.x + nameDiff.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + nameDiff.y, Graphics::WHITE, 15);
 
-	_g->PrintText(player->GetAmountOfCoal(), _firstPlayerPos.x + firstRes.x,
+	_g->PrintText(player->GetAmountOfResource(ResourceMarket::coal), _firstPlayerPos.x + firstRes.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
-	_g->PrintText(player->GetAmountOfOil(), _firstPlayerPos.x + firstRes.x + resDiff.x,
+	_g->PrintText(player->GetAmountOfResource(ResourceMarket::oil), _firstPlayerPos.x + firstRes.x + resDiff.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
-	_g->PrintText(player->GetAmountOfGarbage(), _firstPlayerPos.x + firstRes.x + 2*resDiff.x,
+	_g->PrintText(player->GetAmountOfResource(ResourceMarket::garbage), _firstPlayerPos.x + firstRes.x + 2*resDiff.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::BLACK, 15);
-	_g->PrintText(player->GetAmountOfGarbage(), _firstPlayerPos.x + firstRes.x + 3 * resDiff.x,
+	_g->PrintText(player->GetAmountOfResource(ResourceMarket::uranium), _firstPlayerPos.x + firstRes.x + 3 * resDiff.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
 
 	_g->PrintText(player->GetAmountOfElektro(), _firstPlayerPos.x + elektroPos.x,

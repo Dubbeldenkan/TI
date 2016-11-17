@@ -53,14 +53,24 @@ PowerPlantMarket* Game::GetPowerPlantMarket()
 
 int Game::GetBidForSelectedPowerPlant()
 {
-	return _phase2Struct._bidForSelectedPowerPlant;
+	return _phase2Struct.bidForSelectedPowerPlant;
+}
+
+ResourceMarket* Game::GetResourceMarket()
+{
+	return _rm;
+}
+
+void Game::SetButtonPressed()
+{
+	_phase3Struct.buttonPressed = true;
 }
 
 void Game::IncreaseNextBid(int change)
 {
-	_phase2Struct._buttonPressed = true;
-	_phase2Struct._nextBid = std::max(_phase2Struct._nextBid + change,
-		_phase2Struct._bidForSelectedPowerPlant + 1);
+	_phase2Struct.buttonPressed = true;
+	_phase2Struct.nextBid = std::max(_phase2Struct.nextBid + change,
+		_phase2Struct.bidForSelectedPowerPlant + 1);
 }
 
 void Game::SetNextPlayerInTurn(std::vector<Player*> *tempVector)
@@ -124,6 +134,15 @@ void Game::Run()
 	case 2:
 		Phase2();
 		break;
+	case 3:
+		Phase3();
+		break;
+	case 4:
+		Phase4();
+		break;
+	case 5:
+		Phase5();
+		break;
 	default:
 		break;
 	}
@@ -144,10 +163,10 @@ void Game::DrawBoard()
 	dI._resourceMarket = _rm;
 	dI._gamePhase = _gamePhase;
 
-	dI._selectedPowerPlant = _phase2Struct._selectedPowerPlant - 1;
-	dI._currentPowerPlantBiddingPrice = _phase2Struct._bidForSelectedPowerPlant;
-	dI._lastBiddingPlayer = _phase2Struct._lastBiddingPlayer;
-	dI._nextBid = _phase2Struct._nextBid;
+	dI._selectedPowerPlant = _phase2Struct.selectedPowerPlant - 1;
+	dI._currentPowerPlantBiddingPrice = _phase2Struct.bidForSelectedPowerPlant;
+	dI._lastBiddingPlayer = _phase2Struct.lastBiddingPlayer;
+	dI._nextBid = _phase2Struct.nextBid;
 	dI._placePowerPlant = _gameSubPhase == placePowerPlant;
 
 	_draw.DrawWholeBoard(&dI);
@@ -231,20 +250,20 @@ void Game::Phase2()
 			RemovePlayerFromTempVector(&_tempPlayerVector);
 			if (_tempPlayerVector.size() == 0)
 			{
-				_gameSubPhase = Game::nextPhase;
+				_gameSubPhase = nextPhase;
 			}
 			DrawBoard();
 		}
 		else if(_playerInTurn->GetSelectedPowerPlant() > 0)
 		{
-			_phase2Struct._selectedPowerPlant = _playerInTurn->GetSelectedPowerPlant();
-			_phase2Struct._bidForSelectedPowerPlant = 
-				_ppm.GetPowerPlantCurrentDeck(_phase2Struct._selectedPowerPlant - 1)->GetPowerPlantNumber();
+			_phase2Struct.selectedPowerPlant = _playerInTurn->GetSelectedPowerPlant();
+			_phase2Struct.bidForSelectedPowerPlant = 
+				_ppm.GetPowerPlantCurrentDeck(_phase2Struct.selectedPowerPlant - 1)->GetPowerPlantNumber();
 			_playerInTurn->ResetSelectedPowerPlant();
-			_phase2Struct._lastBiddingPlayer = _playerInTurn;
-			_phase2Struct._nextBid = _phase2Struct._bidForSelectedPowerPlant + 1;
+			_phase2Struct.lastBiddingPlayer = _playerInTurn;
+			_phase2Struct.nextBid = _phase2Struct.bidForSelectedPowerPlant + 1;
 			_gameSubPhase = bid;
-			_phase2Struct._bidPlayerVector = _tempPlayerVector;
+			_phase2Struct.bidPlayerVector = _tempPlayerVector;
 			SetNextPlayerInTurn(&_tempPlayerVector);
 			DrawBoard();
 		}
@@ -254,25 +273,25 @@ void Game::Phase2()
 	{
 		if (_playerInTurn->GetPassed())
 		{
-			RemovePlayerFromTempVector(&_phase2Struct._bidPlayerVector);
-			_phase2Struct._nextBid = _phase2Struct._bidForSelectedPowerPlant + 1;
+			RemovePlayerFromTempVector(&_phase2Struct.bidPlayerVector);
+			_phase2Struct.nextBid = _phase2Struct.bidForSelectedPowerPlant + 1;
 			DrawBoard();
 		}
-		else if (_phase2Struct._buttonPressed)
+		else if (_phase2Struct.buttonPressed)
 		{
-			_phase2Struct._buttonPressed = false;
+			_phase2Struct.buttonPressed = false;
 			DrawBoard();
 		}
 		else if (_playerInTurn->NewBid())
 		{
 			_playerInTurn->ResetBid();
-			_phase2Struct._bidForSelectedPowerPlant = _phase2Struct._nextBid;
-			_phase2Struct._lastBiddingPlayer = _playerInTurn;
-			_phase2Struct._nextBid = _phase2Struct._bidForSelectedPowerPlant + 1;
-			SetNextPlayerInTurn(&_phase2Struct._bidPlayerVector);
+			_phase2Struct.bidForSelectedPowerPlant = _phase2Struct.nextBid;
+			_phase2Struct.lastBiddingPlayer = _playerInTurn;
+			_phase2Struct.nextBid = _phase2Struct.bidForSelectedPowerPlant + 1;
+			SetNextPlayerInTurn(&_phase2Struct.bidPlayerVector);
 			DrawBoard();
 		}
-		else if (_phase2Struct._bidPlayerVector.size() == 1)
+		else if (_phase2Struct.bidPlayerVector.size() == 1)
 		{
 			_gameSubPhase = placePowerPlant;
 			DrawBoard();
@@ -283,14 +302,28 @@ void Game::Phase2()
 	{
 		if (_playerInTurn->GetNewPowerPlantPos() > -1)
 		{
-			_playerInTurn->AddPowerPlant(_ppm.GetPowerPlantCurrentDeck(_phase2Struct._selectedPowerPlant - 1),
-				_phase2Struct._bidForSelectedPowerPlant);
-			_ppm.RemovePowerPlant(_phase2Struct._selectedPowerPlant - 1);
+			_playerInTurn->AddPowerPlant(_ppm.GetPowerPlantCurrentDeck(_phase2Struct.selectedPowerPlant - 1),
+				_phase2Struct.bidForSelectedPowerPlant);
+			_ppm.RemovePowerPlant(_phase2Struct.selectedPowerPlant - 1);
 			RemovePlayerFromTempVector(&_tempPlayerVector);
-			_phase2Struct._selectedPowerPlant = 0;
-			_gameSubPhase = choosePowerPlant;
+			_phase2Struct.selectedPowerPlant = 0;
+			DrawBoard();
+			if (_tempPlayerVector.size() > 0)
+			{
+				_gameSubPhase = choosePowerPlant;
+			}
+			else
+			{
+				_gameSubPhase = nextPhase;
+			}
 			DrawBoard();
 		}
+		break;
+	}
+	case nextPhase:
+	{
+		_gamePhase++;
+		_gameSubPhase = initPhase;
 		break;
 	}
 	default:
@@ -300,7 +333,29 @@ void Game::Phase2()
 
 void Game::Phase3()
 {
-
+	switch (_gameSubPhase)
+	{
+	case initPhase:
+	{
+		_gameSubPhase = buyResources;
+		_playerInTurn = &_pv[0];
+		DrawBoard();
+		break;
+	}
+	case buyResources:
+	{
+		if (_phase3Struct.buttonPressed)
+		{
+			_phase3Struct.buttonPressed = false;
+			DrawBoard();
+		}
+		/*else if (_phase3Struct.DoneButtonPressed)
+		{
+			SetNextPlayerInTurn(_pv);
+		}*/
+		break;
+	}
+	}
 }
 
 void Game::Phase4()

@@ -2,6 +2,7 @@
 #define PLAYER_H
 
 #include "PowerPlant.h"
+#include "ResourceMarket.h"
 
 class Player
 {
@@ -28,6 +29,8 @@ private:
 
 	bool _newBid = false;
 
+	int RoomForResources(ResourceMarket::Resource);
+
 public:
 	Player(char*, Color);
 	~Player() {};
@@ -38,10 +41,11 @@ public:
 	PowerPlant* GetPowerPlant(int);
 	Player::Color GetColor();
 	int GetAmountOfElektro();
-	int GetAmountOfCoal();
+	/*int GetAmountOfCoal();
 	int GetAmountOfOil();
 	int GetAmountOfGarbage();
-	int GetAmountOfUran();
+	int GetAmountOfUran();*/
+	int GetAmountOfResource(ResourceMarket::Resource);
 
 	bool GetPassed();
 	void SetPassed();
@@ -59,6 +63,7 @@ public:
 	void SetSelectedPowerPlant(int);
 
 	void AddPowerPlant(PowerPlant*, int);
+	bool SetResource(ResourceMarket::Resource, int, int);
 };
 
 #endif // !PLAYER_H

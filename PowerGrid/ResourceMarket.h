@@ -38,6 +38,11 @@ public:
 	int GetAmountOfOil();
 	int GetAmountOfGarbage();
 	int GetAmountOfUran();
+
+	int GetResourceAmount(ResourceMarket::Resource);
+
+	int GetCost(int, ResourceMarket::Resource);
+	void MakeBuy(int, ResourceMarket::Resource);
 private:
 	int GetFirstResPos(Resource);
 	int GetPriceForPos(Resource, int);

@@ -110,3 +110,59 @@ int ResourceMarket::GetAmountOfUran()
 {
 	return _amountOfUranium;
 }
+
+int ResourceMarket::GetCost(int amount, ResourceMarket::Resource resource)
+{
+	int result = 0;
+	for (int index = 0; index < amount; index++)
+	{
+		int number = (MAX_AMOUNT_RESOURCE - GetResourceAmount(resource)) + index;
+		//TODO fixa för uran oxå
+		result += (number / 3) + 1;
+	}
+	return result;
+}
+
+int ResourceMarket::GetResourceAmount(ResourceMarket::Resource resource)
+{
+	int result;
+	switch (resource)
+	{
+	case ResourceMarket::coal:
+		result = _amountOfCoal;
+		break;
+	case ResourceMarket::oil:
+		result = _amountOfOil;
+		break;
+	case ResourceMarket::garbage:
+		result = _amountOfGarbage;
+		break;
+	case ResourceMarket::uranium:
+		result = _amountOfUranium;
+		break;
+	default:
+		break;
+	}
+	return result;
+}
+
+void ResourceMarket::MakeBuy(int amount, ResourceMarket::Resource resource)
+{
+	switch (resource)
+	{
+	case ResourceMarket::coal:
+		_amountOfCoal -= amount;
+		break;
+	case ResourceMarket::oil:
+		_amountOfOil -= amount;
+		break;
+	case ResourceMarket::garbage:
+		_amountOfGarbage -= amount;
+		break;
+	case ResourceMarket::uranium:
+		_amountOfUranium -= amount;
+		break;
+	default:
+		break;
+	}
+}

@@ -17,20 +17,25 @@
 class Game
 {
 public:
-	enum GameSubPhase {initPhase, choosePowerPlant, bid, placePowerPlant, nextPhase};
+	enum GameSubPhase {initPhase, choosePowerPlant, bid, placePowerPlant, nextPhase, buyResources};
 
 private:
 	static const int MAX_PLAYERS = 6;
 
 	struct Phase2Struct
 	{
-		int _selectedPowerPlant;
-		int _bidForSelectedPowerPlant;
-		Player* _lastBiddingPlayer;
-		int _nextBid;
-		bool _buttonPressed;
-		std::vector<Player*> _bidPlayerVector;
+		int selectedPowerPlant;
+		int bidForSelectedPowerPlant;
+		Player* lastBiddingPlayer;
+		int nextBid;
+		bool buttonPressed;
+		std::vector<Player*> bidPlayerVector;
 	}_phase2Struct;
+
+	struct Phase3Struct
+	{
+		bool buttonPressed = false;
+	}_phase3Struct;
 
 	int _numberOfPlayers;
 	int _gameTurn = 1;
@@ -59,10 +64,13 @@ public:
 	Draw* GetDraw();
 	Player* GetPlayerInTurn();
 	PowerPlantMarket* GetPowerPlantMarket();
+	ResourceMarket* GetResourceMarket();
 
 	void IncreaseNextBid(int);
 	int GetBidForSelectedPowerPlant();
 	int GetPlayerInTurnPosition();
+
+	void SetButtonPressed();
 
 private:
 	void SetNextPlayerInTurn(std::vector<Player*>*);

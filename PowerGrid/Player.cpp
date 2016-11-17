@@ -45,7 +45,7 @@ Player::Color Player::GetColor()
 	return _color;
 }
 
-int Player::GetAmountOfCoal()
+/*int Player::GetAmountOfCoal()
 {
 	return _amountOfCoal;
 }
@@ -63,6 +63,29 @@ int Player::GetAmountOfGarbage()
 int Player::GetAmountOfUran()
 {
 	return _amountOfUran;
+}*/
+
+int Player::GetAmountOfResource(ResourceMarket::Resource resource)
+{
+	int result = 0;
+	switch (resource)
+	{
+	case ResourceMarket::coal:
+		result = _amountOfCoal;
+		break;
+	case ResourceMarket::oil:
+		result = _amountOfOil;
+		break;
+	case ResourceMarket::garbage:
+		result = _amountOfGarbage;
+		break;
+	case ResourceMarket::uranium:
+		result = _amountOfUran;
+		break;
+	default:
+		break;
+	}
+	return result;
 }
 
 int Player::GetAmountOfElektro()
@@ -140,3 +163,61 @@ void Player::SetNewPowerPlantPos(int pos)
 {
 	_newPowerPlantPos = pos;
 }
+
+bool Player::SetResource(ResourceMarket::Resource resource, int amountOfResource, int cost)
+{
+	bool result = false;
+	switch (resource)
+	{
+	case ResourceMarket::coal:
+		if (cost <= _amountOfElektro && RoomForResources(resource) >= amountOfResource)
+		{
+			_amountOfCoal += amountOfResource;
+			_amountOfElektro -= cost;
+			result = true;
+		}
+		break;
+	case ResourceMarket::oil:
+		if (cost <= _amountOfElektro && RoomForResources(resource) >= amountOfResource)
+		{
+			_amountOfOil += amountOfResource;
+			_amountOfElektro -= cost;
+			result = true;
+		}
+		break;
+	case ResourceMarket::garbage:
+		if (cost <= _amountOfElektro && RoomForResources(resource) >= amountOfResource)
+		{
+			_amountOfGarbage += amountOfResource;
+			_amountOfElektro -= cost;
+			result = true;
+		}
+		break;
+	case ResourceMarket::uranium:
+		if (cost <= _amountOfElektro && RoomForResources(resource) >= amountOfResource)
+		{
+			_amountOfUran += amountOfResource;
+			_amountOfElektro -= cost;
+			result = true;
+		}
+		break;
+	default:
+		break;
+	}
+	return result;
+}
+
+int Player::RoomForResources(ResourceMarket::Resource resource)
+{
+	int roomForResource = 0;
+	for (int index = 0; index < numberOfPowerPlants; index++)
+	{
+		if (_powerPlants[index].GetType() == resource)
+		{
+			roomForResource += _powerPlants[index].GetPowerPlantConsumption()*2;
+		}
+	}
+	roomForResource -= GetAmountOfResource(resource);
+	return roomForResource;
+}
+
