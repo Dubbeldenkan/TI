@@ -38,7 +38,6 @@ Draw::Pos Draw::GetFirstCurrentPlantPos()
 
 Draw::Pos Draw::GetSizeOfPowerPlant()
 {
-	//TODO kanske göra denna uträkning lite snyggare
 	Pos pos = Pos(_powerPlantCoalImage.GetxSize(), _powerPlantCoalImage.GetYSize());
 	return pos;
 }

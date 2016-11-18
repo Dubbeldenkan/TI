@@ -146,7 +146,6 @@ void Player::AddPowerPlant(PowerPlant* powerPlant, int cost)
 	_powerPlants[_buyPlantStruct.newPowerPlantPos] = *powerPlant;
 	_amountOfElektro -= cost;
 	_buyPlantStruct.newPowerPlantPos = -1;
-	//TODO remove old powerPlants
 }
 
 int Player::GetNewPowerPlantPos()
