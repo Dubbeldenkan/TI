@@ -45,26 +45,6 @@ Player::Color Player::GetColor()
 	return _color;
 }
 
-/*int Player::GetAmountOfCoal()
-{
-	return _amountOfCoal;
-}
-
-int Player::GetAmountOfOil()
-{
-	return _amountOfOil;
-}
-
-int Player::GetAmountOfGarbage()
-{
-	return _amountOfGarbage;
-}
-
-int Player::GetAmountOfUran()
-{
-	return _amountOfUran;
-}*/
-
 int Player::GetAmountOfResource(ResourceMarket::Resource resource)
 {
 	int result = 0;
@@ -100,7 +80,7 @@ int Player::GetNumberOfSuppliedCities()
 
 int Player::GetSelectedPowerPlant()
 {
-	return _selectedPowerPlant;
+	return _buyPlantStruct.selectedPowerPlant;
 }
 
 bool Player::GetPassed()
@@ -120,91 +100,105 @@ void Player::ResetPassed()
 
 void Player::ResetSelectedPowerPlant()
 {
-	_selectedPowerPlant = 0;
+	_buyPlantStruct.selectedPowerPlant = 0;
 }
 
 void Player::SetSelectedPowerPlant(int powerPlant)
 {
-	_selectedPowerPlant = powerPlant;
+	_buyPlantStruct.selectedPowerPlant = powerPlant;
+}
+
+bool Player::GetTradeOk()
+{
+	return _buyResourceStruct.tradeOk;
+}
+
+int Player::GetAmountOfResource()
+{
+	return _buyResourceStruct.amountOfResource;
+}
+
+ResourceMarket::Resource Player::GetResourceType()
+{
+	return _buyResourceStruct.resource;
 }
 
 bool Player::NewBid()
 {
-	return _newBid;
+	return _buyPlantStruct.newBid;
 }
 
 void Player::SetBid(int bid)
 {
 	if (bid <= _amountOfElektro)
 	{
-		_newBid = true;
+		_buyPlantStruct.newBid = true;
 	}
 }
 
 void Player::ResetBid()
 {
-	_newBid = false;
+	_buyPlantStruct.newBid = false;
 }
 
 void Player::AddPowerPlant(PowerPlant* powerPlant, int cost)
 {
-	_powerPlants[_newPowerPlantPos] = *powerPlant;
+	_powerPlants[_buyPlantStruct.newPowerPlantPos] = *powerPlant;
 	_amountOfElektro -= cost;
-	_newPowerPlantPos = -1;
+	_buyPlantStruct.newPowerPlantPos = -1;
 	//TODO remove old powerPlants
 }
 
 int Player::GetNewPowerPlantPos()
 {
-	return _newPowerPlantPos;
+	return _buyPlantStruct.newPowerPlantPos;
 }
 
 void Player::SetNewPowerPlantPos(int pos)
 {
-	_newPowerPlantPos = pos;
+	_buyPlantStruct.newPowerPlantPos = pos;
 }
 
-bool Player::SetResource(ResourceMarket::Resource resource, int amountOfResource, int cost)
+void Player::TransferResources()
 {
-	bool result = false;
-	switch (resource)
+	switch (_buyResourceStruct.resource)
 	{
 	case ResourceMarket::coal:
-		if (cost <= _amountOfElektro && RoomForResources(resource) >= amountOfResource)
-		{
-			_amountOfCoal += amountOfResource;
-			_amountOfElektro -= cost;
-			result = true;
-		}
+	{
+		_amountOfCoal += _buyResourceStruct.amountOfResource;
+		_amountOfElektro -= _buyResourceStruct.cost;
 		break;
+	}
 	case ResourceMarket::oil:
-		if (cost <= _amountOfElektro && RoomForResources(resource) >= amountOfResource)
-		{
-			_amountOfOil += amountOfResource;
-			_amountOfElektro -= cost;
-			result = true;
-		}
+	{
+		_amountOfOil += _buyResourceStruct.amountOfResource;
+		_amountOfElektro -= _buyResourceStruct.cost;
 		break;
+	}
 	case ResourceMarket::garbage:
-		if (cost <= _amountOfElektro && RoomForResources(resource) >= amountOfResource)
-		{
-			_amountOfGarbage += amountOfResource;
-			_amountOfElektro -= cost;
-			result = true;
-		}
+	{
+		_amountOfGarbage += _buyResourceStruct.amountOfResource;
+		_amountOfElektro -= _buyResourceStruct.cost;
 		break;
+	}
 	case ResourceMarket::uranium:
-		if (cost <= _amountOfElektro && RoomForResources(resource) >= amountOfResource)
-		{
-			_amountOfUran += amountOfResource;
-			_amountOfElektro -= cost;
-			result = true;
-		}
+	{
+		_amountOfUran += _buyResourceStruct.amountOfResource;
+		_amountOfElektro -= _buyResourceStruct.cost;
 		break;
+	}
 	default:
 		break;
 	}
-	return result;
+	_buyResourceStruct.tradeOk = false;
+}
+
+void Player::SetBuyResourceStruct(ResourceMarket::Resource resource, int amountOfResource, int cost)
+{
+	_buyResourceStruct.cost = cost;
+	_buyResourceStruct.amountOfResource = amountOfResource;
+	_buyResourceStruct.resource = resource;
+	_buyResourceStruct.tradeOk = ((cost <= _amountOfElektro) && (RoomForResources(resource) >= amountOfResource));
 }
 
 int Player::RoomForResources(ResourceMarket::Resource resource)

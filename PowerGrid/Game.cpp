@@ -61,11 +61,6 @@ ResourceMarket* Game::GetResourceMarket()
 	return _rm;
 }
 
-void Game::SetButtonPressed()
-{
-	_phase3Struct.buttonPressed = true;
-}
-
 void Game::IncreaseNextBid(int change)
 {
 	_phase2Struct.buttonPressed = true;
@@ -338,29 +333,49 @@ void Game::Phase3()
 	case initPhase:
 	{
 		_gameSubPhase = buyResources;
-		_playerInTurn = &_pv[0];
+		for (int i = 0; i < _numberOfPlayers; i++)
+		{
+			_tempPlayerVector.push_back(&_pv[i]);
+		}
+		_playerInTurn = _tempPlayerVector[0];
 		DrawBoard();
 		break;
 	}
 	case buyResources:
 	{
-		if (_phase3Struct.buttonPressed)
+		if(_playerInTurn->GetTradeOk())
 		{
-			_phase3Struct.buttonPressed = false;
+			int resourceAmount = _playerInTurn->GetAmountOfResource();
+			ResourceMarket::Resource resource = _playerInTurn->GetResourceType();
+			_rm->TransferResources(resourceAmount, resource);
+			_playerInTurn->TransferResources();
 			DrawBoard();
 		}
-		/*else if (_phase3Struct.DoneButtonPressed)
+		else if (_playerInTurn->GetPassed())
 		{
-			SetNextPlayerInTurn(_pv);
-		}*/
+			RemovePlayerFromTempVector(&_tempPlayerVector);
+			if (_tempPlayerVector.size() < 1)
+			{
+				_gameSubPhase = nextPhase;
+			}
+			DrawBoard();
+		}
 		break;
 	}
+	case nextPhase:
+	{
+		_gamePhase++;
+		_gameSubPhase = initPhase;
+		break;
+	}
+	default:
+		break;
 	}
 }
 
 void Game::Phase4()
 {
-
+	int test = 4;
 }
 
 void Game::Phase5()

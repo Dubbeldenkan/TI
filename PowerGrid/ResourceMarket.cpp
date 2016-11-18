@@ -146,7 +146,7 @@ int ResourceMarket::GetResourceAmount(ResourceMarket::Resource resource)
 	return result;
 }
 
-void ResourceMarket::MakeBuy(int amount, ResourceMarket::Resource resource)
+void ResourceMarket::TransferResources(int amount, ResourceMarket::Resource resource)
 {
 	switch (resource)
 	{

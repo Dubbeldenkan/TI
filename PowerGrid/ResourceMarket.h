@@ -42,7 +42,7 @@ public:
 	int GetResourceAmount(ResourceMarket::Resource);
 
 	int GetCost(int, ResourceMarket::Resource);
-	void MakeBuy(int, ResourceMarket::Resource);
+	void TransferResources(int, ResourceMarket::Resource);
 private:
 	int GetFirstResPos(Resource);
 	int GetPriceForPos(Resource, int);

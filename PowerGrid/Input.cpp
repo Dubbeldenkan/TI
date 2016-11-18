@@ -68,27 +68,22 @@ void Input::MouseClick()
 		if (coalNumber > 0)
 		{
 			int cost = _game->GetResourceMarket()->GetCost(coalNumber, ResourceMarket::coal);
-			bool tradeOk = _game->GetPlayerInTurn()->SetResource(ResourceMarket::coal, coalNumber, cost);
-			if (tradeOk)
-			{
-				_game->GetResourceMarket()->MakeBuy(coalNumber, ResourceMarket::coal);
-				_game->SetButtonPressed();
-			}
+			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::coal, coalNumber, cost);
 		}
 		else if (oilNumber > 0)
 		{
 			int cost = _game->GetResourceMarket()->GetCost(oilNumber, ResourceMarket::oil);
-			bool tradeOk = _game->GetPlayerInTurn()->SetResource(ResourceMarket::oil, oilNumber, cost);
+			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::oil, oilNumber, cost);
 		}
 		else if (garbageNumber > 0)
 		{
-			//TODO
-			_game->GetPlayerInTurn()->SetResource(ResourceMarket::garbage, garbageNumber, 5);
+			int cost = _game->GetResourceMarket()->GetCost(garbageNumber, ResourceMarket::garbage);
+			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::garbage, garbageNumber, 5);
 		}
 		else if (uranNumber > 0)
 		{
-			//TODO
-			_game->GetPlayerInTurn()->SetResource(ResourceMarket::uranium, uranNumber, 5);
+			int cost = _game->GetResourceMarket()->GetCost(uranNumber, ResourceMarket::uranium);
+			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::uranium, uranNumber, 5);
 		}
 	}
 }
@@ -313,6 +308,7 @@ void InitWinMain(HINSTANCE* hInst, char winName[], Input* input)
 	wc.lpfnWndProc = input->MsgProc;
 	wc.hInstance = *hInst;
 	wc.lpszClassName = winName;
+	wc.hCursor = (HCURSOR)LoadCursor(0, IDC_ARROW);
 	RegisterClass(&wc);
 }
 

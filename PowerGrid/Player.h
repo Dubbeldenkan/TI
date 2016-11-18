@@ -9,6 +9,21 @@ class Player
 public:
 	enum Color{red, blue, yellow, black, green, purple};
 	const static int numberOfPowerPlants = 3;
+	struct BuyResourceStruct
+	{
+		ResourceMarket::Resource resource;
+		int amountOfResource;
+		int cost;
+		bool tradeOk = false;
+	};
+
+	struct BuyPlantStruct
+	{
+		int selectedPowerPlant = 0;
+		bool newBid = false;
+		int newPowerPlantPos = -1;
+	};
+
 private:
 	Color _color;
 	char* _playerName;
@@ -18,18 +33,13 @@ private:
 	int _amountOfElektro;
 	PowerPlant _powerPlants[numberOfPowerPlants];
 
-	int _newPowerPlantPos = -1;
-
 	int _amountOfCoal = 0;
 	int _amountOfOil = 0;
 	int _amountOfGarbage = 0;
 	int _amountOfUran = 0;
 
-	int _selectedPowerPlant = 0;
-
-	bool _newBid = false;
-
-	int RoomForResources(ResourceMarket::Resource);
+	BuyResourceStruct _buyResourceStruct;
+	BuyPlantStruct _buyPlantStruct;
 
 public:
 	Player(char*, Color);
@@ -41,10 +51,6 @@ public:
 	PowerPlant* GetPowerPlant(int);
 	Player::Color GetColor();
 	int GetAmountOfElektro();
-	/*int GetAmountOfCoal();
-	int GetAmountOfOil();
-	int GetAmountOfGarbage();
-	int GetAmountOfUran();*/
 	int GetAmountOfResource(ResourceMarket::Resource);
 
 	bool GetPassed();
@@ -63,7 +69,15 @@ public:
 	void SetSelectedPowerPlant(int);
 
 	void AddPowerPlant(PowerPlant*, int);
-	bool SetResource(ResourceMarket::Resource, int, int);
+	void SetBuyResourceStruct(ResourceMarket::Resource, int, int);
+	void TransferResources();
+	
+	bool GetTradeOk();
+	int GetAmountOfResource();
+	ResourceMarket::Resource GetResourceType();
+
+private:
+	int RoomForResources(ResourceMarket::Resource);
 };
 
 #endif // !PLAYER_H

@@ -32,11 +32,6 @@ private:
 		std::vector<Player*> bidPlayerVector;
 	}_phase2Struct;
 
-	struct Phase3Struct
-	{
-		bool buttonPressed = false;
-	}_phase3Struct;
-
 	int _numberOfPlayers;
 	int _gameTurn = 1;
 	int _gameStep = 1;
