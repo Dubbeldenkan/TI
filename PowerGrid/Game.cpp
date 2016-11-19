@@ -413,7 +413,7 @@ void Game::Phase4()
 			{
 				City* city = _board.GetCityFromName(_playerInTurn->GetNewCityName());
 				city->SetFirstFreePos((int) _playerInTurn->GetColor());
-				_playerInTurn->BuyCity(cityCost, city);
+				_playerInTurn->BuyCity(cityCost + roadCost, city);
 				DrawBoard();
 			}
 			else

@@ -12,7 +12,7 @@ class Board
 	std::vector<int> _usedRegions;
 	char* _mapName;
 	Image _mapImage;
-	std::map<char*, City*> _cityDict;
+	std::map<std::string, City*> _cityDict;
 	std::map<std::string, int> _edgeDict;
 
 public:
@@ -24,8 +24,8 @@ public:
 	Image* GetMapImage();
 	char* GetMapName();
 	//TODO behövs dessa här under?
-	std::map<char*, City*>::iterator GetCityDictFirstIterator();
-	std::map<char*, City*>::iterator GetCityDictLastIterator();
+	std::map<std::string, City*>::iterator GetCityDictFirstIterator();
+	std::map<std::string, City*>::iterator GetCityDictLastIterator();
 	std::vector<int> GetRegionsInPlay();
 	bool CityIsInUsedRegion(City*);
 	City* GetCityFromName(char*);

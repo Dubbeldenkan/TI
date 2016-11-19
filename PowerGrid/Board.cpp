@@ -93,6 +93,10 @@ void Board::InitMap()
 	_edgeDict["Denver-Santa Fe"] = 13;
 	_edgeDict["Denver-Kansas City"] = 16;
 
+	_edgeDict["Minneapolis-Omaha"] = 8;
+	_edgeDict["Chicago-Omaha"] = 13;
+	_edgeDict["Kansas City-Omaha"] = 8;
+
 	//Region 1
 	//San Fransisco
 	_edgeDict["San Fransisco-Salt Lake City"] = 27;
@@ -240,12 +244,12 @@ char* Board::GetMapName()
 	return _mapName;
 }
 
-std::map<char*, City*>::iterator Board::GetCityDictFirstIterator()
+std::map<std::string, City*>::iterator Board::GetCityDictFirstIterator()
 {
 	return _cityDict.begin();
 }
 
-std::map<char*, City*>::iterator Board::GetCityDictLastIterator()
+std::map<std::string, City*>::iterator Board::GetCityDictLastIterator()
 {
 	return _cityDict.end();
 }
@@ -285,11 +289,11 @@ int Board::GetRoadCost(std::vector<City*> cityVector, char* cityName)
 	{
 		struct CityDist
 		{
-			CityDist(City* cityIn, City* parentCityIn, int distIn)
+			CityDist(City* cityIn, int distIn, City* parentCityIn)
 			{
 				city = cityIn;
-				parentCity = parentCityIn;
 				dist = distIn;
+				parentCity = parentCityIn;
 			}
 			City* city;
 			City* parentCity;
@@ -299,18 +303,51 @@ int Board::GetRoadCost(std::vector<City*> cityVector, char* cityName)
 		};
 		std::vector<CityDist> distVector;
 		bool finished = false;
-		distVector.push_back(CityDist(GetCityFromName(cityName), NULL, 0));
-		int lowestCost = MAXINT;
+		distVector.push_back(CityDist(GetCityFromName(cityName), 0, NULL));
+		int cost;
 		int index = 0;
 		while (!finished)
 		{
-			CityDist* currentCityDist = &distVector[index];
-			currentCityDist->neighbourCities = GetNeighbourCities(currentCityDist->city);
-
-			index++;
+			for (int vectorIndex = 0; vectorIndex < cityVector.size(); vectorIndex++)
+			{
+				if (cityVector[vectorIndex]->GetName() == distVector[index].city->GetName())
+				{
+					finished = true;
+					cost = distVector[index].dist;
+				}
+			}
+			distVector[index].neighbourCities = GetNeighbourCities(distVector[index].city);
+			for (int vectorIndex = 0; vectorIndex < distVector[index].neighbourCities.size(); vectorIndex++)
+			{
+				bool alreadyExist = false;
+				for (int i = 0; i < distVector.size(); i++)
+				{
+					if (distVector[i].city->GetName() == distVector[index].neighbourCities[vectorIndex]->GetName())
+					{
+						alreadyExist = true;
+						break;
+					}
+				}
+				if (!alreadyExist)
+				{
+					int cityDist = distVector[index].dist + GetCostBetweenTwoCities(distVector[index].city->GetName(),
+						distVector[index].neighbourCities[vectorIndex]->GetName());
+					distVector.push_back(CityDist(distVector[index].neighbourCities[vectorIndex],
+						cityDist, distVector[index].city));
+				}
+			}
+			distVector[index].searchFinished = true;
+			int lowestCost = MAXINT;
+			for (int i = 0; i < distVector.size(); i++)
+			{
+				if (!distVector[i].searchFinished && (lowestCost > distVector[i].dist))
+				{
+					lowestCost = distVector[i].dist;
+					index = i;
+				}
+			}
 		}
-		//TODO ta bort
-		result = 1;
+		result = cost;
 	}
 	return result;
 }
@@ -326,8 +363,28 @@ std::vector<City*> Board::GetNeighbourCities(City* city)
 		int cityNamePos = mapName.find(cityName);
 		if (cityNamePos > -1)
 		{
-			int test = 2;
-			//TODO lägg till städerna i den returnerade vektor
+			City* city;
+			if (cityNamePos != 0)
+			{
+				int barPos = mapName.find("-");
+				std::string cityNameString = mapName.substr(0, barPos);
+				const char* constSecondCityName = cityNameString.c_str();
+				char* secondCityName = (char*)constSecondCityName;
+				city = GetCityFromName(secondCityName);
+			}
+			else
+			{
+				int barPos = mapName.find("-");
+				int secondCityNameLength = mapName.size() - barPos;
+				std::string cityNameString = mapName.substr(barPos + 1, secondCityNameLength);
+				const char* constSecondCityName = cityNameString.c_str();
+				char* secondCityName = (char*)constSecondCityName;
+				city = GetCityFromName(secondCityName);
+			}
+			if (CityIsInUsedRegion(city))
+			{
+				neighbourCities.push_back(city);
+			}
 		}
 	}
 	return neighbourCities;

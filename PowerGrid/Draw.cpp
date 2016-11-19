@@ -166,7 +166,7 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 void Draw::DrawBoard(Board* board, std::vector<int> usedRegions)
 {
 	_g->Draw(board->GetMapImage(), _mapPos.x, _mapPos.y, _mapPos.s);
-	typedef std::map<char*, City*>::iterator it_type;
+	typedef std::map<std::string, City*>::iterator it_type;
 	for (it_type it = board->GetCityDictFirstIterator(); it != board->GetCityDictLastIterator(); it++)
 	{
 		for (int index = 0; index < usedRegions.size(); index++)

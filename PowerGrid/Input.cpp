@@ -100,7 +100,7 @@ char* Input::GetPressedCityName()
 {
 	Board* board = _game->GetBoard();
 	char* result = "";
-	typedef std::map<char*, City*>::iterator it_type;
+	typedef std::map<std::string, City*>::iterator it_type;
 	for (it_type it = board->GetCityDictFirstIterator(); it != board->GetCityDictLastIterator(); it++)
 	{
 		City* tempCity = it->second;
