@@ -29,6 +29,14 @@ Draw::Draw(HWND* hWnd, Board* board)
 	_oilImage = _g->LoadImage("Resources/Oil.png");
 	_garbageImage = _g->LoadImage("Resources/Garbage.png");
 	_uranImage = _g->LoadImage("Resources/Uran.png");
+
+	//houses
+	_redHouse = _g->LoadImage("Player/RedPlayerHouse.png");
+	_blueHouse = _g->LoadImage("Player/BluePlayerHouse.png");
+	_purpleHouse = _g->LoadImage("Player/PurplePlayerHouse.png");
+	_yellowHouse = _g->LoadImage("Player/YellowPlayerHouse.png");
+	_blackHouse = _g->LoadImage("Player/BlackPlayerHouse.png");
+	_greenHouse = _g->LoadImage("Player/GreenPlayerHouse.png");
 }
 
 Draw::Pos Draw::GetFirstCurrentPlantPos()
@@ -123,6 +131,12 @@ Draw::Pos Draw::GetSizeOfResource()
 	return pos;
 }
 
+Draw::Pos Draw::GetSizeOfCity()
+{
+	Pos pos = Pos(_cityLabel.GetxSize(), _cityLabel.GetYSize());
+	return pos;
+}
+
 void Draw::DrawWholeBoard(DrawInput* dI)
 {
 	_g->SetTextSize(8);
@@ -143,16 +157,7 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	{
 		DrawButton(&_redButton, "Klar", _passButtonPos);
 	}
-	if (dI->_selectedPowerPlant > -1 && !dI->_placePowerPlant)
-	{
-		PrintPlantForSale(dI->_powerPlantMarket->GetPowerPlantCurrentDeck(dI->_selectedPowerPlant),
-			dI->_currentPowerPlantBiddingPrice, dI->_lastBiddingPlayer->GetName());
-		DrawBidButtons(dI->_nextBid);
-	}
-	else if (dI->_placePowerPlant)
-	{
-		PrintPlacePowerPlant();
-	}
+	PrintText(dI);
 	DrawResourceMarket(dI->_resourceMarket);
 	_g->StopDrawing();
 	_g->Flip();
@@ -177,7 +182,51 @@ void Draw::DrawBoard(Board* board, std::vector<int> usedRegions)
 void Draw::DrawCity(City* city)
 {
 	Pos cityNamePos = Pos(1, 18);
+	Pos firstColorPos = Pos(3, 2);
+	Pos colorDiff = Pos(10, 0);
 	_g->Draw(&_cityLabel, city->GetXPos(), city->GetYPos(), 1);
+	for (int index = 0; index < 3; index++)
+	{
+		Image* image = NULL;
+		switch (city->GetColorForPos(index))
+		{
+		case City::red:
+		{
+			image = &_redHouse;
+			break;
+		}
+		case City::blue:
+		{
+			image = &_blueHouse;
+			break;
+		}
+		case City::black:
+		{
+			image = &_blackHouse;
+			break;
+		}
+		case City::yellow:
+		{
+			image = &_yellowHouse;
+			break;
+		}
+		case City::green:
+		{
+			image = &_greenHouse;
+			break;
+		}
+		case City::purple:
+		{
+			image = &_purpleHouse;
+			break;
+		}
+		}
+		if (image != NULL)
+		{
+			_g->Draw(image, city->GetXPos() + firstColorPos.x + colorDiff.x*index, 
+				city->GetYPos() + firstColorPos.y, 1);
+		}
+	}
 	_g->PrintText(city->GetName(), city->GetXPos() + cityNamePos.x, 
 		city->GetYPos() + cityNamePos.y, Graphics::WHITE);
 }
@@ -265,12 +314,12 @@ void Draw::PrintPlantForSale(PowerPlant* powerPlant, int bidingPrice, char* play
 	str = str + strNumber;
 	str = str + " elek till ";
 	str = str + std::string(playerName);
-	_g->PrintText((char*)str.c_str(), _infoTextPos.x, _infoTextPos.y, Graphics::WHITE, 15);
+	PrintHelpText((char*)str.c_str());
 }
 
-void Draw::PrintPlacePowerPlant()
+void Draw::PrintHelpText(char* text)
 {
-	_g->PrintText("Välj position för verket.", _infoTextPos.x, _infoTextPos.y, Graphics::WHITE,	15);
+	_g->PrintText(text, _infoTextPos.x, _infoTextPos.y, Graphics::WHITE, 15);
 }
 
 void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
@@ -448,5 +497,42 @@ void Draw::DrawResource(int numberOfResources, ResourceMarket::Resource type)
 				_g->Draw(tempImage, firstPos.x + resourceDiff.x*index, firstPos.y, 1);
 			}
 		}
+	}
+}
+
+void Draw::PrintText(DrawInput* dI)
+{
+	switch (dI->_gamePhase)
+	{
+	case 2:
+	{
+		if (dI->_selectedPowerPlant > -1 && !dI->_placePowerPlant)
+		{
+			PrintPlantForSale(dI->_powerPlantMarket->GetPowerPlantCurrentDeck(dI->_selectedPowerPlant),
+				dI->_currentPowerPlantBiddingPrice, dI->_lastBiddingPlayer->GetName());
+			DrawBidButtons(dI->_nextBid);
+		}
+		else if (dI->_placePowerPlant)
+		{
+			PrintHelpText("Välj position för verket");
+		}
+		else
+		{
+			PrintHelpText("Välj ett kraftverk");
+		}
+		break;
+	}
+	case 3:
+	{
+		PrintHelpText("Köp Resurser");
+		break;
+	}
+	case 4:
+	{
+		PrintHelpText("Bygg städer");
+		break;
+	}
+	default:
+		break;
 	}
 }

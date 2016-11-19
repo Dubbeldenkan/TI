@@ -13,7 +13,7 @@ Board::Board(std::vector<int> usedRegions, char* fileName)
 void Board::InsertCityInDict(char* name, int region, int xPos, int yPos)
 {
 	City* tempCity = new City(name, region, xPos, yPos);
-	cityDict[name] = tempCity;
+	_cityDict[name] = tempCity;
 }
 
 void Board::InitMap()
@@ -69,159 +69,160 @@ void Board::InitMap()
 
 	//create edges
 	//region 0
-	EdgeDict["Portland-Seattle"] = 3;
-	EdgeDict["Billings-Seattle"] = 9;
-	EdgeDict["Boise-Seattle"] = 12;
+	_edgeDict["Portland-Seattle"] = 3;
+	_edgeDict["Billings-Seattle"] = 9;
+	_edgeDict["Boise-Seattle"] = 12;
 	
-	EdgeDict["Portland-San Fransisco"] = 24;
-	EdgeDict["Boise-Portland"] = 13;
+	_edgeDict["Portland-San Fransisco"] = 24;
+	_edgeDict["Boise-Portland"] = 13;
 	
-	EdgeDict["Billings-Boise"] = 12;
-	EdgeDict["Boise-San Fransisco"] = 23;
-	EdgeDict["Boise-Salt Lake City"] = 8;
-	EdgeDict["Boise-Cheyenne"] = 24;
+	_edgeDict["Billings-Boise"] = 12;
+	_edgeDict["Boise-San Fransisco"] = 23;
+	_edgeDict["Boise-Salt Lake City"] = 8;
+	_edgeDict["Boise-Cheyenne"] = 24;
 
-	EdgeDict["Billings-Cheyenne"] = 9;
-	EdgeDict["Billings-Fargo"] = 17;
-	EdgeDict["Billings-Minneapolis"] = 18;
+	_edgeDict["Billings-Cheyenne"] = 9;
+	_edgeDict["Billings-Fargo"] = 17;
+	_edgeDict["Billings-Minneapolis"] = 18;
 
-	EdgeDict["Cheyenne-Denver"] = 0;
-	EdgeDict["Cheyenne-Omaha"] = 14;
-	EdgeDict["Cheyenne-Minneapolis"] = 18;
+	_edgeDict["Cheyenne-Denver"] = 0;
+	_edgeDict["Cheyenne-Omaha"] = 14;
+	_edgeDict["Cheyenne-Minneapolis"] = 18;
 
-	EdgeDict["Denver-Salt Lake City"] = 21;
-	EdgeDict["Denver-Santa Fe"] = 13;
-	EdgeDict["Denver-Kansas City"] = 16;
+	_edgeDict["Denver-Salt Lake City"] = 21;
+	_edgeDict["Denver-Santa Fe"] = 13;
+	_edgeDict["Denver-Kansas City"] = 16;
 
 	//Region 1
 	//San Fransisco
-	EdgeDict["San Fransisco-Salt Lake City"] = 27;
-	EdgeDict["Las Vegas-San Fransisco"] = 14;
-	EdgeDict["Los Angeles-San Fransisco"] = 9;
+	_edgeDict["San Fransisco-Salt Lake City"] = 27;
+	_edgeDict["Las Vegas-San Fransisco"] = 14;
+	_edgeDict["Los Angeles-San Fransisco"] = 9;
 	
 	//Los Angeles
-	EdgeDict["Las Vegas-Los Angeles"] = 9;
-	EdgeDict["Los Angeles-San Diego"] = 3;
+	_edgeDict["Las Vegas-Los Angeles"] = 9;
+	_edgeDict["Los Angeles-San Diego"] = 3;
 
 	//Las Vegas
-	EdgeDict["Las Vegas-Phoenix"] = 15;
-	EdgeDict["Las Vegas-San Diego"] = 9;
-	EdgeDict["Las Vegas-Salt Lake City"] = 18;
-	EdgeDict["Las Vegas-Santa Fe"] = 27;
+	_edgeDict["Las Vegas-Phoenix"] = 15;
+	_edgeDict["Las Vegas-San Diego"] = 9;
+	_edgeDict["Las Vegas-Salt Lake City"] = 18;
+	_edgeDict["Las Vegas-Santa Fe"] = 27;
 
 	//San Diego
-	EdgeDict["Phoenix-San Diego"] = 14;
+	_edgeDict["Phoenix-San Diego"] = 14;
 
 	//Pheonix
-	EdgeDict["Phoenix-Santa Fe"] = 18;
+	_edgeDict["Phoenix-Santa Fe"] = 18;
 
 	//Salt Lake City
-	EdgeDict["Salt Lake City-Santa Fe"] = 28;
+	_edgeDict["Salt Lake City-Santa Fe"] = 28;
 
 	//Santa Fe
-	EdgeDict["Kansas City-Santa Fe"] = 16;
-	EdgeDict["Oklahoma City-Santa Fe"] = 15;
-	EdgeDict["Dallas-Santa Fe"] = 16;
-	EdgeDict["Houston-Santa Fe"] = 21;
+	_edgeDict["Kansas City-Santa Fe"] = 16;
+	_edgeDict["Oklahoma City-Santa Fe"] = 15;
+	_edgeDict["Dallas-Santa Fe"] = 16;
+	_edgeDict["Houston-Santa Fe"] = 21;
 
 	//Region 2
 	//Fargo
-	EdgeDict["Fargo-Minneapolis"] = 6;
-	EdgeDict["Duluth-Fargo"] = 6;
+	_edgeDict["Fargo-Minneapolis"] = 6;
+	_edgeDict["Duluth-Fargo"] = 6;
 
 	//Duluth
-	EdgeDict["Detroit-Duluth"] = 15;
-	EdgeDict["Chicago-Duluth"] = 12;
-	EdgeDict["Duluth-Minneapolis"] = 5;
+	_edgeDict["Detroit-Duluth"] = 15;
+	_edgeDict["Chicago-Duluth"] = 12;
+	_edgeDict["Duluth-Minneapolis"] = 5;
 
 	//Minneapolis
-	EdgeDict["Chicago-Minneapolis"] = 8;
+	_edgeDict["Chicago-Minneapolis"] = 8;
 
 	//Chicago
-	EdgeDict["Chicago-Kansas City"] = 8;
-	EdgeDict["Chicago-St. Louis"] = 10;
-	EdgeDict["Chicago-Cincinnati"] = 7;
-	EdgeDict["Chicago-Detroit"] = 7;
+	_edgeDict["Chicago-Kansas City"] = 8;
+	_edgeDict["Chicago-St. Louis"] = 10;
+	_edgeDict["Chicago-Cincinnati"] = 7;
+	_edgeDict["Chicago-Detroit"] = 7;
 
 	//St. Louis
-	EdgeDict["Kansas City-St. Louis"] = 6;
-	EdgeDict["Memphis-St. Louis"] = 7;
-	EdgeDict["Atlanta-St. Louis"] = 12;
-	EdgeDict["Cincinnati-St. Louis"] = 12;
+	_edgeDict["Kansas City-St. Louis"] = 6;
+	_edgeDict["Memphis-St. Louis"] = 7;
+	_edgeDict["Atlanta-St. Louis"] = 12;
+	_edgeDict["Cincinnati-St. Louis"] = 12;
 
 	//Cincinnati
-	EdgeDict["Cincinnati-Knoxville"] = 6;
-	EdgeDict["Cincinnati-Raleigh"] = 15;
-	EdgeDict["Cincinnati-Pittsburgh"] = 7;
-	EdgeDict["Cincinnati-Detroit"] = 4;
+	char* temp = "Cincinnati-Knoxville";
+	_edgeDict[temp] = 6;
+	_edgeDict["Cincinnati-Raleigh"] = 15;
+	_edgeDict["Cincinnati-Pittsburgh"] = 7;
+	_edgeDict["Cincinnati-Detroit"] = 4;
 
 	//Knoxville
-	EdgeDict["Atlanta-Knoxville"] = 5;
+	_edgeDict["Atlanta-Knoxville"] = 5;
 
 	//Region 3
 	//Kansas city
-	EdgeDict["Kansas City-Oklahoma City"] = 8;
-	EdgeDict["Kansas City-Memphis"] = 12;
+	_edgeDict["Kansas City-Oklahoma City"] = 8;
+	_edgeDict["Kansas City-Memphis"] = 12;
 
 	//Oklahoma City
-	EdgeDict["Memphis-Oklahoma City"] = 14;
-	EdgeDict["Dallas-Oklahoma City"] = 3;
+	_edgeDict["Memphis-Oklahoma City"] = 14;
+	_edgeDict["Dallas-Oklahoma City"] = 3;
 
 	//Dallas
-	EdgeDict["Dallas-Memphis"] = 12;
-	EdgeDict["Dallas-New Orleans"] = 12;
-	EdgeDict["Dallas-Houston"] = 5;
+	_edgeDict["Dallas-Memphis"] = 12;
+	_edgeDict["Dallas-New Orleans"] = 12;
+	_edgeDict["Dallas-Houston"] = 5;
 
 	//Houston
-	EdgeDict["Houston-New Orleans"] = 8;
+	_edgeDict["Houston-New Orleans"] = 8;
 
 	//Memphis
-	EdgeDict["Birmingham-Memphis"] = 6;
-	EdgeDict["Memphis-New Orleans"] = 7;
+	_edgeDict["Birmingham-Memphis"] = 6;
+	_edgeDict["Memphis-New Orleans"] = 7;
 
 	//New Orleans
-	EdgeDict["Birmingham-New Orleans"] = 11;
-	EdgeDict["JacksonVille-New Orleans"] = 16;
+	_edgeDict["Birmingham-New Orleans"] = 11;
+	_edgeDict["JacksonVille-New Orleans"] = 16;
 
 	//Birmingham
-	EdgeDict["Atlanta-Birmingham"] = 3;
-	EdgeDict["Birmingham-Jacksonville"] = 9;
+	_edgeDict["Atlanta-Birmingham"] = 3;
+	_edgeDict["Birmingham-Jacksonville"] = 9;
 
 	//Region 4
 	//Detroit
-	EdgeDict["Buffalo-Detroit"] = 7;
-	EdgeDict["Detroit-Pittsburgh"] = 6;
+	_edgeDict["Buffalo-Detroit"] = 7;
+	_edgeDict["Detroit-Pittsburgh"] = 6;
 
 	//Buffalo
-	EdgeDict["Buffalo-Pittsburgh"] = 7;
-	EdgeDict["Buffalo-New York"] = 8;
+	_edgeDict["Buffalo-Pittsburgh"] = 7;
+	_edgeDict["Buffalo-New York"] = 8;
 
 	//Boston
-	EdgeDict["Boston-New York"] = 3;
+	_edgeDict["Boston-New York"] = 3;
 
 	//New York
-	EdgeDict["New York-Philadelphia"] = 0;
+	_edgeDict["New York-Philadelphia"] = 0;
 
 	//Philadelphia
-	EdgeDict["Philadelphia-Washington DC"] = 3;
+	_edgeDict["Philadelphia-Washington DC"] = 3;
 
 	//Washington
-	EdgeDict["Pittsburgh-Washington DC"] = 6;
-	EdgeDict["Norfolk-Washington DC"] = 5;
+	_edgeDict["Pittsburgh-Washington DC"] = 6;
+	_edgeDict["Norfolk-Washington DC"] = 5;
 
 	//Region 5
 	//Raleigh
-	EdgeDict["Norfolk-Raleigh"] = 3;
-	EdgeDict["Atlanta-Raleigh"] = 7;
-	EdgeDict["Raleigh-Savannah"] = 7;
+	_edgeDict["Norfolk-Raleigh"] = 3;
+	_edgeDict["Atlanta-Raleigh"] = 7;
+	_edgeDict["Raleigh-Savannah"] = 7;
 
 	//Savannah
-	EdgeDict["Atlanta-Savannah"] = 7;
-	EdgeDict["Jacksonville-Savannah"] = 0;
+	_edgeDict["Atlanta-Savannah"] = 7;
+	_edgeDict["Jacksonville-Savannah"] = 0;
 
 	//Tampa
-	EdgeDict["Jacksonville-Tampa"] = 4;
-	EdgeDict["Miami-Tampa"] = 4;
+	_edgeDict["Jacksonville-Tampa"] = 4;
+	_edgeDict["Miami-Tampa"] = 4;
 }
 
 void Board::SetMapImage(Image image)
@@ -241,15 +242,110 @@ char* Board::GetMapName()
 
 std::map<char*, City*>::iterator Board::GetCityDictFirstIterator()
 {
-	return cityDict.begin();
+	return _cityDict.begin();
 }
 
 std::map<char*, City*>::iterator Board::GetCityDictLastIterator()
 {
-	return cityDict.end();
+	return _cityDict.end();
 }
 
 std::vector<int> Board::GetRegionsInPlay()
 {
 	return _usedRegions;
+}
+
+bool Board::CityIsInUsedRegion(City* city)
+{
+	bool result = false;
+	for (int index = 0; index < _usedRegions.size(); index++)
+	{
+		if (city->GetRegion() == _usedRegions[index])
+		{
+			result = true;
+			break;
+		}
+	}
+	return result;
+}
+
+City* Board::GetCityFromName(char* name)
+{
+	return _cityDict[name];
+}
+
+int Board::GetRoadCost(std::vector<City*> cityVector, char* cityName)
+{
+	int result;
+	if (cityVector.empty())
+	{
+		result = 0;
+	}
+	else
+	{
+		struct CityDist
+		{
+			CityDist(City* cityIn, City* parentCityIn, int distIn)
+			{
+				city = cityIn;
+				parentCity = parentCityIn;
+				dist = distIn;
+			}
+			City* city;
+			City* parentCity;
+			int dist;
+			std::vector<City*> neighbourCities;
+			bool searchFinished = false;
+		};
+		std::vector<CityDist> distVector;
+		bool finished = false;
+		distVector.push_back(CityDist(GetCityFromName(cityName), NULL, 0));
+		int lowestCost = MAXINT;
+		int index = 0;
+		while (!finished)
+		{
+			CityDist* currentCityDist = &distVector[index];
+			currentCityDist->neighbourCities = GetNeighbourCities(currentCityDist->city);
+
+			index++;
+		}
+		//TODO ta bort
+		result = 1;
+	}
+	return result;
+}
+
+std::vector<City*> Board::GetNeighbourCities(City* city)
+{
+	std::string cityName = city->GetName();
+	std::vector<City*> neighbourCities;
+	typedef std::map<std::string, int>::iterator it_type;
+	for (it_type it = _edgeDict.begin(); it != _edgeDict.end(); it++) 
+	{
+		std::string mapName = it->first;
+		int cityNamePos = mapName.find(cityName);
+		if (cityNamePos > -1)
+		{
+			int test = 2;
+			//TODO lägg till städerna i den returnerade vektor
+		}
+	}
+	return neighbourCities;
+}
+
+int Board::GetCostBetweenTwoCities(char* firstCity, char* secondCity)
+{
+	bool firstCityFirst = strcmp(firstCity, secondCity) < 0;
+	std::string roadName = "";
+	if (firstCityFirst)
+	{
+		roadName = std::string(firstCity) + '-';
+		roadName += std::string(secondCity);
+	}
+	else
+	{
+		roadName = std::string(secondCity) + '-';
+		roadName += std::string(firstCity);
+	}
+	return _edgeDict[roadName];
 }

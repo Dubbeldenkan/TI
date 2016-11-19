@@ -3,6 +3,8 @@
 
 #include "PowerPlant.h"
 #include "ResourceMarket.h"
+#include "City.h"
+#include <vector>
 
 class Player
 {
@@ -24,9 +26,10 @@ public:
 		int newPowerPlantPos = -1;
 	};
 
-	struct BuyCity
+	struct BuyCityStruct
 	{
 		bool clickedOnNewCity = false;
+		char* newCityName;
 	};
 
 private:
@@ -37,6 +40,7 @@ private:
 	int _numberOfCitiesInNetwork = 0;
 	int _amountOfElektro;
 	PowerPlant _powerPlants[numberOfPowerPlants];
+	std::vector<City*> _cityVector;
 
 	int _amountOfCoal = 0;
 	int _amountOfOil = 0;
@@ -45,10 +49,12 @@ private:
 
 	BuyResourceStruct _buyResourceStruct;
 	BuyPlantStruct _buyPlantStruct;
-	BuyCity _buyCity;
+	BuyCityStruct _buyCityStruct;
+
+	bool _humanPlayer;
 
 public:
-	Player(char*, Color);
+	Player(char*, Color, bool);
 	~Player() {};
 	int GetNumberOfCitiesInNetwork();
 	int GetNumberOfSuppliedCities();
@@ -83,9 +89,16 @@ public:
 	ResourceMarket::Resource GetResourceType();
 
 	bool GetClickedOnNewCity();
+	void SetBuyCityStruct(char*);
+	char* GetNewCityName();
+	bool CanAffordCost(int);
+	void BuyCity(int, City*);
+	void ResetClickedOnNewCity();
+	std::vector<City*> GetCityVector();
 
 private:
 	int RoomForResources(ResourceMarket::Resource);
+	bool HaveThatCity(char*);
 };
 
 #endif // !PLAYER_H

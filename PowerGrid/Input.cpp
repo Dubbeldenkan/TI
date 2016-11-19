@@ -86,6 +86,35 @@ void Input::MouseClick()
 			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::uranium, uranNumber, 5);
 		}
 	}
+	else if (_game->GetCurrentPhase() == 4)
+	{
+		char* cityName = GetPressedCityName();
+		if (strcmp(cityName, "") > 0)
+		{
+			_game->GetPlayerInTurn()->SetBuyCityStruct(cityName);
+		}
+	}
+}
+
+char* Input::GetPressedCityName()
+{
+	Board* board = _game->GetBoard();
+	char* result = "";
+	typedef std::map<char*, City*>::iterator it_type;
+	for (it_type it = board->GetCityDictFirstIterator(); it != board->GetCityDictLastIterator(); it++)
+	{
+		City* tempCity = it->second;
+		bool xPosTrue = (_mousePos.x > tempCity->GetXPos()) &&
+			(_mousePos.x < (tempCity->GetXPos() + _game->GetDraw()->GetSizeOfCity().x));
+		bool yPosTrue = (_mousePos.y > tempCity->GetYPos()) &&
+			(_mousePos.y < (tempCity->GetYPos() + _game->GetDraw()->GetSizeOfCity().y));
+		if (board->CityIsInUsedRegion(tempCity) && xPosTrue && yPosTrue)
+		{
+			result = tempCity->GetName();
+			break;
+		}
+	}
+	return result;
 }
 
 int Input::GetResourcePressed(ResourceMarket::Resource resource)

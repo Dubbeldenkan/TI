@@ -35,7 +35,7 @@ private:
 	int _numberOfPlayers;
 	int _gameTurn = 1;
 	int _gameStep = 1;
-	int _gamePhase = 1;
+	int _gamePhase = 4;//TODO 1;
 
 	GameSubPhase _gameSubPhase = initPhase;
 	Player* _playerInTurn = 0;
@@ -60,6 +60,7 @@ public:
 	Player* GetPlayerInTurn();
 	PowerPlantMarket* GetPowerPlantMarket();
 	ResourceMarket* GetResourceMarket();
+	Board* GetBoard();
 
 	void IncreaseNextBid(int);
 	int GetBidForSelectedPowerPlant();
@@ -69,6 +70,7 @@ private:
 	void SetNextPlayerInTurn(std::vector<Player*>*);
 	void RemovePlayerFromTempVector(std::vector<Player*>*);
 	void InitPlayers(int);
+	int GetNewCityCost(char*);
 
 	void DrawBoard();
 	void Phase1();

@@ -31,6 +31,7 @@ private:
 	static bool Input::BidPressed();
 	static int PowerPlantPressed();
 	static int GetResourcePressed(ResourceMarket::Resource);
+	static char* GetPressedCityName();
 };
 
 void InitWinMain(HINSTANCE*, char*, Input*);

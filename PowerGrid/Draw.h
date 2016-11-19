@@ -102,6 +102,13 @@ private:
 	Image _garbageImage;
 	Image _uranImage;
 
+	Image _redHouse;
+	Image _blueHouse;
+	Image _greenHouse;
+	Image _purpleHouse;
+	Image _yellowHouse;
+	Image _blackHouse;
+
 public:
 	Draw() {};
 	Draw(HWND*, Board*);
@@ -129,6 +136,8 @@ public:
 	Pos GetResourceDiff();
 	Pos GetSizeOfResource();
 
+	Pos GetSizeOfCity();
+
 private:
 	void DrawPowerPlant(PowerPlant*, int, int);
 	void DrawCity(City*);
@@ -140,8 +149,9 @@ private:
 	void DrawBidButtons(int);
 	void DrawButton(Image*, char*, Pos);
 	void PrintPlantForSale(PowerPlant*, int, char*);
-	void PrintPlacePowerPlant();
 	void DrawResource(int, ResourceMarket::Resource);
+	void PrintText(DrawInput*);
+	void PrintHelpText(char*);
 };
 
 #endif // !DRAW_H

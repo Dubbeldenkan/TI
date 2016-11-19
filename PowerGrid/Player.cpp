@@ -1,10 +1,11 @@
 #include "Player.h"
 
-Player::Player(char* name, Color color)
+Player::Player(char* name, Color color, bool humanPlayer)
 {
 	_amountOfElektro = 50;
 	_playerName = name;
 	_color = color;
+	_humanPlayer = humanPlayer;
 	for (int i = 0; i < numberOfPowerPlants; i++)
 	{
 		_powerPlants[i] = PowerPlant();
@@ -43,6 +44,11 @@ PowerPlant* Player::GetPowerPlant(int index)
 Player::Color Player::GetColor()
 {
 	return _color;
+}
+
+std::vector<City*> Player::GetCityVector()
+{
+	return _cityVector;
 }
 
 int Player::GetAmountOfResource(ResourceMarket::Resource resource)
@@ -85,7 +91,7 @@ int Player::GetSelectedPowerPlant()
 
 bool Player::GetClickedOnNewCity()
 {
-	return _buyCity.clickedOnNewCity;
+	return _buyCityStruct.clickedOnNewCity;
 }
 
 bool Player::GetPassed()
@@ -128,6 +134,11 @@ ResourceMarket::Resource Player::GetResourceType()
 	return _buyResourceStruct.resource;
 }
 
+char* Player::GetNewCityName()
+{
+	return _buyCityStruct.newCityName;
+}
+
 bool Player::NewBid()
 {
 	return _buyPlantStruct.newBid;
@@ -138,6 +149,15 @@ void Player::SetBid(int bid)
 	if (bid <= _amountOfElektro)
 	{
 		_buyPlantStruct.newBid = true;
+	}
+}
+
+void Player::SetBuyCityStruct(char* cityName)
+{
+	if (!HaveThatCity(cityName))
+	{
+		_buyCityStruct.newCityName = cityName;
+		_buyCityStruct.clickedOnNewCity = true;
 	}
 }
 
@@ -225,3 +245,32 @@ int Player::RoomForResources(ResourceMarket::Resource resource)
 	return roomForResource;
 }
 
+bool Player::HaveThatCity(char* cityName)
+{
+	bool result = false;
+	for (std::vector<City*>::iterator it = _cityVector.begin(); it != _cityVector.end(); ++it) {
+		if (strcmp(cityName, (*it)->GetName()) == 0)
+		{
+			result = true;
+			break;
+		}
+	}
+	return result;
+}
+
+bool Player::CanAffordCost(int cost)
+{
+	return (_amountOfElektro >= cost);
+}
+
+void Player::BuyCity(int cost, City* city)
+{
+	_amountOfElektro -= cost;
+	_cityVector.push_back(city);
+	_buyCityStruct.clickedOnNewCity = false;
+}
+
+void Player::ResetClickedOnNewCity()
+{
+	_buyCityStruct.clickedOnNewCity = false;
+}

@@ -20,9 +20,9 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 
 void Game::InitPlayers(int numberOfPlayers)
 {
-	_pv.push_back(Player("Dennis", Player::red));
-	_pv.push_back(Player("Alida", Player::blue));
-	_pv.push_back(Player("Edwin", Player::green));
+	_pv.push_back(Player("Dennis", Player::red, true));
+	_pv.push_back(Player("Alida", Player::blue, true));
+	_pv.push_back(Player("Edwin", Player::green, true));
 	_playerInTurn = &_pv[0];
 }
 
@@ -64,6 +64,11 @@ int Game::GetBidForSelectedPowerPlant()
 ResourceMarket* Game::GetResourceMarket()
 {
 	return _rm;
+}
+
+Board* Game::GetBoard()
+{
+	return &_board;
 }
 
 void Game::IncreaseNextBid(int change)
@@ -122,6 +127,12 @@ void Game::RemovePlayerFromTempVector(std::vector<Player*> *tempVector)
 	}
 	SetNextPlayerInTurn(tempVector);
 	tempVector->erase(tempVector->begin() + currentPlayerPos);
+}
+
+int Game::GetNewCityCost(char* cityName)
+{
+	City* tempCity = _board.GetCityFromName(cityName);
+	return  tempCity->GetCostForFirstFreePos(_gameStep);
 }
 
 void Game::Run()
@@ -396,8 +407,19 @@ void Game::Phase4()
 	{
 		if (_playerInTurn->GetClickedOnNewCity())
 		{
-
-			DrawBoard();
+			int cityCost = GetNewCityCost(_playerInTurn->GetNewCityName());
+			int roadCost = _board.GetRoadCost(_playerInTurn->GetCityVector(), _playerInTurn->GetNewCityName());
+			if((cityCost != 0) && (_playerInTurn->CanAffordCost(cityCost + roadCost)))
+			{
+				City* city = _board.GetCityFromName(_playerInTurn->GetNewCityName());
+				city->SetFirstFreePos((int) _playerInTurn->GetColor());
+				_playerInTurn->BuyCity(cityCost, city);
+				DrawBoard();
+			}
+			else
+			{
+				_playerInTurn->ResetClickedOnNewCity();
+			}
 		}
 		else if (_playerInTurn->GetPassed())
 		{
