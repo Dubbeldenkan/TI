@@ -83,6 +83,11 @@ int Player::GetSelectedPowerPlant()
 	return _buyPlantStruct.selectedPowerPlant;
 }
 
+bool Player::GetClickedOnNewCity()
+{
+	return _buyCity.clickedOnNewCity;
+}
+
 bool Player::GetPassed()
 {
 	return _passed;
@@ -208,6 +213,12 @@ int Player::RoomForResources(ResourceMarket::Resource resource)
 		if (_powerPlants[index].GetType() == resource)
 		{
 			roomForResource += _powerPlants[index].GetPowerPlantConsumption()*2;
+		}
+		else if (_powerPlants[index].GetType() == PowerPlant::coalOrOil && 
+			(resource == ResourceMarket::coal || resource == ResourceMarket::oil))
+		{
+			roomForResource += _powerPlants[index].GetPowerPlantConsumption()*2;
+			//TODO fixa så att kol/olja funkar att köpa för
 		}
 	}
 	roomForResource -= GetAmountOfResource(resource);

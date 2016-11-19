@@ -128,7 +128,7 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	_g->SetTextSize(8);
 	_g->Clear();
 	_g->StartDrawing();
-	DrawBoard(dI->_board);
+	DrawBoard(dI->_board, dI->_regionsInPlay);
 	for (int i = 0; i < dI->_playerVector.size(); i++)
 	{
 		DrawPlayer(dI->_playerVector[i], i);
@@ -158,13 +158,19 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	_g->Flip();
 }
 
-void Draw::DrawBoard(Board* board)
+void Draw::DrawBoard(Board* board, std::vector<int> usedRegions)
 {
 	_g->Draw(board->GetMapImage(), _mapPos.x, _mapPos.y, _mapPos.s);
 	typedef std::map<char*, City*>::iterator it_type;
 	for (it_type it = board->GetCityDictFirstIterator(); it != board->GetCityDictLastIterator(); it++)
 	{
-		DrawCity(it->second);
+		for (int index = 0; index < usedRegions.size(); index++)
+		{
+			if (it->second->GetRegion() == usedRegions[index])
+			{
+				DrawCity(it->second);
+			}
+		}
 	}
 }
 

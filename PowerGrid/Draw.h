@@ -49,6 +49,7 @@ public:
 		Player* _lastBiddingPlayer;
 		int _nextBid;
 		bool _placePowerPlant;
+		std::vector<int> _regionsInPlay;
 	};
 private:
 
@@ -133,7 +134,7 @@ private:
 	void DrawCity(City*);
 	void DrawPlayer(Player*, int);
 	void PrintPlayerInTurn(Player*);
-	void DrawBoard(Board*);
+	void DrawBoard(Board*, std::vector<int>);
 	void DrawResourceMarket(ResourceMarket*);
 	void DrawPowerPlantMarket(PowerPlantMarket*);
 	void DrawBidButtons(int);

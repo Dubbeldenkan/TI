@@ -24,6 +24,11 @@ public:
 		int newPowerPlantPos = -1;
 	};
 
+	struct BuyCity
+	{
+		bool clickedOnNewCity = false;
+	};
+
 private:
 	Color _color;
 	char* _playerName;
@@ -40,6 +45,7 @@ private:
 
 	BuyResourceStruct _buyResourceStruct;
 	BuyPlantStruct _buyPlantStruct;
+	BuyCity _buyCity;
 
 public:
 	Player(char*, Color);
@@ -75,6 +81,8 @@ public:
 	bool GetTradeOk();
 	int GetAmountOfResource();
 	ResourceMarket::Resource GetResourceType();
+
+	bool GetClickedOnNewCity();
 
 private:
 	int RoomForResources(ResourceMarket::Resource);

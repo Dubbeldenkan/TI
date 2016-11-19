@@ -4,9 +4,14 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 {
 	//init rand
 	srand(time(NULL));
-	
+		
+	std::vector<int> usedRegions;
+	for (int index = 0; index < numberOfPlayers; index++)
+	{
+		usedRegions.push_back(index);
+	}
 	_numberOfPlayers = numberOfPlayers;
-	_board = Board(true, true, true, false, false, false, "Map/USAPowerGrid.png");
+	_board = Board(usedRegions, "Map/USAPowerGrid.png");
 	_draw = Draw(&hWnd, &_board);
 	_ppm = PowerPlantMarket();
 	_rm = new ResourceMarket(numberOfPlayers, ResourceMarket::USA);
@@ -163,6 +168,7 @@ void Game::DrawBoard()
 	dI._lastBiddingPlayer = _phase2Struct.lastBiddingPlayer;
 	dI._nextBid = _phase2Struct.nextBid;
 	dI._placePowerPlant = _gameSubPhase == placePowerPlant;
+	dI._regionsInPlay = _board.GetRegionsInPlay();
 
 	_draw.DrawWholeBoard(&dI);
 }
@@ -375,7 +381,41 @@ void Game::Phase3()
 
 void Game::Phase4()
 {
-	int test = 4;
+	switch (_gameSubPhase)
+	{
+	case initPhase:
+		_gameSubPhase = buildCities;
+		for (int i = 0; i < _numberOfPlayers; i++)
+		{
+			_tempPlayerVector.push_back(&_pv[i]);
+		}
+		_playerInTurn = _tempPlayerVector[0];
+		DrawBoard();
+		break;
+	case buildCities:
+	{
+		if (_playerInTurn->GetClickedOnNewCity())
+		{
+
+			DrawBoard();
+		}
+		else if (_playerInTurn->GetPassed())
+		{
+			RemovePlayerFromTempVector(&_tempPlayerVector);
+			if (_tempPlayerVector.size() < 1)
+			{
+				_gameSubPhase = nextPhase;
+			}
+			DrawBoard();
+		}
+		break;
+	}
+	case nextPhase:
+		break;
+	default:
+		break;
+
+	}
 }
 
 void Game::Phase5()

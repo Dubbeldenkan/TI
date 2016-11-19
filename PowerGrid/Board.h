@@ -4,10 +4,11 @@
 #include "Image.h"
 #include "City.h"
 #include <map>
+#include <vector>
 
 class Board
 {
-	bool _usedRegions[6];
+	std::vector<int> _usedRegions;
 	char* _mapName;
 	Image _mapImage;
 	std::map<char*, City*> cityDict;
@@ -15,7 +16,7 @@ class Board
 
 public:
 	Board();
-	Board(bool, bool, bool, bool, bool, bool, char*);
+	Board(std::vector<int>, char*);
 	~Board() {};
 
 	void SetMapImage(Image);
@@ -23,6 +24,7 @@ public:
 	char* GetMapName();
 	std::map<char*, City*>::iterator GetCityDictFirstIterator();
 	std::map<char*, City*>::iterator GetCityDictLastIterator();
+	std::vector<int> GetRegionsInPlay();
 
 private:
 	void InitMap();

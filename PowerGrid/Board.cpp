@@ -3,16 +3,9 @@
 Board::Board()
 {};
 
-Board::Board(bool region1Used, bool region2Used, bool region3Used,
-	bool region4Used, bool region5Used, bool region6Used, char* fileName)
+Board::Board(std::vector<int> usedRegions, char* fileName)
 {
-	_usedRegions[0] = region1Used;
-	_usedRegions[1] = region2Used;
-	_usedRegions[2] = region3Used;
-	_usedRegions[3] = region4Used;
-	_usedRegions[4] = region5Used;
-	_usedRegions[5] = region6Used;
-
+	_usedRegions = usedRegions;
 	_mapName = fileName;
 	InitMap();
 }
@@ -27,52 +20,52 @@ void Board::InitMap()
 {
 	//Create cities
 	InsertCityInDict("Seattle", 0, 37, 7);
-	/*InsertCityInDict("Portland", 0);
-	InsertCityInDict("Boise", 0);
-	InsertCityInDict("Billings", 0);
-	InsertCityInDict("Cheyenne", 0);
-	InsertCityInDict("Denver", 0);
-	InsertCityInDict("Omaha", 0);
+	InsertCityInDict("Portland", 0, 6, 58);
+	InsertCityInDict("Boise", 0, 129, 103);
+	InsertCityInDict("Billings", 0, 284, 70);
+	InsertCityInDict("Cheyenne", 0, 350, 150);
+	InsertCityInDict("Denver", 0, 335, 197);
+	InsertCityInDict("Omaha", 0, 500, 170);
 
-	InsertCityInDict("Salt Lake City", 1);
-	InsertCityInDict("San Fransisco", 1);
-	InsertCityInDict("Las Vegas", 1);
-	InsertCityInDict("Los Angeles", 1);
-	InsertCityInDict("San Diego", 1);
-	InsertCityInDict("Phoenix", 1);
-	InsertCityInDict("Santa Fe", 1);
+	InsertCityInDict("Salt Lake City", 1, 200, 180);
+	InsertCityInDict("San Fransisco", 1, 7, 220);
+	InsertCityInDict("Las Vegas", 1, 150, 250);
+	InsertCityInDict("Los Angeles", 1, 68, 295);
+	InsertCityInDict("San Diego", 1, 105, 340);
+	InsertCityInDict("Phoenix", 1, 210, 320);
+	InsertCityInDict("Santa Fe", 1, 320, 280);
 
-	InsertCityInDict("Fargo", 2);
-	InsertCityInDict("Duluth", 2);
-	InsertCityInDict("Minneapolis", 2);
-	InsertCityInDict("Chicago", 2);
-	InsertCityInDict("St. Louis", 2);
-	InsertCityInDict("Cincinnati", 2);
-	InsertCityInDict("Knoxville", 2);
+	InsertCityInDict("Fargo", 2, 490, 50);
+	InsertCityInDict("Duluth", 2, 565, 35);
+	InsertCityInDict("Minneapolis", 2, 555, 80);
+	InsertCityInDict("Chicago", 2, 630, 155);
+	InsertCityInDict("St. Louis", 2, 610, 220);
+	InsertCityInDict("Cincinnati", 2, 720, 215);
+	InsertCityInDict("Knoxville", 2, 720, 275);
 
-	InsertCityInDict("Kansas City", 3);
-	InsertCityInDict("Oklahoma City", 3);
-	InsertCityInDict("Memphis", 3);
-	InsertCityInDict("Dallas", 3);
-	InsertCityInDict("Birmingham", 3);
-	InsertCityInDict("Houston", 3);
-	InsertCityInDict("New Orleans", 3);
+	InsertCityInDict("Kansas City", 3, 520, 220);
+	InsertCityInDict("Oklahoma City", 3, 490, 280);
+	InsertCityInDict("Memphis", 3, 605, 285);
+	InsertCityInDict("Dallas", 3, 500, 340);
+	InsertCityInDict("Birmingham", 3, 660, 330);
+	InsertCityInDict("Houston", 3, 510, 390);
+	InsertCityInDict("New Orleans", 3, 610, 390);
 
-	InsertCityInDict("Detroit", 4);
-	InsertCityInDict("Buffalo", 4);
-	InsertCityInDict("Pittsburgh", 4);
-	InsertCityInDict("Boston", 4);
-	InsertCityInDict("New York", 4);
-	InsertCityInDict("Philadelphia", 4);
-	InsertCityInDict("Washington DC", 4);
+	InsertCityInDict("Detroit", 4, 730, 140);
+	InsertCityInDict("Buffalo", 4, 835, 130);
+	InsertCityInDict("Pittsburgh", 4, 815, 180);
+	InsertCityInDict("Boston", 4, 960, 120);
+	InsertCityInDict("New York", 4, 940, 170);
+	InsertCityInDict("Philadelphia", 4, 920, 200);
+	InsertCityInDict("Washington DC", 4, 950, 230);
 
-	InsertCityInDict("Norfolk", 5);
-	InsertCityInDict("Raleigh", 5);
-	InsertCityInDict("Atlanta", 5);
-	InsertCityInDict("Savannah", 5);
-	InsertCityInDict("JacksonVille", 5);
-	InsertCityInDict("Tampa", 5);
-	InsertCityInDict("Miami", 5);*/
+	InsertCityInDict("Norfolk", 5, 910, 260);
+	InsertCityInDict("Raleigh", 5, 855, 295);
+	InsertCityInDict("Atlanta", 5, 930, 315);
+	InsertCityInDict("Savannah", 5, 810, 340);
+	InsertCityInDict("JacksonVille", 5, 810, 390);
+	InsertCityInDict("Tampa", 5, 725, 435);
+	InsertCityInDict("Miami", 5, 815, 465);
 
 	//create edges
 	//region 0
@@ -254,4 +247,9 @@ std::map<char*, City*>::iterator Board::GetCityDictFirstIterator()
 std::map<char*, City*>::iterator Board::GetCityDictLastIterator()
 {
 	return cityDict.end();
+}
+
+std::vector<int> Board::GetRegionsInPlay()
+{
+	return _usedRegions;
 }

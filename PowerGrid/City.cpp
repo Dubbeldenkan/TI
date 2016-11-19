@@ -22,3 +22,8 @@ int City::GetYPos()
 {
 	return _yPos;
 }
+
+int City::GetRegion()
+{
+	return _region;
+}

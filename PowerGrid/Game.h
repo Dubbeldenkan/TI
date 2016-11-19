@@ -17,7 +17,7 @@
 class Game
 {
 public:
-	enum GameSubPhase {initPhase, choosePowerPlant, bid, placePowerPlant, nextPhase, buyResources};
+	enum GameSubPhase {initPhase, choosePowerPlant, bid, placePowerPlant, nextPhase, buyResources, buildCities};
 
 private:
 	static const int MAX_PLAYERS = 6;
@@ -64,8 +64,6 @@ public:
 	void IncreaseNextBid(int);
 	int GetBidForSelectedPowerPlant();
 	int GetPlayerInTurnPosition();
-
-	void SetButtonPressed();
 
 private:
 	void SetNextPlayerInTurn(std::vector<Player*>*);

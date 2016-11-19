@@ -4,7 +4,7 @@
 class PowerPlant
 {
 public:
-	enum EnergySource { coal, oil, coalOrOil, uranium, garbage, none, phase3};
+	enum EnergySource { coal, oil, garbage, uranium, coalOrOil, none, phase3};
 private:
 	int _powerPlantNumber;
 	EnergySource _energySource;

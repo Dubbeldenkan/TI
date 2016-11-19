@@ -14,6 +14,7 @@ public:
 
 	int GetXPos();
 	int GetYPos();
+	int GetRegion();
 	char* GetName();
 };
 
