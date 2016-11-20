@@ -37,6 +37,9 @@ Draw::Draw(HWND* hWnd, Board* board)
 	_yellowHouse = _g->LoadImage("Player/YellowPlayerHouse.png");
 	_blackHouse = _g->LoadImage("Player/BlackPlayerHouse.png");
 	_greenHouse = _g->LoadImage("Player/GreenPlayerHouse.png");
+
+	_activeImage = _g->LoadImage("PowerPlant/Active.png");
+	_inActiveImage = _g->LoadImage("PowerPlant/InActive.png");
 }
 
 Draw::Pos Draw::GetFirstCurrentPlantPos()
@@ -145,7 +148,7 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	DrawBoard(dI->_board, dI->_regionsInPlay);
 	for (int i = 0; i < dI->_playerVector.size(); i++)
 	{
-		DrawPlayer(dI->_playerVector[i], i);
+		DrawPlayer(dI->_playerVector[i], i, dI->_gamePhase);
 	}
 	PrintPlayerInTurn(dI->_playerInTurn);
 	DrawPowerPlantMarket(dI->_powerPlantMarket);
@@ -231,7 +234,7 @@ void Draw::DrawCity(City* city)
 		city->GetYPos() + cityNamePos.y, Graphics::WHITE);
 }
 
-void Draw::DrawPlayer(Player* player, int playerIndex)
+void Draw::DrawPlayer(Player* player, int playerIndex, int gamePhase)
 {
 	int FontSize = 15;
 	Pos nameDiff = Pos(6, 6);
@@ -241,6 +244,7 @@ void Draw::DrawPlayer(Player* player, int playerIndex)
 	Pos suppliedcitiesPos = Pos(210, 45);
 	Pos plusPos = Pos(225, 45);
 	Pos citiesInNetworkPos = Pos(235, 45);
+	Pos activePos = Pos(55, 2);
 	Image* tempPlayerLabel;
 	switch (player->GetColor())
 	{
@@ -290,9 +294,25 @@ void Draw::DrawPlayer(Player* player, int playerIndex)
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + citiesInNetworkPos.y, Graphics::BLACK, 13);
 	for (int index = 0; index < player->numberOfPowerPlants; index++)
 	{
-		DrawPowerPlant(player->GetPowerPlant(index),
-			_firstPlayerPos.x + _firstPlayerPowerPlantPos.x + _playerPowerPlantDiff.x*index,
-			_firstPlayerPos.y + _firstPlayerPowerPlantPos.y + _playerPosDiff.y*playerIndex);
+		if (player->GetPowerPlant(index)->GetPowerPlantNumber() != 0)
+		{
+			int xPos = _firstPlayerPos.x + _firstPlayerPowerPlantPos.x + _playerPowerPlantDiff.x*index;
+			int yPos = _firstPlayerPos.y + _firstPlayerPowerPlantPos.y + _playerPosDiff.y*playerIndex;
+			DrawPowerPlant(player->GetPowerPlant(index), xPos, yPos);
+			if (gamePhase == 5)
+			{
+				Image* image;
+				if (player->GetPowerPlant(index)->GetActive())
+				{
+					image = &_activeImage;
+				}
+				else
+				{
+					image = &_inActiveImage;
+				}
+				_g->Draw(image, xPos + activePos.x, yPos + activePos.y, 1);
+			}
+		}
 	}
 }
 
@@ -531,6 +551,10 @@ void Draw::PrintText(DrawInput* dI)
 	{
 		PrintHelpText("Bygg städer");
 		break;
+	}
+	case 5:
+	{
+		PrintHelpText("Välj aktiva kraftverk");
 	}
 	default:
 		break;

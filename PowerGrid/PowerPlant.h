@@ -10,6 +10,7 @@ private:
 	EnergySource _energySource;
 	int _consumption;
 	int _generatedEnergy;
+	bool _active = false;
 
 public:
 	PowerPlant();
@@ -19,6 +20,10 @@ public:
 	int GetPowerPlantNumber();
 	int GetPowerPlantConsumption();
 	int GetPowerPlantProduction();
+	void ToggleActive();
+	void SetToInActive();
+	void SetToActive();
+	bool GetActive();
 	EnergySource GetType();
 };
 

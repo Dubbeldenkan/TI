@@ -94,6 +94,14 @@ void Input::MouseClick()
 			_game->GetPlayerInTurn()->SetBuyCityStruct(cityName);
 		}
 	}
+	else if (_game->GetCurrentPhase() == 5)
+	{
+		int tempPowerPlantPos = PowerPlantPressed();
+		if (tempPowerPlantPos > -1)
+		{
+			_game->GetPlayerInTurn()->SetPowerPlantClicked(tempPowerPlantPos);
+		}
+	}
 }
 
 char* Input::GetPressedCityName()

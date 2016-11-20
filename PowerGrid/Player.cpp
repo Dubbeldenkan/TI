@@ -274,3 +274,22 @@ void Player::ResetClickedOnNewCity()
 {
 	_buyCityStruct.clickedOnNewCity = false;
 }
+
+bool Player::GetPowerPlantClicked()
+{
+	return _phase5Struct.clickedPowerPlant;
+}
+
+void Player::ResetPowerPlantClicked()
+{
+	_phase5Struct.clickedPowerPlant = false;
+}
+
+void Player::SetPowerPlantClicked(int input)
+{
+	if (_powerPlants[input].GetPowerPlantNumber() > 0)
+	{
+		_powerPlants[input].ToggleActive();
+	}
+	_phase5Struct.clickedPowerPlant = true;
+}

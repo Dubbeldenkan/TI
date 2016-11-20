@@ -17,7 +17,8 @@
 class Game
 {
 public:
-	enum GameSubPhase {initPhase, choosePowerPlant, bid, placePowerPlant, nextPhase, buyResources, buildCities};
+	enum GameSubPhase {initPhase, choosePowerPlant, bid, placePowerPlant, nextPhase, 
+		buyResources, buildCities, choosePowerPlantsToProducePower, getPayed};
 
 private:
 	static const int MAX_PLAYERS = 6;
@@ -35,7 +36,7 @@ private:
 	int _numberOfPlayers;
 	int _gameTurn = 1;
 	int _gameStep = 1;
-	int _gamePhase = 4;//TODO 1;
+	int _gamePhase = 1;
 
 	GameSubPhase _gameSubPhase = initPhase;
 	Player* _playerInTurn = 0;

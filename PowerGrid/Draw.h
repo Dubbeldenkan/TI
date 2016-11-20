@@ -109,6 +109,9 @@ private:
 	Image _yellowHouse;
 	Image _blackHouse;
 
+	Image _activeImage;
+	Image _inActiveImage;
+
 public:
 	Draw() {};
 	Draw(HWND*, Board*);
@@ -141,7 +144,7 @@ public:
 private:
 	void DrawPowerPlant(PowerPlant*, int, int);
 	void DrawCity(City*);
-	void DrawPlayer(Player*, int);
+	void DrawPlayer(Player*, int, int);
 	void PrintPlayerInTurn(Player*);
 	void DrawBoard(Board*, std::vector<int>);
 	void DrawResourceMarket(ResourceMarket*);

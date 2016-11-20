@@ -32,3 +32,23 @@ PowerPlant::EnergySource PowerPlant::GetType()
 {
 	return _energySource;
 }
+
+void PowerPlant::ToggleActive()
+{
+	_active = !_active;
+}
+
+void PowerPlant::SetToInActive()
+{
+	_active = false;
+}
+
+void PowerPlant::SetToActive()
+{
+	_active = true;
+}
+
+bool PowerPlant::GetActive()
+{
+	return _active;
+}

@@ -32,15 +32,21 @@ public:
 		char* newCityName;
 	};
 
+	struct Phase5struct
+	{
+		bool clickedPowerPlant = false;
+	};
+
 private:
 	Color _color;
 	char* _playerName;
-	bool _passed;
 	int _numberOfSuppliedCities = 0;
 	int _numberOfCitiesInNetwork = 0;
 	int _amountOfElektro;
 	PowerPlant _powerPlants[numberOfPowerPlants];
 	std::vector<City*> _cityVector;
+	bool _humanPlayer;
+	bool _passed;
 
 	int _amountOfCoal = 0;
 	int _amountOfOil = 0;
@@ -50,8 +56,7 @@ private:
 	BuyResourceStruct _buyResourceStruct;
 	BuyPlantStruct _buyPlantStruct;
 	BuyCityStruct _buyCityStruct;
-
-	bool _humanPlayer;
+	Phase5struct _phase5Struct;
 
 public:
 	Player(char*, Color, bool);
@@ -95,6 +100,10 @@ public:
 	void BuyCity(int, City*);
 	void ResetClickedOnNewCity();
 	std::vector<City*> GetCityVector();
+
+	bool GetPowerPlantClicked();
+	void ResetPowerPlantClicked();
+	void SetPowerPlantClicked(int);
 
 private:
 	int RoomForResources(ResourceMarket::Resource);

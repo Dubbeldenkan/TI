@@ -433,6 +433,11 @@ void Game::Phase4()
 		break;
 	}
 	case nextPhase:
+	{
+		_gamePhase++;
+		_gameSubPhase = initPhase;
+		break;
+	}
 		break;
 	default:
 		break;
@@ -442,5 +447,38 @@ void Game::Phase4()
 
 void Game::Phase5()
 {
-
+	switch (_gameSubPhase)
+	{
+	case initPhase:
+	{
+		_gameSubPhase = choosePowerPlantsToProducePower;
+		for (int i = 0; i < _numberOfPlayers; i++)
+		{
+			//TODO Set Active/inactive för alla spelare beroende på resurserna
+			_tempPlayerVector.push_back(&_pv[i]);
+		}
+		_playerInTurn = _tempPlayerVector[0];
+		DrawBoard();
+		break;
+	}
+	case choosePowerPlantsToProducePower:
+	{
+		if (_playerInTurn->GetPassed())
+		{
+			_gameSubPhase = getPayed;
+		}
+		else if (_playerInTurn->GetPowerPlantClicked())
+		{
+			_playerInTurn->ResetPowerPlantClicked();
+			DrawBoard();
+		}
+		break;
+	}
+	case getPayed:
+	{
+		int test = 4;
+		DrawBoard();
+		break;
+	}
+	}
 }
