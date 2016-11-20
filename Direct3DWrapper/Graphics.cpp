@@ -45,7 +45,7 @@ Graphics::Graphics(HWND hWnd)
 
 	//Makes it possible to print text
 	_hdc = GetDC(0);
-	int logicalHeight = -MulDiv(FONT_SIZE, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
+	int logicalHeight = -MulDiv(FONT_SIZE_SMALL, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
 	hr = D3DXCreateFont(
 		_d3dDevice,
 		logicalHeight,
@@ -58,11 +58,31 @@ Graphics::Graphics(HWND hWnd)
 		0, 
 		0, 
 		"Helvetica", 
-		&_font);
+		&_font8);
 
 	if (FAILED(hr))
 	{
-		OutputDebugString("Unable to setup font\n\n");
+		OutputDebugString("Unable to setup font8\n\n");
+	}
+
+	logicalHeight = -MulDiv(FONT_SIZE_BIG, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
+	hr = D3DXCreateFont(
+		_d3dDevice,
+		logicalHeight,
+		0,
+		0,
+		1,
+		0,
+		ANSI_CHARSET,
+		OUT_TT_ONLY_PRECIS,
+		0,
+		0,
+		"Helvetica",
+		&_font15);
+
+	if (FAILED(hr))
+	{
+		OutputDebugString("Unable to setup font8\n\n");
 	}
 }
 
@@ -158,10 +178,10 @@ void Graphics::Draw(Image* image, int x, int y, float scale)
 	_sprite->End();
 }
 
-void Graphics::PrintText(char* text, int xPos, int yPos, D3DCOLOR color)
+void Graphics::PrintText8(char* text, int xPos, int yPos, D3DCOLOR color)
 {
 	RECT rectangle = { xPos, yPos, 0, 0 };
-	_font->DrawText(
+	_font8->DrawText(
 		0,
 		text,
 		-1,
@@ -170,36 +190,38 @@ void Graphics::PrintText(char* text, int xPos, int yPos, D3DCOLOR color)
 		color); 
 }
 
-void Graphics::PrintText(char* text, int xPos, int yPos, D3DCOLOR color, int size)
-{
-	int logicalHeight = -MulDiv(size, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
-	HRESULT hr = D3DXCreateFont(_d3dDevice,	logicalHeight, 0, 0, 1, 0, ANSI_CHARSET,
-		OUT_TT_ONLY_PRECIS,	0, 0, "Helvetica", &_font);
-	if (FAILED(hr))
-	{
-		OutputDebugString("Unable to setup font\n\n");
-	}
-	PrintText(text, xPos, yPos, color);
-	logicalHeight = -MulDiv(FONT_SIZE, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
-	hr = D3DXCreateFont(_d3dDevice, logicalHeight, 0, 0, 1, 0, ANSI_CHARSET,
-		OUT_TT_ONLY_PRECIS, 0, 0, "Helvetica", &_font);
-	if (FAILED(hr))
-	{
-		OutputDebugString("Unable to setup font\n\n");
-	}
-}
-
-void Graphics::PrintText(int number, int xPos, int yPos, D3DCOLOR color, int size)
+void Graphics::PrintText8(int number, int xPos, int yPos, D3DCOLOR color)
 {
 	std::string str;
 	str = std::to_string(number);
 	const char* buffer = str.c_str();
-	PrintText((char*) buffer, xPos, yPos, color, size);
+	PrintText8((char*)buffer, xPos, yPos, color);
 }
 
-void Graphics::SetTextSize(int size)
+void Graphics::PrintText15(char* text, int xPos, int yPos, D3DCOLOR color)
+{
+	RECT rectangle = { xPos, yPos, 0, 0 };
+	_font15->DrawText(
+		0,
+		text,
+		-1,
+		&rectangle,
+		DT_NOCLIP,
+		color);
+}
+
+void Graphics::PrintText15(int number, int xPos, int yPos, D3DCOLOR color)
+{
+	std::string str;
+	str = std::to_string(number);
+	const char* buffer = str.c_str();
+	PrintText15((char*) buffer, xPos, yPos, color);
+}
+
+//TODO ta bort gammal kod i denna klass
+/*void Graphics::SetTextSize(int size)
 {
 	int logicalHeight = -MulDiv(size, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
 	HRESULT hr = D3DXCreateFont(_d3dDevice, logicalHeight, 0, 0, 1, 0, ANSI_CHARSET,
 		OUT_TT_ONLY_PRECIS, 0, 0, "Helvetica", &_font);
-}
+}*/

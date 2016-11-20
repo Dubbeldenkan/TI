@@ -1,5 +1,8 @@
 #include "Player.h"
 
+const int Player::GetPayedArray[] = { 10, 22, 33, 44, 54, 64, 73, 82, 90, 98, 
+105, 112, 118, 124, 129, 134, 138, 142, 145, 148, 150};
+
 Player::Player(char* name, Color color, bool humanPlayer)
 {
 	_amountOfElektro = 50;
@@ -289,7 +292,108 @@ void Player::SetPowerPlantClicked(int input)
 {
 	if (_powerPlants[input].GetPowerPlantNumber() > 0)
 	{
+		//TODO lägg till så att man kollar attresurser finns
 		_powerPlants[input].ToggleActive();
 	}
 	_phase5Struct.clickedPowerPlant = true;
+}
+
+void Player::ActiveThePowerPlants()
+{
+	int tempAmountOfCoal = _amountOfCoal;
+	int tempAmountOfOil = _amountOfOil;
+	int tempAmountOfGarbage = _amountOfGarbage;
+	int tempAmountOfUran = _amountOfUran;
+	int* tempPointer = NULL;
+	for (int index = 0; index < numberOfPowerPlants; index++)
+	{
+		if (_powerPlants[index].GetPowerPlantNumber() == 0)
+		{
+			continue;
+		}
+		switch (_powerPlants[index].GetType())
+		{
+		case PowerPlant::coal:
+		{
+			tempPointer = &tempAmountOfCoal;
+			break;
+		}
+		case PowerPlant::oil:
+		{
+			tempPointer = &tempAmountOfOil;
+			break;
+		}
+		case PowerPlant::garbage:
+		{
+			tempPointer = &tempAmountOfGarbage;
+			break;
+		}
+		case PowerPlant::uranium:
+		{
+			tempPointer = &tempAmountOfUran;
+			break;
+		}
+		case PowerPlant::coalOrOil:
+		{
+			//TODO implementera denna
+			tempPointer = &tempAmountOfCoal;
+			break;
+		}
+		}
+		if (_powerPlants[index].GetPowerPlantConsumption() <= *tempPointer)
+		{
+			_powerPlants[index].SetToActive();
+			*tempPointer -= _powerPlants[index].GetPowerPlantConsumption();
+		}
+		else
+		{
+			_powerPlants[index].SetToInActive();
+		}
+	}
+}
+
+void Player::GetPayed()
+{
+	_numberOfCitiesInNetwork = _cityVector.size();
+	int producedEnergy = 0;
+	for (int index = 0; index < _numberOfCitiesInNetwork; index++)
+	{
+		if (_powerPlants[index].GetActive())
+		{
+			producedEnergy += _powerPlants[index].GetPowerPlantProduction();
+			switch (_powerPlants[index].GetType())
+			{
+			case PowerPlant::coal:
+			{
+				_amountOfCoal -= _powerPlants[index].GetPowerPlantConsumption();
+				break;
+			}
+			case PowerPlant::oil:
+			{
+				_amountOfOil -= _powerPlants[index].GetPowerPlantConsumption();
+				break;
+			}
+			case PowerPlant::garbage:
+			{
+				_amountOfGarbage -= _powerPlants[index].GetPowerPlantConsumption();
+				break;
+			}
+			case PowerPlant::uranium:
+			{
+				_amountOfUran -= _powerPlants[index].GetPowerPlantConsumption();
+				break;
+			}
+			case PowerPlant::coalOrOil:
+			{
+				//TODO implementera denna
+				_amountOfCoal -= _powerPlants[index].GetPowerPlantConsumption();
+				break;
+			}
+			default:
+				break;
+			}
+		}
+	}
+	_numberOfSuppliedCities = min(producedEnergy, _numberOfCitiesInNetwork);
+	_amountOfElektro += GetPayedArray[_numberOfSuppliedCities];
 }

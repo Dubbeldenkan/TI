@@ -142,7 +142,6 @@ Draw::Pos Draw::GetSizeOfCity()
 
 void Draw::DrawWholeBoard(DrawInput* dI)
 {
-	_g->SetTextSize(8);
 	_g->Clear();
 	_g->StartDrawing();
 	DrawBoard(dI->_board, dI->_regionsInPlay);
@@ -156,7 +155,7 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	{
 		DrawButton(&_redButton, "Pass", _passButtonPos);
 	}
-	else if (dI->_gamePhase == 3 || dI->_gamePhase == 4)
+	else if (dI->_gamePhase == 3 || dI->_gamePhase == 4 || dI->_gamePhase == 5)
 	{
 		DrawButton(&_redButton, "Klar", _passButtonPos);
 	}
@@ -230,7 +229,7 @@ void Draw::DrawCity(City* city)
 				city->GetYPos() + firstColorPos.y, 1);
 		}
 	}
-	_g->PrintText(city->GetName(), city->GetXPos() + cityNamePos.x, 
+	_g->PrintText8(city->GetName(), city->GetXPos() + cityNamePos.x, 
 		city->GetYPos() + cityNamePos.y, Graphics::WHITE);
 }
 
@@ -271,27 +270,28 @@ void Draw::DrawPlayer(Player* player, int playerIndex, int gamePhase)
 		break;
 	}
 	_g->Draw(tempPlayerLabel, _firstPlayerPos.x, _firstPlayerPos.y + playerIndex * _playerPosDiff.y, 1);
-	_g->PrintText(player->GetName(), _firstPlayerPos.x + nameDiff.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + nameDiff.y, Graphics::WHITE, 15);
+	_g->PrintText15(player->GetName(), _firstPlayerPos.x + nameDiff.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + nameDiff.y, Graphics::WHITE);
 
-	_g->PrintText(player->GetAmountOfResource(ResourceMarket::coal), _firstPlayerPos.x + firstRes.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
-	_g->PrintText(player->GetAmountOfResource(ResourceMarket::oil), _firstPlayerPos.x + firstRes.x + resDiff.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
-	_g->PrintText(player->GetAmountOfResource(ResourceMarket::garbage), _firstPlayerPos.x + firstRes.x + 2*resDiff.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::BLACK, 15);
-	_g->PrintText(player->GetAmountOfResource(ResourceMarket::uranium), _firstPlayerPos.x + firstRes.x + 3 * resDiff.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE, 15);
+	_g->PrintText15(player->GetAmountOfResource(ResourceMarket::coal), _firstPlayerPos.x + firstRes.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE);
+	_g->PrintText15(player->GetAmountOfResource(ResourceMarket::oil), _firstPlayerPos.x + firstRes.x + resDiff.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE);
+	_g->PrintText15(player->GetAmountOfResource(ResourceMarket::garbage), _firstPlayerPos.x + firstRes.x + 2*resDiff.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::BLACK);
+	_g->PrintText15(player->GetAmountOfResource(ResourceMarket::uranium), _firstPlayerPos.x + firstRes.x + 3 * resDiff.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE);
 
-	_g->PrintText(player->GetAmountOfElektro(), _firstPlayerPos.x + elektroPos.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + elektroPos.y, Graphics::BLACK, 15);
+	_g->PrintText15(player->GetAmountOfElektro(), _firstPlayerPos.x + elektroPos.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + elektroPos.y, Graphics::BLACK);
 
-	_g->PrintText(player->GetNumberOfSuppliedCities(), _firstPlayerPos.x + suppliedcitiesPos.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + suppliedcitiesPos.y, Graphics::BLACK, 13);
-	_g->PrintText("+", _firstPlayerPos.x + plusPos.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + plusPos.y, Graphics::BLACK, 13);
-	_g->PrintText(player->GetNumberOfCitiesInNetwork(), _firstPlayerPos.x + citiesInNetworkPos.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + citiesInNetworkPos.y, Graphics::BLACK, 13);
+	//TODO dessa under var tidigare 13 strl, ska de fortfarande vara det?
+	_g->PrintText15(player->GetNumberOfSuppliedCities(), _firstPlayerPos.x + suppliedcitiesPos.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + suppliedcitiesPos.y, Graphics::BLACK);
+	_g->PrintText15("+", _firstPlayerPos.x + plusPos.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + plusPos.y, Graphics::BLACK);
+	_g->PrintText15(player->GetNumberOfCitiesInNetwork(), _firstPlayerPos.x + citiesInNetworkPos.x,
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + citiesInNetworkPos.y, Graphics::BLACK);
 	for (int index = 0; index < player->numberOfPowerPlants; index++)
 	{
 		if (player->GetPowerPlant(index)->GetPowerPlantNumber() != 0)
@@ -321,7 +321,7 @@ void Draw::PrintPlayerInTurn(Player* player)
 	std::string str = "Nuvarande spelare är ";
 	std::string strName(player->GetName());
 	str = str + strName;
-	_g->PrintText((char*) str.c_str(), _playerInTurnPos.x, _playerInTurnPos.y, Graphics::WHITE, 15);
+	_g->PrintText15((char*) str.c_str(), _playerInTurnPos.x, _playerInTurnPos.y, Graphics::WHITE);
 }
 
 void Draw::PrintPlantForSale(PowerPlant* powerPlant, int bidingPrice, char* playerName)
@@ -339,7 +339,7 @@ void Draw::PrintPlantForSale(PowerPlant* powerPlant, int bidingPrice, char* play
 
 void Draw::PrintHelpText(char* text)
 {
-	_g->PrintText(text, _infoTextPos.x, _infoTextPos.y, Graphics::WHITE, 15);
+	_g->PrintText15(text, _infoTextPos.x, _infoTextPos.y, Graphics::WHITE);
 }
 
 void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
@@ -364,13 +364,13 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 		}
 		Pos plantTextPos = Pos(0, 18);
 		_g->Draw(tempImage, xPos, yPos, 1);
-		_g->PrintText(powerPlant->GetPowerPlantNumber(), xPos, yPos, Graphics::BLACK, 15);
+		_g->PrintText15(powerPlant->GetPowerPlantNumber(), xPos, yPos, Graphics::BLACK);
 		std::string str;
 		str = std::to_string(powerPlant->GetPowerPlantConsumption());
 		str += "->" + std::to_string(powerPlant->GetPowerPlantProduction());
 		const char* buffer = str.c_str();
 
-		_g->PrintText((char*)buffer, xPos + plantTextPos.x, yPos + plantTextPos.y, Graphics::BLACK, 8);
+		_g->PrintText8((char*)buffer, xPos + plantTextPos.x, yPos + plantTextPos.y, Graphics::BLACK);
 	}
 }
 
@@ -393,14 +393,14 @@ void Draw::DrawBidButtons(int nextBid)
 	DrawButton(&_redButton, "Bjud", _continueButtonPos);
 	DrawButton(&_redButton, "Öka", _increaseButtonPos);
 	DrawButton(&_redButton, "Minska", _decreaseButtonPos);
-	_g->PrintText(nextBid, _nextBidPos.x, _nextBidPos.y, Graphics::WHITE, 15);
+	_g->PrintText15(nextBid, _nextBidPos.x, _nextBidPos.y, Graphics::WHITE);
 }
 
 void Draw::DrawButton(Image* image, char* text, Pos pos)
 {
 	Pos textDiff = Pos(2, 10);
 	_g->Draw(image, pos.x, pos.y, 1);
-	_g->PrintText(text, pos.x + textDiff.x, pos.y + textDiff.x, Graphics::BLACK, 15);
+	_g->PrintText15(text, pos.x + textDiff.x, pos.y + textDiff.x, Graphics::BLACK);
 }
 
 void Draw::DrawResourceMarket(ResourceMarket* rm)
@@ -435,8 +435,8 @@ void Draw::DrawResourceMarket(ResourceMarket* rm)
 	{
 		if (index < (rm->GetSizeOfMarket() - 1))
 		{
-			_g->PrintText(index + 1, firstMarketNumber.x + index*marketMarkerDiff.x,
-				firstMarketNumber.y, Graphics::BLACK, 15);
+			_g->PrintText15(index + 1, firstMarketNumber.x + index*marketMarkerDiff.x,
+				firstMarketNumber.y, Graphics::BLACK);
 		}
 		else
 		{
@@ -444,8 +444,8 @@ void Draw::DrawResourceMarket(ResourceMarket* rm)
 			{
 				int xDiff = marketMarkerDiff.x / max(((i - index) % 4), 1) - 10;
 				int yDiff = GetSizeOfPowerPlant().y*min(1, max(0, i - 13));
-				_g->PrintText(i, firstMarketNumber.x + (index - 1)*marketMarkerDiff.x + xDiff,
-					firstMarketNumber.y + yDiff, Graphics::BLACK, 15);
+				_g->PrintText15(i, firstMarketNumber.x + (index - 1)*marketMarkerDiff.x + xDiff,
+					firstMarketNumber.y + yDiff, Graphics::BLACK);
 			}
 		}
 	}

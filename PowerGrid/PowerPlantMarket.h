@@ -13,6 +13,7 @@ class PowerPlantMarket
 	std::vector<PowerPlant> _currentMarket;
 	std::vector<PowerPlant> _futureMarket;
 	int FindLowestPowerPlantNumber(std::vector<PowerPlant>);
+	int FindHighestPowerPlantNumber(std::vector<PowerPlant>);
 
 public:
 	PowerPlantMarket();
@@ -22,5 +23,7 @@ public:
 	PowerPlant* GetPowerPlantFutureDeck(int);
 	void RemovePowerPlant(int);
 	int GetNumberInCurrentMarket();
+	void RemoveHighestPowerPlant();
+
 };
 #endif // !POWER_PLANT_MARKET_H

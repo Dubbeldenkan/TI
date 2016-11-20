@@ -53,6 +53,8 @@ private:
 	int _amountOfGarbage = 0;
 	int _amountOfUran = 0;
 
+	const static int GetPayedArray[21];
+
 	BuyResourceStruct _buyResourceStruct;
 	BuyPlantStruct _buyPlantStruct;
 	BuyCityStruct _buyCityStruct;
@@ -74,25 +76,25 @@ public:
 	void SetPassed();
 	void ResetPassed();
 
+	//Phase 2
 	bool NewBid();
 	void SetBid(int);
 	void ResetBid();
-
 	int GetNewPowerPlantPos();
 	void SetNewPowerPlantPos(int);
-
 	int GetSelectedPowerPlant();
 	void ResetSelectedPowerPlant();
 	void SetSelectedPowerPlant(int);
-
 	void AddPowerPlant(PowerPlant*, int);
 	void SetBuyResourceStruct(ResourceMarket::Resource, int, int);
 	void TransferResources();
 	
+	//Phase 3
 	bool GetTradeOk();
 	int GetAmountOfResource();
 	ResourceMarket::Resource GetResourceType();
 
+	//Phase 4
 	bool GetClickedOnNewCity();
 	void SetBuyCityStruct(char*);
 	char* GetNewCityName();
@@ -101,9 +103,12 @@ public:
 	void ResetClickedOnNewCity();
 	std::vector<City*> GetCityVector();
 
+	//Phase 5
 	bool GetPowerPlantClicked();
 	void ResetPowerPlantClicked();
 	void SetPowerPlantClicked(int);
+	void ActiveThePowerPlants();
+	void GetPayed();
 
 private:
 	int RoomForResources(ResourceMarket::Resource);

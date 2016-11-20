@@ -454,7 +454,7 @@ void Game::Phase5()
 		_gameSubPhase = choosePowerPlantsToProducePower;
 		for (int i = 0; i < _numberOfPlayers; i++)
 		{
-			//TODO Set Active/inactive för alla spelare beroende på resurserna
+			_pv[i].ActiveThePowerPlants();
 			_tempPlayerVector.push_back(&_pv[i]);
 		}
 		_playerInTurn = _tempPlayerVector[0];
@@ -465,7 +465,12 @@ void Game::Phase5()
 	{
 		if (_playerInTurn->GetPassed())
 		{
-			_gameSubPhase = getPayed;
+			RemovePlayerFromTempVector(&_tempPlayerVector);
+			if (_tempPlayerVector.size() < 1)
+			{
+				_gameSubPhase = getPayed;
+			}
+			DrawBoard();
 		}
 		else if (_playerInTurn->GetPowerPlantClicked())
 		{
@@ -476,7 +481,14 @@ void Game::Phase5()
 	}
 	case getPayed:
 	{
-		int test = 4;
+		for (int i = 0; i < _numberOfPlayers; i++)
+		{
+			_pv[i].GetPayed();
+		}
+		_rm->ReSupplyResourceMarket(_gameStep);
+		_ppm.RemoveHighestPowerPlant();
+		_gameSubPhase = initPhase;
+		_gamePhase = 1;
 		DrawBoard();
 		break;
 	}

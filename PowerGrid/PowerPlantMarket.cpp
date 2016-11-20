@@ -108,3 +108,28 @@ int PowerPlantMarket::FindLowestPowerPlantNumber(std::vector<PowerPlant> ppVecto
 	}
 	return lowestNumber;
 }
+
+int PowerPlantMarket::FindHighestPowerPlantNumber(std::vector<PowerPlant> ppVector)
+{
+	int highestNumber = 0;
+	for (int index = 0; index < ppVector.size(); index++)
+	{
+		if (ppVector[index].GetPowerPlantNumber() > highestNumber)
+		{
+			highestNumber = index;
+		}
+	}
+	return highestNumber;
+}
+
+void PowerPlantMarket::RemoveHighestPowerPlant()
+{
+	int highestPowerPlantPos = FindHighestPowerPlantNumber(_futureMarket);
+	_ppDeck.push_back(_futureMarket[highestPowerPlantPos]);
+	_futureMarket.erase(_futureMarket.begin() + highestPowerPlantPos);
+	_currentMarket.push_back(_ppDeck[0]);
+	_ppDeck.erase(_ppDeck.begin() + 0);
+	highestPowerPlantPos = FindHighestPowerPlantNumber(_currentMarket);
+	_futureMarket.push_back(_currentMarket[highestPowerPlantPos]);
+	_currentMarket.erase(_currentMarket.begin() + highestPowerPlantPos);
+}
