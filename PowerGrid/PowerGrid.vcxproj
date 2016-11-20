@@ -23,6 +23,7 @@
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Draw.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Logger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -36,6 +37,7 @@
     <ClInclude Include="Draw.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Board.h" />
+    <ClInclude Include="Logger.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PowerPlant.h" />
     <ClInclude Include="PowerPlantMarket.h" />

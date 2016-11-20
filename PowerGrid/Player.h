@@ -5,6 +5,7 @@
 #include "ResourceMarket.h"
 #include "City.h"
 #include <vector>
+#include "Logger.h"
 
 class Player
 {
@@ -60,6 +61,8 @@ private:
 	BuyCityStruct _buyCityStruct;
 	Phase5struct _phase5Struct;
 
+	Logger *_log;
+
 public:
 	Player(char*, Color, bool);
 	~Player() {};
@@ -86,10 +89,10 @@ public:
 	void ResetSelectedPowerPlant();
 	void SetSelectedPowerPlant(int);
 	void AddPowerPlant(PowerPlant*, int);
-	void SetBuyResourceStruct(ResourceMarket::Resource, int, int);
-	void TransferResources();
 	
 	//Phase 3
+	void SetBuyResourceStruct(ResourceMarket::Resource, int, int);
+	void TransferResources();
 	bool GetTradeOk();
 	int GetAmountOfResource();
 	ResourceMarket::Resource GetResourceType();

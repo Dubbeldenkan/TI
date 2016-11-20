@@ -481,14 +481,21 @@ void Game::Phase5()
 	}
 	case getPayed:
 	{
+		//TODO kolla så att dessa funktioner fungerar som de ska.
 		for (int i = 0; i < _numberOfPlayers; i++)
 		{
 			_pv[i].GetPayed();
 		}
 		_rm->ReSupplyResourceMarket(_gameStep);
 		_ppm.RemoveHighestPowerPlant();
+		_gameSubPhase = nextPhase;
+		break;
+	}
+	case nextPhase:
+	{
 		_gameSubPhase = initPhase;
 		_gamePhase = 1;
+		_gameTurn++;
 		DrawBoard();
 		break;
 	}

@@ -14,6 +14,7 @@ Player::Player(char* name, Color color, bool humanPlayer)
 		_powerPlants[i] = PowerPlant();
 	}
 	_passed = false;
+	_log = new Logger(name);
 }
 
 int Player::GetNumberOfCitiesInNetwork()
@@ -174,6 +175,9 @@ void Player::AddPowerPlant(PowerPlant* powerPlant, int cost)
 	_powerPlants[_buyPlantStruct.newPowerPlantPos] = *powerPlant;
 	_amountOfElektro -= cost;
 	_buyPlantStruct.newPowerPlantPos = -1;
+	std::stringstream ss;
+	ss << "Köpte kraftverk nr " << powerPlant->GetPowerPlantNumber() << " för " << cost;
+	_log->Log(ss.str());
 }
 
 int Player::GetNewPowerPlantPos()
@@ -356,7 +360,7 @@ void Player::GetPayed()
 {
 	_numberOfCitiesInNetwork = _cityVector.size();
 	int producedEnergy = 0;
-	for (int index = 0; index < _numberOfCitiesInNetwork; index++)
+	for (int index = 0; index < numberOfPowerPlants; index++)
 	{
 		if (_powerPlants[index].GetActive())
 		{
