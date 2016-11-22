@@ -69,6 +69,8 @@ PowerPlantMarket::PowerPlantMarket()
 	}
 
 	_ppDeck.push_back(PowerPlant(0, PowerPlant::phase3, 0, 0));
+
+	_log = new Logger("PowerPlantMarket");
 }
 
 PowerPlant* PowerPlantMarket::GetPowerPlantCurrentDeck(int index)
@@ -88,12 +90,19 @@ int PowerPlantMarket::GetNumberInCurrentMarket()
 
 void PowerPlantMarket::RemovePowerPlant(int powerPlantPos)
 {
+	int soldPowerPlant = _currentMarket[powerPlantPos].GetPowerPlantNumber();
 	_currentMarket.erase(_currentMarket.begin() + powerPlantPos);
 	_futureMarket.push_back(_ppDeck[0]);
+	int newPowerPlant = _ppDeck[0].GetPowerPlantNumber();
 	_ppDeck.erase(_ppDeck.begin() + 0);
 	int lowestPowerPlantPos = FindLowestPowerPlantNumber(_futureMarket);
 	_currentMarket.push_back(_futureMarket[lowestPowerPlantPos]);
 	_futureMarket.erase(_futureMarket.begin() + lowestPowerPlantPos);
+
+	std::stringstream ss;
+	ss << "Kraftverk  nr " << soldPowerPlant <<
+		" såldes och ersattes av " << newPowerPlant;
+	_log->Log(ss.str());
 }
 
 int PowerPlantMarket::FindLowestPowerPlantNumber(std::vector<PowerPlant> ppVector)
@@ -125,11 +134,35 @@ int PowerPlantMarket::FindHighestPowerPlantNumber(std::vector<PowerPlant> ppVect
 void PowerPlantMarket::RemoveHighestPowerPlant()
 {
 	int highestPowerPlantPos = FindHighestPowerPlantNumber(_futureMarket);
+	int highestNumber = _futureMarket[highestPowerPlantPos].GetPowerPlantNumber();
 	_ppDeck.push_back(_futureMarket[highestPowerPlantPos]);
 	_futureMarket.erase(_futureMarket.begin() + highestPowerPlantPos);
 	_currentMarket.push_back(_ppDeck[0]);
+	int newPowerPlant = _ppDeck[0].GetPowerPlantNumber();
 	_ppDeck.erase(_ppDeck.begin() + 0);
 	highestPowerPlantPos = FindHighestPowerPlantNumber(_currentMarket);
 	_futureMarket.push_back(_currentMarket[highestPowerPlantPos]);
 	_currentMarket.erase(_currentMarket.begin() + highestPowerPlantPos);
+
+	std::stringstream ss;
+	ss << "Det högsta kraftverket, nr " << highestNumber <<
+		" lades underst i högen.\nIstället togs nr " << newPowerPlant << " fram.\n\n" <<
+		"Nu består den nuvarnade marknaden av: ";
+	for (int index = 0; index < _currentMarket.size(); index++)
+	{
+		ss << _currentMarket[index].GetPowerPlantNumber() << " ";
+	}
+	ss << "\nDen framtida markaden består av: ";
+	for (int index = 0; index < _currentMarket.size(); index++)
+	{
+		ss << _futureMarket[index].GetPowerPlantNumber() << " ";
+	}
+	_log->Log(ss.str());
+}
+
+void PowerPlantMarket::PrintPowerPlantData(int gameTurn)
+{
+	std::stringstream ss;
+	ss << "\n\nOmgång " << gameTurn;
+	_log->Log(ss.str());
 }

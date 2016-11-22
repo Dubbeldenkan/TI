@@ -1,0 +1,36 @@
+
+
+Spelet startades Tue Nov 22 23:02:19 2016
+
+
+
+Spelet startades Tue Nov 22 23:02:19 2016
+
+23:02:32   Kraftverk  nr 6 såldes och ersattes av 13
+23:03:23   Kraftverk  nr 7 såldes och ersattes av 33
+23:03:25   Kraftverk  nr 8 såldes och ersattes av 12
+23:05:31   Det högsta kraftverket, nr 12 lades underst i högen.
+Istället togs nr 22 fram.
+
+Nu består den nuvarnade marknaden av: 3 4 5 9 
+Den framtida markaden består av: 10 13 33 22 
+23:05:31   
+
+Omgång 2
+
+
+Spelet startades Tue Nov 22 23:17:38 2016
+
+
+
+Spelet startades Tue Nov 22 23:17:39 2016
+
+23:17:44   Kraftverk  nr 6 såldes och ersattes av 13
+23:17:58   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 31 fram.
+
+Nu består den nuvarnade marknaden av: 3 4 5 7 
+Den framtida markaden består av: 8 9 10 31 
+23:17:58   
+
+Omgång 2

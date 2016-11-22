@@ -72,6 +72,7 @@ private:
 	void RemovePlayerFromTempVector(std::vector<Player*>*);
 	void InitPlayers(int);
 	int GetNewCityCost(char*);
+	void PrintDataToLog(int);
 
 	void DrawBoard();
 	void Phase1();

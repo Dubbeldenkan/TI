@@ -135,8 +135,22 @@ int Game::GetNewCityCost(char* cityName)
 	return  tempCity->GetCostForFirstFreePos(_gameStep);
 }
 
+void Game::PrintDataToLog(int tempGameTurn)
+{
+	if (_gameTurn != tempGameTurn)
+	{
+		for (int index = 0; index < _numberOfPlayers; index++)
+		{
+			_pv[index].PrintPlayerData(_gameTurn);
+		}
+		_ppm.PrintPowerPlantData(_gameTurn);
+		_rm->PrintResourceMarketData(_gameTurn);
+	}
+}
+
 void Game::Run()
 {
+	int tempGameTurn = _gameTurn;
 	switch (_gamePhase)
 	{
 	case 1:
@@ -157,6 +171,7 @@ void Game::Run()
 	default:
 		break;
 	}
+	PrintDataToLog(tempGameTurn);
 }
 
 void Game::DrawBoard()
@@ -200,6 +215,7 @@ void Game::Phase1()
 	else
 	{
 		tempPv = _pv;
+		_pv.clear();
 		for (int order = 0; order < _numberOfPlayers; order++)
 		{
 			int playersLeft = tempPv.size();
@@ -231,11 +247,29 @@ void Game::Phase1()
 						bestValuePos = playersWithBestValue[index];
 					}
 				}
-				_pv.push_back(tempPv[bestValuePos]);
-				tempPv.erase(tempPv.begin() + bestValuePos);
+				if (bestValue == 0)
+				{
+					while (!tempPv.empty())
+					{
+						_pv.push_back(tempPv[0]);
+						tempPv.erase(tempPv.begin());
+					}
+					break;
+				}
+				else
+				{
+					_pv.push_back(tempPv[bestValuePos]);
+					tempPv.erase(tempPv.begin() + bestValuePos);
+				}
+			}
+			else
+			{
+				_pv.push_back(tempPv[playersWithBestValue[0]]);
+				tempPv.erase(tempPv.begin() + playersWithBestValue[0]);
 			}
 		}
 	}
+	_playerInTurn = &_pv[0];
 	_gamePhase++;
 	DrawBoard();
 }
@@ -408,12 +442,13 @@ void Game::Phase4()
 		if (_playerInTurn->GetClickedOnNewCity())
 		{
 			int cityCost = GetNewCityCost(_playerInTurn->GetNewCityName());
-			int roadCost = _board.GetRoadCost(_playerInTurn->GetCityVector(), _playerInTurn->GetNewCityName());
+			Board::GetRoadCostOutput result = _board.GetRoadCost(_playerInTurn->GetCityVector(), _playerInTurn->GetNewCityName());
+			int roadCost = result.cost;
 			if((cityCost != 0) && (_playerInTurn->CanAffordCost(cityCost + roadCost)))
 			{
 				City* city = _board.GetCityFromName(_playerInTurn->GetNewCityName());
 				city->SetFirstFreePos((int) _playerInTurn->GetColor());
-				_playerInTurn->BuyCity(cityCost + roadCost, city);
+				_playerInTurn->BuyCity(cityCost + roadCost, city, result.cityList);
 				DrawBoard();
 			}
 			else

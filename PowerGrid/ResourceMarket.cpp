@@ -3,6 +3,7 @@
 ResourceMarket::ResourceMarket(int numberOfPlayers, GameBoard gameBoard)
 {
 	_numberOfPlayers = numberOfPlayers;
+	_log = new Logger("ResourceMarket");
 	switch (gameBoard)
 	{
 	case USA:
@@ -10,7 +11,7 @@ ResourceMarket::ResourceMarket(int numberOfPlayers, GameBoard gameBoard)
 		_amountOfCoal = 24;
 		_amountOfOil = 18;
 		_amountOfGarbage = 6;
-		_amountOfUranium = 12;
+		_amountOfUranium = 2;
 		break;
 	}
 	default:
@@ -75,15 +76,24 @@ int ResourceMarket::GetFirstResPos(Resource resource)
 
 void ResourceMarket::ReSupplyResourceMarket(int step)
 {
-	_amountOfCoal += resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::coal];
-	_amountOfOil += resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::oil];
-	_amountOfGarbage += resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::garbage];
-	_amountOfUranium += resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::uranium];
+	_amountOfCoal += _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::coal];
+	_amountOfOil += _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::oil];
+	_amountOfGarbage += _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::garbage];
+	_amountOfUranium += _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::uranium];
 
 	_amountOfCoal = min(_amountOfCoal, MAX_AMOUNT_RESOURCE);
 	_amountOfOil = min(_amountOfOil, MAX_AMOUNT_RESOURCE);
 	_amountOfGarbage = min(_amountOfGarbage, MAX_AMOUNT_RESOURCE);
 	_amountOfUranium = min(_amountOfUranium, MAX_AMOUNT_URAN);
+
+	std::stringstream ss;
+	ss << "Kolet har fyllts på med " << _resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::coal] <<
+		" till " << _amountOfCoal << "\nOljan har fyllts på med " << 
+		_resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::oil] << " till " << _amountOfOil <<
+		"\nSoporna har fyllts på med " << _resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::garbage] << 
+		" till " << _amountOfGarbage << "\nUranet har fyllts på med " <<
+		_resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::uranium] << "till " << _amountOfUranium;
+	_log->Log(ss.str());
 }
 
 int ResourceMarket::GetSizeOfMarket()
@@ -148,21 +158,36 @@ int ResourceMarket::GetResourceAmount(ResourceMarket::Resource resource)
 
 void ResourceMarket::TransferResources(int amount, ResourceMarket::Resource resource)
 {
+	char* resourceName = "";
 	switch (resource)
 	{
 	case ResourceMarket::coal:
 		_amountOfCoal -= amount;
+		resourceName = "kol";
 		break;
 	case ResourceMarket::oil:
 		_amountOfOil -= amount;
+		resourceName = "olja";
 		break;
 	case ResourceMarket::garbage:
 		_amountOfGarbage -= amount;
+		resourceName = "sopor";
 		break;
 	case ResourceMarket::uranium:
 		_amountOfUranium -= amount;
+		resourceName = "uran";
 		break;
 	default:
 		break;
 	}
+	std::stringstream ss;
+	ss << "Marknaden har sålt " << amount << " " << resource;
+	_log->Log(ss.str());
+}
+
+void ResourceMarket::PrintResourceMarketData(int gameTurn)
+{
+	std::stringstream ss;
+	ss << "\n\nOmgång " << gameTurn;
+	_log->Log(ss.str());
 }

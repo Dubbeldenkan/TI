@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "PowerPlant.h"
+#include "Logger.h"
 
 class PowerPlantMarket
 {
@@ -15,6 +16,8 @@ class PowerPlantMarket
 	int FindLowestPowerPlantNumber(std::vector<PowerPlant>);
 	int FindHighestPowerPlantNumber(std::vector<PowerPlant>);
 
+	Logger *_log;
+
 public:
 	PowerPlantMarket();
 	~PowerPlantMarket() {};
@@ -24,6 +27,7 @@ public:
 	void RemovePowerPlant(int);
 	int GetNumberInCurrentMarket();
 	void RemoveHighestPowerPlant();
+	void PrintPowerPlantData(int);
 
 };
 #endif // !POWER_PLANT_MARKET_H

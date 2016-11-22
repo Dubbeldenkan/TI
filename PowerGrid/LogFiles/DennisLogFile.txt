@@ -2,24 +2,23 @@
 
 Spelet startades Tue Nov 22 23:02:19 2016
 
-23:03:25   Köpte kraftverk nr 8 för 8 elektro
-23:04:51   Staden Portland lades till för 10 elektro. via städerna 
-23:04:52   Staden Seattle lades till för 13 elektro. via städerna Portland->Seattle
+23:03:23   Köpte kraftverk nr 7 för 8 elektro
+23:04:05   Köpte 6 oil för 21 elektro
+23:04:56   Staden San Diego lades till för 10 elektro. via städerna 
 23:05:31   Tjänade 10 elektro
 23:05:31   
 Omgång 2
-Elektro: 29
+Elektro: 21
 Kol: 0
-Olja: 0
+Olja: 6
 Sopor: 0
 Uran: 0
-Antal städer i nätverk: 2
+Antal städer i nätverk: 1
 Antal försörjda städer: 0
 KraftVerk:
-8
+7
 Städer:
-Portland
-Seattle
+San Diego
 
 
 

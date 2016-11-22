@@ -154,8 +154,7 @@ void Board::InitMap()
 	_edgeDict["Cincinnati-St. Louis"] = 12;
 
 	//Cincinnati
-	char* temp = "Cincinnati-Knoxville";
-	_edgeDict[temp] = 6;
+	_edgeDict["Cincinnati-Knoxville"] = 6;
 	_edgeDict["Cincinnati-Raleigh"] = 15;
 	_edgeDict["Cincinnati-Pittsburgh"] = 7;
 	_edgeDict["Cincinnati-Detroit"] = 4;
@@ -278,12 +277,13 @@ City* Board::GetCityFromName(char* name)
 	return _cityDict[name];
 }
 
-int Board::GetRoadCost(std::vector<City*> cityVector, char* cityName)
+Board::GetRoadCostOutput Board::GetRoadCost(std::vector<City*> cityVector, char* cityName)
 {
-	int result;
+	GetRoadCostOutput result;
 	if (cityVector.empty())
 	{
-		result = 0;
+		result.cityList = "";
+		result.cost = 0;
 	}
 	else
 	{
@@ -314,6 +314,7 @@ int Board::GetRoadCost(std::vector<City*> cityVector, char* cityName)
 				{
 					finished = true;
 					cost = distVector[index].dist;
+					break;
 				}
 			}
 			distVector[index].neighbourCities = GetNeighbourCities(distVector[index].city);
@@ -340,14 +341,38 @@ int Board::GetRoadCost(std::vector<City*> cityVector, char* cityName)
 			int lowestCost = MAXINT;
 			for (int i = 0; i < distVector.size(); i++)
 			{
-				if (!distVector[i].searchFinished && (lowestCost > distVector[i].dist))
+				if (!distVector[i].searchFinished && (lowestCost > distVector[i].dist) && !finished)
 				{
 					lowestCost = distVector[i].dist;
 					index = i;
 				}
 			}
 		}
-		result = cost;
+		std::string cityList = "";
+		int cityInOrder = 0;
+		CityDist *currentCityDist = &distVector[index];
+		bool foundStartCity = false;
+		while (!foundStartCity)
+		{
+			cityList += currentCityDist->city->GetName();
+			if (currentCityDist->parentCity == NULL)
+			{
+				foundStartCity = true;
+			}
+			else
+			{
+				cityList += "->";
+				for (int i = 0; i < distVector.size(); i++)
+				{
+					if (distVector[i].city == currentCityDist->parentCity)
+					{
+						currentCityDist = &distVector[i];
+					}
+				}
+			}
+		}
+		result.cityList = cityList;
+		result.cost = cost;
 	}
 	return result;
 }

@@ -1,1 +1,43 @@
-Köpte kraftverk nr 6 för 6
+
+
+Spelet startades Tue Nov 22 23:02:19 2016
+
+23:02:32   Köpte kraftverk nr 6 för 6 elektro
+23:03:42   Köpte 2 garbage för 5 elektro
+23:04:17   Staden St. Louis lades till för 10 elektro. via städerna 
+23:04:44   Staden Minneapolis lades till för 28 elektro. via städerna St. Louis->Chicago->Minneapolis
+23:05:31   Tjänade 22 elektro
+23:05:31   
+Omgång 2
+Elektro: 23
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 1
+KraftVerk:
+6
+Städer:
+St. Louis
+Minneapolis
+
+
+
+Spelet startades Tue Nov 22 23:17:39 2016
+
+23:17:44   Köpte kraftverk nr 6 för 6 elektro
+23:17:58   Tjänade 10 elektro
+23:17:58   
+Omgång 2
+Elektro: 54
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+6
+Städer:
+

@@ -13,7 +13,11 @@ void Input::SetGame(Game* game)
 
 void Input::MouseClick()
 {
-	if (PassedBeenPressed())
+	if (!_game->GetPlayerInTurn()->GetHumanPlayer())
+	{
+		//Do nothing
+	}
+	else if (PassedBeenPressed())
 	{
 		_game->GetPlayerInTurn()->SetPassed();
 	}
@@ -97,7 +101,10 @@ void Input::MouseClick()
 	else if (_game->GetCurrentPhase() == 5)
 	{
 		int tempPowerPlantPos = PowerPlantPressed();
-		if (tempPowerPlantPos > -1)
+		PowerPlant::EnergySource resourceType = _game->GetPlayerInTurn()->GetPowerPlant(tempPowerPlantPos)->GetType();
+		int consumptionForPowerPlant = _game->GetPlayerInTurn()->GetPowerPlant(tempPowerPlantPos)->GetPowerPlantConsumption();
+		if ((tempPowerPlantPos > -1) && 
+			(_game->GetPlayerInTurn()->GetAmountOfResource(resourceType) >= consumptionForPowerPlant))
 		{
 			_game->GetPlayerInTurn()->SetPowerPlantClicked(tempPowerPlantPos);
 		}

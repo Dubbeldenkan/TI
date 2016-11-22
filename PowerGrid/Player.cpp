@@ -78,6 +78,29 @@ int Player::GetAmountOfResource(ResourceMarket::Resource resource)
 	return result;
 }
 
+int Player::GetAmountOfResource(PowerPlant::EnergySource resource)
+{
+	int result = 0;
+	switch (resource)
+	{
+	case PowerPlant::coal:
+		result = _amountOfCoal;
+		break;
+	case PowerPlant::oil:
+		result = _amountOfOil;
+		break;
+	case PowerPlant::garbage:
+		result = _amountOfGarbage;
+		break;
+	case PowerPlant::uranium:
+		result = _amountOfUran;
+		break;
+	default:
+		break;
+	}
+	return result;
+}
+
 int Player::GetAmountOfElektro()
 {
 	return _amountOfElektro;
@@ -176,7 +199,7 @@ void Player::AddPowerPlant(PowerPlant* powerPlant, int cost)
 	_amountOfElektro -= cost;
 	_buyPlantStruct.newPowerPlantPos = -1;
 	std::stringstream ss;
-	ss << "Köpte kraftverk nr " << powerPlant->GetPowerPlantNumber() << " för " << cost;
+	ss << "Köpte kraftverk nr " << powerPlant->GetPowerPlantNumber() << " för " << cost << " elektro";
 	_log->Log(ss.str());
 }
 
@@ -192,35 +215,46 @@ void Player::SetNewPowerPlantPos(int pos)
 
 void Player::TransferResources()
 {
+	char* resource = "";
 	switch (_buyResourceStruct.resource)
 	{
 	case ResourceMarket::coal:
 	{
 		_amountOfCoal += _buyResourceStruct.amountOfResource;
 		_amountOfElektro -= _buyResourceStruct.cost;
+		resource = "coal";
 		break;
 	}
 	case ResourceMarket::oil:
 	{
 		_amountOfOil += _buyResourceStruct.amountOfResource;
 		_amountOfElektro -= _buyResourceStruct.cost;
+		resource = "oil";
 		break;
 	}
 	case ResourceMarket::garbage:
 	{
 		_amountOfGarbage += _buyResourceStruct.amountOfResource;
 		_amountOfElektro -= _buyResourceStruct.cost;
+		resource = "garbage";
 		break;
 	}
 	case ResourceMarket::uranium:
 	{
 		_amountOfUran += _buyResourceStruct.amountOfResource;
 		_amountOfElektro -= _buyResourceStruct.cost;
+		resource = "uran";
 		break;
 	}
 	default:
 		break;
 	}
+
+	std::stringstream ss;
+	ss << "Köpte " << _buyResourceStruct.amountOfResource << " " << resource << 
+		" för " << _buyResourceStruct.cost << " elektro";
+	_log->Log(ss.str());
+	
 	_buyResourceStruct.tradeOk = false;
 }
 
@@ -270,11 +304,15 @@ bool Player::CanAffordCost(int cost)
 	return (_amountOfElektro >= cost);
 }
 
-void Player::BuyCity(int cost, City* city)
+void Player::BuyCity(int cost, City* city, std::string cityList)
 {
 	_amountOfElektro -= cost;
 	_cityVector.push_back(city);
 	_buyCityStruct.clickedOnNewCity = false;
+	std::stringstream ss;
+	ss << "Staden " << city->GetName() << " lades till för " << cost << " elektro.";
+	ss << " via städerna " << cityList;
+	_log->Log(ss.str());
 }
 
 void Player::ResetClickedOnNewCity()
@@ -400,4 +438,34 @@ void Player::GetPayed()
 	}
 	_numberOfSuppliedCities = min(producedEnergy, _numberOfCitiesInNetwork);
 	_amountOfElektro += GetPayedArray[_numberOfSuppliedCities];
+	std::stringstream ss;
+	ss << "Tjänade " << GetPayedArray[_numberOfSuppliedCities] << " elektro";
+	_log->Log(ss.str());
+}
+
+bool Player::GetHumanPlayer()
+{
+	return _humanPlayer;
+}
+
+void Player::PrintPlayerData(int gameTurn)
+{
+	std::stringstream ss;
+	ss << "\nOmgång " << gameTurn << "\nElektro: " << _amountOfElektro << "\nKol: " << _amountOfCoal <<
+		"\nOlja: " << _amountOfOil << "\nSopor: " << _amountOfGarbage << "\nUran: " << _amountOfUran <<
+		"\nAntal städer i nätverk: " << _numberOfCitiesInNetwork << "\nAntal försörjda städer: " <<
+		_numberOfSuppliedCities <<"\nKraftVerk:\n"; 
+	for (int index = 0; index < numberOfPowerPlants; index++)
+	{
+		if (_powerPlants[index].GetPowerPlantNumber() != 0)
+		{
+			ss << _powerPlants[index].GetPowerPlantNumber() << "\n";
+		}
+	}
+	ss << "Städer:\n";
+	for (int index = 0; index < _cityVector.size(); index++)
+	{
+		ss << _cityVector[index]->GetName() << "\n";
+	}
+	_log->Log(ss.str());
 }

@@ -9,6 +9,14 @@
 
 class Board
 {
+public:
+	struct GetRoadCostOutput
+	{
+		int cost;
+		std::string cityList;
+	};
+
+private:
 	std::vector<int> _usedRegions;
 	char* _mapName;
 	Image _mapImage;
@@ -29,7 +37,7 @@ public:
 	std::vector<int> GetRegionsInPlay();
 	bool CityIsInUsedRegion(City*);
 	City* GetCityFromName(char*);
-	int GetRoadCost(std::vector<City*>, char*);
+	GetRoadCostOutput GetRoadCost(std::vector<City*>, char*);
 
 private:
 	void InitMap();

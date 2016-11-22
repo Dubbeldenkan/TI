@@ -74,10 +74,13 @@ public:
 	Player::Color GetColor();
 	int GetAmountOfElektro();
 	int GetAmountOfResource(ResourceMarket::Resource);
+	int GetAmountOfResource(PowerPlant::EnergySource);
 
 	bool GetPassed();
 	void SetPassed();
 	void ResetPassed();
+	bool GetHumanPlayer();
+	void PrintPlayerData(int);
 
 	//Phase 2
 	bool NewBid();
@@ -102,7 +105,7 @@ public:
 	void SetBuyCityStruct(char*);
 	char* GetNewCityName();
 	bool CanAffordCost(int);
-	void BuyCity(int, City*);
+	void BuyCity(int, City*, std::string);
 	void ResetClickedOnNewCity();
 	std::vector<City*> GetCityVector();
 

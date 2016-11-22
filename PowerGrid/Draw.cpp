@@ -290,7 +290,8 @@ void Draw::DrawPlayer(Player* player, int playerIndex, int gamePhase)
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + suppliedcitiesPos.y, Graphics::BLACK);
 	_g->PrintText15("+", _firstPlayerPos.x + plusPos.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + plusPos.y, Graphics::BLACK);
-	_g->PrintText15(player->GetNumberOfCitiesInNetwork(), _firstPlayerPos.x + citiesInNetworkPos.x,
+	_g->PrintText15(player->GetNumberOfCitiesInNetwork() - player->GetNumberOfSuppliedCities(),
+		_firstPlayerPos.x + citiesInNetworkPos.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + citiesInNetworkPos.y, Graphics::BLACK);
 	for (int index = 0; index < player->numberOfPowerPlants; index++)
 	{

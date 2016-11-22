@@ -5,11 +5,14 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <ctime>
+#include <time.h>
 
 class Logger
 {
 	std::string _fileName;
 	std::ofstream _fs;
+	const time_t ctt = time(0);
 
 public:
 	Logger();
