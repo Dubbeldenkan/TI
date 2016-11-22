@@ -217,11 +217,3 @@ void Graphics::PrintText15(int number, int xPos, int yPos, D3DCOLOR color)
 	const char* buffer = str.c_str();
 	PrintText15((char*) buffer, xPos, yPos, color);
 }
-
-//TODO ta bort gammal kod i denna klass
-/*void Graphics::SetTextSize(int size)
-{
-	int logicalHeight = -MulDiv(size, GetDeviceCaps(_hdc, LOGPIXELSY), 72);
-	HRESULT hr = D3DXCreateFont(_d3dDevice, logicalHeight, 0, 0, 1, 0, ANSI_CHARSET,
-		OUT_TT_ONLY_PRECIS, 0, 0, "Helvetica", &_font);
-}*/

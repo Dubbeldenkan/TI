@@ -334,7 +334,6 @@ void Player::SetPowerPlantClicked(int input)
 {
 	if (_powerPlants[input].GetPowerPlantNumber() > 0)
 	{
-		//TODO lägg till så att man kollar attresurser finns
 		_powerPlants[input].ToggleActive();
 	}
 	_phase5Struct.clickedPowerPlant = true;

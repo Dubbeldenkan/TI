@@ -285,7 +285,6 @@ void Draw::DrawPlayer(Player* player, int playerIndex, int gamePhase)
 	_g->PrintText15(player->GetAmountOfElektro(), _firstPlayerPos.x + elektroPos.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + elektroPos.y, Graphics::BLACK);
 
-	//TODO dessa under var tidigare 13 strl, ska de fortfarande vara det?
 	_g->PrintText15(player->GetNumberOfSuppliedCities(), _firstPlayerPos.x + suppliedcitiesPos.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + suppliedcitiesPos.y, Graphics::BLACK);
 	_g->PrintText15("+", _firstPlayerPos.x + plusPos.x,
