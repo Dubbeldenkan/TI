@@ -3,9 +3,7 @@
 PowerPlantMarket::PowerPlantMarket()
 {
 	//Prepare current market
-	//TODO ändra tillbaka denna 
-	//_currentMarket.push_back(PowerPlant(3, PowerPlant::oil, 2, 1));
-	_currentMarket.push_back(PowerPlant(3, PowerPlant::uranium, 2, 1));
+	_currentMarket.push_back(PowerPlant(3, PowerPlant::oil, 2, 1));
 	_currentMarket.push_back(PowerPlant(4, PowerPlant::coal, 2, 1));
 	_currentMarket.push_back(PowerPlant(5, PowerPlant::coalOrOil, 2, 1));
 	_currentMarket.push_back(PowerPlant(6, PowerPlant::garbage, 1, 1));
@@ -25,7 +23,7 @@ PowerPlantMarket::PowerPlantMarket()
 	tempPowerPlantVector.push_back(PowerPlant(14, PowerPlant::garbage, 2, 2));
 	tempPowerPlantVector.push_back(PowerPlant(15, PowerPlant::coal, 2, 3));
 	tempPowerPlantVector.push_back(PowerPlant(16, PowerPlant::oil, 2, 3));
-	tempPowerPlantVector.push_back(PowerPlant(17, PowerPlant::uranium, 2, 2)); //TODO den ska bara konsumera 1
+	tempPowerPlantVector.push_back(PowerPlant(17, PowerPlant::uranium, 1, 2));
 	tempPowerPlantVector.push_back(PowerPlant(18, PowerPlant::none, 0, 2));
 	tempPowerPlantVector.push_back(PowerPlant(19, PowerPlant::garbage, 2, 3));
 
