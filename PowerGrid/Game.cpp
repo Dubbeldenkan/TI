@@ -286,6 +286,7 @@ void Game::Phase2()
 		}
 		_gameSubPhase = choosePowerPlant;
 		_playerInTurn = _tempPlayerVector[0];
+		_phase2Struct.allHasPassed = true;
 		break;
 	}
 	case choosePowerPlant:
@@ -302,6 +303,7 @@ void Game::Phase2()
 		}
 		else if(_playerInTurn->GetSelectedPowerPlant() > 0)
 		{
+			_phase2Struct.allHasPassed = false;
 			_phase2Struct.selectedPowerPlant = _playerInTurn->GetSelectedPowerPlant();
 			_phase2Struct.bidForSelectedPowerPlant = 
 				_ppm.GetPowerPlantCurrentDeck(_phase2Struct.selectedPowerPlant - 1)->GetPowerPlantNumber();
@@ -368,6 +370,10 @@ void Game::Phase2()
 	}
 	case nextPhase:
 	{
+		if (_phase2Struct.allHasPassed)
+		{
+			_ppm.RemoveLowestPowerPlant();
+		}
 		_gamePhase++;
 		_gameSubPhase = initPhase;
 		break;
@@ -516,7 +522,6 @@ void Game::Phase5()
 	}
 	case getPayed:
 	{
-		//TODO kolla så att dessa funktioner fungerar som de ska.
 		for (int i = 0; i < _numberOfPlayers; i++)
 		{
 			_pv[i].GetPayed();

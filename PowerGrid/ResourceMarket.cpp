@@ -1,5 +1,7 @@
 #include "ResourceMarket.h"
 
+const int ResourceMarket::uranCostArray[] = { 1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 16 };
+
 ResourceMarket::ResourceMarket(int numberOfPlayers, GameBoard gameBoard)
 {
 	_numberOfPlayers = numberOfPlayers;
@@ -124,11 +126,21 @@ int ResourceMarket::GetAmountOfUran()
 int ResourceMarket::GetCost(int amount, ResourceMarket::Resource resource)
 {
 	int result = 0;
-	for (int index = 0; index < amount; index++)
+	if (ResourceMarket::uranium == resource)
 	{
-		int number = (MAX_AMOUNT_RESOURCE - GetResourceAmount(resource)) + index;
-		//TODO fixa för uran oxå
-		result += (number / 3) + 1;
+		for (int index = 0; index < amount; index++)
+		{
+			int number = (MAX_AMOUNT_RESOURCE - GetResourceAmount(resource)) + index;
+			result += uranCostArray[number];
+		}
+	}
+	else
+	{
+		for (int index = 0; index < amount; index++)
+		{
+			int number = (MAX_AMOUNT_RESOURCE - GetResourceAmount(resource)) + index;
+			result += (number / 3) + 1;
+		}
 	}
 	return result;
 }

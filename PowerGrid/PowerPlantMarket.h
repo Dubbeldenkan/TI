@@ -27,6 +27,7 @@ public:
 	void RemovePowerPlant(int);
 	int GetNumberInCurrentMarket();
 	void RemoveHighestPowerPlant();
+	void RemoveLowestPowerPlant();
 	void PrintPowerPlantData(int);
 
 };

@@ -31,6 +31,7 @@ private:
 		int nextBid;
 		bool buttonPressed;
 		std::vector<Player*> bidPlayerVector;
+		bool allHasPassed;
 	}_phase2Struct;
 
 	int _numberOfPlayers;

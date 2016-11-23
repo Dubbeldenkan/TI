@@ -361,6 +361,9 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 		case PowerPlant::garbage:
 			tempImage = &_powerPlantGarbageImage;
 			break;
+		case PowerPlant::uranium:
+			tempImage = &_powerPlantUranImage;
+			break;
 		}
 		Pos plantTextPos = Pos(0, 18);
 		_g->Draw(tempImage, xPos, yPos, 1);
@@ -431,6 +434,7 @@ void Draw::DrawResourceMarket(ResourceMarket* rm)
 	DrawResource(rm->GetAmountOfGarbage(), ResourceMarket::garbage);
 	DrawResource(rm->GetAmountOfUran(), ResourceMarket::uranium);
 
+	//Draw the background for the market
 	for(int index = 0; index < rm->GetSizeOfMarket(); index++)
 	{
 		if (index < (rm->GetSizeOfMarket() - 1))

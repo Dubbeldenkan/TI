@@ -9,6 +9,7 @@ class ResourceMarket
 public:
 	enum GameBoard {USA};
 	enum Resource{coal, oil, garbage, uranium};
+	static const int uranCostArray[];
 
 	static const int MAX_AMOUNT_RESOURCE = 24;
 	static const int MAX_AMOUNT_URAN = 12;

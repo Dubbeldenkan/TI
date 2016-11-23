@@ -68,7 +68,7 @@ void Input::MouseClick()
 		int coalNumber = GetResourcePressed(ResourceMarket::coal);
 		int oilNumber = GetResourcePressed(ResourceMarket::oil);
 		int garbageNumber = GetResourcePressed(ResourceMarket::garbage);
-		int uranNumber = GetResourcePressed(ResourceMarket::uranium);
+		int uranNumber = GetResourcePressedForUran();
 		if (coalNumber > 0)
 		{
 			int cost = _game->GetResourceMarket()->GetCost(coalNumber, ResourceMarket::coal);
@@ -154,12 +154,6 @@ int Input::GetResourcePressed(ResourceMarket::Resource resource)
 		firstPos = d->GetFirstGarbagePos();
 		numberOfResources = _game->GetResourceMarket()->GetAmountOfGarbage();
 		break;
-	case ResourceMarket::uranium:
-		firstPos = d->GetFirstUranPos();
-		resourceDiff = d->GetUranDiff();
-		maxAmountOfResources = ResourceMarket::MAX_AMOUNT_URAN;
-		numberOfResources = _game->GetResourceMarket()->GetAmountOfUran();
-		break;
 	default:
 		break;
 	}
@@ -169,6 +163,43 @@ int Input::GetResourcePressed(ResourceMarket::Resource resource)
 			(_mousePos.x < (firstPos.x + resourceDiff.x*index + d->GetSizeOfResource().x)));
 		bool yPosTrue = ((_mousePos.y > firstPos.y) &&
 			(_mousePos.y < (firstPos.y + d->GetSizeOfResource().y)));
+		if (xPosTrue && yPosTrue)
+		{
+			result = (index + 1) - (maxAmountOfResources - numberOfResources);
+			result = max(0, result);
+			break;
+		}
+	}
+	return result;
+}
+
+int Input::GetResourcePressedForUran()
+{
+	Draw* d = _game->GetDraw();
+	Draw::Pos firstPos = d->GetFirstUranPos();
+	Draw::Pos resourceDiff = d->GetUranDiff();
+	int maxAmountOfResources = ResourceMarket::MAX_AMOUNT_URAN;
+	int numberOfResources = _game->GetResourceMarket()->GetAmountOfUran();
+	int result = 0;
+	for (int index = 0; index < maxAmountOfResources; index++)
+	{
+		bool xPosTrue;
+		bool yPosTrue;
+		if (index > 7)
+		{
+			xPosTrue = (_mousePos.x > (firstPos.x + resourceDiff.x * 8 + resourceDiff.x / 2 * ((index - 8) % 2)) &&
+				(_mousePos.x < (firstPos.x + resourceDiff.x * 8 + resourceDiff.x / 2 * ((index - 8) % 2) +
+					d->GetSizeOfResource().x)));
+			yPosTrue = (_mousePos.y > (firstPos.y + resourceDiff.y*min(0, max(-1, index - 10))) &&
+				(_mousePos.y < (firstPos.y + resourceDiff.y*min(0, max(-1, index - 10)) + d->GetSizeOfResource().y)));
+		}
+		else
+		{
+			xPosTrue = (_mousePos.x > (firstPos.x + resourceDiff.x*index) &&
+				(_mousePos.x < (firstPos.x + resourceDiff.x*index + d->GetSizeOfResource().x)));
+			yPosTrue = ((_mousePos.y > firstPos.y) &&
+				(_mousePos.y < (firstPos.y + d->GetSizeOfResource().y)));
+		}
 		if (xPosTrue && yPosTrue)
 		{
 			result = (index + 1) - (maxAmountOfResources - numberOfResources);

@@ -3,7 +3,9 @@
 PowerPlantMarket::PowerPlantMarket()
 {
 	//Prepare current market
-	_currentMarket.push_back(PowerPlant(3, PowerPlant::oil, 2, 1));
+	//TODO ändra tillbaka denna 
+	//_currentMarket.push_back(PowerPlant(3, PowerPlant::oil, 2, 1));
+	_currentMarket.push_back(PowerPlant(3, PowerPlant::uranium, 2, 1));
 	_currentMarket.push_back(PowerPlant(4, PowerPlant::coal, 2, 1));
 	_currentMarket.push_back(PowerPlant(5, PowerPlant::coalOrOil, 2, 1));
 	_currentMarket.push_back(PowerPlant(6, PowerPlant::garbage, 1, 1));
@@ -23,7 +25,7 @@ PowerPlantMarket::PowerPlantMarket()
 	tempPowerPlantVector.push_back(PowerPlant(14, PowerPlant::garbage, 2, 2));
 	tempPowerPlantVector.push_back(PowerPlant(15, PowerPlant::coal, 2, 3));
 	tempPowerPlantVector.push_back(PowerPlant(16, PowerPlant::oil, 2, 3));
-	tempPowerPlantVector.push_back(PowerPlant(17, PowerPlant::uranium, 2, 2));
+	tempPowerPlantVector.push_back(PowerPlant(17, PowerPlant::uranium, 2, 2)); //TODO den ska bara konsumera 1
 	tempPowerPlantVector.push_back(PowerPlant(18, PowerPlant::none, 0, 2));
 	tempPowerPlantVector.push_back(PowerPlant(19, PowerPlant::garbage, 2, 3));
 
@@ -108,27 +110,31 @@ void PowerPlantMarket::RemovePowerPlant(int powerPlantPos)
 int PowerPlantMarket::FindLowestPowerPlantNumber(std::vector<PowerPlant> ppVector)
 {
 	int lowestNumber = _highestNumberedPowerPlant + 1;
+	int lowestNumberPos;
 	for (int index = 0; index < ppVector.size(); index++)
 	{
 		if (ppVector[index].GetPowerPlantNumber() < lowestNumber)
 		{
-			lowestNumber = index;
+			lowestNumber = ppVector[index].GetPowerPlantNumber();
+			lowestNumberPos = index;
 		}
 	}
-	return lowestNumber;
+	return lowestNumberPos;
 }
 
 int PowerPlantMarket::FindHighestPowerPlantNumber(std::vector<PowerPlant> ppVector)
 {
 	int highestNumber = 0;
+	int highestNumberPos;
 	for (int index = 0; index < ppVector.size(); index++)
 	{
 		if (ppVector[index].GetPowerPlantNumber() > highestNumber)
 		{
-			highestNumber = index;
+			highestNumber = ppVector[index].GetPowerPlantNumber();
+			highestNumberPos = index;
 		}
 	}
-	return highestNumber;
+	return highestNumberPos;
 }
 
 void PowerPlantMarket::RemoveHighestPowerPlant()
@@ -164,5 +170,24 @@ void PowerPlantMarket::PrintPowerPlantData(int gameTurn)
 {
 	std::stringstream ss;
 	ss << "\n\nOmgång " << gameTurn;
+	_log->Log(ss.str());
+}
+
+void PowerPlantMarket::RemoveLowestPowerPlant()
+{
+	int lowestPowerPlantPosInCurrentMarket = FindLowestPowerPlantNumber(_currentMarket);
+	int lowestPowerPlantNumber = _currentMarket[lowestPowerPlantPosInCurrentMarket].GetPowerPlantNumber();
+
+	_currentMarket.erase(_currentMarket.begin() + lowestPowerPlantPosInCurrentMarket);
+	_futureMarket.push_back(_ppDeck[0]);
+	int newPowerPlant = _ppDeck[0].GetPowerPlantNumber();
+	_ppDeck.erase(_ppDeck.begin() + 0);
+	int lowestPowerPlantPos = FindLowestPowerPlantNumber(_futureMarket);
+	_currentMarket.push_back(_futureMarket[lowestPowerPlantPos]);
+	_futureMarket.erase(_futureMarket.begin() + lowestPowerPlantPos);
+
+	std::stringstream ss;
+	ss << "Kraftverk  nr " << lowestPowerPlantNumber <<
+		" kastades bort och ersattes av " << newPowerPlant;
 	_log->Log(ss.str());
 }
