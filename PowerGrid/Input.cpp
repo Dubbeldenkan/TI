@@ -82,12 +82,12 @@ void Input::MouseClick()
 		else if (garbageNumber > 0)
 		{
 			int cost = _game->GetResourceMarket()->GetCost(garbageNumber, ResourceMarket::garbage);
-			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::garbage, garbageNumber, 5);
+			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::garbage, garbageNumber, cost);
 		}
 		else if (uranNumber > 0)
 		{
 			int cost = _game->GetResourceMarket()->GetCost(uranNumber, ResourceMarket::uranium);
-			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::uranium, uranNumber, 5);
+			_game->GetPlayerInTurn()->SetBuyResourceStruct(ResourceMarket::uranium, uranNumber, cost);
 		}
 	}
 	else if (_game->GetCurrentPhase() == 4)

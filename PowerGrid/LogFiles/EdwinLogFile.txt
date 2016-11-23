@@ -702,3 +702,32 @@ Spelet startades Wed Nov 23 21:14:33 2016
 
 21:14:38   Köpte kraftverk nr 3 för 3 elektro
 21:14:54   Köpte 2 uran för 5 elektro
+
+
+Spelet startades Wed Nov 23 21:17:32 2016
+
+21:17:40   Köpte kraftverk nr 3 för 3 elektro
+21:17:58   Köpte 2 uran för 5 elektro
+
+
+Spelet startades Wed Nov 23 21:18:49 2016
+
+21:18:55   Köpte kraftverk nr 3 för 3 elektro
+
+
+Spelet startades Wed Nov 23 21:19:56 2016
+
+21:20:01   Köpte kraftverk nr 3 för 3 elektro
+21:22:21   Köpte 2 uran för 5 elektro
+
+
+Spelet startades Wed Nov 23 21:22:37 2016
+
+
+
+Spelet startades Wed Nov 23 21:24:00 2016
+
+
+
+Spelet startades Wed Nov 23 21:24:51 2016
+

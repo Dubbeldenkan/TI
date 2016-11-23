@@ -130,7 +130,7 @@ int ResourceMarket::GetCost(int amount, ResourceMarket::Resource resource)
 	{
 		for (int index = 0; index < amount; index++)
 		{
-			int number = (MAX_AMOUNT_RESOURCE - GetResourceAmount(resource)) + index;
+			int number = (MAX_AMOUNT_URAN - GetResourceAmount(resource)) + index;
 			result += uranCostArray[number];
 		}
 	}
