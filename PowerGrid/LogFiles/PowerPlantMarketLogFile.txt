@@ -664,3 +664,14 @@ Spelet startades Wed Nov 23 21:24:51 2016
 Spelet startades Wed Nov 23 21:24:51 2016
 
 21:25:00   Kraftverk  nr 3 såldes och ersattes av 13
+
+
+Spelet startades Wed Nov 23 22:24:16 2016
+
+
+
+Spelet startades Wed Nov 23 22:24:17 2016
+
+22:24:23   Kraftverk  nr 4 såldes och ersattes av 13
+22:24:29   Kraftverk  nr 5 såldes och ersattes av 40
+22:24:33   Kraftverk  nr 8 såldes och ersattes av 33

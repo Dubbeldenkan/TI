@@ -195,6 +195,7 @@ void Player::ResetBid()
 
 void Player::AddPowerPlant(PowerPlant* powerPlant, int cost)
 {
+	//TODO gör så att man förlorar de resurser man inte längre har plats för
 	_powerPlants[_buyPlantStruct.newPowerPlantPos] = *powerPlant;
 	_amountOfElektro -= cost;
 	_buyPlantStruct.newPowerPlantPos = -1;
@@ -268,21 +269,65 @@ void Player::SetBuyResourceStruct(ResourceMarket::Resource resource, int amountO
 
 int Player::RoomForResources(ResourceMarket::Resource resource)
 {
-	int roomForResource = 0;
+	int roomForCoal = 0;
+	int roomForOil = 0;
+	int roomForGarbage = 0;
+	int roomForUran = 0;
+	int roomForCoalOrOil = 0;
 	for (int index = 0; index < numberOfPowerPlants; index++)
 	{
-		if (_powerPlants[index].GetType() == resource)
+		switch (_powerPlants[index].GetType())
 		{
-			roomForResource += _powerPlants[index].GetPowerPlantConsumption()*2;
+		case PowerPlant::coal:
+		{
+			roomForCoal += _powerPlants[index].GetPowerPlantConsumption() * 2;
+			break;
 		}
-		else if (_powerPlants[index].GetType() == PowerPlant::coalOrOil && 
-			(resource == ResourceMarket::coal || resource == ResourceMarket::oil))
+		case PowerPlant::oil:
 		{
-			roomForResource += _powerPlants[index].GetPowerPlantConsumption()*2;
-			//TODO fixa så att kol/olja funkar att köpa för
+			roomForOil += _powerPlants[index].GetPowerPlantConsumption() * 2;
+			break;
+		}
+		case PowerPlant::garbage:
+		{
+			roomForGarbage += _powerPlants[index].GetPowerPlantConsumption() * 2;
+			break;
+		}
+		case PowerPlant::uranium:
+		{
+			roomForUran += _powerPlants[index].GetPowerPlantConsumption() * 2;
+			break;
+		}
+		case PowerPlant::coalOrOil:
+		{
+			roomForCoalOrOil += _powerPlants[index].GetPowerPlantConsumption() * 2;
+			break;
+		}
+		default:
+			break;
 		}
 	}
-	roomForResource -= GetAmountOfResource(resource);
+
+	int roomForResource;
+	switch (resource)
+	{
+	case ResourceMarket::coal:
+		roomForResource = roomForCoal - _amountOfCoal + max(0,
+			roomForCoalOrOil - (_amountOfOil - roomForOil));
+		break;
+	case ResourceMarket::oil:
+		roomForResource = roomForOil - _amountOfOil + max(0,
+			roomForCoalOrOil - (_amountOfCoal - roomForCoal));
+		break;
+	case ResourceMarket::garbage:
+		roomForResource = roomForGarbage - _amountOfGarbage;
+		break;
+	case ResourceMarket::uranium:
+		roomForResource = roomForUran - _amountOfUran;
+		break;
+	default:
+		break;
+	}
 	return roomForResource;
 }
 

@@ -448,3 +448,12 @@ Spelet startades Wed Nov 23 21:24:00 2016
 Spelet startades Wed Nov 23 21:24:51 2016
 
 21:25:07   Marknaden har sålt 2 3
+
+
+Spelet startades Wed Nov 23 22:24:17 2016
+
+22:24:54   Marknaden har sålt 4 0
+22:25:34   Marknaden har sålt 1 0
+22:25:41   Marknaden har sålt 2 1
+22:25:47   Marknaden har sålt 1 0
+22:26:48   Marknaden har sålt 6 0

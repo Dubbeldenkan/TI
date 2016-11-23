@@ -731,3 +731,9 @@ Spelet startades Wed Nov 23 21:24:00 2016
 
 Spelet startades Wed Nov 23 21:24:51 2016
 
+
+
+Spelet startades Wed Nov 23 22:24:17 2016
+
+22:24:33   Köpte kraftverk nr 8 för 8 elektro
+22:26:48   Köpte 6 coal för 21 elektro
