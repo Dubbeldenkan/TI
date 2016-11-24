@@ -165,6 +165,18 @@ void Game::CheckAndUpdateForStep2()
 	}
 }
 
+void Game::CheckAndUpdateForStep3()
+{
+	if (_gameStep == 1 || _gameStep == 2)
+	{
+		if (_ppm.GetStep3())
+		{
+			_gameStep = 3;
+			_ppm.UpdateToStep3();
+		}
+	}
+}
+
 void Game::Run()
 {
 	int tempGameTurn = _gameTurn;
@@ -184,6 +196,9 @@ void Game::Run()
 		break;
 	case 5:
 		Phase5();
+		break;
+	case 6:
+		EndGame();
 		break;
 	default:
 		break;
@@ -546,8 +561,10 @@ void Game::Phase5()
 			_pv[i].GetPayed();
 		}
 		CheckAndUpdateForStep2();
-		_rm->ReSupplyResourceMarket(_gameStep);
 		_ppm.RemoveHighestPowerPlant();
+		CheckAndUpdateForStep3();
+		CheckIfGameHasEnded();
+		_rm->ReSupplyResourceMarket(_gameStep);
 		_gameSubPhase = nextPhase;
 		break;
 	}
@@ -560,4 +577,21 @@ void Game::Phase5()
 		break;
 	}
 	}
+}
+
+void Game::CheckIfGameHasEnded()
+{
+	for (int index = 0; index < _numberOfPlayers; index++)
+	{
+		if (_pv[index].GetNumberOfCitiesInNetwork() >= NumberOfCitiesToEndGame[_numberOfPlayers - 2])
+		{
+			_gamePhase = 6;
+			break;
+		}
+	}
+}
+
+void Game::EndGame()
+{
+	int test = 2;
 }

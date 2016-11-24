@@ -150,7 +150,7 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 		DrawPlayer(dI->playerVector[i], i, dI->gamePhase);
 	}
 	PrintPlayerInTurn(dI->playerInTurn);
-	DrawPowerPlantMarket(dI->powerPlantMarket);
+	DrawPowerPlantMarket(dI->powerPlantMarket, dI->gameStep);
 	if (dI->gamePhase == 2 && !dI->placePowerPlant)
 	{
 		DrawButton(&_redButton, "Pass", _passButtonPos);
@@ -185,7 +185,7 @@ void Draw::DrawCity(City* city)
 {
 	Pos cityNamePos = Pos(1, 18);
 	Pos firstColorPos = Pos(3, 2);
-	Pos colorDiff = Pos(10, 0);
+	Pos colorDiff = Pos(_redHouse.GetxSize() + 5, _redHouse.GetYSize());;
 	_g->Draw(&_cityLabel, city->GetXPos(), city->GetYPos(), 1);
 	for (int index = 0; index < 3; index++)
 	{
@@ -377,17 +377,27 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 	}
 }
 
-void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm)
+void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm, int gameStep)
 {
 	//current market
 	for (int index = 0; index < ppm->GetNumberInCurrentMarket(); index++)
 	{
-		int xDiff = (index % 2)*_plantDiff.x;
-		int yDiff = (index / 2)*_plantDiff.y;
-		DrawPowerPlant(ppm->GetPowerPlantCurrentDeck(index), _firstCurrentPlantPos.x + xDiff,
-			_firstCurrentPlantPos.y + yDiff);
-		DrawPowerPlant(ppm->GetPowerPlantFutureDeck(index), _firstFuturePlantPos.x + xDiff,
-			_firstFuturePlantPos.y + yDiff);
+		if(gameStep < 3)
+		{
+			int xDiff = (index % 2)*_plantDiff.x;
+			int yDiff = (index / 2)*_plantDiff.y;
+			DrawPowerPlant(ppm->GetPowerPlantCurrentDeck(index), _firstCurrentPlantPos.x + xDiff,
+				_firstCurrentPlantPos.y + yDiff);
+			DrawPowerPlant(ppm->GetPowerPlantFutureDeck(index), _firstFuturePlantPos.x + xDiff,
+				_firstFuturePlantPos.y + yDiff);
+		}
+		else
+		{
+			int xDiff = (index % 3)*_plantDiff.x;
+			int yDiff = min(1, max(0, index - 2))*_plantDiff.y;
+			DrawPowerPlant(ppm->GetPowerPlantCurrentDeck(index), _firstCurrentPlantPos.x + xDiff,
+				_firstCurrentPlantPos.y + yDiff);
+		}
 	}
 }
 

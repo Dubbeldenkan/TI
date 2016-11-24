@@ -78,6 +78,9 @@ private:
 	int GetNewCityCost(char*);
 	void PrintDataToLog(int);
 	void CheckAndUpdateForStep2();
+	void CheckAndUpdateForStep3();
+	void CheckIfGameHasEnded();
+	void EndGame();
 
 	void DrawBoard();
 	void Phase1();

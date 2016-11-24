@@ -15,6 +15,8 @@ PowerPlantMarket::PowerPlantMarket()
 	_futureMarket.push_back(PowerPlant(10, PowerPlant::coal, 2, 2));
 
 	_ppDeck.push_back(PowerPlant(13, PowerPlant::none, 0, 1));
+	//TODO ta bort raden under
+	_ppDeck.push_back(PowerPlant(51, PowerPlant::phase3, 0, 0));
 
 	//create the rest of the powerplants
 	std::vector<PowerPlant> tempPowerPlantVector;
@@ -55,20 +57,15 @@ PowerPlantMarket::PowerPlantMarket()
 	tempPowerPlantVector.push_back(PowerPlant(46, PowerPlant::coalOrOil, 3, 7));
 	tempPowerPlantVector.push_back(PowerPlant(50, PowerPlant::none, 0, 6));
 
-	_highestNumberedPowerPlant = 0;
-
 	while (!tempPowerPlantVector.empty())
 	{
 		int index = rand() % tempPowerPlantVector.size();
-		if (_highestNumberedPowerPlant < tempPowerPlantVector[index].GetPowerPlantNumber())
-		{
-			_highestNumberedPowerPlant = tempPowerPlantVector[index].GetPowerPlantNumber();
-		}
 		_ppDeck.push_back(tempPowerPlantVector[index]);
 		tempPowerPlantVector.erase(tempPowerPlantVector.begin() + index);
 	}
-
-	_ppDeck.push_back(PowerPlant(0, PowerPlant::phase3, 0, 0));
+	//TODO ta bort kommentaren
+	//_ppDeck.push_back(PowerPlant(51, PowerPlant::phase3, 0, 0));
+	_highestNumberedPowerPlant = 51;
 
 	_log = new Logger("PowerPlantMarket");
 }
@@ -94,6 +91,7 @@ void PowerPlantMarket::RemovePowerPlant(int powerPlantPos)
 	_currentMarket.erase(_currentMarket.begin() + powerPlantPos);
 	_futureMarket.push_back(_ppDeck[0]);
 	int newPowerPlant = _ppDeck[0].GetPowerPlantNumber();
+	CheckAndSetStep3(&_ppDeck[0]);
 	_ppDeck.erase(_ppDeck.begin() + 0);
 	int lowestPowerPlantPos = FindLowestPowerPlantNumber(_futureMarket);
 	_currentMarket.push_back(_futureMarket[lowestPowerPlantPos]);
@@ -143,6 +141,7 @@ void PowerPlantMarket::RemoveHighestPowerPlant()
 	_futureMarket.erase(_futureMarket.begin() + highestPowerPlantPos);
 	_currentMarket.push_back(_ppDeck[0]);
 	int newPowerPlant = _ppDeck[0].GetPowerPlantNumber();
+	CheckAndSetStep3(&_ppDeck[0]);
 	_ppDeck.erase(_ppDeck.begin() + 0);
 	highestPowerPlantPos = FindHighestPowerPlantNumber(_currentMarket);
 	_futureMarket.push_back(_currentMarket[highestPowerPlantPos]);
@@ -156,10 +155,13 @@ void PowerPlantMarket::RemoveHighestPowerPlant()
 	{
 		ss << _currentMarket[index].GetPowerPlantNumber() << " ";
 	}
-	ss << "\nDen framtida markaden består av: ";
-	for (int index = 0; index < _currentMarket.size(); index++)
+	if (!_step3)
 	{
-		ss << _futureMarket[index].GetPowerPlantNumber() << " ";
+		ss << "\nDen framtida markaden består av: ";
+		for (int index = 0; index < _futureMarket.size(); index++)
+		{
+			ss << _futureMarket[index].GetPowerPlantNumber() << " ";
+		}
 	}
 	_log->Log(ss.str());
 }
@@ -179,6 +181,7 @@ void PowerPlantMarket::RemoveLowestPowerPlant()
 	_currentMarket.erase(_currentMarket.begin() + lowestPowerPlantPosInCurrentMarket);
 	_futureMarket.push_back(_ppDeck[0]);
 	int newPowerPlant = _ppDeck[0].GetPowerPlantNumber();
+	CheckAndSetStep3(&_ppDeck[0]);
 	_ppDeck.erase(_ppDeck.begin() + 0);
 	int lowestPowerPlantPos = FindLowestPowerPlantNumber(_futureMarket);
 	_currentMarket.push_back(_futureMarket[lowestPowerPlantPos]);
@@ -188,4 +191,43 @@ void PowerPlantMarket::RemoveLowestPowerPlant()
 	ss << "Kraftverk  nr " << lowestPowerPlantNumber <<
 		" kastades bort och ersattes av " << newPowerPlant;
 	_log->Log(ss.str());
+}
+
+void PowerPlantMarket::UpdateToStep3()
+{
+	_numberInCurrentMarket = 6;
+	int lowestNumberPos = FindLowestPowerPlantNumber(_futureMarket);
+	_currentMarket.push_back(_futureMarket[lowestNumberPos]);
+	_futureMarket.erase(_futureMarket.begin() + lowestNumberPos);
+
+	lowestNumberPos = FindLowestPowerPlantNumber(_futureMarket);
+	_currentMarket.push_back(_futureMarket[lowestNumberPos]);
+	_futureMarket.erase(_futureMarket.begin() + lowestNumberPos);
+
+	lowestNumberPos = FindLowestPowerPlantNumber(_futureMarket);
+	_ppDeck.push_back(_futureMarket[lowestNumberPos]);
+	_futureMarket.erase(_futureMarket.begin() + lowestNumberPos);
+
+	RemoveLowestPowerPlant();
+
+	std::stringstream ss;
+	ss << "Fas3 kortet är borttaget och nu det är nu steg3 \n\n" <<
+		"Nu består den nuvarnade marknaden av: ";
+	for (int index = 0; index < _currentMarket.size(); index++)
+	{
+		ss << _currentMarket[index].GetPowerPlantNumber() << " ";
+	}
+}
+
+void PowerPlantMarket::CheckAndSetStep3(PowerPlant* powerPlant)
+{
+	if (powerPlant->GetType() == PowerPlant::phase3)
+	{
+		_step3 = true;
+	}
+}
+
+bool PowerPlantMarket::GetStep3()
+{
+	return _step3;
 }

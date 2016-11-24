@@ -150,7 +150,7 @@ private:
 	void PrintPlayerInTurn(Player*);
 	void DrawBoard(Board*, std::vector<int>);
 	void DrawResourceMarket(ResourceMarket*);
-	void DrawPowerPlantMarket(PowerPlantMarket*);
+	void DrawPowerPlantMarket(PowerPlantMarket*, int);
 	void DrawBidButtons(int);
 	void DrawButton(Image*, char*, Pos);
 	void PrintPlantForSale(PowerPlant*, int, char*);
