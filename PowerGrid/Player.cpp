@@ -195,10 +195,18 @@ void Player::ResetBid()
 
 void Player::AddPowerPlant(PowerPlant* powerPlant, int cost)
 {
-	//TODO gör så att man förlorar de resurser man inte längre har plats för
 	_powerPlants[_buyPlantStruct.newPowerPlantPos] = *powerPlant;
 	_amountOfElektro -= cost;
 	_buyPlantStruct.newPowerPlantPos = -1;
+	int roomForCoal = max(0, RoomForResources(ResourceMarket::coal));
+	int roomForOil = max(0, RoomForResources(ResourceMarket::oil));
+	int roomForGarbage = max(0, RoomForResources(ResourceMarket::garbage));
+	int roomForUran = max(0, RoomForResources(ResourceMarket::uranium));
+	_amountOfCoal = min(_amountOfCoal, roomForCoal);
+	_amountOfOil = min(_amountOfOil, roomForOil);
+	_amountOfGarbage = min(_amountOfGarbage, roomForGarbage);
+	_amountOfUran = min(_amountOfUran, roomForUran);
+
 	std::stringstream ss;
 	ss << "Köpte kraftverk nr " << powerPlant->GetPowerPlantNumber() << " för " << cost << " elektro";
 	_log->Log(ss.str());
@@ -426,7 +434,6 @@ void Player::ActiveThePowerPlants()
 
 int Player::SetThePowerPlantToActive(int index)
 {
-	//TODO denna fungerar ännu inte för oljakolkrafttverk
 	int* tempPointer = NULL;
 	int* pointerToStruct = NULL;
 	int posOfCoalAndOilPlant = -1;

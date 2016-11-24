@@ -188,3 +188,116 @@ Antal försörjda städer: 0
 KraftVerk:
 Städer:
 
+
+
+Spelet startades Thu Nov 24 20:15:17 2016
+
+20:15:42   Tjänade 10 elektro
+20:15:42   
+Omgång 2
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:15:55   Tjänade 10 elektro
+20:15:55   
+Omgång 3
+Elektro: 70
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:17:02   Tjänade 10 elektro
+20:17:02   
+Omgång 4
+Elektro: 80
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+
+
+Spelet startades Thu Nov 24 20:17:50 2016
+
+20:18:05   Köpte kraftverk nr 7 för 7 elektro
+20:18:10   Tjänade 10 elektro
+20:18:10   
+Omgång 2
+Elektro: 53
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+7
+Städer:
+
+20:18:25   Köpte kraftverk nr 8 för 8 elektro
+20:18:32   Tjänade 10 elektro
+20:18:32   
+Omgång 3
+Elektro: 55
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+8
+7
+Städer:
+
+20:18:42   Köpte kraftverk nr 9 för 9 elektro
+20:19:51   Tjänade 10 elektro
+20:19:52   
+Omgång 4
+Elektro: 56
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+9
+8
+7
+Städer:
+
+20:20:04   Köpte 8 oil för 15 elektro
+20:20:07   Köpte 6 coal för 9 elektro
+20:20:31   Tjänade 10 elektro
+20:20:31   
+Omgång 5
+Elektro: 42
+Kol: 3
+Olja: 4
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+9
+8
+7
+Städer:
+
