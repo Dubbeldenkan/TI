@@ -49,6 +49,9 @@ private:
 	std::vector<Player> _pv;
 	std::vector<Player*> _tempPlayerVector;
 
+	const static int NumberOfCitiesToStep2[5];
+	const static int NumberOfCitiesToEndGame[5];
+
 public:
 	Game(int, HWND);
 	~Game() {};
@@ -74,6 +77,7 @@ private:
 	void InitPlayers(int);
 	int GetNewCityCost(char*);
 	void PrintDataToLog(int);
+	void CheckAndUpdateForStep2();
 
 	void DrawBoard();
 	void Phase1();

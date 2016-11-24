@@ -89,12 +89,12 @@ void ResourceMarket::ReSupplyResourceMarket(int step)
 	_amountOfUranium = min(_amountOfUranium, MAX_AMOUNT_URAN);
 
 	std::stringstream ss;
-	ss << "Kolet har fyllts på med " << _resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::coal] <<
+	ss << "Kolet har fyllts på med " << _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::coal] <<
 		" till " << _amountOfCoal << "\nOljan har fyllts på med " << 
-		_resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::oil] << " till " << _amountOfOil <<
-		"\nSoporna har fyllts på med " << _resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::garbage] << 
+		_resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::oil] << " till " << _amountOfOil <<
+		"\nSoporna har fyllts på med " << _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::garbage] << 
 		" till " << _amountOfGarbage << "\nUranet har fyllts på med " <<
-		_resourceSupplyMatrix[_numberOfPlayers + 2][step + 1][Resource::uranium] << "till " << _amountOfUranium;
+		_resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::uranium] << " till " << _amountOfUranium;
 	_log->Log(ss.str());
 }
 

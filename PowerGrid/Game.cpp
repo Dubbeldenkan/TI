@@ -1,5 +1,8 @@
 #include "Game.h"
 
+const int Game::NumberOfCitiesToStep2[] = { 10, 7, 7, 7, 6 };
+const int Game::NumberOfCitiesToEndGame[] = { 21, 17, 17, 15, 14 };
+
 Game::Game(int numberOfPlayers, HWND hWnd)
 {
 	//init rand
@@ -145,6 +148,20 @@ void Game::PrintDataToLog(int tempGameTurn)
 		}
 		_ppm.PrintPowerPlantData(_gameTurn);
 		_rm->PrintResourceMarketData(_gameTurn);
+	}
+}
+
+void Game::CheckAndUpdateForStep2()
+{
+	if (_gameStep == 1)
+	{
+		for (int index = 0; index < _numberOfPlayers; index++)
+		{
+			if (_pv[index].GetNumberOfCitiesInNetwork() >= NumberOfCitiesToStep2[_numberOfPlayers - 2])
+			{
+				_gameStep = 2;
+			}
+		}
 	}
 }
 
@@ -528,6 +545,7 @@ void Game::Phase5()
 		{
 			_pv[i].GetPayed();
 		}
+		CheckAndUpdateForStep2();
 		_rm->ReSupplyResourceMarket(_gameStep);
 		_ppm.RemoveHighestPowerPlant();
 		_gameSubPhase = nextPhase;
