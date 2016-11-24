@@ -15,8 +15,6 @@ PowerPlantMarket::PowerPlantMarket()
 	_futureMarket.push_back(PowerPlant(10, PowerPlant::coal, 2, 2));
 
 	_ppDeck.push_back(PowerPlant(13, PowerPlant::none, 0, 1));
-	//TODO ta bort raden under
-	_ppDeck.push_back(PowerPlant(51, PowerPlant::phase3, 0, 0));
 
 	//create the rest of the powerplants
 	std::vector<PowerPlant> tempPowerPlantVector;
@@ -63,8 +61,7 @@ PowerPlantMarket::PowerPlantMarket()
 		_ppDeck.push_back(tempPowerPlantVector[index]);
 		tempPowerPlantVector.erase(tempPowerPlantVector.begin() + index);
 	}
-	//TODO ta bort kommentaren
-	//_ppDeck.push_back(PowerPlant(51, PowerPlant::phase3, 0, 0));
+	_ppDeck.push_back(PowerPlant(51, PowerPlant::phase3, 0, 0));
 	_highestNumberedPowerPlant = 51;
 
 	_log = new Logger("PowerPlantMarket");

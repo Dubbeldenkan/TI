@@ -1,93 +1,9 @@
 
 
-Spelet startades Thu Nov 24 22:03:06 2016
+Spelet startades Thu Nov 24 22:38:11 2016
 
-22:03:19   Tjänade 10 elektro
-22:03:33   
-Omgång 2
-Elektro: 60
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-Städer:
-
-22:04:03   Tjänade 10 elektro
-
-
-Spelet startades Thu Nov 24 22:04:45 2016
-
-22:05:07   Tjänade 10 elektro
-22:05:07   
-Omgång 2
-Elektro: 60
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-Städer:
-
-
-
-Spelet startades Thu Nov 24 22:10:53 2016
-
-22:10:58   Tjänade 10 elektro
-22:10:58   
-Omgång 2
-Elektro: 60
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-Städer:
-
-
-
-Spelet startades Thu Nov 24 22:12:37 2016
-
-22:12:48   Tjänade 10 elektro
-22:12:48   
-Omgång 2
-Elektro: 60
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-Städer:
-
-22:13:05   Köpte kraftverk nr 7 för 7 elektro
-
-
-Spelet startades Thu Nov 24 22:18:52 2016
-
-22:19:09   Tjänade 10 elektro
-
-
-Spelet startades Thu Nov 24 22:19:40 2016
-
-22:19:45   Tjänade 10 elektro
-
-
-Spelet startades Thu Nov 24 22:20:51 2016
-
-
-
-Spelet startades Thu Nov 24 22:21:26 2016
-
-22:21:32   Tjänade 10 elektro
-22:21:40   
+22:38:20   Tjänade 10 elektro
+22:38:20   
 Omgång 2
 Elektro: 510
 Kol: 0
@@ -99,14 +15,12 @@ Antal försörjda städer: 0
 KraftVerk:
 Städer:
 
-22:22:07   Staden Santa Fe lades till för 10 elektro. via städerna 
-22:22:08   Staden Phoenix lades till för 33 elektro. via städerna Santa Fe->Phoenix
 
 
-Spelet startades Thu Nov 24 22:24:24 2016
+Spelet startades Thu Nov 24 22:38:25 2016
 
-22:24:35   Tjänade 10 elektro
-22:24:35   
+22:38:37   Tjänade 10 elektro
+22:38:37   
 Omgång 2
 Elektro: 510
 Kol: 0
@@ -118,38 +32,25 @@ Antal försörjda städer: 0
 KraftVerk:
 Städer:
 
-22:25:22   Tjänade 10 elektro
 
 
-Spelet startades Thu Nov 24 22:26:29 2016
+Spelet startades Thu Nov 24 22:40:12 2016
 
-22:26:45   Staden St. Louis lades till för 10 elektro. via städerna 
-22:26:49   Tjänade 10 elektro
-22:26:49   
+22:40:19   Köpte kraftverk nr 5 för 5 elektro
+
+
+Spelet startades Thu Nov 24 22:41:34 2016
+
+22:41:44   Köpte kraftverk nr 4 för 4 elektro
+
+
+Spelet startades Thu Nov 24 22:43:30 2016
+
+22:43:35   Köpte kraftverk nr 4 för 4 elektro
+22:43:50   Tjänade 10 elektro
+22:43:56   
 Omgång 2
-Elektro: 500
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 1
-Antal försörjda städer: 0
-KraftVerk:
-Städer:
-St. Louis
-
-22:27:16   Staden Knoxville lades till för 33 elektro. via städerna St. Louis->Cincinnati->Knoxville
-22:27:17   Staden Cincinnati lades till för 21 elektro. via städerna Knoxville->Cincinnati
-22:27:21   Staden Chicago lades till för 22 elektro. via städerna Cincinnati->Chicago
-22:27:37   Tjänade 10 elektro
-
-
-Spelet startades Thu Nov 24 22:27:51 2016
-
-22:28:00   Tjänade 10 elektro
-22:28:00   
-Omgång 2
-Elektro: 510
+Elektro: 506
 Kol: 0
 Olja: 0
 Sopor: 0
@@ -157,28 +58,6 @@ Uran: 0
 Antal städer i nätverk: 0
 Antal försörjda städer: 0
 KraftVerk:
+4
 Städer:
 
-22:28:09   Staden Knoxville lades till för 15 elektro. via städerna 
-22:28:10   Staden Cincinnati lades till för 21 elektro. via städerna Knoxville->Cincinnati
-22:28:11   Staden Chicago lades till för 22 elektro. via städerna Cincinnati->Chicago
-
-
-Spelet startades Thu Nov 24 22:28:34 2016
-
-22:28:38   Tjänade 10 elektro
-22:28:38   
-Omgång 2
-Elektro: 510
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-Städer:
-
-22:28:51   Staden Knoxville lades till för 20 elektro. via städerna 
-22:28:52   Staden Cincinnati lades till för 26 elektro. via städerna Knoxville->Cincinnati
-22:28:53   Staden Chicago lades till för 27 elektro. via städerna Cincinnati->Chicago

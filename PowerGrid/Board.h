@@ -31,7 +31,6 @@ public:
 	void SetMapImage(Image);
 	Image* GetMapImage();
 	char* GetMapName();
-	//TODO behövs dessa här under?
 	std::map<std::string, City*>::iterator GetCityDictFirstIterator();
 	std::map<std::string, City*>::iterator GetCityDictLastIterator();
 	std::vector<int> GetRegionsInPlay();
