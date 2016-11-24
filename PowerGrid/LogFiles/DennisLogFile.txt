@@ -290,3 +290,88 @@ KraftVerk:
 3
 Städer:
 
+
+
+Spelet startades Thu Nov 24 20:24:40 2016
+
+20:25:00   Köpte kraftverk nr 7 för 7 elektro
+20:25:05   Tjänade 10 elektro
+20:25:05   
+Omgång 2
+Elektro: 53
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+7
+Städer:
+
+20:25:13   Köpte kraftverk nr 8 för 8 elektro
+20:25:30   Tjänade 10 elektro
+20:25:30   
+Omgång 3
+Elektro: 55
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+7
+8
+Städer:
+
+20:25:35   Köpte kraftverk nr 4 för 4 elektro
+20:25:58   Köpte 10 coal för 22 elektro
+20:26:04   Köpte 6 oil för 13 elektro
+20:26:14   Tjänade 10 elektro
+20:26:14   
+Omgång 4
+Elektro: 26
+Kol: 5
+Olja: 3
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+7
+8
+4
+Städer:
+
+20:26:23   Köpte kraftverk nr 6 för 6 elektro
+
+
+Spelet startades Thu Nov 24 20:41:28 2016
+
+20:41:45   Tjänade 10 elektro
+20:41:45   
+Omgång 2
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:41:48   Tjänade 10 elektro
+20:41:48   
+Omgång 3
+Elektro: 70
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+

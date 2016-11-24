@@ -343,3 +343,66 @@ Den framtida markaden består av: 13 29 19 26
 20:20:31   
 
 Omgång 5
+
+
+Spelet startades Thu Nov 24 20:24:40 2016
+
+
+
+Spelet startades Thu Nov 24 20:24:40 2016
+
+20:24:54   Kraftverk  nr 3 såldes och ersattes av 13
+20:25:00   Kraftverk  nr 7 såldes och ersattes av 40
+20:25:05   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 37 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 8 
+Den framtida markaden består av: 9 10 13 37 
+20:25:05   
+
+Omgång 2
+20:25:13   Kraftverk  nr 8 såldes och ersattes av 34
+20:25:30   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 33 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 9 
+Den framtida markaden består av: 10 13 34 33 
+20:25:30   
+
+Omgång 3
+20:25:35   Kraftverk  nr 4 såldes och ersattes av 18
+20:26:14   Det högsta kraftverket, nr 34 lades underst i högen.
+Istället togs nr 29 fram.
+
+Nu består den nuvarnade marknaden av: 5 6 9 10 
+Den framtida markaden består av: 13 33 18 29 
+20:26:14   
+
+Omgång 4
+20:26:23   Kraftverk  nr 6 såldes och ersattes av 39
+
+
+Spelet startades Thu Nov 24 20:41:28 2016
+
+
+
+Spelet startades Thu Nov 24 20:41:28 2016
+
+20:41:44   Kraftverk  nr 3 kastades bort och ersattes av 13
+20:41:45   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 32 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 32 
+20:41:45   
+
+Omgång 2
+20:41:46   Kraftverk  nr 4 kastades bort och ersattes av 31
+20:41:48   Det högsta kraftverket, nr 32 lades underst i högen.
+Istället togs nr 36 fram.
+
+Nu består den nuvarnade marknaden av: 5 6 7 8 
+Den framtida markaden består av: 9 10 31 36 
+20:41:48   
+
+Omgång 3

@@ -301,3 +301,76 @@ KraftVerk:
 7
 Städer:
 
+
+
+Spelet startades Thu Nov 24 20:24:40 2016
+
+20:25:05   Tjänade 10 elektro
+20:25:05   
+Omgång 2
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:25:30   Tjänade 10 elektro
+20:25:30   
+Omgång 3
+Elektro: 70
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:26:14   Tjänade 10 elektro
+20:26:14   
+Omgång 4
+Elektro: 80
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+
+
+Spelet startades Thu Nov 24 20:41:28 2016
+
+20:41:45   Tjänade 10 elektro
+20:41:45   
+Omgång 2
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:41:48   Tjänade 10 elektro
+20:41:48   
+Omgång 3
+Elektro: 70
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+

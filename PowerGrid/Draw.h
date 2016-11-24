@@ -37,19 +37,21 @@ public:
 	};
 	struct DrawInput
 	{
-		Board* _board;
-		std::vector<Player*> _playerVector;
-		Player* _playerInTurn;
-		PowerPlantMarket* _powerPlantMarket;
-		ResourceMarket* _resourceMarket;
-		int _gamePhase;
+		Board* board;
+		std::vector<Player*> playerVector;
+		Player* playerInTurn;
+		PowerPlantMarket* powerPlantMarket;
+		ResourceMarket* resourceMarket;
+		int gamePhase;
 
-		int _selectedPowerPlant;
-		int _currentPowerPlantBiddingPrice;
-		Player* _lastBiddingPlayer;
-		int _nextBid;
-		bool _placePowerPlant;
-		std::vector<int> _regionsInPlay;
+		int selectedPowerPlant;
+		int currentPowerPlantBiddingPrice;
+		Player* lastBiddingPlayer;
+		int nextBid;
+		bool placePowerPlant;
+		std::vector<int> regionsInPlay;
+		int gameTurn;
+		int gameStep;
 	};
 private:
 

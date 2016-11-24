@@ -232,3 +232,48 @@ Uranet har fyllts på med 0till 6
 20:20:31   
 
 Omgång 5
+
+
+Spelet startades Thu Nov 24 20:24:40 2016
+
+20:25:05   Kolet har fyllts på med 0 till 24
+Oljan har fyllts på med 16830336 till 20
+Soporna har fyllts på med 1 till 7
+Uranet har fyllts på med 0till 3
+20:25:05   
+
+Omgång 2
+20:25:30   Kolet har fyllts på med 0 till 24
+Oljan har fyllts på med 16830336 till 22
+Soporna har fyllts på med 1 till 8
+Uranet har fyllts på med 0till 4
+20:25:30   
+
+Omgång 3
+20:25:58   Marknaden har sålt 10 0
+20:26:04   Marknaden har sålt 6 1
+20:26:14   Kolet har fyllts på med 0 till 18
+Oljan har fyllts på med 16830336 till 18
+Soporna har fyllts på med 1 till 9
+Uranet har fyllts på med 0till 5
+20:26:14   
+
+Omgång 4
+
+
+Spelet startades Thu Nov 24 20:41:28 2016
+
+20:41:45   Kolet har fyllts på med 0 till 24
+Oljan har fyllts på med 11796352 till 20
+Soporna har fyllts på med 1 till 7
+Uranet har fyllts på med 0till 3
+20:41:45   
+
+Omgång 2
+20:41:48   Kolet har fyllts på med 0 till 24
+Oljan har fyllts på med 11796352 till 22
+Soporna har fyllts på med 1 till 8
+Uranet har fyllts på med 0till 4
+20:41:48   
+
+Omgång 3

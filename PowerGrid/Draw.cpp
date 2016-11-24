@@ -144,23 +144,23 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 {
 	_g->Clear();
 	_g->StartDrawing();
-	DrawBoard(dI->_board, dI->_regionsInPlay);
-	for (int i = 0; i < dI->_playerVector.size(); i++)
+	DrawBoard(dI->board, dI->regionsInPlay);
+	for (int i = 0; i < dI->playerVector.size(); i++)
 	{
-		DrawPlayer(dI->_playerVector[i], i, dI->_gamePhase);
+		DrawPlayer(dI->playerVector[i], i, dI->gamePhase);
 	}
-	PrintPlayerInTurn(dI->_playerInTurn);
-	DrawPowerPlantMarket(dI->_powerPlantMarket);
-	if (dI->_gamePhase == 2 && !dI->_placePowerPlant)
+	PrintPlayerInTurn(dI->playerInTurn);
+	DrawPowerPlantMarket(dI->powerPlantMarket);
+	if (dI->gamePhase == 2 && !dI->placePowerPlant)
 	{
 		DrawButton(&_redButton, "Pass", _passButtonPos);
 	}
-	else if (dI->_gamePhase == 3 || dI->_gamePhase == 4 || dI->_gamePhase == 5)
+	else if (dI->gamePhase == 3 || dI->gamePhase == 4 || dI->gamePhase == 5)
 	{
 		DrawButton(&_redButton, "Klar", _passButtonPos);
 	}
 	PrintText(dI);
-	DrawResourceMarket(dI->_resourceMarket);
+	DrawResourceMarket(dI->resourceMarket);
 	_g->StopDrawing();
 	_g->Flip();
 }
@@ -526,17 +526,26 @@ void Draw::DrawResource(int numberOfResources, ResourceMarket::Resource type)
 
 void Draw::PrintText(DrawInput* dI)
 {
-	switch (dI->_gamePhase)
+	Pos textPos = _infoTextPos;
+	textPos.y = textPos.y + 30;
+	std::string str = "Omgång: ";
+	std::string strNumber = std::to_string(dI->gameTurn);
+	str = str + strNumber;
+	str = str + ", Steg: ";
+	strNumber = std::to_string(dI->gameStep);
+	str = str + strNumber;
+	_g->PrintText15((char*) str.c_str(), textPos.x, textPos.y, Graphics::WHITE);
+	switch (dI->gamePhase)
 	{
 	case 2:
 	{
-		if (dI->_selectedPowerPlant > -1 && !dI->_placePowerPlant)
+		if (dI->selectedPowerPlant > -1 && !dI->placePowerPlant)
 		{
-			PrintPlantForSale(dI->_powerPlantMarket->GetPowerPlantCurrentDeck(dI->_selectedPowerPlant),
-				dI->_currentPowerPlantBiddingPrice, dI->_lastBiddingPlayer->GetName());
-			DrawBidButtons(dI->_nextBid);
+			PrintPlantForSale(dI->powerPlantMarket->GetPowerPlantCurrentDeck(dI->selectedPowerPlant),
+				dI->currentPowerPlantBiddingPrice, dI->lastBiddingPlayer->GetName());
+			DrawBidButtons(dI->nextBid);
 		}
-		else if (dI->_placePowerPlant)
+		else if (dI->placePowerPlant)
 		{
 			PrintHelpText("Välj position för verket");
 		}

@@ -182,19 +182,21 @@ void Game::DrawBoard()
 		tempVector.push_back(&_pv[i]);
 	}
 	Draw::DrawInput dI;
-	dI._board = &_board;
-	dI._playerVector = tempVector;
-	dI._playerInTurn = _playerInTurn;
-	dI._powerPlantMarket = &_ppm;
-	dI._resourceMarket = _rm;
-	dI._gamePhase = _gamePhase;
+	dI.board = &_board;
+	dI.playerVector = tempVector;
+	dI.playerInTurn = _playerInTurn;
+	dI.powerPlantMarket = &_ppm;
+	dI.resourceMarket = _rm;
+	dI.gamePhase = _gamePhase;
+	dI.gameTurn = _gameTurn;
+	dI.gameStep = _gameStep;
 
-	dI._selectedPowerPlant = _phase2Struct.selectedPowerPlant - 1;
-	dI._currentPowerPlantBiddingPrice = _phase2Struct.bidForSelectedPowerPlant;
-	dI._lastBiddingPlayer = _phase2Struct.lastBiddingPlayer;
-	dI._nextBid = _phase2Struct.nextBid;
-	dI._placePowerPlant = _gameSubPhase == placePowerPlant;
-	dI._regionsInPlay = _board.GetRegionsInPlay();
+	dI.selectedPowerPlant = _phase2Struct.selectedPowerPlant - 1;
+	dI.currentPowerPlantBiddingPrice = _phase2Struct.bidForSelectedPowerPlant;
+	dI.lastBiddingPlayer = _phase2Struct.lastBiddingPlayer;
+	dI.nextBid = _phase2Struct.nextBid;
+	dI.placePowerPlant = _gameSubPhase == placePowerPlant;
+	dI.regionsInPlay = _board.GetRegionsInPlay();
 
 	_draw.DrawWholeBoard(&dI);
 }
