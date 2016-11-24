@@ -313,11 +313,11 @@ int Player::RoomForResources(ResourceMarket::Resource resource)
 	{
 	case ResourceMarket::coal:
 		roomForResource = roomForCoal - _amountOfCoal + max(0,
-			roomForCoalOrOil - (_amountOfOil - roomForOil));
+			roomForCoalOrOil - max(0, _amountOfOil - roomForOil));
 		break;
 	case ResourceMarket::oil:
 		roomForResource = roomForOil - _amountOfOil + max(0,
-			roomForCoalOrOil - (_amountOfCoal - roomForCoal));
+			roomForCoalOrOil - max(0, _amountOfCoal - roomForCoal));
 		break;
 	case ResourceMarket::garbage:
 		roomForResource = roomForGarbage - _amountOfGarbage;
@@ -379,61 +379,125 @@ void Player::SetPowerPlantClicked(int input)
 {
 	if (_powerPlants[input].GetPowerPlantNumber() > 0)
 	{
-		_powerPlants[input].ToggleActive();
+		if (_powerPlants[input].GetActive())
+		{
+			_powerPlants[input].SetToInActive();
+			_amountOfCoal += _phase5Struct.resourceArray[input].amountOfCoal;
+			_amountOfOil += _phase5Struct.resourceArray[input].amountOfOil;
+			_amountOfGarbage += _phase5Struct.resourceArray[input].amountOfGarbage;
+			_amountOfUran += _phase5Struct.resourceArray[input].amountOfUran;
+			ResetResourceArray(input);
+		}
+		else
+		{
+			if (_powerPlants[input].GetType() == PowerPlant::coalOrOil)
+			{
+				std::vector<int> powerPlantVector;
+				powerPlantVector.push_back(input);
+				SetCoalOilPowerPlantsToActive(powerPlantVector);
+			}
+			else
+			{
+				SetThePowerPlantToActive(input);
+			}
+			_powerPlants[input].SetToActive();
+		}
 	}
 	_phase5Struct.clickedPowerPlant = true;
 }
 
 void Player::ActiveThePowerPlants()
 {
-	int tempAmountOfCoal = _amountOfCoal;
-	int tempAmountOfOil = _amountOfOil;
-	int tempAmountOfGarbage = _amountOfGarbage;
-	int tempAmountOfUran = _amountOfUran;
-	int* tempPointer = NULL;
+	std::vector<int> powerPlantsLeftPos;
 	for (int index = 0; index < numberOfPowerPlants; index++)
 	{
 		if (_powerPlants[index].GetPowerPlantNumber() == 0)
 		{
 			continue;
 		}
-		switch (_powerPlants[index].GetType())
+		int pos = SetThePowerPlantToActive(index);
+		if (pos > -1)
 		{
-		case PowerPlant::coal:
-		{
-			tempPointer = &tempAmountOfCoal;
-			break;
+			powerPlantsLeftPos.push_back(pos);
 		}
-		case PowerPlant::oil:
+	}
+	SetCoalOilPowerPlantsToActive(powerPlantsLeftPos);
+}
+
+int Player::SetThePowerPlantToActive(int index)
+{
+	//TODO denna fungerar ännu inte för oljakolkrafttverk
+	int* tempPointer = NULL;
+	int* pointerToStruct = NULL;
+	int posOfCoalAndOilPlant = -1;
+	switch (_powerPlants[index].GetType())
+	{
+	case PowerPlant::coal:
+	{
+		tempPointer = &_amountOfCoal;
+		pointerToStruct = &_phase5Struct.resourceArray[index].amountOfCoal;
+		break;
+	}
+	case PowerPlant::oil:
+	{
+		tempPointer = &_amountOfOil;
+		pointerToStruct = &_phase5Struct.resourceArray[index].amountOfOil;
+		break;
+	}
+	case PowerPlant::garbage:
+	{
+		tempPointer = &_amountOfGarbage;
+		pointerToStruct = &_phase5Struct.resourceArray[index].amountOfGarbage;
+		break;
+	}
+	case PowerPlant::uranium:
+	{
+		tempPointer = &_amountOfUran;
+		pointerToStruct = &_phase5Struct.resourceArray[index].amountOfUran;
+		break;
+	}
+	}
+	if (PowerPlant::coalOrOil == _powerPlants[index].GetType())
+	{
+		posOfCoalAndOilPlant = index;
+	}
+	else if (_powerPlants[index].GetPowerPlantConsumption() <= *tempPointer)
+	{
+		_powerPlants[index].SetToActive();
+		*pointerToStruct = _powerPlants[index].GetPowerPlantConsumption();
+		*tempPointer -= _powerPlants[index].GetPowerPlantConsumption();
+	}
+	else
+	{
+		_powerPlants[index].SetToInActive();
+	}
+	return posOfCoalAndOilPlant;
+}
+
+void Player::SetCoalOilPowerPlantsToActive(std::vector<int> powerPlantsLeftPos)
+{
+	for (int index = 0; index < powerPlantsLeftPos.size(); index++)
+	{
+		bool powerPlantOk = false;
+		PowerPlant* tempPlant = &_powerPlants[powerPlantsLeftPos[index]];
+		for (int i = 0; i < tempPlant->GetPowerPlantConsumption() + 1; i++)
 		{
-			tempPointer = &tempAmountOfOil;
-			break;
+			int tempCoalCons = tempPlant->GetPowerPlantConsumption() - i;
+			int tempOilCons = i;
+			if ((_amountOfCoal >= tempCoalCons) && (_amountOfOil >= tempOilCons))
+			{
+				_phase5Struct.resourceArray[powerPlantsLeftPos[index]].amountOfCoal = tempCoalCons;
+				_phase5Struct.resourceArray[powerPlantsLeftPos[index]].amountOfOil = tempOilCons;
+				_amountOfCoal -= tempCoalCons;
+				_amountOfOil -= tempOilCons;
+				_powerPlants[powerPlantsLeftPos[index]].SetToActive();
+				powerPlantOk = true;
+				break;
+			}
 		}
-		case PowerPlant::garbage:
+		if (!powerPlantOk)
 		{
-			tempPointer = &tempAmountOfGarbage;
-			break;
-		}
-		case PowerPlant::uranium:
-		{
-			tempPointer = &tempAmountOfUran;
-			break;
-		}
-		case PowerPlant::coalOrOil:
-		{
-			//TODO implementera denna
-			tempPointer = &tempAmountOfCoal;
-			break;
-		}
-		}
-		if (_powerPlants[index].GetPowerPlantConsumption() <= *tempPointer)
-		{
-			_powerPlants[index].SetToActive();
-			*tempPointer -= _powerPlants[index].GetPowerPlantConsumption();
-		}
-		else
-		{
-			_powerPlants[index].SetToInActive();
+			_powerPlants[powerPlantsLeftPos[index]].SetToInActive();
 		}
 	}
 }
@@ -447,37 +511,7 @@ void Player::GetPayed()
 		if (_powerPlants[index].GetActive())
 		{
 			producedEnergy += _powerPlants[index].GetPowerPlantProduction();
-			switch (_powerPlants[index].GetType())
-			{
-			case PowerPlant::coal:
-			{
-				_amountOfCoal -= _powerPlants[index].GetPowerPlantConsumption();
-				break;
-			}
-			case PowerPlant::oil:
-			{
-				_amountOfOil -= _powerPlants[index].GetPowerPlantConsumption();
-				break;
-			}
-			case PowerPlant::garbage:
-			{
-				_amountOfGarbage -= _powerPlants[index].GetPowerPlantConsumption();
-				break;
-			}
-			case PowerPlant::uranium:
-			{
-				_amountOfUran -= _powerPlants[index].GetPowerPlantConsumption();
-				break;
-			}
-			case PowerPlant::coalOrOil:
-			{
-				//TODO implementera denna
-				_amountOfCoal -= _powerPlants[index].GetPowerPlantConsumption();
-				break;
-			}
-			default:
-				break;
-			}
+			ResetResourceArray(index);
 		}
 	}
 	_numberOfSuppliedCities = min(producedEnergy, _numberOfCitiesInNetwork);
@@ -512,4 +546,12 @@ void Player::PrintPlayerData(int gameTurn)
 		ss << _cityVector[index]->GetName() << "\n";
 	}
 	_log->Log(ss.str());
+}
+
+void Player::ResetResourceArray(int pos)
+{
+	_phase5Struct.resourceArray[pos].amountOfCoal = 0;
+	_phase5Struct.resourceArray[pos].amountOfOil = 0;
+	_phase5Struct.resourceArray[pos].amountOfGarbage = 0;
+	_phase5Struct.resourceArray[pos].amountOfUran = 0;
 }

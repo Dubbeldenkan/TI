@@ -33,9 +33,18 @@ public:
 		char* newCityName;
 	};
 
+	struct PowerPlantResources
+	{
+		int amountOfCoal = 0;
+		int amountOfOil = 0;
+		int amountOfGarbage = 0;
+		int amountOfUran = 0;
+	};
+
 	struct Phase5struct
 	{
 		bool clickedPowerPlant = false;
+		PowerPlantResources resourceArray[numberOfPowerPlants];
 	};
 
 private:
@@ -119,6 +128,9 @@ public:
 private:
 	int RoomForResources(ResourceMarket::Resource);
 	bool HaveThatCity(char*);
+	void ResetResourceArray(int);
+	void SetCoalOilPowerPlantsToActive(std::vector<int>);
+	int SetThePowerPlantToActive(int);
 };
 
 #endif // !PLAYER_H

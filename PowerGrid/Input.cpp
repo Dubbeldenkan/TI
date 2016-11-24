@@ -104,7 +104,10 @@ void Input::MouseClick()
 		PowerPlant::EnergySource resourceType = _game->GetPlayerInTurn()->GetPowerPlant(tempPowerPlantPos)->GetType();
 		int consumptionForPowerPlant = _game->GetPlayerInTurn()->GetPowerPlant(tempPowerPlantPos)->GetPowerPlantConsumption();
 		if ((tempPowerPlantPos > -1) && 
-			(_game->GetPlayerInTurn()->GetAmountOfResource(resourceType) >= consumptionForPowerPlant))
+			((_game->GetPlayerInTurn()->GetAmountOfResource(resourceType) >= consumptionForPowerPlant) || 
+			(resourceType == PowerPlant::coalOrOil && (_game->GetPlayerInTurn()->GetAmountOfResource(PowerPlant::coal) + 
+				_game->GetPlayerInTurn()->GetAmountOfResource(PowerPlant::oil)) >= consumptionForPowerPlant) ||
+				_game->GetPlayerInTurn()->GetPowerPlant(tempPowerPlantPos)->GetActive()))
 		{
 			_game->GetPlayerInTurn()->SetPowerPlantClicked(tempPowerPlantPos);
 		}
@@ -365,6 +368,19 @@ LRESULT CALLBACK Input::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM
 	{
 		_mousePos.x = LOWORD(lParam);
 		_mousePos.y = HIWORD(lParam);
+		break;
+	}
+	case WM_KEYDOWN :	{
+		switch (wParam)
+		{
+		case VK_SPACE:
+		{
+			_game->GetPlayerInTurn()->SetPassed();
+			break;
+		}
+		default:
+			break;
+		}
 		break;
 	}
 	case WM_DESTROY:
