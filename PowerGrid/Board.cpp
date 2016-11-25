@@ -63,7 +63,7 @@ void Board::InitMap()
 	InsertCityInDict("Raleigh", 5, 855, 295);
 	InsertCityInDict("Atlanta", 5, 930, 315);
 	InsertCityInDict("Savannah", 5, 810, 340);
-	InsertCityInDict("JacksonVille", 5, 810, 390);
+	InsertCityInDict("Jacksonville", 5, 810, 390);
 	InsertCityInDict("Tampa", 5, 725, 435);
 	InsertCityInDict("Miami", 5, 815, 465);
 
@@ -185,7 +185,7 @@ void Board::InitMap()
 
 	//New Orleans
 	_edgeDict["Birmingham-New Orleans"] = 11;
-	_edgeDict["JacksonVille-New Orleans"] = 16;
+	_edgeDict["Jacksonville-New Orleans"] = 16;
 
 	//Birmingham
 	_edgeDict["Atlanta-Birmingham"] = 3;

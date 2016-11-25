@@ -10,8 +10,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PowerGrid", "PowerGrid\Powe
 		{86759808-CD0A-4C42-9925-A67A1429E4A3} = {86759808-CD0A-4C42-9925-A67A1429E4A3}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AI", "AI\AI.vcxproj", "{F5B29541-F3BF-4D62-8572-82C4168BBBC0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -36,14 +34,6 @@ Global
 		{E2DD268A-90A0-4EBA-99E4-1CBE7436E382}.Release|x64.Build.0 = Release|x64
 		{E2DD268A-90A0-4EBA-99E4-1CBE7436E382}.Release|x86.ActiveCfg = Release|Win32
 		{E2DD268A-90A0-4EBA-99E4-1CBE7436E382}.Release|x86.Build.0 = Release|Win32
-		{F5B29541-F3BF-4D62-8572-82C4168BBBC0}.Debug|x64.ActiveCfg = Debug|x64
-		{F5B29541-F3BF-4D62-8572-82C4168BBBC0}.Debug|x64.Build.0 = Debug|x64
-		{F5B29541-F3BF-4D62-8572-82C4168BBBC0}.Debug|x86.ActiveCfg = Debug|Win32
-		{F5B29541-F3BF-4D62-8572-82C4168BBBC0}.Debug|x86.Build.0 = Debug|Win32
-		{F5B29541-F3BF-4D62-8572-82C4168BBBC0}.Release|x64.ActiveCfg = Release|x64
-		{F5B29541-F3BF-4D62-8572-82C4168BBBC0}.Release|x64.Build.0 = Release|x64
-		{F5B29541-F3BF-4D62-8572-82C4168BBBC0}.Release|x86.ActiveCfg = Release|Win32
-		{F5B29541-F3BF-4D62-8572-82C4168BBBC0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

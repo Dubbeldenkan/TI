@@ -157,6 +157,7 @@ private:
 	void DrawResource(int, ResourceMarket::Resource);
 	void PrintText(DrawInput*);
 	void PrintHelpText(char*);
+	void PrintWinner(DrawInput*);
 };
 
 #endif // !DRAW_H

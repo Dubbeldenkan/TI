@@ -215,3 +215,280 @@ Städer:
 22:28:42   Staden Knoxville lades till för 10 elektro. via städerna 
 22:28:44   Staden Cincinnati lades till för 16 elektro. via städerna Knoxville->Cincinnati
 22:28:44   Staden Chicago lades till för 17 elektro. via städerna Cincinnati->Chicago
+
+
+Spelet startades Fri Nov 25 18:40:07 2016
+
+18:40:19   Köpte kraftverk nr 6 för 6 elektro
+18:40:31   Tjänade 10 elektro
+18:40:35   
+Omgång 2
+Elektro: 504
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+6
+Städer:
+
+18:40:40   Tjänade 10 elektro
+18:40:40   
+Omgång 3
+Elektro: 514
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+6
+Städer:
+
+18:40:43   Tjänade 10 elektro
+18:40:43   
+Omgång 4
+Elektro: 524
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+6
+Städer:
+
+
+
+Spelet startades Fri Nov 25 18:41:39 2016
+
+
+
+Spelet startades Fri Nov 25 18:41:47 2016
+
+
+
+Spelet startades Fri Nov 25 18:45:32 2016
+
+
+
+Spelet startades Fri Nov 25 18:45:57 2016
+
+
+
+Spelet startades Fri Nov 25 18:57:11 2016
+
+18:57:17   Tjänade 10 elektro
+18:57:17   
+Omgång 2
+Elektro: 510
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+18:57:25   Tjänade 10 elektro
+18:57:25   
+Omgång 3
+Elektro: 520
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+
+
+Spelet startades Fri Nov 25 19:08:09 2016
+
+19:08:59   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 19:10:12 2016
+
+
+
+Spelet startades Fri Nov 25 19:17:22 2016
+
+19:45:49   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 19:49:15 2016
+
+
+
+Spelet startades Fri Nov 25 19:49:34 2016
+
+
+
+Spelet startades Fri Nov 25 19:57:06 2016
+
+19:57:21   Staden Knoxville lades till för 10 elektro. via städerna 
+19:57:21   Staden Cincinnati lades till för 16 elektro. via städerna Knoxville->Cincinnati
+19:57:22   Staden Chicago lades till för 17 elektro. via städerna Cincinnati->Chicago
+19:57:23   Staden Minneapolis lades till för 18 elektro. via städerna Chicago->Minneapolis
+19:57:24   Staden Duluth lades till för 15 elektro. via städerna Minneapolis->Duluth
+19:57:25   Staden Fargo lades till för 16 elektro. via städerna Duluth->Fargo
+19:57:25   Staden Omaha lades till för 18 elektro. via städerna Minneapolis->Omaha
+19:57:26   Staden St. Louis lades till för 20 elektro. via städerna Chicago->St. Louis
+19:57:27   Staden Cheyenne lades till för 24 elektro. via städerna Omaha->Cheyenne
+19:57:28   Staden Billings lades till för 19 elektro. via städerna Cheyenne->Billings
+19:57:28   Staden Boise lades till för 22 elektro. via städerna Billings->Boise
+19:57:29   Staden Seattle lades till för 19 elektro. via städerna Billings->Seattle
+19:57:30   Staden Portland lades till för 13 elektro. via städerna Seattle->Portland
+19:57:31   Staden Salt Lake City lades till för 18 elektro. via städerna Boise->Salt Lake City
+19:57:32   Staden Denver lades till för 10 elektro. via städerna Cheyenne->Denver
+19:57:33   Staden Santa Fe lades till för 23 elektro. via städerna Denver->Santa Fe
+19:57:34   Staden Phoenix lades till för 28 elektro. via städerna Santa Fe->Phoenix
+19:57:35   Staden Las Vegas lades till för 25 elektro. via städerna Phoenix->Las Vegas
+19:57:37   Staden Los Angeles lades till för 19 elektro. via städerna Las Vegas->Los Angeles
+19:57:37   Staden San Fransisco lades till för 10 elektro. via städerna Salt Lake City->San Fransisco
+19:57:39   Staden San Diego lades till för 13 elektro. via städerna Los Angeles->San Diego
+19:57:46   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 20:06:47 2016
+
+20:07:13   Tjänade 10 elektro
+20:07:13   
+Omgång 2
+Elektro: 510
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:07:15   Tjänade 10 elektro
+20:07:15   
+Omgång 3
+Elektro: 520
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:07:16   Tjänade 10 elektro
+20:07:16   
+Omgång 4
+Elektro: 530
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+20:08:00   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 20:09:03 2016
+
+20:09:09   Staden Knoxville lades till för 10 elektro. via städerna 
+20:09:10   Staden Cincinnati lades till för 16 elektro. via städerna Knoxville->Cincinnati
+20:09:11   Staden Chicago lades till för 17 elektro. via städerna Cincinnati->Chicago
+20:09:11   Staden St. Louis lades till för 20 elektro. via städerna Chicago->St. Louis
+20:09:12   Staden Minneapolis lades till för 18 elektro. via städerna Chicago->Minneapolis
+20:09:13   Staden Duluth lades till för 15 elektro. via städerna Minneapolis->Duluth
+20:09:13   Staden Fargo lades till för 16 elektro. via städerna Duluth->Fargo
+20:09:14   Staden Omaha lades till för 18 elektro. via städerna Minneapolis->Omaha
+20:09:18   Staden Cheyenne lades till för 24 elektro. via städerna Omaha->Cheyenne
+20:09:19   Staden Denver lades till för 10 elektro. via städerna Cheyenne->Denver
+20:09:20   Staden Billings lades till för 19 elektro. via städerna Cheyenne->Billings
+20:09:21   Staden Boise lades till för 22 elektro. via städerna Billings->Boise
+20:09:21   Staden Seattle lades till för 19 elektro. via städerna Billings->Seattle
+20:09:22   Staden Portland lades till för 13 elektro. via städerna Seattle->Portland
+20:09:23   Staden San Fransisco lades till för 31 elektro. via städerna Denver->Salt Lake City->San Fransisco
+20:09:24   Staden Salt Lake City lades till för 10 elektro. via städerna San Fransisco->Salt Lake City
+20:09:25   Staden Santa Fe lades till för 23 elektro. via städerna Denver->Santa Fe
+20:09:26   Staden Phoenix lades till för 28 elektro. via städerna Santa Fe->Phoenix
+20:09:26   Staden Las Vegas lades till för 24 elektro. via städerna San Fransisco->Las Vegas
+20:09:27   Staden Los Angeles lades till för 19 elektro. via städerna Las Vegas->Los Angeles
+20:09:28   Staden San Diego lades till för 13 elektro. via städerna Los Angeles->San Diego
+20:09:31   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 20:14:08 2016
+
+
+
+Spelet startades Fri Nov 25 20:14:45 2016
+
+20:14:56   Staden Knoxville lades till för 10 elektro. via städerna 
+20:14:56   Staden Cincinnati lades till för 16 elektro. via städerna Knoxville->Cincinnati
+20:14:57   Staden St. Louis lades till för 22 elektro. via städerna Cincinnati->St. Louis
+20:14:59   Staden Chicago lades till för 17 elektro. via städerna Cincinnati->Chicago
+20:14:59   Staden Minneapolis lades till för 18 elektro. via städerna Chicago->Minneapolis
+20:15:00   Staden Duluth lades till för 15 elektro. via städerna Minneapolis->Duluth
+20:15:01   Staden Fargo lades till för 16 elektro. via städerna Duluth->Fargo
+20:15:02   Staden Omaha lades till för 18 elektro. via städerna Minneapolis->Omaha
+20:15:02   Staden Cheyenne lades till för 24 elektro. via städerna Omaha->Cheyenne
+20:15:03   Staden Billings lades till för 19 elektro. via städerna Cheyenne->Billings
+20:15:04   Staden Boise lades till för 22 elektro. via städerna Billings->Boise
+20:15:05   Staden Seattle lades till för 19 elektro. via städerna Billings->Seattle
+20:15:06   Staden Portland lades till för 13 elektro. via städerna Seattle->Portland
+20:15:07   Staden San Fransisco lades till för 31 elektro. via städerna Cheyenne->Denver->Salt Lake City->San Fransisco
+20:15:07   Staden Los Angeles lades till för 19 elektro. via städerna San Fransisco->Los Angeles
+20:15:08   Staden San Diego lades till för 13 elektro. via städerna Los Angeles->San Diego
+20:15:09   Staden Las Vegas lades till för 19 elektro. via städerna Los Angeles->Las Vegas
+20:15:10   Staden Salt Lake City lades till för 10 elektro. via städerna San Fransisco->Salt Lake City
+20:15:11   Staden Santa Fe lades till för 23 elektro. via städerna Cheyenne->Denver->Santa Fe
+20:15:13   Staden Phoenix lades till för 24 elektro. via städerna San Diego->Phoenix
+20:15:14   Staden Denver lades till för 10 elektro. via städerna Cheyenne->Denver
+20:15:23   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 20:16:45 2016
+
+20:16:52   Staden Knoxville lades till för 10 elektro. via städerna 
+20:16:53   Staden Cincinnati lades till för 16 elektro. via städerna Knoxville->Cincinnati
+20:16:54   Staden St. Louis lades till för 22 elektro. via städerna Cincinnati->St. Louis
+20:16:55   Staden Chicago lades till för 17 elektro. via städerna Cincinnati->Chicago
+20:16:55   Staden Minneapolis lades till för 18 elektro. via städerna Chicago->Minneapolis
+20:16:56   Staden Duluth lades till för 15 elektro. via städerna Minneapolis->Duluth
+20:16:56   Staden Fargo lades till för 16 elektro. via städerna Duluth->Fargo
+20:16:58   Staden Omaha lades till för 18 elektro. via städerna Minneapolis->Omaha
+20:16:59   Staden Cheyenne lades till för 24 elektro. via städerna Omaha->Cheyenne
+20:16:59   Staden Billings lades till för 19 elektro. via städerna Cheyenne->Billings
+20:17:00   Staden Boise lades till för 22 elektro. via städerna Billings->Boise
+20:17:01   Staden Portland lades till för 22 elektro. via städerna Billings->Seattle->Portland
+20:17:02   Staden Seattle lades till för 13 elektro. via städerna Portland->Seattle
+20:17:03   Staden San Fransisco lades till för 31 elektro. via städerna Cheyenne->Denver->Salt Lake City->San Fransisco
+20:17:04   Staden Las Vegas lades till för 24 elektro. via städerna San Fransisco->Las Vegas
+20:17:05   Staden Salt Lake City lades till för 10 elektro. via städerna San Fransisco->Salt Lake City
+20:17:06   Staden Denver lades till för 10 elektro. via städerna Cheyenne->Denver
+20:17:07   Staden Santa Fe lades till för 23 elektro. via städerna Denver->Santa Fe
+20:17:07   Staden Phoenix lades till för 25 elektro. via städerna Las Vegas->Phoenix
+20:17:08   Staden Los Angeles lades till för 19 elektro. via städerna Las Vegas->Los Angeles
+20:17:09   Staden San Diego lades till för 13 elektro. via städerna Los Angeles->San Diego
+20:17:14   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 20:21:10 2016
+
+20:21:58   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 20:23:38 2016
+
+20:24:14   Tjänade 10 elektro

@@ -9,6 +9,18 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 	srand(time(NULL));
 		
 	std::vector<int> usedRegions;
+
+	usedRegions.push_back(0);
+	usedRegions.push_back(1);
+	usedRegions.push_back(2);
+	if (numberOfPlayers > 2)
+	{
+		usedRegions.push_back(3);
+	}
+	if (numberOfPlayers > 4)
+	{
+		usedRegions.push_back(4);
+	}
 	for (int index = 0; index < numberOfPlayers; index++)
 	{
 		usedRegions.push_back(index);
@@ -25,7 +37,22 @@ void Game::InitPlayers(int numberOfPlayers)
 {
 	_pv.push_back(Player("Dennis", Player::red, true));
 	_pv.push_back(Player("Alida", Player::blue, true));
-	_pv.push_back(Player("Edwin", Player::green, true));
+	if (_numberOfPlayers > 2)
+	{
+		_pv.push_back(Player("Edwin", Player::yellow, true));
+	}
+	if (_numberOfPlayers > 3)
+	{
+		_pv.push_back(Player("George", Player::green, true));
+	}
+	if (_numberOfPlayers > 4)
+	{
+		_pv.push_back(Player("Leia", Player::black, true));
+	}
+	if (_numberOfPlayers > 5)
+	{
+		_pv.push_back(Player("Jakob", Player::purple, true));
+	}
 	_playerInTurn = &_pv[0];
 }
 
@@ -593,5 +620,62 @@ void Game::CheckIfGameHasEnded()
 
 void Game::EndGame()
 {
-	int test = 2;
+	std::vector<Player> tempPv;
+	tempPv = _pv;
+	_pv.clear();
+	for (int order = 0; order < _numberOfPlayers; order++)
+	{
+		int playersLeft = tempPv.size();
+		int bestValue = 0;
+		std::vector<int> playersWithBestValue;
+		for (int index = 0; index < playersLeft; index++)
+		{
+			if (tempPv[index].GetNumberOfSuppliedCities() > bestValue)
+			{
+				bestValue = tempPv[index].GetNumberOfSuppliedCities();
+				playersWithBestValue.clear();
+				playersWithBestValue.push_back(index);
+			}
+			else if (tempPv[index].GetNumberOfSuppliedCities() == bestValue)
+			{
+				playersWithBestValue.push_back(index);
+			}
+		}
+		if (playersWithBestValue.size() > 1)
+		{
+			int playersLeft = playersWithBestValue.size();
+			int bestValue = 0;
+			int bestValuePos;
+			for (int index = 0; index < playersLeft; index++)
+			{
+				if (tempPv[playersWithBestValue[index]].GetAmountOfElektro() > bestValue)
+				{
+					bestValue = tempPv[playersWithBestValue[index]].GetAmountOfElektro();
+					bestValuePos = playersWithBestValue[index];
+				}
+			}
+			if (bestValue == 0)
+			{
+				while (!tempPv.empty())
+				{
+					_pv.push_back(tempPv[0]);
+					tempPv.erase(tempPv.begin());
+				}
+				break;
+			}
+			else
+			{
+				_pv.push_back(tempPv[bestValuePos]);
+				tempPv.erase(tempPv.begin() + bestValuePos);
+			}
+		}
+		else
+		{
+			_pv.push_back(tempPv[playersWithBestValue[0]]);
+			tempPv.erase(tempPv.begin() + playersWithBestValue[0]);
+		}
+	}
+	_playerInTurn = &_pv[0];
+	DrawBoard();
+	_gamePhase++;
 }

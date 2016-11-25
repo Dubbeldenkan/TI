@@ -149,7 +149,10 @@ void Draw::DrawWholeBoard(DrawInput* dI)
 	{
 		DrawPlayer(dI->playerVector[i], i, dI->gamePhase);
 	}
-	PrintPlayerInTurn(dI->playerInTurn);
+	if (dI->gamePhase < 6)
+	{
+		PrintPlayerInTurn(dI->playerInTurn);
+	}
 	DrawPowerPlantMarket(dI->powerPlantMarket, dI->gameStep);
 	if (dI->gamePhase == 2 && !dI->placePowerPlant)
 	{
@@ -578,8 +581,21 @@ void Draw::PrintText(DrawInput* dI)
 	case 5:
 	{
 		PrintHelpText("Välj aktiva kraftverk");
+		break;
+	}
+	case 6:
+	{
+		PrintWinner(dI);
+		break;
 	}
 	default:
 		break;
 	}
+}
+
+void Draw::PrintWinner(DrawInput* dI)
+{
+	std::string str = dI->playerInTurn->GetName();
+	str = str + " vann!!";
+	PrintHelpText((char*)str.c_str());
 }

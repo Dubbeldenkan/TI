@@ -1,0 +1,79 @@
+
+
+Spelet startades Fri Nov 25 18:45:57 2016
+
+
+
+Spelet startades Fri Nov 25 18:57:11 2016
+
+18:57:17   Tjänade 10 elektro
+18:57:17   
+Omgång 2
+Elektro: 510
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+18:57:25   Tjänade 10 elektro
+18:57:25   
+Omgång 3
+Elektro: 520
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+
+
+Spelet startades Fri Nov 25 19:08:10 2016
+
+19:08:20   Staden Miami lades till för 10 elektro. via städerna 
+19:08:25   Staden Savannah lades till för 18 elektro. via städerna Miami->Tampa->Jacksonville->Savannah
+19:08:29   Staden Jacksonville lades till för 10 elektro. via städerna Savannah->Jacksonville
+19:08:31   Staden Tampa lades till för 14 elektro. via städerna Jacksonville->Tampa
+19:08:32   Staden New Orleans lades till för 26 elektro. via städerna Jacksonville->New Orleans
+19:08:33   Staden Birmingham lades till för 19 elektro. via städerna Jacksonville->Birmingham
+19:08:34   Staden Knoxville lades till för 18 elektro. via städerna Birmingham->Atlanta->Knoxville
+19:08:35   Staden Cincinnati lades till för 16 elektro. via städerna Knoxville->Cincinnati
+19:08:36   Staden Raleigh lades till för 17 elektro. via städerna Savannah->Raleigh
+19:08:37   Staden Atlanta lades till för 13 elektro. via städerna Birmingham->Atlanta
+19:08:38   Staden Norfolk lades till för 13 elektro. via städerna Raleigh->Norfolk
+19:08:38   Staden Washington DC lades till för 15 elektro. via städerna Norfolk->Washington DC
+19:08:39   Staden Philadelphia lades till för 13 elektro. via städerna Washington DC->Philadelphia
+19:08:40   Staden New York lades till för 10 elektro. via städerna Philadelphia->New York
+19:08:41   Staden Boston lades till för 13 elektro. via städerna New York->Boston
+19:08:42   Staden Buffalo lades till för 18 elektro. via städerna New York->Buffalo
+19:08:43   Staden Pittsburgh lades till för 16 elektro. via städerna Washington DC->Pittsburgh
+19:08:44   Staden Detroit lades till för 14 elektro. via städerna Cincinnati->Detroit
+19:08:45   Staden Chicago lades till för 17 elektro. via städerna Cincinnati->Chicago
+19:08:46   Staden Minneapolis lades till för 18 elektro. via städerna Chicago->Minneapolis
+19:08:47   Staden Duluth lades till för 15 elektro. via städerna Minneapolis->Duluth
+19:08:48   Staden Fargo lades till för 16 elektro. via städerna Duluth->Fargo
+19:08:49   Staden Cheyenne lades till för 28 elektro. via städerna Minneapolis->Cheyenne
+19:08:49   Staden Billings lades till för 19 elektro. via städerna Cheyenne->Billings
+19:08:50   Staden Salt Lake City lades till för 30 elektro. via städerna Billings->Boise->Salt Lake City
+19:08:51   Staden Boise lades till för 18 elektro. via städerna Salt Lake City->Boise
+19:08:52   Staden Las Vegas lades till för 28 elektro. via städerna Salt Lake City->Las Vegas
+19:08:59   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 19:10:12 2016
+
+
+
+Spelet startades Fri Nov 25 19:17:22 2016
+
+19:45:49   Tjänade 10 elektro
+
+
+Spelet startades Fri Nov 25 19:49:15 2016
+
