@@ -18,44 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="City.cpp" />
-    <ClCompile Include="Input.cpp" />
-    <ClCompile Include="Draw.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Logger.cpp" />
-    <ClCompile Include="Board.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PowerPlant.cpp" />
-    <ClCompile Include="PowerPlantMarket.cpp" />
-    <ClCompile Include="ResourceMarket.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="City.h" />
-    <ClInclude Include="Input.h" />
-    <ClInclude Include="Draw.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="Board.h" />
-    <ClInclude Include="Logger.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PowerPlant.h" />
-    <ClInclude Include="PowerPlantMarket.h" />
-    <ClInclude Include="ResourceMarket.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Direct3DWrapper\Direct3DWrapper.vcxproj">
-      <Project>{86759808-cd0a-4c42-9925-a67a1429e4a3}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E2DD268A-90A0-4EBA-99E4-1CBE7436E382}</ProjectGuid>
+    <ProjectGuid>{F5B29541-F3BF-4D62-8572-82C4168BBBC0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>PowerGrid</RootNamespace>
+    <RootNamespace>AI</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -120,12 +91,11 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\Direct3DWrapper\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\PowerGrid\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);d3dx9.lib;d3d9.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -178,6 +148,14 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\PowerGrid\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PowerGrid\PowerGrid.vcxproj">
+      <Project>{e2dd268a-90a0-4eba-99e4-1cbe7436e382}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
