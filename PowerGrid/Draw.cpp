@@ -367,6 +367,9 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 		case PowerPlant::uranium:
 			tempImage = &_powerPlantUranImage;
 			break;
+		case PowerPlant::none:
+			tempImage = &_powerPlantEcoImage;
+			break;
 		}
 		Pos plantTextPos = Pos(0, 18);
 		_g->Draw(tempImage, xPos, yPos, 1);
