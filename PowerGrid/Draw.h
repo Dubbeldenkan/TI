@@ -98,7 +98,6 @@ private:
 	Image _powerPlantGarbageImage;
 	Image _powerPlantUranImage;
 	Image _powerPlantEcoImage;
-	Image _powerPlantStep3Image;
 
 	Image _coalImage;
 	Image _oilImage;

@@ -22,9 +22,7 @@ Draw::Draw(HWND* hWnd, Board* board)
 	_powerPlantCoalOilImage = _g->LoadImage("PowerPlant/PowerPlantCoalOilImage.png");
 	_powerPlantGarbageImage = _g->LoadImage("PowerPlant/PowerPlantGarbageImage.png");
 	_powerPlantUranImage = _g->LoadImage("PowerPlant/PowerPlantUranImage.png");
-	//TODO rita bilden för ecoPowerplant
 	_powerPlantEcoImage = _g->LoadImage("PowerPlant/PowerPlantEcoImage.png");
-	_powerPlantStep3Image = _g->LoadImage("PowerPlant/PowerPlantStep3Image.png");
 
 	//Resources
 	_coalImage = _g->LoadImage("Resources/Coal.png");
@@ -366,22 +364,16 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 		case PowerPlant::uranium:
 			tempImage = &_powerPlantUranImage;
 			break;
-		case PowerPlant::phase3:
-			tempImage = &_powerPlantStep3Image;
-			break;
 		}
 		Pos plantTextPos = Pos(0, 18);
 		_g->Draw(tempImage, xPos, yPos, 1);
-		if (powerPlant->GetType() != PowerPlant::phase3)
-		{
-			_g->PrintText15(powerPlant->GetPowerPlantNumber(), xPos, yPos, Graphics::BLACK);
-			std::string str;
-			str = std::to_string(powerPlant->GetPowerPlantConsumption());
-			str += "->" + std::to_string(powerPlant->GetPowerPlantProduction());
-			const char* buffer = str.c_str();
+		_g->PrintText15(powerPlant->GetPowerPlantNumber(), xPos, yPos, Graphics::BLACK);
+		std::string str;
+		str = std::to_string(powerPlant->GetPowerPlantConsumption());
+		str += "->" + std::to_string(powerPlant->GetPowerPlantProduction());
+		const char* buffer = str.c_str();
 
-			_g->PrintText8((char*)buffer, xPos + plantTextPos.x, yPos + plantTextPos.y, Graphics::BLACK);
-		}
+		_g->PrintText8((char*)buffer, xPos + plantTextPos.x, yPos + plantTextPos.y, Graphics::BLACK);
 	}
 }
 

@@ -1,41 +1,123 @@
 
 
-Spelet startades Thu Nov 24 22:38:11 2016
+Spelet startades Thu Nov 24 22:03:06 2016
 
-22:38:20   Kolet har fyllts på med 3 till 24
+22:03:33   Kolet har fyllts på med 4 till 24
+Oljan har fyllts på med 2 till 20
+Soporna har fyllts på med 1 till 7
+Uranet har fyllts på med 1 till 3
+22:03:33   
+
+Omgång 2
+22:04:09   Kolet har fyllts på med 3 till 24
+Oljan har fyllts på med 4 till 24
+Soporna har fyllts på med 3 till 10
+Uranet har fyllts på med 1 till 4
+
+
+Spelet startades Thu Nov 24 22:04:45 2016
+
+22:05:07   Kolet har fyllts på med 3 till 24
 Oljan har fyllts på med 4 till 22
 Soporna har fyllts på med 3 till 9
 Uranet har fyllts på med 1 till 3
-22:38:20   
+22:05:07   
 
 Omgång 2
 
 
-Spelet startades Thu Nov 24 22:38:25 2016
+Spelet startades Thu Nov 24 22:10:53 2016
 
-22:38:37   Kolet har fyllts på med 3 till 24
+22:10:58   Kolet har fyllts på med 3 till 24
 Oljan har fyllts på med 4 till 22
 Soporna har fyllts på med 3 till 9
 Uranet har fyllts på med 1 till 3
-22:38:37   
+22:10:58   
 
 Omgång 2
 
 
-Spelet startades Thu Nov 24 22:40:12 2016
+Spelet startades Thu Nov 24 22:12:37 2016
 
-
-
-Spelet startades Thu Nov 24 22:41:34 2016
-
-
-
-Spelet startades Thu Nov 24 22:43:30 2016
-
-22:43:56   Kolet har fyllts på med 3 till 24
+22:12:48   Kolet har fyllts på med 3 till 24
 Oljan har fyllts på med 4 till 22
 Soporna har fyllts på med 3 till 9
 Uranet har fyllts på med 1 till 3
-22:43:56   
+22:12:48   
+
+Omgång 2
+
+
+Spelet startades Thu Nov 24 22:18:52 2016
+
+22:19:09   Kolet har fyllts på med 3 till 24
+Oljan har fyllts på med 4 till 22
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 1 till 3
+
+
+Spelet startades Thu Nov 24 22:19:40 2016
+
+
+
+Spelet startades Thu Nov 24 22:20:51 2016
+
+
+
+Spelet startades Thu Nov 24 22:21:26 2016
+
+22:21:40   Kolet har fyllts på med 3 till 24
+Oljan har fyllts på med 4 till 22
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 1 till 3
+22:21:40   
+
+Omgång 2
+
+
+Spelet startades Thu Nov 24 22:24:24 2016
+
+22:24:35   Kolet har fyllts på med 3 till 24
+Oljan har fyllts på med 4 till 22
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 1 till 3
+22:24:35   
+
+Omgång 2
+
+
+Spelet startades Thu Nov 24 22:26:29 2016
+
+22:26:49   Kolet har fyllts på med 3 till 24
+Oljan har fyllts på med 4 till 22
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 1 till 3
+22:26:49   
+
+Omgång 2
+22:27:37   Kolet har fyllts på med 3 till 24
+Oljan har fyllts på med 4 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 1 till 4
+
+
+Spelet startades Thu Nov 24 22:27:51 2016
+
+22:28:00   Kolet har fyllts på med 3 till 24
+Oljan har fyllts på med 4 till 22
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 1 till 3
+22:28:00   
+
+Omgång 2
+
+
+Spelet startades Thu Nov 24 22:28:34 2016
+
+22:28:38   Kolet har fyllts på med 3 till 24
+Oljan har fyllts på med 4 till 22
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 1 till 3
+22:28:38   
 
 Omgång 2

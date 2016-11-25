@@ -5,7 +5,8 @@ const int Player::GetPayedArray[] = { 10, 22, 33, 44, 54, 64, 73, 82, 90, 98,
 
 Player::Player(char* name, Color color, bool humanPlayer)
 {
-	_amountOfElektro = 50;
+	//TODO ändra tillbaka
+	_amountOfElektro = 500;
 	_playerName = name;
 	_color = color;
 	_humanPlayer = humanPlayer;
