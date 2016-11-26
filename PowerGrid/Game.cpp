@@ -143,6 +143,16 @@ int Game::GetPlayerInTurnPosition()
 	return playerInTurnPosition;
 }
 
+std::vector<Player*> Game::GetPlayerVector()
+{
+	std::vector<Player*> playerVector;
+	for (int index = 0; index < _numberOfPlayers; index++)
+	{
+		playerVector.push_back(&_pv[index]);
+	}
+	return playerVector;
+}
+
 void Game::RemovePlayerFromTempVector(std::vector<Player*> *tempVector)
 {
 	_playerInTurn->ResetPassed();

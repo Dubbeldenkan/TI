@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "Input.h"
+#include "ManageAI.h"
 
 int WINAPI WinMain(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
@@ -11,11 +12,11 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 	HWND hWnd = InitWindow(&hInstance, windowName, input);
 
-
-	int numberOfPlayers = 2;
+	int numberOfPlayers = 3;
 	Game *game = new Game(numberOfPlayers, hWnd);
 	
 	input->SetGame(game);
+	ManageAI* manageAI = new ManageAI(game, game->GetPlayerVector());
 
 	ShowWindow(hWnd,
 		nCmdShow);
@@ -27,6 +28,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	while(true)
 	{
 		game->Run();
+		manageAI->DoAction();
 		MSG msg = { 0 };
 		if (PeekMessage(&msg, 0, 0, 0, PM_REMOVE))
 		{

@@ -9,6 +9,7 @@ class AI
 	Player* player;
 	Chromosome _chrom;
 public:
+	AI() {};
 	AI(Chromosome, Player*);
 	~AI() {};
 

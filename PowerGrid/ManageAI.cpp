@@ -1,20 +1,35 @@
 #include "ManageAI.h"
 
-ManageAI::ManageAI(std::vector<Player> players)
+ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector)
 {
+	_game = game;
 	Chromosome chromosome1(1, 2, 3);
 	_chromosomeVector.push_back(chromosome1);
 	Chromosome chromosome2(5, 8, 2);
 	_chromosomeVector.push_back(chromosome2);
-	for (int index = 0; index < players.size(); index++)
+	for (int index = 0; index < playerVector.size(); index++)
 	{
-		if (!players[index].GetHumanPlayer())
+		if (!playerVector[index]->GetHumanPlayer())
 		{
-			AI ai(_chromosomeVector[_numberOfAIs], &(players[index]));
+			AI ai(_chromosomeVector[_numberOfAIs], (playerVector[index]));
 			_AIVector.push_back(ai);
 			_numberOfAIs++;
 		}
 	}
 }
 
-//TODO gör en funktion som går igenom vems tur det är och kör om det är en AI
+void ManageAI::DoAction()
+{
+	Player* playerInTurn = _game->GetPlayerInTurn();
+	if (!playerInTurn->GetHumanPlayer())
+	{
+		AI* currentAI = FindAI(playerInTurn);
+	}
+}
+
+AI* ManageAI::FindAI(Player* playerInTurn)
+{
+	//TODO returnera korrekr AI
+	AI* ai = new AI();
+	return ai;
+}

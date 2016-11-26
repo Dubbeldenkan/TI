@@ -70,6 +70,7 @@ public:
 	void IncreaseNextBid(int);
 	int GetBidForSelectedPowerPlant();
 	int GetPlayerInTurnPosition();
+	std::vector<Player*> GetPlayerVector();
 
 private:
 	void SetNextPlayerInTurn(std::vector<Player*>*);
