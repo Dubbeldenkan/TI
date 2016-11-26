@@ -11,6 +11,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 	HWND hWnd = InitWindow(&hInstance, windowName, input);
 
+
 	int numberOfPlayers = 2;
 	Game *game = new Game(numberOfPlayers, hWnd);
 	

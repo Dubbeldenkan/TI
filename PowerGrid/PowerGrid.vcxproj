@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AI.cpp" />
+    <ClCompile Include="Chromosome.cpp" />
     <ClCompile Include="City.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Draw.cpp" />
@@ -26,18 +28,22 @@
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ManageAI.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PowerPlant.cpp" />
     <ClCompile Include="PowerPlantMarket.cpp" />
     <ClCompile Include="ResourceMarket.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI.h" />
+    <ClInclude Include="Chromosome.h" />
     <ClInclude Include="City.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Draw.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="Logger.h" />
+    <ClInclude Include="ManageAI.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PowerPlant.h" />
     <ClInclude Include="PowerPlantMarket.h" />
