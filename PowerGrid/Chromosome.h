@@ -10,7 +10,9 @@ public:
 	};
 private:
 	int chromPoints = 0;
-	int _chrom[5];
+	int _chrom[20];
+
+	//Phase 2
 	const int _moreProductionPos = 0;
 	const int _noResourcePowerPlantPos = 1;
 	const int _rareResourceForOthersPos = 2;
@@ -18,14 +20,13 @@ private:
 	const int _powerPlantLimitPos = 4;
 	const int _noPowerPlantPos = 5;
 	const int _powerplantCostPos = 6;
-	// 0 Hur gärna vill man köpa nya kraftverk
-	// 1 Hur gärna vill man ha miljövänliga kraftverk
-	// 2 Hur gärna vill man ha kraftverk som ingen annan har
-	// 3 Hur gärna vill man ha ett kraftverk av typ man inte tidigare har
+
+	//Phase 3
+	const int _aggressiveBuyingResourcesPos = 7;
 
 public:
 	Chromosome() {};
-	Chromosome(int, int, int, int, int, int, int);
+	Chromosome(int, int, int, int, int, int, int, int);
 	~Chromosome() {};
 
 	//Phase 2
@@ -36,6 +37,9 @@ public:
 	int GetPowerPlantLimit();
 	int GetNoPowerPlantValue();
 	int GetPowerPlantCost();
+
+	//Phase 3
+	int GetAggresiveBuyingResources();
 };
 
 #endif // !CHROMOSOME_H

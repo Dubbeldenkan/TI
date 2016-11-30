@@ -1,6 +1,6 @@
 #include "Chromosome.h"
 
-Chromosome::Chromosome(int c1, int c2, int c3, int c4, int c5, int c6, int c7)
+Chromosome::Chromosome(int c1, int c2, int c3, int c4, int c5, int c6, int c7, int c8)
 {
 	//TODO gör konstruktorn snyggare
 	_chrom[0] = c1;
@@ -10,6 +10,7 @@ Chromosome::Chromosome(int c1, int c2, int c3, int c4, int c5, int c6, int c7)
 	_chrom[4] = c5;
 	_chrom[5] = c6;
 	_chrom[6] = c7;
+	_chrom[7] = c8;
 }
 
 int Chromosome::GetMoreProduction()
@@ -45,4 +46,9 @@ int Chromosome::GetNoPowerPlantValue()
 int Chromosome::GetPowerPlantCost()
 {
 	return _chrom[_powerplantCostPos];
+}
+
+int Chromosome::GetAggresiveBuyingResources()
+{
+	return _chrom[_aggressiveBuyingResourcesPos];
 }

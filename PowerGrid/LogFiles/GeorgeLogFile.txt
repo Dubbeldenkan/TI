@@ -1,540 +1,1426 @@
 
 
-Spelet startades Sat Nov 26 17:17:50 2016
-
-
-
-Spelet startades Sat Nov 26 17:24:23 2016
-
-17:28:39   Köpte kraftverk nr 4 för 4 elektro
-17:29:32   Tjänade 10 elektro
-17:29:32   
-Omgång 2
-Elektro: 56
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-4
-Städer:
-
-
-
-Spelet startades Sat Nov 26 17:40:23 2016
-
-
-
-Spelet startades Sat Nov 26 17:41:36 2016
-
-
-
-Spelet startades Sat Nov 26 17:42:22 2016
-
-
-
-Spelet startades Sat Nov 26 17:42:59 2016
-
-17:43:08   Tjänade 10 elektro
-17:43:08   
-Omgång 2
-Elektro: 60
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-Städer:
-
-
-
-Spelet startades Sat Nov 26 18:23:15 2016
-
-
-
-Spelet startades Sat Nov 26 18:24:09 2016
-
-
-
-Spelet startades Sat Nov 26 23:30:21 2016
-
-
-
-Spelet startades Sat Nov 26 23:32:22 2016
-
-
-
-Spelet startades Sat Nov 26 23:36:09 2016
-
-
-
-Spelet startades Sat Nov 26 23:37:13 2016
-
-
-
-Spelet startades Sat Nov 26 23:37:39 2016
-
-
-
-Spelet startades Sat Nov 26 23:40:06 2016
-
-
-
-Spelet startades Sat Nov 26 23:41:47 2016
-
-
-
-Spelet startades Sat Nov 26 23:43:13 2016
-
-
-
-Spelet startades Sat Nov 26 23:43:48 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:00 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:25 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:32 2016
-
-
-
-Spelet startades Sat Nov 26 23:45:32 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:08 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:12 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:17 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:37 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:44 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:20 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:27 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:32 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:41 2016
-
-
-
-Spelet startades Wed Nov 30 09:44:22 2016
-
-
-
-Spelet startades Wed Nov 30 09:47:26 2016
-
-
-
-Spelet startades Wed Nov 30 09:47:33 2016
-
-
-
-Spelet startades Wed Nov 30 09:49:33 2016
-
-
-
-Spelet startades Wed Nov 30 09:51:31 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:07 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:20 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:56 2016
-
-
-
-Spelet startades Wed Nov 30 09:56:01 2016
-
-
-
-Spelet startades Wed Nov 30 09:57:56 2016
-
-
-
-Spelet startades Wed Nov 30 10:02:24 2016
-
-
-
-Spelet startades Wed Nov 30 10:03:49 2016
-
-
-
-Spelet startades Wed Nov 30 10:03:57 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:04 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:12 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:22 2016
-
-
-
-Spelet startades Wed Nov 30 10:05:55 2016
-
-
-
-Spelet startades Wed Nov 30 10:30:07 2016
-
-
-
-Spelet startades Wed Nov 30 11:00:12 2016
-
-
-
-Spelet startades Wed Nov 30 11:00:51 2016
-
-
-
-Spelet startades Wed Nov 30 11:41:09 2016
-
-
-
-Spelet startades Wed Nov 30 11:51:02 2016
-
-
-
-Spelet startades Wed Nov 30 11:51:07 2016
-
-
-
-Spelet startades Wed Nov 30 11:52:09 2016
-
-
-
-Spelet startades Wed Nov 30 11:55:57 2016
-
-
-
-Spelet startades Wed Nov 30 11:58:53 2016
-
-
-
-Spelet startades Wed Nov 30 11:59:27 2016
-
-
-
-Spelet startades Wed Nov 30 11:59:56 2016
-
-
-
-Spelet startades Wed Nov 30 12:03:12 2016
-
-
-
-Spelet startades Wed Nov 30 12:06:52 2016
-
-
-
-Spelet startades Wed Nov 30 12:07:26 2016
-
-
-
-Spelet startades Wed Nov 30 12:07:45 2016
-
-
-
-Spelet startades Wed Nov 30 12:08:49 2016
-
-
-
-Spelet startades Wed Nov 30 12:10:11 2016
-
-
-
-Spelet startades Wed Nov 30 12:34:22 2016
-
-
-
-Spelet startades Wed Nov 30 12:34:51 2016
-
-
-
-Spelet startades Wed Nov 30 12:35:35 2016
-
-
-
-Spelet startades Wed Nov 30 12:35:59 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:11 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:41 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:45 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:52 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:57 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:01 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:06 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:11 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:18 2016
-
-
-
-Spelet startades Wed Nov 30 12:38:29 2016
-
-
-
-Spelet startades Wed Nov 30 12:38:39 2016
-
-
-
-Spelet startades Wed Nov 30 12:39:44 2016
-
-
-
-Spelet startades Wed Nov 30 12:45:21 2016
-
-
-
-Spelet startades Wed Nov 30 12:49:24 2016
-
-
-
-Spelet startades Wed Nov 30 12:50:00 2016
-
-
-
-Spelet startades Wed Nov 30 12:54:17 2016
-
-
-
-Spelet startades Wed Nov 30 12:57:31 2016
-
-
-
-Spelet startades Wed Nov 30 12:59:02 2016
-
-
-
-Spelet startades Wed Nov 30 12:59:45 2016
-
-
-
-Spelet startades Wed Nov 30 13:00:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:05:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:19 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:29 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:48 2016
-
-
-
-Spelet startades Wed Nov 30 13:07:00 2016
-
-
-
-Spelet startades Wed Nov 30 13:08:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:09:12 2016
-
-
-
-Spelet startades Wed Nov 30 13:10:35 2016
-
-
-
-Spelet startades Wed Nov 30 13:11:34 2016
-
-
-
-Spelet startades Wed Nov 30 13:13:50 2016
-
-
-
-Spelet startades Wed Nov 30 13:14:29 2016
-
-
-
-Spelet startades Wed Nov 30 13:17:15 2016
-
-
-
-Spelet startades Wed Nov 30 13:20:04 2016
-
-
-
-Spelet startades Wed Nov 30 13:22:44 2016
-
-
-
-Spelet startades Wed Nov 30 13:23:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:24:54 2016
-
-
-
-Spelet startades Wed Nov 30 13:25:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:25:18 2016
-
-
-
-Spelet startades Wed Nov 30 13:26:25 2016
-
-
-
-Spelet startades Wed Nov 30 13:30:33 2016
-
-13:30:52   Köpte kraftverk nr 8 för 8 elektro
-
-
-Spelet startades Wed Nov 30 13:31:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:32:19 2016
-
-
-
-Spelet startades Wed Nov 30 13:32:37 2016
-
-
-
-Spelet startades Wed Nov 30 13:33:07 2016
-
-
-
-Spelet startades Wed Nov 30 13:33:46 2016
-
-
-
-Spelet startades Wed Nov 30 13:35:18 2016
-
-
-
-Spelet startades Wed Nov 30 13:38:24 2016
-
-
-
-Spelet startades Wed Nov 30 13:40:32 2016
-
-
-
-Spelet startades Wed Nov 30 13:40:55 2016
-
-
-
-Spelet startades Wed Nov 30 13:44:30 2016
-
-
-
-Spelet startades Wed Nov 30 13:48:57 2016
-
-
-
-Spelet startades Wed Nov 30 13:50:59 2016
-
-
-
-Spelet startades Wed Nov 30 13:58:07 2016
-
-
-
-Spelet startades Wed Nov 30 13:58:23 2016
-
-
-
-Spelet startades Wed Nov 30 13:59:03 2016
-
-13:59:27   Köpte kraftverk nr 4 för 4 elektro
-
-
-Spelet startades Wed Nov 30 14:08:53 2016
-
-
-
-Spelet startades Wed Nov 30 14:10:34 2016
-
-14:10:42   Köpte kraftverk nr 4 för 4 elektro
-
-
-Spelet startades Wed Nov 30 14:10:47 2016
-
-14:10:50   Köpte kraftverk nr 5 för 5 elektro
+Spelet startades Wed Nov 30 14:56:55 2016
+
+14:57:00   Köpte kraftverk nr 5 för 5 elektro
+
+
+Spelet startades Wed Nov 30 14:57:11 2016
+
+14:57:21   Köpte kraftverk nr 5 för 5 elektro
+
+
+Spelet startades Wed Nov 30 18:56:19 2016
+
+18:56:34   Köpte kraftverk nr 4 för 4 elektro
+
+
+Spelet startades Wed Nov 30 18:56:54 2016
+
+18:56:57   Köpte kraftverk nr 5 för 5 elektro
+
+
+Spelet startades Wed Nov 30 18:57:19 2016
+
+18:57:23   Köpte kraftverk nr 5 för 5 elektro
+
+
+Spelet startades Wed Nov 30 18:58:20 2016
+
+
+
+Spelet startades Wed Nov 30 19:01:00 2016
+
+19:01:07   Köpte kraftverk nr 4 för 4 elektro
+
+
+Spelet startades Wed Nov 30 19:03:45 2016
+
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:15   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:16   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:17   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:18   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:19   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:20   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:21   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:22   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:23   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:24   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:25   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:26   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:27   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:28   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:29   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:30   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:31   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:32   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:33   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:34   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:35   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:36   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:37   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:38   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:39   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:40   Köpte 0 coal för 0 elektro
+19:04:41   Köpte 0 coal för 0 elektro
+19:04:41   Köpte 0 coal för 0 elektro
+19:05:17   Köpte 0 coal för 0 elektro
+
+
+Spelet startades Wed Nov 30 19:21:13 2016
+
+19:21:17   Köpte kraftverk nr 5 för 5 elektro
+
+
+Spelet startades Wed Nov 30 19:28:16 2016
+
+19:28:20   Köpte kraftverk nr 5 för 5 elektro
+19:29:04   Köpte 2 coal för 2 elektro
+19:29:05   Köpte 2 coal för 3 elektro
+19:29:07   Köpte 0 coal för 0 elektro
+
+
+Spelet startades Wed Nov 30 19:29:30 2016
+
+19:29:37   Köpte kraftverk nr 5 för 5 elektro
+19:29:37   Köpte 2 oil för 6 elektro
+19:29:37   Köpte 2 coal för 6 elektro
+19:29:37   Köpte 0 coal för 0 elektro
+
+
+Spelet startades Wed Nov 30 19:30:10 2016
+
+19:30:23   Köpte kraftverk nr 4 för 4 elektro
+19:31:59   Köpte 2 coal för 2 elektro
+
+
+Spelet startades Wed Nov 30 20:28:56 2016
+
+20:29:04   Köpte kraftverk nr 4 för 4 elektro
+20:29:07   Köpte 2 coal för 2 elektro

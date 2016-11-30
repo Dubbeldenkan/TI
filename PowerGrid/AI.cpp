@@ -19,6 +19,17 @@ void AI::SetPlayer(Player* player)
 	_player = player;
 }
 
+void AI::ResetP3S()
+{
+	_p3s.powerPlantsValuesSet = false;
+	_p3s.powerPlantIndex = 0;
+	_p3s.allPowerPlantsSupplied = false;
+	_p3s.consumptionCoal = 0;
+	_p3s.consumptionOil = 0;
+	_p3s.consumptionGarbage = 0;
+	_p3s.consumptionUran = 0;
+}
+
 char* AI::GetName()
 {
 	return _playerName;
@@ -36,17 +47,12 @@ void AI::DoAction()
 	}
 	case 3:
 	{
-		Phase2();
+		Phase3();
 		break;
 	}
 	case 4:
 	{
 		Phase4();
-		break;
-	}
-	case 5:
-	{
-		Phase5();
 		break;
 	}
 	default:
@@ -222,15 +228,148 @@ int AI::GetConsumptionForSameTypeForOthers(PowerPlant::EnergySource energySource
 
 void AI::Phase3()
 {
-	//TODO
+	if (!_p3s.powerPlantsValuesSet)
+	{
+		SetP3SPowerPlantVector();
+	}
+	PowerPlant* pp = _player->GetPowerPlant(_p3s.powerPlantArray[_p3s.powerPlantIndex]);
+	if (_p3s.powerPlantIndex > Player::numberOfPowerPlants)
+	{
+		_player->SetPassed();
+	}
+	else if (pp->GetPowerPlantNumber() == 0 || pp->GetType() == PowerPlant::none)
+	{
+		_p3s.powerPlantIndex++;
+	}
+	else
+	{
+		int consumption = pp->GetPowerPlantConsumption();
+		PowerPlant::EnergySource energySource = pp->GetType();
+		ResourceMarket::Resource resource;
+		if (energySource == PowerPlant::coalOrOil)
+		{
+			if (_game->GetResourceMarket()->GetAmountOfCoal() > _game->GetResourceMarket()->GetAmountOfOil())
+			{
+				resource = ResourceMarket::coal;
+			}
+			else
+			{
+				resource = ResourceMarket::oil;
+			}
+		}
+		else
+		{
+			resource = (ResourceMarket::Resource) energySource;
+		}
+		int purchase = consumption - (_player->GetAmountOfResource(energySource) - 
+			GetConsumptionForResource(resource));
+		int cost = _game->GetResourceMarket()->GetCost(purchase, resource);
+		if (purchase <= 0)
+		{
+			if (_p3s.powerPlantIndex >= Player::numberOfPowerPlants - 1)
+			{
+				if (_player->GetAmountOfElektro() < 5 * _chrom->GetAggresiveBuyingResources())
+				{
+					_player->SetPassed();
+				}
+			}
+			_p3s.powerPlantIndex++;
+		}
+		else if(cost <= _player->GetAmountOfElektro())
+		{
+			_game->GetPlayerInTurn()->SetBuyResourceStruct(resource, purchase, cost);
+			switch (energySource)
+			{
+			case ResourceMarket::coal:
+			{
+				_p3s.consumptionCoal += purchase;
+				break;
+			}
+			case ResourceMarket::oil:
+			{
+				_p3s.consumptionOil += purchase;
+				break;
+			}
+			case ResourceMarket::garbage:
+			{
+				_p3s.consumptionGarbage += purchase;
+				break;
+			}
+			case ResourceMarket::uranium:
+			{
+				_p3s.consumptionUran += purchase;
+				break;
+			}
+			}
+			_p3s.powerPlantIndex++;
+		}
+		else
+		{
+			_player->SetPassed();
+		}
+	}
+}
+
+int AI::GetConsumptionForResource(ResourceMarket::Resource resource)
+{
+	int result;
+	switch (resource)
+	{
+	case ResourceMarket::coal:
+	{
+		result = _p3s.consumptionCoal;
+	}
+	case ResourceMarket::oil:
+	{
+		result = _p3s.consumptionOil;
+	}
+	case ResourceMarket::garbage:
+	{
+		result = _p3s.consumptionGarbage;
+	}
+	case ResourceMarket::uranium:
+	{
+		result = _p3s.consumptionUran;
+	}
+	}
+	return result;
+}
+
+void AI::SetP3SPowerPlantVector()
+{
+	int powerPlantProduction[Player::numberOfPowerPlants] = { 0, 0, 0 };
+	for (int index = 0; index < Player::numberOfPowerPlants; index++)
+	{
+		if (!_player->GetPowerPlant(index)->GetType() == PowerPlant::none &&
+			!_player->GetPowerPlant(index)->GetPowerPlantNumber() == 0)
+		{
+			if (_player->GetPowerPlant(index)->GetPowerPlantConsumption() > powerPlantProduction[0])
+			{
+				_p3s.powerPlantArray[2] = _p3s.powerPlantArray[1];
+				_p3s.powerPlantArray[1] = _p3s.powerPlantArray[0];
+				_p3s.powerPlantArray[0] = index;
+				powerPlantProduction[2] = powerPlantProduction[1];
+				powerPlantProduction[1] = powerPlantProduction[0];
+				powerPlantProduction[0] = _player->GetPowerPlant(index)->GetPowerPlantConsumption();
+			}
+			else if (_player->GetPowerPlant(index)->GetPowerPlantConsumption() > powerPlantProduction[1])
+			{
+				_p3s.powerPlantArray[2] = _p3s.powerPlantArray[1];
+				_p3s.powerPlantArray[1] = index;
+				powerPlantProduction[2] = powerPlantProduction[1];
+				powerPlantProduction[1] = _player->GetPowerPlant(index)->GetPowerPlantConsumption();
+			}
+			else
+			{
+				_p3s.powerPlantArray[2] = index;
+				powerPlantProduction[2] = _player->GetPowerPlant(index)->GetPowerPlantConsumption();
+			}
+		}
+	}
+	_p3s.powerPlantsValuesSet = true;
 }
 
 void AI::Phase4()
-{
-	//TODO
-}
-
-void AI::Phase5()
 {
 	//TODO
 }

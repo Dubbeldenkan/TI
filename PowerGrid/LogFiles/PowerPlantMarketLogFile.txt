@@ -1,1166 +1,130 @@
 
 
-Spelet startades Fri Nov 25 20:26:17 2016
+Spelet startades Wed Nov 30 14:56:54 2016
 
 
 
-Spelet startades Fri Nov 25 20:26:17 2016
+Spelet startades Wed Nov 30 14:56:55 2016
 
+14:57:00   Kraftverk  nr 5 såldes och ersattes av 13
 
 
-Spelet startades Fri Nov 25 20:38:44 2016
+Spelet startades Wed Nov 30 14:57:11 2016
 
 
 
-Spelet startades Fri Nov 25 20:38:45 2016
+Spelet startades Wed Nov 30 14:57:11 2016
 
-20:38:48   Kraftverk  nr 3 kastades bort och ersattes av 13
+14:57:21   Kraftverk  nr 5 såldes och ersattes av 13
+14:57:26   Kraftverk  nr 7 såldes och ersattes av 20
 
 
-Spelet startades Fri Nov 25 20:40:43 2016
+Spelet startades Wed Nov 30 18:56:19 2016
 
 
 
-Spelet startades Fri Nov 25 20:40:43 2016
+Spelet startades Wed Nov 30 18:56:19 2016
 
-20:40:46   Kraftverk  nr 3 kastades bort och ersattes av 13
-20:40:50   Det högsta kraftverket, nr 13 lades underst i högen.
-Istället togs nr 22 fram.
+18:56:28   Kraftverk  nr 5 såldes och ersattes av 13
+18:56:34   Kraftverk  nr 7 såldes och ersattes av 16
+18:56:34   Kraftverk  nr 4 såldes och ersattes av 31
 
-Nu består den nuvarnade marknaden av: 4 5 6 7 
-Den framtida markaden består av: 8 9 10 22 
-20:40:50   
 
-Omgång 2
-20:40:51   Kraftverk  nr 4 kastades bort och ersattes av 42
-20:40:54   Det högsta kraftverket, nr 42 lades underst i högen.
-Istället togs nr 38 fram.
+Spelet startades Wed Nov 30 18:56:54 2016
 
-Nu består den nuvarnade marknaden av: 5 6 7 8 
-Den framtida markaden består av: 9 10 22 38 
-20:40:54   
 
-Omgång 3
-20:40:55   Kraftverk  nr 5 kastades bort och ersattes av 32
-20:40:57   Det högsta kraftverket, nr 38 lades underst i högen.
-Istället togs nr 12 fram.
 
-Nu består den nuvarnade marknaden av: 6 7 8 9 
-Den framtida markaden består av: 10 22 32 12 
-20:40:57   
+Spelet startades Wed Nov 30 18:56:54 2016
 
-Omgång 4
+18:56:57   Kraftverk  nr 5 såldes och ersattes av 13
 
 
-Spelet startades Fri Nov 25 20:41:00 2016
+Spelet startades Wed Nov 30 18:57:19 2016
 
 
 
-Spelet startades Fri Nov 25 20:41:01 2016
+Spelet startades Wed Nov 30 18:57:19 2016
 
-20:41:03   Kraftverk  nr 3 kastades bort och ersattes av 13
-20:41:11   Det högsta kraftverket, nr 13 lades underst i högen.
-Istället togs nr 11 fram.
+18:57:23   Kraftverk  nr 5 såldes och ersattes av 13
+18:57:30   Kraftverk  nr 4 såldes och ersattes av 14
 
-Nu består den nuvarnade marknaden av: 4 5 6 7 
-Den framtida markaden består av: 8 9 10 11 
-20:41:11   
 
-Omgång 2
-20:41:14   Kraftverk  nr 4 kastades bort och ersattes av 50
+Spelet startades Wed Nov 30 18:58:20 2016
 
 
-Spelet startades Fri Nov 25 20:43:14 2016
 
+Spelet startades Wed Nov 30 18:58:20 2016
 
 
-Spelet startades Fri Nov 25 20:43:14 2016
 
-20:43:17   Kraftverk  nr 3 kastades bort och ersattes av 13
+Spelet startades Wed Nov 30 19:00:59 2016
 
 
-Spelet startades Fri Nov 25 20:45:07 2016
 
+Spelet startades Wed Nov 30 19:01:00 2016
 
+19:01:04   Kraftverk  nr 5 såldes och ersattes av 13
+19:01:07   Kraftverk  nr 4 såldes och ersattes av 39
 
-Spelet startades Fri Nov 25 20:45:08 2016
 
-20:45:10   Kraftverk  nr 3 kastades bort och ersattes av 13
+Spelet startades Wed Nov 30 19:03:45 2016
 
 
-Spelet startades Fri Nov 25 20:45:51 2016
 
+Spelet startades Wed Nov 30 19:03:45 2016
 
+19:03:48   Kraftverk  nr 5 såldes och ersattes av 13
+19:04:01   Kraftverk  nr 4 såldes och ersattes av 20
 
-Spelet startades Fri Nov 25 20:45:51 2016
 
-20:45:54   Kraftverk  nr 3 kastades bort och ersattes av 13
+Spelet startades Wed Nov 30 19:21:13 2016
 
 
-Spelet startades Sat Nov 26 17:16:27 2016
 
+Spelet startades Wed Nov 30 19:21:13 2016
 
+19:21:17   Kraftverk  nr 5 såldes och ersattes av 13
+19:21:25   Kraftverk  nr 4 såldes och ersattes av 50
 
-Spelet startades Sat Nov 26 17:16:27 2016
 
+Spelet startades Wed Nov 30 19:28:16 2016
 
 
-Spelet startades Sat Nov 26 17:17:50 2016
 
+Spelet startades Wed Nov 30 19:28:16 2016
 
+19:28:20   Kraftverk  nr 5 såldes och ersattes av 13
+19:28:25   Kraftverk  nr 7 såldes och ersattes av 40
 
-Spelet startades Sat Nov 26 17:17:50 2016
 
+Spelet startades Wed Nov 30 19:29:29 2016
 
 
-Spelet startades Sat Nov 26 17:24:23 2016
 
+Spelet startades Wed Nov 30 19:29:30 2016
 
+19:29:37   Kraftverk  nr 6 såldes och ersattes av 13
+19:29:37   Kraftverk  nr 5 såldes och ersattes av 14
+19:29:37   Kraftverk  nr 8 såldes och ersattes av 16
 
-Spelet startades Sat Nov 26 17:24:23 2016
 
-17:25:55   Kraftverk  nr 3 såldes och ersattes av 13
-17:28:30   Kraftverk  nr 5 såldes och ersattes av 35
-17:28:39   Kraftverk  nr 4 såldes och ersattes av 12
-17:29:32   Det högsta kraftverket, nr 35 lades underst i högen.
-Istället togs nr 15 fram.
+Spelet startades Wed Nov 30 19:30:09 2016
 
-Nu består den nuvarnade marknaden av: 6 7 8 9 
-Den framtida markaden består av: 10 13 12 15 
-17:29:32   
 
-Omgång 2
-17:31:31   Kraftverk  nr 6 kastades bort och ersattes av 28
 
+Spelet startades Wed Nov 30 19:30:10 2016
 
-Spelet startades Sat Nov 26 17:40:22 2016
+19:30:19   Kraftverk  nr 5 såldes och ersattes av 13
+19:30:23   Kraftverk  nr 6 såldes och ersattes av 12
+19:30:23   Kraftverk  nr 4 såldes och ersattes av 32
 
 
+Spelet startades Wed Nov 30 20:28:56 2016
 
-Spelet startades Sat Nov 26 17:40:23 2016
 
 
+Spelet startades Wed Nov 30 20:28:56 2016
 
-Spelet startades Sat Nov 26 17:41:35 2016
-
-
-
-Spelet startades Sat Nov 26 17:41:36 2016
-
-17:41:40   Kraftverk  nr 3 kastades bort och ersattes av 13
-
-
-Spelet startades Sat Nov 26 17:42:21 2016
-
-
-
-Spelet startades Sat Nov 26 17:42:22 2016
-
-17:42:24   Kraftverk  nr 3 kastades bort och ersattes av 13
-
-
-Spelet startades Sat Nov 26 17:42:58 2016
-
-
-
-Spelet startades Sat Nov 26 17:42:59 2016
-
-17:43:02   Kraftverk  nr 3 kastades bort och ersattes av 13
-17:43:08   Det högsta kraftverket, nr 13 lades underst i högen.
-Istället togs nr 14 fram.
-
-Nu består den nuvarnade marknaden av: 4 5 6 7 
-Den framtida markaden består av: 8 9 10 14 
-17:43:08   
-
-Omgång 2
-
-
-Spelet startades Sat Nov 26 18:23:15 2016
-
-
-
-Spelet startades Sat Nov 26 18:23:15 2016
-
-
-
-Spelet startades Sat Nov 26 18:24:09 2016
-
-
-
-Spelet startades Sat Nov 26 18:24:09 2016
-
-
-
-Spelet startades Sat Nov 26 23:30:21 2016
-
-
-
-Spelet startades Sat Nov 26 23:30:21 2016
-
-
-
-Spelet startades Sat Nov 26 23:32:22 2016
-
-
-
-Spelet startades Sat Nov 26 23:32:22 2016
-
-
-
-Spelet startades Sat Nov 26 23:36:09 2016
-
-
-
-Spelet startades Sat Nov 26 23:36:09 2016
-
-
-
-Spelet startades Sat Nov 26 23:37:12 2016
-
-
-
-Spelet startades Sat Nov 26 23:37:13 2016
-
-
-
-Spelet startades Sat Nov 26 23:37:39 2016
-
-
-
-Spelet startades Sat Nov 26 23:37:39 2016
-
-
-
-Spelet startades Sat Nov 26 23:40:06 2016
-
-
-
-Spelet startades Sat Nov 26 23:40:06 2016
-
-
-
-Spelet startades Sat Nov 26 23:41:46 2016
-
-
-
-Spelet startades Sat Nov 26 23:41:47 2016
-
-
-
-Spelet startades Sat Nov 26 23:43:13 2016
-
-
-
-Spelet startades Sat Nov 26 23:43:13 2016
-
-
-
-Spelet startades Sat Nov 26 23:43:48 2016
-
-
-
-Spelet startades Sat Nov 26 23:43:48 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:00 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:00 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:24 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:25 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:32 2016
-
-
-
-Spelet startades Sat Nov 26 23:44:32 2016
-
-
-
-Spelet startades Sat Nov 26 23:45:31 2016
-
-
-
-Spelet startades Sat Nov 26 23:45:32 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:08 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:08 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:12 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:12 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:16 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:17 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:37 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:37 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:44 2016
-
-
-
-Spelet startades Sat Nov 26 23:46:44 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:20 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:20 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:26 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:27 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:32 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:32 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:40 2016
-
-
-
-Spelet startades Sat Nov 26 23:47:41 2016
-
-
-
-Spelet startades Wed Nov 30 09:44:22 2016
-
-
-
-Spelet startades Wed Nov 30 09:44:22 2016
-
-
-
-Spelet startades Wed Nov 30 09:47:26 2016
-
-
-
-Spelet startades Wed Nov 30 09:47:26 2016
-
-
-
-Spelet startades Wed Nov 30 09:47:33 2016
-
-
-
-Spelet startades Wed Nov 30 09:47:33 2016
-
-
-
-Spelet startades Wed Nov 30 09:49:32 2016
-
-
-
-Spelet startades Wed Nov 30 09:49:33 2016
-
-
-
-Spelet startades Wed Nov 30 09:51:30 2016
-
-
-
-Spelet startades Wed Nov 30 09:51:31 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:06 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:07 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:20 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:20 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:55 2016
-
-
-
-Spelet startades Wed Nov 30 09:55:56 2016
-
-
-
-Spelet startades Wed Nov 30 09:56:01 2016
-
-
-
-Spelet startades Wed Nov 30 09:56:01 2016
-
-
-
-Spelet startades Wed Nov 30 09:57:55 2016
-
-
-
-Spelet startades Wed Nov 30 09:57:56 2016
-
-
-
-Spelet startades Wed Nov 30 10:02:24 2016
-
-
-
-Spelet startades Wed Nov 30 10:02:24 2016
-
-
-
-Spelet startades Wed Nov 30 10:03:48 2016
-
-
-
-Spelet startades Wed Nov 30 10:03:49 2016
-
-
-
-Spelet startades Wed Nov 30 10:03:57 2016
-
-
-
-Spelet startades Wed Nov 30 10:03:57 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:04 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:04 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:12 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:12 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:22 2016
-
-
-
-Spelet startades Wed Nov 30 10:04:22 2016
-
-
-
-Spelet startades Wed Nov 30 10:05:54 2016
-
-
-
-Spelet startades Wed Nov 30 10:05:55 2016
-
-
-
-Spelet startades Wed Nov 30 10:30:07 2016
-
-
-
-Spelet startades Wed Nov 30 10:30:07 2016
-
-
-
-Spelet startades Wed Nov 30 11:00:12 2016
-
-
-
-Spelet startades Wed Nov 30 11:00:12 2016
-
-
-
-Spelet startades Wed Nov 30 11:00:51 2016
-
-
-
-Spelet startades Wed Nov 30 11:00:51 2016
-
-
-
-Spelet startades Wed Nov 30 11:41:09 2016
-
-
-
-Spelet startades Wed Nov 30 11:41:09 2016
-
-
-
-Spelet startades Wed Nov 30 11:51:01 2016
-
-
-
-Spelet startades Wed Nov 30 11:51:02 2016
-
-
-
-Spelet startades Wed Nov 30 11:51:07 2016
-
-
-
-Spelet startades Wed Nov 30 11:51:07 2016
-
-
-
-Spelet startades Wed Nov 30 11:52:09 2016
-
-
-
-Spelet startades Wed Nov 30 11:52:09 2016
-
-
-
-Spelet startades Wed Nov 30 11:55:57 2016
-
-
-
-Spelet startades Wed Nov 30 11:55:57 2016
-
-
-
-Spelet startades Wed Nov 30 11:58:52 2016
-
-
-
-Spelet startades Wed Nov 30 11:58:53 2016
-
-
-
-Spelet startades Wed Nov 30 11:59:26 2016
-
-
-
-Spelet startades Wed Nov 30 11:59:27 2016
-
-
-
-Spelet startades Wed Nov 30 11:59:56 2016
-
-
-
-Spelet startades Wed Nov 30 11:59:56 2016
-
-
-
-Spelet startades Wed Nov 30 12:03:12 2016
-
-
-
-Spelet startades Wed Nov 30 12:03:12 2016
-
-
-
-Spelet startades Wed Nov 30 12:06:52 2016
-
-
-
-Spelet startades Wed Nov 30 12:06:52 2016
-
-
-
-Spelet startades Wed Nov 30 12:07:26 2016
-
-
-
-Spelet startades Wed Nov 30 12:07:26 2016
-
-
-
-Spelet startades Wed Nov 30 12:07:45 2016
-
-
-
-Spelet startades Wed Nov 30 12:07:45 2016
-
-
-
-Spelet startades Wed Nov 30 12:08:48 2016
-
-
-
-Spelet startades Wed Nov 30 12:08:49 2016
-
-
-
-Spelet startades Wed Nov 30 12:10:11 2016
-
-
-
-Spelet startades Wed Nov 30 12:10:11 2016
-
-
-
-Spelet startades Wed Nov 30 12:34:22 2016
-
-
-
-Spelet startades Wed Nov 30 12:34:22 2016
-
-
-
-Spelet startades Wed Nov 30 12:34:51 2016
-
-
-
-Spelet startades Wed Nov 30 12:34:51 2016
-
-
-
-Spelet startades Wed Nov 30 12:35:35 2016
-
-
-
-Spelet startades Wed Nov 30 12:35:35 2016
-
-
-
-Spelet startades Wed Nov 30 12:35:59 2016
-
-
-
-Spelet startades Wed Nov 30 12:35:59 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:11 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:11 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:41 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:41 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:45 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:45 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:52 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:52 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:56 2016
-
-
-
-Spelet startades Wed Nov 30 12:36:57 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:01 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:01 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:05 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:06 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:10 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:11 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:18 2016
-
-
-
-Spelet startades Wed Nov 30 12:37:18 2016
-
-
-
-Spelet startades Wed Nov 30 12:38:29 2016
-
-
-
-Spelet startades Wed Nov 30 12:38:29 2016
-
-
-
-Spelet startades Wed Nov 30 12:38:39 2016
-
-
-
-Spelet startades Wed Nov 30 12:38:39 2016
-
-
-
-Spelet startades Wed Nov 30 12:39:44 2016
-
-
-
-Spelet startades Wed Nov 30 12:39:44 2016
-
-
-
-Spelet startades Wed Nov 30 12:45:21 2016
-
-
-
-Spelet startades Wed Nov 30 12:45:21 2016
-
-
-
-Spelet startades Wed Nov 30 12:49:23 2016
-
-
-
-Spelet startades Wed Nov 30 12:49:24 2016
-
-12:49:46   Kraftverk  nr 6 såldes och ersattes av 13
-
-
-Spelet startades Wed Nov 30 12:50:00 2016
-
-
-
-Spelet startades Wed Nov 30 12:50:00 2016
-
-
-
-Spelet startades Wed Nov 30 12:54:17 2016
-
-
-
-Spelet startades Wed Nov 30 12:54:17 2016
-
-
-
-Spelet startades Wed Nov 30 12:57:30 2016
-
-
-
-Spelet startades Wed Nov 30 12:57:31 2016
-
-
-
-Spelet startades Wed Nov 30 12:59:02 2016
-
-
-
-Spelet startades Wed Nov 30 12:59:02 2016
-
-12:59:30   Kraftverk  nr 6 såldes och ersattes av 13
-
-
-Spelet startades Wed Nov 30 12:59:45 2016
-
-
-
-Spelet startades Wed Nov 30 12:59:45 2016
-
-
-
-Spelet startades Wed Nov 30 13:00:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:00:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:05:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:05:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:18 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:19 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:29 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:29 2016
-
-13:06:34   Kraftverk  nr 3 kastades bort och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:06:48 2016
-
-
-
-Spelet startades Wed Nov 30 13:06:48 2016
-
-13:06:52   Kraftverk  nr 3 kastades bort och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:07:00 2016
-
-
-
-Spelet startades Wed Nov 30 13:07:00 2016
-
-
-
-Spelet startades Wed Nov 30 13:08:35 2016
-
-
-
-Spelet startades Wed Nov 30 13:08:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:09:12 2016
-
-
-
-Spelet startades Wed Nov 30 13:09:12 2016
-
-
-
-Spelet startades Wed Nov 30 13:10:35 2016
-
-
-
-Spelet startades Wed Nov 30 13:10:35 2016
-
-
-
-Spelet startades Wed Nov 30 13:11:34 2016
-
-
-
-Spelet startades Wed Nov 30 13:11:34 2016
-
-
-
-Spelet startades Wed Nov 30 13:13:49 2016
-
-
-
-Spelet startades Wed Nov 30 13:13:50 2016
-
-
-
-Spelet startades Wed Nov 30 13:14:29 2016
-
-
-
-Spelet startades Wed Nov 30 13:14:29 2016
-
-
-
-Spelet startades Wed Nov 30 13:17:14 2016
-
-
-
-Spelet startades Wed Nov 30 13:17:15 2016
-
-
-
-Spelet startades Wed Nov 30 13:20:03 2016
-
-
-
-Spelet startades Wed Nov 30 13:20:04 2016
-
-
-
-Spelet startades Wed Nov 30 13:22:44 2016
-
-
-
-Spelet startades Wed Nov 30 13:22:44 2016
-
-13:22:53   Kraftverk  nr 3 kastades bort och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:23:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:23:05 2016
-
-13:23:10   Kraftverk  nr 6 såldes och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:24:53 2016
-
-
-
-Spelet startades Wed Nov 30 13:24:54 2016
-
-
-
-Spelet startades Wed Nov 30 13:25:04 2016
-
-
-
-Spelet startades Wed Nov 30 13:25:05 2016
-
-
-
-Spelet startades Wed Nov 30 13:25:18 2016
-
-
-
-Spelet startades Wed Nov 30 13:25:18 2016
-
-13:25:34   Kraftverk  nr 5 såldes och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:26:25 2016
-
-
-
-Spelet startades Wed Nov 30 13:26:25 2016
-
-13:26:34   Kraftverk  nr 6 såldes och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:30:33 2016
-
-
-
-Spelet startades Wed Nov 30 13:30:33 2016
-
-13:30:40   Kraftverk  nr 6 såldes och ersattes av 13
-13:30:49   Kraftverk  nr 7 såldes och ersattes av 40
-13:30:52   Kraftverk  nr 8 såldes och ersattes av 31
-
-
-Spelet startades Wed Nov 30 13:31:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:31:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:32:19 2016
-
-
-
-Spelet startades Wed Nov 30 13:32:19 2016
-
-13:32:31   Kraftverk  nr 6 såldes och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:32:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:32:37 2016
-
-
-
-Spelet startades Wed Nov 30 13:33:06 2016
-
-
-
-Spelet startades Wed Nov 30 13:33:07 2016
-
-
-
-Spelet startades Wed Nov 30 13:33:46 2016
-
-
-
-Spelet startades Wed Nov 30 13:33:46 2016
-
-
-
-Spelet startades Wed Nov 30 13:35:18 2016
-
-
-
-Spelet startades Wed Nov 30 13:35:18 2016
-
-
-
-Spelet startades Wed Nov 30 13:38:24 2016
-
-
-
-Spelet startades Wed Nov 30 13:38:24 2016
-
-13:38:59   Kraftverk  nr 6 såldes och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:40:32 2016
-
-
-
-Spelet startades Wed Nov 30 13:40:32 2016
-
-
-
-Spelet startades Wed Nov 30 13:40:54 2016
-
-
-
-Spelet startades Wed Nov 30 13:40:55 2016
-
-
-
-Spelet startades Wed Nov 30 13:44:29 2016
-
-
-
-Spelet startades Wed Nov 30 13:44:30 2016
-
-
-
-Spelet startades Wed Nov 30 13:48:57 2016
-
-
-
-Spelet startades Wed Nov 30 13:48:57 2016
-
-
-
-Spelet startades Wed Nov 30 13:50:58 2016
-
-
-
-Spelet startades Wed Nov 30 13:50:59 2016
-
-
-
-Spelet startades Wed Nov 30 13:58:07 2016
-
-
-
-Spelet startades Wed Nov 30 13:58:07 2016
-
-13:58:10   Kraftverk  nr 5 såldes och ersattes av 13
-
-
-Spelet startades Wed Nov 30 13:58:23 2016
-
-
-
-Spelet startades Wed Nov 30 13:58:23 2016
-
-
-
-Spelet startades Wed Nov 30 13:59:02 2016
-
-
-
-Spelet startades Wed Nov 30 13:59:03 2016
-
-13:59:17   Kraftverk  nr 5 såldes och ersattes av 13
-13:59:24   Kraftverk  nr 7 såldes och ersattes av 11
-13:59:27   Kraftverk  nr 4 såldes och ersattes av 34
-
-
-Spelet startades Wed Nov 30 14:08:52 2016
-
-
-
-Spelet startades Wed Nov 30 14:08:53 2016
-
-
-
-Spelet startades Wed Nov 30 14:10:34 2016
-
-
-
-Spelet startades Wed Nov 30 14:10:34 2016
-
-14:10:37   Kraftverk  nr 5 såldes och ersattes av 13
-14:10:42   Kraftverk  nr 7 såldes och ersattes av 27
-14:10:42   Kraftverk  nr 4 såldes och ersattes av 46
-
-
-Spelet startades Wed Nov 30 14:10:47 2016
-
-
-
-Spelet startades Wed Nov 30 14:10:47 2016
-
-14:10:50   Kraftverk  nr 5 såldes och ersattes av 13
-14:10:56   Kraftverk  nr 4 såldes och ersattes av 37
+20:29:01   Kraftverk  nr 5 såldes och ersattes av 13
+20:29:04   Kraftverk  nr 6 såldes och ersattes av 14
+20:29:04   Kraftverk  nr 4 såldes och ersattes av 29

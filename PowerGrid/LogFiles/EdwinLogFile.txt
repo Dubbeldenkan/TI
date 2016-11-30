@@ -1,160 +1,64 @@
 
 
-Spelet startades Sat Nov 26 17:16:27 2016
+Spelet startades Wed Nov 30 14:56:55 2016
 
 
 
-Spelet startades Sat Nov 26 17:17:50 2016
+Spelet startades Wed Nov 30 14:57:11 2016
 
 
 
-Spelet startades Sat Nov 26 17:24:23 2016
+Spelet startades Wed Nov 30 18:56:19 2016
 
-17:25:55   Köpte kraftverk nr 3 för 3 elektro
-17:29:32   Tjänade 10 elektro
-17:29:32   
-Omgång 2
-Elektro: 57
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-3
-Städer:
+18:56:28   Köpte kraftverk nr 5 för 5 elektro
 
 
+Spelet startades Wed Nov 30 18:56:54 2016
 
-Spelet startades Sat Nov 26 17:40:23 2016
 
 
+Spelet startades Wed Nov 30 18:57:19 2016
 
-Spelet startades Sat Nov 26 17:41:36 2016
 
 
+Spelet startades Wed Nov 30 18:58:20 2016
 
-Spelet startades Sat Nov 26 17:42:22 2016
 
 
+Spelet startades Wed Nov 30 19:01:00 2016
 
-Spelet startades Sat Nov 26 17:42:59 2016
+19:01:04   Köpte kraftverk nr 5 för 5 elektro
 
-17:43:08   Tjänade 10 elektro
-17:43:08   
-Omgång 2
-Elektro: 60
-Kol: 0
-Olja: 0
-Sopor: 0
-Uran: 0
-Antal städer i nätverk: 0
-Antal försörjda städer: 0
-KraftVerk:
-Städer:
 
+Spelet startades Wed Nov 30 19:03:45 2016
 
+19:03:48   Köpte kraftverk nr 5 för 5 elektro
 
-Spelet startades Sat Nov 26 18:23:15 2016
 
+Spelet startades Wed Nov 30 19:21:13 2016
 
 
-Spelet startades Sat Nov 26 18:24:09 2016
 
+Spelet startades Wed Nov 30 19:28:16 2016
 
+19:29:02   Köpte 0 coal för 0 elektro
 
-Spelet startades Wed Nov 30 13:24:54 2016
 
+Spelet startades Wed Nov 30 19:29:30 2016
 
+19:29:37   Köpte kraftverk nr 8 för 8 elektro
+19:29:37   Köpte 3 coal för 3 elektro
+19:29:37   Köpte 3 coal för 6 elektro
+19:29:37   Köpte 0 coal för 0 elektro
 
-Spelet startades Wed Nov 30 13:25:05 2016
 
+Spelet startades Wed Nov 30 19:30:10 2016
 
+19:30:19   Köpte kraftverk nr 5 för 5 elektro
 
-Spelet startades Wed Nov 30 13:25:18 2016
 
+Spelet startades Wed Nov 30 20:28:56 2016
 
-
-Spelet startades Wed Nov 30 13:26:25 2016
-
-
-
-Spelet startades Wed Nov 30 13:30:33 2016
-
-13:30:40   Köpte kraftverk nr 6 för 6 elektro
-
-
-Spelet startades Wed Nov 30 13:31:36 2016
-
-
-
-Spelet startades Wed Nov 30 13:32:19 2016
-
-
-
-Spelet startades Wed Nov 30 13:32:37 2016
-
-
-
-Spelet startades Wed Nov 30 13:33:07 2016
-
-
-
-Spelet startades Wed Nov 30 13:33:46 2016
-
-
-
-Spelet startades Wed Nov 30 13:35:18 2016
-
-
-
-Spelet startades Wed Nov 30 13:38:24 2016
-
-
-
-Spelet startades Wed Nov 30 13:40:32 2016
-
-
-
-Spelet startades Wed Nov 30 13:40:55 2016
-
-
-
-Spelet startades Wed Nov 30 13:44:30 2016
-
-
-
-Spelet startades Wed Nov 30 13:48:57 2016
-
-
-
-Spelet startades Wed Nov 30 13:50:59 2016
-
-
-
-Spelet startades Wed Nov 30 13:58:07 2016
-
-13:58:10   Köpte kraftverk nr 5 för 26 elektro
-
-
-Spelet startades Wed Nov 30 13:58:23 2016
-
-
-
-Spelet startades Wed Nov 30 13:59:03 2016
-
-13:59:17   Köpte kraftverk nr 5 för 37 elektro
-
-
-Spelet startades Wed Nov 30 14:08:53 2016
-
-
-
-Spelet startades Wed Nov 30 14:10:34 2016
-
-14:10:37   Köpte kraftverk nr 5 för 5 elektro
-
-
-Spelet startades Wed Nov 30 14:10:47 2016
-
+20:29:01   Köpte kraftverk nr 5 för 5 elektro
+20:30:01   Köpte 2 coal för 3 elektro
+20:30:24   Köpte 2 coal för 4 elektro
