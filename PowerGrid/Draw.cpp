@@ -247,6 +247,7 @@ void Draw::DrawPlayer(Player* player, int playerIndex, int gamePhase)
 	Pos plusPos = Pos(225, 45);
 	Pos citiesInNetworkPos = Pos(235, 45);
 	Pos activePos = Pos(55, 2);
+	Pos PosActivePlayerPos = Pos(122, 5);
 	Image* tempPlayerLabel;
 	switch (player->GetColor())
 	{
@@ -273,8 +274,10 @@ void Draw::DrawPlayer(Player* player, int playerIndex, int gamePhase)
 		break;
 	}
 	_g->Draw(tempPlayerLabel, _firstPlayerPos.x, _firstPlayerPos.y + playerIndex * _playerPosDiff.y, 1);
+	Image* tempImage;
 	_g->PrintText15(player->GetName(), _firstPlayerPos.x + nameDiff.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + nameDiff.y, Graphics::WHITE);
+	
 
 	_g->PrintText15(player->GetAmountOfResource(ResourceMarket::coal), _firstPlayerPos.x + firstRes.x,
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + firstRes.y, Graphics::WHITE);

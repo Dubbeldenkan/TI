@@ -16,7 +16,7 @@ class ManageAI
 public:
 	ManageAI::ManageAI(Game*, std::vector<Player*>);
 	void DoAction();
-	AI* FindAI(Player*);
+	AI* FindAIForPlayer(Player*);
 };
 
 #endif // !MANAGE_AI

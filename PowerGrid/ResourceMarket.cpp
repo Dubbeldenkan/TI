@@ -78,10 +78,10 @@ int ResourceMarket::GetFirstResPos(Resource resource)
 
 void ResourceMarket::ReSupplyResourceMarket(int step)
 {
-	_amountOfCoal += _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::coal];
-	_amountOfOil += _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::oil];
-	_amountOfGarbage += _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::garbage];
-	_amountOfUranium += _resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::uranium];
+	_amountOfCoal += GetReSupplyAmount(_numberOfPlayers, step, Resource::coal);
+	_amountOfOil += GetReSupplyAmount(_numberOfPlayers, step, Resource::oil);
+	_amountOfGarbage += GetReSupplyAmount(_numberOfPlayers, step, Resource::garbage);
+	_amountOfUranium += GetReSupplyAmount(_numberOfPlayers, step, Resource::uranium);
 
 	_amountOfCoal = min(_amountOfCoal, MAX_AMOUNT_RESOURCE);
 	_amountOfOil = min(_amountOfOil, MAX_AMOUNT_RESOURCE);
@@ -96,6 +96,11 @@ void ResourceMarket::ReSupplyResourceMarket(int step)
 		" till " << _amountOfGarbage << "\nUranet har fyllts på med " <<
 		_resourceSupplyMatrix[_numberOfPlayers - 2][step - 1][Resource::uranium] << " till " << _amountOfUranium;
 	_log->Log(ss.str());
+}
+
+int ResourceMarket::GetReSupplyAmount(int numberOfPlayers, int step, ResourceMarket::Resource resource)
+{
+	return _resourceSupplyMatrix[numberOfPlayers - 2][step - 1][resource];
 }
 
 int ResourceMarket::GetSizeOfMarket()

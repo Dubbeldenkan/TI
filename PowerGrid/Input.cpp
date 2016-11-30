@@ -46,7 +46,7 @@ void Input::MouseClick()
 			{
 				_game->IncreaseNextBid(-1);
 			}
-			else if (BidPressed())
+			else if (BidPressed() && _game->GetPlayerInTurn()->GetAmountOfElektro() >= _game->GetNextBid())
 			{
 				_game->GetPlayerInTurn()->SetBid(_game->GetBidForSelectedPowerPlant());
 			}
@@ -370,7 +370,8 @@ LRESULT CALLBACK Input::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM
 		_mousePos.y = HIWORD(lParam);
 		break;
 	}
-	case WM_KEYDOWN :	{
+	case WM_KEYDOWN :
+	{
 		switch (wParam)
 		{
 		case VK_SPACE:

@@ -13,7 +13,7 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 	usedRegions.push_back(0);
 	usedRegions.push_back(1);
 	usedRegions.push_back(2);
-	if (numberOfPlayers > 2)
+	if (numberOfPlayers > 3)
 	{
 		usedRegions.push_back(3);
 	}
@@ -36,14 +36,14 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 void Game::InitPlayers(int numberOfPlayers)
 {
 	_pv.push_back(Player("Dennis", Player::red, true));
-	_pv.push_back(Player("Alida", Player::blue, true));
+	_pv.push_back(Player("George", Player::blue, false));
 	if (_numberOfPlayers > 2)
 	{
-		_pv.push_back(Player("Edwin", Player::yellow, true));
+		_pv.push_back(Player("Edwin", Player::yellow, false));
 	}
 	if (_numberOfPlayers > 3)
 	{
-		_pv.push_back(Player("George", Player::green, true));
+		_pv.push_back(Player("Pappa", Player::green, true));
 	}
 	if (_numberOfPlayers > 4)
 	{
@@ -61,9 +61,29 @@ int Game::GetCurrentPhase()
 	return _gamePhase;
 }
 
+int Game::GetNumberOfPlayers()
+{
+	return _numberOfPlayers;
+}
+
+int Game::GetSelectedPowerPlant()
+{
+	return _phase2Struct.selectedPowerPlant - 1;
+}
+
+int Game::GetLastBidForSelectedPowerPlant()
+{
+	return _phase2Struct.bidForSelectedPowerPlant;
+}
+
 Game::GameSubPhase Game::GetCurrentSubPhase()
 {
 	return _gameSubPhase;
+}
+
+int Game::GetNextBid()
+{
+	return _phase2Struct.nextBid;
 }
 
 int Game::GetCurrentStep()
@@ -108,8 +128,9 @@ void Game::IncreaseNextBid(int change)
 		_phase2Struct.bidForSelectedPowerPlant + 1);
 }
 
-void Game::SetNextPlayerInTurn(std::vector<Player*> *tempVector)
+void Game::SetNextPlayerInTurn(std::vector<Player*> *tempVector, int direction)
 {
+	_playerInTurn->ResetPassed();
 	int currentPlayerPos;
 	for (int index = 0; index < tempVector->size(); index++)
 	{
@@ -119,13 +140,17 @@ void Game::SetNextPlayerInTurn(std::vector<Player*> *tempVector)
 			break;
 		}
 	}
-	if (currentPlayerPos == (tempVector->size() - 1))
+	if (currentPlayerPos == (tempVector->size() - 1) && direction == 1)
 	{
 		_playerInTurn = (*tempVector)[0];
 	}
+	else if (currentPlayerPos == 0 && direction == -1)
+	{
+		_playerInTurn = (*tempVector)[tempVector->size() - 1];
+	}
 	else
 	{
-		_playerInTurn = (*tempVector)[currentPlayerPos + 1];
+		_playerInTurn = (*tempVector)[currentPlayerPos + direction];
 	}
 }
 
@@ -153,9 +178,8 @@ std::vector<Player*> Game::GetPlayerVector()
 	return playerVector;
 }
 
-void Game::RemovePlayerFromTempVector(std::vector<Player*> *tempVector)
+void Game::RemovePlayerFromTempVector(std::vector<Player*> *tempVector, int direction)
 {
-	_playerInTurn->ResetPassed();
 	int currentPlayerPos;
 	for (int index = 0; index < tempVector->size(); index++)
 	{
@@ -165,7 +189,7 @@ void Game::RemovePlayerFromTempVector(std::vector<Player*> *tempVector)
 			break;
 		}
 	}
-	SetNextPlayerInTurn(tempVector);
+	SetNextPlayerInTurn(tempVector, direction);
 	tempVector->erase(tempVector->begin() + currentPlayerPos);
 }
 
@@ -365,7 +389,7 @@ void Game::Phase2()
 		//player passes
 		if (_playerInTurn->GetPassed())
 		{
-			RemovePlayerFromTempVector(&_tempPlayerVector);
+			RemovePlayerFromTempVector(&_tempPlayerVector, 1);
 			if (_tempPlayerVector.size() == 0)
 			{
 				_gameSubPhase = nextPhase;
@@ -383,16 +407,21 @@ void Game::Phase2()
 			_phase2Struct.nextBid = _phase2Struct.bidForSelectedPowerPlant + 1;
 			_gameSubPhase = bid;
 			_phase2Struct.bidPlayerVector = _tempPlayerVector;
-			SetNextPlayerInTurn(&_tempPlayerVector);
+			SetNextPlayerInTurn(&_tempPlayerVector, 1);
 			DrawBoard();
 		}
 		break;
 	}
 	case bid:
 	{
-		if (_playerInTurn->GetPassed())
+		if (_phase2Struct.bidPlayerVector.size() == 1)
 		{
-			RemovePlayerFromTempVector(&_phase2Struct.bidPlayerVector);
+			_gameSubPhase = placePowerPlant;
+			DrawBoard();
+		}
+		else if (_playerInTurn->GetPassed())
+		{
+			RemovePlayerFromTempVector(&_phase2Struct.bidPlayerVector, 1);
 			_phase2Struct.nextBid = _phase2Struct.bidForSelectedPowerPlant + 1;
 			DrawBoard();
 		}
@@ -407,12 +436,7 @@ void Game::Phase2()
 			_phase2Struct.bidForSelectedPowerPlant = _phase2Struct.nextBid;
 			_phase2Struct.lastBiddingPlayer = _playerInTurn;
 			_phase2Struct.nextBid = _phase2Struct.bidForSelectedPowerPlant + 1;
-			SetNextPlayerInTurn(&_phase2Struct.bidPlayerVector);
-			DrawBoard();
-		}
-		else if (_phase2Struct.bidPlayerVector.size() == 1)
-		{
-			_gameSubPhase = placePowerPlant;
+			SetNextPlayerInTurn(&_phase2Struct.bidPlayerVector, 1);
 			DrawBoard();
 		}
 		break;
@@ -424,7 +448,7 @@ void Game::Phase2()
 			_playerInTurn->AddPowerPlant(_ppm.GetPowerPlantCurrentDeck(_phase2Struct.selectedPowerPlant - 1),
 				_phase2Struct.bidForSelectedPowerPlant);
 			_ppm.RemovePowerPlant(_phase2Struct.selectedPowerPlant - 1);
-			RemovePlayerFromTempVector(&_tempPlayerVector);
+			RemovePlayerFromTempVector(&_tempPlayerVector, 1);
 			_phase2Struct.selectedPowerPlant = 0;
 			DrawBoard();
 			if (_tempPlayerVector.size() > 0)
@@ -465,7 +489,7 @@ void Game::Phase3()
 		{
 			_tempPlayerVector.push_back(&_pv[i]);
 		}
-		_playerInTurn = _tempPlayerVector[0];
+		_playerInTurn = _tempPlayerVector[_tempPlayerVector.size() - 1];
 		DrawBoard();
 		break;
 	}
@@ -481,7 +505,7 @@ void Game::Phase3()
 		}
 		else if (_playerInTurn->GetPassed())
 		{
-			RemovePlayerFromTempVector(&_tempPlayerVector);
+			RemovePlayerFromTempVector(&_tempPlayerVector, -1);
 			if (_tempPlayerVector.size() < 1)
 			{
 				_gameSubPhase = nextPhase;
@@ -511,7 +535,7 @@ void Game::Phase4()
 		{
 			_tempPlayerVector.push_back(&_pv[i]);
 		}
-		_playerInTurn = _tempPlayerVector[0];
+		_playerInTurn = _tempPlayerVector[_tempPlayerVector.size() - 1];
 		DrawBoard();
 		break;
 	case buildCities:
@@ -535,7 +559,7 @@ void Game::Phase4()
 		}
 		else if (_playerInTurn->GetPassed())
 		{
-			RemovePlayerFromTempVector(&_tempPlayerVector);
+			RemovePlayerFromTempVector(&_tempPlayerVector, -1);
 			if (_tempPlayerVector.size() < 1)
 			{
 				_gameSubPhase = nextPhase;
@@ -568,6 +592,7 @@ void Game::Phase5()
 		{
 			_pv[i].ActiveThePowerPlants();
 			_tempPlayerVector.push_back(&_pv[i]);
+			_tempPlayerVector[i]->ResetPassed();
 		}
 		_playerInTurn = _tempPlayerVector[0];
 		DrawBoard();
@@ -577,7 +602,7 @@ void Game::Phase5()
 	{
 		if (_playerInTurn->GetPassed())
 		{
-			RemovePlayerFromTempVector(&_tempPlayerVector);
+			RemovePlayerFromTempVector(&_tempPlayerVector, 1);
 			if (_tempPlayerVector.size() < 1)
 			{
 				_gameSubPhase = getPayed;

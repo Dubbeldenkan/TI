@@ -78,3 +78,554 @@ Spelet startades Fri Nov 25 20:45:08 2016
 
 Spelet startades Fri Nov 25 20:45:51 2016
 
+
+
+Spelet startades Sat Nov 26 17:16:27 2016
+
+
+
+Spelet startades Sat Nov 26 17:17:50 2016
+
+
+
+Spelet startades Sat Nov 26 17:24:23 2016
+
+17:28:30   Köpte kraftverk nr 5 för 5 elektro
+17:29:32   Tjänade 10 elektro
+17:29:32   
+Omgång 2
+Elektro: 55
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+5
+Städer:
+
+
+
+Spelet startades Sat Nov 26 17:40:23 2016
+
+
+
+Spelet startades Sat Nov 26 17:41:36 2016
+
+
+
+Spelet startades Sat Nov 26 17:42:22 2016
+
+
+
+Spelet startades Sat Nov 26 17:42:59 2016
+
+17:43:08   Tjänade 10 elektro
+17:43:08   
+Omgång 2
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+
+
+Spelet startades Sat Nov 26 18:23:15 2016
+
+
+
+Spelet startades Sat Nov 26 18:24:09 2016
+
+
+
+Spelet startades Sat Nov 26 23:30:21 2016
+
+
+
+Spelet startades Sat Nov 26 23:32:22 2016
+
+
+
+Spelet startades Sat Nov 26 23:36:09 2016
+
+
+
+Spelet startades Sat Nov 26 23:37:13 2016
+
+
+
+Spelet startades Sat Nov 26 23:37:39 2016
+
+
+
+Spelet startades Sat Nov 26 23:40:06 2016
+
+
+
+Spelet startades Sat Nov 26 23:41:47 2016
+
+
+
+Spelet startades Sat Nov 26 23:43:13 2016
+
+
+
+Spelet startades Sat Nov 26 23:43:48 2016
+
+
+
+Spelet startades Sat Nov 26 23:44:00 2016
+
+
+
+Spelet startades Sat Nov 26 23:44:25 2016
+
+
+
+Spelet startades Sat Nov 26 23:44:32 2016
+
+
+
+Spelet startades Sat Nov 26 23:45:32 2016
+
+
+
+Spelet startades Sat Nov 26 23:46:08 2016
+
+
+
+Spelet startades Sat Nov 26 23:46:12 2016
+
+
+
+Spelet startades Sat Nov 26 23:46:17 2016
+
+
+
+Spelet startades Sat Nov 26 23:46:37 2016
+
+
+
+Spelet startades Sat Nov 26 23:46:44 2016
+
+
+
+Spelet startades Sat Nov 26 23:47:20 2016
+
+
+
+Spelet startades Sat Nov 26 23:47:27 2016
+
+
+
+Spelet startades Sat Nov 26 23:47:32 2016
+
+
+
+Spelet startades Sat Nov 26 23:47:41 2016
+
+
+
+Spelet startades Wed Nov 30 09:44:22 2016
+
+
+
+Spelet startades Wed Nov 30 09:47:26 2016
+
+
+
+Spelet startades Wed Nov 30 09:47:33 2016
+
+
+
+Spelet startades Wed Nov 30 09:49:33 2016
+
+
+
+Spelet startades Wed Nov 30 09:51:31 2016
+
+
+
+Spelet startades Wed Nov 30 09:55:07 2016
+
+
+
+Spelet startades Wed Nov 30 09:55:20 2016
+
+
+
+Spelet startades Wed Nov 30 09:55:56 2016
+
+
+
+Spelet startades Wed Nov 30 09:56:01 2016
+
+
+
+Spelet startades Wed Nov 30 09:57:56 2016
+
+
+
+Spelet startades Wed Nov 30 10:02:24 2016
+
+
+
+Spelet startades Wed Nov 30 10:03:49 2016
+
+
+
+Spelet startades Wed Nov 30 10:03:57 2016
+
+
+
+Spelet startades Wed Nov 30 10:04:04 2016
+
+
+
+Spelet startades Wed Nov 30 10:04:12 2016
+
+
+
+Spelet startades Wed Nov 30 10:04:22 2016
+
+
+
+Spelet startades Wed Nov 30 10:05:55 2016
+
+
+
+Spelet startades Wed Nov 30 10:30:07 2016
+
+
+
+Spelet startades Wed Nov 30 11:00:12 2016
+
+
+
+Spelet startades Wed Nov 30 11:00:51 2016
+
+
+
+Spelet startades Wed Nov 30 11:41:09 2016
+
+
+
+Spelet startades Wed Nov 30 11:51:02 2016
+
+
+
+Spelet startades Wed Nov 30 11:51:07 2016
+
+
+
+Spelet startades Wed Nov 30 11:52:09 2016
+
+
+
+Spelet startades Wed Nov 30 11:55:57 2016
+
+
+
+Spelet startades Wed Nov 30 11:58:53 2016
+
+
+
+Spelet startades Wed Nov 30 11:59:27 2016
+
+
+
+Spelet startades Wed Nov 30 11:59:56 2016
+
+
+
+Spelet startades Wed Nov 30 12:03:12 2016
+
+
+
+Spelet startades Wed Nov 30 12:06:52 2016
+
+
+
+Spelet startades Wed Nov 30 12:07:26 2016
+
+
+
+Spelet startades Wed Nov 30 12:07:45 2016
+
+
+
+Spelet startades Wed Nov 30 12:08:49 2016
+
+
+
+Spelet startades Wed Nov 30 12:10:11 2016
+
+
+
+Spelet startades Wed Nov 30 12:34:22 2016
+
+
+
+Spelet startades Wed Nov 30 12:34:51 2016
+
+
+
+Spelet startades Wed Nov 30 12:35:35 2016
+
+
+
+Spelet startades Wed Nov 30 12:35:59 2016
+
+
+
+Spelet startades Wed Nov 30 12:36:11 2016
+
+
+
+Spelet startades Wed Nov 30 12:36:41 2016
+
+
+
+Spelet startades Wed Nov 30 12:36:45 2016
+
+
+
+Spelet startades Wed Nov 30 12:36:52 2016
+
+
+
+Spelet startades Wed Nov 30 12:36:57 2016
+
+
+
+Spelet startades Wed Nov 30 12:37:01 2016
+
+
+
+Spelet startades Wed Nov 30 12:37:06 2016
+
+
+
+Spelet startades Wed Nov 30 12:37:11 2016
+
+
+
+Spelet startades Wed Nov 30 12:37:18 2016
+
+
+
+Spelet startades Wed Nov 30 12:38:29 2016
+
+
+
+Spelet startades Wed Nov 30 12:38:39 2016
+
+
+
+Spelet startades Wed Nov 30 12:39:44 2016
+
+
+
+Spelet startades Wed Nov 30 12:45:21 2016
+
+
+
+Spelet startades Wed Nov 30 12:49:24 2016
+
+12:49:46   Köpte kraftverk nr 6 för 51 elektro
+
+
+Spelet startades Wed Nov 30 12:50:00 2016
+
+
+
+Spelet startades Wed Nov 30 12:54:17 2016
+
+
+
+Spelet startades Wed Nov 30 12:57:31 2016
+
+
+
+Spelet startades Wed Nov 30 12:59:02 2016
+
+12:59:30   Köpte kraftverk nr 6 för 6 elektro
+
+
+Spelet startades Wed Nov 30 12:59:45 2016
+
+
+
+Spelet startades Wed Nov 30 13:00:05 2016
+
+
+
+Spelet startades Wed Nov 30 13:05:36 2016
+
+
+
+Spelet startades Wed Nov 30 13:06:05 2016
+
+
+
+Spelet startades Wed Nov 30 13:06:19 2016
+
+
+
+Spelet startades Wed Nov 30 13:06:29 2016
+
+
+
+Spelet startades Wed Nov 30 13:06:48 2016
+
+
+
+Spelet startades Wed Nov 30 13:07:00 2016
+
+
+
+Spelet startades Wed Nov 30 13:08:36 2016
+
+
+
+Spelet startades Wed Nov 30 13:09:12 2016
+
+
+
+Spelet startades Wed Nov 30 13:10:35 2016
+
+
+
+Spelet startades Wed Nov 30 13:11:34 2016
+
+
+
+Spelet startades Wed Nov 30 13:13:50 2016
+
+
+
+Spelet startades Wed Nov 30 13:14:29 2016
+
+
+
+Spelet startades Wed Nov 30 13:17:15 2016
+
+
+
+Spelet startades Wed Nov 30 13:20:04 2016
+
+
+
+Spelet startades Wed Nov 30 13:22:44 2016
+
+
+
+Spelet startades Wed Nov 30 13:23:05 2016
+
+13:23:10   Köpte kraftverk nr 6 för 6 elektro
+
+
+Spelet startades Wed Nov 30 13:24:54 2016
+
+
+
+Spelet startades Wed Nov 30 13:25:05 2016
+
+
+
+Spelet startades Wed Nov 30 13:25:18 2016
+
+13:25:34   Köpte kraftverk nr 5 för 41 elektro
+
+
+Spelet startades Wed Nov 30 13:26:25 2016
+
+13:26:34   Köpte kraftverk nr 6 för 6 elektro
+
+
+Spelet startades Wed Nov 30 13:30:33 2016
+
+13:30:49   Köpte kraftverk nr 7 för 11 elektro
+
+
+Spelet startades Wed Nov 30 13:31:36 2016
+
+
+
+Spelet startades Wed Nov 30 13:32:19 2016
+
+13:32:31   Köpte kraftverk nr 6 för 6 elektro
+
+
+Spelet startades Wed Nov 30 13:32:37 2016
+
+
+
+Spelet startades Wed Nov 30 13:33:07 2016
+
+
+
+Spelet startades Wed Nov 30 13:33:46 2016
+
+
+
+Spelet startades Wed Nov 30 13:35:18 2016
+
+
+
+Spelet startades Wed Nov 30 13:38:24 2016
+
+13:38:59   Köpte kraftverk nr 6 för 6 elektro
+
+
+Spelet startades Wed Nov 30 13:40:32 2016
+
+
+
+Spelet startades Wed Nov 30 13:40:55 2016
+
+
+
+Spelet startades Wed Nov 30 13:44:30 2016
+
+
+
+Spelet startades Wed Nov 30 13:48:57 2016
+
+
+
+Spelet startades Wed Nov 30 13:50:59 2016
+
+
+
+Spelet startades Wed Nov 30 13:58:07 2016
+
+
+
+Spelet startades Wed Nov 30 13:58:23 2016
+
+
+
+Spelet startades Wed Nov 30 13:59:03 2016
+
+13:59:24   Köpte kraftverk nr 7 för 7 elektro
+
+
+Spelet startades Wed Nov 30 14:08:53 2016
+
+
+
+Spelet startades Wed Nov 30 14:10:34 2016
+
+14:10:42   Köpte kraftverk nr 7 för 7 elektro
+
+
+Spelet startades Wed Nov 30 14:10:47 2016
+
+14:10:56   Köpte kraftverk nr 4 för 4 elektro

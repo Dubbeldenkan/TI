@@ -37,6 +37,7 @@ public:
 
 	int GetPrice(Resource, int);
 	void ReSupplyResourceMarket(int);
+	int GetReSupplyAmount(int, int, ResourceMarket::Resource);
 	int GetSizeOfMarket();
 	int GetAmountOfCoal();
 	int GetAmountOfOil();

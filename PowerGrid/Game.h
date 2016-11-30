@@ -66,15 +66,20 @@ public:
 	PowerPlantMarket* GetPowerPlantMarket();
 	ResourceMarket* GetResourceMarket();
 	Board* GetBoard();
+	int GetNumberOfPlayers();
 
 	void IncreaseNextBid(int);
 	int GetBidForSelectedPowerPlant();
 	int GetPlayerInTurnPosition();
+
 	std::vector<Player*> GetPlayerVector();
+	int GetSelectedPowerPlant();
+	int GetLastBidForSelectedPowerPlant();
+	int GetNextBid();
 
 private:
-	void SetNextPlayerInTurn(std::vector<Player*>*);
-	void RemovePlayerFromTempVector(std::vector<Player*>*);
+	void SetNextPlayerInTurn(std::vector<Player*>*, int);
+	void RemovePlayerFromTempVector(std::vector<Player*>*, int);
 	void InitPlayers(int);
 	int GetNewCityCost(char*);
 	void PrintDataToLog(int);

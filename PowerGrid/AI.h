@@ -3,18 +3,39 @@
 
 #include "Player.h"
 #include "Chromosome.h"
+#include "Game.h"
 
 class AI
 {
-	Player* player;
-	Chromosome _chrom;
+	struct Phase2Struct
+	{
+		int powerPlantValue[Player::numberOfPowerPlants];
+		bool powerPlantsValuesSet = false;
+	};
+	Game* _game;
+	Player* _player;
+	Chromosome* _chrom;
+	char* _playerName;
+	Phase2Struct _p2s;
 public:
 	AI() {};
-	AI(Chromosome, Player*);
+	AI(Chromosome*, Game*, char*);
 	~AI() {};
 
-	//TODO ska användas för att sätta AI:n till en ny spelare
 	void SetPlayer(Player*);
+	Player* GetPlayer();
+	char* GetName();
+
+	void DoAction();
+private:
+	void Phase2();
+	void Phase3();
+	void Phase4();
+	void Phase5();
+
+	int CalculateValueOfPowerPlant(PowerPlant*, int);
+	int GetConsumptionForSameTypeForOthers(PowerPlant::EnergySource, Player*);
+	int GetNumberOfSameTypeThis(PowerPlant::EnergySource, Player*);
 };
 
 #endif // !AI_H

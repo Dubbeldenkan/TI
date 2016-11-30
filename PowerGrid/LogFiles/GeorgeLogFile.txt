@@ -1,78 +1,26 @@
 
 
-Spelet startades Fri Nov 25 20:26:17 2016
-
-
-
-Spelet startades Fri Nov 25 20:38:45 2016
-
-
-
-Spelet startades Fri Nov 25 20:40:43 2016
-
-20:40:50   Kolet har fyllts på med 3 till 24
-Oljan har fyllts på med 2 till 20
-Soporna har fyllts på med 1 till 7
-Uranet har fyllts på med 1 till 3
-20:40:50   
-
-Omgång 2
-20:40:54   Kolet har fyllts på med 3 till 24
-Oljan har fyllts på med 2 till 22
-Soporna har fyllts på med 1 till 8
-Uranet har fyllts på med 1 till 4
-20:40:54   
-
-Omgång 3
-20:40:57   Kolet har fyllts på med 3 till 24
-Oljan har fyllts på med 2 till 24
-Soporna har fyllts på med 1 till 9
-Uranet har fyllts på med 1 till 5
-20:40:57   
-
-Omgång 4
-
-
-Spelet startades Fri Nov 25 20:41:01 2016
-
-20:41:11   Kolet har fyllts på med 3 till 24
-Oljan har fyllts på med 2 till 20
-Soporna har fyllts på med 1 till 7
-Uranet har fyllts på med 1 till 3
-20:41:11   
-
-Omgång 2
-
-
-Spelet startades Fri Nov 25 20:43:14 2016
-
-
-
-Spelet startades Fri Nov 25 20:45:08 2016
-
-
-
-Spelet startades Fri Nov 25 20:45:51 2016
-
-
-
-Spelet startades Sat Nov 26 17:16:27 2016
-
-
-
 Spelet startades Sat Nov 26 17:17:50 2016
 
 
 
 Spelet startades Sat Nov 26 17:24:23 2016
 
-17:29:32   Kolet har fyllts på med 4 till 24
-Oljan har fyllts på med 2 till 20
-Soporna har fyllts på med 1 till 7
-Uranet har fyllts på med 1 till 3
+17:28:39   Köpte kraftverk nr 4 för 4 elektro
+17:29:32   Tjänade 10 elektro
 17:29:32   
-
 Omgång 2
+Elektro: 56
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+4
+Städer:
+
 
 
 Spelet startades Sat Nov 26 17:40:23 2016
@@ -89,13 +37,19 @@ Spelet startades Sat Nov 26 17:42:22 2016
 
 Spelet startades Sat Nov 26 17:42:59 2016
 
-17:43:08   Kolet har fyllts på med 4 till 24
-Oljan har fyllts på med 2 till 20
-Soporna har fyllts på med 1 till 7
-Uranet har fyllts på med 1 till 3
+17:43:08   Tjänade 10 elektro
 17:43:08   
-
 Omgång 2
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
 
 
 Spelet startades Sat Nov 26 18:23:15 2016
@@ -508,6 +462,7 @@ Spelet startades Wed Nov 30 13:26:25 2016
 
 Spelet startades Wed Nov 30 13:30:33 2016
 
+13:30:52   Köpte kraftverk nr 8 för 8 elektro
 
 
 Spelet startades Wed Nov 30 13:31:36 2016
@@ -568,6 +523,7 @@ Spelet startades Wed Nov 30 13:58:23 2016
 
 Spelet startades Wed Nov 30 13:59:03 2016
 
+13:59:27   Köpte kraftverk nr 4 för 4 elektro
 
 
 Spelet startades Wed Nov 30 14:08:53 2016
@@ -576,7 +532,9 @@ Spelet startades Wed Nov 30 14:08:53 2016
 
 Spelet startades Wed Nov 30 14:10:34 2016
 
+14:10:42   Köpte kraftverk nr 4 för 4 elektro
 
 
 Spelet startades Wed Nov 30 14:10:47 2016
 
+14:10:50   Köpte kraftverk nr 5 för 5 elektro
