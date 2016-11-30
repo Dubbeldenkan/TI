@@ -45,6 +45,7 @@ private:
 	void Phase2();
 	void Phase3();
 	void Phase4();
+	void Phase5();
 
 	//phase 2
 	int CalculateValueOfPowerPlant(PowerPlant*, int);
@@ -54,6 +55,9 @@ private:
 	//phase 3
 	void SetP3SPowerPlantVector();
 	int GetConsumptionForResource(ResourceMarket::Resource);
+
+	//Phase 4
+	City* FindStartCity();
 };
 
 #endif // !AI_H

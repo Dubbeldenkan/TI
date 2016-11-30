@@ -42,7 +42,7 @@ private:
 	GameSubPhase _gameSubPhase = initPhase;
 	Player* _playerInTurn = 0;
 
-	Board _board = Board();
+	Board* _board;
 	ResourceMarket* _rm;
 	PowerPlantMarket _ppm = PowerPlantMarket();
 	Draw _draw = Draw();

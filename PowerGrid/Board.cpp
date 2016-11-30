@@ -10,6 +10,11 @@ Board::Board(std::vector<int> usedRegions, char* fileName)
 	InitMap();
 }
 
+Board &Board::operator=(const Board& other)
+{
+	return *this;
+}
+
 void Board::InsertCityInDict(char* name, int region, int xPos, int yPos)
 {
 	City* tempCity = new City(name, region, xPos, yPos);
@@ -430,4 +435,23 @@ int Board::GetCostBetweenTwoCities(char* firstCity, char* secondCity)
 		roadName += std::string(firstCity);
 	}
 	return _edgeDict[roadName];
+}
+
+City* Board::GetRandomCity(int numberOfPlayers)
+{
+	int numberOfCities = numberOfPlayers*numberOfCitiesInEachRegion;
+	int randomNumber = rand() % numberOfCities;
+	City* city = NULL;
+	typedef std::map<std::string, City*>::iterator it_type;
+	int index = 0;
+	for (it_type it = _cityDict.begin(); it != _cityDict.end(); it++)
+	{
+		if (index == randomNumber)
+		{
+			city = it->second;
+			break;
+		}
+		index++;
+	}
+	return city;
 }

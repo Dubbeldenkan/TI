@@ -22,10 +22,12 @@ private:
 	Image _mapImage;
 	std::map<std::string, City*> _cityDict;
 	std::map<std::string, int> _edgeDict;
+	const int numberOfCitiesInEachRegion = 7;
 
 public:
 	Board();
 	Board(std::vector<int>, char*);
+	Board& operator=(const Board&);
 	~Board() {};
 
 	void SetMapImage(Image);
@@ -38,6 +40,7 @@ public:
 	bool CityIsInUsedRegion(City*);
 	City* GetCityFromName(char*);
 	GetRoadCostOutput GetRoadCost(std::vector<City*>, char*);
+	City* GetRandomCity(int);
 
 private:
 	void InitMap();

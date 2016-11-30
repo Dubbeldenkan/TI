@@ -55,6 +55,11 @@ void AI::DoAction()
 		Phase4();
 		break;
 	}
+	case 5:
+	{
+		Phase5();
+		break;
+	}
 	default:
 		break;
 	}
@@ -371,5 +376,34 @@ void AI::SetP3SPowerPlantVector()
 
 void AI::Phase4()
 {
-	//TODO
+	if (_player->GetCityVector().size() == 0)
+	{
+		City* city = FindStartCity();
+		_game->GetPlayerInTurn()->SetBuyCityStruct(city->GetName());
+		_player->SetPassed();
+	}
+	else
+	{
+		
+	}
+}
+
+City* AI::FindStartCity()
+{
+	bool occupiedCity = true;
+	City* city = NULL;
+	while (occupiedCity)
+	{
+		city = _game->GetBoard()->GetRandomCity(_game->GetNumberOfPlayers());
+		if (city->GetColorForPos(0) == City::none)
+		{
+			occupiedCity = false;
+		}
+	}
+	return city;
+}
+
+void AI::Phase5()
+{
+	_player->SetPassed();
 }

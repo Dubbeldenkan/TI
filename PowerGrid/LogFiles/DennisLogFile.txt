@@ -65,3 +65,84 @@ Spelet startades Wed Nov 30 20:28:56 2016
 
 20:29:04   Köpte kraftverk nr 6 för 6 elektro
 20:29:49   Köpte 1 garbage för 7 elektro
+
+
+Spelet startades Wed Nov 30 20:33:55 2016
+
+20:34:06   Köpte kraftverk nr 6 för 6 elektro
+20:34:21   Köpte 2 garbage för 14 elektro
+
+
+Spelet startades Wed Nov 30 22:40:55 2016
+
+22:41:10   Köpte kraftverk nr 7 för 7 elektro
+22:41:25   Köpte 6 oil för 21 elektro
+
+
+Spelet startades Wed Nov 30 22:43:54 2016
+
+22:44:01   Köpte kraftverk nr 6 för 6 elektro
+22:44:04   Köpte 1 garbage för 7 elektro
+
+
+Spelet startades Wed Nov 30 22:44:59 2016
+
+22:45:20   Köpte kraftverk nr 5 för 6 elektro
+22:45:29   Köpte 4 oil för 13 elektro
+
+
+Spelet startades Wed Nov 30 22:45:54 2016
+
+22:46:03   Köpte kraftverk nr 4 för 4 elektro
+22:46:09   Köpte 4 coal för 5 elektro
+
+
+Spelet startades Wed Nov 30 22:49:23 2016
+
+22:49:35   Köpte kraftverk nr 6 för 6 elektro
+22:49:42   Köpte 1 garbage för 7 elektro
+22:49:47   Staden Knoxville lades till för 10 elektro. via städerna 
+
+
+Spelet startades Wed Nov 30 22:51:48 2016
+
+22:52:02   Köpte kraftverk nr 6 för 6 elektro
+22:52:06   Köpte 1 garbage för 7 elektro
+22:52:22   Tjänade 10 elektro
+22:52:22   
+Omgång 2
+Elektro: 47
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+6
+Städer:
+
+22:52:39   Köpte kraftverk nr 9 för 9 elektro
+
+
+Spelet startades Wed Nov 30 22:53:11 2016
+
+22:53:16   Köpte kraftverk nr 6 för 6 elektro
+22:53:20   Köpte 1 garbage för 7 elektro
+22:53:24   Staden Knoxville lades till för 10 elektro. via städerna 
+22:53:32   Tjänade 22 elektro
+22:53:32   
+Omgång 2
+Elektro: 49
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+6
+Städer:
+Knoxville
+
+22:53:55   Köpte kraftverk nr 9 för 9 elektro

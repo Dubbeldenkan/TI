@@ -52,3 +52,18 @@ int Chromosome::GetAggresiveBuyingResources()
 {
 	return _chrom[_aggressiveBuyingResourcesPos];
 }
+
+int Chromosome::GetAggressiveBuyingCity()
+{
+	return _chrom[_aggressiveBuyingCityPos];
+}
+
+int Chromosome::GetChooseCheapestPath()
+{
+	return _chrom[_chooseCheapestPathPos];
+}
+
+int Chromosome::GetWillToBuildNewCities()
+{
+	return _chrom[_willToBuildNewCitiesPos];
+}

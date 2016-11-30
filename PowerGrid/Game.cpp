@@ -26,8 +26,8 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 		usedRegions.push_back(index);
 	}
 	_numberOfPlayers = numberOfPlayers;
-	_board = Board(usedRegions, "Map/USAPowerGrid.png");
-	_draw = Draw(&hWnd, &_board);
+	_board = new Board(usedRegions, "Map/USAPowerGrid.png");
+	_draw = Draw(&hWnd, _board);
 	_ppm = PowerPlantMarket();
 	_rm = new ResourceMarket(numberOfPlayers, ResourceMarket::USA);
 	InitPlayers(numberOfPlayers);
@@ -118,7 +118,7 @@ ResourceMarket* Game::GetResourceMarket()
 
 Board* Game::GetBoard()
 {
-	return &_board;
+	return _board;
 }
 
 void Game::IncreaseNextBid(int change)
@@ -195,7 +195,7 @@ void Game::RemovePlayerFromTempVector(std::vector<Player*> *tempVector, int dire
 
 int Game::GetNewCityCost(char* cityName)
 {
-	City* tempCity = _board.GetCityFromName(cityName);
+	City* tempCity = _board->GetCityFromName(cityName);
 	return  tempCity->GetCostForFirstFreePos(_gameStep);
 }
 
@@ -275,7 +275,7 @@ void Game::DrawBoard()
 		tempVector.push_back(&_pv[i]);
 	}
 	Draw::DrawInput dI;
-	dI.board = &_board;
+	dI.board = _board;
 	dI.playerVector = tempVector;
 	dI.playerInTurn = _playerInTurn;
 	dI.powerPlantMarket = &_ppm;
@@ -289,7 +289,7 @@ void Game::DrawBoard()
 	dI.lastBiddingPlayer = _phase2Struct.lastBiddingPlayer;
 	dI.nextBid = _phase2Struct.nextBid;
 	dI.placePowerPlant = _gameSubPhase == placePowerPlant;
-	dI.regionsInPlay = _board.GetRegionsInPlay();
+	dI.regionsInPlay = _board->GetRegionsInPlay();
 
 	_draw.DrawWholeBoard(&dI);
 }
@@ -543,11 +543,11 @@ void Game::Phase4()
 		if (_playerInTurn->GetClickedOnNewCity())
 		{
 			int cityCost = GetNewCityCost(_playerInTurn->GetNewCityName());
-			Board::GetRoadCostOutput result = _board.GetRoadCost(_playerInTurn->GetCityVector(), _playerInTurn->GetNewCityName());
+			Board::GetRoadCostOutput result = _board->GetRoadCost(_playerInTurn->GetCityVector(), _playerInTurn->GetNewCityName());
 			int roadCost = result.cost;
 			if((cityCost != 0) && (_playerInTurn->CanAffordCost(cityCost + roadCost)))
 			{
-				City* city = _board.GetCityFromName(_playerInTurn->GetNewCityName());
+				City* city = _board->GetCityFromName(_playerInTurn->GetNewCityName());
 				city->SetFirstFreePos((int) _playerInTurn->GetColor());
 				_playerInTurn->BuyCity(cityCost + roadCost, city, result.cityList);
 				DrawBoard();

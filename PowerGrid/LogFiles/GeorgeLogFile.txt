@@ -1424,3 +1424,93 @@ Spelet startades Wed Nov 30 20:28:56 2016
 
 20:29:04   Köpte kraftverk nr 4 för 4 elektro
 20:29:07   Köpte 2 coal för 2 elektro
+
+
+Spelet startades Wed Nov 30 20:33:55 2016
+
+20:34:06   Köpte kraftverk nr 5 för 5 elektro
+20:34:06   Köpte 2 coal för 4 elektro
+20:34:06   Köpte 2 coal för 5 elektro
+
+
+Spelet startades Wed Nov 30 22:40:55 2016
+
+22:41:10   Köpte kraftverk nr 4 för 4 elektro
+22:41:10   Köpte 2 coal för 2 elektro
+
+
+Spelet startades Wed Nov 30 22:43:54 2016
+
+22:44:01   Köpte kraftverk nr 5 för 5 elektro
+22:44:02   Köpte 2 coal för 4 elektro
+22:44:02   Köpte 2 coal för 5 elektro
+
+
+Spelet startades Wed Nov 30 22:44:59 2016
+
+22:45:20   Köpte kraftverk nr 4 för 4 elektro
+22:45:34   Köpte 2 coal för 2 elektro
+
+
+Spelet startades Wed Nov 30 22:45:54 2016
+
+22:48:12   Staden Cincinnati lades till för 10 elektro. via städerna 
+
+
+Spelet startades Wed Nov 30 22:49:23 2016
+
+22:49:29   Köpte kraftverk nr 5 för 5 elektro
+22:49:44   Köpte 2 coal för 2 elektro
+22:49:44   Köpte 2 coal för 3 elektro
+22:49:48   Staden Dallas lades till för 10 elektro. via städerna 
+
+
+Spelet startades Wed Nov 30 22:51:48 2016
+
+22:51:55   Köpte kraftverk nr 5 för 5 elektro
+22:52:08   Köpte 2 coal för 2 elektro
+22:52:08   Köpte 2 coal för 3 elektro
+22:52:17   Staden Dallas lades till för 10 elektro. via städerna 
+22:52:22   Tjänade 22 elektro
+22:52:22   
+Omgång 2
+Elektro: 52
+Kol: 2
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+5
+Städer:
+Dallas
+
+22:52:27   Köpte kraftverk nr 4 för 4 elektro
+22:52:42   Köpte 2 coal för 2 elektro
+22:52:42   Köpte 2 coal för 3 elektro
+22:52:42   Köpte 2 oil för 4 elektro
+
+
+Spelet startades Wed Nov 30 22:53:11 2016
+
+22:53:16   Köpte kraftverk nr 5 för 5 elektro
+22:53:16   Köpte 2 coal för 4 elektro
+22:53:16   Köpte 2 coal för 5 elektro
+22:53:22   Staden Detroit lades till för 10 elektro. via städerna 
+22:53:32   Tjänade 22 elektro
+22:53:32   
+Omgång 2
+Elektro: 48
+Kol: 2
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+5
+Städer:
+Detroit
+
+22:53:55   Köpte 2 coal för 4 elektro
