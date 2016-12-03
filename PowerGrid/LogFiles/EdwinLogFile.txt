@@ -1,109 +1,33 @@
 
 
-Spelet startades Wed Nov 30 14:56:55 2016
+Spelet startades Sat Dec  3 12:00:00 2016
+
+12:00:04   Köpte kraftverk nr 5 för 5 elektro
+12:00:16   Köpte 2 coal för 3 elektro
+12:00:16   Köpte 2 coal för 4 elektro
+12:00:27   Staden Houston lades till för 10 elektro. via städerna 
+12:00:35   Tjänade 22 elektro
+12:00:35   
+Omgång 2
+Elektro: 50
+Kol: 2
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+5
+Städer:
+Houston
 
 
 
-Spelet startades Wed Nov 30 14:57:11 2016
+Spelet startades Sat Dec  3 12:02:24 2016
 
-
-
-Spelet startades Wed Nov 30 18:56:19 2016
-
-18:56:28   Köpte kraftverk nr 5 för 5 elektro
-
-
-Spelet startades Wed Nov 30 18:56:54 2016
-
-
-
-Spelet startades Wed Nov 30 18:57:19 2016
-
-
-
-Spelet startades Wed Nov 30 18:58:20 2016
-
-
-
-Spelet startades Wed Nov 30 19:01:00 2016
-
-19:01:04   Köpte kraftverk nr 5 för 5 elektro
-
-
-Spelet startades Wed Nov 30 19:03:45 2016
-
-19:03:48   Köpte kraftverk nr 5 för 5 elektro
-
-
-Spelet startades Wed Nov 30 19:21:13 2016
-
-
-
-Spelet startades Wed Nov 30 19:28:16 2016
-
-19:29:02   Köpte 0 coal för 0 elektro
-
-
-Spelet startades Wed Nov 30 19:29:30 2016
-
-19:29:37   Köpte kraftverk nr 8 för 8 elektro
-19:29:37   Köpte 3 coal för 3 elektro
-19:29:37   Köpte 3 coal för 6 elektro
-19:29:37   Köpte 0 coal för 0 elektro
-
-
-Spelet startades Wed Nov 30 19:30:10 2016
-
-19:30:19   Köpte kraftverk nr 5 för 5 elektro
-
-
-Spelet startades Wed Nov 30 20:28:56 2016
-
-20:29:01   Köpte kraftverk nr 5 för 5 elektro
-20:30:01   Köpte 2 coal för 3 elektro
-20:30:24   Köpte 2 coal för 4 elektro
-
-
-Spelet startades Wed Nov 30 20:33:55 2016
-
-20:34:06   Köpte kraftverk nr 8 för 8 elektro
-20:34:06   Köpte 3 coal för 3 elektro
-
-
-Spelet startades Wed Nov 30 22:40:55 2016
-
-22:40:58   Köpte kraftverk nr 5 för 5 elektro
-22:41:26   Köpte 2 coal för 3 elektro
-22:41:26   Köpte 2 coal för 4 elektro
-
-
-Spelet startades Wed Nov 30 22:43:54 2016
-
-22:44:01   Köpte kraftverk nr 8 för 8 elektro
-22:44:01   Köpte 3 coal för 3 elektro
-
-
-Spelet startades Wed Nov 30 22:44:59 2016
-
-
-
-Spelet startades Wed Nov 30 22:45:54 2016
-
-22:45:59   Köpte kraftverk nr 5 för 5 elektro
-22:46:11   Köpte 2 coal för 4 elektro
-22:46:11   Köpte 2 oil för 6 elektro
-
-
-Spelet startades Wed Nov 30 22:49:23 2016
-
-22:49:48   Staden Cincinnati lades till för 10 elektro. via städerna 
-
-
-Spelet startades Wed Nov 30 22:51:48 2016
-
-22:52:17   Staden Memphis lades till för 10 elektro. via städerna 
-22:52:22   Tjänade 10 elektro
-22:52:22   
+12:02:38   Staden Knoxville lades till för 10 elektro. via städerna 
+12:02:44   Tjänade 10 elektro
+12:02:44   
 Omgång 2
 Elektro: 50
 Kol: 0
@@ -114,27 +38,61 @@ Antal städer i nätverk: 1
 Antal försörjda städer: 0
 KraftVerk:
 Städer:
-Memphis
+Knoxville
 
-
-
-Spelet startades Wed Nov 30 22:53:11 2016
-
-22:53:16   Köpte kraftverk nr 8 för 8 elektro
-22:53:16   Köpte 3 coal för 3 elektro
-22:53:22   Staden Chicago lades till för 10 elektro. via städerna 
-22:53:32   Tjänade 22 elektro
-22:53:32   
-Omgång 2
-Elektro: 51
+12:03:47   Tjänade 10 elektro
+12:03:48   
+Omgång 3
+Elektro: 60
 Kol: 0
 Olja: 0
 Sopor: 0
 Uran: 0
 Antal städer i nätverk: 1
-Antal försörjda städer: 1
+Antal försörjda städer: 0
 KraftVerk:
-8
 Städer:
-Chicago
+Knoxville
+
+12:04:06   Tjänade 10 elektro
+12:04:06   
+Omgång 4
+Elektro: 70
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Knoxville
+
+12:04:30   Tjänade 10 elektro
+12:04:30   
+Omgång 5
+Elektro: 80
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Knoxville
+
+12:05:21   Tjänade 10 elektro
+12:05:21   
+Omgång 6
+Elektro: 90
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Knoxville
 

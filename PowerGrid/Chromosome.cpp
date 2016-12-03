@@ -63,7 +63,7 @@ int Chromosome::GetChooseCheapestPath()
 	return _chrom[_chooseCheapestPathPos];
 }
 
-int Chromosome::GetWillToBuildNewCities()
+int Chromosome::GetMoneyLeftAfterCities()
 {
-	return _chrom[_willToBuildNewCitiesPos];
+	return _chrom[_moneyLeftAfterBuyingCitiesPos];
 }

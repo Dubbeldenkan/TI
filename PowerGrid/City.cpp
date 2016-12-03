@@ -67,3 +67,21 @@ City::Color City::GetColorForPos(int pos)
 {
 	return _posColor[pos];
 }
+
+int City::CheckIfCityIsOccupied(int gameStep)
+{
+	bool result = false;
+	if (_posColor[0] == none)
+	{
+		result = _cityCost[0];
+	}
+	else if (_posColor[1] == none && gameStep > 1)
+	{
+		result = _cityCost[1];
+	}
+	else if (_posColor[2] == none && gameStep > 2)
+	{
+		result = _cityCost[2];
+	}
+	return result;
+}

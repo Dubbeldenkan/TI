@@ -238,7 +238,7 @@ void AI::Phase3()
 		SetP3SPowerPlantVector();
 	}
 	PowerPlant* pp = _player->GetPowerPlant(_p3s.powerPlantArray[_p3s.powerPlantIndex]);
-	if (_p3s.powerPlantIndex > Player::numberOfPowerPlants)
+	if (_p3s.powerPlantIndex >= Player::numberOfPowerPlants)
 	{
 		_player->SetPassed();
 	}
@@ -384,8 +384,44 @@ void AI::Phase4()
 	}
 	else
 	{
-		
+		if (_chrom->GetMoneyLeftAfterCities()*5 > _player->GetAmountOfElektro())
+		{
+			City* city = FindNextCity();
+			_game->GetPlayerInTurn()->SetBuyCityStruct(city->GetName());
+		}
+		else
+		{
+			_player->SetPassed();
+		}
 	}
+}
+
+City* AI::FindNextCity()
+{
+	City* cheapestCity = NULL;
+	int cheapestCityCost = MAXINT;
+	std::vector<City*> cityVector = _player->GetCityVector();
+	for (int index = 0; index < cityVector.size(); index++)
+	{
+		std::vector<City*> neighbourCities = _game->GetBoard()->GetNeighbourCities(cityVector[index]);
+		for (int neighbourIndex = 0; neighbourIndex < neighbourCities.size(); neighbourIndex++)
+		{
+			City* neighbourCity = neighbourCities[neighbourIndex];
+			int cityCost = neighbourCity->CheckIfCityIsOccupied(_game->GetCurrentStep());
+			int buildingCost = _game->GetBoard()->GetCostBetweenTwoCities(cityVector[index]->GetName(),
+				neighbourCities[neighbourIndex]->GetName()) + cityCost;
+			if (buildingCost < cheapestCityCost && cityCost != 0)
+			{
+				cheapestCity = neighbourCity;
+				cheapestCityCost = buildingCost;
+			}
+		}
+	}
+	if (cheapestCity == NULL)
+	{
+		int temp = 2;
+	}
+	return cheapestCity;
 }
 
 City* AI::FindStartCity()

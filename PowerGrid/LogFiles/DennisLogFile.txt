@@ -1,117 +1,12 @@
 
 
-Spelet startades Wed Nov 30 14:56:55 2016
+Spelet startades Sat Dec  3 12:00:00 2016
 
-
-
-Spelet startades Wed Nov 30 14:57:11 2016
-
-14:57:26   Köpte kraftverk nr 7 för 7 elektro
-14:57:34   Köpte 6 oil för 21 elektro
-
-
-Spelet startades Wed Nov 30 18:56:19 2016
-
-18:56:34   Köpte kraftverk nr 7 för 7 elektro
-
-
-Spelet startades Wed Nov 30 18:56:54 2016
-
-
-
-Spelet startades Wed Nov 30 18:57:19 2016
-
-18:57:30   Köpte kraftverk nr 4 för 4 elektro
-18:57:35   Köpte 2 coal för 2 elektro
-
-
-Spelet startades Wed Nov 30 18:58:20 2016
-
-
-
-Spelet startades Wed Nov 30 19:01:00 2016
-
-
-
-Spelet startades Wed Nov 30 19:03:45 2016
-
-19:04:01   Köpte kraftverk nr 4 för 4 elektro
-
-
-Spelet startades Wed Nov 30 19:21:13 2016
-
-19:21:25   Köpte kraftverk nr 4 för 4 elektro
-19:21:33   Köpte 4 coal för 5 elektro
-
-
-Spelet startades Wed Nov 30 19:28:16 2016
-
-19:28:25   Köpte kraftverk nr 7 för 7 elektro
-19:28:45   Köpte 2 oil för 6 elektro
-19:28:54   Köpte 2 oil för 7 elektro
-
-
-Spelet startades Wed Nov 30 19:29:30 2016
-
-19:29:37   Köpte kraftverk nr 6 för 6 elektro
-
-
-Spelet startades Wed Nov 30 19:30:10 2016
-
-19:30:23   Köpte kraftverk nr 6 för 6 elektro
-
-
-Spelet startades Wed Nov 30 20:28:56 2016
-
-20:29:04   Köpte kraftverk nr 6 för 6 elektro
-20:29:49   Köpte 1 garbage för 7 elektro
-
-
-Spelet startades Wed Nov 30 20:33:55 2016
-
-20:34:06   Köpte kraftverk nr 6 för 6 elektro
-20:34:21   Köpte 2 garbage för 14 elektro
-
-
-Spelet startades Wed Nov 30 22:40:55 2016
-
-22:41:10   Köpte kraftverk nr 7 för 7 elektro
-22:41:25   Köpte 6 oil för 21 elektro
-
-
-Spelet startades Wed Nov 30 22:43:54 2016
-
-22:44:01   Köpte kraftverk nr 6 för 6 elektro
-22:44:04   Köpte 1 garbage för 7 elektro
-
-
-Spelet startades Wed Nov 30 22:44:59 2016
-
-22:45:20   Köpte kraftverk nr 5 för 6 elektro
-22:45:29   Köpte 4 oil för 13 elektro
-
-
-Spelet startades Wed Nov 30 22:45:54 2016
-
-22:46:03   Köpte kraftverk nr 4 för 4 elektro
-22:46:09   Köpte 4 coal för 5 elektro
-
-
-Spelet startades Wed Nov 30 22:49:23 2016
-
-22:49:35   Köpte kraftverk nr 6 för 6 elektro
-22:49:42   Köpte 1 garbage för 7 elektro
-22:49:47   Staden Knoxville lades till för 10 elektro. via städerna 
-
-
-Spelet startades Wed Nov 30 22:51:48 2016
-
-22:52:02   Köpte kraftverk nr 6 för 6 elektro
-22:52:06   Köpte 1 garbage för 7 elektro
-22:52:22   Tjänade 10 elektro
-22:52:22   
+12:00:10   Köpte kraftverk nr 3 för 3 elektro
+12:00:35   Tjänade 10 elektro
+12:00:35   
 Omgång 2
-Elektro: 47
+Elektro: 57
 Kol: 0
 Olja: 0
 Sopor: 0
@@ -119,30 +14,111 @@ Uran: 0
 Antal städer i nätverk: 0
 Antal försörjda städer: 0
 KraftVerk:
-6
+3
 Städer:
 
-22:52:39   Köpte kraftverk nr 9 för 9 elektro
+12:01:28   Köpte 2 oil för 4 elektro
+12:01:34   Staden Knoxville lades till för 10 elektro. via städerna 
 
 
-Spelet startades Wed Nov 30 22:53:11 2016
+Spelet startades Sat Dec  3 12:02:24 2016
 
-22:53:16   Köpte kraftverk nr 6 för 6 elektro
-22:53:20   Köpte 1 garbage för 7 elektro
-22:53:24   Staden Knoxville lades till för 10 elektro. via städerna 
-22:53:32   Tjänade 22 elektro
-22:53:32   
+12:02:30   Köpte kraftverk nr 3 för 3 elektro
+12:02:44   Tjänade 10 elektro
+12:02:44   
 Omgång 2
-Elektro: 49
+Elektro: 57
 Kol: 0
 Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+3
+Städer:
+
+12:03:03   Köpte 4 oil för 10 elektro
+12:03:10   Staden Duluth lades till för 10 elektro. via städerna 
+12:03:47   Tjänade 22 elektro
+12:03:48   
+Omgång 3
+Elektro: 59
+Kol: 0
+Olja: 2
 Sopor: 0
 Uran: 0
 Antal städer i nätverk: 1
 Antal försörjda städer: 1
 KraftVerk:
-6
+3
 Städer:
-Knoxville
+Duluth
 
-22:53:55   Köpte kraftverk nr 9 för 9 elektro
+12:03:58   Köpte 2 oil för 6 elektro
+12:04:06   Tjänade 22 elektro
+12:04:06   
+Omgång 4
+Elektro: 75
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+3
+Städer:
+Duluth
+
+12:04:13   Köpte kraftverk nr 10 för 10 elektro
+12:04:16   Köpte 2 coal för 3 elektro
+12:04:18   Köpte 2 coal för 4 elektro
+12:04:25   Staden Fargo lades till för 16 elektro. via städerna Duluth->Fargo
+12:04:26   Staden Minneapolis lades till för 15 elektro. via städerna Duluth->Minneapolis
+12:04:30   Tjänade 44 elektro
+12:04:30   
+Omgång 5
+Elektro: 71
+Kol: 2
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+10
+3
+Städer:
+Duluth
+Fargo
+Minneapolis
+
+12:04:49   Köpte kraftverk nr 8 för 8 elektro
+12:05:04   Köpte 3 coal för 9 elektro
+12:05:07   Köpte 2 oil för 7 elektro
+12:05:15   Staden Chicago lades till för 18 elektro. via städerna Minneapolis->Chicago
+12:05:16   Staden Omaha lades till för 18 elektro. via städerna Minneapolis->Omaha
+12:05:21   Tjänade 64 elektro
+12:05:21   
+Omgång 6
+Elektro: 75
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+8
+10
+3
+Städer:
+Duluth
+Fargo
+Minneapolis
+Chicago
+Omaha
+
+12:05:46   Köpte 5 coal för 22 elektro
+12:05:50   Köpte 2 oil för 7 elektro

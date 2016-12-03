@@ -27,7 +27,8 @@ private:
 	//Phase 4
 	const int _aggressiveBuyingCityPos = 8;
 	const int _chooseCheapestPathPos = 9;
-	const int _willToBuildNewCitiesPos = 10;
+	const int _moneyLeftAfterBuyingCitiesPos = 10;
+
 
 public:
 	Chromosome() {};
@@ -49,7 +50,7 @@ public:
 	//Phase 4
 	int GetAggressiveBuyingCity();
 	int GetChooseCheapestPath();
-	int GetWillToBuildNewCities();
+	int GetMoneyLeftAfterCities();
 };
 
 #endif // !CHROMOSOME_H

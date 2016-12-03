@@ -41,12 +41,12 @@ public:
 	City* GetCityFromName(char*);
 	GetRoadCostOutput GetRoadCost(std::vector<City*>, char*);
 	City* GetRandomCity(int);
+	int GetCostBetweenTwoCities(char*, char*);
+	std::vector<City*> GetNeighbourCities(City*);
 
 private:
 	void InitMap();
 	void InsertCityInDict(char*, int, int, int);
-	int GetCostBetweenTwoCities(char*, char*);
-	std::vector<City*> GetNeighbourCities(City*);
 };
 
 #endif // !BOARD_H

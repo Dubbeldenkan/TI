@@ -25,6 +25,7 @@ public:
 	int GetCostForFirstFreePos(int);
 	void SetFirstFreePos(int);
 	Color GetColorForPos(int);
+	int CheckIfCityIsOccupied(int);
 };
 
 #endif // !CITY_H

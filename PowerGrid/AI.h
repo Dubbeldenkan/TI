@@ -58,6 +58,7 @@ private:
 
 	//Phase 4
 	City* FindStartCity();
+	City* FindNextCity();
 };
 
 #endif // !AI_H
