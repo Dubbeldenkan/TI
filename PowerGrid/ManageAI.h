@@ -14,6 +14,9 @@ class ManageAI
 	Game* _game;
 	const int numberOfChromosomes = 30;
 	const static int AIPoints[6];
+	const static int chromosomePlacement[12][6];
+	int _generation = 0;
+	int _gameTurn = 0;
 
 public:
 	ManageAI::ManageAI(Game*, std::vector<Player*>, bool);
@@ -24,6 +27,7 @@ private:
 	void RandomizeChromosomes();
 	int RandomValue0_9();
 	void AssignPointsToAIs();
+	void SetNewChromosomesToAIs();
 };
 
 #endif // !MANAGE_AI

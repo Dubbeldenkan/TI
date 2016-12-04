@@ -42,6 +42,7 @@ public:
 	void DoAction();
 	void ResetP3S();
 	Chromosome* GetChromosome();
+	void SetChromosome(Chromosome*);
 private:
 	void Phase2();
 	void Phase3();

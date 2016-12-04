@@ -480,3 +480,8 @@ Chromosome* AI::GetChromosome()
 {
 	return _chrom;
 }
+
+void AI::SetChromosome(Chromosome* chrom)
+{
+	_chrom = chrom;
+}
