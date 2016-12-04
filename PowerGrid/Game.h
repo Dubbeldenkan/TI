@@ -52,6 +52,8 @@ private:
 	const static int NumberOfCitiesToStep2[5];
 	const static int NumberOfCitiesToEndGame[5];
 
+	bool _gameHasAWinner;
+
 public:
 	Game(int, HWND);
 	~Game() {};
@@ -78,6 +80,7 @@ public:
 	int GetNextBid();
 	Player* GetLastBiddingPlayer();
 	void ResetGame();
+	bool GetGameHasAWinner();
 
 private:
 	void SetNextPlayerInTurn(std::vector<Player*>*, int);

@@ -1,5 +1,7 @@
 #include "ManageAI.h"
 
+const int ManageAI::AIPoints[6] = { 6, 4, 2, 1, 0, 0 };
+
 ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector, bool randomizeChrom)
 {
 	_game = game;
@@ -32,6 +34,7 @@ void ManageAI::DoAction()
 	std::vector<Player*> playerVector = _game->GetPlayerVector();
 	if (_game->GetCurrentPhase() == 7)
 	{
+		AssignPointsToAIs();
 		_game->ResetGame();
 	}
 	else if ((_game->GetCurrentPhase() == 2) && (_game->GetCurrentSubPhase() == Game::initPhase))
@@ -102,4 +105,22 @@ int ManageAI::RandomValue0_9()
 {
 	int result = rand() % 10;
 	return result;
+}
+
+void ManageAI::AssignPointsToAIs()
+{
+	if (_game->GetGameHasAWinner())
+	{
+		std::vector<Player*> playerVector = _game->GetPlayerVector();
+		for (int playerIndex = 0; playerIndex < playerVector.size(); playerIndex++)
+		{
+			for (int AIIndex = 0; AIIndex < _AIVector.size(); AIIndex++)
+			{
+				if (_AIVector[AIIndex].GetPlayer() == playerVector[playerIndex])
+				{
+					_AIVector[AIIndex].GetChromosome()->AddPoints(AIPoints[playerIndex]);
+				}
+			}
+		}
+	}
 }

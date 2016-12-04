@@ -100,7 +100,8 @@ void AI::Phase2()
 				bestPos = index;
 			}
 		}
-		if (bestValue > _chrom->GetPowerPlantLimit())
+		if (bestValue > _chrom->GetPowerPlantLimit() && 
+			_player->GetAmountOfElektro() >= 10 * _chrom->GetSaveMoneyAfterPowerPlantBuy())
 		{
 			_game->GetPlayerInTurn()->SetSelectedPowerPlant(bestPos + 1);
 		}
@@ -134,7 +135,7 @@ void AI::Phase2()
 				}
 			}
 			if (currentPowerPlantValue > _chrom->GetPowerPlantLimit() && _player->GetAmountOfElektro() > latestBid &&
-				thisIsTheBestPowerPlant)
+				thisIsTheBestPowerPlant && _player->GetAmountOfElektro() >= 10*_chrom->GetSaveMoneyAfterPowerPlantBuy())
 			{
 				//TODO kanske göra så att de inte alltid ökar med ett
 				_player->SetBid(latestBid + 1);
@@ -473,4 +474,9 @@ City* AI::FindStartCity()
 void AI::Phase5()
 {
 	_player->SetPassed();
+}
+
+Chromosome* AI::GetChromosome()
+{
+	return _chrom;
 }

@@ -65,3 +65,13 @@ void Chromosome::SetGen(int index, int value)
 {
 	_chrom[index] = value;
 }
+
+void Chromosome::AddPoints(int points)
+{
+	_chromosomePoints += points;
+}
+
+int Chromosome::GetSaveMoneyAfterPowerPlantBuy()
+{
+	return _chrom[_saveMoneyAfterPowerPlantBuy];
+}

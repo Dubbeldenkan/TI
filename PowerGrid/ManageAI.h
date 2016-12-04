@@ -13,14 +13,17 @@ class ManageAI
 	std::vector<Chromosome> _chromosomeVector;
 	Game* _game;
 	const int numberOfChromosomes = 30;
+	const static int AIPoints[6];
 
 public:
 	ManageAI::ManageAI(Game*, std::vector<Player*>, bool);
-	
 	void DoAction();
+
+private:
 	AI* FindAIForPlayer(Player*);
 	void RandomizeChromosomes();
 	int RandomValue0_9();
+	void AssignPointsToAIs();
 };
 
 #endif // !MANAGE_AI

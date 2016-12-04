@@ -655,12 +655,14 @@ void Game::CheckIfGameHasEnded()
 		if (_pv[index].GetNumberOfCitiesInNetwork() >= NumberOfCitiesToEndGame[_numberOfPlayers - 2])
 		{
 			_gamePhase = 6;
+			_gameHasAWinner = true;
 			break;
 		}
 	}
 	if (_ppm.PowerPlantDeckIsEmpty())
 	{
 		_gamePhase = 7;
+		_gameHasAWinner = false;
 	}
 }
 
@@ -740,4 +742,9 @@ void Game::ResetGame()
 	{
 		_pv[index].ResetPlayer();
 	}
+}
+
+bool Game::GetGameHasAWinner()
+{
+	return _gameHasAWinner;
 }

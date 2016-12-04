@@ -4,11 +4,10 @@
 class Chromosome
 {
 public:
-	static const int chromSize = 12;
+	static const int chromSize = 13;
 private:
-	//TODO remove?
-	//int chromPoints = 0;
 	int _chrom[chromSize];
+	int _chromosomePoints = 0;
 
 	//Phase 2
 	const int _moreProductionPos = 0;
@@ -18,6 +17,7 @@ private:
 	const int _powerPlantLimitPos = 4;
 	const int _noPowerPlantPos = 5;
 	const int _powerplantCostPos = 6;
+	const int _saveMoneyAfterPowerPlantBuy = 12;
 
 	//Phase 3
 	const int _aggressiveBuyingResourcesPos = 7;
@@ -33,6 +33,7 @@ public:
 	~Chromosome() {};
 
 	void SetGen(int, int);
+	void AddPoints(int);
 
 	//Phase 2
 	int GetMoreProduction();
@@ -42,6 +43,7 @@ public:
 	int GetPowerPlantLimit();
 	int GetNoPowerPlantValue();
 	int GetPowerPlantCost();
+	int GetSaveMoneyAfterPowerPlantBuy();
 
 	//Phase 3
 	int GetAggresiveBuyingResources();
