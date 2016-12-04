@@ -4,13 +4,11 @@
 class Chromosome
 {
 public:
-	struct Phase2Struct
-	{
-
-	};
+	static const int chromSize = 12;
 private:
-	int chromPoints = 0;
-	int _chrom[20];
+	//TODO remove?
+	//int chromPoints = 0;
+	int _chrom[chromSize];
 
 	//Phase 2
 	const int _moreProductionPos = 0;
@@ -32,8 +30,9 @@ private:
 
 public:
 	Chromosome() {};
-	Chromosome(int, int, int, int, int, int, int, int, int, int, int, int);
 	~Chromosome() {};
+
+	void SetGen(int, int);
 
 	//Phase 2
 	int GetMoreProduction();

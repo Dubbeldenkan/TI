@@ -7,6 +7,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	LPSTR lpCmdLine,
 	int nCmdShow)
 {
+	bool randomizeAIChromosomes = true;
 	char windowName[] = "Power Grid";
 	Input* input = new Input();
 
@@ -16,7 +17,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	Game *game = new Game(numberOfPlayers, hWnd);
 	
 	input->SetGame(game);
-	ManageAI* manageAI = new ManageAI(game, game->GetPlayerVector());
+	ManageAI* manageAI = new ManageAI(game, game->GetPlayerVector(), randomizeAIChromosomes);
 
 	ShowWindow(hWnd,
 		nCmdShow);

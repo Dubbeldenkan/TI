@@ -1,9 +1,9 @@
 #include "ManageAI.h"
 
-ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector)
+ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector, bool randomizeChrom)
 {
 	_game = game;
-	Chromosome chromosome1(5, 2, 3, 6, 0, 0, 2, 4, 5, 7, 3, 1);
+	/*Chromosome chromosome1(5, 2, 3, 6, 0, 0, 2, 4, 5, 7, 3, 1);
 	_chromosomeVector.push_back(chromosome1);
 	Chromosome chromosome2(5, 8, 2, 1, 9, 2, 1, 3, 4, 7, 3, 5);
 	_chromosomeVector.push_back(chromosome2);
@@ -14,7 +14,8 @@ ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector)
 	Chromosome chromosome5(3, 4, 1, 6, 3, 8, 1, 8, 3, 8, 0, 1);
 	_chromosomeVector.push_back(chromosome5);
 	Chromosome chromosome6(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2);
-	_chromosomeVector.push_back(chromosome6);
+	_chromosomeVector.push_back(chromosome6);*/
+	RandomizeChromosomes();
 	for (int index = 0; index < playerVector.size(); index++)
 	{
 		if (!playerVector[index]->GetHumanPlayer())
@@ -78,4 +79,23 @@ AI* ManageAI::FindAIForPlayer(Player* playerInTurn)
 		}
 	}
 	return tempAI;
+}
+
+void ManageAI::RandomizeChromosomes()
+{
+	for (int index = 0; index < numberOfChromosomes; index++)
+	{
+		_chromosomeVector.push_back(Chromosome());
+		for (int chromIndex = 0; chromIndex < Chromosome::chromSize; chromIndex++)
+		{
+			int randomValue = RandomValue0_9();
+			_chromosomeVector[index].SetGen(chromIndex, randomValue);
+		}
+	}
+}
+
+int ManageAI::RandomValue0_9()
+{
+	int result = rand() % 10;
+	return result;
 }
