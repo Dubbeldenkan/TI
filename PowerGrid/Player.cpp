@@ -437,46 +437,53 @@ int Player::SetThePowerPlantToActive(int index)
 	int* tempPointer = NULL;
 	int* pointerToStruct = NULL;
 	int posOfCoalAndOilPlant = -1;
-	switch (_powerPlants[index].GetType())
-	{
-	case PowerPlant::coal:
-	{
-		tempPointer = &_amountOfCoal;
-		pointerToStruct = &_phase5Struct.resourceArray[index].amountOfCoal;
-		break;
-	}
-	case PowerPlant::oil:
-	{
-		tempPointer = &_amountOfOil;
-		pointerToStruct = &_phase5Struct.resourceArray[index].amountOfOil;
-		break;
-	}
-	case PowerPlant::garbage:
-	{
-		tempPointer = &_amountOfGarbage;
-		pointerToStruct = &_phase5Struct.resourceArray[index].amountOfGarbage;
-		break;
-	}
-	case PowerPlant::uranium:
-	{
-		tempPointer = &_amountOfUran;
-		pointerToStruct = &_phase5Struct.resourceArray[index].amountOfUran;
-		break;
-	}
-	}
-	if (PowerPlant::coalOrOil == _powerPlants[index].GetType())
-	{
-		posOfCoalAndOilPlant = index;
-	}
-	else if (_powerPlants[index].GetPowerPlantConsumption() <= *tempPointer)
+	if (_powerPlants[index].GetType() == PowerPlant::none)
 	{
 		_powerPlants[index].SetToActive();
-		*pointerToStruct = _powerPlants[index].GetPowerPlantConsumption();
-		*tempPointer -= _powerPlants[index].GetPowerPlantConsumption();
 	}
 	else
 	{
-		_powerPlants[index].SetToInActive();
+		switch (_powerPlants[index].GetType())
+		{
+		case PowerPlant::coal:
+		{
+			tempPointer = &_amountOfCoal;
+			pointerToStruct = &_phase5Struct.resourceArray[index].amountOfCoal;
+			break;
+		}
+		case PowerPlant::oil:
+		{
+			tempPointer = &_amountOfOil;
+			pointerToStruct = &_phase5Struct.resourceArray[index].amountOfOil;
+			break;
+		}
+		case PowerPlant::garbage:
+		{
+			tempPointer = &_amountOfGarbage;
+			pointerToStruct = &_phase5Struct.resourceArray[index].amountOfGarbage;
+			break;
+		}
+		case PowerPlant::uranium:
+		{
+			tempPointer = &_amountOfUran;
+			pointerToStruct = &_phase5Struct.resourceArray[index].amountOfUran;
+			break;
+		}
+		}
+		if (PowerPlant::coalOrOil == _powerPlants[index].GetType())
+		{
+			posOfCoalAndOilPlant = index;
+		}
+		else if (_powerPlants[index].GetPowerPlantConsumption() <= *tempPointer)
+		{
+			_powerPlants[index].SetToActive();
+			*pointerToStruct = _powerPlants[index].GetPowerPlantConsumption();
+			*tempPointer -= _powerPlants[index].GetPowerPlantConsumption();
+		}
+		else
+		{
+			_powerPlants[index].SetToInActive();
+		}
 	}
 	return posOfCoalAndOilPlant;
 }
@@ -561,4 +568,17 @@ void Player::ResetResourceArray(int pos)
 	_phase5Struct.resourceArray[pos].amountOfOil = 0;
 	_phase5Struct.resourceArray[pos].amountOfGarbage = 0;
 	_phase5Struct.resourceArray[pos].amountOfUran = 0;
+}
+
+int Player::GetProducedPower()
+{
+	int result = 0;
+	for (int index = 0; index < numberOfPowerPlants; index++)
+	{
+		if (_powerPlants[index].GetPowerPlantNumber() != 0)
+		{
+			result += _powerPlants[index].GetPowerPlantProduction();
+		}
+	}
+	return result;
 }

@@ -228,3 +228,8 @@ bool PowerPlantMarket::GetStep3()
 {
 	return _step3;
 }
+
+bool PowerPlantMarket::PpDeckIsEmpty()
+{
+	return _ppDeck.empty();
+}

@@ -68,9 +68,9 @@ City::Color City::GetColorForPos(int pos)
 	return _posColor[pos];
 }
 
-int City::CheckIfCityIsOccupied(int gameStep)
+int City::CheckPriceForCity(int gameStep)
 {
-	bool result = false;
+	int result = false;
 	if (_posColor[0] == none)
 	{
 		result = _cityCost[0];
@@ -82,6 +82,20 @@ int City::CheckIfCityIsOccupied(int gameStep)
 	else if (_posColor[2] == none && gameStep > 2)
 	{
 		result = _cityCost[2];
+	}
+	return result;
+}
+
+bool City::PlayerAlreadyHasCity(City::Color color)
+{
+	bool result = false;
+	for (int index = 0; index < numberOfHouses; index++)
+	{
+		if (_posColor[index] == color)
+		{
+			result = true;
+			break;
+		}
 	}
 	return result;
 }

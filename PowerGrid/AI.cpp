@@ -37,31 +37,37 @@ char* AI::GetName()
 
 void AI::DoAction()
 {
-	//TODO _game verkar inte vara definierat här.. Konstigt..
-	switch (_game->GetCurrentPhase())
+	if (_player->GetPassed())
 	{
-	case 2:
-	{
-		Phase2();
-		break;
+		//Do nothing
 	}
-	case 3:
+	else
 	{
-		Phase3();
-		break;
-	}
-	case 4:
-	{
-		Phase4();
-		break;
-	}
-	case 5:
-	{
-		Phase5();
-		break;
-	}
-	default:
-		break;
+		switch (_game->GetCurrentPhase())
+		{
+		case 2:
+		{
+			Phase2();
+			break;
+		}
+		case 3:
+		{
+			Phase3();
+			break;
+		}
+		case 4:
+		{
+			Phase4();
+			break;
+		}
+		case 5:
+		{
+			Phase5();
+			break;
+		}
+		default:
+			break;
+		}
 	}
 }
 
@@ -73,6 +79,7 @@ void AI::Phase2()
 		{
 			_p2s.powerPlantValue[index] = CalculateValueOfPowerPlant(_player->GetPowerPlant(index), 0);
 		}
+		_p2s.powerPlantsValuesSet = true;
 	}
 	Game::GameSubPhase gameSubPhase = _game->GetCurrentSubPhase();
 	PowerPlantMarket* ppm = _game->GetPowerPlantMarket();
@@ -105,34 +112,37 @@ void AI::Phase2()
 	}
 	case Game::bid:
 	{
-		bool thisIsTheBestPowerPlant = true;
-		PowerPlant* powerPlant = ppm->GetPowerPlantCurrentDeck(_game->GetSelectedPowerPlant());
-		int latestBid = _game->GetLastBidForSelectedPowerPlant();
-		int currentPowerPlantValue = CalculateValueOfPowerPlant(powerPlant, latestBid);
-
-		for (int index = 0; index < ppm->GetNumberInCurrentMarket(); index++)
+		if (_game->GetLastBiddingPlayer() != _player)
 		{
-			int tempValue;
-			if (index != _game->GetSelectedPowerPlant())
+			bool thisIsTheBestPowerPlant = true;
+			PowerPlant* powerPlant = ppm->GetPowerPlantCurrentDeck(_game->GetSelectedPowerPlant());
+			int latestBid = _game->GetLastBidForSelectedPowerPlant();
+			int currentPowerPlantValue = CalculateValueOfPowerPlant(powerPlant, latestBid);
+
+			for (int index = 0; index < ppm->GetNumberInCurrentMarket(); index++)
 			{
-				tempValue = CalculateValueOfPowerPlant(ppm->GetPowerPlantCurrentDeck(index),
-					ppm->GetPowerPlantCurrentDeck(index)->GetPowerPlantNumber());
-				if (tempValue < currentPowerPlantValue)
+				int tempValue;
+				if (index != _game->GetSelectedPowerPlant())
 				{
-					thisIsTheBestPowerPlant = false;
-					break;
+					tempValue = CalculateValueOfPowerPlant(ppm->GetPowerPlantCurrentDeck(index),
+						ppm->GetPowerPlantCurrentDeck(index)->GetPowerPlantNumber());
+					if (tempValue > currentPowerPlantValue)
+					{
+						thisIsTheBestPowerPlant = false;
+						break;
+					}
 				}
 			}
-		}
-		if (currentPowerPlantValue > _chrom->GetPowerPlantLimit() && _player->GetAmountOfElektro() > latestBid &&
-			thisIsTheBestPowerPlant)
-		{
-			//TODO kanske göra så att de inte alltid ökar med ett
-			_player->SetBid(latestBid + 1);
-		}
-		else
-		{
-			_player->SetPassed();
+			if (currentPowerPlantValue > _chrom->GetPowerPlantLimit() && _player->GetAmountOfElektro() > latestBid &&
+				thisIsTheBestPowerPlant)
+			{
+				//TODO kanske göra så att de inte alltid ökar med ett
+				_player->SetBid(latestBid + 1);
+			}
+			else
+			{
+				_player->SetPassed();
+			}
 		}
 		break;
 	}
@@ -174,10 +184,10 @@ int AI::CalculateValueOfPowerPlant(PowerPlant* powerPlant, int cost)
 			int production;
 			if (powerPlant->GetType() == PowerPlant::coalOrOil)
 			{
-				production = _game->GetResourceMarket()->GetReSupplyAmount(_game->GetCurrentStep(),
-					_game->GetNumberOfPlayers(), ResourceMarket::coal) +
-					_game->GetResourceMarket()->GetReSupplyAmount(_game->GetCurrentStep(),
-						_game->GetNumberOfPlayers(), ResourceMarket::oil);
+				production = _game->GetResourceMarket()->GetReSupplyAmount(_game->GetNumberOfPlayers(),
+					_game->GetCurrentStep(), ResourceMarket::coal) +
+					_game->GetResourceMarket()->GetReSupplyAmount(_game->GetNumberOfPlayers(), 
+						_game->GetCurrentStep(), ResourceMarket::oil);
 				consumption = GetConsumptionForSameTypeForOthers(PowerPlant::coal, _player) +
 					GetConsumptionForSameTypeForOthers(PowerPlant::oil, _player);
 			}
@@ -345,8 +355,8 @@ void AI::SetP3SPowerPlantVector()
 	int powerPlantProduction[Player::numberOfPowerPlants] = { 0, 0, 0 };
 	for (int index = 0; index < Player::numberOfPowerPlants; index++)
 	{
-		if (!_player->GetPowerPlant(index)->GetType() == PowerPlant::none &&
-			!_player->GetPowerPlant(index)->GetPowerPlantNumber() == 0)
+		if (_player->GetPowerPlant(index)->GetType() != PowerPlant::none &&
+			_player->GetPowerPlant(index)->GetPowerPlantNumber() != 0)
 		{
 			if (_player->GetPowerPlant(index)->GetPowerPlantConsumption() > powerPlantProduction[0])
 			{
@@ -380,14 +390,21 @@ void AI::Phase4()
 	{
 		City* city = FindStartCity();
 		_game->GetPlayerInTurn()->SetBuyCityStruct(city->GetName());
-		_player->SetPassed();
 	}
 	else
 	{
-		if (_chrom->GetMoneyLeftAfterCities()*5 > _player->GetAmountOfElektro())
+		if (_chrom->GetMoneyLeftAfterCities()*2 < _player->GetAmountOfElektro() &&
+			_player->GetCityVector().size() < _player->GetProducedPower())
 		{
 			City* city = FindNextCity();
-			_game->GetPlayerInTurn()->SetBuyCityStruct(city->GetName());
+			if (city == NULL)
+			{
+				_player->SetPassed();
+			}
+			else
+			{
+				_game->GetPlayerInTurn()->SetBuyCityStruct(city->GetName());
+			}
 		}
 		else
 		{
@@ -407,19 +424,26 @@ City* AI::FindNextCity()
 		for (int neighbourIndex = 0; neighbourIndex < neighbourCities.size(); neighbourIndex++)
 		{
 			City* neighbourCity = neighbourCities[neighbourIndex];
-			int cityCost = neighbourCity->CheckIfCityIsOccupied(_game->GetCurrentStep());
+			int cityCost = neighbourCity->CheckPriceForCity(_game->GetCurrentStep());
 			int buildingCost = _game->GetBoard()->GetCostBetweenTwoCities(cityVector[index]->GetName(),
 				neighbourCities[neighbourIndex]->GetName()) + cityCost;
-			if (buildingCost < cheapestCityCost && cityCost != 0)
+			//TODO gör så att man kan köpa städer som inte ligger precis bredvis en befintlig stad.
+			if (buildingCost < cheapestCityCost && cityCost != 0 &&
+				!neighbourCity->PlayerAlreadyHasCity((City::Color) _player->GetColor()))
 			{
 				cheapestCity = neighbourCity;
 				cheapestCityCost = buildingCost;
 			}
 		}
 	}
+	//TODO ta bort denna
 	if (cheapestCity == NULL)
 	{
 		int temp = 2;
+	}
+	if (cheapestCityCost > _player->GetAmountOfElektro())
+	{
+		cheapestCity = NULL;
 	}
 	return cheapestCity;
 }
@@ -431,7 +455,7 @@ City* AI::FindStartCity()
 	while (occupiedCity)
 	{
 		city = _game->GetBoard()->GetRandomCity(_game->GetNumberOfPlayers());
-		if (city->GetColorForPos(0) == City::none)
+		if (city->GetColorForPos(0) == City::none && _game->GetBoard()->CityIsInUsedRegion(city))
 		{
 			occupiedCity = false;
 		}

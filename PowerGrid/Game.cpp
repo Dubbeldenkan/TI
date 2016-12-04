@@ -35,7 +35,7 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 
 void Game::InitPlayers(int numberOfPlayers)
 {
-	_pv.push_back(Player("Dennis", Player::red, true));
+	_pv.push_back(Player("Dennis", Player::red, false));
 	_pv.push_back(Player("George", Player::blue, false));
 	if (_numberOfPlayers > 2)
 	{
@@ -43,15 +43,15 @@ void Game::InitPlayers(int numberOfPlayers)
 	}
 	if (_numberOfPlayers > 3)
 	{
-		_pv.push_back(Player("Pappa", Player::green, true));
+		_pv.push_back(Player("Pappa", Player::green, false));
 	}
 	if (_numberOfPlayers > 4)
 	{
-		_pv.push_back(Player("Leia", Player::black, true));
+		_pv.push_back(Player("Leia", Player::black, false));
 	}
 	if (_numberOfPlayers > 5)
 	{
-		_pv.push_back(Player("Jakob", Player::purple, true));
+		_pv.push_back(Player("Jakob", Player::purple, false));
 	}
 	_playerInTurn = &_pv[0];
 }
@@ -119,6 +119,11 @@ ResourceMarket* Game::GetResourceMarket()
 Board* Game::GetBoard()
 {
 	return _board;
+}
+
+Player* Game::GetLastBiddingPlayer()
+{
+	return _phase2Struct.lastBiddingPlayer;
 }
 
 void Game::IncreaseNextBid(int change)
@@ -378,6 +383,7 @@ void Game::Phase2()
 		for (int i = 0; i < _numberOfPlayers; i++)
 		{
 			_tempPlayerVector.push_back(&_pv[i]);
+			_tempPlayerVector[i]->ResetPassed();
 		}
 		_gameSubPhase = choosePowerPlant;
 		_playerInTurn = _tempPlayerVector[0];
@@ -465,7 +471,7 @@ void Game::Phase2()
 	}
 	case nextPhase:
 	{
-		if (_phase2Struct.allHasPassed)
+		if (_phase2Struct.allHasPassed && !_ppm.PpDeckIsEmpty())
 		{
 			_ppm.RemoveLowestPowerPlant();
 		}
@@ -488,6 +494,7 @@ void Game::Phase3()
 		for (int i = 0; i < _numberOfPlayers; i++)
 		{
 			_tempPlayerVector.push_back(&_pv[i]);
+			_tempPlayerVector[i]->ResetPassed();
 		}
 		_playerInTurn = _tempPlayerVector[_tempPlayerVector.size() - 1];
 		DrawBoard();

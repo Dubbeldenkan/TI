@@ -117,6 +117,7 @@ public:
 	void BuyCity(int, City*, std::string);
 	void ResetClickedOnNewCity();
 	std::vector<City*> GetCityVector();
+	int GetProducedPower();
 
 	//Phase 5
 	bool GetPowerPlantClicked();

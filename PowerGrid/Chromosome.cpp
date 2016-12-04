@@ -1,6 +1,7 @@
 #include "Chromosome.h"
 
-Chromosome::Chromosome(int c1, int c2, int c3, int c4, int c5, int c6, int c7, int c8)
+Chromosome::Chromosome(int c1, int c2, int c3, int c4, int c5, int c6, int c7, int c8,
+	int c9, int c10, int c11, int c12)
 {
 	//TODO gör konstruktorn snyggare
 	_chrom[0] = c1;
@@ -11,6 +12,10 @@ Chromosome::Chromosome(int c1, int c2, int c3, int c4, int c5, int c6, int c7, i
 	_chrom[5] = c6;
 	_chrom[6] = c7;
 	_chrom[7] = c8;
+	_chrom[8] = c9;
+	_chrom[9] = c10;
+	_chrom[10] = c11;
+	_chrom[11] = c12;
 }
 
 int Chromosome::GetMoreProduction()
@@ -66,4 +71,11 @@ int Chromosome::GetChooseCheapestPath()
 int Chromosome::GetMoneyLeftAfterCities()
 {
 	return _chrom[_moneyLeftAfterBuyingCitiesPos];
+}
+
+
+//TODO not used
+int Chromosome::GetNumberOfCitiesMoreThanPower()
+{
+	return _chrom[_numberOfCitiesMoreThanPowerPos];
 }

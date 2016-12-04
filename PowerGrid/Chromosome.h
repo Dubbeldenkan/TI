@@ -28,11 +28,11 @@ private:
 	const int _aggressiveBuyingCityPos = 8;
 	const int _chooseCheapestPathPos = 9;
 	const int _moneyLeftAfterBuyingCitiesPos = 10;
-
+	const int _numberOfCitiesMoreThanPowerPos = 11;
 
 public:
 	Chromosome() {};
-	Chromosome(int, int, int, int, int, int, int, int);
+	Chromosome(int, int, int, int, int, int, int, int, int, int, int, int);
 	~Chromosome() {};
 
 	//Phase 2
@@ -51,6 +51,7 @@ public:
 	int GetAggressiveBuyingCity();
 	int GetChooseCheapestPath();
 	int GetMoneyLeftAfterCities();
+	int GetNumberOfCitiesMoreThanPower();
 };
 
 #endif // !CHROMOSOME_H

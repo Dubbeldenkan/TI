@@ -3,10 +3,18 @@
 ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector)
 {
 	_game = game;
-	Chromosome chromosome1(1, 2, 3, 6, 4, 5, 2, 4);
+	Chromosome chromosome1(5, 2, 3, 6, 0, 0, 2, 4, 5, 7, 3, 1);
 	_chromosomeVector.push_back(chromosome1);
-	Chromosome chromosome2(5, 8, 2, 1, 9, 2, 1, 3);
+	Chromosome chromosome2(5, 8, 2, 1, 9, 2, 1, 3, 4, 7, 3, 5);
 	_chromosomeVector.push_back(chromosome2);
+	Chromosome chromosome3(1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2);
+	_chromosomeVector.push_back(chromosome3);
+	Chromosome chromosome4(5, 3, 7, 8, 1, 4, 2, 5, 2, 2, 8, 4);
+	_chromosomeVector.push_back(chromosome4);
+	Chromosome chromosome5(3, 4, 1, 6, 3, 8, 1, 8, 3, 8, 0, 1);
+	_chromosomeVector.push_back(chromosome5);
+	Chromosome chromosome6(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2);
+	_chromosomeVector.push_back(chromosome6);
 	for (int index = 0; index < playerVector.size(); index++)
 	{
 		if (!playerVector[index]->GetHumanPlayer())

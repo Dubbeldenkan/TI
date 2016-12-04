@@ -25,7 +25,8 @@ public:
 	int GetCostForFirstFreePos(int);
 	void SetFirstFreePos(int);
 	Color GetColorForPos(int);
-	int CheckIfCityIsOccupied(int);
+	int CheckPriceForCity(int);
+	bool PlayerAlreadyHasCity(City::Color);
 };
 
 #endif // !CITY_H

@@ -31,6 +31,7 @@ public:
 	void PrintPowerPlantData(int);
 	bool GetStep3();
 	void UpdateToStep3();
+	bool PpDeckIsEmpty();
 
 public:
 	void CheckAndSetStep3(PowerPlant*);

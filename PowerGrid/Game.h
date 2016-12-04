@@ -76,6 +76,7 @@ public:
 	int GetSelectedPowerPlant();
 	int GetLastBidForSelectedPowerPlant();
 	int GetNextBid();
+	Player* GetLastBiddingPlayer();
 
 private:
 	void SetNextPlayerInTurn(std::vector<Player*>*, int);
