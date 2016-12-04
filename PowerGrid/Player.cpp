@@ -5,7 +5,7 @@ const int Player::GetPayedArray[] = { 10, 22, 33, 44, 54, 64, 73, 82, 90, 98,
 
 Player::Player(char* name, Color color, bool humanPlayer)
 {
-	_amountOfElektro = 50;
+	_amountOfElektro = startValueOfElektro;
 	_playerName = name;
 	_color = color;
 	_humanPlayer = humanPlayer;
@@ -581,4 +581,20 @@ int Player::GetProducedPower()
 		}
 	}
 	return result;
+}
+
+void Player::ResetPlayer()
+{
+	_numberOfSuppliedCities = 0;
+	_numberOfCitiesInNetwork = 0;
+	_amountOfElektro = startValueOfElektro;
+	for (int index = 0; index < numberOfPowerPlants; index++)
+	{
+		_powerPlants[index] = PowerPlant();
+	}
+	_cityVector.clear();
+	_amountOfCoal = 0;
+	_amountOfOil = 0;
+	_amountOfGarbage = 0;
+	_amountOfUran = 0;
 }

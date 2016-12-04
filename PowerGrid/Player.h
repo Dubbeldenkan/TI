@@ -12,6 +12,7 @@ class Player
 public:
 	enum Color{red, blue, yellow, black, green, purple};
 	const static int numberOfPowerPlants = 3;
+	const static int startValueOfElektro = 50;
 	struct BuyResourceStruct
 	{
 		ResourceMarket::Resource resource;
@@ -90,6 +91,7 @@ public:
 	void ResetPassed();
 	bool GetHumanPlayer();
 	void PrintPlayerData(int);
+	void ResetPlayer();
 
 	//Phase 2
 	bool NewBid();

@@ -31,9 +31,11 @@ public:
 	void PrintPowerPlantData(int);
 	bool GetStep3();
 	void UpdateToStep3();
-	bool PpDeckIsEmpty();
+	bool PowerPlantDeckIsEmpty();
+	void ResetPowerPlantMarket();
 
-public:
+private:
 	void CheckAndSetStep3(PowerPlant*);
+	void InitPowerPlantMarket();
 };
 #endif // !POWER_PLANT_MARKET_H

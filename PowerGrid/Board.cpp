@@ -455,3 +455,12 @@ City* Board::GetRandomCity(int numberOfPlayers)
 	}
 	return city;
 }
+
+void Board::ResetBoard()
+{
+	typedef std::map<std::string, City*>::iterator it_type;
+	for (it_type it = _cityDict.begin(); it != _cityDict.end(); it++)
+	{
+		it->second->ResetCity();
+	}
+}

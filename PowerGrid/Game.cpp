@@ -471,7 +471,7 @@ void Game::Phase2()
 	}
 	case nextPhase:
 	{
-		if (_phase2Struct.allHasPassed && !_ppm.PpDeckIsEmpty())
+		if (_phase2Struct.allHasPassed && !_ppm.PowerPlantDeckIsEmpty())
 		{
 			_ppm.RemoveLowestPowerPlant();
 		}
@@ -658,6 +658,10 @@ void Game::CheckIfGameHasEnded()
 			break;
 		}
 	}
+	if (_ppm.PowerPlantDeckIsEmpty())
+	{
+		_gamePhase = 7;
+	}
 }
 
 void Game::EndGame()
@@ -720,4 +724,20 @@ void Game::EndGame()
 	_playerInTurn = &_pv[0];
 	DrawBoard();
 	_gamePhase++;
+}
+
+void Game::ResetGame()
+{
+	_gamePhase = 1;
+	_gameStep = 1;
+	_gameSubPhase = initPhase;
+	_gameTurn = 1;
+
+	_board->ResetBoard();
+	_rm->ResetResourceMarket();
+	_ppm.ResetPowerPlantMarket();
+	for (int index = 0; index < _numberOfPlayers; index++)
+	{
+		_pv[index].ResetPlayer();
+	}
 }

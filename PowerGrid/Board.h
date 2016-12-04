@@ -43,6 +43,7 @@ public:
 	City* GetRandomCity(int);
 	int GetCostBetweenTwoCities(char*, char*);
 	std::vector<City*> GetNeighbourCities(City*);
+	void ResetBoard();
 
 private:
 	void InitMap();

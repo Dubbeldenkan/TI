@@ -27,6 +27,7 @@ public:
 	Color GetColorForPos(int);
 	int CheckPriceForCity(int);
 	bool PlayerAlreadyHasCity(City::Color);
+	void ResetCity();
 };
 
 #endif // !CITY_H

@@ -20,6 +20,11 @@ private:
 	int _amountOfGarbage;
 	int _amountOfUranium;
 
+	static const int startValueCoal = 24;
+	static const int startValueOil = 18;
+	static const int startValueGarbage = 6;
+	static const int startValueUran = 2;
+
 	int _marketSize = 9;
 
 	int _resourceSupplyMatrix[5][3][4] = { { { 3, 2, 1, 1 },{ 4, 2, 2, 1 },{ 3, 4, 3, 1 }},
@@ -50,6 +55,7 @@ public:
 	void TransferResources(int, ResourceMarket::Resource);
 
 	void PrintResourceMarketData(int);
+	void ResetResourceMarket();
 private:
 	int GetFirstResPos(Resource);
 	int GetPriceForPos(Resource, int);

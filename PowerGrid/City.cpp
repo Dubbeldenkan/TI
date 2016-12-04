@@ -99,3 +99,11 @@ bool City::PlayerAlreadyHasCity(City::Color color)
 	}
 	return result;
 }
+
+void City::ResetCity()
+{
+	for (int index = 0; index < numberOfHouses; index++)
+	{
+		_posColor[index] = City::none;
+	}
+}

@@ -30,7 +30,11 @@ ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector, bool randomize
 void ManageAI::DoAction()
 {
 	std::vector<Player*> playerVector = _game->GetPlayerVector();
-	if ((_game->GetCurrentPhase() == 2) && (_game->GetCurrentSubPhase() == Game::initPhase))
+	if (_game->GetCurrentPhase() == 7)
+	{
+		_game->ResetGame();
+	}
+	else if ((_game->GetCurrentPhase() == 2) && (_game->GetCurrentSubPhase() == Game::initPhase))
 	{
 		//Set the player after they have changed order in the playerVector
 		for (int index = 0; index < playerVector.size(); index++)

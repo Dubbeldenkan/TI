@@ -389,7 +389,14 @@ void AI::Phase4()
 	if (_player->GetCityVector().size() == 0)
 	{
 		City* city = FindStartCity();
-		_game->GetPlayerInTurn()->SetBuyCityStruct(city->GetName());
+		if (city->GetCostForFirstFreePos(_game->GetCurrentStep()) <= _player->GetAmountOfElektro())
+		{
+			_game->GetPlayerInTurn()->SetBuyCityStruct(city->GetName());
+		}
+		else
+		{
+			_player->SetPassed();
+		}
 	}
 	else
 	{

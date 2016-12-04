@@ -10,10 +10,10 @@ ResourceMarket::ResourceMarket(int numberOfPlayers, GameBoard gameBoard)
 	{
 	case USA:
 	{
-		_amountOfCoal = 24;
-		_amountOfOil = 18;
-		_amountOfGarbage = 6;
-		_amountOfUranium = 2;
+		_amountOfCoal = startValueCoal;
+		_amountOfOil = startValueOil;
+		_amountOfGarbage = startValueGarbage;
+		_amountOfUranium = startValueUran;
 		break;
 	}
 	default:
@@ -207,4 +207,12 @@ void ResourceMarket::PrintResourceMarketData(int gameTurn)
 	std::stringstream ss;
 	ss << "\n\nOmgång " << gameTurn;
 	_log->Log(ss.str());
+}
+
+void ResourceMarket::ResetResourceMarket()
+{
+	_amountOfCoal = startValueCoal;
+	_amountOfOil = startValueOil;
+	_amountOfGarbage = startValueGarbage;
+	_amountOfUranium = startValueUran;
 }
