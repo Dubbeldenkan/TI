@@ -8,6 +8,7 @@ public:
 private:
 	int _chrom[chromSize];
 	int _chromosomePoints = 0;
+	int chromosomeNumber = -1;
 
 	//Phase 2
 	const int _moreProductionPos = 0;
@@ -30,10 +31,15 @@ private:
 
 public:
 	Chromosome() {};
+	Chromosome(int);
 	~Chromosome() {};
 
 	void SetGen(int, int);
 	void AddPoints(int);
+	int GetPoints();
+	int GetChromosomeNumber();
+	void ResetPoints();
+	void SetChromosomeNumber(int);
 
 	//Phase 2
 	int GetMoreProduction();

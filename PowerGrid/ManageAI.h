@@ -4,6 +4,7 @@
 #include "AI.h"
 #include "Chromosome.h"
 #include "Game.h"
+#include "Logger.h"
 #include <vector>
 
 class ManageAI
@@ -12,11 +13,17 @@ class ManageAI
 	int _numberOfAIs = 0;
 	std::vector<Chromosome> _chromosomeVector;
 	Game* _game;
-	const int numberOfChromosomes = 30;
-	const static int AIPoints[6];
-	const static int chromosomePlacement[12][6];
+	const int numberOfChromosomes = 36;
+	const static int maximumNumberOfAIs = 6;
+	const static int AIPoints[maximumNumberOfAIs];
+	const static int numberOfGamesPerGeneration = 12;
+	const static int chromosomePlacement[numberOfGamesPerGeneration][maximumNumberOfAIs];
 	int _generation = 0;
 	int _gameTurn = 0;
+
+	const static int numberOfSavedChromosomes = 3;
+
+	Logger* _log;
 
 public:
 	ManageAI::ManageAI(Game*, std::vector<Player*>, bool);
@@ -28,6 +35,7 @@ private:
 	int RandomValue0_9();
 	void AssignPointsToAIs();
 	void SetNewChromosomesToAIs();
+	void CreateNewGeneration();
 };
 
 #endif // !MANAGE_AI

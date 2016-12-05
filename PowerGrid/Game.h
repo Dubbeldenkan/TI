@@ -82,6 +82,8 @@ public:
 	void ResetGame();
 	bool GetGameHasAWinner();
 
+	int GetGameTurn();
+
 private:
 	void SetNextPlayerInTurn(std::vector<Player*>*, int);
 	void RemovePlayerFromTempVector(std::vector<Player*>*, int);

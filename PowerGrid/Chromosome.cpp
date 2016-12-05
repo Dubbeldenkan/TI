@@ -1,5 +1,10 @@
 #include "Chromosome.h"
 
+Chromosome::Chromosome(int number)
+{
+	chromosomeNumber = number;
+}
+
 int Chromosome::GetMoreProduction()
 {
 	return _chrom[_moreProductionPos];
@@ -74,4 +79,24 @@ void Chromosome::AddPoints(int points)
 int Chromosome::GetSaveMoneyAfterPowerPlantBuy()
 {
 	return _chrom[_saveMoneyAfterPowerPlantBuy];
+}
+
+int Chromosome::GetPoints()
+{
+	return _chromosomePoints;
+}
+
+int Chromosome::GetChromosomeNumber()
+{
+	return chromosomeNumber;
+}
+
+void Chromosome::ResetPoints()
+{
+	_chromosomePoints = 0;
+}
+
+void Chromosome::SetChromosomeNumber(int value)
+{
+	chromosomeNumber = value;
 }

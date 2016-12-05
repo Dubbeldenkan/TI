@@ -389,7 +389,8 @@ void Draw::DrawPowerPlant(PowerPlant* powerPlant, int xPos, int yPos)
 void Draw::DrawPowerPlantMarket(PowerPlantMarket* ppm, int gameStep)
 {
 	//current market
-	for (int index = 0; index < ppm->GetNumberInCurrentMarket(); index++)
+	int sizeCurrentMarket = min(ppm->GetNumberInCurrentMarket(), ppm->GetPowerPlantCurrentDeckSize());
+	for (int index = 0; index < sizeCurrentMarket; index++)
 	{
 		if(gameStep < 3)
 		{

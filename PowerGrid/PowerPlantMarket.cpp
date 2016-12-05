@@ -25,14 +25,17 @@ void PowerPlantMarket::RemovePowerPlant(int powerPlantPos)
 {
 	int soldPowerPlant = _currentMarket[powerPlantPos].GetPowerPlantNumber();
 	_currentMarket.erase(_currentMarket.begin() + powerPlantPos);
-	_futureMarket.push_back(_ppDeck[0]);
-	int newPowerPlant = _ppDeck[0].GetPowerPlantNumber();
-	CheckAndSetStep3(&_ppDeck[0]);
-	_ppDeck.erase(_ppDeck.begin() + 0);
-	int lowestPowerPlantPos = FindLowestPowerPlantNumber(_futureMarket);
-	_currentMarket.push_back(_futureMarket[lowestPowerPlantPos]);
-	_futureMarket.erase(_futureMarket.begin() + lowestPowerPlantPos);
-
+	int newPowerPlant = 0;
+	if (_ppDeck.size() > 0)
+	{
+		_futureMarket.push_back(_ppDeck[0]);
+		newPowerPlant = _ppDeck[0].GetPowerPlantNumber();
+		CheckAndSetStep3(&_ppDeck[0]);
+		_ppDeck.erase(_ppDeck.begin() + 0);
+		int lowestPowerPlantPos = FindLowestPowerPlantNumber(_futureMarket);
+		_currentMarket.push_back(_futureMarket[lowestPowerPlantPos]);
+		_futureMarket.erase(_futureMarket.begin() + lowestPowerPlantPos);
+	}
 	std::stringstream ss;
 	ss << "Kraftverk  nr " << soldPowerPlant <<
 		" såldes och ersattes av " << newPowerPlant;
@@ -173,12 +176,18 @@ bool PowerPlantMarket::PowerPlantDeckIsEmpty()
 	return _ppDeck.empty();
 }
 
+int PowerPlantMarket::GetPowerPlantCurrentDeckSize()
+{
+	return _currentMarket.size();
+}
+
 void PowerPlantMarket::ResetPowerPlantMarket()
 {
 	_ppDeck.clear();
 	_currentMarket.clear();
 	_futureMarket.clear();
 	_numberInCurrentMarket = 4;
+	_step3 = false;
 	InitPowerPlantMarket();
 }
 

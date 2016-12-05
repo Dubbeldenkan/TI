@@ -34,6 +34,8 @@ public:
 	bool PowerPlantDeckIsEmpty();
 	void ResetPowerPlantMarket();
 
+	int GetPowerPlantCurrentDeckSize();
+
 private:
 	void CheckAndSetStep3(PowerPlant*);
 	void InitPowerPlantMarket();

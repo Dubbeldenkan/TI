@@ -126,6 +126,11 @@ Player* Game::GetLastBiddingPlayer()
 	return _phase2Struct.lastBiddingPlayer;
 }
 
+int Game::GetGameTurn()
+{
+	return _gameTurn;
+}
+
 void Game::IncreaseNextBid(int change)
 {
 	_phase2Struct.buttonPressed = true;

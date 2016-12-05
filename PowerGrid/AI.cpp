@@ -425,29 +425,52 @@ City* AI::FindNextCity()
 {
 	City* cheapestCity = NULL;
 	int cheapestCityCost = MAXINT;
-	std::vector<City*> cityVector = _player->GetCityVector();
-	for (int index = 0; index < cityVector.size(); index++)
+	bool thereIsAFreeNeigbourCity = true;
+	std::vector<City*> nextCityVector;
+	std::vector<int> costToCity;
+	std::vector<int> costToNextCity;
+	while (cheapestCity == NULL)
 	{
-		std::vector<City*> neighbourCities = _game->GetBoard()->GetNeighbourCities(cityVector[index]);
-		for (int neighbourIndex = 0; neighbourIndex < neighbourCities.size(); neighbourIndex++)
+		std::vector<City*> cityVector;
+		if (thereIsAFreeNeigbourCity)
 		{
-			City* neighbourCity = neighbourCities[neighbourIndex];
-			int cityCost = neighbourCity->CheckPriceForCity(_game->GetCurrentStep());
-			int buildingCost = _game->GetBoard()->GetCostBetweenTwoCities(cityVector[index]->GetName(),
-				neighbourCities[neighbourIndex]->GetName()) + cityCost;
-			//TODO gör så att man kan köpa städer som inte ligger precis bredvis en befintlig stad.
-			if (buildingCost < cheapestCityCost && cityCost != 0 &&
-				!neighbourCity->PlayerAlreadyHasCity((City::Color) _player->GetColor()))
+			cityVector = _player->GetCityVector();
+			for (int index = 0; index < cityVector.size(); index++)
 			{
-				cheapestCity = neighbourCity;
-				cheapestCityCost = buildingCost;
+				costToCity.push_back(0);
 			}
 		}
-	}
-	//TODO ta bort denna
-	if (cheapestCity == NULL)
-	{
-		int temp = 2;
+		else
+		{
+			cityVector = nextCityVector;
+			nextCityVector.clear();
+			costToCity = costToNextCity;
+			costToNextCity.clear();
+		}
+		for (int index = 0; index < cityVector.size(); index++)
+		{
+			//TODO kanske förändra vilken stad som väljs
+			std::vector<City*> neighbourCities = _game->GetBoard()->GetNeighbourCities(cityVector[index]);
+			for (int neighbourIndex = 0; neighbourIndex < neighbourCities.size(); neighbourIndex++)
+			{
+				City* neighbourCity = neighbourCities[neighbourIndex];
+				nextCityVector.push_back(neighbourCity);
+				int cityCost = neighbourCity->CheckPriceForCity(_game->GetCurrentStep());
+				int buildingCost = _game->GetBoard()->GetCostBetweenTwoCities(cityVector[index]->GetName(),
+					neighbourCities[neighbourIndex]->GetName()) + cityCost + costToCity[index];
+				costToNextCity.push_back(buildingCost);
+				if (buildingCost < cheapestCityCost && cityCost != 0 &&
+					!neighbourCity->PlayerAlreadyHasCity((City::Color) _player->GetColor()))
+				{
+					cheapestCity = neighbourCity;
+					cheapestCityCost = buildingCost;
+				}
+			}
+		}
+		if (cheapestCity == NULL)
+		{
+			thereIsAFreeNeigbourCity = false;
+		}
 	}
 	if (cheapestCityCost > _player->GetAmountOfElektro())
 	{
