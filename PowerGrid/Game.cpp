@@ -36,14 +36,14 @@ Game::Game(int numberOfPlayers, HWND hWnd)
 void Game::InitPlayers(int numberOfPlayers)
 {
 	_pv.push_back(Player("Dennis", Player::red, false));
-	_pv.push_back(Player("George", Player::blue, false));
+	_pv.push_back(Player("Alida", Player::blue, false));
 	if (_numberOfPlayers > 2)
 	{
 		_pv.push_back(Player("Edwin", Player::yellow, false));
 	}
 	if (_numberOfPlayers > 3)
 	{
-		_pv.push_back(Player("Pappa", Player::green, false));
+		_pv.push_back(Player("George", Player::green, false));
 	}
 	if (_numberOfPlayers > 4)
 	{

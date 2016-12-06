@@ -35,6 +35,7 @@ public:
 	~Chromosome() {};
 
 	void SetGen(int, int);
+	int GetGen(int);
 	void AddPoints(int);
 	int GetPoints();
 	int GetChromosomeNumber();

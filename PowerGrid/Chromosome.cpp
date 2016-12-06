@@ -100,3 +100,8 @@ void Chromosome::SetChromosomeNumber(int value)
 {
 	chromosomeNumber = value;
 }
+
+int Chromosome::GetGen(int index)
+{
+	return _chrom[index];
+}

@@ -23,6 +23,11 @@ class ManageAI
 
 	const static int numberOfSavedChromosomes = 3;
 
+	const static int chanceForMutation = 1;
+	const static int chanceForAverage = 5;
+	const static int chanceForCrossover = 15;
+	const static int sumOfChance = chanceForMutation + chanceForAverage + chanceForCrossover;
+
 	Logger* _log;
 
 public:
@@ -34,8 +39,15 @@ private:
 	void RandomizeChromosomes();
 	int RandomValue0_9();
 	void AssignPointsToAIs();
+
 	void SetNewChromosomesToAIs();
 	void CreateNewGeneration();
+
+	Chromosome MutateChromosome(Chromosome*, int);
+	Chromosome AverageChromosome(Chromosome*, Chromosome*, int);
+	std::vector<Chromosome> CrossoverChromosome(Chromosome*, Chromosome*, int);
+
+	std::vector<Chromosome*> GetParentChromosomes(std::vector<Chromosome*>, std::vector<int>);
 };
 
 #endif // !MANAGE_AI

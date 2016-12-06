@@ -4,6 +4,7 @@
 #include <vector>
 #include "PowerPlant.h"
 #include "Logger.h"
+#include <algorithm>
 
 class PowerPlantMarket
 {

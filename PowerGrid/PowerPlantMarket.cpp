@@ -18,7 +18,8 @@ PowerPlant* PowerPlantMarket::GetPowerPlantFutureDeck(int index)
 
 int PowerPlantMarket::GetNumberInCurrentMarket()
 {
-	return _numberInCurrentMarket;
+	int result = std::min(_numberInCurrentMarket, (int) _currentMarket.size());
+	return result;
 }
 
 void PowerPlantMarket::RemovePowerPlant(int powerPlantPos)

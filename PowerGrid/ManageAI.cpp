@@ -253,10 +253,161 @@ void ManageAI::CreateNewGeneration()
 			}
 		}
 	}
+	std::vector<int> parentsPoints;
 	for (int index = 0; index < numberOfSavedChromosomes; index++)
 	{
+		parentsPoints.push_back(bestChromArray[index]->GetPoints());
 		newGeneration.push_back(*bestChromArray[index]);
 		newGeneration[index].ResetPoints();
 		newGeneration[index].SetChromosomeNumber(index);
 	}
+
+	for (int index = numberOfSavedChromosomes; index < numberOfChromosomes; index++)
+	{
+		std::vector<Chromosome*> chromosomeParents;
+		for (int index = 0; index < numberOfSavedChromosomes; index++)
+		{
+			chromosomeParents.push_back(&newGeneration[index]);
+		}
+		std::vector<Chromosome*> parentChromosomes = 
+			GetParentChromosomes(chromosomeParents, parentsPoints);
+		Chromosome* parent1 = parentChromosomes[0];
+		Chromosome* parent2 = parentChromosomes[1];
+		int randomNumber = rand() % sumOfChance;
+		if (randomNumber < chanceForMutation || index == (numberOfChromosomes - 1))
+		{
+			Chromosome chrom = MutateChromosome(parent1, index);
+			newGeneration.push_back(chrom);
+		}
+		else if (randomNumber < (chanceForMutation + chanceForAverage))
+		{
+			Chromosome chrom = AverageChromosome(parent1, parent2, index);
+			newGeneration.push_back(chrom);
+		}
+		else
+		{
+			std::vector<Chromosome> chromVector = CrossoverChromosome(parent1, parent2, index);
+			newGeneration.push_back(chromVector[0]);
+			newGeneration.push_back(chromVector[1]);
+		}
+	}
+	_generation++;
+	ss << "\n\nGeneration nummer " << _generation << ":\n";
+	for (int index = 0; index < numberOfChromosomes; index++)
+	{
+		ss << "Chromosome " << index << ": ";
+		for (int genIndex = 0; genIndex < Chromosome::chromSize; genIndex++)
+		{
+			ss << _chromosomeVector[index].GetGen(genIndex) << " ";
+		}
+		ss << "\n";
+	}
+	_log->Log(ss.str());
+}
+
+std::vector<Chromosome*> ManageAI::GetParentChromosomes(std::vector<Chromosome*> parentVector,
+	std::vector<int> parentPoints)
+{
+	int parentPointsSum = 0;
+	for (int index = 0; index < numberOfSavedChromosomes; index++)
+	{
+		parentPointsSum += parentPoints[index];
+		parentPoints[index] = parentPointsSum;
+	}
+
+	std::vector<Chromosome*> result;
+	while (result.size() < 2)
+	{
+		int parentNumber = rand() % parentPointsSum;
+		int index = 0;
+		while (parentNumber > parentPoints[index])
+		{
+			index++;
+		}
+		if (result.size() == 0)
+		{
+			result.push_back(parentVector[index]);
+		}
+		else
+		{
+			if (result[0] != parentVector[index])
+			{
+				result.push_back(parentVector[index]);
+			}
+		}
+	}
+	return result;
+}
+
+Chromosome ManageAI::MutateChromosome(Chromosome* parent, int chromosomeNumber)
+{
+	Chromosome child = Chromosome(chromosomeNumber);
+	for (int index = 0; index < Chromosome::chromSize; index++)
+	{
+		child.SetGen(index, parent->GetGen(index));
+	}
+	int numberOfMutatedGenes = rand() % Chromosome::chromSize;
+	std::vector<int> mutatedGenes;
+	for (int index = 0; index < numberOfMutatedGenes; index++)
+	{
+		int mutatedGene;
+		bool foundNewNumber = false;
+		while (!foundNewNumber)
+		{
+			foundNewNumber = true;
+			mutatedGene = rand() % Chromosome::chromSize;
+			if (std::find(mutatedGenes.begin(), mutatedGenes.end(),
+				mutatedGene) != mutatedGenes.end())
+			{
+				foundNewNumber = false;
+			}
+		}
+		mutatedGenes.push_back(mutatedGene);
+		int mutatedGeneValue = RandomValue0_9();
+		child.SetGen(mutatedGene, mutatedGeneValue);
+	}
+	return child;
+}
+
+Chromosome ManageAI::AverageChromosome(Chromosome* firstParent, Chromosome* secondParent, int chromosomeNumber)
+{
+	Chromosome child = Chromosome(chromosomeNumber);
+	for (int index = 0; index < Chromosome::chromSize; index++)
+	{
+		int genValue = (firstParent->GetGen(index) + secondParent->GetGen(index))/2;
+		child.SetGen(index, genValue);
+	}
+	return child;
+}
+
+std::vector<Chromosome> ManageAI::CrossoverChromosome(Chromosome* firstParent, Chromosome* secondParent, 
+	int chromosomeNumber)
+{
+	Chromosome firstChild = Chromosome(chromosomeNumber);
+	Chromosome secondChild = Chromosome(chromosomeNumber + 1);
+	int secondIndex = rand() % Chromosome::chromSize;
+	secondIndex += 1; 
+	int firstIndex = rand() % secondIndex;
+	for (int index = 0; index < Chromosome::chromSize; index++)
+	{
+		if (index < firstIndex)
+		{
+			firstChild.SetGen(index, firstParent->GetGen(index));
+			secondChild.SetGen(index, secondParent->GetGen(index));
+		}
+		else if (index < secondIndex)
+		{
+			firstChild.SetGen(index, secondParent->GetGen(index));
+			secondChild.SetGen(index, firstParent->GetGen(index));
+		}
+		else
+		{
+			firstChild.SetGen(index, firstParent->GetGen(index));
+			secondChild.SetGen(index, secondParent->GetGen(index));
+		}
+	}
+	std::vector<Chromosome> childVector;
+	childVector.push_back(firstChild);
+	childVector.push_back(secondChild);
+	return childVector;
 }

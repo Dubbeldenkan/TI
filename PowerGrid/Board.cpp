@@ -317,9 +317,22 @@ Board::GetRoadCostOutput Board::GetRoadCost(std::vector<City*> cityVector, char*
 			{
 				if (cityVector[vectorIndex]->GetName() == distVector[index].city->GetName())
 				{
-					finished = true;
-					cost = distVector[index].dist;
-					break;
+					bool foundCheapestWay = true;
+					//Check if it is the cheapest way
+					for (int checkIfCheapestIndex = 0; checkIfCheapestIndex < distVector.size(); checkIfCheapestIndex++)
+					{
+						if (!distVector[checkIfCheapestIndex].searchFinished &&
+							distVector[checkIfCheapestIndex].dist < distVector[index].dist)
+						{
+							foundCheapestWay = false;
+						}
+					}
+					if (foundCheapestWay)
+					{
+						finished = true;
+						cost = distVector[index].dist;
+						break;
+					}
 				}
 			}
 			distVector[index].neighbourCities = GetNeighbourCities(distVector[index].city);
@@ -330,8 +343,13 @@ Board::GetRoadCostOutput Board::GetRoadCost(std::vector<City*> cityVector, char*
 				{
 					if (distVector[i].city->GetName() == distVector[index].neighbourCities[vectorIndex]->GetName())
 					{
-						alreadyExist = true;
-						break;
+						int cityDist = distVector[index].dist + GetCostBetweenTwoCities(distVector[index].city->GetName(),
+							distVector[index].neighbourCities[vectorIndex]->GetName());
+						if (cityDist >= distVector[i].dist)
+						{
+							alreadyExist = true;
+							break;
+						}
 					}
 				}
 				if (!alreadyExist)
