@@ -19,27 +19,15 @@ ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector, bool createNew
 {
 	_log = new Logger("ManageAI");
 	_game = game;
-	/*Chromosome chromosome1(5, 2, 3, 6, 0, 0, 2, 4, 5, 7, 3, 1);
-	_chromosomeVector.push_back(chromosome1);
-	Chromosome chromosome2(5, 8, 2, 1, 9, 2, 1, 3, 4, 7, 3, 5);
-	_chromosomeVector.push_back(chromosome2);
-	Chromosome chromosome3(1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2);
-	_chromosomeVector.push_back(chromosome3);
-	Chromosome chromosome4(5, 3, 7, 8, 1, 4, 2, 5, 2, 2, 8, 4);
-	_chromosomeVector.push_back(chromosome4);
-	Chromosome chromosome5(3, 4, 1, 6, 3, 8, 1, 8, 3, 8, 0, 1);
-	_chromosomeVector.push_back(chromosome5);
-	Chromosome chromosome6(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2);
-	_chromosomeVector.push_back(chromosome6);*/
 	if (createNewChromosomes)
 	{
 		RandomizeChromosomes();
 	}
 	else
 	{
-		//TODO läs data från fil
+		LoadGenerationFromFile();
 	}
-	for (int index = 0; index < playerVector.size(); index++)
+	for (int index = 0; index < (int) playerVector.size(); index++)
 	{
 		if (!playerVector[index]->GetHumanPlayer())
 		{
@@ -62,7 +50,7 @@ void ManageAI::DoAction()
 	else if ((_game->GetCurrentPhase() == 2) && (_game->GetCurrentSubPhase() == Game::initPhase))
 	{
 		//Set the player after they have changed order in the playerVector
-		for (int index = 0; index < playerVector.size(); index++)
+		for (int index = 0; index < (int) playerVector.size(); index++)
 		{
 			if (!playerVector[index]->GetHumanPlayer())
 			{
@@ -203,6 +191,7 @@ void ManageAI::SetNewChromosomesToAIs()
 	else if (_gameTurn > numberOfGamesPerGeneration)
 	{
 		CreateNewGeneration();
+		_gameTurn = 0;
 	}
 	else
 	{
@@ -292,17 +281,21 @@ void ManageAI::CreateNewGeneration()
 		}
 	}
 	_generation++;
-	ss << "\n\nGeneration nummer " << _generation << ":\n";
+	std::stringstream ss2;
+	ss2 << "\n\nGeneration nummer " << _generation << ":\n";
 	for (int index = 0; index < numberOfChromosomes; index++)
 	{
-		ss << "Chromosome " << index << ": ";
+		_chromosomeVector[index].ResetPoints();
+		_chromosomeVector[index].SetChromosomeNumber(index);
+		ss2 << "Chromosome " << index << ": ";
 		for (int genIndex = 0; genIndex < Chromosome::chromSize; genIndex++)
 		{
-			ss << _chromosomeVector[index].GetGen(genIndex) << " ";
+			ss2 << _chromosomeVector[index].GetGen(genIndex) << " ";
 		}
-		ss << "\n";
+		ss2 << "\n";
 	}
-	_log->Log(ss.str());
+	_log->Log(ss2.str());
+	SaveGenerationToFile();
 }
 
 std::vector<Chromosome*> ManageAI::GetParentChromosomes(std::vector<Chromosome*> parentVector,
@@ -410,4 +403,66 @@ std::vector<Chromosome> ManageAI::CrossoverChromosome(Chromosome* firstParent, C
 	childVector.push_back(firstChild);
 	childVector.push_back(secondChild);
 	return childVector;
+}
+
+void ManageAI::SaveGenerationToFile()
+{
+	std::string fileName = "ChromosomeGeneration";
+	std::ofstream fs;
+	fs.open(fileName, std::fstream::in);
+
+	std::stringstream ss;
+	ss << _generation << "\n";
+
+	for(int index = 0; index < numberOfChromosomes; index++)
+	{
+		for (int genIndex = 0; genIndex < Chromosome::chromSize; genIndex++)
+		{
+			ss << _chromosomeVector[index].GetGen(genIndex) << " ";
+		}
+		if (index < numberOfChromosomes - 1)
+		{
+			ss << "\n";
+		}
+	}
+
+	fs << ss.str() << std::endl;
+	fs.close();
+}
+
+void ManageAI::LoadGenerationFromFile()
+{
+	std::ifstream file("ChromosomeGeneration");
+
+	if (file)
+	{
+		for (int index = 0; index < numberOfChromosomes; index++)
+		{
+			_chromosomeVector.push_back(Chromosome(index));
+		}
+		std::stringstream buffer;
+		buffer << file.rdbuf();
+		std::string line;
+		file.close();
+		
+		//Get generation
+		std::getline(buffer, line);
+
+		_generation = std::stoi(line);
+		int chromIndex = 0;
+		std::stringstream ss;
+		ss << "\n\nGeneration nummer " << _generation << ": laddad från fil\n";
+		while (std::getline(buffer, line))
+		{
+			ss << "Chromosome " << chromIndex << ": ";
+			for (int index = 0; index < (line.size()/2); index++)
+			{
+				_chromosomeVector[chromIndex].SetGen(index, line[2*index] - '0');
+				ss << _chromosomeVector[chromIndex].GetGen(index) << " ";
+			}
+			ss << "\n";
+			chromIndex++;
+		}
+		_log->Log(ss.str());
+	}
 }

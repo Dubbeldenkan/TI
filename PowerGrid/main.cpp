@@ -7,7 +7,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	LPSTR lpCmdLine,
 	int nCmdShow)
 {
-	bool randomizeAIChromosomes = true;
+	bool randomizeAIChromosomes = false;
 	char windowName[] = "Power Grid";
 	Input* input = new Input();
 

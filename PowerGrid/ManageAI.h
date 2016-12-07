@@ -46,8 +46,10 @@ private:
 	Chromosome MutateChromosome(Chromosome*, int);
 	Chromosome AverageChromosome(Chromosome*, Chromosome*, int);
 	std::vector<Chromosome> CrossoverChromosome(Chromosome*, Chromosome*, int);
-
 	std::vector<Chromosome*> GetParentChromosomes(std::vector<Chromosome*>, std::vector<int>);
+
+	void SaveGenerationToFile();
+	void LoadGenerationFromFile();
 };
 
 #endif // !MANAGE_AI
