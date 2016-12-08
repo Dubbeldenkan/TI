@@ -50,7 +50,7 @@ public:
 
 private:
 	Color _color;
-	char* _playerName;
+	std::string _playerName;
 	int _numberOfSuppliedCities = 0;
 	int _numberOfCitiesInNetwork = 0;
 	int _amountOfElektro;
@@ -64,6 +64,8 @@ private:
 	int _amountOfGarbage = 0;
 	int _amountOfUran = 0;
 
+	int _playerId;
+
 	const static int GetPayedArray[21];
 
 	BuyResourceStruct _buyResourceStruct;
@@ -74,7 +76,7 @@ private:
 	Logger *_log;
 
 public:
-	Player(char*, Color, bool);
+	Player(std::string, Color, bool, int);
 	~Player() {};
 	int GetNumberOfCitiesInNetwork();
 	int GetNumberOfSuppliedCities();
@@ -86,6 +88,7 @@ public:
 	int GetAmountOfResource(ResourceMarket::Resource);
 	int GetAmountOfResource(PowerPlant::EnergySource);
 
+	int GetId();
 	bool GetPassed();
 	void SetPassed();
 	void ResetPassed();

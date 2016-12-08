@@ -31,7 +31,7 @@ ManageAI::ManageAI(Game* game, std::vector<Player*> playerVector, bool createNew
 	{
 		if (!playerVector[index]->GetHumanPlayer())
 		{
-			AI ai(&_chromosomeVector[_numberOfAIs], game, (playerVector[index])->GetName());
+			AI ai(&_chromosomeVector[_numberOfAIs], game, (playerVector[index])->GetId());
 			_AIVector.push_back(ai);
 			_numberOfAIs++;
 		}
@@ -56,7 +56,7 @@ void ManageAI::DoAction()
 			{
 				for (int aiIndex = 0; aiIndex < _numberOfAIs; aiIndex++)
 				{
-					if (playerVector[index]->GetName() == _AIVector[aiIndex].GetName())
+					if (playerVector[index]->GetId() == _AIVector[aiIndex].GetPlayerId())
 					{
 						_AIVector[aiIndex].SetPlayer(playerVector[index]);
 						break;
@@ -280,16 +280,17 @@ void ManageAI::CreateNewGeneration()
 			newGeneration.push_back(chromVector[1]);
 		}
 	}
+
 	_generation++;
 	std::stringstream ss2;
 	ss2 << "\n\nGeneration nummer " << _generation << ":\n";
 	for (int index = 0; index < numberOfChromosomes; index++)
 	{
 		_chromosomeVector[index].ResetPoints();
-		_chromosomeVector[index].SetChromosomeNumber(index);
 		ss2 << "Chromosome " << index << ": ";
 		for (int genIndex = 0; genIndex < Chromosome::chromSize; genIndex++)
 		{
+			_chromosomeVector[index].SetGen(genIndex, (newGeneration[index].GetGen(genIndex)));
 			ss2 << _chromosomeVector[index].GetGen(genIndex) << " ";
 		}
 		ss2 << "\n";

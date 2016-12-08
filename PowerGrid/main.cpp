@@ -13,8 +13,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
 	HWND hWnd = InitWindow(&hInstance, windowName, input);
 
-	int numberOfPlayers = 6;
-	Game *game = new Game(numberOfPlayers, hWnd);
+	Game *game = new Game(hWnd);
 	
 	input->SetGame(game);
 	ManageAI* manageAI = new ManageAI(game, game->GetPlayerVector(), randomizeAIChromosomes);

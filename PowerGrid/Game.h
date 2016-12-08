@@ -55,7 +55,7 @@ private:
 	bool _gameHasAWinner;
 
 public:
-	Game(int, HWND);
+	Game(HWND);
 	~Game() {};
 
 	void Run();
@@ -87,7 +87,8 @@ public:
 private:
 	void SetNextPlayerInTurn(std::vector<Player*>*, int);
 	void RemovePlayerFromTempVector(std::vector<Player*>*, int);
-	void InitPlayers(int);
+	void InitPlayers();
+	Player::Color GetPlayerColorFromString(std::string);
 	int GetNewCityCost(char*);
 	void PrintDataToLog(int);
 	void CheckAndUpdateForStep2();

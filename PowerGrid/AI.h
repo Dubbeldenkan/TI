@@ -27,17 +27,17 @@ class AI
 	Game* _game;
 	Player* _player;
 	Chromosome* _chrom;
-	char* _playerName;
+	int _playerId;
 	Phase2Struct _p2s;
 	Phase3Struct _p3s;
 public:
 	AI() {};
-	AI(Chromosome*, Game*, char*);
+	AI(Chromosome*, Game*, int);
 	~AI() {};
 
 	void SetPlayer(Player*);
 	Player* GetPlayer();
-	char* GetName();
+	int GetPlayerId();
 
 	void DoAction();
 	void ResetP3S();

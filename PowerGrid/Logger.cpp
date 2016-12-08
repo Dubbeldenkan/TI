@@ -16,7 +16,23 @@ Logger::Logger(char* playerName)
 	time_t now = time(0);
 	char timeChar[26];
 	ctime_s(timeChar, sizeof(timeChar), &now);
-	_fs << std::endl << std::endl << "Spelet startades " << timeChar << std::endl;
+	_fs << std::endl << std::endl << "Filen skapades " << timeChar << std::endl;
+
+	_fs.close();
+}
+
+Logger::Logger(std::string playerName)
+{
+	_fileName += "LogFiles/";
+	_fileName += playerName;
+	_fileName += "LogFile.txt";
+
+	_fs.open(_fileName, std::fstream::in | std::fstream::app);
+
+	time_t now = time(0);
+	char timeChar[26];
+	ctime_s(timeChar, sizeof(timeChar), &now);
+	_fs << std::endl << std::endl << "Filen skapades " << timeChar << std::endl;
 
 	_fs.close();
 }

@@ -1,9 +1,9 @@
 #include "AI.h"
 
-AI::AI(Chromosome* chrom, Game* game, char* playerName)
+AI::AI(Chromosome* chrom, Game* game, int playerId)
 {
 	_chrom = chrom;
-	_playerName = playerName;
+	_playerId = playerId;
 	_game = game;
 
 }
@@ -11,6 +11,11 @@ AI::AI(Chromosome* chrom, Game* game, char* playerName)
 Player* AI::GetPlayer()
 {
 	return _player;
+}
+
+int AI::GetPlayerId()
+{
+	return _playerId;
 }
 
 void AI::SetPlayer(Player* player)
@@ -28,11 +33,6 @@ void AI::ResetP3S()
 	_p3s.consumptionOil = 0;
 	_p3s.consumptionGarbage = 0;
 	_p3s.consumptionUran = 0;
-}
-
-char* AI::GetName()
-{
-	return _playerName;
 }
 
 void AI::DoAction()
@@ -73,6 +73,7 @@ void AI::DoAction()
 
 void AI::Phase2()
 {
+	//TODO gör så att man inte kan bjuda mer än vad man har.
 	if (!_p2s.powerPlantsValuesSet)
 	{
 		for (int index = 0; index < Player::numberOfPowerPlants; index++)

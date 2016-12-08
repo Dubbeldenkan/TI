@@ -3,12 +3,13 @@
 const int Player::GetPayedArray[] = { 10, 22, 33, 44, 54, 64, 73, 82, 90, 98, 
 105, 112, 118, 124, 129, 134, 138, 142, 145, 148, 150};
 
-Player::Player(char* name, Color color, bool humanPlayer)
+Player::Player(std::string name, Color color, bool humanPlayer, int playerId)
 {
 	_amountOfElektro = startValueOfElektro;
 	_playerName = name;
 	_color = color;
 	_humanPlayer = humanPlayer;
+	_playerId = playerId;
 	for (int i = 0; i < numberOfPowerPlants; i++)
 	{
 		_powerPlants[i] = PowerPlant();
@@ -20,6 +21,11 @@ Player::Player(char* name, Color color, bool humanPlayer)
 int Player::GetNumberOfCitiesInNetwork()
 {
 	return _numberOfCitiesInNetwork;
+}
+
+int Player::GetId()
+{
+	return _playerId;
 }
 
 int Player::GetNumberFromHighestPowerPlant()
@@ -37,7 +43,7 @@ int Player::GetNumberFromHighestPowerPlant()
 
 char* Player::GetName()
 {
-	return _playerName;
+	return (char*) _playerName.c_str();
 }
 
 PowerPlant* Player::GetPowerPlant(int index)

@@ -3,57 +3,128 @@
 const int Game::NumberOfCitiesToStep2[] = { 10, 7, 7, 7, 6 };
 const int Game::NumberOfCitiesToEndGame[] = { 21, 17, 17, 15, 14 };
 
-Game::Game(int numberOfPlayers, HWND hWnd)
+Game::Game(HWND hWnd)
 {
 	//init rand
 	srand(time(NULL));
 		
 	std::vector<int> usedRegions;
+	InitPlayers();
 
 	usedRegions.push_back(0);
 	usedRegions.push_back(1);
 	usedRegions.push_back(2);
-	if (numberOfPlayers > 3)
+	if (_numberOfPlayers > 3)
 	{
 		usedRegions.push_back(3);
 	}
-	if (numberOfPlayers > 4)
+	if (_numberOfPlayers > 4)
 	{
 		usedRegions.push_back(4);
 	}
-	for (int index = 0; index < numberOfPlayers; index++)
+	for (int index = 0; index < _numberOfPlayers; index++)
 	{
 		usedRegions.push_back(index);
 	}
-	_numberOfPlayers = numberOfPlayers;
 	_board = new Board(usedRegions, "Map/USAPowerGrid.png");
 	_draw = Draw(&hWnd, _board);
 	_ppm = PowerPlantMarket();
-	_rm = new ResourceMarket(numberOfPlayers, ResourceMarket::USA);
-	InitPlayers(numberOfPlayers);
+	_rm = new ResourceMarket(_numberOfPlayers, ResourceMarket::USA);
 }
 
-void Game::InitPlayers(int numberOfPlayers)
+void Game::InitPlayers()
 {
-	_pv.push_back(Player("Dennis", Player::red, false));
-	_pv.push_back(Player("Alida", Player::blue, false));
-	if (_numberOfPlayers > 2)
+	std::ifstream file("Settings");
+
+	if (file)
 	{
-		_pv.push_back(Player("Edwin", Player::yellow, false));
+		std::stringstream buffer;
+		buffer << file.rdbuf();
+		std::string line;
+		file.close();
+
+		std::getline(buffer, line);
+		_numberOfPlayers = std::min(std::stoi(line), MAX_PLAYERS);
+		std::getline(buffer, line);
+		int numberOfHumanPlayers = std::min(std::stoi(line), _numberOfPlayers);
+
+		int usedColorsArray[MAX_PLAYERS];
+		for (int index = 0; index < MAX_PLAYERS; index++)
+		{
+			usedColorsArray[index] = index;
+		}
+		int playerIndex = 0;
+		while (std::getline(buffer, line))
+		{
+			bool isAI = true;
+			if (numberOfHumanPlayers > playerIndex)
+			{
+				isAI = false;
+			}
+			std::string name = line;
+			std::getline(buffer, line);
+			std::string colorName = line;
+			Player::Color playerColor = GetPlayerColorFromString(colorName);
+			_pv.push_back(Player(name, playerColor, !isAI, playerIndex));
+			for (int index = 0; index < MAX_PLAYERS; index++)
+			{
+				if ((int)playerColor == usedColorsArray[index])
+				{
+					usedColorsArray[index] = -1;
+					break;
+				}
+			}
+			playerIndex++;
+		}
+		for (playerIndex; playerIndex < _numberOfPlayers; playerIndex++)
+		{
+			bool isAI = true;
+			if (numberOfHumanPlayers > playerIndex)
+			{
+				isAI = false;
+			}
+			std::string playerName = "player";
+			playerName += std::to_string(playerIndex + 1);
+			int colorIndex = 0;
+			while (usedColorsArray[colorIndex] == -1)
+			{
+				colorIndex++;
+			}
+			_pv.push_back(Player((char*)playerName.c_str(), 
+				(Player::Color) usedColorsArray[colorIndex], !isAI, playerIndex));
+			usedColorsArray[colorIndex] = -1;
+		}
 	}
-	if (_numberOfPlayers > 3)
+}
+
+Player::Color Game::GetPlayerColorFromString(std::string colorName)
+{
+	Player::Color result = Player::black;
+	if (colorName.compare("Röd") == 0)
 	{
-		_pv.push_back(Player("George", Player::green, false));
+		result = Player::red;
 	}
-	if (_numberOfPlayers > 4)
+	else if (colorName.compare("Blå") == 0)
 	{
-		_pv.push_back(Player("Leia", Player::black, false));
+		result = Player::blue;
 	}
-	if (_numberOfPlayers > 5)
+	else if (colorName.compare("Grön") == 0)
 	{
-		_pv.push_back(Player("Jakob", Player::purple, false));
+		result = Player::green;
 	}
-	_playerInTurn = &_pv[0];
+	else if (colorName.compare("Lila") == 0)
+	{
+		result = Player::purple;
+	}
+	else if (colorName.compare("Gul") == 0)
+	{
+		result = Player::yellow;
+	}
+	else if (colorName.compare("Svart") == 0)
+	{
+		result = Player::black;
+	}
+	return result;
 }
 
 int Game::GetCurrentPhase()

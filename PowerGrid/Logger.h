@@ -17,6 +17,7 @@ class Logger
 public:
 	Logger();
 	Logger(char*);
+	Logger(std::string);
 	~Logger() {};
 
 	void Log(std::string);
