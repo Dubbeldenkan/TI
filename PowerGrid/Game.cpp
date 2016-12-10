@@ -536,6 +536,7 @@ void Game::Phase2()
 			if (_tempPlayerVector.size() > 0)
 			{
 				_gameSubPhase = choosePowerPlant;
+				_playerInTurn = _tempPlayerVector[0];
 			}
 			else
 			{

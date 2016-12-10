@@ -32156,3 +32156,29 @@ Chicago
 Cincinnati
 
 10:55:14   Köpte 2 garbage för 3 elektro
+
+
+Filen skapades Sat Dec 10 11:20:48 2016
+
+
+
+Filen skapades Sat Dec 10 11:21:16 2016
+
+
+
+Filen skapades Sat Dec 10 11:21:45 2016
+
+11:22:40   Köpte kraftverk nr 4 för 5 elektro
+
+
+Filen skapades Sat Dec 10 11:26:55 2016
+
+
+
+Filen skapades Sat Dec 10 11:30:10 2016
+
+
+
+Filen skapades Sat Dec 10 11:30:32 2016
+
+11:30:40   Köpte kraftverk nr 4 för 5 elektro

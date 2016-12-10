@@ -1465,3 +1465,267 @@ Poäng på kromosonerna för spel nummer 2 och generation 6, spelet tog 17 omgångar
 16: 0 poäng lades till, totalt är poängen 0
 13: 0 poäng lades till, totalt är poängen 0
 
+
+
+Filen skapades Sat Dec 10 11:20:49 2016
+
+11:20:49   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+
+
+Filen skapades Sat Dec 10 11:21:16 2016
+
+11:21:16   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+
+
+Filen skapades Sat Dec 10 11:21:46 2016
+
+11:21:46   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+
+
+Filen skapades Sat Dec 10 11:26:55 2016
+
+11:26:55   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+
+
+Filen skapades Sat Dec 10 11:30:11 2016
+
+11:30:11   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+
+
+Filen skapades Sat Dec 10 11:30:32 2016
+
+11:30:32   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
