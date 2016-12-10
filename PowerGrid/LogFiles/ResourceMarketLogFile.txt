@@ -12621,3 +12621,3770 @@ Filen skapades Sat Dec 10 11:30:11 2016
 
 Filen skapades Sat Dec 10 11:30:32 2016
 
+
+
+Filen skapades Sat Dec 10 11:32:40 2016
+
+11:33:47   Marknaden har sålt 4 0
+11:34:52   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:34:52   
+
+Omgång 2
+11:35:25   Marknaden har sålt 6 1
+11:35:46   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 22
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:35:46   
+
+Omgång 3
+11:35:59   Marknaden har sålt 2 0
+11:35:59   Marknaden har sålt 2 1
+11:36:12   Marknaden har sålt 4 0
+11:36:14   Marknaden har sålt 3 1
+11:36:33   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 22
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:36:33   
+
+Omgång 4
+11:37:22   Marknaden har sålt 1 3
+11:37:22   Marknaden har sålt 1 3
+11:37:39   Marknaden har sålt 2 0
+11:37:41   Marknaden har sålt 3 1
+11:38:02   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 8
+11:38:02   
+
+Omgång 5
+11:38:33   Marknaden har sålt 3 1
+11:38:35   Marknaden har sålt 2 0
+11:38:56   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 10
+11:38:56   
+
+Omgång 6
+11:39:25   Marknaden har sålt 1 3
+11:39:25   Marknaden har sålt 1 3
+11:39:45   Marknaden har sålt 2 0
+11:39:50   Marknaden har sålt 3 1
+11:40:29   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 11
+11:40:29   
+
+Omgång 7
+11:41:12   Marknaden har sålt 2 2
+11:41:21   Marknaden har sålt 2 0
+11:41:23   Marknaden har sålt 3 1
+11:41:44   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:41:44   
+
+Omgång 8
+11:42:18   Marknaden har sålt 2 0
+11:42:18   Marknaden har sålt 2 2
+11:42:26   Marknaden har sålt 1 1
+11:42:27   Marknaden har sålt 2 0
+11:43:16   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:43:16   
+
+Omgång 9
+11:43:22   Marknaden har sålt 2 0
+11:43:22   Marknaden har sålt 2 2
+11:43:22   Marknaden har sålt 1 3
+11:43:32   Marknaden har sålt 4 1
+11:43:56   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:43:56   
+
+Omgång 10
+11:44:11   Marknaden har sålt 2 0
+11:44:11   Marknaden har sålt 2 2
+11:44:21   Marknaden har sålt 2 1
+11:44:23   Marknaden har sålt 1 1
+11:44:24   Marknaden har sålt 1 0
+11:44:42   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:44:42   
+
+Omgång 11
+11:45:45   Marknaden har sålt 2 1
+11:45:47   Marknaden har sålt 2 0
+11:45:50   Marknaden har sålt 2 0
+11:45:50   Marknaden har sålt 2 2
+11:46:30   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:46:30   
+
+Omgång 12
+11:47:33   Marknaden har sålt 3 1
+11:47:33   Marknaden har sålt 2 0
+11:47:33   Marknaden har sålt 2 2
+11:47:39   Marknaden har sålt 3 0
+11:47:43   Marknaden har sålt 1 3
+11:47:48   Marknaden har sålt 2 1
+11:49:02   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+
+
+Filen skapades Sat Dec 10 11:49:38 2016
+
+11:49:40   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:49:40   
+
+Omgång 2
+11:49:40   Marknaden har sålt 2 0
+11:49:40   Marknaden har sålt 2 1
+11:49:41   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:49:41   
+
+Omgång 3
+11:49:44   Marknaden har sålt 3 0
+11:49:45   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:49:45   
+
+Omgång 4
+11:49:45   Marknaden har sålt 3 0
+11:49:45   Marknaden har sålt 2 1
+11:49:46   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:49:46   
+
+Omgång 5
+11:49:46   Marknaden har sålt 3 0
+11:49:47   Marknaden har sålt 2 1
+11:49:47   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:49:47   
+
+Omgång 6
+11:49:49   Marknaden har sålt 3 0
+11:49:49   Marknaden har sålt 2 1
+11:49:50   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:49:50   
+
+Omgång 7
+11:49:51   Marknaden har sålt 3 0
+11:49:51   Marknaden har sålt 2 2
+11:49:52   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:49:52   
+
+Omgång 8
+11:49:53   Marknaden har sålt 3 0
+11:49:53   Marknaden har sålt 2 2
+11:49:53   Marknaden har sålt 1 3
+11:49:53   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:49:53   
+
+Omgång 9
+11:49:54   Marknaden har sålt 2 2
+11:49:54   Marknaden har sålt 2 1
+11:49:54   Marknaden har sålt 1 3
+11:49:55   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:49:55   
+
+Omgång 10
+11:49:56   Marknaden har sålt 2 2
+11:49:56   Marknaden har sålt 2 0
+11:49:56   Marknaden har sålt 1 3
+11:49:56   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:49:56   
+
+Omgång 11
+11:49:57   Marknaden har sålt 2 2
+11:49:57   Marknaden har sålt 1 3
+11:49:57   Marknaden har sålt 1 2
+11:49:58   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:49:58   
+
+Omgång 12
+11:49:59   Marknaden har sålt 1 3
+11:49:59   Marknaden har sålt 1 3
+11:49:59   Marknaden har sålt 1 3
+11:49:59   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:49:59   
+
+Omgång 13
+11:50:00   Marknaden har sålt 3 2
+11:50:01   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:50:01   
+
+Omgång 14
+11:50:02   Marknaden har sålt 3 2
+11:50:02   Marknaden har sålt 1 3
+11:50:02   Marknaden har sålt 1 2
+11:50:02   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:02   
+
+Omgång 15
+11:50:03   Marknaden har sålt 2 2
+11:50:03   Marknaden har sålt 3 0
+11:50:03   Marknaden har sålt 1 3
+11:50:04   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:04   
+
+Omgång 16
+11:50:06   Marknaden har sålt 3 2
+11:50:06   Marknaden har sålt 3 0
+11:50:06   Marknaden har sålt 1 1
+11:50:07   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:07   
+
+Omgång 17
+11:50:08   Marknaden har sålt 3 2
+11:50:08   Marknaden har sålt 3 0
+11:50:10   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:10   
+
+Omgång 18
+11:50:10   Marknaden har sålt 3 2
+11:50:10   Marknaden har sålt 3 0
+11:50:11   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:12   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:50:12   
+
+Omgång 2
+11:50:14   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:50:14   
+
+Omgång 3
+11:50:16   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:50:16   
+
+Omgång 4
+11:50:17   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:50:17   
+
+Omgång 5
+11:50:18   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:50:18   
+
+Omgång 6
+11:50:20   Marknaden har sålt 1 2
+11:50:21   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 23
+Uranet har fyllts på med 2 till 12
+11:50:21   
+
+Omgång 7
+11:50:22   Marknaden har sålt 2 2
+11:50:23   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:50:23   
+
+Omgång 8
+11:50:23   Marknaden har sålt 1 2
+11:50:24   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:50:24   
+
+Omgång 9
+11:50:24   Marknaden har sålt 1 2
+11:50:25   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:50:25   
+
+Omgång 10
+11:50:26   Marknaden har sålt 1 2
+11:50:26   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:50:26   
+
+Omgång 11
+11:50:27   Marknaden har sålt 2 2
+11:50:28   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:50:28   
+
+Omgång 12
+11:50:29   Marknaden har sålt 3 2
+11:50:30   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:50:30   
+
+Omgång 13
+11:50:30   Marknaden har sålt 3 2
+11:50:31   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:50:31   
+
+Omgång 14
+11:50:32   Marknaden har sålt 2 2
+11:50:32   Marknaden har sålt 2 0
+11:50:33   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:33   
+
+Omgång 15
+11:50:34   Marknaden har sålt 2 2
+11:50:34   Marknaden har sålt 1 3
+11:50:35   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:35   
+
+Omgång 16
+11:50:35   Marknaden har sålt 3 1
+11:50:36   Marknaden har sålt 2 2
+11:50:36   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:36   
+
+Omgång 17
+11:50:37   Marknaden har sålt 3 1
+11:50:37   Marknaden har sålt 2 2
+11:50:38   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:50:39   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:50:39   
+
+Omgång 2
+11:50:40   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:50:40   
+
+Omgång 3
+11:50:46   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:50:46   
+
+Omgång 4
+11:50:46   Marknaden har sålt 2 1
+11:50:46   Marknaden har sålt 2 0
+11:50:47   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:50:47   
+
+Omgång 5
+11:50:47   Marknaden har sålt 2 1
+11:50:48   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:50:48   
+
+Omgång 6
+11:50:49   Marknaden har sålt 2 1
+11:50:50   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:50:50   
+
+Omgång 7
+11:50:54   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:50:54   
+
+Omgång 8
+11:50:55   Marknaden har sålt 2 1
+11:50:55   Marknaden har sålt 2 0
+11:50:55   Marknaden har sålt 2 1
+11:50:56   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:50:56   
+
+Omgång 9
+11:50:56   Marknaden har sålt 2 1
+11:50:56   Marknaden har sålt 2 0
+11:50:57   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:50:57   
+
+Omgång 10
+11:50:57   Marknaden har sålt 2 1
+11:50:57   Marknaden har sålt 2 0
+11:50:58   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:50:58   
+
+Omgång 11
+11:51:02   Marknaden har sålt 2 1
+11:51:02   Marknaden har sålt 2 0
+11:51:02   Marknaden har sålt 1 3
+11:51:03   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:51:03   
+
+Omgång 12
+11:51:04   Marknaden har sålt 3 2
+11:51:04   Marknaden har sålt 2 0
+11:51:04   Marknaden har sålt 1 3
+11:51:05   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:51:05   
+
+Omgång 13
+11:51:07   Marknaden har sålt 3 2
+11:51:07   Marknaden har sålt 2 0
+11:51:08   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:08   
+
+Omgång 14
+11:51:09   Marknaden har sålt 3 2
+11:51:09   Marknaden har sålt 3 1
+11:51:09   Marknaden har sålt 2 0
+11:51:10   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:10   
+
+Omgång 15
+11:51:11   Marknaden har sålt 3 2
+11:51:11   Marknaden har sålt 3 1
+11:51:12   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:12   
+
+Omgång 16
+11:51:14   Marknaden har sålt 3 2
+11:51:14   Marknaden har sålt 2 1
+11:51:15   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:15   
+
+Omgång 17
+11:51:16   Marknaden har sålt 3 2
+11:51:16   Marknaden har sålt 2 1
+11:51:18   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:19   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:51:19   
+
+Omgång 2
+11:51:20   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:51:20   
+
+Omgång 3
+11:51:22   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:51:22   
+
+Omgång 4
+11:51:23   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:51:23   
+
+Omgång 5
+11:51:24   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:51:24   
+
+Omgång 6
+11:51:26   Marknaden har sålt 2 2
+11:51:27   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 22
+Uranet har fyllts på med 2 till 12
+11:51:27   
+
+Omgång 7
+11:51:27   Marknaden har sålt 2 2
+11:51:28   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 23
+Uranet har fyllts på med 2 till 12
+11:51:28   
+
+Omgång 8
+11:51:29   Marknaden har sålt 2 2
+11:51:30   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:51:30   
+
+Omgång 9
+11:51:31   Marknaden har sålt 2 2
+11:51:31   Marknaden har sålt 2 0
+11:51:32   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:51:32   
+
+Omgång 10
+11:51:33   Marknaden har sålt 2 2
+11:51:33   Marknaden har sålt 2 0
+11:51:33   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:51:33   
+
+Omgång 11
+11:51:34   Marknaden har sålt 2 2
+11:51:34   Marknaden har sålt 2 0
+11:51:34   Marknaden har sålt 1 3
+11:51:35   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:51:35   
+
+Omgång 12
+11:51:36   Marknaden har sålt 2 2
+11:51:36   Marknaden har sålt 2 1
+11:51:36   Marknaden har sålt 2 0
+11:51:37   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:51:37   
+
+Omgång 13
+11:51:37   Marknaden har sålt 2 2
+11:51:37   Marknaden har sålt 2 0
+11:51:38   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:51:38   
+
+Omgång 14
+11:51:39   Marknaden har sålt 2 2
+11:51:39   Marknaden har sålt 2 0
+11:51:40   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:40   
+
+Omgång 15
+11:51:41   Marknaden har sålt 2 2
+11:51:41   Marknaden har sålt 2 1
+11:51:41   Marknaden har sålt 2 0
+11:51:41   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:42   
+
+Omgång 16
+11:51:42   Marknaden har sålt 2 2
+11:51:42   Marknaden har sålt 2 1
+11:51:42   Marknaden har sålt 1 3
+11:51:43   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:43   
+
+Omgång 17
+11:51:44   Marknaden har sålt 2 1
+11:51:44   Marknaden har sålt 1 3
+11:51:44   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:51:46   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:51:46   
+
+Omgång 2
+11:51:47   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:51:47   
+
+Omgång 3
+11:51:48   Marknaden har sålt 3 1
+11:51:49   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:51:49   
+
+Omgång 4
+11:51:49   Marknaden har sålt 3 1
+11:51:50   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:51:50   
+
+Omgång 5
+11:51:51   Marknaden har sålt 3 1
+11:51:51   Marknaden har sålt 2 2
+11:51:52   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 19
+Uranet har fyllts på med 2 till 12
+11:51:52   
+
+Omgång 6
+11:51:56   Marknaden har sålt 3 1
+11:51:56   Marknaden har sålt 2 2
+11:51:57   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 20
+Uranet har fyllts på med 2 till 12
+11:51:57   
+
+Omgång 7
+11:51:58   Marknaden har sålt 3 1
+11:51:58   Marknaden har sålt 3 0
+11:51:58   Marknaden har sålt 2 2
+11:51:58   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 23
+Uranet har fyllts på med 3 till 12
+11:51:58   
+
+Omgång 8
+11:51:59   Marknaden har sålt 3 0
+11:51:59   Marknaden har sålt 2 1
+11:51:59   Marknaden har sålt 2 2
+11:52:00   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:00   
+
+Omgång 9
+11:52:01   Marknaden har sålt 3 0
+11:52:01   Marknaden har sålt 2 1
+11:52:01   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:01   
+
+Omgång 10
+11:52:02   Marknaden har sålt 3 0
+11:52:02   Marknaden har sålt 2 1
+11:52:02   Marknaden har sålt 1 3
+11:52:03   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:03   
+
+Omgång 11
+11:52:04   Marknaden har sålt 3 0
+11:52:04   Marknaden har sålt 2 2
+11:52:04   Marknaden har sålt 2 1
+11:52:04   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:04   
+
+Omgång 12
+11:52:06   Marknaden har sålt 3 0
+11:52:06   Marknaden har sålt 2 1
+11:52:06   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:06   
+
+Omgång 13
+11:52:07   Marknaden har sålt 3 0
+11:52:07   Marknaden har sålt 2 1
+11:52:07   Marknaden har sålt 1 3
+11:52:08   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:52:08   
+
+Omgång 14
+11:52:10   Marknaden har sålt 3 0
+11:52:10   Marknaden har sålt 2 1
+11:52:10   Marknaden har sålt 1 3
+11:52:11   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:52:11   
+
+Omgång 15
+11:52:12   Marknaden har sålt 2 1
+11:52:12   Marknaden har sålt 1 3
+11:52:13   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:52:14   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:52:14   
+
+Omgång 2
+11:52:15   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:52:15   
+
+Omgång 3
+11:52:17   Marknaden har sålt 3 1
+11:52:18   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:52:18   
+
+Omgång 4
+11:52:19   Marknaden har sålt 3 1
+11:52:19   Marknaden har sålt 2 0
+11:52:20   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:52:20   
+
+Omgång 5
+11:52:20   Marknaden har sålt 3 1
+11:52:20   Marknaden har sålt 2 0
+11:52:21   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 23
+Uranet har fyllts på med 3 till 12
+11:52:21   
+
+Omgång 6
+11:52:23   Marknaden har sålt 3 1
+11:52:23   Marknaden har sålt 2 0
+11:52:24   Marknaden har sålt 2 2
+11:52:24   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:24   
+
+Omgång 7
+11:52:25   Marknaden har sålt 2 1
+11:52:25   Marknaden har sålt 2 2
+11:52:25   Marknaden har sålt 1 3
+11:52:26   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:26   
+
+Omgång 8
+11:52:27   Marknaden har sålt 2 1
+11:52:27   Marknaden har sålt 2 0
+11:52:27   Marknaden har sålt 2 2
+11:52:28   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:28   
+
+Omgång 9
+11:52:29   Marknaden har sålt 2 1
+11:52:29   Marknaden har sålt 2 0
+11:52:29   Marknaden har sålt 1 3
+11:52:30   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:30   
+
+Omgång 10
+11:52:31   Marknaden har sålt 3 1
+11:52:31   Marknaden har sålt 2 0
+11:52:32   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:32   
+
+Omgång 11
+11:52:32   Marknaden har sålt 2 1
+11:52:33   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:33   
+
+Omgång 12
+11:52:34   Marknaden har sålt 2 1
+11:52:34   Marknaden har sålt 2 2
+11:52:35   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:52:35   
+
+Omgång 13
+11:52:35   Marknaden har sålt 3 2
+11:52:35   Marknaden har sålt 3 1
+11:52:36   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:52:36   
+
+Omgång 14
+11:52:37   Marknaden har sålt 3 2
+11:52:37   Marknaden har sålt 3 0
+11:52:37   Marknaden har sålt 3 1
+11:52:38   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:52:39   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:52:39   
+
+Omgång 2
+11:52:40   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:52:41   
+
+Omgång 3
+11:52:44   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:52:44   
+
+Omgång 4
+11:52:44   Marknaden har sålt 3 0
+11:52:45   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:52:45   
+
+Omgång 5
+11:52:45   Marknaden har sålt 3 0
+11:52:46   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:52:46   
+
+Omgång 6
+11:52:48   Marknaden har sålt 3 0
+11:52:49   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:52:49   
+
+Omgång 7
+11:52:51   Marknaden har sålt 3 0
+11:52:52   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:52:52   
+
+Omgång 8
+11:52:52   Marknaden har sålt 3 0
+11:52:53   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:52:53   
+
+Omgång 9
+11:52:53   Marknaden har sålt 3 0
+11:52:54   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:52:54   
+
+Omgång 10
+11:52:55   Marknaden har sålt 3 0
+11:52:55   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:56   
+
+Omgång 11
+11:52:56   Marknaden har sålt 2 0
+11:52:57   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:57   
+
+Omgång 12
+11:52:58   Marknaden har sålt 2 2
+11:52:58   Marknaden har sålt 2 0
+11:52:58   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:52:59   
+
+Omgång 13
+11:52:59   Marknaden har sålt 2 2
+11:52:59   Marknaden har sålt 2 0
+11:53:00   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:00   
+
+Omgång 14
+11:53:02   Marknaden har sålt 2 1
+11:53:02   Marknaden har sålt 2 0
+11:53:03   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:53:03   
+
+Omgång 15
+11:53:05   Marknaden har sålt 3 2
+11:53:05   Marknaden har sålt 2 1
+11:53:05   Marknaden har sålt 2 0
+11:53:05   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:53:06   
+
+Omgång 16
+11:53:07   Marknaden har sålt 3 2
+11:53:07   Marknaden har sålt 3 0
+11:53:07   Marknaden har sålt 2 1
+11:53:08   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:53:08   
+
+Omgång 17
+11:53:09   Marknaden har sålt 3 2
+11:53:09   Marknaden har sålt 3 0
+11:53:09   Marknaden har sålt 1 3
+11:53:10   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:53:11   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:53:11   
+
+Omgång 2
+11:53:12   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:53:12   
+
+Omgång 3
+11:53:16   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:53:16   
+
+Omgång 4
+11:53:18   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:53:18   
+
+Omgång 5
+11:53:19   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:53:19   
+
+Omgång 6
+11:53:20   Marknaden har sålt 2 2
+11:53:21   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 22
+Uranet har fyllts på med 2 till 12
+11:53:21   
+
+Omgång 7
+11:53:21   Marknaden har sålt 2 2
+11:53:22   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 23
+Uranet har fyllts på med 2 till 12
+11:53:22   
+
+Omgång 8
+11:53:23   Marknaden har sålt 2 2
+11:53:24   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:24   
+
+Omgång 9
+11:53:25   Marknaden har sålt 2 2
+11:53:26   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:26   
+
+Omgång 10
+11:53:26   Marknaden har sålt 2 2
+11:53:26   Marknaden har sålt 2 0
+11:53:27   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:27   
+
+Omgång 11
+11:53:29   Marknaden har sålt 3 2
+11:53:29   Marknaden har sålt 2 0
+11:53:30   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:31   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:53:31   
+
+Omgång 2
+11:53:32   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:53:32   
+
+Omgång 3
+11:53:35   Marknaden har sålt 2 0
+11:53:36   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:53:36   
+
+Omgång 4
+11:53:37   Marknaden har sålt 2 0
+11:53:38   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:53:38   
+
+Omgång 5
+11:53:38   Marknaden har sålt 2 0
+11:53:38   Marknaden har sålt 1 3
+11:53:39   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 11
+11:53:39   
+
+Omgång 6
+11:53:44   Marknaden har sålt 2 0
+11:53:44   Marknaden har sålt 2 2
+11:53:44   Marknaden har sålt 1 3
+11:53:45   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 22
+Uranet har fyllts på med 2 till 12
+11:53:45   
+
+Omgång 7
+11:53:45   Marknaden har sålt 2 0
+11:53:45   Marknaden har sålt 2 2
+11:53:46   Marknaden har sålt 2 1
+11:53:46   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:46   
+
+Omgång 8
+11:53:48   Marknaden har sålt 2 0
+11:53:48   Marknaden har sålt 2 2
+11:53:48   Marknaden har sålt 2 1
+11:53:49   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:49   
+
+Omgång 9
+11:53:50   Marknaden har sålt 2 0
+11:53:50   Marknaden har sålt 2 2
+11:53:50   Marknaden har sålt 2 1
+11:53:50   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:50   
+
+Omgång 10
+11:53:52   Marknaden har sålt 2 0
+11:53:52   Marknaden har sålt 2 2
+11:53:52   Marknaden har sålt 1 3
+11:53:52   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:52   
+
+Omgång 11
+11:53:54   Marknaden har sålt 2 0
+11:53:54   Marknaden har sålt 2 2
+11:53:55   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:53:55   
+
+Omgång 12
+11:53:57   Marknaden har sålt 2 0
+11:53:57   Marknaden har sålt 2 2
+11:53:58   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:53:58   
+
+Omgång 13
+11:53:59   Marknaden har sålt 2 0
+11:53:59   Marknaden har sålt 2 2
+11:53:59   Marknaden har sålt 1 3
+11:54:00   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:54:02   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:54:02   
+
+Omgång 2
+11:54:03   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:54:03   
+
+Omgång 3
+11:54:05   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:54:05   
+
+Omgång 4
+11:54:06   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:54:06   
+
+Omgång 5
+11:54:07   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:54:07   
+
+Omgång 6
+11:54:09   Marknaden har sålt 2 2
+11:54:10   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 22
+Uranet har fyllts på med 2 till 12
+11:54:10   
+
+Omgång 7
+11:54:10   Marknaden har sålt 2 2
+11:54:11   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 23
+Uranet har fyllts på med 2 till 12
+11:54:11   
+
+Omgång 8
+11:54:12   Marknaden har sålt 3 0
+11:54:12   Marknaden har sålt 2 2
+11:54:12   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:12   
+
+Omgång 9
+11:54:14   Marknaden har sålt 3 0
+11:54:14   Marknaden har sålt 2 2
+11:54:14   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:14   
+
+Omgång 10
+11:54:16   Marknaden har sålt 3 0
+11:54:16   Marknaden har sålt 2 2
+11:54:16   Marknaden har sålt 2 1
+11:54:16   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:16   
+
+Omgång 11
+11:54:17   Marknaden har sålt 3 0
+11:54:17   Marknaden har sålt 3 2
+11:54:18   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:18   
+
+Omgång 12
+11:54:19   Marknaden har sålt 3 0
+11:54:19   Marknaden har sålt 2 2
+11:54:20   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:20   
+
+Omgång 13
+11:54:21   Marknaden har sålt 3 0
+11:54:21   Marknaden har sålt 3 2
+11:54:21   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:54:21   
+
+Omgång 14
+11:54:23   Marknaden har sålt 3 0
+11:54:23   Marknaden har sålt 2 2
+11:54:24   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:54:24   
+
+Omgång 15
+11:54:25   Marknaden har sålt 3 0
+11:54:25   Marknaden har sålt 3 2
+11:54:25   Marknaden har sålt 1 3
+11:54:26   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:54:27   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:54:27   
+
+Omgång 2
+11:54:28   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:54:28   
+
+Omgång 3
+11:54:29   Marknaden har sålt 3 0
+11:54:30   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:54:30   
+
+Omgång 4
+11:54:31   Marknaden har sålt 3 0
+11:54:31   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:54:31   
+
+Omgång 5
+11:54:32   Marknaden har sålt 3 0
+11:54:32   Marknaden har sålt 2 1
+11:54:33   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:54:33   
+
+Omgång 6
+11:54:35   Marknaden har sålt 3 0
+11:54:35   Marknaden har sålt 2 1
+11:54:36   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:54:36   
+
+Omgång 7
+11:54:36   Marknaden har sålt 2 1
+11:54:36   Marknaden har sålt 2 0
+11:54:36   Marknaden har sålt 1 1
+11:54:37   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:37   
+
+Omgång 8
+11:54:39   Marknaden har sålt 2 1
+11:54:39   Marknaden har sålt 2 0
+11:54:39   Marknaden har sålt 1 1
+11:54:39   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:39   
+
+Omgång 9
+11:54:40   Marknaden har sålt 2 0
+11:54:40   Marknaden har sålt 2 1
+11:54:41   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:41   
+
+Omgång 10
+11:54:42   Marknaden har sålt 2 2
+11:54:42   Marknaden har sålt 2 1
+11:54:42   Marknaden har sålt 2 0
+11:54:42   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:42   
+
+Omgång 11
+11:54:43   Marknaden har sålt 2 1
+11:54:43   Marknaden har sålt 2 0
+11:54:43   Marknaden har sålt 1 2
+11:54:44   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:44   
+
+Omgång 12
+11:54:45   Marknaden har sålt 2 2
+11:54:45   Marknaden har sålt 2 1
+11:54:45   Marknaden har sålt 2 0
+11:54:45   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:54:45   
+
+Omgång 13
+11:54:47   Marknaden har sålt 2 1
+11:54:47   Marknaden har sålt 2 0
+11:54:47   Marknaden har sålt 1 3
+11:54:48   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:54:48   
+
+Omgång 14
+11:54:49   Marknaden har sålt 3 0
+11:54:49   Marknaden har sålt 2 1
+11:54:50   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:54:50   
+
+Omgång 15
+11:54:51   Marknaden har sålt 3 0
+11:54:51   Marknaden har sålt 1 3
+11:54:52   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:54:52   
+
+Omgång 16
+11:54:53   Marknaden har sålt 3 0
+11:54:53   Marknaden har sålt 1 3
+11:54:54   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:54:55   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:54:55   
+
+Omgång 2
+11:54:56   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:54:56   
+
+Omgång 3
+11:54:59   Marknaden har sålt 3 1
+11:55:00   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:55:00   
+
+Omgång 4
+11:55:00   Marknaden har sålt 3 1
+11:55:01   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:55:01   
+
+Omgång 5
+11:55:02   Marknaden har sålt 3 1
+11:55:02   Marknaden har sålt 2 0
+11:55:03   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:55:03   
+
+Omgång 6
+11:55:06   Marknaden har sålt 3 1
+11:55:07   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:55:07   
+
+Omgång 7
+11:55:08   Marknaden har sålt 3 1
+11:55:08   Marknaden har sålt 3 0
+11:55:08   Marknaden har sålt 2 1
+11:55:09   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:55:09   
+
+Omgång 8
+11:55:09   Marknaden har sålt 3 0
+11:55:09   Marknaden har sålt 2 1
+11:55:10   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:55:10   
+
+Omgång 9
+11:55:11   Marknaden har sålt 3 0
+11:55:11   Marknaden har sålt 1 3
+11:55:11   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:11   
+
+Omgång 10
+11:55:13   Marknaden har sålt 2 0
+11:55:13   Marknaden har sålt 1 1
+11:55:13   Marknaden har sålt 1 3
+11:55:14   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:14   
+
+Omgång 11
+11:55:15   Marknaden har sålt 3 0
+11:55:15   Marknaden har sålt 2 1
+11:55:15   Marknaden har sålt 1 1
+11:55:16   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:16   
+
+Omgång 12
+11:55:16   Marknaden har sålt 3 0
+11:55:16   Marknaden har sålt 2 1
+11:55:17   Marknaden har sålt 1 1
+11:55:17   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:17   
+
+Omgång 13
+11:55:18   Marknaden har sålt 2 1
+11:55:19   Marknaden har sålt 1 0
+11:55:19   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:55:19   
+
+Omgång 14
+11:55:23   Marknaden har sålt 3 1
+11:55:23   Marknaden har sålt 1 0
+11:55:23   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:55:23   
+
+Omgång 15
+11:55:24   Marknaden har sålt 2 1
+11:55:24   Marknaden har sålt 1 3
+11:55:25   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:55:25   
+
+Omgång 16
+11:55:26   Marknaden har sålt 3 0
+11:55:26   Marknaden har sålt 2 1
+11:55:26   Marknaden har sålt 1 3
+11:55:27   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:55:27   
+
+Omgång 17
+11:55:28   Marknaden har sålt 3 1
+11:55:28   Marknaden har sålt 1 3
+11:55:29   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:55:30   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:55:30   
+
+Omgång 2
+11:55:32   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:55:32   
+
+Omgång 3
+11:55:37   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:55:37   
+
+Omgång 4
+11:55:37   Marknaden har sålt 2 1
+11:55:37   Marknaden har sålt 2 0
+11:55:38   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:55:38   
+
+Omgång 5
+11:55:38   Marknaden har sålt 2 1
+11:55:39   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:55:39   
+
+Omgång 6
+11:55:41   Marknaden har sålt 2 1
+11:55:42   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:55:42   
+
+Omgång 7
+11:55:43   Marknaden har sålt 2 2
+11:55:44   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:55:44   
+
+Omgång 8
+11:55:44   Marknaden har sålt 2 2
+11:55:45   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:45   
+
+Omgång 9
+11:55:46   Marknaden har sålt 2 2
+11:55:46   Marknaden har sålt 1 3
+11:55:46   Marknaden har sålt 1 2
+11:55:47   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:47   
+
+Omgång 10
+11:55:49   Marknaden har sålt 3 0
+11:55:49   Marknaden har sålt 1 2
+11:55:50   Marknaden har sålt 1 3
+11:55:50   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:50   
+
+Omgång 11
+11:55:54   Marknaden har sålt 3 0
+11:55:54   Marknaden har sålt 1 3
+11:55:54   Marknaden har sålt 1 0
+11:55:55   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:55   
+
+Omgång 12
+11:55:55   Marknaden har sålt 2 0
+11:55:55   Marknaden har sålt 2 1
+11:55:55   Marknaden har sålt 1 3
+11:55:56   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:55:56   
+
+Omgång 13
+11:55:59   Marknaden har sålt 3 0
+11:55:59   Marknaden har sålt 1 3
+11:56:00   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:56:00   
+
+Omgång 14
+11:56:01   Marknaden har sålt 2 0
+11:56:01   Marknaden har sålt 1 1
+11:56:02   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:56:02   
+
+Omgång 15
+11:56:07   Marknaden har sålt 2 0
+11:56:07   Marknaden har sålt 1 1
+11:56:07   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:56:08   
+
+Omgång 16
+11:56:11   Marknaden har sålt 3 2
+11:56:11   Marknaden har sålt 3 0
+11:56:11   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:56:12   
+
+Omgång 17
+11:56:14   Marknaden har sålt 3 2
+11:56:14   Marknaden har sålt 3 0
+11:56:15   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:56:26   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:56:26   
+
+Omgång 2
+11:56:27   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:56:27   
+
+Omgång 3
+11:56:30   Marknaden har sålt 3 1
+11:56:31   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:56:31   
+
+Omgång 4
+11:56:33   Marknaden har sålt 3 1
+11:56:33   Marknaden har sålt 2 2
+11:56:34   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 16
+Uranet har fyllts på med 2 till 10
+11:56:34   
+
+Omgång 5
+11:56:35   Marknaden har sålt 3 1
+11:56:35   Marknaden har sålt 2 2
+11:56:35   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 17
+Uranet har fyllts på med 2 till 12
+11:56:35   
+
+Omgång 6
+11:56:37   Marknaden har sålt 2 2
+11:56:37   Marknaden har sålt 2 1
+11:56:37   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 12
+11:56:37   
+
+Omgång 7
+11:56:38   Marknaden har sålt 3 2
+11:56:38   Marknaden har sålt 2 1
+11:56:39   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 20
+Uranet har fyllts på med 3 till 12
+11:56:39   
+
+Omgång 8
+11:56:41   Marknaden har sålt 3 2
+11:56:41   Marknaden har sålt 2 1
+11:56:42   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 22
+Uranet har fyllts på med 3 till 12
+11:56:42   
+
+Omgång 9
+11:56:43   Marknaden har sålt 3 2
+11:56:43   Marknaden har sålt 2 1
+11:56:44   Marknaden har sålt 2 0
+11:56:44   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:56:44   
+
+Omgång 10
+11:56:47   Marknaden har sålt 3 2
+11:56:47   Marknaden har sålt 3 0
+11:56:47   Marknaden har sålt 2 1
+11:56:48   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:56:48   
+
+Omgång 11
+11:56:49   Marknaden har sålt 3 2
+11:56:49   Marknaden har sålt 2 1
+11:56:50   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:56:50   
+
+Omgång 12
+11:56:52   Marknaden har sålt 3 2
+11:56:52   Marknaden har sålt 2 1
+11:56:52   Marknaden har sålt 1 3
+11:56:53   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:56:54   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:56:54   
+
+Omgång 2
+11:56:55   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:56:55   
+
+Omgång 3
+11:56:59   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:56:59   
+
+Omgång 4
+11:57:00   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:57:00   
+
+Omgång 5
+11:57:01   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:57:01   
+
+Omgång 6
+11:57:03   Marknaden har sålt 2 1
+11:57:04   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:57:04   
+
+Omgång 7
+11:57:05   Marknaden har sålt 2 1
+11:57:05   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:57:06   
+
+Omgång 8
+11:57:08   Marknaden har sålt 2 1
+11:57:09   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:57:09   
+
+Omgång 9
+11:57:09   Marknaden har sålt 2 1
+11:57:11   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:57:11   
+
+Omgång 10
+11:57:11   Marknaden har sålt 3 2
+11:57:11   Marknaden har sålt 2 1
+11:57:12   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:57:12   
+
+Omgång 11
+11:57:14   Marknaden har sålt 3 2
+11:57:14   Marknaden har sålt 1 1
+11:57:15   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:57:15   
+
+Omgång 12
+11:57:18   Marknaden har sålt 3 2
+11:57:18   Marknaden har sålt 1 1
+11:57:19   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:57:19   
+
+Omgång 13
+11:57:21   Marknaden har sålt 3 2
+11:57:21   Marknaden har sålt 2 0
+11:57:21   Marknaden har sålt 1 1
+11:57:22   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:57:22   
+
+Omgång 14
+11:57:23   Marknaden har sålt 3 1
+11:57:23   Marknaden har sålt 3 2
+11:57:23   Marknaden har sålt 1 0
+11:57:24   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:57:25   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:57:25   
+
+Omgång 2
+11:57:26   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:57:26   
+
+Omgång 3
+11:57:32   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:57:32   
+
+Omgång 4
+11:57:32   Marknaden har sålt 3 0
+11:57:33   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:57:33   
+
+Omgång 5
+11:57:33   Marknaden har sålt 3 0
+11:57:34   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:57:34   
+
+Omgång 6
+11:57:36   Marknaden har sålt 3 0
+11:57:37   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:57:37   
+
+Omgång 7
+11:57:37   Marknaden har sålt 3 0
+11:57:38   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:57:38   
+
+Omgång 8
+11:57:40   Marknaden har sålt 3 0
+11:57:41   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:57:41   
+
+Omgång 9
+11:57:42   Marknaden har sålt 3 0
+11:57:43   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:57:43   
+
+Omgång 10
+11:57:44   Marknaden har sålt 3 0
+11:57:44   Marknaden har sålt 2 1
+11:57:44   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:57:45   
+
+Omgång 11
+11:57:48   Marknaden har sålt 2 0
+11:57:48   Marknaden har sålt 2 1
+11:57:49   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:57:49   
+
+Omgång 12
+11:57:49   Marknaden har sålt 3 0
+11:57:50   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:57:50   
+
+Omgång 13
+11:57:55   Marknaden har sålt 2 0
+11:57:55   Marknaden har sålt 2 2
+11:57:55   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:57:56   
+
+Omgång 14
+11:57:57   Marknaden har sålt 3 1
+11:57:57   Marknaden har sålt 2 0
+11:57:58   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:57:58   
+
+Omgång 15
+11:57:59   Marknaden har sålt 3 1
+11:57:59   Marknaden har sålt 3 2
+11:57:59   Marknaden har sålt 2 0
+11:58:00   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:58:00   
+
+Omgång 16
+11:58:01   Marknaden har sålt 3 1
+11:58:01   Marknaden har sålt 3 2
+11:58:01   Marknaden har sålt 3 0
+11:58:02   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:58:03   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:58:03   
+
+Omgång 2
+11:58:04   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:58:04   
+
+Omgång 3
+11:58:11   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:58:11   
+
+Omgång 4
+11:58:12   Marknaden har sålt 2 0
+11:58:13   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:58:13   
+
+Omgång 5
+11:58:14   Marknaden har sålt 2 0
+11:58:14   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:58:14   
+
+Omgång 6
+11:58:15   Marknaden har sålt 2 0
+11:58:16   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:58:16   
+
+Omgång 7
+11:58:16   Marknaden har sålt 2 0
+11:58:17   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:58:17   
+
+Omgång 8
+11:58:18   Marknaden har sålt 2 0
+11:58:18   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:58:18   
+
+Omgång 9
+11:58:19   Marknaden har sålt 2 0
+11:58:20   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:58:20   
+
+Omgång 10
+11:58:20   Marknaden har sålt 2 0
+11:58:20   Marknaden har sålt 1 3
+11:58:21   Marknaden har sålt 1 3
+11:58:21   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:58:21   
+
+Omgång 11
+11:58:25   Marknaden har sålt 2 0
+11:58:25   Marknaden har sålt 2 1
+11:58:26   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:58:26   
+
+Omgång 12
+11:58:27   Marknaden har sålt 2 0
+11:58:27   Marknaden har sålt 1 3
+11:58:27   Marknaden har sålt 1 0
+11:58:27   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:58:27   
+
+Omgång 13
+11:58:30   Marknaden har sålt 1 0
+11:58:31   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:58:31   
+
+Omgång 14
+11:58:31   Marknaden har sålt 3 2
+11:58:31   Marknaden har sålt 2 0
+11:58:32   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:58:32   
+
+Omgång 15
+11:58:33   Marknaden har sålt 3 2
+11:58:33   Marknaden har sålt 2 1
+11:58:34   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:58:34   
+
+Omgång 16
+11:58:36   Marknaden har sålt 3 2
+11:58:36   Marknaden har sålt 2 1
+11:58:36   Marknaden har sålt 1 3
+11:58:36   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:58:37   
+
+Omgång 17
+11:58:37   Marknaden har sålt 3 1
+11:58:37   Marknaden har sålt 3 2
+11:58:38   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:58:38   
+
+Omgång 18
+11:58:39   Marknaden har sålt 3 0
+11:58:39   Marknaden har sålt 3 2
+11:58:39   Marknaden har sålt 2 1
+11:58:40   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:58:41   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:58:41   
+
+Omgång 2
+11:58:42   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:58:42   
+
+Omgång 3
+11:58:46   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:58:46   
+
+Omgång 4
+11:58:47   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:58:47   
+
+Omgång 5
+11:58:48   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+11:58:48   
+
+Omgång 6
+11:58:54   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:58:54   
+
+Omgång 7
+11:58:54   Marknaden har sålt 2 1
+11:58:55   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:58:55   
+
+Omgång 8
+11:58:55   Marknaden har sålt 2 1
+11:58:56   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+11:58:56   
+
+Omgång 9
+11:58:57   Marknaden har sålt 2 1
+11:58:58   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:58:58   
+
+Omgång 10
+11:58:58   Marknaden har sålt 2 1
+11:58:59   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:58:59   
+
+Omgång 11
+11:59:01   Marknaden har sålt 2 1
+11:59:02   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:02   
+
+Omgång 12
+11:59:02   Marknaden har sålt 2 1
+11:59:03   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:03   
+
+Omgång 13
+11:59:03   Marknaden har sålt 2 1
+11:59:04   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:04   
+
+Omgång 14
+11:59:05   Marknaden har sålt 2 1
+11:59:06   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:59:06   
+
+Omgång 15
+11:59:08   Marknaden har sålt 3 2
+11:59:08   Marknaden har sålt 2 1
+11:59:09   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:59:09   
+
+Omgång 16
+11:59:10   Marknaden har sålt 3 2
+11:59:10   Marknaden har sålt 2 1
+11:59:11   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:59:11   
+
+Omgång 17
+11:59:11   Marknaden har sålt 3 2
+11:59:11   Marknaden har sålt 2 1
+11:59:12   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:59:14   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:59:14   
+
+Omgång 2
+11:59:15   Marknaden har sålt 3 1
+11:59:15   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:59:15   
+
+Omgång 3
+11:59:18   Marknaden har sålt 3 1
+11:59:19   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:59:19   
+
+Omgång 4
+11:59:22   Marknaden har sålt 3 1
+11:59:22   Marknaden har sålt 1 3
+11:59:22   Marknaden har sålt 1 1
+11:59:23   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 9
+11:59:23   
+
+Omgång 5
+11:59:23   Marknaden har sålt 2 1
+11:59:23   Marknaden har sålt 1 3
+11:59:23   Marknaden har sålt 1 1
+11:59:24   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 10
+11:59:24   
+
+Omgång 6
+11:59:25   Marknaden har sålt 2 1
+11:59:25   Marknaden har sålt 1 3
+11:59:25   Marknaden har sålt 1 1
+11:59:26   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 11
+11:59:26   
+
+Omgång 7
+11:59:26   Marknaden har sålt 2 1
+11:59:26   Marknaden har sålt 1 3
+11:59:27   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:27   
+
+Omgång 8
+11:59:28   Marknaden har sålt 2 0
+11:59:28   Marknaden har sålt 2 1
+11:59:28   Marknaden har sålt 1 3
+11:59:28   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:29   
+
+Omgång 9
+11:59:29   Marknaden har sålt 2 0
+11:59:29   Marknaden har sålt 2 2
+11:59:29   Marknaden har sålt 2 1
+11:59:30   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:30   
+
+Omgång 10
+11:59:31   Marknaden har sålt 2 0
+11:59:31   Marknaden har sålt 2 1
+11:59:31   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:31   
+
+Omgång 11
+11:59:32   Marknaden har sålt 2 0
+11:59:32   Marknaden har sålt 2 1
+11:59:33   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:33   
+
+Omgång 12
+11:59:35   Marknaden har sålt 2 0
+11:59:35   Marknaden har sålt 2 1
+11:59:36   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+11:59:36   
+
+Omgång 13
+11:59:39   Marknaden har sålt 2 0
+11:59:39   Marknaden har sålt 2 1
+11:59:39   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:59:39   
+
+Omgång 14
+11:59:40   Marknaden har sålt 3 2
+11:59:40   Marknaden har sålt 2 1
+11:59:41   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:59:41   
+
+Omgång 15
+11:59:42   Marknaden har sålt 3 2
+11:59:42   Marknaden har sålt 3 0
+11:59:42   Marknaden har sålt 2 1
+11:59:43   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+11:59:44   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+11:59:44   
+
+Omgång 2
+11:59:45   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+11:59:45   
+
+Omgång 3
+11:59:51   Marknaden har sålt 2 0
+11:59:52   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+11:59:52   
+
+Omgång 4
+11:59:53   Marknaden har sålt 2 0
+11:59:53   Marknaden har sålt 2 1
+11:59:53   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+11:59:53   
+
+Omgång 5
+11:59:54   Marknaden har sålt 2 0
+11:59:54   Marknaden har sålt 2 1
+11:59:54   Marknaden har sålt 2 2
+11:59:55   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 19
+Uranet har fyllts på med 2 till 12
+11:59:55   
+
+Omgång 6
+12:00:00   Marknaden har sålt 2 2
+12:00:00   Marknaden har sålt 2 1
+12:00:01   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 20
+Uranet har fyllts på med 2 till 12
+12:00:01   
+
+Omgång 7
+12:00:01   Marknaden har sålt 2 2
+12:00:01   Marknaden har sålt 2 1
+12:00:02   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+12:00:02   
+
+Omgång 8
+12:00:03   Marknaden har sålt 2 2
+12:00:03   Marknaden har sålt 2 1
+12:00:03   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:03   
+
+Omgång 9
+12:00:05   Marknaden har sålt 2 2
+12:00:05   Marknaden har sålt 2 1
+12:00:05   Marknaden har sålt 1 0
+12:00:06   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:06   
+
+Omgång 10
+12:00:10   Marknaden har sålt 2 2
+12:00:10   Marknaden har sålt 2 1
+12:00:11   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:11   
+
+Omgång 11
+12:00:14   Marknaden har sålt 2 2
+12:00:14   Marknaden har sålt 2 1
+12:00:14   Marknaden har sålt 1 3
+12:00:14   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:14   
+
+Omgång 12
+12:00:17   Marknaden har sålt 3 2
+12:00:17   Marknaden har sålt 2 1
+12:00:17   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:18   
+
+Omgång 13
+12:00:20   Marknaden har sålt 2 2
+12:00:20   Marknaden har sålt 2 1
+12:00:20   Marknaden har sålt 1 3
+12:00:21   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:00:21   
+
+Omgång 14
+12:00:23   Marknaden har sålt 3 0
+12:00:23   Marknaden har sålt 3 2
+12:00:23   Marknaden har sålt 2 1
+12:00:24   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:00:24   
+
+Omgång 15
+12:00:24   Marknaden har sålt 3 0
+12:00:24   Marknaden har sålt 3 2
+12:00:25   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:00:25   
+
+Omgång 16
+12:00:26   Marknaden har sålt 3 2
+12:00:27   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:00:27   
+
+Omgång 17
+12:00:27   Marknaden har sålt 3 2
+12:00:27   Marknaden har sålt 1 3
+12:00:28   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:00:29   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+12:00:29   
+
+Omgång 2
+12:00:31   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+12:00:31   
+
+Omgång 3
+12:00:36   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+12:00:36   
+
+Omgång 4
+12:00:36   Marknaden har sålt 3 1
+12:00:37   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+12:00:37   
+
+Omgång 5
+12:00:38   Marknaden har sålt 3 1
+12:00:38   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+12:00:38   
+
+Omgång 6
+12:00:40   Marknaden har sålt 3 1
+12:00:41   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:00:41   
+
+Omgång 7
+12:00:41   Marknaden har sålt 3 1
+12:00:42   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:00:42   
+
+Omgång 8
+12:00:43   Marknaden har sålt 3 1
+12:00:43   Marknaden har sålt 2 0
+12:00:44   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:00:44   
+
+Omgång 9
+12:00:46   Marknaden har sålt 2 0
+12:00:47   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:47   
+
+Omgång 10
+12:00:48   Marknaden har sålt 2 2
+12:00:48   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:48   
+
+Omgång 11
+12:00:51   Marknaden har sålt 2 0
+12:00:51   Marknaden har sålt 2 2
+12:00:52   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:52   
+
+Omgång 12
+12:00:53   Marknaden har sålt 2 0
+12:00:53   Marknaden har sålt 2 2
+12:00:53   Marknaden har sålt 1 3
+12:00:54   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:00:54   
+
+Omgång 13
+12:00:54   Marknaden har sålt 2 0
+12:00:55   Marknaden har sålt 2 2
+12:00:55   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:00:55   
+
+Omgång 14
+12:00:56   Marknaden har sålt 3 2
+12:00:57   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:00:57   
+
+Omgång 15
+12:00:58   Marknaden har sålt 3 2
+12:00:58   Marknaden har sålt 1 3
+12:00:59   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:00:59   
+
+Omgång 16
+12:01:01   Marknaden har sålt 3 2
+12:01:01   Marknaden har sålt 1 3
+12:01:01   Marknaden har sålt 1 3
+12:01:01   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:01:02   
+
+Omgång 17
+12:01:04   Marknaden har sålt 3 2
+12:01:04   Marknaden har sålt 1 3
+12:01:04   Marknaden har sålt 1 2
+12:01:04   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:01:04   
+
+Omgång 18
+12:01:07   Marknaden har sålt 2 2
+12:01:07   Marknaden har sålt 3 0
+12:01:07   Marknaden har sålt 1 3
+12:01:08   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:01:08   
+
+Omgång 19
+12:01:11   Marknaden har sålt 3 2
+12:01:11   Marknaden har sålt 2 0
+12:01:11   Marknaden har sålt 1 3
+12:01:11   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:01:13   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+12:01:13   
+
+Omgång 2
+12:01:14   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+12:01:14   
+
+Omgång 3
+12:01:15   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+12:01:15   
+
+Omgång 4
+12:01:16   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+12:01:16   
+
+Omgång 5
+12:01:18   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+12:01:18   
+
+Omgång 6
+12:01:22   Marknaden har sålt 1 3
+12:01:22   Marknaden har sålt 1 3
+12:01:23   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:01:23   
+
+Omgång 7
+12:01:24   Marknaden har sålt 3 2
+12:01:25   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:01:25   
+
+Omgång 8
+12:01:25   Marknaden har sålt 3 2
+12:01:25   Marknaden har sålt 1 3
+12:01:25   Marknaden har sålt 1 2
+12:01:26   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 23
+Uranet har fyllts på med 2 till 12
+12:01:26   
+
+Omgång 9
+12:01:27   Marknaden har sålt 2 2
+12:01:27   Marknaden har sålt 2 1
+12:01:27   Marknaden har sålt 1 3
+12:01:28   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:01:28   
+
+Omgång 10
+12:01:28   Marknaden har sålt 3 2
+12:01:28   Marknaden har sålt 2 1
+12:01:29   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:01:29   
+
+Omgång 11
+12:01:30   Marknaden har sålt 3 0
+12:01:30   Marknaden har sålt 3 2
+12:01:30   Marknaden har sålt 2 1
+12:01:31   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:01:31   
+
+Omgång 12
+12:01:33   Marknaden har sålt 3 0
+12:01:33   Marknaden har sålt 3 2
+12:01:33   Marknaden har sålt 2 1
+12:01:34   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:01:34   
+
+Omgång 13
+12:01:35   Marknaden har sålt 3 0
+12:01:35   Marknaden har sålt 3 2
+12:01:36   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:01:36   
+
+Omgång 14
+12:01:37   Marknaden har sålt 3 0
+12:01:37   Marknaden har sålt 3 2
+12:01:37   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:01:38   
+
+Omgång 15
+12:01:38   Marknaden har sålt 3 0
+12:01:38   Marknaden har sålt 3 2
+12:01:39   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:01:39   
+
+Omgång 16
+12:01:40   Marknaden har sålt 3 2
+12:01:40   Marknaden har sålt 1 1
+12:01:41   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:01:41   
+
+Omgång 17
+12:01:41   Marknaden har sålt 3 2
+12:01:41   Marknaden har sålt 1 3
+12:01:42   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:01:43   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+12:01:44   
+
+Omgång 2
+12:01:45   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+12:01:45   
+
+Omgång 3
+12:01:50   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+12:01:50   
+
+Omgång 4
+12:01:52   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+12:01:52   
+
+Omgång 5
+12:01:53   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+12:01:53   
+
+Omgång 6
+12:01:54   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:01:54   
+
+Omgång 7
+12:01:55   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:01:55   
+
+Omgång 8
+12:01:58   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:01:58   
+
+Omgång 9
+12:02:00   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:00   
+
+Omgång 10
+12:02:01   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:01   
+
+Omgång 11
+12:02:05   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:05   
+
+Omgång 12
+12:02:07   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:07   
+
+Omgång 13
+12:02:08   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:08   
+
+Omgång 14
+12:02:09   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:09   
+
+Omgång 15
+12:02:10   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:10   
+
+Omgång 16
+12:02:12   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:12   
+
+Omgång 17
+12:02:13   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:13   
+
+Omgång 18
+12:02:14   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:14   
+
+Omgång 19
+12:02:16   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:16   
+
+Omgång 20
+12:02:17   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:17   
+
+Omgång 21
+12:02:18   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:18   
+
+Omgång 22
+12:02:19   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:19   
+
+Omgång 23
+12:02:22   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:22   
+
+Omgång 24
+12:02:23   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:02:24   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+12:02:24   
+
+Omgång 2
+12:02:25   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+12:02:25   
+
+Omgång 3
+12:02:32   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+12:02:32   
+
+Omgång 4
+12:02:33   Marknaden har sålt 2 1
+12:02:33   Marknaden har sålt 2 0
+12:02:34   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+12:02:34   
+
+Omgång 5
+12:02:34   Marknaden har sålt 2 1
+12:02:35   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+12:02:35   
+
+Omgång 6
+12:02:35   Marknaden har sålt 2 1
+12:02:36   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:02:36   
+
+Omgång 7
+12:02:37   Marknaden har sålt 1 1
+12:02:37   Marknaden har sålt 2 0
+12:02:37   Marknaden har sålt 2 1
+12:02:38   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:02:38   
+
+Omgång 8
+12:02:38   Marknaden har sålt 1 1
+12:02:38   Marknaden har sålt 2 0
+12:02:45   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:45   
+
+Omgång 9
+12:02:46   Marknaden har sålt 3 1
+12:02:46   Marknaden har sålt 2 0
+12:02:46   Marknaden har sålt 2 2
+12:02:47   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:47   
+
+Omgång 10
+12:02:48   Marknaden har sålt 3 1
+12:02:48   Marknaden har sålt 2 2
+12:02:49   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:49   
+
+Omgång 11
+12:02:53   Marknaden har sålt 2 1
+12:02:53   Marknaden har sålt 2 2
+12:02:54   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:02:54   
+
+Omgång 12
+12:02:59   Marknaden har sålt 3 1
+12:02:59   Marknaden har sålt 2 2
+12:02:59   Marknaden har sålt 2 0
+12:03:00   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:03:00   
+
+Omgång 13
+12:03:01   Marknaden har sålt 3 1
+12:03:01   Marknaden har sålt 2 0
+12:03:01   Marknaden har sålt 1 0
+12:03:01   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:03:02   
+
+Omgång 14
+12:03:04   Marknaden har sålt 3 1
+12:03:04   Marknaden har sålt 1 0
+12:03:05   Marknaden har sålt 1 3
+12:03:05   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:03:05   
+
+Omgång 15
+12:03:08   Marknaden har sålt 3 1
+12:03:08   Marknaden har sålt 3 2
+12:03:08   Marknaden har sålt 1 0
+12:03:09   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:03:09   
+
+Omgång 16
+12:03:10   Marknaden har sålt 3 0
+12:03:10   Marknaden har sålt 3 1
+12:03:10   Marknaden har sålt 3 2
+12:03:11   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:03:11   
+
+Omgång 17
+12:03:11   Marknaden har sålt 3 1
+12:03:11   Marknaden har sålt 3 2
+12:03:12   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:03:13   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+12:03:13   
+
+Omgång 2
+12:03:15   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+12:03:15   
+
+Omgång 3
+12:03:22   Marknaden har sålt 2 2
+12:03:23   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 13
+Uranet har fyllts på med 2 till 8
+12:03:23   
+
+Omgång 4
+12:03:23   Marknaden har sålt 2 2
+12:03:24   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 14
+Uranet har fyllts på med 2 till 10
+12:03:24   
+
+Omgång 5
+12:03:25   Marknaden har sålt 2 2
+12:03:25   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 12
+12:03:25   
+
+Omgång 6
+12:03:26   Marknaden har sålt 2 2
+12:03:26   Marknaden har sålt 1 3
+12:03:27   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 16
+Uranet har fyllts på med 2 till 12
+12:03:27   
+
+Omgång 7
+12:03:28   Marknaden har sålt 2 2
+12:03:28   Marknaden har sålt 2 1
+12:03:28   Marknaden har sålt 1 3
+12:03:29   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 17
+Uranet har fyllts på med 2 till 12
+12:03:29   
+
+Omgång 8
+12:03:30   Marknaden har sålt 2 1
+12:03:30   Marknaden har sålt 2 0
+12:03:30   Marknaden har sålt 1 3
+12:03:30   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 22
+Uranet har fyllts på med 3 till 12
+12:03:30   
+
+Omgång 9
+12:03:31   Marknaden har sålt 2 1
+12:03:31   Marknaden har sålt 2 0
+12:03:32   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:03:32   
+
+Omgång 10
+12:03:33   Marknaden har sålt 2 1
+12:03:33   Marknaden har sålt 2 0
+12:03:33   Marknaden har sålt 1 3
+12:03:34   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:03:34   
+
+Omgång 11
+12:03:38   Marknaden har sålt 2 1
+12:03:38   Marknaden har sålt 1 3
+12:03:38   Marknaden har sålt 1 3
+12:03:39   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:03:39   
+
+Omgång 12
+12:03:40   Marknaden har sålt 3 2
+12:03:40   Marknaden har sålt 1 3
+12:03:40   Marknaden har sålt 1 3
+12:03:41   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:03:41   
+
+Omgång 13
+12:03:42   Marknaden har sålt 3 2
+12:03:42   Marknaden har sålt 1 3
+12:03:42   Marknaden har sålt 1 3
+12:03:43   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:03:43   
+
+Omgång 14
+12:03:44   Marknaden har sålt 3 2
+12:03:44   Marknaden har sålt 3 0
+12:03:44   Marknaden har sålt 1 3
+12:03:44   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:03:44   
+
+Omgång 15
+12:03:46   Marknaden har sålt 3 1
+12:03:46   Marknaden har sålt 3 2
+12:03:46   Marknaden har sålt 3 0
+12:03:46   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:03:46   
+
+Omgång 16
+12:03:47   Marknaden har sålt 3 1
+12:03:47   Marknaden har sålt 3 2
+12:03:47   Marknaden har sålt 3 0
+12:03:48   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:03:50   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+12:03:50   
+
+Omgång 2
+12:03:50   Marknaden har sålt 2 0
+12:03:50   Marknaden har sålt 2 1
+12:03:51   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+12:03:51   
+
+Omgång 3
+12:03:59   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+12:03:59   
+
+Omgång 4
+12:03:59   Marknaden har sålt 3 0
+12:03:59   Marknaden har sålt 2 1
+12:04:00   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+12:04:00   
+
+Omgång 5
+12:04:00   Marknaden har sålt 3 0
+12:04:00   Marknaden har sålt 2 1
+12:04:02   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+12:04:02   
+
+Omgång 6
+12:04:02   Marknaden har sålt 3 0
+12:04:02   Marknaden har sålt 2 1
+12:04:02   Marknaden har sålt 2 1
+12:04:03   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:04:03   
+
+Omgång 7
+12:04:04   Marknaden har sålt 3 0
+12:04:04   Marknaden har sålt 2 1
+12:04:04   Marknaden har sålt 2 1
+12:04:05   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:04:05   
+
+Omgång 8
+12:04:08   Marknaden har sålt 2 1
+12:04:08   Marknaden har sålt 2 0
+12:04:08   Marknaden har sålt 1 3
+12:04:08   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:04:08   
+
+Omgång 9
+12:04:09   Marknaden har sålt 2 1
+12:04:09   Marknaden har sålt 2 0
+12:04:09   Marknaden har sålt 1 1
+12:04:10   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:04:10   
+
+Omgång 10
+12:04:11   Marknaden har sålt 2 1
+12:04:11   Marknaden har sålt 2 0
+12:04:11   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:04:11   
+
+Omgång 11
+12:04:12   Marknaden har sålt 2 1
+12:04:12   Marknaden har sålt 2 0
+12:04:12   Marknaden har sålt 1 3
+12:04:13   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:04:13   
+
+Omgång 12
+12:04:16   Marknaden har sålt 2 1
+12:04:16   Marknaden har sålt 2 0
+12:04:17   Kolet har fyllts på med 9 till 24
+Oljan har fyllts på med 6 till 24
+Soporna har fyllts på med 5 till 24
+Uranet har fyllts på med 3 till 12
+12:04:17   
+
+Omgång 13
+12:04:18   Marknaden har sålt 2 1
+12:04:18   Marknaden har sålt 2 0
+12:04:18   Marknaden har sålt 1 3
+12:04:19   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:04:19   
+
+Omgång 14
+12:04:20   Marknaden har sålt 3 0
+12:04:20   Marknaden har sålt 2 1
+12:04:20   Marknaden har sålt 2 1
+12:04:20   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:04:21   
+
+Omgång 15
+12:04:21   Marknaden har sålt 3 0
+12:04:21   Marknaden har sålt 2 1
+12:04:22   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:04:22   
+
+Omgång 16
+12:04:23   Marknaden har sålt 2 1
+12:04:24   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:04:24   
+
+Omgång 17
+12:04:25   Marknaden har sålt 1 3
+12:04:25   Marknaden har sålt 1 3
+12:04:26   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:04:26   
+
+Omgång 18
+12:04:27   Marknaden har sålt 1 1
+12:04:28   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:04:28   
+
+Omgång 19
+12:04:28   Marknaden har sålt 3 2
+12:04:29   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+12:04:29   
+
+Omgång 20
+12:04:30   Marknaden har sålt 3 2
+12:04:30   Marknaden har sålt 3 1
+12:04:30   Kolet har fyllts på med 6 till 24
+Oljan har fyllts på med 7 till 24
+Soporna har fyllts på med 6 till 24
+Uranet har fyllts på med 3 till 12
+
+
+Filen skapades Sat Dec 10 12:05:16 2016
+
+12:05:50   Marknaden har sålt 1 0
+12:05:51   Marknaden har sålt 1 0
+12:06:24   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 9
+Uranet har fyllts på med 2 till 4
+12:06:24   
+
+Omgång 2
+12:06:49   Marknaden har sålt 3 0
+12:06:52   Marknaden har sålt 1 0
+12:06:53   Marknaden har sålt 2 1
+12:06:56   Marknaden har sålt 1 1
+12:07:55   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 12
+Uranet har fyllts på med 2 till 6
+12:07:55   
+
+Omgång 3
+12:08:41   Marknaden har sålt 2 0
+12:08:43   Marknaden har sålt 3 1
+12:08:46   Marknaden har sålt 3 1
+12:08:58   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 23
+Soporna har fyllts på med 3 till 15
+Uranet har fyllts på med 2 till 8
+12:08:58   
+
+Omgång 4
+12:09:24   Marknaden har sålt 3 0
+12:09:40   Marknaden har sålt 2 0
+12:09:44   Marknaden har sålt 3 1
+12:10:16   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 18
+Uranet har fyllts på med 2 till 10
+12:10:16   
+
+Omgång 5
+12:14:02   Marknaden har sålt 3 0
+12:18:33   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 21
+Uranet har fyllts på med 2 till 12
+12:18:33   
+
+Omgång 6
+12:20:10   Marknaden har sålt 3 0
+12:20:20   Kolet har fyllts på med 7 till 24
+Oljan har fyllts på med 5 till 24
+Soporna har fyllts på med 3 till 24
+Uranet har fyllts på med 2 till 12
+12:20:20   
+
+Omgång 7
+12:20:22   Marknaden har sålt 3 0
+12:20:22   Marknaden har sålt 2 2
+12:20:22   Marknaden har sålt 1 3
+12:20:22   Marknaden har sålt 1 3
+12:20:22   Marknaden har sålt 2 1
+12:20:22   Marknaden har sålt 3 0
+12:20:22   Marknaden har sålt 2 0
+12:20:22   Marknaden har sålt 2 2

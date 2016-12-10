@@ -73,7 +73,6 @@ void ManageAI::DoAction()
 		for (int index = 0; index < _numberOfAIs; index++)
 		{
 			_AIVector[index].ResetP3S();
-			break;
 		}
 	}
 	else
