@@ -292,12 +292,12 @@ void Draw::DrawPlayer(Player* player, int playerIndex, int gamePhase)
 		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + elektroPos.y, Graphics::BLACK);
 
 	_g->PrintText15(player->GetNumberOfSuppliedCities(), _firstPlayerPos.x + suppliedcitiesPos.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + suppliedcitiesPos.y, Graphics::BLACK);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + suppliedcitiesPos.y, Graphics::WHITE);
 	_g->PrintText15("+", _firstPlayerPos.x + plusPos.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + plusPos.y, Graphics::BLACK);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + plusPos.y, Graphics::WHITE);
 	_g->PrintText15(player->GetNumberOfCitiesInNetwork() - player->GetNumberOfSuppliedCities(),
 		_firstPlayerPos.x + citiesInNetworkPos.x,
-		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + citiesInNetworkPos.y, Graphics::BLACK);
+		_firstPlayerPos.y + playerIndex * _playerPosDiff.y + citiesInNetworkPos.y, Graphics::WHITE);
 	for (int index = 0; index < player->numberOfPowerPlants; index++)
 	{
 		if (player->GetPowerPlant(index)->GetPowerPlantNumber() != 0)
