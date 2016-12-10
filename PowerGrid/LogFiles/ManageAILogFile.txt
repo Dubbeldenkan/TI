@@ -1,332 +1,1467 @@
 
 
-Filen skapades Thu Dec  8 20:16:00 2016
+Filen skapades Thu Dec  8 21:20:41 2016
 
-20:16:00   
+21:20:41   Slumpade kromosoner mellan 0 och 9.
+Chromosome 0: 4 4 1 8 4 2 5 6 0 5 0 9 4
+Chromosome 1: 8 9 6 5 9 3 9 3 3 5 1 6 8
+Chromosome 2: 8 6 2 3 4 4 3 1 3 1 0 3 6
+Chromosome 3: 2 4 3 1 8 3 5 9 2 9 5 9 8
+Chromosome 4: 4 9 0 6 7 5 5 3 3 0 3 3 4
+Chromosome 5: 4 6 6 4 0 8 9 6 7 3 4 0 8
+Chromosome 6: 9 9 0 9 7 9 7 4 1 9 4 8 7
+Chromosome 7: 8 6 3 6 3 2 9 5 6 4 5 5 6
+Chromosome 8: 6 2 6 0 7 1 9 7 5 9 1 0 6
+Chromosome 9: 0 7 2 3 9 5 3 7 5 5 9 0 9
+Chromosome 10: 1 8 0 1 2 3 7 0 8 1 0 2 7
+Chromosome 11: 8 0 0 6 4 5 9 0 9 1 6 3 9
+Chromosome 12: 7 8 7 9 2 4 3 3 6 1 3 1 1
+Chromosome 13: 7 6 4 8 4 2 6 6 1 3 6 0 6
+Chromosome 14: 6 5 5 1 7 8 8 2 7 4 7 4 5
+Chromosome 15: 1 4 9 2 2 8 3 0 3 1 9 0 7
+Chromosome 16: 2 3 5 8 7 1 6 3 3 6 9 4 9
+Chromosome 17: 1 5 8 1 0 0 0 2 7 0 3 8 3
+Chromosome 18: 3 8 6 9 8 1 8 2 5 5 6 2 4
+Chromosome 19: 7 9 8 6 4 9 7 3 8 2 7 2 9
+Chromosome 20: 6 9 8 9 5 8 6 9 2 5 7 6 4
+Chromosome 21: 0 0 7 7 9 9 4 5 4 6 1 9 0
+Chromosome 22: 6 3 2 1 5 9 3 9 0 4 9 0 6
+Chromosome 23: 2 8 5 6 0 9 2 1 9 1 7 2 9
+Chromosome 24: 5 4 4 7 0 6 0 5 0 0 4 2 7
+Chromosome 25: 2 0 3 0 5 2 3 1 4 2 9 2 3
+Chromosome 26: 3 8 2 2 0 2 4 0 0 9 0 8 4
+Chromosome 27: 9 8 2 8 7 6 1 1 0 0 5 1 6
+Chromosome 28: 9 3 4 1 1 0 9 6 6 8 4 1 2
+Chromosome 29: 5 1 5 0 7 2 1 9 3 8 3 6 2
+Chromosome 30: 9 6 2 1 0 7 1 3 9 8 7 5 9
+Chromosome 31: 8 9 7 9 5 4 3 8 8 7 0 4 6
+Chromosome 32: 4 2 9 2 9 3 9 6 8 1 7 8 3
+Chromosome 33: 8 9 0 0 4 4 9 1 1 2 2 4 6
+Chromosome 34: 6 1 3 1 0 3 3 6 3 1 5 3 0
+Chromosome 35: 2 8 7 3 4 2 0 9 6 2 5 5 7
 
-Generation nummer 14: laddad från fil
-Chromosome 0: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 1: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 2: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 3: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 4: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 5: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 6: 3 8 3 3 2 6 4 7 1 1 8 0 8 
-Chromosome 7: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 8: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 9: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 10: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 11: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 12: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 13: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 14: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 15: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 16: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 17: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 18: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 19: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 20: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 21: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 22: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 23: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 24: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 25: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 26: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 27: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 28: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 29: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 30: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 31: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 32: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 33: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 34: 3 8 3 2 2 6 0 7 1 1 8 0 8 
-Chromosome 35: 3 8 3 2 2 6 0 7 1 1 8 0 8 
+21:21:08   
+Poäng på kromosonerna för spel nummer 0 och generation 0, spelet tog 35 omgångar.
+Det saknas vinnare för denna omgång.
+
+21:21:40   
+Poäng på kromosonerna för spel nummer 1 och generation 0, spelet tog 35 omgångar.
+Det saknas vinnare för denna omgång.
+
+21:22:03   
+Poäng på kromosonerna för spel nummer 2 och generation 0, spelet tog 16 omgångar.
+12: 6 poäng lades till, totalt är poängen 6
+17: 4 poäng lades till, totalt är poängen 4
+15: 2 poäng lades till, totalt är poängen 2
+14: 1 poäng lades till, totalt är poängen 1
+16: 0 poäng lades till, totalt är poängen 0
+13: 0 poäng lades till, totalt är poängen 0
+
+21:22:39   
+Poäng på kromosonerna för spel nummer 3 och generation 0, spelet tog 33 omgångar.
+Det saknas vinnare för denna omgång.
+
+21:23:04   
+Poäng på kromosonerna för spel nummer 4 och generation 0, spelet tog 16 omgångar.
+24: 6 poäng lades till, totalt är poängen 6
+27: 4 poäng lades till, totalt är poängen 4
+29: 2 poäng lades till, totalt är poängen 2
+25: 1 poäng lades till, totalt är poängen 1
+26: 0 poäng lades till, totalt är poängen 0
+28: 0 poäng lades till, totalt är poängen 0
+
+21:23:29   
+Poäng på kromosonerna för spel nummer 5 och generation 0, spelet tog 17 omgångar.
+30: 6 poäng lades till, totalt är poängen 6
+35: 4 poäng lades till, totalt är poängen 4
+34: 2 poäng lades till, totalt är poängen 2
+31: 1 poäng lades till, totalt är poängen 1
+32: 0 poäng lades till, totalt är poängen 0
+33: 0 poäng lades till, totalt är poängen 0
+
+21:24:05   
+Poäng på kromosonerna för spel nummer 6 och generation 0, spelet tog 29 omgångar.
+30: 6 poäng lades till, totalt är poängen 12
+24: 4 poäng lades till, totalt är poängen 10
+12: 2 poäng lades till, totalt är poängen 8
+18: 1 poäng lades till, totalt är poängen 1
+0: 0 poäng lades till, totalt är poängen 0
+6: 0 poäng lades till, totalt är poängen 0
+
+21:24:43   
+Poäng på kromosonerna för spel nummer 7 och generation 0, spelet tog 34 omgångar.
+Det saknas vinnare för denna omgång.
+
+21:25:18   
+Poäng på kromosonerna för spel nummer 8 och generation 0, spelet tog 33 omgångar.
+Det saknas vinnare för denna omgång.
+
+21:25:51   
+Poäng på kromosonerna för spel nummer 9 och generation 0, spelet tog 28 omgångar.
+27: 6 poäng lades till, totalt är poängen 10
+15: 4 poäng lades till, totalt är poängen 6
+21: 2 poäng lades till, totalt är poängen 2
+3: 1 poäng lades till, totalt är poängen 1
+9: 0 poäng lades till, totalt är poängen 0
+33: 0 poäng lades till, totalt är poängen 0
+
+21:26:28   
+Poäng på kromosonerna för spel nummer 10 och generation 0, spelet tog 34 omgångar.
+Det saknas vinnare för denna omgång.
+
+21:27:07   
+Poäng på kromosonerna för spel nummer 11 och generation 0, spelet tog 29 omgångar.
+Det saknas vinnare för denna omgång.
+
+21:27:33   
+Poäng på kromosonerna för spel nummer 12 och generation 0, spelet tog 16 omgångar.
+30: 6 poäng lades till, totalt är poängen 18
+27: 4 poäng lades till, totalt är poängen 14
+17: 2 poäng lades till, totalt är poängen 6
+24: 1 poäng lades till, totalt är poängen 11
+12: 0 poäng lades till, totalt är poängen 8
+15: 0 poäng lades till, totalt är poängen 6
+
+21:27:33   
+Resultat efter generation 0: 
+3: 1
+12: 8
+14: 1
+15: 6
+17: 6
+18: 1
+21: 2
+24: 11
+25: 1
+27: 14
+29: 2
+30: 18
+31: 1
+34: 2
+35: 4
+
+21:27:33   
+
+Generation nummer 1:
+Chromosome 0: 9 6 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 1: 9 8 2 8 7 6 1 1 0 0 5 1 6 
+Chromosome 2: 5 4 4 7 0 6 0 5 0 0 4 2 7 
+Chromosome 3: 5 4 4 7 7 6 1 1 0 0 4 2 7 
+Chromosome 4: 9 8 2 8 0 6 0 5 0 0 5 1 6 
+Chromosome 5: 9 8 2 8 0 6 0 5 0 0 4 2 7 
+Chromosome 6: 5 4 4 7 7 6 1 1 0 0 5 1 6 
+Chromosome 7: 9 6 2 8 7 6 1 1 0 0 5 5 9 
+Chromosome 8: 9 8 2 1 0 7 1 3 9 8 7 1 6 
+Chromosome 9: 9 4 4 7 0 6 0 5 0 0 4 2 7 
+Chromosome 10: 5 8 2 8 7 6 1 1 0 0 5 1 6 
+Chromosome 11: 9 8 2 8 7 6 1 1 0 0 5 1 6 
+Chromosome 12: 9 6 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 13: 9 6 2 1 0 7 1 3 0 0 4 2 7 
+Chromosome 14: 5 4 4 7 0 6 0 5 9 8 7 5 9 
+Chromosome 15: 7 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 16: 9 7 2 4 3 6 1 2 4 4 6 3 7 
+Chromosome 17: 9 6 2 8 7 6 1 1 0 0 5 1 6 
+Chromosome 18: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 20: 9 6 2 8 7 6 1 1 0 0 5 1 6 
+Chromosome 21: 9 6 2 1 0 7 1 3 9 8 7 1 6 
+Chromosome 22: 9 8 2 8 7 6 1 1 0 0 5 5 9 
+Chromosome 23: 9 6 2 1 0 7 1 3 9 8 7 5 6 
+Chromosome 24: 9 8 2 8 7 6 1 1 0 0 5 1 9 
+Chromosome 25: 9 1 2 8 7 2 2 1 0 0 7 1 2 
+Chromosome 26: 7 5 3 4 0 6 0 4 4 4 5 3 8 
+Chromosome 27: 9 8 2 8 7 6 1 1 0 0 5 5 9 
+Chromosome 28: 9 6 2 1 0 7 1 3 9 8 7 1 6 
+Chromosome 29: 9 6 2 8 7 6 1 1 0 0 5 1 6 
+Chromosome 30: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 31: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 32: 9 6 2 8 7 6 1 1 0 0 5 1 6 
+Chromosome 33: 7 5 3 4 0 6 0 4 4 4 5 3 8 
+Chromosome 34: 5 6 4 7 0 6 0 5 0 0 4 2 7 
+Chromosome 35: 9 4 2 1 0 7 1 3 9 8 7 5 9 
+
+21:28:05   
+Poäng på kromosonerna för spel nummer 0 och generation 1, spelet tog 18 omgångar.
+30: 6 poäng lades till, totalt är poängen 6
+27: 4 poäng lades till, totalt är poängen 4
+15: 2 poäng lades till, totalt är poängen 2
+17: 1 poäng lades till, totalt är poängen 1
+12: 0 poäng lades till, totalt är poängen 0
+24: 0 poäng lades till, totalt är poängen 0
+
+21:28:42   
+Poäng på kromosonerna för spel nummer 1 och generation 1, spelet tog 27 omgångar.
+9: 6 poäng lades till, totalt är poängen 6
+7: 4 poäng lades till, totalt är poängen 4
+11: 2 poäng lades till, totalt är poängen 2
+8: 1 poäng lades till, totalt är poängen 1
+6: 0 poäng lades till, totalt är poängen 0
+10: 0 poäng lades till, totalt är poängen 0
+
+21:29:05   
+Poäng på kromosonerna för spel nummer 2 och generation 1, spelet tog 13 omgångar.
+12: 6 poäng lades till, totalt är poängen 6
+13: 4 poäng lades till, totalt är poängen 4
+17: 2 poäng lades till, totalt är poängen 3
+15: 1 poäng lades till, totalt är poängen 3
+16: 0 poäng lades till, totalt är poängen 0
+14: 0 poäng lades till, totalt är poängen 0
+
+21:29:34   
+Poäng på kromosonerna för spel nummer 3 och generation 1, spelet tog 17 omgångar.
+18: 6 poäng lades till, totalt är poängen 6
+21: 4 poäng lades till, totalt är poängen 4
+20: 2 poäng lades till, totalt är poängen 2
+22: 1 poäng lades till, totalt är poängen 1
+23: 0 poäng lades till, totalt är poängen 0
+19: 0 poäng lades till, totalt är poängen 0
+
+21:30:02   
+Poäng på kromosonerna för spel nummer 4 och generation 1, spelet tog 18 omgångar.
+24: 6 poäng lades till, totalt är poängen 6
+29: 4 poäng lades till, totalt är poängen 4
+27: 2 poäng lades till, totalt är poängen 6
+26: 1 poäng lades till, totalt är poängen 1
+28: 0 poäng lades till, totalt är poängen 0
+25: 0 poäng lades till, totalt är poängen 0
+
+21:30:33   
+Poäng på kromosonerna för spel nummer 5 och generation 1, spelet tog 18 omgångar.
+30: 6 poäng lades till, totalt är poängen 12
+33: 4 poäng lades till, totalt är poängen 4
+32: 2 poäng lades till, totalt är poängen 2
+35: 1 poäng lades till, totalt är poängen 1
+34: 0 poäng lades till, totalt är poängen 0
+31: 0 poäng lades till, totalt är poängen 0
+
+21:30:57   
+Poäng på kromosonerna för spel nummer 6 och generation 1, spelet tog 15 omgångar.
+0: 6 poäng lades till, totalt är poängen 6
+6: 4 poäng lades till, totalt är poängen 4
+30: 2 poäng lades till, totalt är poängen 14
+18: 1 poäng lades till, totalt är poängen 7
+24: 0 poäng lades till, totalt är poängen 6
+12: 0 poäng lades till, totalt är poängen 6
+
+21:31:15   
+Poäng på kromosonerna för spel nummer 7 och generation 1, spelet tog 11 omgångar.
+31: 6 poäng lades till, totalt är poängen 6
+1: 4 poäng lades till, totalt är poängen 4
+19: 2 poäng lades till, totalt är poängen 2
+13: 1 poäng lades till, totalt är poängen 5
+25: 0 poäng lades till, totalt är poängen 0
+7: 0 poäng lades till, totalt är poängen 4
+
+21:31:55   
+Poäng på kromosonerna för spel nummer 8 och generation 1, spelet tog 18 omgångar.
+2: 6 poäng lades till, totalt är poängen 6
+14: 4 poäng lades till, totalt är poängen 4
+8: 2 poäng lades till, totalt är poängen 3
+32: 1 poäng lades till, totalt är poängen 3
+20: 0 poäng lades till, totalt är poängen 2
+26: 0 poäng lades till, totalt är poängen 1
+
+21:32:32   
+Poäng på kromosonerna för spel nummer 9 och generation 1, spelet tog 23 omgångar.
+15: 6 poäng lades till, totalt är poängen 9
+33: 4 poäng lades till, totalt är poängen 8
+21: 2 poäng lades till, totalt är poängen 6
+9: 1 poäng lades till, totalt är poängen 7
+27: 0 poäng lades till, totalt är poängen 6
+3: 0 poäng lades till, totalt är poängen 0
+
+21:32:55   
+Poäng på kromosonerna för spel nummer 10 och generation 1, spelet tog 13 omgångar.
+4: 6 poäng lades till, totalt är poängen 6
+28: 4 poäng lades till, totalt är poängen 4
+22: 2 poäng lades till, totalt är poängen 3
+16: 1 poäng lades till, totalt är poängen 1
+34: 0 poäng lades till, totalt är poängen 0
+10: 0 poäng lades till, totalt är poängen 0
+
+21:33:25   
+Poäng på kromosonerna för spel nummer 11 och generation 1, spelet tog 16 omgångar.
+5: 6 poäng lades till, totalt är poängen 6
+23: 4 poäng lades till, totalt är poängen 4
+29: 2 poäng lades till, totalt är poängen 6
+11: 1 poäng lades till, totalt är poängen 3
+17: 0 poäng lades till, totalt är poängen 3
+35: 0 poäng lades till, totalt är poängen 1
+
+21:33:51   
+Poäng på kromosonerna för spel nummer 12 och generation 1, spelet tog 15 omgångar.
+30: 6 poäng lades till, totalt är poängen 20
+15: 4 poäng lades till, totalt är poängen 13
+12: 2 poäng lades till, totalt är poängen 8
+18: 1 poäng lades till, totalt är poängen 8
+9: 0 poäng lades till, totalt är poängen 7
+33: 0 poäng lades till, totalt är poängen 8
+
+21:33:51   
+Resultat efter generation 1: 
+0: 6
+1: 4
+2: 6
+4: 6
+5: 6
+6: 4
+7: 4
+8: 3
+9: 7
+11: 3
+12: 8
+13: 5
+14: 4
+15: 13
+16: 1
+17: 3
+18: 8
+19: 2
+20: 2
+21: 6
+22: 3
+23: 4
+24: 6
+26: 1
+27: 6
+28: 4
+29: 6
+30: 20
+31: 6
+32: 3
+33: 8
+35: 1
+
+21:33:51   
+
+Generation nummer 2:
+Chromosome 0: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 1: 7 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 2: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 3: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 5: 7 6 3 7 3 6 0 3 9 0 4 1 6 
+Chromosome 6: 7 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 7: 9 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 9: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 10: 7 6 3 1 0 7 1 3 9 8 7 5 9 
+Chromosome 11: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 12: 7 6 2 1 3 6 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 3 7 0 7 1 3 9 8 7 5 9 
+Chromosome 14: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 15: 7 6 3 7 3 7 1 3 0 0 4 1 6 
+Chromosome 16: 9 8 2 1 0 6 0 3 9 8 7 5 9 
+Chromosome 17: 9 6 3 7 3 6 0 3 0 8 7 5 9 
+Chromosome 18: 7 8 2 1 0 7 1 3 9 0 4 1 6 
+Chromosome 19: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 20: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 21: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 22: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 0 3 9 8 7 5 9 
+Chromosome 25: 7 6 3 7 3 6 1 3 0 0 4 1 6 
+Chromosome 26: 9 8 2 7 3 6 1 3 9 8 7 5 9 
+Chromosome 27: 7 6 3 1 0 7 0 3 0 0 4 1 6 
+Chromosome 28: 7 8 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 6 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 30: 9 8 2 1 3 6 0 3 9 8 7 5 9 
+Chromosome 31: 7 6 3 7 0 7 1 3 0 0 4 1 6 
+Chromosome 32: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 33: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 34: 9 6 3 1 0 7 1 3 9 8 7 5 9 
+Chromosome 35: 9 8 2 1 0 7 1 3 9 8 7 5 9 
 
 
 
-Filen skapades Thu Dec  8 20:16:52 2016
+Filen skapades Thu Dec  8 21:39:19 2016
 
-20:16:52   Slumpade kromosoner mellan 0 och 9.
-Chromosome 0: 6 5 1 6 1 2 0 3 4 1 1 3 4
-Chromosome 1: 8 0 1 5 2 5 4 3 7 3 7 2 5
-Chromosome 2: 5 3 4 5 4 8 8 7 1 4 3 3 0
-Chromosome 3: 0 1 6 3 4 8 8 8 0 3 7 8 5
-Chromosome 4: 6 1 7 4 0 9 5 3 2 1 7 7 5
-Chromosome 5: 3 3 0 5 4 2 4 7 1 4 7 6 1
-Chromosome 6: 4 3 3 1 7 0 7 7 2 6 8 6 6
-Chromosome 7: 1 8 7 2 3 9 1 5 1 1 9 8 1
-Chromosome 8: 1 1 8 1 5 8 8 7 4 5 9 1 2
-Chromosome 9: 0 2 1 2 3 5 2 6 9 4 0 5 3
-Chromosome 10: 2 3 3 7 8 1 6 2 8 4 5 6 6
-Chromosome 11: 2 1 0 1 8 1 3 0 5 6 4 0 5
-Chromosome 12: 3 2 3 7 9 7 5 2 3 1 1 2 1
-Chromosome 13: 9 1 4 3 1 2 9 9 5 5 9 9 8
-Chromosome 14: 9 7 9 7 6 0 5 9 7 0 2 2 7
-Chromosome 15: 0 1 0 6 7 7 6 3 7 8 7 1 8
-Chromosome 16: 5 5 4 6 8 2 5 3 2 0 0 7 0
-Chromosome 17: 3 5 1 2 4 3 7 1 5 2 5 5 6
-Chromosome 18: 3 5 3 1 4 3 8 1 5 9 5 7 4
-Chromosome 19: 6 7 3 0 9 1 7 0 0 3 3 9 5
-Chromosome 20: 1 2 1 6 9 5 1 8 4 7 5 0 3
-Chromosome 21: 7 8 0 4 1 1 0 8 1 5 3 0 0
-Chromosome 22: 5 1 0 1 1 0 7 4 0 3 7 8 0
-Chromosome 23: 3 9 8 7 2 6 8 8 8 9 3 9 8
-Chromosome 24: 5 1 3 1 1 3 8 9 1 2 6 7 1
-Chromosome 25: 7 6 4 6 4 3 2 2 4 7 1 1 6
-Chromosome 26: 6 6 5 8 7 6 9 9 1 0 5 5 9
-Chromosome 27: 0 3 3 9 2 3 4 1 7 6 4 3 2
-Chromosome 28: 3 9 1 2 9 9 4 6 0 4 2 2 6
-Chromosome 29: 8 6 4 8 3 4 9 0 4 2 6 1 1
-Chromosome 30: 9 6 9 3 8 2 0 1 8 0 0 5 8
-Chromosome 31: 5 7 3 0 4 6 0 4 9 7 7 4 1
-Chromosome 32: 8 8 4 8 5 5 7 0 0 5 4 0 7
-Chromosome 33: 0 6 5 0 6 7 3 6 2 3 5 6 1
-Chromosome 34: 0 7 4 0 3 2 8 6 4 2 0 1 4
-Chromosome 35: 5 3 1 9 8 4 3 8 4 6 3 6 6
+21:39:19   
 
-20:17:13   
-Poäng på kromosonerna för spel nummer 0 och generation 0, spelet tog 19 omgångar.
+Generation nummer 2: laddad från fil
+Chromosome 0: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 1: 7 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 2: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 3: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 5: 7 6 3 7 3 6 0 3 9 0 4 1 6 
+Chromosome 6: 7 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 7: 9 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 9: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 10: 7 6 3 1 0 7 1 3 9 8 7 5 9 
+Chromosome 11: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 12: 7 6 2 1 3 6 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 3 7 0 7 1 3 9 8 7 5 9 
+Chromosome 14: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 15: 7 6 3 7 3 7 1 3 0 0 4 1 6 
+Chromosome 16: 9 8 2 1 0 6 0 3 9 8 7 5 9 
+Chromosome 17: 9 6 3 7 3 6 0 3 0 8 7 5 9 
+Chromosome 18: 7 8 2 1 0 7 1 3 9 0 4 1 6 
+Chromosome 19: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 20: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 21: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 22: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 0 3 9 8 7 5 9 
+Chromosome 25: 7 6 3 7 3 6 1 3 0 0 4 1 6 
+Chromosome 26: 9 8 2 7 3 6 1 3 9 8 7 5 9 
+Chromosome 27: 7 6 3 1 0 7 0 3 0 0 4 1 6 
+Chromosome 28: 7 8 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 6 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 30: 9 8 2 1 3 6 0 3 9 8 7 5 9 
+Chromosome 31: 7 6 3 7 0 7 1 3 0 0 4 1 6 
+Chromosome 32: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 33: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 34: 9 6 3 1 0 7 1 3 9 8 7 5 9 
+Chromosome 35: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+
+
+
+Filen skapades Thu Dec  8 21:44:51 2016
+
+21:44:51   
+
+Generation nummer 2: laddad från fil
+Chromosome 0: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 1: 7 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 2: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 3: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 5: 7 6 3 7 3 6 0 3 9 0 4 1 6 
+Chromosome 6: 7 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 7: 9 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 9: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 10: 7 6 3 1 0 7 1 3 9 8 7 5 9 
+Chromosome 11: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 12: 7 6 2 1 3 6 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 3 7 0 7 1 3 9 8 7 5 9 
+Chromosome 14: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 15: 7 6 3 7 3 7 1 3 0 0 4 1 6 
+Chromosome 16: 9 8 2 1 0 6 0 3 9 8 7 5 9 
+Chromosome 17: 9 6 3 7 3 6 0 3 0 8 7 5 9 
+Chromosome 18: 7 8 2 1 0 7 1 3 9 0 4 1 6 
+Chromosome 19: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 20: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 21: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 22: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 0 3 9 8 7 5 9 
+Chromosome 25: 7 6 3 7 3 6 1 3 0 0 4 1 6 
+Chromosome 26: 9 8 2 7 3 6 1 3 9 8 7 5 9 
+Chromosome 27: 7 6 3 1 0 7 0 3 0 0 4 1 6 
+Chromosome 28: 7 8 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 6 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 30: 9 8 2 1 3 6 0 3 9 8 7 5 9 
+Chromosome 31: 7 6 3 7 0 7 1 3 0 0 4 1 6 
+Chromosome 32: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 33: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 34: 9 6 3 1 0 7 1 3 9 8 7 5 9 
+Chromosome 35: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+
+21:45:13   
+Poäng på kromosonerna för spel nummer 0 och generation 2, spelet tog 16 omgångar.
 0: 6 poäng lades till, totalt är poängen 6
 4: 4 poäng lades till, totalt är poängen 4
-3: 2 poäng lades till, totalt är poängen 2
+2: 2 poäng lades till, totalt är poängen 2
+5: 1 poäng lades till, totalt är poängen 1
+3: 0 poäng lades till, totalt är poängen 0
+1: 0 poäng lades till, totalt är poängen 0
+
+21:45:33   
+Poäng på kromosonerna för spel nummer 1 och generation 2, spelet tog 17 omgångar.
+6: 6 poäng lades till, totalt är poängen 6
+11: 4 poäng lades till, totalt är poängen 4
+7: 2 poäng lades till, totalt är poängen 2
+9: 1 poäng lades till, totalt är poängen 1
+10: 0 poäng lades till, totalt är poängen 0
+8: 0 poäng lades till, totalt är poängen 0
+
+
+
+Filen skapades Thu Dec  8 21:58:08 2016
+
+21:58:08   
+
+Generation nummer 2: laddad från fil
+Chromosome 0: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 1: 7 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 2: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 3: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 5: 7 6 3 7 3 6 0 3 9 0 4 1 6 
+Chromosome 6: 7 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 7: 9 6 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 9: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 10: 7 6 3 1 0 7 1 3 9 8 7 5 9 
+Chromosome 11: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 12: 7 6 2 1 3 6 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 3 7 0 7 1 3 9 8 7 5 9 
+Chromosome 14: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 15: 7 6 3 7 3 7 1 3 0 0 4 1 6 
+Chromosome 16: 9 8 2 1 0 6 0 3 9 8 7 5 9 
+Chromosome 17: 9 6 3 7 3 6 0 3 0 8 7 5 9 
+Chromosome 18: 7 8 2 1 0 7 1 3 9 0 4 1 6 
+Chromosome 19: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 20: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 21: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 22: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 0 3 9 8 7 5 9 
+Chromosome 25: 7 6 3 7 3 6 1 3 0 0 4 1 6 
+Chromosome 26: 9 8 2 7 3 6 1 3 9 8 7 5 9 
+Chromosome 27: 7 6 3 1 0 7 0 3 0 0 4 1 6 
+Chromosome 28: 7 8 3 7 3 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 6 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 30: 9 8 2 1 3 6 0 3 9 8 7 5 9 
+Chromosome 31: 7 6 3 7 0 7 1 3 0 0 4 1 6 
+Chromosome 32: 8 7 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 33: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 34: 9 6 3 1 0 7 1 3 9 8 7 5 9 
+Chromosome 35: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+
+21:58:39   
+Poäng på kromosonerna för spel nummer 0 och generation 2, spelet tog 15 omgångar.
+0: 6 poäng lades till, totalt är poängen 6
+4: 4 poäng lades till, totalt är poängen 4
+2: 2 poäng lades till, totalt är poängen 2
 5: 1 poäng lades till, totalt är poängen 1
 1: 0 poäng lades till, totalt är poängen 0
-2: 0 poäng lades till, totalt är poängen 0
+3: 0 poäng lades till, totalt är poängen 0
 
-20:17:42   
-Poäng på kromosonerna för spel nummer 1 och generation 0, spelet tog 34 omgångar.
-Det saknas vinnare för denna omgång.
+21:59:06   
+Poäng på kromosonerna för spel nummer 1 och generation 2, spelet tog 17 omgångar.
+6: 6 poäng lades till, totalt är poängen 6
+7: 4 poäng lades till, totalt är poängen 4
+9: 2 poäng lades till, totalt är poängen 2
+11: 1 poäng lades till, totalt är poängen 1
+10: 0 poäng lades till, totalt är poängen 0
+8: 0 poäng lades till, totalt är poängen 0
 
-20:18:09   
-Poäng på kromosonerna för spel nummer 2 och generation 0, spelet tog 35 omgångar.
-Det saknas vinnare för denna omgång.
+21:59:44   
+Poäng på kromosonerna för spel nummer 2 och generation 2, spelet tog 17 omgångar.
+12: 6 poäng lades till, totalt är poängen 6
+15: 4 poäng lades till, totalt är poängen 4
+13: 2 poäng lades till, totalt är poängen 2
+17: 1 poäng lades till, totalt är poängen 1
+14: 0 poäng lades till, totalt är poängen 0
+16: 0 poäng lades till, totalt är poängen 0
 
-20:18:39   
-Poäng på kromosonerna för spel nummer 3 och generation 0, spelet tog 34 omgångar.
-Det saknas vinnare för denna omgång.
+22:00:13   
+Poäng på kromosonerna för spel nummer 3 och generation 2, spelet tog 15 omgångar.
+18: 6 poäng lades till, totalt är poängen 6
+20: 4 poäng lades till, totalt är poängen 4
+23: 2 poäng lades till, totalt är poängen 2
+19: 1 poäng lades till, totalt är poängen 1
+22: 0 poäng lades till, totalt är poängen 0
+21: 0 poäng lades till, totalt är poängen 0
 
-20:19:07   
-Poäng på kromosonerna för spel nummer 4 och generation 0, spelet tog 35 omgångar.
-Det saknas vinnare för denna omgång.
+22:00:45   
+Poäng på kromosonerna för spel nummer 4 och generation 2, spelet tog 17 omgångar.
+24: 6 poäng lades till, totalt är poängen 6
+25: 4 poäng lades till, totalt är poängen 4
+29: 2 poäng lades till, totalt är poängen 2
+27: 1 poäng lades till, totalt är poängen 1
+26: 0 poäng lades till, totalt är poängen 0
+28: 0 poäng lades till, totalt är poängen 0
 
-20:19:28   
-Poäng på kromosonerna för spel nummer 5 och generation 0, spelet tog 19 omgångar.
+22:01:19   
+Poäng på kromosonerna för spel nummer 5 och generation 2, spelet tog 14 omgångar.
+33: 6 poäng lades till, totalt är poängen 6
+30: 4 poäng lades till, totalt är poängen 4
+32: 2 poäng lades till, totalt är poängen 2
+34: 1 poäng lades till, totalt är poängen 1
+31: 0 poäng lades till, totalt är poängen 0
+35: 0 poäng lades till, totalt är poängen 0
+
+22:01:48   
+Poäng på kromosonerna för spel nummer 6 och generation 2, spelet tog 15 omgångar.
+0: 6 poäng lades till, totalt är poängen 12
+12: 4 poäng lades till, totalt är poängen 10
+24: 2 poäng lades till, totalt är poängen 8
+18: 1 poäng lades till, totalt är poängen 7
+6: 0 poäng lades till, totalt är poängen 6
+30: 0 poäng lades till, totalt är poängen 4
+
+22:02:21   
+Poäng på kromosonerna för spel nummer 7 och generation 2, spelet tog 18 omgångar.
+1: 6 poäng lades till, totalt är poängen 6
+13: 4 poäng lades till, totalt är poängen 6
+31: 2 poäng lades till, totalt är poängen 2
+19: 1 poäng lades till, totalt är poängen 2
+7: 0 poäng lades till, totalt är poängen 4
+25: 0 poäng lades till, totalt är poängen 4
+
+22:02:51   
+Poäng på kromosonerna för spel nummer 8 och generation 2, spelet tog 16 omgångar.
+2: 6 poäng lades till, totalt är poängen 8
+14: 4 poäng lades till, totalt är poängen 4
+20: 2 poäng lades till, totalt är poängen 6
+26: 1 poäng lades till, totalt är poängen 1
+8: 0 poäng lades till, totalt är poängen 0
+32: 0 poäng lades till, totalt är poängen 2
+
+22:03:15   
+Poäng på kromosonerna för spel nummer 9 och generation 2, spelet tog 13 omgångar.
+3: 6 poäng lades till, totalt är poängen 6
+33: 4 poäng lades till, totalt är poängen 10
+9: 2 poäng lades till, totalt är poängen 4
+15: 1 poäng lades till, totalt är poängen 5
+27: 0 poäng lades till, totalt är poängen 1
+21: 0 poäng lades till, totalt är poängen 0
+
+22:03:44   
+Poäng på kromosonerna för spel nummer 10 och generation 2, spelet tog 19 omgångar.
+4: 6 poäng lades till, totalt är poängen 10
+34: 4 poäng lades till, totalt är poängen 5
+22: 2 poäng lades till, totalt är poängen 2
+28: 1 poäng lades till, totalt är poängen 1
+16: 0 poäng lades till, totalt är poängen 0
+10: 0 poäng lades till, totalt är poängen 0
+
+22:04:11   
+Poäng på kromosonerna för spel nummer 11 och generation 2, spelet tog 13 omgångar.
+5: 6 poäng lades till, totalt är poängen 7
+35: 4 poäng lades till, totalt är poängen 4
+23: 2 poäng lades till, totalt är poängen 4
+17: 1 poäng lades till, totalt är poängen 2
+11: 0 poäng lades till, totalt är poängen 1
+29: 0 poäng lades till, totalt är poängen 2
+
+22:04:40   
+Poäng på kromosonerna för spel nummer 12 och generation 2, spelet tog 18 omgångar.
+0: 6 poäng lades till, totalt är poängen 18
+4: 4 poäng lades till, totalt är poängen 14
+2: 2 poäng lades till, totalt är poängen 10
+33: 1 poäng lades till, totalt är poängen 11
+12: 0 poäng lades till, totalt är poängen 10
+24: 0 poäng lades till, totalt är poängen 8
+
+22:04:40   
+Resultat efter generation 2: 
+0: 18
+1: 6
+2: 10
+3: 6
+4: 14
+5: 7
+6: 6
+7: 4
+9: 4
+11: 1
+12: 10
+13: 6
+14: 4
+15: 5
+17: 2
+18: 7
+19: 2
+20: 6
+22: 2
+23: 4
+24: 8
+25: 4
+26: 1
+27: 1
+28: 1
+29: 2
+30: 4
+31: 2
+32: 2
+33: 11
+34: 5
+35: 4
+
+22:04:40   
+
+Generation nummer 3:
+Chromosome 0: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 1: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 2: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 8 8 2 4 1 6 0 3 0 4 5 3 7 
+Chromosome 5: 8 8 2 4 1 6 0 3 0 4 5 3 7 
+Chromosome 6: 8 8 2 4 1 6 0 3 0 4 5 3 7 
+Chromosome 7: 7 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 8: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 9: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 10: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 11: 8 8 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 12: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 13: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 14: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 15: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 16: 7 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 17: 9 8 2 1 3 7 1 3 9 8 7 5 9 
+Chromosome 18: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 20: 8 8 2 4 1 6 0 3 0 4 5 3 7 
+Chromosome 21: 7 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 22: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 23: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 25: 7 8 2 1 3 6 0 3 0 0 4 1 6 
+Chromosome 26: 9 8 2 7 0 7 1 3 0 8 7 5 9 
+Chromosome 27: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 28: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 29: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 30: 8 8 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 32: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 33: 7 8 2 7 0 7 1 3 0 8 7 5 9 
+Chromosome 34: 9 8 2 1 3 6 0 3 0 0 4 1 6 
+Chromosome 35: 9 8 2 7 3 7 1 3 9 8 7 5 9 
+
+22:05:06   
+Poäng på kromosonerna för spel nummer 0 och generation 3, spelet tog 15 omgångar.
+24: 6 poäng lades till, totalt är poängen 6
+0: 4 poäng lades till, totalt är poängen 4
+2: 2 poäng lades till, totalt är poängen 2
+33: 1 poäng lades till, totalt är poängen 1
+12: 0 poäng lades till, totalt är poängen 0
+4: 0 poäng lades till, totalt är poängen 0
+
+22:05:45   
+Poäng på kromosonerna för spel nummer 1 och generation 3, spelet tog 17 omgångar.
+6: 6 poäng lades till, totalt är poängen 6
+10: 4 poäng lades till, totalt är poängen 4
+9: 2 poäng lades till, totalt är poängen 2
+7: 1 poäng lades till, totalt är poängen 1
+11: 0 poäng lades till, totalt är poängen 0
+8: 0 poäng lades till, totalt är poängen 0
+
+22:06:11   
+Poäng på kromosonerna för spel nummer 2 och generation 3, spelet tog 17 omgångar.
+12: 6 poäng lades till, totalt är poängen 6
+15: 4 poäng lades till, totalt är poängen 4
+14: 2 poäng lades till, totalt är poängen 2
+16: 1 poäng lades till, totalt är poängen 1
+13: 0 poäng lades till, totalt är poängen 0
+17: 0 poäng lades till, totalt är poängen 0
+
+22:06:41   
+Poäng på kromosonerna för spel nummer 3 och generation 3, spelet tog 17 omgångar.
+18: 6 poäng lades till, totalt är poängen 6
+21: 4 poäng lades till, totalt är poängen 4
+23: 2 poäng lades till, totalt är poängen 2
+22: 1 poäng lades till, totalt är poängen 1
+19: 0 poäng lades till, totalt är poängen 0
+20: 0 poäng lades till, totalt är poängen 0
+
+22:07:06   
+Poäng på kromosonerna för spel nummer 4 och generation 3, spelet tog 15 omgångar.
+28: 6 poäng lades till, totalt är poängen 6
+24: 4 poäng lades till, totalt är poängen 10
+27: 2 poäng lades till, totalt är poängen 2
+26: 1 poäng lades till, totalt är poängen 1
+29: 0 poäng lades till, totalt är poängen 0
+25: 0 poäng lades till, totalt är poängen 0
+
+22:07:35   
+Poäng på kromosonerna för spel nummer 5 och generation 3, spelet tog 17 omgångar.
 30: 6 poäng lades till, totalt är poängen 6
-31: 4 poäng lades till, totalt är poängen 4
-33: 2 poäng lades till, totalt är poängen 2
+33: 4 poäng lades till, totalt är poängen 5
+31: 2 poäng lades till, totalt är poängen 2
 32: 1 poäng lades till, totalt är poängen 1
 34: 0 poäng lades till, totalt är poängen 0
 35: 0 poäng lades till, totalt är poängen 0
 
-20:19:50   
-Poäng på kromosonerna för spel nummer 6 och generation 0, spelet tog 17 omgångar.
-0: 6 poäng lades till, totalt är poängen 12
-30: 4 poäng lades till, totalt är poängen 10
-12: 2 poäng lades till, totalt är poängen 2
-24: 1 poäng lades till, totalt är poängen 1
-18: 0 poäng lades till, totalt är poängen 0
-6: 0 poäng lades till, totalt är poängen 0
+22:08:04   
+Poäng på kromosonerna för spel nummer 6 och generation 3, spelet tog 17 omgångar.
+0: 6 poäng lades till, totalt är poängen 10
+24: 4 poäng lades till, totalt är poängen 14
+6: 2 poäng lades till, totalt är poängen 8
+12: 1 poäng lades till, totalt är poängen 7
+18: 0 poäng lades till, totalt är poängen 6
+30: 0 poäng lades till, totalt är poängen 6
 
-20:20:16   
-Poäng på kromosonerna för spel nummer 7 och generation 0, spelet tog 28 omgångar.
-Det saknas vinnare för denna omgång.
+22:08:30   
+Poäng på kromosonerna för spel nummer 7 och generation 3, spelet tog 15 omgångar.
+1: 6 poäng lades till, totalt är poängen 6
+19: 4 poäng lades till, totalt är poängen 4
+13: 2 poäng lades till, totalt är poängen 2
+31: 1 poäng lades till, totalt är poängen 3
+25: 0 poäng lades till, totalt är poängen 0
+7: 0 poäng lades till, totalt är poängen 1
 
-20:20:43   
-Poäng på kromosonerna för spel nummer 8 och generation 0, spelet tog 35 omgångar.
-Det saknas vinnare för denna omgång.
-
-20:21:12   
-Poäng på kromosonerna för spel nummer 9 och generation 0, spelet tog 30 omgångar.
-Det saknas vinnare för denna omgång.
-
-20:21:43   
-Poäng på kromosonerna för spel nummer 10 och generation 0, spelet tog 34 omgångar.
-Det saknas vinnare för denna omgång.
-
-20:22:11   
-Poäng på kromosonerna för spel nummer 11 och generation 0, spelet tog 35 omgångar.
-Det saknas vinnare för denna omgång.
-
-20:22:35   
-Poäng på kromosonerna för spel nummer 12 och generation 0, spelet tog 17 omgångar.
-0: 6 poäng lades till, totalt är poängen 18
-30: 4 poäng lades till, totalt är poängen 14
-31: 2 poäng lades till, totalt är poängen 6
-4: 1 poäng lades till, totalt är poängen 5
-3: 0 poäng lades till, totalt är poängen 2
-12: 0 poäng lades till, totalt är poängen 2
-
-20:22:35   
-Resultat efter generation 0: 
-0: 18
-3: 2
-4: 5
-5: 1
-12: 2
-24: 1
-30: 14
-31: 6
-32: 1
-33: 2
-
-20:22:35   
-
-Generation nummer 1:
-Chromosome 0: 6 5 1 6 1 2 0 3 4 1 1 3 4 
-Chromosome 1: 9 6 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 2: 5 7 3 0 4 6 0 4 9 7 7 4 1 
-Chromosome 3: 9 6 9 3 8 2 0 3 8 0 0 5 8 
-Chromosome 4: 6 5 1 6 1 2 0 1 4 1 1 3 4 
-Chromosome 5: 6 5 1 0 4 6 0 4 9 7 7 4 1 
-Chromosome 6: 5 7 3 6 1 2 0 3 4 1 1 3 4 
-Chromosome 7: 9 6 9 6 1 2 0 3 4 1 0 5 8 
-Chromosome 8: 6 5 1 3 8 2 0 1 8 0 1 3 4 
-Chromosome 9: 5 6 9 0 4 6 0 4 9 7 7 4 1 
-Chromosome 10: 9 7 3 3 8 2 0 1 8 0 0 5 8 
-Chromosome 11: 7 5 5 4 4 2 0 2 6 0 0 4 6 
-Chromosome 12: 6 5 1 6 1 2 0 3 4 1 1 3 4 
-Chromosome 13: 9 6 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 14: 6 5 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 15: 9 6 1 6 1 2 0 3 4 1 1 3 4 
-Chromosome 16: 6 5 1 0 4 6 0 4 4 1 1 3 4 
-Chromosome 17: 5 7 3 6 1 2 0 3 9 7 7 4 1 
-Chromosome 18: 6 6 1 6 1 2 0 3 4 1 1 3 4 
-Chromosome 19: 9 5 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 20: 7 6 0 1 5 5 0 1 3 6 0 5 4 
-Chromosome 21: 9 5 1 6 1 2 0 3 4 1 1 3 4 
-Chromosome 22: 6 6 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 23: 7 5 5 4 4 2 0 2 6 0 0 4 6 
-Chromosome 24: 9 6 9 3 4 2 0 1 8 0 0 5 8 
-Chromosome 25: 5 7 3 0 8 6 0 4 9 7 7 4 1 
-Chromosome 26: 6 5 1 6 1 2 0 3 4 1 0 5 4 
-Chromosome 27: 9 6 9 3 8 2 0 1 8 0 1 3 8 
-Chromosome 28: 9 7 9 9 8 6 0 1 8 0 0 5 8 
-Chromosome 29: 5 5 1 6 1 2 0 3 4 1 1 3 4 
-Chromosome 30: 6 7 3 0 4 6 0 4 9 7 7 4 1 
-Chromosome 31: 6 7 1 6 1 2 0 3 4 1 1 3 4 
-Chromosome 32: 5 5 3 0 4 6 0 4 9 7 7 4 1 
-Chromosome 33: 9 6 9 3 8 2 0 3 4 1 1 3 4 
-Chromosome 34: 6 5 1 6 1 2 0 1 8 0 0 5 8 
-Chromosome 35: 6 7 1 6 1 2 0 3 4 1 1 3 4 
-
-20:23:02   
-Poäng på kromosonerna för spel nummer 0 och generation 1, spelet tog 16 omgångar.
-Det saknas vinnare för denna omgång.
-
-20:23:30   
-Poäng på kromosonerna för spel nummer 1 och generation 1, spelet tog 16 omgångar.
-Det saknas vinnare för denna omgång.
-
-20:23:57   
-Poäng på kromosonerna för spel nummer 2 och generation 1, spelet tog 15 omgångar.
-Det saknas vinnare för denna omgång.
-
-20:24:28   
-Poäng på kromosonerna för spel nummer 3 och generation 1, spelet tog 16 omgångar.
-18: 6 poäng lades till, totalt är poängen 6
-21: 4 poäng lades till, totalt är poängen 4
+22:09:05   
+Poäng på kromosonerna för spel nummer 8 och generation 3, spelet tog 16 omgångar.
+2: 6 poäng lades till, totalt är poängen 8
+14: 4 poäng lades till, totalt är poängen 6
 20: 2 poäng lades till, totalt är poängen 2
-19: 1 poäng lades till, totalt är poängen 1
+26: 1 poäng lades till, totalt är poängen 2
+32: 0 poäng lades till, totalt är poängen 1
+8: 0 poäng lades till, totalt är poängen 0
+
+22:09:28   
+Poäng på kromosonerna för spel nummer 9 och generation 3, spelet tog 15 omgångar.
+3: 6 poäng lades till, totalt är poängen 6
+9: 4 poäng lades till, totalt är poängen 6
+27: 2 poäng lades till, totalt är poängen 4
+33: 1 poäng lades till, totalt är poängen 6
+15: 0 poäng lades till, totalt är poängen 4
+21: 0 poäng lades till, totalt är poängen 4
+
+22:10:04   
+Poäng på kromosonerna för spel nummer 10 och generation 3, spelet tog 17 omgångar.
+4: 6 poäng lades till, totalt är poängen 6
+22: 4 poäng lades till, totalt är poängen 5
+34: 2 poäng lades till, totalt är poängen 2
+16: 1 poäng lades till, totalt är poängen 2
+28: 0 poäng lades till, totalt är poängen 6
+10: 0 poäng lades till, totalt är poängen 4
+
+22:10:25   
+Poäng på kromosonerna för spel nummer 11 och generation 3, spelet tog 12 omgångar.
+17: 6 poäng lades till, totalt är poängen 6
+5: 4 poäng lades till, totalt är poängen 4
+35: 2 poäng lades till, totalt är poängen 2
+23: 1 poäng lades till, totalt är poängen 3
+29: 0 poäng lades till, totalt är poängen 0
+11: 0 poäng lades till, totalt är poängen 0
+
+22:10:52   
+Poäng på kromosonerna för spel nummer 12 och generation 3, spelet tog 16 omgångar.
+24: 6 poäng lades till, totalt är poängen 20
+2: 4 poäng lades till, totalt är poängen 12
+9: 2 poäng lades till, totalt är poängen 8
+6: 1 poäng lades till, totalt är poängen 9
+0: 0 poäng lades till, totalt är poängen 10
+12: 0 poäng lades till, totalt är poängen 7
+
+22:10:52   
+Resultat efter generation 3: 
+0: 10
+1: 6
+2: 12
+3: 6
+4: 6
+5: 4
+6: 9
+7: 1
+9: 8
+10: 4
+12: 7
+13: 2
+14: 6
+15: 4
+16: 2
+17: 6
+18: 6
+19: 4
+20: 2
+21: 4
+22: 5
+23: 3
+24: 20
+26: 2
+27: 4
+28: 6
+30: 6
+31: 3
+32: 1
+33: 6
+34: 2
+35: 2
+
+22:10:52   
+
+Generation nummer 4:
+Chromosome 0: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 1: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 2: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 3: 9 8 2 1 0 7 1 3 0 0 4 5 9 
+Chromosome 4: 7 8 2 7 3 6 0 3 9 8 7 1 6 
+Chromosome 5: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 7: 8 8 2 4 1 6 0 3 4 4 5 3 7 
+Chromosome 8: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 9: 7 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 11: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 12: 7 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 13: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 14: 7 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 16: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 17: 7 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 18: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 19: 7 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 20: 9 8 2 1 0 7 1 3 0 8 4 1 9 
+Chromosome 21: 7 8 2 7 3 6 0 3 0 0 7 5 6 
+Chromosome 22: 7 8 2 7 3 6 1 3 9 8 7 5 6 
+Chromosome 23: 9 8 2 1 0 7 0 3 0 0 4 1 9 
+Chromosome 24: 7 8 2 7 3 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 6 0 3 0 0 7 5 9 
+Chromosome 26: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 27: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 28: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 29: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 30: 9 8 2 1 3 7 1 3 0 8 7 5 9 
+Chromosome 31: 7 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 32: 7 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 33: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 34: 8 8 2 4 1 6 0 3 0 4 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+
+22:11:14   
+Poäng på kromosonerna för spel nummer 0 och generation 4, spelet tog 15 omgångar.
+9: 6 poäng lades till, totalt är poängen 6
+24: 4 poäng lades till, totalt är poängen 4
+6: 2 poäng lades till, totalt är poängen 2
+2: 1 poäng lades till, totalt är poängen 1
+0: 0 poäng lades till, totalt är poängen 0
+12: 0 poäng lades till, totalt är poängen 0
+
+22:11:36   
+Poäng på kromosonerna för spel nummer 1 och generation 4, spelet tog 13 omgångar.
+6: 6 poäng lades till, totalt är poängen 8
+8: 4 poäng lades till, totalt är poängen 4
+9: 2 poäng lades till, totalt är poängen 8
+10: 1 poäng lades till, totalt är poängen 1
+11: 0 poäng lades till, totalt är poängen 0
+7: 0 poäng lades till, totalt är poängen 0
+
+22:12:09   
+Poäng på kromosonerna för spel nummer 2 och generation 4, spelet tog 16 omgångar.
+12: 6 poäng lades till, totalt är poängen 6
+15: 4 poäng lades till, totalt är poängen 4
+16: 2 poäng lades till, totalt är poängen 2
+17: 1 poäng lades till, totalt är poängen 1
+14: 0 poäng lades till, totalt är poängen 0
+13: 0 poäng lades till, totalt är poängen 0
+
+22:12:40   
+Poäng på kromosonerna för spel nummer 3 och generation 4, spelet tog 17 omgångar.
+18: 6 poäng lades till, totalt är poängen 6
+19: 4 poäng lades till, totalt är poängen 4
+20: 2 poäng lades till, totalt är poängen 2
+21: 1 poäng lades till, totalt är poängen 1
+22: 0 poäng lades till, totalt är poängen 0
+23: 0 poäng lades till, totalt är poängen 0
+
+22:13:10   
+Poäng på kromosonerna för spel nummer 4 och generation 4, spelet tog 18 omgångar.
+24: 6 poäng lades till, totalt är poängen 10
+29: 4 poäng lades till, totalt är poängen 4
+25: 2 poäng lades till, totalt är poängen 2
+28: 1 poäng lades till, totalt är poängen 1
+27: 0 poäng lades till, totalt är poängen 0
+26: 0 poäng lades till, totalt är poängen 0
+
+22:13:32   
+Poäng på kromosonerna för spel nummer 5 och generation 4, spelet tog 12 omgångar.
+32: 6 poäng lades till, totalt är poängen 6
+30: 4 poäng lades till, totalt är poängen 4
+33: 2 poäng lades till, totalt är poängen 2
+35: 1 poäng lades till, totalt är poängen 1
+34: 0 poäng lades till, totalt är poängen 0
+31: 0 poäng lades till, totalt är poängen 0
+
+22:14:00   
+Poäng på kromosonerna för spel nummer 6 och generation 4, spelet tog 15 omgångar.
+6: 6 poäng lades till, totalt är poängen 14
+0: 4 poäng lades till, totalt är poängen 4
+18: 2 poäng lades till, totalt är poängen 8
+30: 1 poäng lades till, totalt är poängen 5
+24: 0 poäng lades till, totalt är poängen 10
+12: 0 poäng lades till, totalt är poängen 6
+
+22:14:46   
+Poäng på kromosonerna för spel nummer 7 och generation 4, spelet tog 18 omgångar.
+1: 6 poäng lades till, totalt är poängen 6
+25: 4 poäng lades till, totalt är poängen 6
+31: 2 poäng lades till, totalt är poängen 2
+7: 1 poäng lades till, totalt är poängen 1
+19: 0 poäng lades till, totalt är poängen 4
+13: 0 poäng lades till, totalt är poängen 0
+
+22:15:12   
+Poäng på kromosonerna för spel nummer 8 och generation 4, spelet tog 16 omgångar.
+2: 6 poäng lades till, totalt är poängen 7
+14: 4 poäng lades till, totalt är poängen 4
+20: 2 poäng lades till, totalt är poängen 4
+26: 1 poäng lades till, totalt är poängen 1
+8: 0 poäng lades till, totalt är poängen 4
+32: 0 poäng lades till, totalt är poängen 6
+
+22:15:39   
+Poäng på kromosonerna för spel nummer 9 och generation 4, spelet tog 14 omgångar.
+3: 6 poäng lades till, totalt är poängen 6
+33: 4 poäng lades till, totalt är poängen 6
+27: 2 poäng lades till, totalt är poängen 2
+21: 1 poäng lades till, totalt är poängen 2
+15: 0 poäng lades till, totalt är poängen 4
+9: 0 poäng lades till, totalt är poängen 8
+
+22:16:12   
+Poäng på kromosonerna för spel nummer 10 och generation 4, spelet tog 14 omgångar.
+16: 6 poäng lades till, totalt är poängen 8
+4: 4 poäng lades till, totalt är poängen 4
+10: 2 poäng lades till, totalt är poängen 3
+22: 1 poäng lades till, totalt är poängen 1
+28: 0 poäng lades till, totalt är poängen 1
+34: 0 poäng lades till, totalt är poängen 0
+
+22:16:46   
+Poäng på kromosonerna för spel nummer 11 och generation 4, spelet tog 17 omgångar.
+5: 6 poäng lades till, totalt är poängen 6
+35: 4 poäng lades till, totalt är poängen 5
+29: 2 poäng lades till, totalt är poängen 6
+11: 1 poäng lades till, totalt är poängen 1
+17: 0 poäng lades till, totalt är poängen 1
+23: 0 poäng lades till, totalt är poängen 0
+
+22:17:12   
+Poäng på kromosonerna för spel nummer 12 och generation 4, spelet tog 14 omgångar.
+6: 6 poäng lades till, totalt är poängen 20
+2: 4 poäng lades till, totalt är poängen 11
+16: 2 poäng lades till, totalt är poängen 10
+18: 1 poäng lades till, totalt är poängen 9
+24: 0 poäng lades till, totalt är poängen 10
+9: 0 poäng lades till, totalt är poängen 8
+
+22:17:12   
+Resultat efter generation 4: 
+0: 4
+1: 6
+2: 11
+3: 6
+4: 4
+5: 6
+6: 20
+7: 1
+8: 4
+9: 8
+10: 3
+11: 1
+12: 6
+14: 4
+15: 4
+16: 10
+17: 1
+18: 9
+19: 4
+20: 4
+21: 2
+22: 1
+24: 10
+25: 6
+26: 1
+27: 2
+28: 1
+29: 6
+30: 5
+31: 2
+32: 6
+33: 6
+35: 5
+
+22:17:12   
+
+Generation nummer 5:
+Chromosome 0: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 1: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 2: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 3: 9 8 2 7 3 6 0 3 0 0 4 1 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 7 5 6 
+Chromosome 5: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 6: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 7: 9 8 2 1 0 7 1 3 0 8 7 1 6 
+Chromosome 8: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 9: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 11: 9 8 2 7 3 6 0 3 0 0 7 5 9 
+Chromosome 12: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 13: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 14: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 16: 9 8 2 7 3 6 0 3 0 0 4 1 9 
+Chromosome 17: 9 8 2 1 0 7 1 3 9 8 7 5 6 
+Chromosome 18: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 20: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 7 3 6 1 3 0 8 7 5 9 
+Chromosome 22: 9 8 2 7 0 7 1 3 0 8 7 1 6 
+Chromosome 23: 9 8 2 1 3 6 0 3 0 0 4 5 9 
+Chromosome 24: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 25: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 26: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 27: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 28: 9 8 2 1 0 7 1 3 9 8 7 5 9 
+Chromosome 29: 9 8 2 1 0 7 1 3 0 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 0 4 1 9 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 8 7 5 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 5 3 7 
+Chromosome 34: 9 8 2 1 3 6 0 3 0 8 7 5 9 
+Chromosome 35: 9 8 2 7 0 7 1 3 9 0 4 1 6 
+
+22:17:57   
+Poäng på kromosonerna för spel nummer 0 och generation 5, spelet tog 18 omgångar.
+6: 6 poäng lades till, totalt är poängen 6
+24: 4 poäng lades till, totalt är poängen 4
+18: 2 poäng lades till, totalt är poängen 2
+9: 1 poäng lades till, totalt är poängen 1
+2: 0 poäng lades till, totalt är poängen 0
+16: 0 poäng lades till, totalt är poängen 0
+
+22:18:30   
+Poäng på kromosonerna för spel nummer 1 och generation 5, spelet tog 16 omgångar.
+6: 6 poäng lades till, totalt är poängen 12
+7: 4 poäng lades till, totalt är poängen 4
+9: 2 poäng lades till, totalt är poängen 3
+10: 1 poäng lades till, totalt är poängen 1
+11: 0 poäng lades till, totalt är poängen 0
+8: 0 poäng lades till, totalt är poängen 0
+
+22:18:56   
+Poäng på kromosonerna för spel nummer 2 och generation 5, spelet tog 13 omgångar.
+15: 6 poäng lades till, totalt är poängen 6
+12: 4 poäng lades till, totalt är poängen 4
+13: 2 poäng lades till, totalt är poängen 2
+17: 1 poäng lades till, totalt är poängen 1
+16: 0 poäng lades till, totalt är poängen 0
+14: 0 poäng lades till, totalt är poängen 0
+
+22:19:24   
+Poäng på kromosonerna för spel nummer 3 och generation 5, spelet tog 16 omgångar.
+18: 6 poäng lades till, totalt är poängen 8
+21: 4 poäng lades till, totalt är poängen 4
+19: 2 poäng lades till, totalt är poängen 2
+20: 1 poäng lades till, totalt är poängen 1
 23: 0 poäng lades till, totalt är poängen 0
 22: 0 poäng lades till, totalt är poängen 0
 
-20:24:56   
-Poäng på kromosonerna för spel nummer 4 och generation 1, spelet tog 15 omgångar.
-24: 6 poäng lades till, totalt är poängen 6
+22:19:52   
+Poäng på kromosonerna för spel nummer 4 och generation 5, spelet tog 17 omgångar.
+24: 6 poäng lades till, totalt är poängen 10
 27: 4 poäng lades till, totalt är poängen 4
-26: 2 poäng lades till, totalt är poängen 2
-29: 1 poäng lades till, totalt är poängen 1
-25: 0 poäng lades till, totalt är poängen 0
+25: 2 poäng lades till, totalt är poängen 2
+26: 1 poäng lades till, totalt är poängen 1
 28: 0 poäng lades till, totalt är poängen 0
+29: 0 poäng lades till, totalt är poängen 0
 
-20:25:21   
-Poäng på kromosonerna för spel nummer 5 och generation 1, spelet tog 18 omgångar.
-Det saknas vinnare för denna omgång.
+22:20:29   
+Poäng på kromosonerna för spel nummer 5 och generation 5, spelet tog 15 omgångar.
+30: 6 poäng lades till, totalt är poängen 6
+34: 4 poäng lades till, totalt är poängen 4
+35: 2 poäng lades till, totalt är poängen 2
+32: 1 poäng lades till, totalt är poängen 1
+31: 0 poäng lades till, totalt är poängen 0
+33: 0 poäng lades till, totalt är poängen 0
 
-20:25:46   
-Poäng på kromosonerna för spel nummer 6 och generation 1, spelet tog 16 omgångar.
-Det saknas vinnare för denna omgång.
+22:21:00   
+Poäng på kromosonerna för spel nummer 6 och generation 5, spelet tog 17 omgångar.
+0: 6 poäng lades till, totalt är poängen 6
+12: 4 poäng lades till, totalt är poängen 8
+18: 2 poäng lades till, totalt är poängen 10
+6: 1 poäng lades till, totalt är poängen 13
+24: 0 poäng lades till, totalt är poängen 10
+30: 0 poäng lades till, totalt är poängen 6
 
-20:26:11   
-Poäng på kromosonerna för spel nummer 7 och generation 1, spelet tog 15 omgångar.
+22:21:28   
+Poäng på kromosonerna för spel nummer 7 och generation 5, spelet tog 17 omgångar.
 1: 6 poäng lades till, totalt är poängen 6
-19: 4 poäng lades till, totalt är poängen 5
-31: 2 poäng lades till, totalt är poängen 2
-13: 1 poäng lades till, totalt är poängen 1
-7: 0 poäng lades till, totalt är poängen 0
-25: 0 poäng lades till, totalt är poängen 0
+31: 4 poäng lades till, totalt är poängen 4
+7: 2 poäng lades till, totalt är poängen 6
+25: 1 poäng lades till, totalt är poängen 3
+19: 0 poäng lades till, totalt är poängen 2
+13: 0 poäng lades till, totalt är poängen 2
 
-20:26:34   
-Poäng på kromosonerna för spel nummer 8 och generation 1, spelet tog 17 omgångar.
-Det saknas vinnare för denna omgång.
+22:22:04   
+Poäng på kromosonerna för spel nummer 8 och generation 5, spelet tog 15 omgångar.
+2: 6 poäng lades till, totalt är poängen 6
+26: 4 poäng lades till, totalt är poängen 5
+20: 2 poäng lades till, totalt är poängen 3
+32: 1 poäng lades till, totalt är poängen 2
+14: 0 poäng lades till, totalt är poängen 0
+8: 0 poäng lades till, totalt är poängen 0
 
-20:27:00   
-Poäng på kromosonerna för spel nummer 9 och generation 1, spelet tog 17 omgångar.
-Det saknas vinnare för denna omgång.
+22:22:33   
+Poäng på kromosonerna för spel nummer 9 och generation 5, spelet tog 16 omgångar.
+3: 6 poäng lades till, totalt är poängen 6
+15: 4 poäng lades till, totalt är poängen 10
+21: 2 poäng lades till, totalt är poängen 6
+9: 1 poäng lades till, totalt är poängen 4
+33: 0 poäng lades till, totalt är poängen 0
+27: 0 poäng lades till, totalt är poängen 4
 
-20:27:35   
-Poäng på kromosonerna för spel nummer 10 och generation 1, spelet tog 17 omgångar.
-Det saknas vinnare för denna omgång.
+22:23:05   
+Poäng på kromosonerna för spel nummer 10 och generation 5, spelet tog 18 omgångar.
+4: 6 poäng lades till, totalt är poängen 6
+22: 4 poäng lades till, totalt är poängen 4
+28: 2 poäng lades till, totalt är poängen 2
+16: 1 poäng lades till, totalt är poängen 1
+10: 0 poäng lades till, totalt är poängen 1
+34: 0 poäng lades till, totalt är poängen 4
 
-20:27:59   
-Poäng på kromosonerna för spel nummer 11 och generation 1, spelet tog 16 omgångar.
-Det saknas vinnare för denna omgång.
+22:23:34   
+Poäng på kromosonerna för spel nummer 11 och generation 5, spelet tog 16 omgångar.
+5: 6 poäng lades till, totalt är poängen 6
+35: 4 poäng lades till, totalt är poängen 6
+17: 2 poäng lades till, totalt är poängen 3
+11: 1 poäng lades till, totalt är poängen 1
+29: 0 poäng lades till, totalt är poängen 0
+23: 0 poäng lades till, totalt är poängen 0
 
-20:28:34   
-Poäng på kromosonerna för spel nummer 12 och generation 1, spelet tog 18 omgångar.
-Det saknas vinnare för denna omgång.
+22:24:07   
+Poäng på kromosonerna för spel nummer 12 och generation 5, spelet tog 19 omgångar.
+6: 6 poäng lades till, totalt är poängen 19
+15: 4 poäng lades till, totalt är poängen 14
+12: 2 poäng lades till, totalt är poängen 10
+5: 1 poäng lades till, totalt är poängen 7
+18: 0 poäng lades till, totalt är poängen 10
+24: 0 poäng lades till, totalt är poängen 10
 
-20:28:34   
-Resultat efter generation 1: 
+22:24:07   
+Resultat efter generation 5: 
+0: 6
 1: 6
-13: 1
-18: 6
-19: 5
-20: 2
-21: 4
-24: 6
-26: 2
+2: 6
+3: 6
+4: 6
+5: 7
+6: 19
+7: 6
+9: 4
+10: 1
+11: 1
+12: 10
+13: 2
+15: 14
+16: 1
+17: 3
+18: 10
+19: 2
+20: 3
+21: 6
+22: 4
+24: 10
+25: 3
+26: 5
 27: 4
-29: 1
-31: 2
+28: 2
+30: 6
+31: 4
+32: 2
+34: 4
+35: 6
 
-20:28:34   
+22:24:07   
 
-Generation nummer 2:
-Chromosome 0: 9 6 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 1: 6 6 1 6 1 2 0 3 4 1 1 3 4 
-Chromosome 2: 9 6 9 3 4 2 0 1 8 0 0 5 8 
-Chromosome 3: 9 6 1 6 8 2 0 1 8 0 0 5 8 
-Chromosome 4: 6 6 9 3 1 2 0 3 4 1 1 3 4 
-Chromosome 5: 6 6 1 6 1 2 0 1 8 1 1 3 4 
-Chromosome 6: 9 6 9 3 8 2 0 3 4 0 0 5 8 
-Chromosome 7: 9 6 9 3 6 2 0 1 8 0 0 5 8 
-Chromosome 8: 6 6 9 6 1 2 0 3 4 1 1 3 4 
-Chromosome 9: 9 6 1 3 4 2 0 1 8 0 0 5 8 
-Chromosome 10: 7 6 5 4 2 2 0 2 6 0 0 4 6 
-Chromosome 11: 6 6 9 6 1 2 0 3 4 1 1 3 4 
-Chromosome 12: 9 6 1 3 8 2 0 1 8 0 0 5 8 
-Chromosome 13: 9 6 9 6 1 2 0 1 8 0 0 5 8 
-Chromosome 14: 6 6 1 3 8 2 0 3 4 1 1 3 4 
-Chromosome 15: 6 6 1 6 1 2 0 1 8 0 0 5 8 
-Chromosome 16: 9 6 9 3 8 2 0 3 4 1 1 3 4 
-Chromosome 17: 9 6 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 18: 9 6 9 3 4 2 0 1 8 0 0 5 8 
-Chromosome 19: 6 6 9 6 1 2 0 3 4 1 1 3 4 
-Chromosome 20: 9 6 1 3 4 2 0 1 8 0 0 5 8 
-Chromosome 21: 7 6 5 4 2 2 0 2 6 0 0 4 6 
-Chromosome 22: 9 6 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 23: 9 6 9 3 4 2 0 1 8 0 0 5 8 
-Chromosome 24: 6 6 1 6 1 2 0 1 8 0 0 5 8 
-Chromosome 25: 9 6 9 3 8 2 0 3 4 1 1 3 4 
-Chromosome 26: 9 6 9 6 1 2 0 3 4 1 1 5 8 
-Chromosome 27: 6 6 1 3 8 2 0 1 8 0 0 3 4 
-Chromosome 28: 9 6 9 6 1 2 0 3 4 1 1 3 4 
-Chromosome 29: 6 6 1 3 4 2 0 1 8 0 0 5 8 
-Chromosome 30: 5 6 7 9 3 4 0 8 5 6 5 3 8 
-Chromosome 31: 9 6 1 6 1 2 0 3 4 1 1 3 8 
-Chromosome 32: 6 6 9 3 8 2 0 1 8 0 0 5 4 
-Chromosome 33: 7 6 5 4 4 2 0 2 6 0 0 4 6 
-Chromosome 34: 6 6 9 3 8 2 0 1 8 0 0 5 8 
-Chromosome 35: 9 6 1 6 1 2 0 3 4 1 1 3 4 
+Generation nummer 6:
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+
+
+Filen skapades Fri Dec  9 23:35:39 2016
+
+23:35:39   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+23:36:16   
+Poäng på kromosonerna för spel nummer 0 och generation 6, spelet tog 17 omgångar.
+0: 6 poäng lades till, totalt är poängen 6
+2: 4 poäng lades till, totalt är poängen 4
+1: 2 poäng lades till, totalt är poängen 2
+5: 1 poäng lades till, totalt är poängen 1
+4: 0 poäng lades till, totalt är poängen 0
+3: 0 poäng lades till, totalt är poängen 0
+
+
+
+Filen skapades Sat Dec 10 10:24:39 2016
+
+10:24:39   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+10:52:44   
+Poäng på kromosonerna för spel nummer 0 och generation 6, spelet tog 8 omgångar.
+0: 4 poäng lades till, totalt är poängen 4
+2: 1 poäng lades till, totalt är poängen 1
+3: 0 poäng lades till, totalt är poängen 0
+1: 0 poäng lades till, totalt är poängen 0
+
+
+
+Filen skapades Sat Dec 10 10:53:16 2016
+
+10:53:16   
+
+Generation nummer 6: laddad från fil
+Chromosome 0: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 1: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 2: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 3: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 4: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 5: 9 8 2 7 3 6 0 3 4 8 4 1 6 
+Chromosome 6: 9 8 2 1 0 7 1 3 0 0 7 5 9 
+Chromosome 7: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 8: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 9: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 10: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 11: 9 8 2 7 3 6 1 3 0 8 4 1 6 
+Chromosome 12: 9 8 2 1 0 7 0 3 0 0 4 1 6 
+Chromosome 13: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 14: 9 8 2 7 3 6 0 3 0 8 7 5 9 
+Chromosome 15: 9 8 2 1 0 7 1 3 4 0 4 1 6 
+Chromosome 16: 9 8 2 4 1 6 0 3 2 4 5 3 7 
+Chromosome 17: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 18: 9 8 2 1 3 7 1 3 4 8 7 5 9 
+Chromosome 19: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 20: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 21: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+Chromosome 22: 9 8 2 7 3 6 0 3 4 8 7 5 9 
+Chromosome 23: 9 8 2 1 0 7 1 3 4 8 7 5 9 
+Chromosome 24: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 25: 9 8 2 1 0 7 1 3 4 8 7 1 6 
+Chromosome 26: 9 8 2 7 3 6 0 3 0 0 4 5 9 
+Chromosome 27: 9 8 2 1 3 7 1 3 0 8 4 1 6 
+Chromosome 28: 9 8 2 7 0 6 0 3 0 0 4 1 6 
+Chromosome 29: 9 8 2 1 0 6 0 3 4 8 7 5 9 
+Chromosome 30: 9 8 2 7 3 7 1 3 0 0 4 1 6 
+Chromosome 31: 9 8 2 1 0 7 1 3 0 8 4 1 6 
+Chromosome 32: 9 8 2 7 3 6 0 3 0 0 4 1 6 
+Chromosome 33: 9 8 2 4 1 6 0 3 0 4 4 1 6 
+Chromosome 34: 9 8 2 1 0 7 1 3 2 8 5 3 7 
+Chromosome 35: 9 8 2 1 0 7 1 3 0 0 4 1 6 
+
+10:53:51   
+Poäng på kromosonerna för spel nummer 0 och generation 6, spelet tog 17 omgångar.
+0: 6 poäng lades till, totalt är poängen 6
+2: 4 poäng lades till, totalt är poängen 4
+1: 2 poäng lades till, totalt är poängen 2
+3: 1 poäng lades till, totalt är poängen 1
+4: 0 poäng lades till, totalt är poängen 0
+5: 0 poäng lades till, totalt är poängen 0
+
+10:54:16   
+Poäng på kromosonerna för spel nummer 1 och generation 6, spelet tog 15 omgångar.
+6: 6 poäng lades till, totalt är poängen 6
+8: 4 poäng lades till, totalt är poängen 4
+10: 2 poäng lades till, totalt är poängen 2
+7: 1 poäng lades till, totalt är poängen 1
+11: 0 poäng lades till, totalt är poängen 0
+9: 0 poäng lades till, totalt är poängen 0
+
+10:55:03   
+Poäng på kromosonerna för spel nummer 2 och generation 6, spelet tog 17 omgångar.
+14: 6 poäng lades till, totalt är poängen 6
+12: 4 poäng lades till, totalt är poängen 4
+15: 2 poäng lades till, totalt är poängen 2
+17: 1 poäng lades till, totalt är poängen 1
+16: 0 poäng lades till, totalt är poängen 0
+13: 0 poäng lades till, totalt är poängen 0
 

@@ -44,8 +44,11 @@ void ManageAI::DoAction()
 	if (_game->GetCurrentPhase() == 7)
 	{
 		AssignPointsToAIs();
-		SetNewChromosomesToAIs();
-		_game->ResetGame();
+		if (_game->GetNumberOfPlayers() == _AIVector.size())
+		{
+			SetNewChromosomesToAIs();
+			_game->ResetGame();
+		}
 	}
 	else if ((_game->GetCurrentPhase() == 2) && (_game->GetCurrentSubPhase() == Game::initPhase))
 	{
