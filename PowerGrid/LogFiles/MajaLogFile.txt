@@ -14398,3 +14398,7 @@ Cincinnati
 13:53:06   Staden Pittsburgh lades till för 21 elektro. via städerna Detroit->Pittsburgh
 13:53:06   Staden Buffalo lades till för 22 elektro. via städerna Detroit->Buffalo
 13:54:54   Tjänade 90 elektro
+
+
+Filen skapades Sat Dec 10 13:56:52 2016
+

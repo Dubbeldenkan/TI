@@ -7347,3 +7347,2039 @@ Istället togs nr 42 fram.
 
 Nu består den nuvarnade marknaden av: 13 23 22 25 
 13:54:54   Kraftverk  nr 13 kastades bort och ersattes av 39
+
+
+Filen skapades Sat Dec 10 13:56:52 2016
+
+
+
+Filen skapades Sat Dec 10 13:56:53 2016
+
+
+
+Filen skapades Sat Dec 10 17:04:55 2016
+
+
+
+Filen skapades Sat Dec 10 17:04:55 2016
+
+17:04:56   Kraftverk  nr 3 kastades bort och ersattes av 13
+17:04:57   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 15 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 15 
+17:04:57   
+
+Omgång 2
+17:04:57   Kraftverk  nr 5 såldes och ersattes av 33
+17:04:59   Det högsta kraftverket, nr 33 lades underst i högen.
+Istället togs nr 35 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 15 35 
+17:04:59   
+
+Omgång 3
+17:04:59   Kraftverk  nr 8 såldes och ersattes av 37
+17:05:00   Kraftverk  nr 7 såldes och ersattes av 32
+17:05:00   Kraftverk  nr 10 såldes och ersattes av 42
+17:05:00   Kraftverk  nr 15 såldes och ersattes av 17
+17:05:01   Kraftverk  nr 6 såldes och ersattes av 34
+17:05:01   Kraftverk  nr 32 såldes och ersattes av 11
+17:05:02   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 19 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 17 11 
+Den framtida markaden består av: 35 37 34 19 
+17:05:02   
+
+Omgång 4
+17:05:03   Kraftverk  nr 11 såldes och ersattes av 38
+17:05:03   Kraftverk  nr 19 såldes och ersattes av 24
+17:05:04   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 50 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 17 24 
+Den framtida markaden består av: 35 37 34 50 
+17:05:04   
+
+Omgång 5
+17:05:05   Kraftverk  nr 24 såldes och ersattes av 21
+17:05:05   Kraftverk  nr 21 såldes och ersattes av 23
+17:05:05   Kraftverk  nr 4 såldes och ersattes av 18
+17:05:07   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 16 fram.
+
+Nu består den nuvarnade marknaden av: 9 17 18 16 
+Den framtida markaden består av: 35 37 34 23 
+17:05:07   
+
+Omgång 6
+17:05:08   Kraftverk  nr 16 såldes och ersattes av 28
+17:05:08   Kraftverk  nr 23 såldes och ersattes av 29
+17:05:09   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 26 fram.
+
+Nu består den nuvarnade marknaden av: 9 17 18 26 
+Den framtida markaden består av: 35 34 29 28 
+17:05:09   
+
+Omgång 7
+17:05:10   Kraftverk  nr 26 såldes och ersattes av 27
+17:05:10   Kraftverk  nr 17 såldes och ersattes av 36
+17:05:12   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 39 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 27 28 
+Den framtida markaden består av: 35 34 29 39 
+17:05:12   
+
+Omgång 8
+17:05:12   Kraftverk  nr 28 såldes och ersattes av 20
+17:05:13   Kraftverk  nr 20 såldes och ersattes av 31
+17:05:15   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 30 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 27 29 
+Den framtida markaden består av: 35 34 31 30 
+17:05:15   
+
+Omgång 9
+17:05:15   Kraftverk  nr 29 såldes och ersattes av 40
+17:05:16   Kraftverk  nr 30 såldes och ersattes av 22
+17:05:18   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 46 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 27 22 
+Den framtida markaden består av: 35 34 31 46 
+17:05:18   
+
+Omgång 10
+17:05:19   Kraftverk  nr 9 kastades bort och ersattes av 12
+17:05:20   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 25 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 12 25 
+Den framtida markaden består av: 35 34 31 27 
+17:05:21   Kraftverk  nr 3 kastades bort och ersattes av 13
+17:05:22   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 25 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 25 
+17:05:22   
+
+Omgång 2
+17:05:22   Kraftverk  nr 5 såldes och ersattes av 36
+17:05:23   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 34 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 25 34 
+17:05:23   
+
+Omgång 3
+17:05:24   Kraftverk  nr 8 såldes och ersattes av 28
+17:05:24   Kraftverk  nr 7 såldes och ersattes av 37
+17:05:25   Kraftverk  nr 10 såldes och ersattes av 29
+17:05:25   Kraftverk  nr 25 såldes och ersattes av 15
+17:05:26   Kraftverk  nr 6 såldes och ersattes av 18
+17:05:26   Kraftverk  nr 15 såldes och ersattes av 30
+17:05:27   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 50 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 18 28 
+Den framtida markaden består av: 34 29 30 50 
+17:05:27   
+
+Omgång 4
+17:05:27   Kraftverk  nr 28 såldes och ersattes av 26
+
+
+Filen skapades Tue Dec 27 18:53:26 2016
+
+
+
+Filen skapades Tue Dec 27 18:53:33 2016
+
+18:53:33   Kraftverk  nr 3 kastades bort och ersattes av 13
+18:53:34   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 39 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 39 
+18:53:34   
+
+Omgång 2
+18:53:35   Kraftverk  nr 5 såldes och ersattes av 32
+18:53:35   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 15 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 32 15 
+18:53:35   
+
+Omgång 3
+18:53:36   Kraftverk  nr 8 såldes och ersattes av 28
+18:53:36   Kraftverk  nr 7 såldes och ersattes av 12
+18:53:36   Kraftverk  nr 10 såldes och ersattes av 26
+18:53:37   Kraftverk  nr 12 såldes och ersattes av 22
+18:53:37   Kraftverk  nr 15 såldes och ersattes av 19
+18:53:37   Kraftverk  nr 19 såldes och ersattes av 40
+18:53:38   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 24 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 9 22 
+Den framtida markaden består av: 32 28 26 24 
+18:53:38   
+
+Omgång 4
+18:53:39   Kraftverk  nr 4 såldes och ersattes av 34
+18:53:40   Det högsta kraftverket, nr 34 lades underst i högen.
+Istället togs nr 16 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 22 16 
+Den framtida markaden består av: 32 28 26 24 
+18:53:40   
+
+Omgång 5
+18:53:40   Kraftverk  nr 16 såldes och ersattes av 20
+18:53:41   Kraftverk  nr 20 såldes och ersattes av 25
+18:53:41   Kraftverk  nr 24 såldes och ersattes av 38
+18:53:41   Kraftverk  nr 25 såldes och ersattes av 46
+18:53:41   Kraftverk  nr 26 såldes och ersattes av 44
+18:53:42   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 14 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 22 14 
+Den framtida markaden består av: 32 38 44 28 
+18:53:42   
+
+Omgång 6
+18:53:43   Kraftverk  nr 14 såldes och ersattes av 11
+18:53:43   Kraftverk  nr 11 såldes och ersattes av 18
+18:53:44   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 23 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 22 18 
+Den framtida markaden består av: 32 38 28 23 
+18:53:44   
+
+Omgång 7
+18:53:44   Kraftverk  nr 9 såldes och ersattes av 33
+18:53:44   Kraftverk  nr 23 såldes och ersattes av 50
+18:53:46   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 21 fram.
+
+Nu består den nuvarnade marknaden av: 6 22 18 21 
+Den framtida markaden består av: 32 38 33 28 
+18:53:46   
+
+Omgång 8
+18:53:46   Kraftverk  nr 21 såldes och ersattes av 27
+18:53:47   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 6 22 18 27 
+Den framtida markaden består av: 32 33 28 42 
+18:53:47   
+
+Omgång 9
+18:53:47   Kraftverk  nr 6 såldes och ersattes av 37
+18:53:47   Kraftverk  nr 28 såldes och ersattes av 30
+18:53:48   Kraftverk  nr 30 såldes och ersattes av 29
+18:53:48   Kraftverk  nr 29 såldes och ersattes av 36
+18:53:50   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 35 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 27 32 
+Den framtida markaden består av: 33 37 36 35 
+18:53:50   
+
+Omgång 10
+18:53:50   Kraftverk  nr 32 såldes och ersattes av 31
+18:53:51   Kraftverk  nr 31 såldes och ersattes av 17
+18:53:51   Kraftverk  nr 17 såldes och ersattes av 51
+18:53:52   Kraftverk  nr 33 såldes och ersattes av 13
+18:53:53   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 39 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 27 13 
+18:53:53   Kraftverk  nr 13 kastades bort och ersattes av 40
+18:53:53   
+
+Omgång 11
+18:53:53   Kraftverk  nr 35 såldes och ersattes av 34
+18:53:54   Kraftverk  nr 39 såldes och ersattes av 46
+18:53:54   Kraftverk  nr 40 såldes och ersattes av 44
+18:53:54   Kraftverk  nr 36 såldes och ersattes av 50
+18:53:54   Kraftverk  nr 34 såldes och ersattes av 38
+18:53:56   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 27 44 38 42 
+18:53:56   Kraftverk  nr 3 kastades bort och ersattes av 13
+18:53:57   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 11 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 11 
+18:53:57   
+
+Omgång 2
+18:53:57   Kraftverk  nr 4 kastades bort och ersattes av 26
+18:53:58   Det högsta kraftverket, nr 26 lades underst i högen.
+Istället togs nr 30 fram.
+
+Nu består den nuvarnade marknaden av: 5 6 7 8 
+Den framtida markaden består av: 9 10 11 30 
+18:53:58   
+
+Omgång 3
+18:53:59   Kraftverk  nr 5 såldes och ersattes av 21
+18:53:59   Kraftverk  nr 8 såldes och ersattes av 18
+18:53:59   Kraftverk  nr 7 såldes och ersattes av 16
+18:53:59   Kraftverk  nr 10 såldes och ersattes av 29
+18:54:00   Kraftverk  nr 16 såldes och ersattes av 46
+18:54:00   Kraftverk  nr 11 såldes och ersattes av 17
+18:54:01   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 35 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 18 17 
+Den framtida markaden består av: 30 21 29 35 
+18:54:01   
+
+Omgång 4
+18:54:01   Kraftverk  nr 6 såldes och ersattes av 36
+18:54:01   Kraftverk  nr 21 såldes och ersattes av 44
+18:54:02   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 17 29 
+Den framtida markaden består av: 30 35 36 42 
+18:54:02   
+
+Omgång 5
+18:54:03   Kraftverk  nr 29 såldes och ersattes av 40
+18:54:03   Kraftverk  nr 30 såldes och ersattes av 22
+18:54:04   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 25 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 17 22 
+Den framtida markaden består av: 35 36 40 25 
+18:54:04   
+
+Omgång 6
+18:54:05   Kraftverk  nr 9 kastades bort och ersattes av 34
+18:54:06   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 20 fram.
+
+Nu består den nuvarnade marknaden av: 18 17 22 20 
+Den framtida markaden består av: 35 36 34 25 
+18:54:06   
+
+Omgång 7
+18:54:07   Kraftverk  nr 20 såldes och ersattes av 12
+18:54:07   Kraftverk  nr 12 såldes och ersattes av 50
+18:54:08   Kraftverk  nr 25 såldes och ersattes av 33
+18:54:08   Kraftverk  nr 17 såldes och ersattes av 28
+18:54:09   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 24 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 28 24 
+Den framtida markaden består av: 35 36 34 33 
+18:54:09   
+
+Omgång 8
+18:54:09   Kraftverk  nr 24 såldes och ersattes av 31
+18:54:10   Kraftverk  nr 31 såldes och ersattes av 14
+18:54:10   Kraftverk  nr 28 såldes och ersattes av 19
+18:54:11   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 38 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 14 19 
+Den framtida markaden består av: 35 34 33 38 
+18:54:11   
+
+Omgång 9
+18:54:11   Kraftverk  nr 19 såldes och ersattes av 32
+18:54:12   Kraftverk  nr 32 såldes och ersattes av 39
+18:54:13   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 27 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 14 27 
+Den framtida markaden består av: 35 34 38 33 
+18:54:13   
+
+Omgång 10
+18:54:13   Kraftverk  nr 14 kastades bort och ersattes av 37
+18:54:14   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 15 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 15 
+Den framtida markaden består av: 35 34 37 33 
+18:54:14   
+
+Omgång 11
+18:54:15   Kraftverk  nr 15 såldes och ersattes av 23
+18:54:15   Kraftverk  nr 23 såldes och ersattes av 51
+18:54:16   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 13 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 13 
+18:54:16   Kraftverk  nr 13 kastades bort och ersattes av 26
+18:54:16   
+
+Omgång 12
+18:54:17   Kraftverk  nr 26 såldes och ersattes av 46
+18:54:17   Kraftverk  nr 34 såldes och ersattes av 44
+18:54:18   Kraftverk  nr 33 såldes och ersattes av 42
+18:54:18   Kraftverk  nr 42 såldes och ersattes av 40
+18:54:18   Kraftverk  nr 40 såldes och ersattes av 50
+18:54:19   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 36 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 37 44 36 
+18:54:20   Kraftverk  nr 3 kastades bort och ersattes av 13
+18:54:20   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 23 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 23 
+18:54:20   
+
+Omgång 2
+18:54:21   Kraftverk  nr 5 såldes och ersattes av 40
+18:54:22   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 21 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 23 21 
+18:54:22   
+
+Omgång 3
+18:54:22   Kraftverk  nr 8 såldes och ersattes av 12
+18:54:22   Kraftverk  nr 7 såldes och ersattes av 46
+18:54:23   Kraftverk  nr 10 såldes och ersattes av 18
+18:54:23   Kraftverk  nr 12 såldes och ersattes av 38
+18:54:23   Kraftverk  nr 6 såldes och ersattes av 27
+18:54:23   Kraftverk  nr 21 såldes och ersattes av 15
+18:54:24   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 30 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 18 15 
+Den framtida markaden består av: 23 38 27 30 
+18:54:24   
+
+Omgång 4
+18:54:24   Kraftverk  nr 15 såldes och ersattes av 16
+18:54:25   Kraftverk  nr 16 såldes och ersattes av 42
+18:54:26   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 19 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 18 19 
+Den framtida markaden består av: 38 27 30 23 
+18:54:26   
+
+Omgång 5
+18:54:26   Kraftverk  nr 19 såldes och ersattes av 17
+18:54:27   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 44 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 18 17 
+Den framtida markaden består av: 27 30 23 44 
+18:54:27   
+
+Omgång 6
+18:54:27   Kraftverk  nr 4 såldes och ersattes av 24
+18:54:28   Kraftverk  nr 23 såldes och ersattes av 33
+18:54:28   Kraftverk  nr 24 såldes och ersattes av 29
+18:54:29   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 39 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 17 27 
+Den framtida markaden består av: 30 33 29 39 
+18:54:29   
+
+Omgång 7
+18:54:29   Kraftverk  nr 9 kastades bort och ersattes av 22
+18:54:30   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 25 fram.
+
+Nu består den nuvarnade marknaden av: 18 17 22 25 
+Den framtida markaden består av: 30 33 29 27 
+18:54:30   
+
+Omgång 8
+18:54:30   Kraftverk  nr 25 såldes och ersattes av 32
+18:54:32   Det högsta kraftverket, nr 33 lades underst i högen.
+Istället togs nr 28 fram.
+
+Nu består den nuvarnade marknaden av: 18 17 22 27 
+Den framtida markaden består av: 30 29 32 28 
+18:54:32   
+
+Omgång 9
+18:54:32   Kraftverk  nr 17 såldes och ersattes av 34
+18:54:32   Kraftverk  nr 28 såldes och ersattes av 31
+18:54:32   Kraftverk  nr 29 såldes och ersattes av 36
+18:54:33   Kraftverk  nr 30 såldes och ersattes av 37
+18:54:33   Kraftverk  nr 31 såldes och ersattes av 11
+18:54:34   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 14 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 11 14 
+Den framtida markaden består av: 32 34 36 27 
+18:54:34   
+
+Omgång 10
+18:54:35   Kraftverk  nr 11 såldes och ersattes av 20
+18:54:35   Kraftverk  nr 20 såldes och ersattes av 50
+18:54:37   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 26 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 14 26 
+Den framtida markaden består av: 32 34 36 27 
+18:54:37   
+
+Omgång 11
+18:54:37   Kraftverk  nr 26 såldes och ersattes av 35
+18:54:38   Kraftverk  nr 14 såldes och ersattes av 51
+18:54:39   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 13 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 13 
+18:54:39   Kraftverk  nr 13 kastades bort och ersattes av 40
+18:54:39   
+
+Omgång 12
+18:54:40   Kraftverk  nr 32 såldes och ersattes av 46
+18:54:40   Kraftverk  nr 36 såldes och ersattes av 42
+18:54:40   Kraftverk  nr 40 såldes och ersattes av 38
+18:54:41   Kraftverk  nr 38 såldes och ersattes av 44
+18:54:41   Kraftverk  nr 34 såldes och ersattes av 39
+18:54:41   Kraftverk  nr 39 såldes och ersattes av 33
+18:54:43   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 37 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 42 33 37 
+18:54:43   Kraftverk  nr 3 kastades bort och ersattes av 13
+18:54:44   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 27 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 27 
+18:54:44   
+
+Omgång 2
+18:54:44   Kraftverk  nr 4 kastades bort och ersattes av 15
+18:54:45   Det högsta kraftverket, nr 27 lades underst i högen.
+Istället togs nr 50 fram.
+
+Nu består den nuvarnade marknaden av: 5 6 7 8 
+Den framtida markaden består av: 9 10 15 50 
+18:54:45   
+
+Omgång 3
+18:54:45   Kraftverk  nr 5 såldes och ersattes av 29
+18:54:45   Kraftverk  nr 8 såldes och ersattes av 21
+18:54:46   Kraftverk  nr 7 såldes och ersattes av 44
+18:54:46   Kraftverk  nr 15 såldes och ersattes av 17
+18:54:46   Kraftverk  nr 10 såldes och ersattes av 35
+18:54:46   Kraftverk  nr 21 såldes och ersattes av 25
+18:54:47   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 34 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 17 25 
+Den framtida markaden består av: 29 44 35 34 
+18:54:47   
+
+Omgång 4
+18:54:48   Kraftverk  nr 25 såldes och ersattes av 32
+18:54:48   Kraftverk  nr 6 såldes och ersattes av 16
+18:54:49   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 46 fram.
+
+Nu består den nuvarnade marknaden av: 9 17 29 16 
+Den framtida markaden består av: 35 34 32 46 
+18:54:49   
+
+Omgång 5
+18:54:49   Kraftverk  nr 16 såldes och ersattes av 22
+18:54:50   Kraftverk  nr 29 såldes och ersattes av 23
+18:54:50   Kraftverk  nr 23 såldes och ersattes av 33
+18:54:51   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 37 fram.
+
+Nu består den nuvarnade marknaden av: 9 17 22 32 
+Den framtida markaden består av: 35 34 33 37 
+18:54:51   
+
+Omgång 6
+18:54:51   Kraftverk  nr 32 såldes och ersattes av 42
+18:54:52   Kraftverk  nr 33 såldes och ersattes av 18
+18:54:53   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 12 fram.
+
+Nu består den nuvarnade marknaden av: 9 17 18 12 
+Den framtida markaden består av: 35 34 37 22 
+18:54:53   
+
+Omgång 7
+18:54:53   Kraftverk  nr 17 såldes och ersattes av 19
+18:54:54   Kraftverk  nr 19 såldes och ersattes av 36
+18:54:54   Kraftverk  nr 12 såldes och ersattes av 30
+18:54:54   Kraftverk  nr 30 såldes och ersattes av 14
+18:54:55   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 39 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 22 14 
+Den framtida markaden består av: 35 34 36 39 
+18:54:55   
+
+Omgång 8
+18:54:55   Kraftverk  nr 14 såldes och ersattes av 31
+18:54:56   Kraftverk  nr 31 såldes och ersattes av 38
+18:54:57   Kraftverk  nr 34 såldes och ersattes av 28
+18:54:58   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 26 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 22 26 
+Den framtida markaden består av: 35 36 38 28 
+18:54:58   
+
+Omgång 9
+18:54:59   Kraftverk  nr 26 såldes och ersattes av 24
+18:54:59   Kraftverk  nr 24 såldes och ersattes av 11
+18:54:59   Kraftverk  nr 11 såldes och ersattes av 40
+18:55:00   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 20 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 22 20 
+Den framtida markaden består av: 35 36 38 28 
+18:55:00   
+
+Omgång 10
+18:55:01   Kraftverk  nr 20 såldes och ersattes av 51
+18:55:01   Kraftverk  nr 28 såldes och ersattes av 13
+18:55:03   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 27 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 22 13 
+18:55:03   Kraftverk  nr 9 kastades bort och ersattes av 50
+18:55:03   
+
+Omgång 11
+18:55:04   Kraftverk  nr 38 såldes och ersattes av 44
+18:55:04   Kraftverk  nr 35 såldes och ersattes av 46
+18:55:04   Kraftverk  nr 46 såldes och ersattes av 42
+18:55:05   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 37 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 13 27 42 37 
+18:55:06   Kraftverk  nr 3 kastades bort och ersattes av 13
+18:55:06   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 31 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 31 
+18:55:06   
+
+Omgång 2
+18:55:07   Kraftverk  nr 5 såldes och ersattes av 23
+18:55:07   Det högsta kraftverket, nr 31 lades underst i högen.
+Istället togs nr 27 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 23 27 
+18:55:08   
+
+Omgång 3
+18:55:08   Kraftverk  nr 8 såldes och ersattes av 40
+18:55:08   Kraftverk  nr 7 såldes och ersattes av 34
+18:55:09   Kraftverk  nr 10 såldes och ersattes av 33
+18:55:09   Kraftverk  nr 6 såldes och ersattes av 50
+18:55:09   Kraftverk  nr 4 såldes och ersattes av 16
+18:55:09   Kraftverk  nr 16 såldes och ersattes av 14
+18:55:10   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 44 fram.
+
+Nu består den nuvarnade marknaden av: 9 23 27 14 
+Den framtida markaden består av: 40 34 33 44 
+18:55:10   
+
+Omgång 4
+18:55:10   Kraftverk  nr 23 såldes och ersattes av 32
+18:55:11   Kraftverk  nr 32 såldes och ersattes av 20
+18:55:11   Kraftverk  nr 20 såldes och ersattes av 25
+18:55:11   Kraftverk  nr 14 såldes och ersattes av 12
+18:55:12   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 21 fram.
+
+Nu består den nuvarnade marknaden av: 9 25 12 21 
+Den framtida markaden består av: 40 34 33 27 
+18:55:12   
+
+Omgång 5
+18:55:13   Kraftverk  nr 25 såldes och ersattes av 29
+18:55:14   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 46 fram.
+
+Nu består den nuvarnade marknaden av: 9 12 21 27 
+Den framtida markaden består av: 34 33 29 46 
+18:55:14   
+
+Omgång 6
+18:55:14   Kraftverk  nr 9 kastades bort och ersattes av 28
+18:55:15   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 11 fram.
+
+Nu består den nuvarnade marknaden av: 12 21 27 11 
+Den framtida markaden består av: 34 33 29 28 
+18:55:15   
+
+Omgång 7
+18:55:15   Kraftverk  nr 21 såldes och ersattes av 18
+18:55:16   Kraftverk  nr 11 såldes och ersattes av 38
+18:55:16   Kraftverk  nr 28 såldes och ersattes av 36
+18:55:17   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 12 27 18 29 
+Den framtida markaden består av: 34 33 36 42 
+18:55:17   
+
+Omgång 8
+18:55:17   Kraftverk  nr 12 kastades bort och ersattes av 22
+18:55:18   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 24 fram.
+
+Nu består den nuvarnade marknaden av: 27 18 22 24 
+Den framtida markaden består av: 34 33 36 29 
+18:55:18   
+
+Omgång 9
+18:55:19   Kraftverk  nr 24 såldes och ersattes av 26
+18:55:19   Kraftverk  nr 26 såldes och ersattes av 15
+18:55:20   Kraftverk  nr 15 såldes och ersattes av 39
+18:55:21   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 17 fram.
+
+Nu består den nuvarnade marknaden av: 27 18 22 17 
+Den framtida markaden består av: 34 33 36 29 
+18:55:21   
+
+Omgång 10
+18:55:21   Kraftverk  nr 17 kastades bort och ersattes av 37
+18:55:23   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 35 fram.
+
+Nu består den nuvarnade marknaden av: 27 18 22 29 
+Den framtida markaden består av: 34 33 36 35 
+18:55:23   
+
+Omgång 11
+18:55:23   Kraftverk  nr 29 såldes och ersattes av 19
+18:55:24   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 30 fram.
+
+Nu består den nuvarnade marknaden av: 27 18 22 19 
+Den framtida markaden består av: 34 33 35 30 
+18:55:24   
+
+Omgång 12
+18:55:24   Kraftverk  nr 19 såldes och ersattes av 51
+18:55:25   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 13 fram.
+
+Nu består den nuvarnade marknaden av: 27 18 22 13 
+18:55:25   Kraftverk  nr 13 kastades bort och ersattes av 31
+18:55:25   
+
+Omgång 13
+18:55:26   Kraftverk  nr 30 såldes och ersattes av 50
+18:55:26   Kraftverk  nr 31 såldes och ersattes av 44
+18:55:27   Kraftverk  nr 33 såldes och ersattes av 40
+18:55:27   Kraftverk  nr 40 såldes och ersattes av 46
+18:55:27   Kraftverk  nr 46 såldes och ersattes av 38
+18:55:29   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 27 18 22 35 38 42 
+18:55:29   Kraftverk  nr 3 kastades bort och ersattes av 13
+18:55:30   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 27 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 27 
+18:55:30   
+
+Omgång 2
+18:55:30   Kraftverk  nr 5 såldes och ersattes av 34
+18:55:31   Det högsta kraftverket, nr 34 lades underst i högen.
+Istället togs nr 21 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 27 21 
+18:55:31   
+
+Omgång 3
+18:55:31   Kraftverk  nr 8 såldes och ersattes av 39
+18:55:32   Kraftverk  nr 7 såldes och ersattes av 12
+18:55:32   Kraftverk  nr 10 såldes och ersattes av 37
+18:55:32   Kraftverk  nr 12 såldes och ersattes av 26
+18:55:33   Kraftverk  nr 21 såldes och ersattes av 40
+18:55:33   Kraftverk  nr 26 såldes och ersattes av 42
+18:55:34   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 28 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 9 27 
+Den framtida markaden består av: 39 37 40 28 
+18:55:34   
+
+Omgång 4
+18:55:34   Kraftverk  nr 4 såldes och ersattes av 44
+18:55:35   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 30 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 27 28 
+Den framtida markaden består av: 39 37 40 30 
+18:55:35   
+
+Omgång 5
+18:55:35   Kraftverk  nr 28 såldes och ersattes av 31
+18:55:36   Kraftverk  nr 30 såldes och ersattes av 38
+18:55:37   Kraftverk  nr 31 såldes och ersattes av 50
+18:55:38   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 33 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 27 33 
+Den framtida markaden består av: 39 40 38 37 
+18:55:38   
+
+Omgång 6
+18:55:38   Kraftverk  nr 6 kastades bort och ersattes av 36
+18:55:39   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 11 fram.
+
+Nu består den nuvarnade marknaden av: 9 27 33 11 
+Den framtida markaden består av: 39 38 37 36 
+18:55:39   
+
+Omgång 7
+18:55:39   Kraftverk  nr 11 såldes och ersattes av 17
+18:55:40   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 14 fram.
+
+Nu består den nuvarnade marknaden av: 9 27 17 14 
+Den framtida markaden består av: 38 37 36 33 
+18:55:40   
+
+Omgång 8
+18:55:41   Kraftverk  nr 9 såldes och ersattes av 46
+18:55:41   Kraftverk  nr 14 såldes och ersattes av 20
+18:55:41   Kraftverk  nr 20 såldes och ersattes av 15
+18:55:42   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 23 fram.
+
+Nu består den nuvarnade marknaden av: 27 17 15 23 
+Den framtida markaden består av: 38 37 36 33 
+18:55:43   
+
+Omgång 9
+18:55:43   Kraftverk  nr 23 såldes och ersattes av 16
+18:55:43   Kraftverk  nr 15 såldes och ersattes av 32
+18:55:43   Kraftverk  nr 32 såldes och ersattes av 35
+18:55:45   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 19 fram.
+
+Nu består den nuvarnade marknaden av: 27 17 16 19 
+Den framtida markaden består av: 37 36 35 33 
+18:55:45   
+
+Omgång 10
+18:55:45   Kraftverk  nr 19 såldes och ersattes av 24
+18:55:45   Kraftverk  nr 24 såldes och ersattes av 25
+18:55:45   Kraftverk  nr 16 såldes och ersattes av 18
+18:55:46   Kraftverk  nr 17 såldes och ersattes av 29
+
+
+Filen skapades Tue Dec 27 18:56:21 2016
+
+
+
+Filen skapades Tue Dec 27 18:56:22 2016
+
+18:56:39   Kraftverk  nr 6 såldes och ersattes av 13
+18:57:12   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 16 fram.
+
+Nu består den nuvarnade marknaden av: 3 4 5 7 
+Den framtida markaden består av: 8 9 10 16 
+18:57:12   
+
+Omgång 2
+18:58:12   Kraftverk  nr 7 såldes och ersattes av 50
+18:58:12   Kraftverk  nr 5 såldes och ersattes av 18
+
+
+Filen skapades Fri Dec 29 13:57:46 2017
+
+
+
+Filen skapades Fri Dec 29 13:57:49 2017
+
+13:58:24   Kraftverk  nr 6 såldes och ersattes av 13
+13:58:46   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 12 fram.
+
+Nu består den nuvarnade marknaden av: 3 4 5 7 
+Den framtida markaden består av: 8 9 10 12 
+13:58:46   
+
+Omgång 2
+13:59:05   Kraftverk  nr 7 såldes och ersattes av 14
+13:59:05   Kraftverk  nr 5 såldes och ersattes av 17
+14:00:13   Det högsta kraftverket, nr 17 lades underst i högen.
+Istället togs nr 32 fram.
+
+Nu består den nuvarnade marknaden av: 3 4 8 9 
+Den framtida markaden består av: 10 12 14 32 
+14:00:13   
+
+Omgång 3
+14:00:22   Kraftverk  nr 8 såldes och ersattes av 30
+14:00:22   Kraftverk  nr 10 såldes och ersattes av 39
+14:00:22   Kraftverk  nr 12 såldes och ersattes av 20
+14:00:22   Kraftverk  nr 3 såldes och ersattes av 46
+14:00:22   Kraftverk  nr 20 såldes och ersattes av 34
+14:00:41   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 14 30 
+Den framtida markaden består av: 32 39 34 42 
+14:00:41   
+
+Omgång 4
+14:01:20   Kraftverk  nr 30 såldes och ersattes av 15
+14:01:58   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 36 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 14 15 
+Den framtida markaden består av: 32 39 34 36 
+14:01:58   
+
+Omgång 5
+14:02:06   Kraftverk  nr 15 såldes och ersattes av 18
+14:02:15   Kraftverk  nr 18 såldes och ersattes av 24
+14:02:50   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 28 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 14 24 
+Den framtida markaden består av: 32 34 36 28 
+14:02:50   
+
+Omgång 6
+14:02:57   Kraftverk  nr 4 såldes och ersattes av 23
+14:02:57   Kraftverk  nr 23 såldes och ersattes av 26
+14:02:57   Kraftverk  nr 26 såldes och ersattes av 44
+14:02:57   Kraftverk  nr 28 såldes och ersattes av 40
+14:03:37   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 16 fram.
+
+Nu består den nuvarnade marknaden av: 9 14 24 16 
+Den framtida markaden består av: 34 36 40 32 
+14:03:37   
+
+Omgång 7
+14:03:45   Kraftverk  nr 24 såldes och ersattes av 25
+14:03:52   Kraftverk  nr 25 såldes och ersattes av 11
+14:03:59   Kraftverk  nr 11 såldes och ersattes av 29
+14:04:04   Kraftverk  nr 16 såldes och ersattes av 50
+14:04:16   Kraftverk  nr 32 såldes och ersattes av 31
+14:05:14   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 35 fram.
+
+Nu består den nuvarnade marknaden av: 9 14 29 31 
+Den framtida markaden består av: 34 36 40 35 
+14:05:14   
+
+Omgång 8
+14:06:18   Kraftverk  nr 31 såldes och ersattes av 33
+14:06:18   Kraftverk  nr 33 såldes och ersattes av 38
+14:06:18   Kraftverk  nr 34 såldes och ersattes av 37
+14:07:00   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 22 fram.
+
+Nu består den nuvarnade marknaden av: 9 14 29 22 
+Den framtida markaden består av: 36 38 37 35 
+14:07:00   
+
+Omgång 9
+14:07:07   Kraftverk  nr 14 såldes och ersattes av 21
+14:08:44   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 19 fram.
+
+Nu består den nuvarnade marknaden av: 9 22 21 19 
+Den framtida markaden består av: 36 37 35 29 
+14:08:44   
+
+Omgång 10
+14:08:59   Kraftverk  nr 21 såldes och ersattes av 27
+14:09:01   Kraftverk  nr 19 såldes och ersattes av 51
+14:10:16   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 13 fram.
+
+Nu består den nuvarnade marknaden av: 9 22 27 13 
+14:10:16   Kraftverk  nr 9 kastades bort och ersattes av 17
+14:10:16   
+
+Omgång 11
+14:10:45   Kraftverk  nr 35 såldes och ersattes av 46
+14:11:34   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 13 29 17 37 
+14:11:34   
+
+Omgång 12
+14:11:38   Kraftverk  nr 13 kastades bort och ersattes av 39
+14:12:57   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 44 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 29 17 37 39 
+
+
+Filen skapades Fri Dec 29 14:15:26 2017
+
+
+
+Filen skapades Fri Dec 29 14:15:26 2017
+
+14:15:26   Kraftverk  nr 3 kastades bort och ersattes av 13
+14:15:27   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 46 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 46 
+14:15:27   
+
+Omgång 2
+14:15:28   Kraftverk  nr 5 såldes och ersattes av 11
+14:15:29   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 11 42 
+14:15:29   
+
+Omgång 3
+14:15:29   Kraftverk  nr 8 såldes och ersattes av 40
+14:15:29   Kraftverk  nr 7 såldes och ersattes av 14
+14:15:30   Kraftverk  nr 10 såldes och ersattes av 22
+14:15:30   Kraftverk  nr 11 såldes och ersattes av 17
+14:15:30   Kraftverk  nr 14 såldes och ersattes av 26
+14:15:30   Kraftverk  nr 4 såldes och ersattes av 39
+14:15:31   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 30 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 17 22 
+Den framtida markaden består av: 40 26 39 30 
+14:15:31   
+
+Omgång 4
+14:15:31   Kraftverk  nr 9 såldes och ersattes av 12
+14:15:32   Kraftverk  nr 12 såldes och ersattes av 31
+14:15:32   Kraftverk  nr 26 såldes och ersattes av 27
+14:15:33   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 32 fram.
+
+Nu består den nuvarnade marknaden av: 6 17 22 27 
+Den framtida markaden består av: 39 30 31 32 
+14:15:33   
+
+Omgång 5
+14:15:33   Kraftverk  nr 6 såldes och ersattes av 16
+14:15:34   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 38 fram.
+
+Nu består den nuvarnade marknaden av: 17 22 27 16 
+Den framtida markaden består av: 30 31 32 38 
+14:15:34   
+
+Omgång 6
+14:15:35   Kraftverk  nr 16 såldes och ersattes av 33
+14:15:35   Kraftverk  nr 30 såldes och ersattes av 50
+14:15:36   Kraftverk  nr 31 såldes och ersattes av 35
+14:15:36   Kraftverk  nr 32 såldes och ersattes av 37
+14:15:36   Kraftverk  nr 33 såldes och ersattes av 44
+14:15:37   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 24 fram.
+
+Nu består den nuvarnade marknaden av: 17 22 27 24 
+Den framtida markaden består av: 38 37 44 35 
+14:15:37   
+
+Omgång 7
+14:15:38   Kraftverk  nr 17 såldes och ersattes av 34
+14:15:38   Kraftverk  nr 34 såldes och ersattes av 25
+14:15:38   Kraftverk  nr 25 såldes och ersattes av 28
+14:15:39   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 18 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 24 18 
+Den framtida markaden består av: 38 37 35 28 
+14:15:39   
+
+Omgång 8
+14:15:40   Kraftverk  nr 18 kastades bort och ersattes av 19
+14:15:41   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 21 fram.
+
+Nu består den nuvarnade marknaden av: 22 24 19 21 
+Den framtida markaden består av: 37 35 28 27 
+14:15:41   
+
+Omgång 9
+14:15:41   Kraftverk  nr 21 såldes och ersattes av 15
+14:15:42   Kraftverk  nr 15 såldes och ersattes av 36
+14:15:43   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 23 fram.
+
+Nu består den nuvarnade marknaden av: 22 24 19 23 
+Den framtida markaden består av: 35 28 36 27 
+14:15:43   
+
+Omgång 10
+14:15:44   Kraftverk  nr 24 såldes och ersattes av 20
+14:15:44   Kraftverk  nr 20 såldes och ersattes av 29
+14:15:44   Kraftverk  nr 23 såldes och ersattes av 51
+14:15:45   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 13 fram.
+
+Nu består den nuvarnade marknaden av: 22 19 27 13 
+14:15:45   Kraftverk  nr 13 kastades bort och ersattes av 46
+14:15:45   
+
+Omgång 11
+14:15:46   Kraftverk  nr 28 såldes och ersattes av 42
+14:15:47   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 40 fram.
+
+Nu består den nuvarnade marknaden av: 22 19 27 29 36 40 
+14:15:47   Kraftverk  nr 3 kastades bort och ersattes av 13
+14:15:48   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 15 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 15 
+14:15:48   
+
+Omgång 2
+14:15:48   Kraftverk  nr 5 såldes och ersattes av 23
+14:15:49   Det högsta kraftverket, nr 23 lades underst i högen.
+Istället togs nr 33 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 15 33 
+14:15:49   
+
+Omgång 3
+14:15:50   Kraftverk  nr 8 såldes och ersattes av 34
+14:15:50   Kraftverk  nr 7 såldes och ersattes av 30
+14:15:50   Kraftverk  nr 10 såldes och ersattes av 29
+14:15:51   Kraftverk  nr 15 såldes och ersattes av 44
+14:15:51   Kraftverk  nr 29 såldes och ersattes av 17
+14:15:51   Kraftverk  nr 6 såldes och ersattes av 24
+14:15:52   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 32 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 17 24 
+Den framtida markaden består av: 33 34 30 32 
+14:15:52   
+
+Omgång 4
+14:15:52   Kraftverk  nr 24 såldes och ersattes av 11
+14:15:53   Kraftverk  nr 11 såldes och ersattes av 18
+14:15:53   Kraftverk  nr 9 såldes och ersattes av 40
+14:15:54   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 46 fram.
+
+Nu består den nuvarnade marknaden av: 4 17 18 30 
+Den framtida markaden består av: 33 34 32 46 
+14:15:54   
+
+Omgång 5
+14:15:55   Kraftverk  nr 30 såldes och ersattes av 21
+14:15:55   Kraftverk  nr 21 såldes och ersattes av 50
+14:15:56   Kraftverk  nr 32 såldes och ersattes av 31
+14:15:56   Kraftverk  nr 31 såldes och ersattes av 16
+14:15:57   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 22 fram.
+
+Nu består den nuvarnade marknaden av: 4 17 18 16 
+Den framtida markaden består av: 33 34 46 22 
+14:15:57   
+
+Omgång 6
+14:15:58   Kraftverk  nr 4 kastades bort och ersattes av 20
+14:15:59   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 14 fram.
+
+Nu består den nuvarnade marknaden av: 17 18 16 14 
+Den framtida markaden består av: 33 34 22 20 
+14:15:59   
+
+Omgång 7
+14:15:59   Kraftverk  nr 16 såldes och ersattes av 42
+14:16:00   Kraftverk  nr 20 såldes och ersattes av 36
+14:16:00   Kraftverk  nr 17 såldes och ersattes av 28
+14:16:01   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 12 fram.
+
+Nu består den nuvarnade marknaden av: 18 14 22 12 
+Den framtida markaden består av: 33 34 36 28 
+14:16:01   
+
+Omgång 8
+14:16:02   Kraftverk  nr 12 såldes och ersattes av 39
+14:16:02   Kraftverk  nr 28 såldes och ersattes av 35
+14:16:02   Kraftverk  nr 14 såldes och ersattes av 26
+14:16:03   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 25 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 26 25 
+Den framtida markaden består av: 34 36 35 33 
+14:16:03   
+
+Omgång 9
+14:16:04   Kraftverk  nr 26 såldes och ersattes av 27
+14:16:05   Kraftverk  nr 25 såldes och ersattes av 19
+14:16:05   Kraftverk  nr 19 såldes och ersattes av 38
+14:16:05   Kraftverk  nr 33 såldes och ersattes av 37
+14:16:06   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 51 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 34 
+14:16:06   Kraftverk  nr 18 kastades bort och ersattes av 13
+14:16:06   
+
+Omgång 10
+14:16:07   Kraftverk  nr 35 såldes och ersattes av 23
+14:16:07   Kraftverk  nr 36 såldes och ersattes av 44
+14:16:07   Kraftverk  nr 34 såldes och ersattes av 40
+14:16:07   Kraftverk  nr 40 såldes och ersattes av 50
+14:16:08   Kraftverk  nr 50 såldes och ersattes av 46
+14:16:09   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 13 23 44 42 
+14:16:09   
+
+Omgång 11
+14:16:10   Kraftverk  nr 23 såldes och ersattes av 39
+14:16:10   Kraftverk  nr 42 såldes och ersattes av 38
+14:16:10   Kraftverk  nr 38 såldes och ersattes av 37
+14:16:10   Kraftverk  nr 39 såldes och ersattes av 51
+14:16:12   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 51 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 13 44 37 46 
+14:16:12   Kraftverk  nr 3 kastades bort och ersattes av 13
+14:16:13   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 50 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 50 
+14:16:13   
+
+Omgång 2
+14:16:13   Kraftverk  nr 5 såldes och ersattes av 20
+14:16:14   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 35 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 20 35 
+14:16:14   
+
+Omgång 3
+14:16:14   Kraftverk  nr 8 såldes och ersattes av 19
+14:16:15   Kraftverk  nr 7 såldes och ersattes av 40
+14:16:15   Kraftverk  nr 10 såldes och ersattes av 25
+14:16:15   Kraftverk  nr 19 såldes och ersattes av 27
+14:16:16   Kraftverk  nr 20 såldes och ersattes av 44
+14:16:16   Kraftverk  nr 25 såldes och ersattes av 46
+14:16:17   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 12 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 9 12 
+Den framtida markaden består av: 35 40 44 27 
+14:16:17   
+
+Omgång 4
+14:16:17   Kraftverk  nr 9 såldes och ersattes av 11
+14:16:18   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 22 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 12 11 
+Den framtida markaden består av: 35 40 27 22 
+14:16:18   
+
+Omgång 5
+14:16:19   Kraftverk  nr 11 såldes och ersattes av 34
+14:16:19   Kraftverk  nr 6 såldes och ersattes av 24
+14:16:19   Kraftverk  nr 12 såldes och ersattes av 18
+14:16:19   Kraftverk  nr 24 såldes och ersattes av 28
+14:16:20   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 15 fram.
+
+Nu består den nuvarnade marknaden av: 4 22 18 15 
+Den framtida markaden består av: 35 34 28 27 
+14:16:20   
+
+Omgång 6
+14:16:21   Kraftverk  nr 15 såldes och ersattes av 36
+14:16:22   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 33 fram.
+
+Nu består den nuvarnade marknaden av: 4 22 18 27 
+Den framtida markaden består av: 35 34 28 33 
+14:16:22   
+
+Omgång 7
+14:16:22   Kraftverk  nr 4 kastades bort och ersattes av 38
+14:16:23   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 17 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 27 17 
+Den framtida markaden består av: 35 34 33 28 
+14:16:23   
+
+Omgång 8
+14:16:23   Kraftverk  nr 17 såldes och ersattes av 32
+14:16:24   Kraftverk  nr 28 såldes och ersattes av 21
+14:16:24   Kraftverk  nr 21 såldes och ersattes av 37
+14:16:25   Kraftverk  nr 32 såldes och ersattes av 30
+14:16:25   Kraftverk  nr 30 såldes och ersattes av 23
+14:16:27   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 31 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 27 23 
+Den framtida markaden består av: 35 34 33 31 
+14:16:27   
+
+Omgång 9
+14:16:27   Kraftverk  nr 23 såldes och ersattes av 29
+14:16:27   Kraftverk  nr 29 såldes och ersattes av 39
+14:16:29   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 14 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 27 14 
+Den framtida markaden består av: 35 34 33 31 
+14:16:29   
+
+Omgång 10
+14:16:29   Kraftverk  nr 14 kastades bort och ersattes av 42
+14:16:30   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 26 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 27 26 
+Den framtida markaden består av: 35 34 33 31 
+14:16:30   
+
+Omgång 11
+14:16:31   Kraftverk  nr 26 såldes och ersattes av 16
+14:16:31   Kraftverk  nr 16 såldes och ersattes av 51
+14:16:32   Kraftverk  nr 31 såldes och ersattes av 13
+14:16:33   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 50 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 27 13 
+14:16:33   Kraftverk  nr 13 kastades bort och ersattes av 46
+14:16:33   Kraftverk  nr 3 kastades bort och ersattes av 13
+14:16:34   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 20 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 20 
+
+
+Filen skapades Sun Jun 24 15:43:41 2018
+
+
+
+Filen skapades Sun Jun 24 15:44:03 2018
+
+15:49:25   Kraftverk  nr 3 såldes och ersattes av 13
+15:49:53   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 33 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 33 
+15:49:53   
+
+Omgång 2
+
+
+Filen skapades Sun Jun 24 17:15:24 2018
+
+
+
+Filen skapades Sun Jun 24 17:15:30 2018
+
+17:15:35   Kraftverk  nr 3 kastades bort och ersattes av 13
+17:15:36   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 19 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 19 
+17:15:36   
+
+Omgång 2
+17:15:37   Kraftverk  nr 5 såldes och ersattes av 17
+17:15:38   Det högsta kraftverket, nr 19 lades underst i högen.
+Istället togs nr 27 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 17 27 
+17:15:38   
+
+Omgång 3
+17:15:38   Kraftverk  nr 8 såldes och ersattes av 12
+17:15:38   Kraftverk  nr 7 såldes och ersattes av 44
+17:15:39   Kraftverk  nr 10 såldes och ersattes av 20
+17:15:39   Kraftverk  nr 12 såldes och ersattes av 26
+17:15:39   Kraftverk  nr 6 såldes och ersattes av 42
+17:15:39   Kraftverk  nr 20 såldes och ersattes av 32
+17:15:41   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 34 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 17 26 
+Den framtida markaden består av: 27 42 32 34 
+17:15:41   
+
+Omgång 4
+17:15:41   Kraftverk  nr 26 såldes och ersattes av 31
+17:15:43   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 16 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 17 16 
+Den framtida markaden består av: 32 34 31 27 
+17:15:43   
+
+Omgång 5
+17:15:44   Kraftverk  nr 4 såldes och ersattes av 37
+17:15:44   Kraftverk  nr 16 såldes och ersattes av 46
+17:15:44   Kraftverk  nr 31 såldes och ersattes av 22
+17:15:45   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 33 fram.
+
+Nu består den nuvarnade marknaden av: 9 17 27 22 
+Den framtida markaden består av: 32 34 37 33 
+17:15:45   
+
+Omgång 6
+17:15:46   Kraftverk  nr 9 kastades bort och ersattes av 28
+17:15:47   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 11 fram.
+
+Nu består den nuvarnade marknaden av: 17 27 22 11 
+Den framtida markaden består av: 32 34 33 28 
+17:15:47   
+
+Omgång 7
+17:15:47   Kraftverk  nr 11 såldes och ersattes av 38
+17:15:48   Kraftverk  nr 28 såldes och ersattes av 18
+17:15:52   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 36 fram.
+
+Nu består den nuvarnade marknaden av: 17 27 22 18 
+Den framtida markaden består av: 32 34 33 36 
+17:15:52   
+
+Omgång 8
+17:15:52   Kraftverk  nr 17 kastades bort och ersattes av 50
+17:15:53   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 29 fram.
+
+Nu består den nuvarnade marknaden av: 27 22 18 29 
+Den framtida markaden består av: 34 33 36 32 
+17:15:53   
+
+Omgång 9
+17:15:54   Kraftverk  nr 18 kastades bort och ersattes av 24
+17:15:55   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 21 fram.
+
+Nu består den nuvarnade marknaden av: 27 22 24 21 
+Den framtida markaden består av: 34 33 32 29 
+17:15:55   
+
+Omgång 10
+17:15:55   Kraftverk  nr 24 såldes och ersattes av 40
+17:15:56   Kraftverk  nr 21 såldes och ersattes av 14
+17:15:56   Kraftverk  nr 29 såldes och ersattes av 39
+17:15:57   Kraftverk  nr 32 såldes och ersattes av 23
+17:15:57   Kraftverk  nr 14 såldes och ersattes av 25
+17:15:57   Kraftverk  nr 25 såldes och ersattes av 30
+17:15:59   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 15 fram.
+
+Nu består den nuvarnade marknaden av: 27 22 23 15 
+Den framtida markaden består av: 34 33 39 30 
+17:15:59   
+
+Omgång 11
+17:15:59   Kraftverk  nr 23 såldes och ersattes av 35
+17:16:00   Kraftverk  nr 30 såldes och ersattes av 51
+17:16:00   Kraftverk  nr 15 såldes och ersattes av 13
+17:16:02   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 19 fram.
+
+Nu består den nuvarnade marknaden av: 27 22 13 19 
+17:16:02   Kraftverk  nr 13 kastades bort och ersattes av 44
+17:16:02   Kraftverk  nr 3 kastades bort och ersattes av 13
+17:16:03   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 46 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 46 
+17:16:03   
+
+Omgång 2
+17:16:03   Kraftverk  nr 5 såldes och ersattes av 26
+17:16:04   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 26 42 
+17:16:04   
+
+Omgång 3
+17:16:04   Kraftverk  nr 8 såldes och ersattes av 50
+17:16:05   Kraftverk  nr 7 såldes och ersattes av 11
+17:16:05   Kraftverk  nr 10 såldes och ersattes av 37
+17:16:05   Kraftverk  nr 11 såldes och ersattes av 15
+17:16:06   Kraftverk  nr 15 såldes och ersattes av 14
+17:16:06   Kraftverk  nr 14 såldes och ersattes av 24
+17:16:07   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 12 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 9 12 
+Den framtida markaden består av: 26 42 37 24 
+17:16:07   
+
+Omgång 4
+17:16:07   Kraftverk  nr 12 såldes och ersattes av 34
+17:16:08   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 16 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 9 16 
+Den framtida markaden består av: 26 37 34 24 
+17:16:08   
+
+Omgång 5
+17:16:09   Kraftverk  nr 16 såldes och ersattes av 28
+17:16:09   Kraftverk  nr 24 såldes och ersattes av 44
+17:16:10   Kraftverk  nr 26 såldes och ersattes av 35
+17:16:10   Kraftverk  nr 4 såldes och ersattes av 21
+17:16:10   Kraftverk  nr 28 såldes och ersattes av 29
+17:16:12   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 40 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 21 29 
+Den framtida markaden består av: 37 34 35 40 
+17:16:12   
+
+Omgång 6
+17:16:12   Kraftverk  nr 21 såldes och ersattes av 30
+17:16:14   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 36 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 29 30 
+Den framtida markaden består av: 37 34 35 36 
+17:16:14   
+
+Omgång 7
+17:16:15   Kraftverk  nr 30 såldes och ersattes av 39
+17:16:15   Kraftverk  nr 29 såldes och ersattes av 33
+17:16:15   Kraftverk  nr 34 såldes och ersattes av 19
+17:16:15   Kraftverk  nr 33 såldes och ersattes av 31
+17:16:17   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 25 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 19 25 
+Den framtida markaden består av: 37 35 36 31 
+17:16:17   
+
+Omgång 8
+17:16:21   Kraftverk  nr 25 såldes och ersattes av 38
+17:16:24   Kraftverk  nr 31 såldes och ersattes av 17
+17:16:24   Kraftverk  nr 19 såldes och ersattes av 27
+17:16:24   Kraftverk  nr 9 såldes och ersattes av 32
+17:16:26   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 23 fram.
+
+Nu består den nuvarnade marknaden av: 6 17 27 23 
+Den framtida markaden består av: 37 35 36 32 
+17:16:26   
+
+Omgång 9
+17:16:27   Kraftverk  nr 23 såldes och ersattes av 18
+17:16:28   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 20 fram.
+
+Nu består den nuvarnade marknaden av: 6 17 18 20 
+Den framtida markaden består av: 35 36 32 27 
+17:16:28   
+
+Omgång 10
+17:16:29   Kraftverk  nr 20 såldes och ersattes av 22
+17:16:31   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 51 fram.
+
+Nu består den nuvarnade marknaden av: 6 17 18 22 
+17:16:31   Kraftverk  nr 6 kastades bort och ersattes av 13
+17:16:31   
+
+Omgång 11
+17:16:32   Kraftverk  nr 32 såldes och ersattes av 46
+17:16:32   Kraftverk  nr 46 såldes och ersattes av 50
+17:16:32   Kraftverk  nr 50 såldes och ersattes av 42
+17:16:33   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 44 fram.
+
+Nu består den nuvarnade marknaden av: 17 18 22 27 13 42 
+17:16:34   Kraftverk  nr 3 kastades bort och ersattes av 13
+17:16:35   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 39 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 39 
+17:16:35   
+
+Omgång 2
+17:16:35   Kraftverk  nr 5 såldes och ersattes av 50
+17:16:36   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 42 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 39 42 
+17:16:36   
+
+Omgång 3
+17:16:38   Kraftverk  nr 8 såldes och ersattes av 32
+17:16:38   Kraftverk  nr 7 såldes och ersattes av 21
+17:16:38   Kraftverk  nr 10 såldes och ersattes av 28
+17:16:39   Kraftverk  nr 21 såldes och ersattes av 36
+17:16:39   Kraftverk  nr 28 såldes och ersattes av 46
+17:16:39   Kraftverk  nr 32 såldes och ersattes av 35
+17:16:40   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 18 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 9 18 
+Den framtida markaden består av: 39 42 36 35 
+17:16:40   
+
+Omgång 4
+17:16:41   Kraftverk  nr 4 såldes och ersattes av 29
+17:16:42   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 24 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 18 24 
+Den framtida markaden består av: 39 36 35 29 
+17:16:42   
+
+Omgång 5
+17:16:43   Kraftverk  nr 24 såldes och ersattes av 16
+17:16:43   Kraftverk  nr 16 såldes och ersattes av 20
+17:16:44   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 22 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 18 20 
+Den framtida markaden består av: 36 35 29 22 
+17:16:44   
+
+Omgång 6
+17:16:45   Kraftverk  nr 20 såldes och ersattes av 15
+17:16:45   Kraftverk  nr 6 såldes och ersattes av 27
+17:16:47   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 34 fram.
+
+Nu består den nuvarnade marknaden av: 9 18 15 22 
+Den framtida markaden består av: 35 29 27 34 
+17:16:47   
+
+Omgång 7
+17:16:47   Kraftverk  nr 9 kastades bort och ersattes av 12
+17:16:49   Det högsta kraftverket, nr 35 lades underst i högen.
+Istället togs nr 26 fram.
+
+Nu består den nuvarnade marknaden av: 18 15 22 12 
+Den framtida markaden består av: 29 27 34 26 
+17:16:49   
+
+Omgång 8
+17:16:49   Kraftverk  nr 12 såldes och ersattes av 11
+17:16:49   Kraftverk  nr 11 såldes och ersattes av 44
+17:16:49   Kraftverk  nr 26 såldes och ersattes av 14
+17:16:51   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 40 fram.
+
+Nu består den nuvarnade marknaden av: 18 15 22 14 
+Den framtida markaden består av: 29 27 34 40 
+17:16:51   
+
+Omgång 9
+17:16:51   Kraftverk  nr 14 såldes och ersattes av 38
+17:16:52   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 37 fram.
+
+Nu består den nuvarnade marknaden av: 18 15 22 27 
+Den framtida markaden består av: 29 34 38 37 
+17:16:53   
+
+Omgång 10
+17:16:53   Kraftverk  nr 15 såldes och ersattes av 33
+17:16:54   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 17 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 17 
+Den framtida markaden består av: 34 37 33 29 
+17:16:54   
+
+Omgång 11
+17:16:55   Kraftverk  nr 17 såldes och ersattes av 31
+17:16:56   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 25 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 25 
+Den framtida markaden består av: 34 33 31 29 
+17:16:56   
+
+Omgång 12
+17:16:57   Kraftverk  nr 25 såldes och ersattes av 23
+17:16:57   Kraftverk  nr 23 såldes och ersattes av 19
+17:16:59   Kraftverk  nr 19 såldes och ersattes av 30
+17:17:00   Kraftverk  nr 29 såldes och ersattes av 51
+17:17:02   Kraftverk  nr 30 såldes och ersattes av 13
+17:17:03   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 50 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 13 
+17:17:03   Kraftverk  nr 13 kastades bort och ersattes av 46
+17:17:03   
+
+Omgång 13
+17:17:04   Kraftverk  nr 31 såldes och ersattes av 42
+17:17:04   Kraftverk  nr 46 såldes och ersattes av 39
+17:17:05   Kraftverk  nr 39 såldes och ersattes av 36
+17:17:05   Kraftverk  nr 36 såldes och ersattes av 35
+17:17:05   Kraftverk  nr 35 såldes och ersattes av 44
+17:17:05   Kraftverk  nr 33 såldes och ersattes av 40
+17:17:08   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 38 fram.
+
+Nu består den nuvarnade marknaden av: 18 22 27 42 40 38 
+17:17:08   Kraftverk  nr 3 kastades bort och ersattes av 13
+17:17:09   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 37 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 37 
+17:17:09   
+
+Omgång 2
+17:17:09   Kraftverk  nr 5 såldes och ersattes av 44
+17:17:10   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 35 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 37 35 
+17:17:10   
+
+Omgång 3
+17:17:10   Kraftverk  nr 8 såldes och ersattes av 16
+17:17:11   Kraftverk  nr 7 såldes och ersattes av 14
+17:17:11   Kraftverk  nr 10 såldes och ersattes av 15
+17:17:11   Kraftverk  nr 14 såldes och ersattes av 11
+17:17:12   Kraftverk  nr 11 såldes och ersattes av 42
+17:17:12   Kraftverk  nr 15 såldes och ersattes av 33
+17:17:13   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 23 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 9 16 
+Den framtida markaden består av: 37 35 33 23 
+17:17:13   
+
+Omgång 4
+17:17:13   Kraftverk  nr 16 såldes och ersattes av 32
+17:17:13   Kraftverk  nr 4 såldes och ersattes av 50
+17:17:15   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 46 fram.
+
+Nu består den nuvarnade marknaden av: 6 9 23 32 
+Den framtida markaden består av: 37 35 33 46 
+17:17:15   
+
+Omgång 5
+17:17:16   Kraftverk  nr 32 såldes och ersattes av 29
+17:17:17   Kraftverk  nr 6 såldes och ersattes av 21
+17:17:18   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 27 fram.
+
+Nu består den nuvarnade marknaden av: 9 23 21 27 
+Den framtida markaden består av: 37 35 33 29 
+17:17:18   
+
+Omgång 6
+17:17:18   Kraftverk  nr 21 såldes och ersattes av 31
+17:17:19   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 20 fram.
+
+Nu består den nuvarnade marknaden av: 9 23 27 20 
+Den framtida markaden består av: 35 33 31 29 
+17:17:19   
+
+Omgång 7
+17:17:20   Kraftverk  nr 20 såldes och ersattes av 25
+17:17:20   Kraftverk  nr 23 såldes och ersattes av 36
+17:17:21   Kraftverk  nr 25 såldes och ersattes av 30
+17:17:21   Kraftverk  nr 30 såldes och ersattes av 19
+17:17:23   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 34 fram.
+
+Nu består den nuvarnade marknaden av: 9 27 29 19 
+Den framtida markaden består av: 35 33 31 34 
+17:17:23   
+
+Omgång 8
+17:17:23   Kraftverk  nr 9 kastades bort och ersattes av 22
+17:17:25   Det högsta kraftverket, nr 35 lades underst i högen.
+Istället togs nr 26 fram.
+
+Nu består den nuvarnade marknaden av: 27 19 22 26 
+Den framtida markaden består av: 33 31 34 29 
+17:17:25   
+
+Omgång 9
+17:17:25   Kraftverk  nr 26 såldes och ersattes av 17
+17:17:26   Kraftverk  nr 17 såldes och ersattes av 38
+17:17:27   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 18 fram.
+
+Nu består den nuvarnade marknaden av: 27 19 22 18 
+Den framtida markaden består av: 33 31 34 29 
+17:17:27   
+
+Omgång 10
+17:17:27   Kraftverk  nr 19 såldes och ersattes av 40
+17:17:27   Kraftverk  nr 29 såldes och ersattes av 39
+17:17:27   Kraftverk  nr 31 såldes och ersattes av 24
+17:17:29   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 12 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 24 12 
+Den framtida markaden består av: 33 34 39 27 
+17:17:29   
+
+Omgång 11
+17:17:29   Kraftverk  nr 12 kastades bort och ersattes av 28
+17:17:31   Det högsta kraftverket, nr 39 lades underst i högen.
+Istället togs nr 51 fram.
+
+Nu består den nuvarnade marknaden av: 22 18 24 27 
+17:17:31   Kraftverk  nr 18 kastades bort och ersattes av 13
+17:17:31   
+
+Omgång 12
+17:17:31   Kraftverk  nr 28 såldes och ersattes av 44
+17:17:31   Kraftverk  nr 33 såldes och ersattes av 42
+17:17:33   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 50 fram.
+
+Nu består den nuvarnade marknaden av: 22 24 27 13 44 42 
+17:17:33   
+
+Omgång 13
+17:17:33   Kraftverk  nr 24 såldes och ersattes av 46
+
+
+Filen skapades Sun Jun 24 20:40:24 2018
+
+
+
+Filen skapades Sun Jun 24 20:40:25 2018
+
+20:40:25   Kraftverk  nr 3 kastades bort och ersattes av 13
+20:40:26   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 26 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 26 
+20:40:26   
+
+Omgång 2
+20:40:26   Kraftverk  nr 5 såldes och ersattes av 42
+20:40:27   Det högsta kraftverket, nr 42 lades underst i högen.
+Istället togs nr 22 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 26 22 
+20:40:27   
+
+Omgång 3
+20:40:27   Kraftverk  nr 8 såldes och ersattes av 40
+20:40:28   Kraftverk  nr 7 såldes och ersattes av 16
+20:40:28   Kraftverk  nr 10 såldes och ersattes av 25
+20:40:29   Kraftverk  nr 16 såldes och ersattes av 21
+20:40:29   Kraftverk  nr 21 såldes och ersattes av 38
+20:40:29   Kraftverk  nr 6 såldes och ersattes av 28
+20:40:30   Det högsta kraftverket, nr 40 lades underst i högen.
+Istället togs nr 19 fram.
+
+Nu består den nuvarnade marknaden av: 4 9 22 19 
+Den framtida markaden består av: 26 38 28 25 
+20:40:30   
+
+Omgång 4
+20:40:30   Kraftverk  nr 4 såldes och ersattes av 17
+20:40:30   Kraftverk  nr 19 såldes och ersattes av 50
+20:40:31   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 36 fram.
+
+Nu består den nuvarnade marknaden av: 9 22 17 25 
+Den framtida markaden består av: 26 38 28 36 
+20:40:31   
+
+Omgång 5
+20:40:32   Kraftverk  nr 25 såldes och ersattes av 12
+20:40:33   Det högsta kraftverket, nr 38 lades underst i högen.
+Istället togs nr 27 fram.
+
+Nu består den nuvarnade marknaden av: 9 22 17 12 
+Den framtida markaden består av: 26 28 36 27 
+20:40:33   
+
+Omgång 6
+20:40:33   Kraftverk  nr 9 kastades bort och ersattes av 33
+20:40:34   Det högsta kraftverket, nr 36 lades underst i högen.
+Istället togs nr 34 fram.
+
+Nu består den nuvarnade marknaden av: 22 17 12 26 
+Den framtida markaden består av: 28 27 33 34 
+20:40:34   
+
+Omgång 7
+20:40:34   Kraftverk  nr 26 såldes och ersattes av 37
+20:40:35   Kraftverk  nr 12 såldes och ersattes av 18
+20:40:36   Det högsta kraftverket, nr 37 lades underst i högen.
+Istället togs nr 30 fram.
+
+Nu består den nuvarnade marknaden av: 22 17 27 18 
+Den framtida markaden består av: 28 33 34 30 
+20:40:36   
+
+Omgång 8
+20:40:36   Kraftverk  nr 17 såldes och ersattes av 44
+20:40:36   Kraftverk  nr 28 såldes och ersattes av 20
+20:40:37   Kraftverk  nr 20 såldes och ersattes av 29
+20:40:37   Kraftverk  nr 29 såldes och ersattes av 31
+20:40:39   Det högsta kraftverket, nr 44 lades underst i högen.
+Istället togs nr 14 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 18 14 
+Den framtida markaden består av: 33 34 31 30 
+20:40:39   
+
+Omgång 9
+20:40:39   Kraftverk  nr 14 såldes och ersattes av 32
+20:40:40   Kraftverk  nr 30 såldes och ersattes av 23
+20:40:40   Kraftverk  nr 23 såldes och ersattes av 24
+20:40:41   Det högsta kraftverket, nr 34 lades underst i högen.
+Istället togs nr 39 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 18 24 
+Den framtida markaden består av: 33 31 32 39 
+20:40:41   
+
+Omgång 10
+20:40:42   Kraftverk  nr 24 såldes och ersattes av 11
+20:40:42   Kraftverk  nr 11 såldes och ersattes av 15
+20:40:42   Kraftverk  nr 15 såldes och ersattes av 46
+20:40:42   Kraftverk  nr 31 såldes och ersattes av 35
+20:40:43   Kraftverk  nr 32 såldes och ersattes av 51
+20:40:44   Det högsta kraftverket, nr 51 lades underst i högen.
+Istället togs nr 13 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 18 13 
+20:40:44   Kraftverk  nr 13 kastades bort och ersattes av 42
+20:40:44   
+
+Omgång 11
+20:40:44   Kraftverk  nr 33 såldes och ersattes av 40
+20:40:44   Kraftverk  nr 40 såldes och ersattes av 50
+20:40:46   Det högsta kraftverket, nr 50 lades underst i högen.
+Istället togs nr 38 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 18 35 42 38 
+20:40:46   
+
+Omgång 12
+20:40:46   Kraftverk  nr 38 såldes och ersattes av 36
+20:40:47   Kraftverk  nr 36 såldes och ersattes av 37
+20:40:48   Det högsta kraftverket, nr 46 lades underst i högen.
+Istället togs nr 44 fram.
+
+Nu består den nuvarnade marknaden av: 22 27 18 35 42 37 
+20:40:48   Kraftverk  nr 3 kastades bort och ersattes av 13
+20:40:49   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 34 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 34 
+20:40:49   
+
+Omgång 2
+20:40:49   Kraftverk  nr 5 såldes och ersattes av 32
+20:40:50   Det högsta kraftverket, nr 34 lades underst i högen.
+Istället togs nr 37 fram.
+
+Nu består den nuvarnade marknaden av: 4 6 7 8 
+Den framtida markaden består av: 9 10 32 37 
+20:40:50   
+
+Omgång 3
+20:40:51   Kraftverk  nr 8 såldes och ersattes av 11
+20:40:51   Kraftverk  nr 7 såldes och ersattes av 31
+20:40:51   Kraftverk  nr 10 såldes och ersattes av 33
+20:40:52   Kraftverk  nr 11 såldes och ersattes av 27
+20:40:52   Kraftverk  nr 6 såldes och ersattes av 16
+20:40:52   Kraftverk  nr 16 såldes och ersattes av 18
+
+
+Filen skapades Sun Jun 24 21:44:49 2018
+
+
+
+Filen skapades Sun Jun 24 21:44:49 2018
+
+21:44:49   Kraftverk  nr 3 kastades bort och ersattes av 13
+21:44:51   Det högsta kraftverket, nr 13 lades underst i högen.
+Istället togs nr 44 fram.
+
+Nu består den nuvarnade marknaden av: 4 5 6 7 
+Den framtida markaden består av: 8 9 10 44 
+21:44:51   
+
+Omgång 2
+21:44:51   Kraftverk  nr 5 såldes och ersattes av 39
+
+
+Filen skapades Sun Jun 24 21:56:07 2018
+
+
+
+Filen skapades Sun Jun 24 21:56:07 2018
+

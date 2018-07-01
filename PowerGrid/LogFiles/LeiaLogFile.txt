@@ -1,0 +1,3892 @@
+
+
+Filen skapades Sat Dec 10 17:04:55 2016
+
+17:04:56   Staden San Diego lades till för 10 elektro. via städerna 
+17:04:57   Tjänade 10 elektro
+17:04:57   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+San Diego
+
+17:04:58   Tjänade 10 elektro
+17:04:59   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+San Diego
+
+17:05:00   Köpte kraftverk nr 10 för 14 elektro
+17:05:01   Köpte 2 coal för 3 elektro
+17:05:02   Staden Los Angeles lades till för 13 elektro. via städerna San Diego->Los Angeles
+17:05:02   Tjänade 33 elektro
+17:05:02   
+Omgång 4
+Elektro: 63
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+10
+Städer:
+San Diego
+Los Angeles
+
+17:05:03   Köpte kraftverk nr 19 för 19 elektro
+17:05:03   Köpte 2 coal för 5 elektro
+17:05:03   Köpte 2 garbage för 10 elektro
+17:05:04   Staden Las Vegas lades till för 19 elektro. via städerna Los Angeles->Las Vegas
+17:05:04   Tjänade 44 elektro
+17:05:04   
+Omgång 5
+Elektro: 54
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+10
+19
+Städer:
+San Diego
+Los Angeles
+Las Vegas
+
+17:05:06   Köpte 2 coal för 8 elektro
+17:05:06   Köpte 2 garbage för 10 elektro
+17:05:07   Staden San Fransisco lades till för 19 elektro. via städerna Los Angeles->San Fransisco
+17:05:07   Staden Salt Lake City lades till för 10 elektro. via städerna San Fransisco->Salt Lake City
+17:05:07   Tjänade 64 elektro
+17:05:07   
+Omgång 6
+Elektro: 71
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+10
+19
+Städer:
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+
+17:05:08   Köpte 2 coal för 9 elektro
+17:05:09   Köpte 2 garbage för 12 elektro
+17:05:09   Tjänade 64 elektro
+17:05:09   
+Omgång 7
+Elektro: 114
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+10
+19
+Städer:
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+
+17:05:11   Köpte 2 coal för 9 elektro
+17:05:11   Köpte 2 garbage för 10 elektro
+17:05:12   Tjänade 64 elektro
+17:05:12   
+Omgång 8
+Elektro: 159
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+10
+19
+Städer:
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+
+17:05:14   Köpte 2 coal för 10 elektro
+17:05:14   Köpte 2 garbage för 9 elektro
+17:05:15   Tjänade 64 elektro
+17:05:15   
+Omgång 9
+Elektro: 204
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+10
+19
+Städer:
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+
+17:05:16   Köpte kraftverk nr 30 för 54 elektro
+17:05:17   Köpte 3 garbage för 13 elektro
+17:05:17   Köpte 2 coal för 10 elektro
+17:05:17   Staden Boise lades till för 18 elektro. via städerna Salt Lake City->Boise
+17:05:17   Staden Phoenix lades till för 24 elektro. via städerna San Diego->Phoenix
+17:05:18   Staden Billings lades till för 27 elektro. via städerna Boise->Billings
+17:05:18   Staden Cheyenne lades till för 19 elektro. via städerna Billings->Cheyenne
+17:05:18   Staden Denver lades till för 10 elektro. via städerna Cheyenne->Denver
+17:05:18   Staden Seattle lades till för 24 elektro. via städerna Billings->Seattle
+17:05:18   Tjänade 64 elektro
+17:05:18   
+Omgång 10
+Elektro: 69
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 11
+Antal försörjda städer: 5
+KraftVerk:
+10
+19
+30
+Städer:
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+Boise
+Phoenix
+Billings
+Cheyenne
+Denver
+Seattle
+
+17:05:19   Köpte 2 garbage för 10 elektro
+17:05:19   Köpte 2 coal för 13 elektro
+17:05:20   Tjänade 64 elektro
+17:05:21   Staden Houston lades till för 10 elektro. via städerna 
+17:05:22   Tjänade 10 elektro
+17:05:22   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Houston
+
+17:05:23   Tjänade 10 elektro
+17:05:23   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Houston
+
+17:05:26   Köpte kraftverk nr 15 för 15 elektro
+17:05:26   Köpte 2 coal för 2 elektro
+17:05:26   Staden New Orleans lades till för 18 elektro. via städerna Houston->New Orleans
+17:05:27   Staden Memphis lades till för 17 elektro. via städerna New Orleans->Memphis
+17:05:27   Tjänade 44 elektro
+17:05:27   
+Omgång 4
+Elektro: 52
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+15
+Städer:
+Houston
+New Orleans
+Memphis
+
+
+
+Filen skapades Tue Dec 27 18:53:26 2016
+
+18:53:34   Staden Philadelphia lades till för 10 elektro. via städerna 
+18:53:34   Tjänade 10 elektro
+18:53:34   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Philadelphia
+
+18:53:35   Tjänade 10 elektro
+18:53:35   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Philadelphia
+
+18:53:36   Köpte kraftverk nr 7 för 17 elektro
+18:53:38   Köpte 3 oil för 7 elektro
+18:53:38   Staden Washington DC lades till för 13 elektro. via städerna Philadelphia->Washington DC
+18:53:38   Tjänade 33 elektro
+18:53:38   
+Omgång 4
+Elektro: 56
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+Philadelphia
+Washington DC
+
+18:53:39   Köpte 3 oil för 7 elektro
+18:53:40   Tjänade 33 elektro
+18:53:40   
+Omgång 5
+Elektro: 82
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+Philadelphia
+Washington DC
+
+18:53:40   Köpte kraftverk nr 16 för 25 elektro
+18:53:41   Köpte 3 oil för 7 elektro
+18:53:42   Staden Norfolk lades till för 15 elektro. via städerna Washington DC->Norfolk
+18:53:42   Staden Raleigh lades till för 13 elektro. via städerna Norfolk->Raleigh
+18:53:42   Staden Pittsburgh lades till för 16 elektro. via städerna Washington DC->Pittsburgh
+18:53:42   Tjänade 33 elektro
+18:53:42   
+Omgång 6
+Elektro: 39
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+Städer:
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+
+18:53:43   Köpte 3 oil för 6 elektro
+18:53:44   Tjänade 33 elektro
+18:53:44   
+Omgång 7
+Elektro: 66
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+Städer:
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+
+18:53:44   Köpte kraftverk nr 9 för 9 elektro
+18:53:45   Köpte 3 oil för 7 elektro
+18:53:45   Staden New York lades till för 15 elektro. via städerna Philadelphia->New York
+18:53:46   Tjänade 33 elektro
+18:53:46   
+Omgång 8
+Elektro: 68
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+9
+Städer:
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+New York
+
+18:53:46   Köpte kraftverk nr 21 för 21 elektro
+18:53:46   Köpte 3 oil för 8 elektro
+18:53:46   Köpte 2 coal för 2 elektro
+18:53:47   Staden Boston lades till för 18 elektro. via städerna New York->Boston
+18:53:47   Tjänade 73 elektro
+18:53:47   
+Omgång 9
+Elektro: 92
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 6
+KraftVerk:
+7
+16
+21
+Städer:
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+New York
+Boston
+
+18:53:48   Köpte kraftverk nr 29 för 29 elektro
+18:53:48   Köpte 2 oil för 4 elektro
+18:53:48   Köpte 2 coal för 4 elektro
+18:53:48   Köpte 1 coal för 2 elektro
+18:53:49   Staden Detroit lades till för 21 elektro. via städerna Pittsburgh->Detroit
+18:53:49   Staden Cincinnati lades till för 19 elektro. via städerna Detroit->Cincinnati
+18:53:50   Tjänade 98 elektro
+18:53:50   
+Omgång 10
+Elektro: 111
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 9
+Antal försörjda städer: 9
+KraftVerk:
+29
+16
+21
+Städer:
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+New York
+Boston
+Detroit
+Cincinnati
+
+18:53:50   Köpte kraftverk nr 32 för 57 elektro
+18:53:52   Köpte 3 oil för 7 elektro
+18:53:52   Köpte 2 oil för 6 elektro
+18:53:52   Köpte 1 coal för 3 elektro
+18:53:52   Staden Buffalo lades till för 22 elektro. via städerna Detroit->Buffalo
+18:53:53   Tjänade 105 elektro
+18:53:53   
+Omgång 11
+Elektro: 121
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 10
+Antal försörjda städer: 10
+KraftVerk:
+29
+32
+21
+Städer:
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+New York
+Boston
+Detroit
+Cincinnati
+Buffalo
+
+18:53:53   Köpte kraftverk nr 35 för 44 elektro
+18:53:55   Köpte 3 oil för 7 elektro
+18:53:55   Köpte 2 oil för 6 elektro
+18:53:56   Staden Chicago lades till för 22 elektro. via städerna Cincinnati->Chicago
+18:53:56   Staden Knoxville lades till för 26 elektro. via städerna Cincinnati->Knoxville
+18:53:56   Tjänade 112 elektro
+18:53:57   Staden Billings lades till för 10 elektro. via städerna 
+18:53:57   Tjänade 10 elektro
+18:53:57   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Billings
+
+18:53:58   Tjänade 10 elektro
+18:53:58   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Billings
+
+18:53:59   Köpte kraftverk nr 8 för 14 elektro
+18:54:00   Köpte 3 coal för 9 elektro
+18:54:01   Staden Seattle lades till för 19 elektro. via städerna Billings->Seattle
+18:54:01   Tjänade 33 elektro
+18:54:01   
+Omgång 4
+Elektro: 51
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+8
+Städer:
+Billings
+Seattle
+
+18:54:01   Köpte 3 coal för 7 elektro
+18:54:02   Tjänade 33 elektro
+18:54:02   
+Omgång 5
+Elektro: 77
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+8
+Städer:
+Billings
+Seattle
+
+18:54:03   Köpte kraftverk nr 29 för 39 elektro
+18:54:04   Köpte 3 coal för 5 elektro
+18:54:04   Köpte 1 oil för 2 elektro
+18:54:04   Staden Portland lades till för 13 elektro. via städerna Seattle->Portland
+18:54:04   Tjänade 44 elektro
+18:54:04   
+Omgång 6
+Elektro: 62
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+8
+29
+Städer:
+Billings
+Seattle
+Portland
+
+18:54:05   Köpte 3 coal för 11 elektro
+18:54:05   Köpte 1 oil för 4 elektro
+18:54:06   Tjänade 44 elektro
+18:54:06   
+Omgång 7
+Elektro: 91
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+8
+29
+Städer:
+Billings
+Seattle
+Portland
+
+18:54:07   Köpte kraftverk nr 20 för 54 elektro
+18:54:08   Köpte 3 coal för 7 elektro
+18:54:08   Köpte 1 oil för 3 elektro
+18:54:09   Staden Cheyenne lades till för 24 elektro. via städerna Billings->Cheyenne
+18:54:09   Tjänade 54 elektro
+18:54:09   
+Omgång 8
+Elektro: 57
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 4
+KraftVerk:
+8
+29
+20
+Städer:
+Billings
+Seattle
+Portland
+Cheyenne
+
+18:54:10   Köpte 3 coal för 5 elektro
+18:54:10   Köpte 1 coal för 2 elektro
+18:54:11   Staden Denver lades till för 15 elektro. via städerna Cheyenne->Denver
+18:54:11   Staden Boise lades till för 27 elektro. via städerna Billings->Boise
+18:54:11   Tjänade 73 elektro
+18:54:11   
+Omgång 9
+Elektro: 81
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+8
+29
+20
+Städer:
+Billings
+Seattle
+Portland
+Cheyenne
+Denver
+Boise
+
+18:54:12   Köpte kraftverk nr 32 för 32 elektro
+18:54:12   Köpte 3 oil för 11 elektro
+18:54:12   Köpte 3 coal för 9 elektro
+18:54:12   Köpte 1 coal för 4 elektro
+18:54:13   Tjänade 73 elektro
+18:54:13   
+Omgång 10
+Elektro: 98
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+32
+29
+20
+Städer:
+Billings
+Seattle
+Portland
+Cheyenne
+Denver
+Boise
+
+18:54:13   Köpte 3 oil för 13 elektro
+18:54:13   Köpte 3 coal för 13 elektro
+18:54:13   Köpte 1 oil för 5 elektro
+18:54:14   Staden Omaha lades till för 29 elektro. via städerna Cheyenne->Omaha
+18:54:14   Staden Kansas City lades till för 23 elektro. via städerna Omaha->Kansas City
+18:54:14   Tjänade 90 elektro
+18:54:14   
+Omgång 11
+Elektro: 105
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 8
+KraftVerk:
+32
+29
+20
+Städer:
+Billings
+Seattle
+Portland
+Cheyenne
+Denver
+Boise
+Omaha
+Kansas City
+
+18:54:15   Köpte 3 oil för 18 elektro
+18:54:15   Köpte 3 coal för 16 elektro
+18:54:15   Köpte 1 coal för 6 elektro
+18:54:16   Staden St. Louis lades till för 21 elektro. via städerna Kansas City->St. Louis
+18:54:16   Staden Minneapolis lades till för 23 elektro. via städerna Omaha->Minneapolis
+18:54:16   Staden Duluth lades till för 20 elektro. via städerna Minneapolis->Duluth
+18:54:16   Tjänade 112 elektro
+18:54:16   
+Omgång 12
+Elektro: 113
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 11
+Antal försörjda städer: 11
+KraftVerk:
+32
+29
+20
+Städer:
+Billings
+Seattle
+Portland
+Cheyenne
+Denver
+Boise
+Omaha
+Kansas City
+St. Louis
+Minneapolis
+Duluth
+
+18:54:17   Köpte kraftverk nr 26 för 41 elektro
+18:54:18   Köpte 3 oil för 25 elektro
+18:54:18   Köpte 3 coal för 24 elektro
+18:54:19   Tjänade 112 elektro
+18:54:20   Staden Phoenix lades till för 10 elektro. via städerna 
+18:54:20   Tjänade 10 elektro
+18:54:20   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Phoenix
+
+18:54:22   Tjänade 10 elektro
+18:54:22   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Phoenix
+
+18:54:22   Köpte kraftverk nr 7 för 17 elektro
+18:54:23   Köpte 3 oil för 7 elektro
+18:54:24   Staden San Diego lades till för 24 elektro. via städerna Phoenix->San Diego
+18:54:24   Tjänade 33 elektro
+18:54:24   
+Omgång 4
+Elektro: 45
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+Phoenix
+San Diego
+
+18:54:25   Köpte 3 oil för 9 elektro
+18:54:26   Tjänade 33 elektro
+18:54:26   
+Omgång 5
+Elektro: 69
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+Phoenix
+San Diego
+
+18:54:26   Köpte kraftverk nr 19 för 24 elektro
+18:54:26   Köpte 3 oil för 11 elektro
+18:54:26   Köpte 2 garbage för 7 elektro
+18:54:27   Tjänade 33 elektro
+18:54:27   
+Omgång 6
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+19
+Städer:
+Phoenix
+San Diego
+
+18:54:28   Köpte kraftverk nr 24 för 24 elektro
+18:54:28   Köpte 3 oil för 13 elektro
+18:54:28   Köpte 2 garbage för 7 elektro
+18:54:29   Tjänade 33 elektro
+18:54:29   
+Omgång 7
+Elektro: 49
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+19
+24
+Städer:
+Phoenix
+San Diego
+
+18:54:29   Köpte 3 oil för 13 elektro
+18:54:29   Köpte 2 garbage för 7 elektro
+18:54:29   Staden Santa Fe lades till för 28 elektro. via städerna Phoenix->Santa Fe
+18:54:30   Tjänade 44 elektro
+18:54:30   
+Omgång 8
+Elektro: 45
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+7
+19
+24
+Städer:
+Phoenix
+San Diego
+Santa Fe
+
+18:54:31   Köpte 3 oil för 17 elektro
+18:54:31   Köpte 2 garbage för 7 elektro
+18:54:32   Tjänade 44 elektro
+18:54:32   
+Omgång 9
+Elektro: 65
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+7
+19
+24
+Städer:
+Phoenix
+San Diego
+Santa Fe
+
+18:54:33   Köpte kraftverk nr 30 för 45 elektro
+18:54:33   Köpte 3 garbage för 9 elektro
+18:54:34   Tjänade 44 elektro
+18:54:34   
+Omgång 10
+Elektro: 55
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+30
+19
+24
+Städer:
+Phoenix
+San Diego
+Santa Fe
+
+18:54:35   Köpte 3 garbage för 8 elektro
+18:54:36   Staden Los Angeles lades till för 18 elektro. via städerna San Diego->Los Angeles
+18:54:36   Staden Las Vegas lades till för 24 elektro. via städerna Los Angeles->Las Vegas
+18:54:37   Tjänade 64 elektro
+18:54:37   
+Omgång 11
+Elektro: 69
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+30
+19
+24
+Städer:
+Phoenix
+San Diego
+Santa Fe
+Los Angeles
+Las Vegas
+
+18:54:38   Köpte kraftverk nr 14 för 14 elektro
+18:54:38   Köpte 3 garbage för 7 elektro
+18:54:38   Staden San Fransisco lades till för 24 elektro. via städerna Los Angeles->San Fransisco
+18:54:38   Staden Salt Lake City lades till för 15 elektro. via städerna San Fransisco->Salt Lake City
+18:54:39   Tjänade 73 elektro
+18:54:39   
+Omgång 12
+Elektro: 82
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 6
+KraftVerk:
+30
+14
+24
+Städer:
+Phoenix
+San Diego
+Santa Fe
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+
+18:54:41   Köpte kraftverk nr 38 för 50 elektro
+18:54:41   Köpte 3 garbage för 4 elektro
+18:54:42   Staden Boise lades till för 23 elektro. via städerna Salt Lake City->Boise
+18:54:43   Tjänade 73 elektro
+18:54:43   Staden Houston lades till för 10 elektro. via städerna 
+18:54:44   Tjänade 10 elektro
+18:54:44   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Houston
+
+18:54:45   Tjänade 10 elektro
+18:54:45   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Houston
+
+18:54:46   Köpte kraftverk nr 7 för 14 elektro
+18:54:46   Köpte 3 oil för 3 elektro
+18:54:47   Staden New Orleans lades till för 18 elektro. via städerna Houston->New Orleans
+18:54:47   Tjänade 33 elektro
+18:54:47   
+Omgång 4
+Elektro: 58
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+Houston
+New Orleans
+
+18:54:48   Köpte 3 oil för 9 elektro
+18:54:49   Tjänade 33 elektro
+18:54:49   
+Omgång 5
+Elektro: 82
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+Houston
+New Orleans
+
+18:54:49   Köpte kraftverk nr 16 för 25 elektro
+18:54:50   Köpte 3 oil för 9 elektro
+18:54:50   Staden Memphis lades till för 17 elektro. via städerna New Orleans->Memphis
+18:54:50   Staden Santa Fe lades till för 31 elektro. via städerna Houston->Santa Fe
+18:54:51   Tjänade 33 elektro
+18:54:51   
+Omgång 6
+Elektro: 33
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+Städer:
+Houston
+New Orleans
+Memphis
+Santa Fe
+
+18:54:52   Köpte 3 oil för 9 elektro
+18:54:52   Staden Denver lades till för 23 elektro. via städerna Santa Fe->Denver
+18:54:53   Tjänade 33 elektro
+18:54:53   
+Omgång 7
+Elektro: 34
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+Städer:
+Houston
+New Orleans
+Memphis
+Santa Fe
+Denver
+
+18:54:54   Köpte 3 oil för 15 elektro
+18:54:55   Tjänade 33 elektro
+18:54:55   
+Omgång 8
+Elektro: 52
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+Städer:
+Houston
+New Orleans
+Memphis
+Santa Fe
+Denver
+
+18:54:57   Köpte 3 oil för 13 elektro
+18:54:58   Tjänade 33 elektro
+18:54:58   
+Omgång 9
+Elektro: 72
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+Städer:
+Houston
+New Orleans
+Memphis
+Santa Fe
+Denver
+
+18:54:59   Köpte kraftverk nr 26 för 39 elektro
+18:54:59   Köpte 3 oil för 14 elektro
+18:55:00   Staden Cheyenne lades till för 10 elektro. via städerna Denver->Cheyenne
+18:55:00   Tjänade 33 elektro
+18:55:00   
+Omgång 10
+Elektro: 42
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+26
+Städer:
+Houston
+New Orleans
+Memphis
+Santa Fe
+Denver
+Cheyenne
+
+18:55:02   Köpte 3 oil för 16 elektro
+18:55:02   Staden Billings lades till för 19 elektro. via städerna Cheyenne->Billings
+18:55:03   Tjänade 33 elektro
+18:55:03   
+Omgång 11
+Elektro: 40
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+26
+Städer:
+Houston
+New Orleans
+Memphis
+Santa Fe
+Denver
+Cheyenne
+Billings
+
+18:55:04   Köpte 3 oil för 15 elektro
+18:55:05   Staden Seattle lades till för 19 elektro. via städerna Billings->Seattle
+18:55:05   Tjänade 33 elektro
+18:55:06   Staden Boston lades till för 10 elektro. via städerna 
+18:55:06   Tjänade 10 elektro
+18:55:06   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Boston
+
+18:55:07   Tjänade 10 elektro
+18:55:08   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Boston
+
+18:55:09   Köpte kraftverk nr 6 för 8 elektro
+18:55:09   Köpte 1 garbage för 5 elektro
+18:55:10   Tjänade 22 elektro
+18:55:10   
+Omgång 4
+Elektro: 69
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+6
+Städer:
+Boston
+
+18:55:11   Köpte kraftverk nr 14 för 14 elektro
+18:55:11   Köpte 2 garbage för 8 elektro
+18:55:12   Staden New York lades till för 13 elektro. via städerna Boston->New York
+18:55:12   Staden Philadelphia lades till för 10 elektro. via städerna New York->Philadelphia
+18:55:12   Tjänade 22 elektro
+18:55:12   
+Omgång 5
+Elektro: 46
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 1
+KraftVerk:
+6
+14
+Städer:
+Boston
+New York
+Philadelphia
+
+18:55:13   Köpte 1 garbage för 4 elektro
+18:55:14   Tjänade 22 elektro
+18:55:14   
+Omgång 6
+Elektro: 64
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 1
+KraftVerk:
+6
+14
+Städer:
+Boston
+New York
+Philadelphia
+
+18:55:14   Köpte 1 garbage för 3 elektro
+18:55:15   Tjänade 22 elektro
+18:55:15   
+Omgång 7
+Elektro: 83
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 1
+KraftVerk:
+6
+14
+Städer:
+Boston
+New York
+Philadelphia
+
+18:55:16   Köpte 1 garbage för 2 elektro
+18:55:17   Tjänade 22 elektro
+18:55:17   
+Omgång 8
+Elektro: 103
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 1
+KraftVerk:
+6
+14
+Städer:
+Boston
+New York
+Philadelphia
+
+18:55:17   Köpte 1 garbage för 1 elektro
+18:55:18   Tjänade 22 elektro
+18:55:18   
+Omgång 9
+Elektro: 124
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 1
+KraftVerk:
+6
+14
+Städer:
+Boston
+New York
+Philadelphia
+
+18:55:19   Köpte kraftverk nr 24 för 34 elektro
+18:55:20   Köpte 1 garbage för 1 elektro
+18:55:21   Staden Washington DC lades till för 18 elektro. via städerna Philadelphia->Washington DC
+18:55:21   Staden Norfolk lades till för 20 elektro. via städerna Washington DC->Norfolk
+18:55:21   Staden Raleigh lades till för 18 elektro. via städerna Norfolk->Raleigh
+18:55:21   Staden Pittsburgh lades till för 21 elektro. via städerna Washington DC->Pittsburgh
+18:55:21   Tjänade 22 elektro
+18:55:21   
+Omgång 10
+Elektro: 34
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 1
+KraftVerk:
+6
+14
+24
+Städer:
+Boston
+New York
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+
+18:55:22   Köpte 1 garbage för 1 elektro
+18:55:23   Tjänade 22 elektro
+18:55:23   
+Omgång 11
+Elektro: 55
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 1
+KraftVerk:
+6
+14
+24
+Städer:
+Boston
+New York
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+
+18:55:23   Köpte 1 garbage för 1 elektro
+18:55:24   Tjänade 22 elektro
+18:55:24   
+Omgång 12
+Elektro: 76
+Kol: 0
+Olja: 0
+Sopor: 1
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 1
+KraftVerk:
+6
+14
+24
+Städer:
+Boston
+New York
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+
+18:55:24   Köpte kraftverk nr 19 för 19 elektro
+18:55:24   Köpte 1 garbage för 1 elektro
+18:55:25   Staden Detroit lades till för 21 elektro. via städerna Pittsburgh->Detroit
+18:55:25   Staden Atlanta lades till för 22 elektro. via städerna Raleigh->Atlanta
+18:55:25   Tjänade 44 elektro
+18:55:25   
+Omgång 13
+Elektro: 57
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 9
+Antal försörjda städer: 3
+KraftVerk:
+19
+14
+24
+Städer:
+Boston
+New York
+Philadelphia
+Washington DC
+Norfolk
+Raleigh
+Pittsburgh
+Detroit
+Atlanta
+
+18:55:27   Köpte 2 garbage för 2 elektro
+18:55:29   Tjänade 44 elektro
+18:55:29   Staden Santa Fe lades till för 10 elektro. via städerna 
+18:55:30   Tjänade 10 elektro
+18:55:30   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Santa Fe
+
+18:55:31   Tjänade 10 elektro
+18:55:31   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Santa Fe
+
+18:55:33   Köpte kraftverk nr 26 för 26 elektro
+18:55:33   Köpte 2 oil för 2 elektro
+18:55:33   Staden Denver lades till för 23 elektro. via städerna Santa Fe->Denver
+18:55:34   Tjänade 33 elektro
+18:55:34   
+Omgång 4
+Elektro: 42
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+26
+Städer:
+Santa Fe
+Denver
+
+18:55:34   Köpte 2 oil för 9 elektro
+18:55:35   Tjänade 33 elektro
+18:55:35   
+Omgång 5
+Elektro: 66
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+26
+Städer:
+Santa Fe
+Denver
+
+18:55:36   Köpte kraftverk nr 30 för 52 elektro
+18:55:37   Köpte 3 garbage för 9 elektro
+18:55:38   Tjänade 33 elektro
+18:55:38   
+Omgång 6
+Elektro: 38
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+26
+30
+Städer:
+Santa Fe
+Denver
+
+18:55:38   Köpte 3 garbage för 9 elektro
+18:55:38   Köpte 2 oil för 8 elektro
+18:55:38   Staden Cheyenne lades till för 10 elektro. via städerna Denver->Cheyenne
+18:55:39   Tjänade 44 elektro
+18:55:39   
+Omgång 7
+Elektro: 55
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+26
+30
+Städer:
+Santa Fe
+Denver
+Cheyenne
+
+18:55:40   Köpte 3 garbage för 7 elektro
+18:55:40   Köpte 2 oil för 10 elektro
+18:55:40   Staden Billings lades till för 19 elektro. via städerna Cheyenne->Billings
+18:55:40   Staden Seattle lades till för 19 elektro. via städerna Billings->Seattle
+18:55:40   Tjänade 64 elektro
+18:55:40   
+Omgång 8
+Elektro: 64
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+26
+30
+Städer:
+Santa Fe
+Denver
+Cheyenne
+Billings
+Seattle
+
+18:55:41   Köpte kraftverk nr 14 för 16 elektro
+18:55:42   Köpte 3 garbage för 5 elektro
+18:55:42   Köpte 2 oil för 11 elektro
+18:55:42   Staden Portland lades till för 13 elektro. via städerna Seattle->Portland
+18:55:42   Tjänade 73 elektro
+18:55:43   
+Omgång 9
+Elektro: 92
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+26
+30
+14
+Städer:
+Santa Fe
+Denver
+Cheyenne
+Billings
+Seattle
+Portland
+
+18:55:43   Köpte kraftverk nr 32 för 44 elektro
+18:55:44   Köpte 3 garbage för 3 elektro
+18:55:44   Köpte 3 oil för 16 elektro
+18:55:44   Staden Boise lades till för 22 elektro. via städerna Billings->Boise
+18:55:45   Tjänade 82 elektro
+18:55:45   
+Omgång 10
+Elektro: 89
+Kol: 0
+Olja: 1
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 7
+KraftVerk:
+26
+30
+32
+Städer:
+Santa Fe
+Denver
+Cheyenne
+Billings
+Seattle
+Portland
+Boise
+
+18:55:45   Köpte kraftverk nr 16 för 22 elektro
+18:55:46   Köpte 3 garbage för 7 elektro
+18:55:46   Köpte 2 oil för 10 elektro
+18:55:46   Staden Salt Lake City lades till för 23 elektro. via städerna Boise->Salt Lake City
+18:55:47   Staden San Fransisco lades till för 15 elektro. via städerna Salt Lake City->San Fransisco
+
+
+Filen skapades Tue Dec 27 18:56:21 2016
+
+18:57:00   Staden Raleigh lades till för 10 elektro. via städerna 
+18:57:12   Tjänade 10 elektro
+18:57:12   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Raleigh
+
+
+
+Filen skapades Fri Dec 29 13:57:46 2017
+
+13:58:43   Staden Miami lades till för 10 elektro. via städerna 
+13:58:46   Tjänade 10 elektro
+13:58:46   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Miami
+
+14:00:13   Tjänade 10 elektro
+14:00:13   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Miami
+
+14:00:22   Köpte kraftverk nr 8 för 14 elektro
+14:00:23   Köpte 3 coal för 8 elektro
+14:00:34   Staden Tampa lades till för 14 elektro. via städerna Miami->Tampa
+14:00:41   Tjänade 33 elektro
+14:00:41   
+Omgång 4
+Elektro: 57
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+8
+Städer:
+Miami
+Tampa
+
+14:01:24   Köpte 3 coal för 6 elektro
+14:01:58   Tjänade 33 elektro
+14:01:58   
+Omgång 5
+Elektro: 84
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+8
+Städer:
+Miami
+Tampa
+
+14:02:15   Köpte 3 coal för 9 elektro
+14:02:50   Tjänade 33 elektro
+14:02:50   
+Omgång 6
+Elektro: 108
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+8
+Städer:
+Miami
+Tampa
+
+14:02:57   Köpte kraftverk nr 28 för 28 elektro
+14:02:58   Köpte 3 coal för 12 elektro
+14:02:58   Köpte 1 uran för 1 elektro
+14:02:58   Köpte 1 coal för 5 elektro
+14:03:15   Staden Jacksonville lades till för 14 elektro. via städerna Tampa->Jacksonville
+14:03:15   Staden Savannah lades till för 10 elektro. via städerna Jacksonville->Savannah
+14:03:15   Staden Atlanta lades till för 17 elektro. via städerna Savannah->Atlanta
+14:03:15   Staden Knoxville lades till för 15 elektro. via städerna Atlanta->Knoxville
+14:03:37   Tjänade 73 elektro
+14:03:37   
+Omgång 7
+Elektro: 79
+Kol: 1
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+8
+28
+Städer:
+Miami
+Tampa
+Jacksonville
+Savannah
+Atlanta
+Knoxville
+
+14:03:59   Köpte kraftverk nr 11 för 11 elektro
+14:04:37   Köpte 2 coal för 10 elektro
+14:04:37   Köpte 1 uran för 2 elektro
+14:04:37   Köpte 1 uran för 3 elektro
+14:04:59   Staden Birmingham lades till för 18 elektro. via städerna Atlanta->Birmingham
+14:04:59   Staden Cincinnati lades till för 21 elektro. via städerna Knoxville->Cincinnati
+14:05:14   Tjänade 90 elektro
+14:05:14   
+Omgång 8
+Elektro: 104
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 8
+KraftVerk:
+8
+28
+11
+Städer:
+Miami
+Tampa
+Jacksonville
+Savannah
+Atlanta
+Knoxville
+Birmingham
+Cincinnati
+
+14:06:48   Köpte 3 coal för 18 elektro
+14:06:48   Köpte 1 uran för 3 elektro
+14:06:48   Köpte 1 uran för 4 elektro
+14:07:00   Tjänade 90 elektro
+14:07:00   
+Omgång 9
+Elektro: 169
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 8
+KraftVerk:
+8
+28
+11
+Städer:
+Miami
+Tampa
+Jacksonville
+Savannah
+Atlanta
+Knoxville
+Birmingham
+Cincinnati
+
+14:08:24   Köpte 3 coal för 18 elektro
+14:08:24   Köpte 1 uran för 3 elektro
+14:08:24   Köpte 1 uran för 4 elektro
+14:08:44   Tjänade 90 elektro
+14:08:44   
+Omgång 10
+Elektro: 234
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 8
+KraftVerk:
+8
+28
+11
+Städer:
+Miami
+Tampa
+Jacksonville
+Savannah
+Atlanta
+Knoxville
+Birmingham
+Cincinnati
+
+14:09:06   Köpte 3 coal för 15 elektro
+14:09:06   Köpte 1 uran för 2 elektro
+14:09:06   Köpte 1 uran för 3 elektro
+14:10:16   Tjänade 90 elektro
+14:10:16   
+Omgång 11
+Elektro: 304
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 8
+KraftVerk:
+8
+28
+11
+Städer:
+Miami
+Tampa
+Jacksonville
+Savannah
+Atlanta
+Knoxville
+Birmingham
+Cincinnati
+
+14:10:45   Köpte 3 coal för 20 elektro
+14:10:45   Köpte 1 uran för 2 elektro
+14:10:45   Köpte 1 uran för 3 elektro
+14:11:34   Tjänade 90 elektro
+14:11:34   
+Omgång 12
+Elektro: 369
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 8
+KraftVerk:
+8
+28
+11
+Städer:
+Miami
+Tampa
+Jacksonville
+Savannah
+Atlanta
+Knoxville
+Birmingham
+Cincinnati
+
+14:11:38   Köpte 3 coal för 23 elektro
+14:11:38   Köpte 1 uran för 2 elektro
+14:11:38   Köpte 1 uran för 3 elektro
+14:12:57   Tjänade 90 elektro
+
+
+Filen skapades Fri Dec 29 14:15:26 2017
+
+14:15:27   Staden San Fransisco lades till för 10 elektro. via städerna 
+14:15:27   Tjänade 10 elektro
+14:15:27   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+San Fransisco
+
+14:15:29   Tjänade 10 elektro
+14:15:29   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+San Fransisco
+
+14:15:29   Köpte kraftverk nr 7 för 17 elektro
+14:15:31   Köpte 3 oil för 3 elektro
+14:15:31   Staden Salt Lake City lades till för 10 elektro. via städerna San Fransisco->Salt Lake City
+14:15:31   Tjänade 33 elektro
+14:15:31   
+Omgång 4
+Elektro: 63
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+San Fransisco
+Salt Lake City
+
+14:15:31   Köpte kraftverk nr 9 för 9 elektro
+14:15:32   Köpte 3 oil för 9 elektro
+14:15:33   Staden Boise lades till för 18 elektro. via städerna Salt Lake City->Boise
+14:15:33   Tjänade 33 elektro
+14:15:33   
+Omgång 5
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 2
+KraftVerk:
+7
+9
+Städer:
+San Fransisco
+Salt Lake City
+Boise
+
+14:15:33   Köpte 3 oil för 7 elektro
+14:15:34   Tjänade 33 elektro
+14:15:34   
+Omgång 6
+Elektro: 86
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 2
+KraftVerk:
+7
+9
+Städer:
+San Fransisco
+Salt Lake City
+Boise
+
+14:15:35   Köpte kraftverk nr 16 för 21 elektro
+14:15:36   Köpte 3 oil för 9 elektro
+14:15:37   Staden Denver lades till för 31 elektro. via städerna Salt Lake City->Denver
+14:15:37   Staden Cheyenne lades till för 10 elektro. via städerna Denver->Cheyenne
+14:15:37   Tjänade 33 elektro
+14:15:37   
+Omgång 7
+Elektro: 48
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 2
+KraftVerk:
+7
+9
+16
+Städer:
+San Fransisco
+Salt Lake City
+Boise
+Denver
+Cheyenne
+
+14:15:39   Köpte 3 oil för 13 elektro
+14:15:39   Staden Los Angeles lades till för 24 elektro. via städerna San Fransisco->Los Angeles
+14:15:39   Tjänade 33 elektro
+14:15:39   
+Omgång 8
+Elektro: 44
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 2
+KraftVerk:
+7
+9
+16
+Städer:
+San Fransisco
+Salt Lake City
+Boise
+Denver
+Cheyenne
+Los Angeles
+
+14:15:40   Köpte 3 oil för 12 elektro
+14:15:41   Tjänade 33 elektro
+14:15:41   
+Omgång 9
+Elektro: 65
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 2
+KraftVerk:
+7
+9
+16
+Städer:
+San Fransisco
+Salt Lake City
+Boise
+Denver
+Cheyenne
+Los Angeles
+
+14:15:42   Köpte 3 oil för 9 elektro
+14:15:43   Tjänade 33 elektro
+14:15:43   
+Omgång 10
+Elektro: 89
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 2
+KraftVerk:
+7
+9
+16
+Städer:
+San Fransisco
+Salt Lake City
+Boise
+Denver
+Cheyenne
+Los Angeles
+
+14:15:44   Köpte kraftverk nr 20 för 27 elektro
+14:15:44   Köpte 3 oil för 10 elektro
+14:15:44   Köpte 3 coal för 6 elektro
+14:15:45   Staden San Diego lades till för 18 elektro. via städerna Los Angeles->San Diego
+14:15:45   Staden Billings lades till för 24 elektro. via städerna Cheyenne->Billings
+14:15:45   Tjänade 82 elektro
+14:15:45   
+Omgång 11
+Elektro: 86
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 7
+KraftVerk:
+7
+20
+16
+Städer:
+San Fransisco
+Salt Lake City
+Boise
+Denver
+Cheyenne
+Los Angeles
+San Diego
+Billings
+
+14:15:46   Köpte 3 oil för 11 elektro
+14:15:46   Köpte 3 coal för 12 elektro
+14:15:46   Staden Las Vegas lades till för 24 elektro. via städerna Los Angeles->Las Vegas
+14:15:46   Staden Portland lades till för 27 elektro. via städerna Billings->Seattle->Portland
+14:15:47   Tjänade 82 elektro
+14:15:48   Tjänade 10 elektro
+14:15:48   
+Omgång 2
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+14:15:48   Köpte kraftverk nr 5 för 5 elektro
+14:15:49   Köpte 2 coal för 2 elektro
+14:15:49   Köpte 2 oil för 2 elektro
+14:15:49   Staden Houston lades till för 10 elektro. via städerna 
+14:15:49   Tjänade 22 elektro
+14:15:49   
+Omgång 3
+Elektro: 63
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+5
+Städer:
+Houston
+
+14:15:50   Köpte kraftverk nr 8 för 14 elektro
+14:15:51   Köpte 3 coal för 7 elektro
+14:15:51   Köpte 2 oil för 5 elektro
+14:15:52   Tjänade 22 elektro
+14:15:52   
+Omgång 4
+Elektro: 59
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+5
+8
+Städer:
+Houston
+
+14:15:53   Köpte 3 coal för 3 elektro
+14:15:53   Köpte 2 oil för 3 elektro
+14:15:53   Staden Dallas lades till för 15 elektro. via städerna Houston->Dallas
+14:15:53   Staden Oklahoma City lades till för 13 elektro. via städerna Dallas->Oklahoma City
+14:15:54   Tjänade 44 elektro
+14:15:54   
+Omgång 5
+Elektro: 69
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+5
+8
+Städer:
+Houston
+Dallas
+Oklahoma City
+
+14:15:55   Köpte kraftverk nr 21 för 35 elektro
+14:15:56   Köpte 3 coal för 5 elektro
+14:15:56   Köpte 2 oil för 3 elektro
+14:15:56   Köpte 2 oil för 4 elektro
+14:15:57   Staden New Orleans lades till för 18 elektro. via städerna Houston->New Orleans
+14:15:57   Tjänade 54 elektro
+14:15:57   
+Omgång 6
+Elektro: 58
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 4
+KraftVerk:
+5
+8
+21
+Städer:
+Houston
+Dallas
+Oklahoma City
+New Orleans
+
+14:15:58   Köpte 3 coal för 9 elektro
+14:15:58   Köpte 2 oil för 8 elektro
+14:15:58   Köpte 2 coal för 8 elektro
+14:15:58   Staden Santa Fe lades till för 25 elektro. via städerna Oklahoma City->Santa Fe
+14:15:59   Tjänade 64 elektro
+14:15:59   
+Omgång 7
+Elektro: 72
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+5
+8
+21
+Städer:
+Houston
+Dallas
+Oklahoma City
+New Orleans
+Santa Fe
+
+14:16:00   Köpte 3 coal för 9 elektro
+14:16:01   Köpte 2 coal för 8 elektro
+14:16:01   Köpte 2 oil för 9 elektro
+14:16:01   Staden Memphis lades till för 22 elektro. via städerna New Orleans->Memphis
+14:16:01   Staden Birmingham lades till för 21 elektro. via städerna Memphis->Birmingham
+14:16:01   Tjänade 82 elektro
+14:16:01   
+Omgång 8
+Elektro: 85
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 7
+KraftVerk:
+5
+8
+21
+Städer:
+Houston
+Dallas
+Oklahoma City
+New Orleans
+Santa Fe
+Memphis
+Birmingham
+
+14:16:03   Köpte 3 coal för 13 elektro
+14:16:03   Köpte 2 coal för 10 elektro
+14:16:03   Köpte 2 oil för 12 elektro
+14:16:03   Tjänade 82 elektro
+14:16:03   
+Omgång 9
+Elektro: 132
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 7
+KraftVerk:
+5
+8
+21
+Städer:
+Houston
+Dallas
+Oklahoma City
+New Orleans
+Santa Fe
+Memphis
+Birmingham
+
+14:16:05   Köpte 3 coal för 9 elektro
+14:16:05   Köpte 2 coal för 8 elektro
+14:16:05   Köpte 2 coal för 9 elektro
+14:16:06   Tjänade 82 elektro
+14:16:06   
+Omgång 10
+Elektro: 188
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 7
+KraftVerk:
+5
+8
+21
+Städer:
+Houston
+Dallas
+Oklahoma City
+New Orleans
+Santa Fe
+Memphis
+Birmingham
+
+14:16:08   Köpte kraftverk nr 50 för 52 elektro
+14:16:08   Köpte 3 coal för 13 elektro
+14:16:08   Köpte 2 oil för 8 elektro
+14:16:08   Staden St. Louis lades till för 22 elektro. via städerna Memphis->St. Louis
+14:16:09   Staden Kansas City lades till för 21 elektro. via städerna St. Louis->Kansas City
+14:16:09   Staden Atlanta lades till för 23 elektro. via städerna Birmingham->Atlanta
+14:16:09   Staden Knoxville lades till för 20 elektro. via städerna Atlanta->Knoxville
+14:16:09   Staden Savannah lades till för 22 elektro. via städerna Atlanta->Savannah
+14:16:09   Tjänade 118 elektro
+14:16:09   
+Omgång 11
+Elektro: 125
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 12
+Antal försörjda städer: 12
+KraftVerk:
+50
+8
+21
+Städer:
+Houston
+Dallas
+Oklahoma City
+New Orleans
+Santa Fe
+Memphis
+Birmingham
+St. Louis
+Kansas City
+Atlanta
+Knoxville
+Savannah
+
+14:16:11   Köpte 3 coal för 15 elektro
+14:16:11   Köpte 2 oil för 12 elektro
+14:16:12   Tjänade 118 elektro
+14:16:13   Tjänade 10 elektro
+14:16:13   
+Omgång 2
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 0
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+
+14:16:13   Köpte kraftverk nr 5 för 5 elektro
+14:16:13   Köpte 2 coal för 2 elektro
+14:16:14   Staden Detroit lades till för 10 elektro. via städerna 
+14:16:14   Tjänade 22 elektro
+14:16:14   
+Omgång 3
+Elektro: 65
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+5
+Städer:
+Detroit
+
+14:16:14   Köpte kraftverk nr 8 för 14 elektro
+14:16:16   Köpte 3 coal för 10 elektro
+14:16:16   Köpte 2 oil för 4 elektro
+14:16:16   Köpte 2 oil för 5 elektro
+14:16:17   Tjänade 22 elektro
+14:16:17   
+Omgång 4
+Elektro: 54
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 1
+KraftVerk:
+5
+8
+Städer:
+Detroit
+
+14:16:17   Köpte 3 coal för 6 elektro
+14:16:17   Köpte 2 oil för 3 elektro
+14:16:18   Staden Cincinnati lades till för 14 elektro. via städerna Detroit->Cincinnati
+14:16:18   Staden Pittsburgh lades till för 16 elektro. via städerna Detroit->Pittsburgh
+14:16:18   Tjänade 44 elektro
+14:16:18   
+Omgång 5
+Elektro: 59
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+5
+8
+Städer:
+Detroit
+Cincinnati
+Pittsburgh
+
+14:16:19   Köpte 3 coal för 14 elektro
+14:16:19   Köpte 2 oil för 3 elektro
+14:16:20   Tjänade 44 elektro
+14:16:20   
+Omgång 6
+Elektro: 86
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+5
+8
+Städer:
+Detroit
+Cincinnati
+Pittsburgh
+
+14:16:21   Köpte kraftverk nr 15 för 15 elektro
+14:16:21   Köpte 3 coal för 13 elektro
+14:16:21   Köpte 2 oil för 4 elektro
+14:16:21   Staden Buffalo lades till för 17 elektro. via städerna Detroit->Buffalo
+14:16:21   Staden St. Louis lades till för 22 elektro. via städerna Cincinnati->St. Louis
+14:16:22   Tjänade 44 elektro
+14:16:22   
+Omgång 7
+Elektro: 59
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 3
+KraftVerk:
+5
+8
+15
+Städer:
+Detroit
+Cincinnati
+Pittsburgh
+Buffalo
+St. Louis
+
+14:16:22   Köpte 3 coal för 14 elektro
+14:16:22   Köpte 2 oil för 7 elektro
+14:16:23   Staden Kansas City lades till för 16 elektro. via städerna St. Louis->Kansas City
+14:16:23   Tjänade 44 elektro
+14:16:23   
+Omgång 8
+Elektro: 66
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 3
+KraftVerk:
+5
+8
+15
+Städer:
+Detroit
+Cincinnati
+Pittsburgh
+Buffalo
+St. Louis
+Kansas City
+
+14:16:24   Köpte kraftverk nr 21 för 37 elektro
+14:16:26   Köpte 3 coal för 19 elektro
+14:16:26   Köpte 2 oil för 7 elektro
+14:16:27   Tjänade 73 elektro
+14:16:27   
+Omgång 9
+Elektro: 76
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+21
+8
+15
+Städer:
+Detroit
+Cincinnati
+Pittsburgh
+Buffalo
+St. Louis
+Kansas City
+
+14:16:27   Köpte kraftverk nr 29 för 29 elektro
+14:16:27   Köpte 2 oil för 4 elektro
+14:16:27   Köpte 2 coal för 10 elektro
+14:16:27   Köpte 1 oil för 3 elektro
+14:16:28   Staden Oklahoma City lades till för 18 elektro. via städerna Kansas City->Oklahoma City
+14:16:29   Tjänade 82 elektro
+14:16:29   
+Omgång 10
+Elektro: 94
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 7
+KraftVerk:
+21
+29
+15
+Städer:
+Detroit
+Cincinnati
+Pittsburgh
+Buffalo
+St. Louis
+Kansas City
+Oklahoma City
+
+14:16:29   Köpte 2 oil för 6 elektro
+14:16:29   Köpte 2 coal för 12 elektro
+14:16:29   Köpte 1 oil för 3 elektro
+14:16:30   Staden Dallas lades till för 18 elektro. via städerna Oklahoma City->Dallas
+14:16:30   Staden Houston lades till för 20 elektro. via städerna Dallas->Houston
+14:16:30   Staden Washington DC lades till för 21 elektro. via städerna Pittsburgh->Washington DC
+14:16:30   Tjänade 105 elektro
+14:16:30   
+Omgång 11
+Elektro: 119
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 10
+Antal försörjda städer: 10
+KraftVerk:
+21
+29
+15
+Städer:
+Detroit
+Cincinnati
+Pittsburgh
+Buffalo
+St. Louis
+Kansas City
+Oklahoma City
+Dallas
+Houston
+Washington DC
+
+14:16:32   Köpte 2 oil för 7 elektro
+14:16:32   Köpte 2 coal för 14 elektro
+14:16:32   Köpte 1 oil för 4 elektro
+14:16:33   Staden Philadelphia lades till för 18 elektro. via städerna Washington DC->Philadelphia
+14:16:33   Tjänade 112 elektro
+14:16:34   Tjänade 10 elektro
+
+
+Filen skapades Sun Jun 24 15:43:46 2018
+
+15:49:42   Staden Washington DC lades till för 10 elektro. via städerna 
+15:49:53   Tjänade 10 elektro
+15:49:53   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Washington DC
+
+
+
+Filen skapades Sun Jun 24 17:15:25 2018
+
+17:15:36   Staden Phoenix lades till för 10 elektro. via städerna 
+17:15:36   Tjänade 10 elektro
+17:15:36   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Phoenix
+
+17:15:38   Tjänade 10 elektro
+17:15:38   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Phoenix
+
+17:15:38   Köpte kraftverk nr 7 för 17 elektro
+17:15:40   Köpte 3 oil för 7 elektro
+17:15:40   Staden San Diego lades till för 24 elektro. via städerna Phoenix->San Diego
+17:15:41   Tjänade 33 elektro
+17:15:41   
+Omgång 4
+Elektro: 45
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+Phoenix
+San Diego
+
+17:15:42   Köpte 3 oil för 9 elektro
+17:15:43   Tjänade 33 elektro
+17:15:43   
+Omgång 5
+Elektro: 69
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+7
+Städer:
+Phoenix
+San Diego
+
+17:15:44   Köpte kraftverk nr 16 för 18 elektro
+17:15:44   Köpte 3 oil för 7 elektro
+17:15:45   Staden Los Angeles lades till för 13 elektro. via städerna San Diego->Los Angeles
+17:15:45   Staden Las Vegas lades till för 19 elektro. via städerna Los Angeles->Las Vegas
+17:15:45   Tjänade 33 elektro
+17:15:45   
+Omgång 6
+Elektro: 45
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+Städer:
+Phoenix
+San Diego
+Los Angeles
+Las Vegas
+
+17:15:46   Köpte 3 oil för 17 elektro
+17:15:47   Tjänade 33 elektro
+17:15:47   
+Omgång 7
+Elektro: 61
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+Städer:
+Phoenix
+San Diego
+Los Angeles
+Las Vegas
+
+17:15:47   Köpte kraftverk nr 11 för 18 elektro
+17:15:48   Köpte 3 oil för 16 elektro
+17:15:48   Köpte 1 uran för 1 elektro
+17:15:51   Staden San Fransisco lades till för 24 elektro. via städerna Los Angeles->San Fransisco
+17:15:52   Tjänade 54 elektro
+17:15:52   
+Omgång 8
+Elektro: 56
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 4
+KraftVerk:
+7
+16
+11
+Städer:
+Phoenix
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+
+17:15:52   Köpte 3 oil för 17 elektro
+17:15:52   Köpte 1 uran för 1 elektro
+17:15:53   Staden Salt Lake City lades till för 15 elektro. via städerna San Fransisco->Salt Lake City
+17:15:53   Staden Boise lades till för 23 elektro. via städerna Salt Lake City->Boise
+17:15:53   Tjänade 54 elektro
+17:15:53   
+Omgång 9
+Elektro: 54
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 4
+KraftVerk:
+7
+16
+11
+Städer:
+Phoenix
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+Boise
+
+17:15:54   Köpte 3 oil för 20 elektro
+17:15:54   Köpte 1 uran för 1 elektro
+17:15:55   Tjänade 54 elektro
+17:15:55   
+Omgång 10
+Elektro: 87
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 4
+KraftVerk:
+7
+16
+11
+Städer:
+Phoenix
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+Boise
+
+17:15:57   Köpte kraftverk nr 32 för 43 elektro
+17:15:57   Köpte 3 oil för 21 elektro
+17:15:59   Tjänade 33 elektro
+17:15:59   
+Omgång 11
+Elektro: 56
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 7
+Antal försörjda städer: 2
+KraftVerk:
+7
+16
+32
+Städer:
+Phoenix
+San Diego
+Los Angeles
+Las Vegas
+San Fransisco
+Salt Lake City
+Boise
+
+17:16:00   Köpte 3 oil för 20 elektro
+17:16:01   Staden Seattle lades till för 27 elektro. via städerna Boise->Seattle
+17:16:02   Tjänade 33 elektro
+17:16:02   Staden Billings lades till för 10 elektro. via städerna 
+17:16:03   Tjänade 10 elektro
+17:16:03   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Billings
+
+17:16:04   Tjänade 10 elektro
+17:16:04   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Billings
+
+17:16:06   Köpte kraftverk nr 15 för 22 elektro
+17:16:06   Köpte 2 coal för 2 elektro
+17:16:07   Staden Cheyenne lades till för 19 elektro. via städerna Billings->Cheyenne
+17:16:07   Tjänade 33 elektro
+17:16:07   
+Omgång 4
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+15
+Städer:
+Billings
+Cheyenne
+
+17:16:08   Köpte 2 coal för 5 elektro
+17:16:08   Tjänade 33 elektro
+17:16:08   
+Omgång 5
+Elektro: 78
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+15
+Städer:
+Billings
+Cheyenne
+
+17:16:10   Köpte kraftverk nr 28 för 28 elektro
+17:16:11   Köpte 2 coal för 6 elektro
+17:16:11   Köpte 1 uran för 7 elektro
+17:16:11   Köpte 1 coal för 4 elektro
+17:16:11   Staden Seattle lades till för 19 elektro. via städerna Billings->Seattle
+17:16:11   Tjänade 44 elektro
+17:16:12   
+Omgång 6
+Elektro: 58
+Kol: 1
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 3
+KraftVerk:
+15
+28
+Städer:
+Billings
+Cheyenne
+Seattle
+
+17:16:12   Köpte 1 coal för 3 elektro
+17:16:12   Köpte 1 uran för 6 elektro
+17:16:12   Köpte 1 coal för 4 elektro
+17:16:14   Staden Portland lades till för 13 elektro. via städerna Seattle->Portland
+17:16:14   Staden Boise lades till för 22 elektro. via städerna Billings->Boise
+17:16:14   Tjänade 64 elektro
+17:16:14   
+Omgång 7
+Elektro: 74
+Kol: 1
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+15
+28
+Städer:
+Billings
+Cheyenne
+Seattle
+Portland
+Boise
+
+17:16:15   Köpte kraftverk nr 34 för 40 elektro
+17:16:16   Köpte 1 coal för 3 elektro
+17:16:16   Köpte 1 uran för 4 elektro
+17:16:16   Köpte 1 uran för 5 elektro
+17:16:16   Staden Denver lades till för 15 elektro. via städerna Cheyenne->Denver
+17:16:17   Tjänade 73 elektro
+17:16:17   
+Omgång 8
+Elektro: 80
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+15
+28
+34
+Städer:
+Billings
+Cheyenne
+Seattle
+Portland
+Boise
+Denver
+
+17:16:24   Köpte kraftverk nr 31 för 51 elektro
+17:16:25   Köpte 3 coal för 9 elektro
+17:16:25   Köpte 1 uran för 5 elektro
+17:16:25   Köpte 1 uran för 6 elektro
+17:16:26   Tjänade 73 elektro
+17:16:26   
+Omgång 9
+Elektro: 82
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+31
+28
+34
+Städer:
+Billings
+Cheyenne
+Seattle
+Portland
+Boise
+Denver
+
+17:16:27   Köpte kraftverk nr 23 för 23 elektro
+17:16:27   Köpte 3 coal för 10 elektro
+17:16:27   Köpte 1 uran för 4 elektro
+17:16:27   Köpte 1 uran för 5 elektro
+17:16:28   Staden Salt Lake City lades till för 18 elektro. via städerna Boise->Salt Lake City
+17:16:28   Staden San Fransisco lades till för 10 elektro. via städerna Salt Lake City->San Fransisco
+17:16:28   Tjänade 90 elektro
+17:16:28   
+Omgång 10
+Elektro: 102
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 8
+KraftVerk:
+31
+23
+34
+Städer:
+Billings
+Cheyenne
+Seattle
+Portland
+Boise
+Denver
+Salt Lake City
+San Fransisco
+
+17:16:29   Köpte 3 coal för 7 elektro
+17:16:29   Köpte 1 uran för 4 elektro
+17:16:29   Köpte 1 uran för 5 elektro
+17:16:30   Staden Los Angeles lades till för 19 elektro. via städerna San Fransisco->Los Angeles
+17:16:30   Staden San Diego lades till för 13 elektro. via städerna Los Angeles->San Diego
+17:16:30   Staden Las Vegas lades till för 19 elektro. via städerna Los Angeles->Las Vegas
+17:16:30   Staden Phoenix lades till för 24 elektro. via städerna San Diego->Phoenix
+17:16:31   Tjänade 118 elektro
+17:16:31   
+Omgång 11
+Elektro: 129
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 12
+Antal försörjda städer: 12
+KraftVerk:
+31
+23
+34
+Städer:
+Billings
+Cheyenne
+Seattle
+Portland
+Boise
+Denver
+Salt Lake City
+San Fransisco
+Los Angeles
+San Diego
+Las Vegas
+Phoenix
+
+17:16:33   Köpte 3 coal för 18 elektro
+17:16:33   Köpte 1 uran för 4 elektro
+17:16:33   Köpte 1 uran för 5 elektro
+17:16:33   Staden Santa Fe lades till för 28 elektro. via städerna Denver->Santa Fe
+17:16:33   Staden Fargo lades till för 32 elektro. via städerna Billings->Fargo
+17:16:33   Tjänade 129 elektro
+17:16:34   Staden Las Vegas lades till för 10 elektro. via städerna 
+17:16:35   Tjänade 10 elektro
+17:16:35   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Las Vegas
+
+17:16:36   Tjänade 10 elektro
+17:16:36   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Las Vegas
+
+17:16:39   Köpte kraftverk nr 32 för 32 elektro
+17:16:40   Köpte 3 oil för 5 elektro
+17:16:40   Staden Los Angeles lades till för 19 elektro. via städerna Las Vegas->Los Angeles
+17:16:40   Tjänade 33 elektro
+17:16:40   
+Omgång 4
+Elektro: 37
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+
+17:16:41   Köpte 3 oil för 11 elektro
+17:16:42   Tjänade 33 elektro
+17:16:42   
+Omgång 5
+Elektro: 59
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+
+17:16:43   Köpte 3 oil för 12 elektro
+17:16:44   Staden San Diego lades till för 13 elektro. via städerna Los Angeles->San Diego
+17:16:44   Staden San Fransisco lades till för 19 elektro. via städerna Los Angeles->San Fransisco
+17:16:44   Staden Salt Lake City lades till för 10 elektro. via städerna San Fransisco->Salt Lake City
+17:16:44   Tjänade 64 elektro
+17:16:44   
+Omgång 6
+Elektro: 69
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+San Diego
+San Fransisco
+Salt Lake City
+
+17:16:46   Köpte 3 oil för 15 elektro
+17:16:47   Tjänade 64 elektro
+17:16:47   
+Omgång 7
+Elektro: 118
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 5
+Antal försörjda städer: 5
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+San Diego
+San Fransisco
+Salt Lake City
+
+17:16:48   Köpte 3 oil för 16 elektro
+17:16:48   Staden Boise lades till för 18 elektro. via städerna Salt Lake City->Boise
+17:16:49   Tjänade 73 elektro
+17:16:49   
+Omgång 8
+Elektro: 157
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+San Diego
+San Fransisco
+Salt Lake City
+Boise
+
+17:16:50   Köpte 3 oil för 16 elektro
+17:16:51   Tjänade 73 elektro
+17:16:51   
+Omgång 9
+Elektro: 214
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+San Diego
+San Fransisco
+Salt Lake City
+Boise
+
+17:16:52   Köpte 3 oil för 13 elektro
+17:16:52   Tjänade 73 elektro
+17:16:53   
+Omgång 10
+Elektro: 274
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+San Diego
+San Fransisco
+Salt Lake City
+Boise
+
+17:16:53   Köpte 3 oil för 15 elektro
+17:16:54   Tjänade 73 elektro
+17:16:54   
+Omgång 11
+Elektro: 332
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+San Diego
+San Fransisco
+Salt Lake City
+Boise
+
+17:16:55   Köpte 3 oil för 17 elektro
+17:16:56   Tjänade 73 elektro
+17:16:56   
+Omgång 12
+Elektro: 388
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+32
+Städer:
+Las Vegas
+Los Angeles
+San Diego
+San Fransisco
+Salt Lake City
+Boise
+
+17:17:01   Köpte kraftverk nr 30 för 30 elektro
+17:17:02   Köpte 3 oil för 19 elektro
+17:17:02   Köpte 3 garbage för 3 elektro
+17:17:02   Staden Billings lades till för 22 elektro. via städerna Boise->Billings
+17:17:02   Staden Cheyenne lades till för 19 elektro. via städerna Billings->Cheyenne
+17:17:02   Staden Denver lades till för 10 elektro. via städerna Cheyenne->Denver
+17:17:02   Staden Seattle lades till för 19 elektro. via städerna Billings->Seattle
+17:17:02   Staden Portland lades till för 13 elektro. via städerna Seattle->Portland
+17:17:03   Staden Santa Fe lades till för 23 elektro. via städerna Denver->Santa Fe
+17:17:03   Tjänade 118 elektro
+17:17:03   
+Omgång 13
+Elektro: 348
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 12
+Antal försörjda städer: 12
+KraftVerk:
+32
+30
+Städer:
+Las Vegas
+Los Angeles
+San Diego
+San Fransisco
+Salt Lake City
+Boise
+Billings
+Cheyenne
+Denver
+Seattle
+Portland
+Santa Fe
+
+17:17:05   Köpte kraftverk nr 36 för 48 elektro
+17:17:06   Köpte 3 oil för 24 elektro
+17:17:06   Köpte 3 garbage för 5 elektro
+17:17:06   Köpte 3 coal för 13 elektro
+17:17:08   Tjänade 118 elektro
+17:17:09   Staden Norfolk lades till för 10 elektro. via städerna 
+17:17:09   Tjänade 10 elektro
+17:17:09   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Norfolk
+
+17:17:10   Tjänade 10 elektro
+17:17:10   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Norfolk
+
+17:17:11   Köpte kraftverk nr 10 för 14 elektro
+17:17:12   Köpte 2 coal för 3 elektro
+17:17:13   Staden Raleigh lades till för 13 elektro. via städerna Norfolk->Raleigh
+17:17:13   Tjänade 33 elektro
+17:17:13   
+Omgång 4
+Elektro: 63
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+10
+Städer:
+Norfolk
+Raleigh
+
+17:17:13   Köpte kraftverk nr 4 för 4 elektro
+17:17:14   Köpte 2 coal för 4 elektro
+17:17:14   Staden Atlanta lades till för 17 elektro. via städerna Raleigh->Atlanta
+17:17:15   Tjänade 33 elektro
+17:17:15   
+Omgång 5
+Elektro: 71
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 2
+KraftVerk:
+10
+4
+Städer:
+Norfolk
+Raleigh
+Atlanta
+
+17:17:17   Köpte 2 coal för 5 elektro
+17:17:18   Tjänade 33 elektro
+17:17:18   
+Omgång 6
+Elektro: 99
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 2
+KraftVerk:
+10
+4
+Städer:
+Norfolk
+Raleigh
+Atlanta
+
+17:17:18   Köpte 2 coal för 5 elektro
+17:17:19   Tjänade 33 elektro
+17:17:19   
+Omgång 7
+Elektro: 127
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 3
+Antal försörjda städer: 2
+KraftVerk:
+10
+4
+Städer:
+Norfolk
+Raleigh
+Atlanta
+
+17:17:20   Köpte kraftverk nr 20 för 40 elektro
+17:17:21   Köpte 3 coal för 10 elektro
+17:17:22   Staden Birmingham lades till för 13 elektro. via städerna Atlanta->Birmingham
+17:17:22   Staden Knoxville lades till för 15 elektro. via städerna Atlanta->Knoxville
+17:17:22   Staden Savannah lades till för 17 elektro. via städerna Atlanta->Savannah
+17:17:22   Staden Jacksonville lades till för 10 elektro. via städerna Savannah->Jacksonville
+17:17:22   Staden Tampa lades till för 14 elektro. via städerna Jacksonville->Tampa
+17:17:23   Tjänade 33 elektro
+17:17:23   
+Omgång 8
+Elektro: 41
+Kol: 1
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 2
+KraftVerk:
+10
+4
+20
+Städer:
+Norfolk
+Raleigh
+Atlanta
+Birmingham
+Knoxville
+Savannah
+Jacksonville
+Tampa
+
+17:17:24   Köpte 2 coal för 8 elektro
+17:17:25   Tjänade 33 elektro
+17:17:25   
+Omgång 9
+Elektro: 66
+Kol: 1
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 2
+KraftVerk:
+10
+4
+20
+Städer:
+Norfolk
+Raleigh
+Atlanta
+Birmingham
+Knoxville
+Savannah
+Jacksonville
+Tampa
+
+17:17:26   Köpte 2 coal för 6 elektro
+17:17:27   Tjänade 33 elektro
+17:17:27   
+Omgång 10
+Elektro: 93
+Kol: 1
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 8
+Antal försörjda städer: 2
+KraftVerk:
+10
+4
+20
+Städer:
+Norfolk
+Raleigh
+Atlanta
+Birmingham
+Knoxville
+Savannah
+Jacksonville
+Tampa
+
+17:17:27   Köpte kraftverk nr 29 för 29 elektro
+17:17:28   Köpte 2 coal för 8 elektro
+17:17:28   Köpte 1 oil för 4 elektro
+17:17:29   Staden Miami lades till för 14 elektro. via städerna Tampa->Miami
+17:17:29   Staden Memphis lades till för 21 elektro. via städerna Birmingham->Memphis
+17:17:29   Staden New Orleans lades till för 17 elektro. via städerna Memphis->New Orleans
+17:17:29   Tjänade 73 elektro
+17:17:29   
+Omgång 11
+Elektro: 73
+Kol: 0
+Olja: 1
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 11
+Antal försörjda städer: 6
+KraftVerk:
+10
+29
+20
+Städer:
+Norfolk
+Raleigh
+Atlanta
+Birmingham
+Knoxville
+Savannah
+Jacksonville
+Tampa
+Miami
+Memphis
+New Orleans
+
+17:17:30   Köpte 3 coal för 16 elektro
+17:17:30   Köpte 1 oil för 6 elektro
+17:17:31   Tjänade 73 elektro
+17:17:31   
+Omgång 12
+Elektro: 124
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 11
+Antal försörjda städer: 6
+KraftVerk:
+10
+29
+20
+Städer:
+Norfolk
+Raleigh
+Atlanta
+Birmingham
+Knoxville
+Savannah
+Jacksonville
+Tampa
+Miami
+Memphis
+New Orleans
+
+17:17:32   Köpte 3 coal för 20 elektro
+17:17:33   Tjänade 73 elektro
+17:17:33   
+Omgång 13
+Elektro: 177
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 11
+Antal försörjda städer: 6
+KraftVerk:
+10
+29
+20
+Städer:
+Norfolk
+Raleigh
+Atlanta
+Birmingham
+Knoxville
+Savannah
+Jacksonville
+Tampa
+Miami
+Memphis
+New Orleans
+
+17:17:33   Köpte 3 coal för 20 elektro
+
+
+Filen skapades Sun Jun 24 20:40:24 2018
+
+20:40:25   Staden Kansas City lades till för 10 elektro. via städerna 
+20:40:26   Tjänade 10 elektro
+20:40:26   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Kansas City
+
+20:40:27   Tjänade 10 elektro
+20:40:27   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Kansas City
+
+20:40:29   Köpte kraftverk nr 21 för 31 elektro
+20:40:29   Köpte 2 oil för 2 elektro
+20:40:29   Köpte 2 coal för 2 elektro
+20:40:30   Staden St. Louis lades till för 16 elektro. via städerna Kansas City->St. Louis
+20:40:30   Tjänade 33 elektro
+20:40:30   
+Omgång 4
+Elektro: 42
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 2
+Antal försörjda städer: 2
+KraftVerk:
+21
+Städer:
+Kansas City
+St. Louis
+
+20:40:31   Köpte 2 oil för 6 elektro
+20:40:31   Staden Memphis lades till för 17 elektro. via städerna St. Louis->Memphis
+20:40:31   Staden New Orleans lades till för 17 elektro. via städerna Memphis->New Orleans
+20:40:31   Tjänade 54 elektro
+20:40:31   
+Omgång 5
+Elektro: 56
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 4
+KraftVerk:
+21
+Städer:
+Kansas City
+St. Louis
+Memphis
+New Orleans
+
+20:40:32   Köpte 2 coal för 6 elektro
+20:40:33   Tjänade 54 elektro
+20:40:33   
+Omgång 6
+Elektro: 104
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 4
+KraftVerk:
+21
+Städer:
+Kansas City
+St. Louis
+Memphis
+New Orleans
+
+20:40:33   Köpte 2 coal för 6 elektro
+20:40:34   Tjänade 54 elektro
+20:40:34   
+Omgång 7
+Elektro: 152
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 4
+KraftVerk:
+21
+Städer:
+Kansas City
+St. Louis
+Memphis
+New Orleans
+
+20:40:35   Köpte 2 coal för 8 elektro
+20:40:36   Tjänade 54 elektro
+20:40:36   
+Omgång 8
+Elektro: 198
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 4
+Antal försörjda städer: 4
+KraftVerk:
+21
+Städer:
+Kansas City
+St. Louis
+Memphis
+New Orleans
+
+20:40:36   Köpte kraftverk nr 17 för 18 elektro
+20:40:38   Köpte 2 coal för 7 elektro
+20:40:38   Köpte 1 uran för 2 elektro
+20:40:38   Staden Oklahoma City lades till för 18 elektro. via städerna Kansas City->Oklahoma City
+20:40:38   Staden Dallas lades till för 13 elektro. via städerna Oklahoma City->Dallas
+20:40:39   Tjänade 73 elektro
+20:40:39   
+Omgång 9
+Elektro: 213
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 6
+Antal försörjda städer: 6
+KraftVerk:
+21
+17
+Städer:
+Kansas City
+St. Louis
+Memphis
+New Orleans
+Oklahoma City
+Dallas
+
+20:40:40   Köpte kraftverk nr 23 för 23 elektro
+20:40:40   Köpte 2 coal för 6 elektro
+20:40:40   Köpte 1 uran för 1 elektro
+20:40:40   Köpte 1 uran för 2 elektro
+20:40:41   Staden Houston lades till för 15 elektro. via städerna Dallas->Houston
+20:40:41   Staden Birmingham lades till för 21 elektro. via städerna Memphis->Birmingham
+20:40:41   Staden Atlanta lades till för 18 elektro. via städerna Birmingham->Atlanta
+20:40:41   Tjänade 98 elektro
+20:40:41   
+Omgång 10
+Elektro: 225
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 9
+Antal försörjda städer: 9
+KraftVerk:
+21
+17
+23
+Städer:
+Kansas City
+St. Louis
+Memphis
+New Orleans
+Oklahoma City
+Dallas
+Houston
+Birmingham
+Atlanta
+
+20:40:42   Köpte kraftverk nr 11 för 11 elektro
+20:40:43   Köpte 2 coal för 7 elektro
+20:40:43   Köpte 1 uran för 1 elektro
+20:40:43   Köpte 1 uran för 2 elektro
+20:40:44   Tjänade 98 elektro
+20:40:44   
+Omgång 11
+Elektro: 302
+Kol: 0
+Olja: 2
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 9
+Antal försörjda städer: 9
+KraftVerk:
+21
+11
+23
+Städer:
+Kansas City
+St. Louis
+Memphis
+New Orleans
+Oklahoma City
+Dallas
+Houston
+Birmingham
+Atlanta
+
+20:40:44   Köpte kraftverk nr 33 för 34 elektro
+20:40:45   Köpte 1 uran för 1 elektro
+20:40:45   Köpte 1 uran för 2 elektro
+20:40:46   Tjänade 98 elektro
+20:40:46   
+Omgång 12
+Elektro: 363
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 9
+Antal försörjda städer: 9
+KraftVerk:
+33
+11
+23
+Städer:
+Kansas City
+St. Louis
+Memphis
+New Orleans
+Oklahoma City
+Dallas
+Houston
+Birmingham
+Atlanta
+
+20:40:47   Köpte 1 uran för 1 elektro
+20:40:47   Köpte 1 uran för 2 elektro
+20:40:47   Köpte 1 uran för 3 elektro
+20:40:48   Tjänade 98 elektro
+20:40:49   Staden Salt Lake City lades till för 10 elektro. via städerna 
+20:40:49   Tjänade 10 elektro
+20:40:49   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Salt Lake City
+
+20:40:50   Tjänade 10 elektro
+20:40:50   
+Omgång 3
+Elektro: 60
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Salt Lake City
+
+20:40:51   Köpte kraftverk nr 10 för 14 elektro
+20:40:52   Köpte 2 coal för 2 elektro
+20:40:53   Staden San Fransisco lades till för 10 elektro. via städerna Salt Lake City->San Fransisco
+
+
+Filen skapades Sun Jun 24 21:44:49 2018
+
+21:44:50   Staden Boise lades till för 10 elektro. via städerna 
+21:44:51   Tjänade 10 elektro
+21:44:51   
+Omgång 2
+Elektro: 50
+Kol: 0
+Olja: 0
+Sopor: 0
+Uran: 0
+Antal städer i nätverk: 1
+Antal försörjda städer: 0
+KraftVerk:
+Städer:
+Boise
+
+
+
+Filen skapades Sun Jun 24 21:56:07 2018
+

@@ -14342,3 +14342,7 @@ Oklahoma City
 13:53:40   Staden New Orleans lades till för 23 elektro. via städerna Houston->New Orleans
 13:53:40   Staden Memphis lades till för 22 elektro. via städerna New Orleans->Memphis
 13:54:54   Tjänade 98 elektro
+
+
+Filen skapades Sat Dec 10 13:56:52 2016
+
