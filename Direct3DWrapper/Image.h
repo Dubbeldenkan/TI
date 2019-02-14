@@ -3,28 +3,26 @@
 
 #include <d3dx9.h>
 
-class Image
+namespace GraphicsNS
 {
-	int xSize;
-	int ySize;
-public:
-	LPDIRECT3DTEXTURE9 _texture;
 
-	Image() {};
+	class Image
+	{
+		int _xSize = 0;
+		int _ySize = 0;
+		LPDIRECT3DTEXTURE9 _texture;
+	public:
 
-	int GetxSize()
-	{
-		D3DSURFACE_DESC surfaceDesc;
-		_texture->GetLevelDesc(0, &surfaceDesc);
-		return surfaceDesc.Width;
-	}
-	
-	int GetYSize()
-	{
-		D3DSURFACE_DESC surfaceDesc;
-		_texture->GetLevelDesc(0, &surfaceDesc);
-		return surfaceDesc.Height;
-	}
-};
+		Image() {};
+
+		int GetXSize();
+		int GetYSize();
+
+		void SetXSize(int);
+		void SetYSize(int);
+
+		LPDIRECT3DTEXTURE9* GetTexture();
+	};
+}
 
 #endif // !IMAGE_H
