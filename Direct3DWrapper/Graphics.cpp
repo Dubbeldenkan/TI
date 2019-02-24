@@ -151,7 +151,7 @@ namespace GraphicsNS
 		LoadImageFromFile(fileName, image, imageXSize, imageYSize, 0, 0);
 	}
 
-	//Används då man bara har en flera tiles
+	//Används då man har flera tiles
 	void Graphics::LoadImageFromFile(std::string fileName, Image* image, int imageXSize, int imageYSize,
 		int partImageSizeX, int partImageSizeY)
 	{

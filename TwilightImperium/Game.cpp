@@ -13,13 +13,9 @@ Game::Game(HWND hWnd)
 	InitGame();
 }
 
-int Game::GetSleepTimeInMs()
-{
-	return _sleepTimeInMs;
-}
-
 void Game::Run()
 {
+	DrawScreen();
 	//TODO ändra till ett lämpligt villkor
 	/*if (true)
 	{
@@ -34,10 +30,7 @@ void Game::Run()
 
 void Game::DrawScreen()
 {
-	//Draw::DrawInput dI;
-	//dI.map = &_map;
-	//dI.player = _localPlayer;
-	//_draw.DrawScreen(&dI);
+	_draw.DrawScreen();
 }
 
 Draw* Game::GetDraw()
@@ -52,5 +45,6 @@ bool Game::GetGameOver()
 
 void Game::InitGame()
 {
+	GameBoardObject::SetGraphics(_draw.GetGraphics());
 	//TODO
 }

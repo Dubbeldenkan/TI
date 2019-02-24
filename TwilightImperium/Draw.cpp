@@ -14,6 +14,7 @@ void Draw::DrawScreen(DrawInput* dI)
 {
 	_g->Clear();
 	_g->StartDrawing();
+	GameBoardObject::
 	//DrawMap(dI->map, dI->player);
 	//TODO lägg till gubbar 
 	_g->StopDrawing();
