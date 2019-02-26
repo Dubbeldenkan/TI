@@ -27,7 +27,7 @@ GameBoardObject::GameBoardObject(TupleInt graphicalPos, TupleInt imageSize, std:
 
 GameBoardObject::~GameBoardObject()
 {
-	_gameBoardObjects.erase(_objectId); //TODO fix this
+	_gameBoardObjects.erase(_objectId);
 }
 
 void GameBoardObject::DrawObject()
