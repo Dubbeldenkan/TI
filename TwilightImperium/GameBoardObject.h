@@ -21,6 +21,8 @@ private:
 	static std::map<int, GameBoardObject*> _gameBoardObjects;
 
 public:
+	GameBoardObject();
+	GameBoardObject(TupleInt, GraphicsNS::Image);
 	GameBoardObject(TupleInt, TupleInt, std::string);
 	~GameBoardObject();
 	
@@ -28,7 +30,7 @@ public:
 
 	static void DrawAllObjects();
 
-	static void SetGraphics(GraphicsNS::Graphics*);
+	static void SetGraphics(HWND* hWnd);
 };
 
 #endif // ! GAME_BOARD_OBJECT_H

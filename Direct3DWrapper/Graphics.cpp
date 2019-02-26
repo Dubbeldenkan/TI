@@ -149,6 +149,8 @@ namespace GraphicsNS
 	void Graphics::LoadImageFromFile(std::string fileName, Image* image, int imageXSize, int imageYSize)
 	{
 		LoadImageFromFile(fileName, image, imageXSize, imageYSize, 0, 0);
+		image->SetXSize(imageXSize);
+		image->SetYSize(imageXSize);
 	}
 
 	//Används då man har flera tiles

@@ -9,14 +9,18 @@ class MapTile : GameBoardObject
 public:
 
 private:
-	const TupleInt _tileSize = TupleInt(40, 40);
+	static const TupleInt _tileSize;
+	TupleInt _tilePos;
 
 public:
+	MapTile();
 	MapTile(TupleInt, std::string);
+	
+	MapTile& operator=(const MapTile&);
+	MapTile(MapTile const&);
 	~MapTile();
 
 private:
-	TupleInt _tilePos;
 
 };
 

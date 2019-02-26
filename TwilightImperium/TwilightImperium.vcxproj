@@ -26,7 +26,6 @@
   <ItemGroup>
     <ClInclude Include="ActionCard.h" />
     <ClInclude Include="AIPlayer.h" />
-    <ClInclude Include="Draw.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameBoardObject.h" />
@@ -40,7 +39,6 @@
   <ItemGroup>
     <ClCompile Include="ActionCard.cpp" />
     <ClCompile Include="AIPlayer.cpp" />
-    <ClCompile Include="Draw.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GameBoardObject.cpp" />

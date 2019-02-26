@@ -1,7 +1,5 @@
 #include "GameMap.h"
 
-#include <utility>
-
 GameMap::GameMap()
 {
 }
@@ -13,9 +11,10 @@ GameMap::~GameMap()
 
 void GameMap::CreateGameMap()
 {
-	MapTile test = MapTile(TupleInt(200, 200), "Map/test.png");
-	//_map[TupleInt(0, 0)] = test;
+	Add2Map(0, 0, TupleInt(200, 200), "Map/test.png");
+}
 
-	std::map<std::pair<int, int>, int> testMap;
-	testMap[std::make_pair(0, 0)] = 1;
+void GameMap::Add2Map(int r, int t, TupleInt tupleInt, std::string path)
+{
+	_map.insert(std::make_pair(TupleInt(r, t), MapTile(tupleInt, path)));
 }

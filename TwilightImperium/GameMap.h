@@ -16,6 +16,9 @@ public:
 	~GameMap();
 
 	void CreateGameMap();
+
+private:
+	void Add2Map(int, int, TupleInt, std::string);
 };
 
 #endif // !GAME_MAP_H

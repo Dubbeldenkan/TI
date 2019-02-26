@@ -3,27 +3,23 @@
 
 #include <utility>
 
-struct TupleInt
+struct TupleInt : public std::pair<int, int>
 {
-	std::pair<int, int> _pair;
-
 	TupleInt()
-	{
-	}
+	{}
 
-	TupleInt(int xIn, int yIn)
-	{
-		_pair = std::make_pair(xIn, yIn);
-	}
+	TupleInt(int xIn, int yIn) :
+		std::pair<int, int>(xIn, yIn)
+	{}
 
 	int GetX()
 	{
-		return _pair.first;
+		return first;
 	}
 
 	int GetY()
 	{
-		return _pair.second;
+		return second;
 	}
 };
 

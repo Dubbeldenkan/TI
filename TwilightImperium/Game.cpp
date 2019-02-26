@@ -1,12 +1,10 @@
 #include "Game.h"
 
-Game::Game(HWND hWnd)
+Game::Game()
 {
 	//init rand
 	srand((unsigned int)time(NULL));
 
-	_draw = Draw(&hWnd);
-	//_map.InitMap(_draw.GetGraphics());
 	//_players.push_back(Player(true));
 	//_localPlayer = &_players[0]; //Get a pointer to the first player
 
@@ -30,12 +28,7 @@ void Game::Run()
 
 void Game::DrawScreen()
 {
-	_draw.DrawScreen();
-}
-
-Draw* Game::GetDraw()
-{
-	return &_draw;
+	_gameBoard.Draw();
 }
 
 bool Game::GetGameOver()
@@ -45,6 +38,5 @@ bool Game::GetGameOver()
 
 void Game::InitGame()
 {
-	GameBoardObject::SetGraphics(_draw.GetGraphics());
 	//TODO
 }

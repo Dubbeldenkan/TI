@@ -4,7 +4,6 @@
 #include <Windows.h>
 
 #include "Game.h"
-#include "Draw.h"
 #include "HelpStructs.h"
 
 class IO

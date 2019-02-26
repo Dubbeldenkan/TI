@@ -2,9 +2,9 @@
 
 GameBoard::GameBoard()
 {
-
+	_gameMap = GameMap();
+	_gameMap.CreateGameMap();
 }
-
 
 GameBoard::~GameBoard()
 {
