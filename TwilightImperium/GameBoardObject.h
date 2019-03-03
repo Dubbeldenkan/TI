@@ -20,6 +20,9 @@ private:
 	static int _latestObjectId;
 	static std::map<int, GameBoardObject*> _gameBoardObjects;
 
+	//Objects graphical position
+	static const TupleInt _mapPos;
+
 public:
 	GameBoardObject();
 	GameBoardObject(TupleInt, GraphicsNS::Image);
@@ -31,6 +34,8 @@ public:
 	static void DrawAllObjects();
 
 	static void SetGraphics(HWND* hWnd);
+
+	static TupleInt GetMapPos();
 };
 
 #endif // ! GAME_BOARD_OBJECT_H

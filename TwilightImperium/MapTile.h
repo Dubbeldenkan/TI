@@ -20,6 +20,8 @@ public:
 	MapTile(MapTile const&);
 	~MapTile();
 
+	static TupleInt GetTileSize();
+
 private:
 
 };

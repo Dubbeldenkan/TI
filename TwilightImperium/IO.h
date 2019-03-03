@@ -8,8 +8,8 @@
 
 class IO
 {
-#define SCREENXSIZE 500
-#define SCREENYSIZE 500
+#define SCREENXSIZE 1000
+#define SCREENYSIZE 1000
 
 private:
 	static Game* _game;

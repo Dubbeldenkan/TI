@@ -1,7 +1,15 @@
 #include "GameMap.h"
 
+#define PI 3.14159265
+
 GameMap::GameMap()
 {
+}
+
+GameMap& GameMap::operator=(const GameMap& gameMap)
+{
+	_map = gameMap._map;
+	return *this;
 }
 
 
@@ -11,53 +19,67 @@ GameMap::~GameMap()
 
 void GameMap::CreateGameMap()
 {
-	// mitten
-	Add2Map(0, 0, TupleInt(200, 200), "Map/MecatolRex.png");
-	
-	// första varvet
-	Add2Map(1, 0, TupleInt(200, 150), "Map/MecatolRex.png");
-	Add2Map(1, 1, TupleInt(165, 175), "Map/MecatolRex.png");
-	Add2Map(1, 2, TupleInt(165, 225), "Map/MecatolRex.png");
-	Add2Map(1, 3, TupleInt(200, 250), "Map/MecatolRex.png");
-	Add2Map(1, 4, TupleInt(235, 225), "Map/MecatolRex.png");
-	Add2Map(1, 5, TupleInt(235, 175), "Map/MecatolRex.png");
+	TupleInt tileSize = MapTile::GetTileSize();
+	int wholeCircle = 360; // using degree instead of radiants so that double is not needed
+	TupleInt middleTilePos = TupleInt(tileSize.GetX()*numberOfLayers + GameBoardObject::GetMapPos().GetX(),
+		tileSize.GetY()*numberOfLayers + GameBoardObject::GetMapPos().GetY());
 
-	// andra varvet
-	/*Add2Map(2, 0, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 1, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 2, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 3, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 4, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 5, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 6, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 7, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 8, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 9, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 10, TupleInt(200, 200), "Map/test.png");
-	Add2Map(2, 11, TupleInt(200, 200), "Map/test.png");
-
-	// tredje varvet
-	Add2Map(3, 0, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 1, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 2, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 3, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 4, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 5, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 6, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 7, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 8, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 9, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 10, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 11, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 12, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 13, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 14, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 15, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 16, TupleInt(200, 200), "Map/test.png");
-	Add2Map(3, 17, TupleInt(200, 200), "Map/test.png");*/
+	for (int r = 0; r <= numberOfLayers; r++)
+	{
+		int t = 0;
+		while (t < wholeCircle)
+		{
+			int xPos;
+			int yPos;
+			if (t % 60 == 0)
+			{
+				xPos = middleTilePos.GetX() + int(r*tileSize.GetY()*degSin(t));
+				yPos = middleTilePos.GetY() + int(r*tileSize.GetY()*degCos(t));
+			}
+			else
+			{
+				int straightAngle = t - t % 60;
+				int distance;
+				if (t % 60 > 30)
+				{
+					distance = 2;
+				}
+				else
+				{
+					distance = 1;
+				}
+				int temp = distance * tileSize.GetY()*degSin(straightAngle - 120);
+				xPos = middleTilePos.GetX() + int(r*tileSize.GetY()*degSin(straightAngle) + 
+					distance*tileSize.GetY()*degSin(straightAngle - 120));
+				yPos = middleTilePos.GetY() + int(r*tileSize.GetY()*degCos(straightAngle) + 
+					distance * tileSize.GetY()*degCos(straightAngle - 120));
+			}
+			Add2Map(r, t, TupleInt(xPos, yPos), "Map/EmptyTile.png");
+			if (r == 0)
+			{
+				break;
+			}
+			else
+			{
+				t += 360/(6 * r);
+			}
+		}
+	}
 }
 
-void GameMap::Add2Map(int r, int t, TupleInt tupleInt, std::string path)
+void GameMap::Add2Map(int r, int t, TupleInt graphicalPos, std::string path)
 {
-	_map.insert(std::make_pair(TupleInt(r, t), MapTile(tupleInt, path)));
+	_map.insert(std::make_pair(TupleInt(r, t), MapTile(graphicalPos, path)));
+}
+
+double GameMap::degCos(int deg)
+{
+	double rad = PI * double(deg) / 180.0;
+	return cos(rad);
+}
+
+double GameMap::degSin(int deg)
+{
+	double rad = PI * double(deg) / 180.0;
+	return sin(rad);
 }

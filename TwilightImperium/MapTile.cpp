@@ -1,6 +1,6 @@
 #include "MapTile.h"
 
-const TupleInt MapTile::_tileSize = TupleInt(50, 50);
+const TupleInt MapTile::_tileSize = TupleInt(100, 86);
 
 MapTile::MapTile()
 {}
@@ -25,3 +25,8 @@ MapTile& MapTile::operator=(const MapTile& mapTile)
 
 MapTile::~MapTile()
 {}
+
+TupleInt MapTile::GetTileSize()
+{
+	return _tileSize;
+}
