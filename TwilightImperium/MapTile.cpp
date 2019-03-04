@@ -5,6 +5,11 @@ const TupleInt MapTile::_tileSize = TupleInt(100, 86);
 MapTile::MapTile()
 {}
 
+MapTile::MapTile(std::string imagePath) :
+	GameBoardObject(TupleInt(0, 0), _tileSize, imagePath)
+{}
+
+//TODO behövs constructorn nedan?
 MapTile::MapTile(TupleInt graphicalPos, std::string imagePath) :
 	GameBoardObject(graphicalPos, _tileSize, imagePath)
 {}

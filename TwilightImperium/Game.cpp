@@ -2,9 +2,6 @@
 
 Game::Game()
 {
-	//init rand
-	srand((unsigned int)time(NULL));
-
 	//_players.push_back(Player(true));
 	//_localPlayer = &_players[0]; //Get a pointer to the first player
 

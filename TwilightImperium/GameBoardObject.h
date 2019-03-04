@@ -36,6 +36,8 @@ public:
 	static void SetGraphics(HWND* hWnd);
 
 	static TupleInt GetMapPos();
+
+	void SetGraphicalPos(TupleInt);
 };
 
 #endif // ! GAME_BOARD_OBJECT_H

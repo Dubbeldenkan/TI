@@ -3,17 +3,23 @@
 
 #include "GameBoardObject.h"
 #include "HelpStructs.h"
+#include "Planet.h"
 
-class MapTile : GameBoardObject
+class MapTile : public GameBoardObject
 {
 public:
+	enum TileType {RegularSystem, HomeSystem, AstroidSystem, NebulaSystem, SupernovaSystem};
 
 private:
 	static const TupleInt _tileSize;
 	TupleInt _tilePos;
 
+protected:
+	std::vector<Planet> _planets;
+
 public:
 	MapTile();
+	MapTile(std::string);
 	MapTile(TupleInt, std::string);
 	
 	MapTile& operator=(const MapTile&);

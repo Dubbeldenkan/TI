@@ -35,7 +35,7 @@ GameBoardObject::~GameBoardObject()
 
 void GameBoardObject::DrawObject()
 {
-	_g->Draw(&_image, _graphicalPos.GetX(), _graphicalPos.GetY(), 1); //TODO kolla på om man ska ändra 1. 
+	_g->Draw(&_image, _graphicalPos.GetX(), _graphicalPos.GetY(), 1); //TODO kolla på om man ska ändra 1:an. 
 }
 
 void GameBoardObject::DrawAllObjects()
@@ -59,4 +59,9 @@ void GameBoardObject::SetGraphics(HWND* hWnd)
 TupleInt GameBoardObject::GetMapPos()
 {
 	return _mapPos;
+}
+
+void GameBoardObject::SetGraphicalPos(TupleInt pos)
+{
+	_graphicalPos = pos;
 }

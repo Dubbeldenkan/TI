@@ -34,6 +34,7 @@
     <ClInclude Include="IO.h" />
     <ClInclude Include="GameMap.h" />
     <ClInclude Include="MapTile.h" />
+    <ClInclude Include="Planet.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +48,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="GameMap.cpp" />
     <ClCompile Include="MapTile.cpp" />
+    <ClCompile Include="Planet.cpp" />
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
