@@ -35,3 +35,8 @@ TupleInt MapTile::GetTileSize()
 {
 	return _tileSize;
 }
+
+void MapTile::SetTilePos(int r, int t)
+{
+	_tilePos = (TupleInt(r, t));
+}

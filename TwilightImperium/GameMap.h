@@ -15,8 +15,10 @@ private:
 	std::vector<MapTile> _allSystemVector;
 	const int _numberOfLayers = 3;
 	const int _numberOfRandomSystemsToRemove = 2;
-	const int _numberOfRegularSystems = 29;
+	const int _numberOfRegularSystems = 39;
 	const int _numberOfAstroidSystems = 2;
+	const int _layerDegree[4] = { 360, 60, 30, 20 };
+	const int _fullTurn = 360;
 
 public:
 	GameMap();
@@ -24,6 +26,7 @@ public:
 	~GameMap();
 
 	void CreateGameMap();
+	std::vector<MapTile*> GetNeighbourSystems(TupleInt);
 
 private:
 	void CreateAllSystems();

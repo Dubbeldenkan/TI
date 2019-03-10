@@ -22,12 +22,10 @@ void GameMap::CreateGameMap()
 	CreateAllSystems();
 	RemoveRandomTiles();
 
-	int wholeCircle = 360; // using degree instead of radiants so that double is not needed
-
 	for (int r = 0; r <= _numberOfLayers; r++)
 	{
 		int t = 0;
-		while (t < wholeCircle)
+		while (t < _fullTurn)
 		{
 			Add2Map(r, t);
 			if (r == 0)
@@ -46,15 +44,15 @@ void GameMap::CreateGameMap()
 
 void GameMap::CreateAllSystems()
 {
-	for (int i = 0; i < 39; i++)// _numberOfRegularSystems; i++) //TODO ändra tillbaka
+	for (int i = 0; i < _numberOfRegularSystems; i++) //TODO ändra tillbaka
 	{
 		_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
 	}
-	/*for (int i = 0; i < _numberOfAstroidSystems; i++)
+	for (int i = 0; i < _numberOfAstroidSystems; i++)
 	{
 		_allSystemVector.push_back(CreateSystem(MapTile::AstroidSystem));
 	}
-	_allSystemVector.push_back(CreateSystem(MapTile::NebulaSystem));*/
+	_allSystemVector.push_back(CreateSystem(MapTile::NebulaSystem));
 	_allSystemVector.push_back(CreateSystem(MapTile::SupernovaSystem));
 }
 
@@ -122,12 +120,77 @@ void GameMap::Add2Map(int r, int t)
 	else
 	{
 		int vectorLen = _allSystemVector.size();
-		int selectedSystem = rand() % vectorLen;
+		int selectedSystem;
+		//TODO lägg in så att man inte får två specialSystem bredvid varandra. 
+		selectedSystem = rand() % vectorLen;
 		localMapTile = _allSystemVector[selectedSystem];
 		_allSystemVector.erase(_allSystemVector.begin() + selectedSystem);
 	}
 	localMapTile.SetGraphicalPos(TupleInt(xPos, yPos));
+	localMapTile.SetTilePos(r, t);
 	_map.insert(std::make_pair(TupleInt(r, t), localMapTile));
+}
+
+std::vector<MapTile*> GameMap::GetNeighbourSystems(TupleInt SystemPosition)
+{
+	int r = SystemPosition.GetX();
+	int t = SystemPosition.GetY();
+	std::vector<MapTile*> neighbourVector;
+	bool foundAllNeighbours = false;
+
+	if (r > 0)
+	{
+		if (r == 1)
+		{
+			neighbourVector.push_back(&_map.find(TupleInt(0, 0))->second);
+		}
+		else if (_map.find(TupleInt(r - 1, t)) != _map.end())
+		{
+			neighbourVector.push_back(&_map.find(TupleInt(r - 1, t))->second);
+		}
+		else
+		{
+			int angleDiff = 0;
+			while (_map.find(TupleInt(r - 1, (t + angleDiff) % _fullTurn)) == _map.end())
+			{
+				angleDiff -= 10;
+			}
+			neighbourVector.push_back(&_map.find(TupleInt(r - 1, t + angleDiff))->second);
+			angleDiff = 0;
+			while (_map.find(TupleInt(r - 1, (t + angleDiff) % _fullTurn)) == _map.end())
+			{
+				angleDiff += 10;
+			}
+			neighbourVector.push_back(&_map.find(TupleInt(r - 1, (t + angleDiff) % _fullTurn))->second);
+		}
+
+		neighbourVector.push_back(&_map.find(TupleInt(r, (t - _layerDegree[r]) % _fullTurn))->second);
+		neighbourVector.push_back(&_map.find(TupleInt(r, (t + _layerDegree[r]) % _fullTurn))->second);
+
+		if (r < _numberOfLayers)
+		{
+			if (_map.find(TupleInt(r + 1, t)) != _map.end())
+			{
+				neighbourVector.push_back(&_map.find(TupleInt(r + 1, (t - _layerDegree[r + 1]) % _fullTurn))->second);
+				neighbourVector.push_back(&_map.find(TupleInt(r + 1, t))->second);
+				neighbourVector.push_back(&_map.find(TupleInt(r + 1, (t + _layerDegree[r + 1]) % _fullTurn))->second);
+			}
+			else
+			{
+				neighbourVector.push_back(&_map.find(TupleInt(r + 1, (t + _layerDegree[r + 1] / 2)  % _fullTurn))->second);
+				neighbourVector.push_back(&_map.find(TupleInt(r + 1, (t - _layerDegree[r + 1] / 2) % _fullTurn))->second);
+			}
+		}
+	}
+	else
+	{
+		for (int tIndex = 0; tIndex < 360; tIndex += _layerDegree[r + 1])
+		{
+			neighbourVector.push_back(&_map.find(TupleInt(1, tIndex))->second);
+		}
+	}
+	
+	return neighbourVector;
 }
 
 void GameMap::RemoveRandomTiles()

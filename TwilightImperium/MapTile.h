@@ -27,6 +27,7 @@ public:
 	~MapTile();
 
 	static TupleInt GetTileSize();
+	void SetTilePos(int, int);
 
 private:
 
