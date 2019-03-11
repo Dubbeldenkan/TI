@@ -13,6 +13,7 @@ class GameMap
 private:
 	std::map<TupleInt, MapTile> _map;
 	std::vector<MapTile> _allSystemVector;
+	std::vector<MapTile> _homeSystemVector;
 	const int _numberOfLayers = 3;
 	const int _numberOfRandomSystemsToRemove = 2;
 	const int _numberOfRegularSystems = 39;

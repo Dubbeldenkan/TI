@@ -34,7 +34,7 @@ void GameMap::CreateGameMap()
 			}
 			else
 			{
-				t += 360/(6 * r);
+				t += _fullTurn/(6 * r);
 			}
 		}
 	}
@@ -44,8 +44,10 @@ void GameMap::CreateGameMap()
 
 void GameMap::CreateAllSystems()
 {
-	for (int i = 0; i < _numberOfRegularSystems; i++) //TODO ändra tillbaka
+	for (int i = 0; i < _numberOfRegularSystems; i++)
 	{
+		//TODO lägg till planeter
+		//Fortsätt här
 		_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
 	}
 	for (int i = 0; i < _numberOfAstroidSystems; i++)
@@ -54,6 +56,12 @@ void GameMap::CreateAllSystems()
 	}
 	_allSystemVector.push_back(CreateSystem(MapTile::NebulaSystem));
 	_allSystemVector.push_back(CreateSystem(MapTile::SupernovaSystem));
+
+	for (int i = 0; i < 6; i++) // TODO sätt en snyggare variabel "6" typ hur många spelare det finns i en fil
+	{
+		_homeSystemVector.push_back(CreateSystem(MapTile::HomeSystem));
+	}
+
 }
 
 MapTile GameMap::CreateSystem(MapTile::TileType tileType)
@@ -112,10 +120,19 @@ void GameMap::Add2Map(int r, int t)
 		yPos = middleTilePos.GetY() + int(r*tileSize.GetY()*degCos(straightAngle) +
 			distance * tileSize.GetY()*degCos(straightAngle - 120));
 	}
+
 	MapTile localMapTile;
 	if (r == 0 && t == 0)
 	{
 		localMapTile = CreateSystem(MapTile::RegularSystem);
+	}
+	else if ((r == _numberOfLayers) && ((t % 60) == 0))
+	{
+		int vectorLen = _homeSystemVector.size();
+		int selectedSystem;
+		selectedSystem = rand() % vectorLen;
+		localMapTile = _homeSystemVector[selectedSystem];
+		_homeSystemVector.erase(_homeSystemVector.begin() + selectedSystem);
 	}
 	else
 	{
@@ -184,7 +201,7 @@ std::vector<MapTile*> GameMap::GetNeighbourSystems(TupleInt SystemPosition)
 	}
 	else
 	{
-		for (int tIndex = 0; tIndex < 360; tIndex += _layerDegree[r + 1])
+		for (int tIndex = 0; tIndex < _fullTurn; tIndex += _layerDegree[r + 1])
 		{
 			neighbourVector.push_back(&_map.find(TupleInt(1, tIndex))->second);
 		}
