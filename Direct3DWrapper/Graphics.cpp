@@ -1,9 +1,7 @@
 #include "Graphics.h"
 
-
 namespace GraphicsNS
 {
-
 	Graphics::Graphics() {};
 
 	Graphics::Graphics(HWND hWnd)

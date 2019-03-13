@@ -12,7 +12,6 @@
 
 namespace GraphicsNS
 {
-
 	class Graphics
 	{
 	public:
@@ -66,7 +65,6 @@ namespace GraphicsNS
 
 		void DrawRectangle(int, int, int, int, D3DCOLOR);
 	};
-
 }
 
 #endif
