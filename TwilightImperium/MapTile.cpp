@@ -5,8 +5,8 @@ const TupleInt MapTile::_tileSize = TupleInt(100, 86);
 MapTile::MapTile()
 {}
 
-MapTile::MapTile(std::string imagePath) :
-	GameBoardObject(TupleInt(0, 0), _tileSize, imagePath)
+MapTile::MapTile(MapTile::TileType tileType,  std::string imagePath) :
+	_tileType(tileType), GameBoardObject(TupleInt(0, 0), _tileSize, imagePath)
 {}
 
 //TODO behövs constructorn nedan?
@@ -39,4 +39,9 @@ TupleInt MapTile::GetTileSize()
 void MapTile::SetTilePos(int r, int t)
 {
 	_tilePos = (TupleInt(r, t));
+}
+
+void MapTile::AddPlanet(Planet* planet)
+{
+	_planets.push_back(*planet);
 }

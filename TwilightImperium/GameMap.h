@@ -2,6 +2,7 @@
 #define GAME_MAP_H
 
 #include "MapTile.h"
+#include "TIParser.h"
 
 #include <map>
 #include <math.h>
@@ -20,6 +21,7 @@ private:
 	const int _numberOfAstroidSystems = 2;
 	const int _layerDegree[4] = { 360, 60, 30, 20 };
 	const int _fullTurn = 360;
+	const std::string _dataFile = "Planets.txt";
 
 public:
 	GameMap();
@@ -31,6 +33,7 @@ public:
 
 private:
 	void CreateAllSystems();
+	MapTile CreateSystem(std::string);
 	MapTile CreateSystem(MapTile::TileType);
 	void Add2Map(int, int);
 	void RemoveRandomTiles();

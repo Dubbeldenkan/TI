@@ -1,0 +1,30 @@
+RegularSystem
+{
+	Abyz
+	{
+		3
+		2
+		None
+	}
+	Fria
+	{
+		2
+		0
+		Blue
+	}
+}
+System
+{
+	Arinam
+	{
+		1
+		2
+		Blue
+	}
+	Meer
+	{
+		0
+		4
+		None
+	}
+}

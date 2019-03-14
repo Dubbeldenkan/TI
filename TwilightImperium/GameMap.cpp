@@ -44,13 +44,46 @@ void GameMap::CreateGameMap()
 
 void GameMap::CreateAllSystems()
 {
-	for (int i = 0; i < _numberOfRegularSystems; i++)
+	TIParserNS::ListNode* currentSystem = TIParserNS::TIParser::ReadFile(_dataFile);
+	
+	do
 	{
-		//TODO lägg till planeter
-		//Fortsätt här
-		_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
-	}
-	for (int i = 0; i < _numberOfAstroidSystems; i++)
+		_allSystemVector.push_back(CreateSystem(currentSystem->GetData()));
+		TIParserNS::ListNode* currentPlanet = NULL;
+		if (!currentSystem->GetChild(&currentPlanet))
+		{
+			do
+			{
+				std::string planetName = currentPlanet->GetData();
+				TIParserNS::ListNode* tempNode = NULL;
+				currentPlanet->GetChild(&tempNode);
+				int resourceValue = atoi(tempNode->GetData().c_str());
+				tempNode->GetNext(&tempNode);
+				int influenceValue = atoi(tempNode->GetData().c_str());
+				tempNode->GetNext(&tempNode);
+				std::string techSpec = tempNode->GetData().c_str();
+
+				_allSystemVector[_allSystemVector.size() - 1].AddPlanet(
+					&Planet(planetName, resourceValue, influenceValue, techSpec));
+			} while (!currentPlanet->GetNext(&currentPlanet));
+		}
+	} while (!currentSystem->GetNext(&currentSystem));
+	
+	//Regular system
+	/*_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
+	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Arnor", 2, 1, Planet::None));
+	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Lor", 1, 2, Planet::None));
+
+	_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
+	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Bereg", 3, 1, Planet::Red));
+	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Lirta IV", 2, 3, Planet::Green));
+
+	_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
+	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Bereg", 3, 1, Planet::Red));
+	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Lirta IV", 2, 3, Planet::Green));*/
+
+	//Special System
+	/*for (int i = 0; i < _numberOfAstroidSystems; i++)
 	{
 		_allSystemVector.push_back(CreateSystem(MapTile::AstroidSystem));
 	}
@@ -60,8 +93,34 @@ void GameMap::CreateAllSystems()
 	for (int i = 0; i < 6; i++) // TODO sätt en snyggare variabel "6" typ hur många spelare det finns i en fil
 	{
 		_homeSystemVector.push_back(CreateSystem(MapTile::HomeSystem));
-	}
+	}*/
 
+}
+
+MapTile GameMap::CreateSystem(std::string systemType)
+{
+	MapTile mapTile;
+	if (systemType.compare("RegularSystem") == 0)
+	{
+		mapTile = MapTile(MapTile::RegularSystem, "Map/RegularSystem.png");
+	}
+	else if (systemType.compare("AstroidSystem") == 0)
+	{
+		mapTile = MapTile(MapTile::AstroidSystem, "Map/AstroidSystem.png");
+	}
+	else if (systemType.compare("SupernovaSystem") == 0)
+	{
+		mapTile = MapTile(MapTile::SupernovaSystem, "Map/SupernovaSystem.png");
+	}
+	else if (systemType.compare("NebulaSystem") == 0)
+	{
+		mapTile = MapTile(MapTile::NebulaSystem, "Map/NebulaSystem.png");
+	}
+	else
+	{
+		OutputDebugString(std::string("Failing to read planet file").c_str());
+	}
+	return mapTile;
 }
 
 MapTile GameMap::CreateSystem(MapTile::TileType tileType)
@@ -70,19 +129,19 @@ MapTile GameMap::CreateSystem(MapTile::TileType tileType)
 	switch (tileType)
 	{
 	case MapTile::RegularSystem:
-		mapTile = MapTile("Map/RegularSystem.png");
+		mapTile = MapTile(MapTile::RegularSystem, "Map/RegularSystem.png");
 		break;
 	case MapTile::HomeSystem:
-		mapTile = MapTile("Map/HomeSystem.png");
+		mapTile = MapTile(MapTile::HomeSystem, "Map/HomeSystem.png");
 		break;
 	case MapTile::AstroidSystem:
-		mapTile = MapTile("Map/AstroidSystem.png");
+		mapTile = MapTile(MapTile::AstroidSystem, "Map/AstroidSystem.png");
 		break;
 	case MapTile::NebulaSystem:
-		mapTile = MapTile("Map/NebulaSystem.png");
+		mapTile = MapTile(MapTile::NebulaSystem, "Map/NebulaSystem.png");
 		break;
 	case MapTile::SupernovaSystem:
-		mapTile = MapTile("Map/SupernovaSystem.png");
+		mapTile = MapTile(MapTile::SupernovaSystem, "Map/SupernovaSystem.png");
 		break;
 	default:
 		break;

@@ -16,7 +16,7 @@ private:
 
 public:
 	Planet();
-	Planet(std::string, int, int, TechnologySpeciality);
+	Planet(std::string, int, int, std::string);
 
 	~Planet();
 };

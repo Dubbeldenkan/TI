@@ -13,13 +13,14 @@ public:
 private:
 	static const TupleInt _tileSize;
 	TupleInt _tilePos;
+	TileType _tileType;
 
 protected:
 	std::vector<Planet> _planets;
 
 public:
 	MapTile();
-	MapTile(std::string);
+	MapTile(TileType, std::string);
 	MapTile(TupleInt, std::string);
 	
 	MapTile& operator=(const MapTile&);
@@ -28,6 +29,7 @@ public:
 
 	static TupleInt GetTileSize();
 	void SetTilePos(int, int);
+	void AddPlanet(Planet*);
 
 private:
 
