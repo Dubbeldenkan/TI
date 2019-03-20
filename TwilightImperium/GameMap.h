@@ -21,7 +21,7 @@ private:
 	const int _numberOfAstroidSystems = 2;
 	const int _layerDegree[4] = { 360, 60, 30, 20 };
 	const int _fullTurn = 360;
-	const std::string _dataFile = "Planets.txt";
+	const std::string _dataFile = "System";
 
 public:
 	GameMap();
@@ -36,10 +36,12 @@ private:
 	MapTile CreateSystem(std::string);
 	MapTile CreateSystem(MapTile::TileType);
 	void Add2Map(int, int);
+	void CreateAndAddMecatolRex();
 	void RemoveRandomTiles();
 
 	double degCos(int);
 	double degSin(int);
+	TupleInt CalculateGraphicalPosForTile(int, int);
 };
 
 #endif // !GAME_MAP_H

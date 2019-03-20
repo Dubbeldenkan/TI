@@ -2,6 +2,8 @@
 
 namespace TIParserNS
 {
+	const std::string TIParser::fileType = ".tid";
+
 	TIParser::TIParser()
 	{};
 
@@ -14,7 +16,7 @@ namespace TIParserNS
 		str.erase(str.rfind('\\'));
 		std::string folderPath = str + "\\Data\\";
 
-		std::string filePath = folderPath + fileName;
+		std::string filePath = folderPath + fileName + fileType;
 		std::ifstream file;
 		file.open(filePath);
 
@@ -39,12 +41,19 @@ namespace TIParserNS
 		std::string line;
 		while (std::getline(*file, line))
 		{
-			if (line.find("{") != -1)
+			if (line.find("//") == 0 || line.empty())
 			{
-				ListNode* childNode = new ListNode("");
-				AddNewItem(childNode, file);
-				childNode->GetNext(&childNode);
-				currentNode->SetChild(childNode);
+				//This is a comment or an empty line
+			}
+			else if (line.find("{") != -1)
+			{
+				if (line.find("}") == -1)
+				{
+					ListNode* childNode = new ListNode("");
+					AddNewItem(childNode, file);
+					childNode->GetNext(&childNode);
+					currentNode->SetChild(childNode);
+				}
 			}
 			else if (line.find("}") != -1)
 			{
@@ -53,7 +62,7 @@ namespace TIParserNS
 			else
 			{
 				line.erase(std::remove(line.begin(), line.end(), '\t'), line.end());
-				line.erase(std::remove(line.begin(), line.end(), ' '), line.end());
+				//line.erase(std::remove(line.begin(), line.end(), ' '), line.end()); //TODO gör så att man tar bort alla mellanslag före och efter texten men inte mellan 
 				ListNode* tempNode = new ListNode(line);
 				currentNode->SetNext(tempNode);
 				currentNode = tempNode;

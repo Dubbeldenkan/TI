@@ -1,0 +1,377 @@
+RegularSystem
+{
+	Mecatol Rex
+	{
+		1
+		6
+		None
+	}
+}
+
+//Vanliga system
+RegularSystem
+{
+	Abyz
+	{
+		3
+		2
+		None
+	}
+	Fria
+	{
+		2
+		0
+		Blue
+	}
+}
+RegularSystem
+{
+	Arinam
+	{
+		1
+		2
+		Blue
+	}
+	Meer
+	{
+		0
+		4
+		None
+	}
+}
+RegularSystem
+{
+	Arnor
+	{
+		2
+		1
+		None
+	}
+	Lor
+	{
+		1
+		2
+		Red
+	}
+}
+RegularSystem
+{
+	Bereg
+	{
+		3
+		1
+		Red
+	}
+	Lirta IV
+	{
+		2
+		3
+		Green
+	}
+}
+RegularSystem
+{
+	Centuri
+	{
+		1
+		3
+		Blue
+	}
+	Gral
+	{
+		1
+		1
+		Blue
+	}
+}
+RegularSystem
+{
+	Coorneeq
+	{
+		1
+		2
+		Red
+	}
+	Resculon
+	{
+		2
+		0
+		None
+	}
+}
+RegularSystem
+{
+	Dal Bootha
+	{
+		0
+		2
+		Red
+	}
+	Xxehan
+	{
+		1
+		1
+		Green
+	}
+}
+RegularSystem
+{
+	Lazar
+	{
+		1
+		0
+		None
+	}
+	Sakulag
+	{
+		2
+		1
+		None
+	}
+}
+RegularSystem
+{
+	Lodor
+	{
+		3
+		1
+		Green
+	}
+}
+RegularSystem
+{
+	Mehar Xull
+	{
+		1
+		3
+		Blue
+	}
+}
+RegularSystem
+{
+	Mellon
+	{
+		0
+		2
+		None
+	}
+	Zohbat
+	{
+		3
+		1
+		Blue
+	}
+}
+RegularSystem
+{
+	New Albion
+	{
+		1
+		1
+		Green
+	}
+	Starpoint
+	{
+		3
+		1
+		None
+	}
+}
+RegularSystem
+{
+	Quann
+	{
+		1
+		2
+		Blue
+	}
+}
+RegularSystem
+{
+	Qucen'n
+	{
+		1
+		2
+		None
+	}
+	Rarron
+	{
+		0
+		3
+		Green
+	}
+}
+RegularSystem
+{
+	Saudor
+	{
+		2
+		2
+		None
+	}
+}
+RegularSystem
+{
+	Tar'mann
+	{
+		1
+		1
+		None
+	}
+}
+RegularSystem
+{
+	Tequ'ran
+	{
+		2
+		0
+		Red
+	}
+	Torkan
+	{
+		0
+		3
+		Blue
+	}
+}
+RegularSystem
+{
+	Thibah
+	{
+		1
+		1
+		None
+	}
+}
+RegularSystem
+{
+	Vefut II
+	{
+		2
+		0
+		Red
+	}
+}
+RegularSystem
+{
+	Wellon
+	{
+		1
+		2
+		None
+	}
+}
+
+// Empty Space //Add wormhole
+RegularSystem
+{}
+RegularSystem
+{}
+RegularSystem
+{}
+RegularSystem
+{}
+RegularSystem
+{}
+RegularSystem
+{}
+RegularSystem
+{}
+
+// Remove three empty systems
+//RegularSystem
+//{}
+//RegularSystem
+//{}
+//RegularSystem
+//{}
+
+//Special systems
+AstroidSystem
+{}
+AstroidSystem
+{}
+NebulaSystem
+{}
+SupernovaSystem
+{}
+
+//HomeSystems
+HomeSystem
+{
+	Wren Terra
+	{
+		2
+		1
+		None
+	}
+	Arc Prime
+	{
+		4
+		0
+		None
+	}
+}
+HomeSystem
+{
+	Arretze
+	{
+		2
+		0
+		None
+	}
+	Hercant
+	{
+		1
+		1
+		None
+	}
+	Kamdorn
+	{
+		0
+		1
+		None
+	}
+}
+HomeSystem
+{
+	Jord
+	{
+		4
+		2
+		None
+	}
+}
+HomeSystem
+{
+	[0,0,0]
+	{
+		5
+		0
+		None
+	}
+}
+HomeSystem
+{
+	Moll Primus
+	{
+		4
+		1
+		None
+	}
+}
+HomeSystem
+{
+	Maaluuk
+	{
+		0
+		2
+		None
+	}
+	Druaa
+	{
+		3
+		1
+		None
+	}
+}

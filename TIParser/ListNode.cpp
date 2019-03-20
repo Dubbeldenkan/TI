@@ -8,8 +8,9 @@ namespace TIParserNS
 
 	bool ListNode::GetChild(ListNode** child)
 	{
+		bool childIsNull = (_child == NULL);
 		*child = _child;
-		return (child == NULL);
+		return childIsNull;
 	}
 
 	bool ListNode::GetNext(ListNode** next)

@@ -22,7 +22,9 @@ void GameMap::CreateGameMap()
 	CreateAllSystems();
 	RemoveRandomTiles();
 
-	for (int r = 0; r <= _numberOfLayers; r++)
+	CreateAndAddMecatolRex();
+
+	for (int r = 1; r <= _numberOfLayers; r++)
 	{
 		int t = 0;
 		while (t < _fullTurn)
@@ -41,6 +43,20 @@ void GameMap::CreateGameMap()
 	_allSystemVector.clear();
 }
 
+void GameMap::CreateAndAddMecatolRex()
+{
+	MapTile tempSystem;
+	tempSystem = MapTile(MapTile::RegularSystem, "Map/RegularSystem.png");
+	std::string planetName = "Mecatol Rex";
+	int resourceValue = 1;
+	int influenceValue = 6;
+	std::string techSpec = "None";
+	tempSystem.AddPlanet(&Planet(planetName, resourceValue, influenceValue, techSpec));
+
+	tempSystem.SetGraphicalPos(CalculateGraphicalPosForTile(0, 0));
+	tempSystem.SetTilePos(0, 0);
+	_map.insert(std::make_pair(TupleInt(0, 0), tempSystem));
+}
 
 void GameMap::CreateAllSystems()
 {
@@ -48,7 +64,7 @@ void GameMap::CreateAllSystems()
 	
 	do
 	{
-		_allSystemVector.push_back(CreateSystem(currentSystem->GetData()));
+		MapTile tempSystem = CreateSystem(currentSystem->GetData());
 		TIParserNS::ListNode* currentPlanet = NULL;
 		if (!currentSystem->GetChild(&currentPlanet))
 		{
@@ -63,38 +79,23 @@ void GameMap::CreateAllSystems()
 				tempNode->GetNext(&tempNode);
 				std::string techSpec = tempNode->GetData().c_str();
 
-				_allSystemVector[_allSystemVector.size() - 1].AddPlanet(
-					&Planet(planetName, resourceValue, influenceValue, techSpec));
+				tempSystem.AddPlanet(&Planet(planetName, resourceValue, influenceValue, techSpec));
 			} while (!currentPlanet->GetNext(&currentPlanet));
 		}
+		if (currentSystem->GetData().compare("RegularSystem") == 0 || currentSystem->GetData().compare("AstroidSystem") == 0 ||
+			currentSystem->GetData().compare("NebulaSystem") == 0 || currentSystem->GetData().compare("SupernovaSystem") == 0)
+		{
+			_allSystemVector.push_back(tempSystem);
+		}
+		else if (currentSystem->GetData().compare("HomeSystem") == 0)
+		{
+			_homeSystemVector.push_back(tempSystem);
+		}
+		else
+		{
+			OutputDebugString(std::string("Error in system type").c_str());
+		}
 	} while (!currentSystem->GetNext(&currentSystem));
-	
-	//Regular system
-	/*_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
-	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Arnor", 2, 1, Planet::None));
-	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Lor", 1, 2, Planet::None));
-
-	_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
-	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Bereg", 3, 1, Planet::Red));
-	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Lirta IV", 2, 3, Planet::Green));
-
-	_allSystemVector.push_back(CreateSystem(MapTile::RegularSystem));
-	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Bereg", 3, 1, Planet::Red));
-	_allSystemVector[_allSystemVector.size() - 1].AddPlanet(&Planet("Lirta IV", 2, 3, Planet::Green));*/
-
-	//Special System
-	/*for (int i = 0; i < _numberOfAstroidSystems; i++)
-	{
-		_allSystemVector.push_back(CreateSystem(MapTile::AstroidSystem));
-	}
-	_allSystemVector.push_back(CreateSystem(MapTile::NebulaSystem));
-	_allSystemVector.push_back(CreateSystem(MapTile::SupernovaSystem));
-
-	for (int i = 0; i < 6; i++) // TODO sätt en snyggare variabel "6" typ hur många spelare det finns i en fil
-	{
-		_homeSystemVector.push_back(CreateSystem(MapTile::HomeSystem));
-	}*/
-
 }
 
 MapTile GameMap::CreateSystem(std::string systemType)
@@ -151,41 +152,8 @@ MapTile GameMap::CreateSystem(MapTile::TileType tileType)
 
 void GameMap::Add2Map(int r, int t)
 {
-	TupleInt tileSize = MapTile::GetTileSize();
-	TupleInt middleTilePos = TupleInt(tileSize.GetX()*_numberOfLayers + GameBoardObject::GetMapPos().GetX(),
-		tileSize.GetY()*_numberOfLayers + GameBoardObject::GetMapPos().GetY());
-
-	int xPos;
-	int yPos;
-	if (t % 60 == 0)
-	{
-		xPos = middleTilePos.GetX() + int(r*tileSize.GetY()*degSin(t));
-		yPos = middleTilePos.GetY() + int(r*tileSize.GetY()*degCos(t));
-	}
-	else
-	{
-		int straightAngle = t - t % 60;
-		int distance;
-		if (t % 60 > 30)
-		{
-			distance = 2;
-		}
-		else
-		{
-			distance = 1;
-		}
-		xPos = middleTilePos.GetX() + int(r*tileSize.GetY()*degSin(straightAngle) +
-			distance * tileSize.GetY()*degSin(straightAngle - 120));
-		yPos = middleTilePos.GetY() + int(r*tileSize.GetY()*degCos(straightAngle) +
-			distance * tileSize.GetY()*degCos(straightAngle - 120));
-	}
-
 	MapTile localMapTile;
-	if (r == 0 && t == 0)
-	{
-		localMapTile = CreateSystem(MapTile::RegularSystem);
-	}
-	else if ((r == _numberOfLayers) && ((t % 60) == 0))
+	if ((r == _numberOfLayers) && ((t % 60) == 0))
 	{
 		int vectorLen = _homeSystemVector.size();
 		int selectedSystem;
@@ -202,7 +170,7 @@ void GameMap::Add2Map(int r, int t)
 		localMapTile = _allSystemVector[selectedSystem];
 		_allSystemVector.erase(_allSystemVector.begin() + selectedSystem);
 	}
-	localMapTile.SetGraphicalPos(TupleInt(xPos, yPos));
+	localMapTile.SetGraphicalPos(CalculateGraphicalPosForTile(r, t));
 	localMapTile.SetTilePos(r, t);
 	_map.insert(std::make_pair(TupleInt(r, t), localMapTile));
 }
@@ -289,4 +257,38 @@ double GameMap::degSin(int deg)
 {
 	double rad = PI * double(deg) / 180.0;
 	return sin(rad);
+}
+
+TupleInt GameMap::CalculateGraphicalPosForTile(int r, int t)
+{
+	TupleInt tileSize = MapTile::GetTileSize();
+	//gör detta till en const istället eftersom att den inte ändras
+	TupleInt middleTilePos = TupleInt(tileSize.GetX()*_numberOfLayers + GameBoardObject::GetMapPos().GetX(),
+		tileSize.GetY()*_numberOfLayers + GameBoardObject::GetMapPos().GetY());
+
+	int xPos;
+	int yPos;
+	if (t % 60 == 0)
+	{
+		xPos = middleTilePos.GetX() + int(r*tileSize.GetY()*degSin(t));
+		yPos = middleTilePos.GetY() + int(r*tileSize.GetY()*degCos(t));
+	}
+	else
+	{
+		int straightAngle = t - t % 60;
+		int distance;
+		if (t % 60 > 30)
+		{
+			distance = 2;
+		}
+		else
+		{
+			distance = 1;
+		}
+		xPos = middleTilePos.GetX() + int(r*tileSize.GetY()*degSin(straightAngle) +
+			distance * tileSize.GetY()*degSin(straightAngle - 120));
+		yPos = middleTilePos.GetY() + int(r*tileSize.GetY()*degCos(straightAngle) +
+			distance * tileSize.GetY()*degCos(straightAngle - 120));
+	}
+	return TupleInt(xPos, yPos);
 }

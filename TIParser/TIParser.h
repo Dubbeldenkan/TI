@@ -12,6 +12,8 @@ namespace TIParserNS
 {
 	class TIParser
 	{
+	private:
+		static const std::string fileType;
 	public:
 		TIParser();
 		~TIParser() {};

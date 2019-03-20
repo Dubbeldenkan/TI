@@ -18,6 +18,8 @@ MapTile::MapTile(const MapTile &mapTile) :
 	GameBoardObject(mapTile._graphicalPos, mapTile._image)
 {
 	_tilePos = mapTile._tilePos;
+	_tileType = mapTile._tileType;
+	_planets = mapTile._planets;
 }
 
 MapTile& MapTile::operator=(const MapTile& mapTile)
