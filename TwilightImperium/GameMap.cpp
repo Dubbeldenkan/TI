@@ -105,6 +105,10 @@ MapTile GameMap::CreateSystem(std::string systemType)
 	{
 		mapTile = MapTile(MapTile::RegularSystem, "Map/RegularSystem.png");
 	}
+	else if (systemType.compare("HomeSystem") == 0)
+	{
+		mapTile = MapTile(MapTile::RegularSystem, "Map/HomeSystem.png");
+	}
 	else if (systemType.compare("AstroidSystem") == 0)
 	{
 		mapTile = MapTile(MapTile::AstroidSystem, "Map/AstroidSystem.png");
@@ -120,32 +124,6 @@ MapTile GameMap::CreateSystem(std::string systemType)
 	else
 	{
 		OutputDebugString(std::string("Failing to read planet file").c_str());
-	}
-	return mapTile;
-}
-
-MapTile GameMap::CreateSystem(MapTile::TileType tileType)
-{
-	MapTile mapTile;
-	switch (tileType)
-	{
-	case MapTile::RegularSystem:
-		mapTile = MapTile(MapTile::RegularSystem, "Map/RegularSystem.png");
-		break;
-	case MapTile::HomeSystem:
-		mapTile = MapTile(MapTile::HomeSystem, "Map/HomeSystem.png");
-		break;
-	case MapTile::AstroidSystem:
-		mapTile = MapTile(MapTile::AstroidSystem, "Map/AstroidSystem.png");
-		break;
-	case MapTile::NebulaSystem:
-		mapTile = MapTile(MapTile::NebulaSystem, "Map/NebulaSystem.png");
-		break;
-	case MapTile::SupernovaSystem:
-		mapTile = MapTile(MapTile::SupernovaSystem, "Map/SupernovaSystem.png");
-		break;
-	default:
-		break;
 	}
 	return mapTile;
 }

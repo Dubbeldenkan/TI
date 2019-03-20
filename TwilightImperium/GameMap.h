@@ -34,7 +34,6 @@ public:
 private:
 	void CreateAllSystems();
 	MapTile CreateSystem(std::string);
-	MapTile CreateSystem(MapTile::TileType);
 	void Add2Map(int, int);
 	void CreateAndAddMecatolRex();
 	void RemoveRandomTiles();
