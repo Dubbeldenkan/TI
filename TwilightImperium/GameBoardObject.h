@@ -2,7 +2,7 @@
 #define GAME_BOARD_OBJECT_H
 
 #include "Image.h"
-#include "HelpStructs.h"
+#include "UtilityClasses.h"
 #include "Graphics.h"
 
 #include <string>
@@ -12,6 +12,7 @@ class GameBoardObject
 {
 protected:
 	TupleInt _graphicalPos;
+	double _scale = 1.0;
 	GraphicsNS::Image _image;
 	const int _objectId;
 	static GraphicsNS::Graphics* _g;
@@ -38,6 +39,7 @@ public:
 	static TupleInt GetMapPos();
 
 	void SetGraphicalPos(TupleInt);
+	void SetImageScale(double);
 };
 
 #endif // ! GAME_BOARD_OBJECT_H

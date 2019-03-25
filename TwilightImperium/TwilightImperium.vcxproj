@@ -32,7 +32,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameBoardObject.h" />
-    <ClInclude Include="HelpStructs.h" />
+    <ClInclude Include="UtilityClasses.h" />
     <ClInclude Include="HumanPlayer.h" />
     <ClInclude Include="IO.h" />
     <ClInclude Include="GameMap.h" />
@@ -53,6 +53,7 @@
     <ClCompile Include="MapTile.cpp" />
     <ClCompile Include="Planet.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="UtilityClasses.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E2DD268A-90A0-4EBA-99E4-1CBE7436E382}</ProjectGuid>

@@ -19,7 +19,6 @@ GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image image)
 	_gameBoardObjects[_objectId] = this;
 }
 
-
 GameBoardObject::GameBoardObject(TupleInt graphicalPos, TupleInt imageSize, std::string imagePath) :
 	_objectId(++_latestObjectId)
 {
@@ -35,7 +34,7 @@ GameBoardObject::~GameBoardObject()
 
 void GameBoardObject::DrawObject()
 {
-	_g->Draw(&_image, _graphicalPos.GetX(), _graphicalPos.GetY(), 1); //TODO kolla på om man ska ändra 1:an. 
+	_g->Draw(&_image, _graphicalPos.GetX(), _graphicalPos.GetY(), (float) _scale);
 }
 
 void GameBoardObject::DrawAllObjects()
@@ -64,4 +63,9 @@ TupleInt GameBoardObject::GetMapPos()
 void GameBoardObject::SetGraphicalPos(TupleInt pos)
 {
 	_graphicalPos = pos;
+}
+
+void GameBoardObject::SetImageScale(double scale)
+{
+	_scale = scale;
 }

@@ -2,7 +2,7 @@
 #define MAP_TILE_H
 
 #include "GameBoardObject.h"
-#include "HelpStructs.h"
+#include "UtilityClasses.h"
 #include "Planet.h"
 
 class MapTile : public GameBoardObject
@@ -14,14 +14,11 @@ private:
 	static const TupleInt _tileSize;
 	TupleInt _tilePos;
 	TileType _tileType;
-
-protected:
 	std::vector<Planet> _planets;
 
 public:
 	MapTile();
 	MapTile(TileType, std::string);
-	MapTile(TupleInt, std::string);
 	
 	MapTile& operator=(const MapTile&);
 	MapTile(MapTile const&);
@@ -30,9 +27,10 @@ public:
 	static TupleInt GetTileSize();
 	void SetTilePos(int, int);
 	void AddPlanet(Planet*);
+	void SetPlanetsPositions();
 
 private:
-
+	void CopyMapTile(const MapTile&);
 };
 
 #endif // !MAP_TILE_H

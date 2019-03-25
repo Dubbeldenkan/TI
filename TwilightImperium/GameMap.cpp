@@ -51,15 +51,17 @@ void GameMap::CreateAndAddMecatolRex()
 	int resourceValue = 1;
 	int influenceValue = 6;
 	std::string techSpec = "None";
-	tempSystem.AddPlanet(&Planet(planetName, resourceValue, influenceValue, techSpec));
-
 	tempSystem.SetGraphicalPos(CalculateGraphicalPosForTile(0, 0));
+
+	tempSystem.AddPlanet(&Planet(planetName, resourceValue, influenceValue, techSpec));
+	tempSystem.SetPlanetsPositions();
 	tempSystem.SetTilePos(0, 0);
 	_map.insert(std::make_pair(TupleInt(0, 0), tempSystem));
 }
 
 void GameMap::CreateAllSystems()
 {
+	//TODO gör så att det finns olika planetbilder
 	TIParserNS::ListNode* currentSystem = TIParserNS::TIParser::ReadFile(_dataFile);
 	
 	do
@@ -150,6 +152,7 @@ void GameMap::Add2Map(int r, int t)
 	}
 	localMapTile.SetGraphicalPos(CalculateGraphicalPosForTile(r, t));
 	localMapTile.SetTilePos(r, t);
+	localMapTile.SetPlanetsPositions();
 	_map.insert(std::make_pair(TupleInt(r, t), localMapTile));
 }
 

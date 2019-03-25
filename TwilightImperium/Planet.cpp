@@ -1,9 +1,13 @@
 #include "Planet.h"
 
+const TupleInt Planet::_imageSize = TupleInt(40, 40);
+const std::string Planet::_imagePath = "Map/Planet.png";
+
 Planet::Planet()
 {}
 
-Planet::Planet(std::string name, int resourceValue, int influenceValue, std::string techSpec)
+Planet::Planet(std::string name, int resourceValue, int influenceValue, std::string techSpec) :
+	GameBoardObject(TupleInt(0, 0),  _imageSize, _imagePath)
 {
 	_name = name;
 	_resourceValue = resourceValue;
@@ -34,6 +38,29 @@ Planet::Planet(std::string name, int resourceValue, int influenceValue, std::str
 		//TODO sätt in en try catch runt den här
 		int temp = 1;
 	}
+}
+
+Planet& Planet::operator=(const Planet& planet)
+{
+	CopyPlanet(planet);
+	return *this;
+}
+
+Planet::Planet(const Planet &planet) :
+	GameBoardObject(planet._graphicalPos, planet._image)
+{
+	CopyPlanet(planet);
+}
+
+void Planet::CopyPlanet(const Planet& planet)
+{
+	_name = planet._name;
+	_resourceValue = planet._resourceValue;
+	_influenceValue = planet._influenceValue;
+	_technologySpeciality = planet._technologySpeciality;
+	_graphicalPos = planet._graphicalPos;
+	_image = planet._image;
+	_scale = planet._scale;
 }
 
 Planet::~Planet()
