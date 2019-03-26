@@ -29,8 +29,6 @@ public:
 	GameBoardObject(TupleInt, GraphicsNS::Image);
 	GameBoardObject(TupleInt, TupleInt, std::string);
 	~GameBoardObject();
-	
-	void DrawObject();
 
 	static void DrawAllObjects();
 
@@ -40,6 +38,9 @@ public:
 
 	void SetGraphicalPos(TupleInt);
 	void SetImageScale(double);
+
+protected:
+	virtual void DrawObject();
 };
 
 #endif // ! GAME_BOARD_OBJECT_H

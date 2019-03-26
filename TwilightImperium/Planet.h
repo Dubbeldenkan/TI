@@ -18,6 +18,7 @@ private:
 	TechnologySpeciality _technologySpeciality;
 
 	static const std::string _imagePath;
+
 public:
 	Planet();
 	Planet& operator=(const Planet&);
@@ -28,6 +29,7 @@ public:
 
 private:
 	void CopyPlanet(Planet const&);
+	void DrawObject();
 };
 
 #endif // !PLANET_H
