@@ -1,7 +1,5 @@
 #include "AIPlayer.h"
 
-
-
 AIPlayer::AIPlayer()
 {
 }

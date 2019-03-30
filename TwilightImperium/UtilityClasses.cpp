@@ -33,15 +33,15 @@ TupleInt TupleInt::operator-(TupleInt tupleIntInput) const
 TupleInt TupleInt::operator*(double multiplier) const
 {
 	TupleInt tupleIntRes;
-	tupleIntRes.first = first* multiplier;
-	tupleIntRes.second = second* multiplier;
+	tupleIntRes.first = static_cast<int>(first* multiplier);
+	tupleIntRes.second = static_cast<int>(second* multiplier);
 	return tupleIntRes;
 }
 
 TupleInt TupleInt::Division(double denominator) const
 {
 	TupleInt res;
-	res.first = first / denominator;
-	res.second = second / denominator;
+	res.first = static_cast<int>(first / denominator);
+	res.second = static_cast<int>(second / denominator);
 	return res;
 }

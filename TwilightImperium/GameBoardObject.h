@@ -25,21 +25,22 @@ private:
 	static const TupleInt _mapPos;
 
 public:
-	GameBoardObject();
-	GameBoardObject(TupleInt, GraphicsNS::Image);
-	GameBoardObject(TupleInt, TupleInt, std::string);
-	~GameBoardObject();
-
 	static void DrawAllObjects();
 
 	static void SetGraphics(HWND* hWnd);
 
+	// Beskriver var kartan är på skärmen
 	static TupleInt GetMapPos();
 
 	void SetGraphicalPos(TupleInt);
 	void SetImageScale(double);
 
 protected:
+	GameBoardObject();
+	GameBoardObject(TupleInt, GraphicsNS::Image);
+	GameBoardObject(TupleInt, TupleInt, std::string);
+	~GameBoardObject();
+
 	virtual void DrawObject();
 };
 
