@@ -27,6 +27,8 @@ public:
 
 	~Planet();
 
+	std::string GetName() const;
+
 private:
 	void CopyPlanet(Planet const&);
 	void DrawObject();

@@ -2,9 +2,6 @@
 
 Game::Game()
 {
-	//_players.push_back(Player(true));
-	//_localPlayer = &_players[0]; //Get a pointer to the first player
-
 	InitGame();
 }
 
@@ -35,5 +32,8 @@ bool Game::GetGameOver()
 
 void Game::InitGame()
 {
-	//TODO
+	for (int playerCount = 0; playerCount < _numberOfPlayers; playerCount++)
+	{
+		_players.push_back(Player(Race::BaronyOfLetnev, _gameBoard.GetMapMap()));
+	}
 }

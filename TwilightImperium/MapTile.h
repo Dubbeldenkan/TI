@@ -29,6 +29,8 @@ public:
 	void AddPlanet(Planet*);
 	void SetPlanetsPositions();
 
+	std::vector<Planet> GetPlanets();
+
 private:
 	void CopyMapTile(const MapTile&);
 };

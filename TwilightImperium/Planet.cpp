@@ -75,3 +75,8 @@ void Planet::DrawObject()
 
 Planet::~Planet()
 {}
+
+std::string Planet::GetName() const
+{
+	return _name;
+}

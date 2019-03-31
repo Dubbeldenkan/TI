@@ -273,3 +273,8 @@ TupleInt GameMap::CalculateGraphicalPosForTile(int r, int t)
 	}
 	return TupleInt(xPos, yPos);
 }
+
+std::map<TupleInt, MapTile> GameMap::GetMap() const
+{
+	return _map;
+}

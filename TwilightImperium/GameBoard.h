@@ -13,6 +13,8 @@ public:
 
 	void Draw();
 
+	std::map<TupleInt, MapTile> GetMapMap();
+
 private:
 	GameMap _gameMap;
 };

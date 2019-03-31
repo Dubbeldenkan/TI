@@ -90,3 +90,8 @@ void MapTile::SetPlanetsPositions()
 	}
 
 }
+
+std::vector<Planet> MapTile::GetPlanets()
+{
+	return _planets;
+}

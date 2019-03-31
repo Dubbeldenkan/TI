@@ -14,3 +14,8 @@ void GameBoard::Draw()
 {
 	GameBoardObject::DrawAllObjects();
 }
+
+std::map<TupleInt, MapTile> GameBoard::GetMapMap()
+{
+	return _gameMap.GetMap();
+}

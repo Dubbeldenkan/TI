@@ -3,6 +3,7 @@
 
 #include "GameBoard.h"
 #include "Player.h"
+#include "Unit.h"
 
 #include <algorithm>
 #include <stdlib.h>
@@ -16,6 +17,7 @@ public:
 	~Game() {};
 
 private:
+	const int _numberOfPlayers = 1; // TODO ändra till 6;
 	std::vector<Player> _players;
 	GameBoard _gameBoard = GameBoard();
 
@@ -23,12 +25,12 @@ private:
 
 public:
 	void Run();
-	void DrawScreen();
 
 	bool GetGameOver();
-	void InitGame();
 
 private:
+	void DrawScreen();
+	void InitGame();
 };
 
 #endif // !GAME_H
