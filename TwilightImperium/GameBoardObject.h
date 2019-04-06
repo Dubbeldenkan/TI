@@ -14,7 +14,7 @@ protected:
 	TupleInt _graphicalPos;
 	double _scale = 1.0;
 	//TODO ändra så att detta blir en pekare istället
-	GraphicsNS::Image _image;
+	GraphicsNS::Image* _image;
 	const int _objectId;
 	static GraphicsNS::Graphics* _g;
 
@@ -39,7 +39,8 @@ public:
 
 protected:
 	GameBoardObject();
-	GameBoardObject(TupleInt, GraphicsNS::Image);
+	// TODO går denna att ta bort?
+	GameBoardObject(TupleInt, GraphicsNS::Image*);
 	GameBoardObject(TupleInt, TupleInt, std::string);
 	~GameBoardObject();
 

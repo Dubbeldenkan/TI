@@ -65,7 +65,7 @@ void Planet::CopyPlanet(const Planet& planet)
 
 void Planet::DrawObject()
 {
-	_g->Draw(&_image, _graphicalPos.GetX(), _graphicalPos.GetY(), (float)_scale);
+	_g->Draw(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), (float)_scale);
 	_g->PrintText8(_resourceValue, _graphicalPos.GetX(), _graphicalPos.GetY() + static_cast<int>(_imageSize.GetY()*_scale)/2, 
 		GraphicsNS::Graphics::GREEN);
 	_g->PrintText8(_influenceValue, _graphicalPos.GetX() + static_cast<int>(_imageSize.GetX()*_scale) - 8,

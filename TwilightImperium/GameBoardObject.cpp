@@ -13,7 +13,7 @@ GameBoardObject::GameBoardObject() :
 	_gameBoardObjects[_objectId] = this;
 }
 
-GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image image) :
+GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image* image) :
 	_objectId(++_latestObjectId)
 {
 	_graphicalPos = graphicalPos;
@@ -25,7 +25,7 @@ GameBoardObject::GameBoardObject(TupleInt graphicalPos, TupleInt imageSize, std:
 	_objectId(++_latestObjectId)
 {
 	_graphicalPos = graphicalPos;
-	_g->LoadImageFromFile(imagePath, &_image, imageSize.GetX(), imageSize.GetY());
+	_image = _g->LoadImageFromFile(imagePath, imageSize.GetX(), imageSize.GetY());
 	_gameBoardObjects[_objectId] = this;
 }
 
@@ -36,7 +36,7 @@ GameBoardObject::~GameBoardObject()
 
 void GameBoardObject::DrawObject()
 {
-	_g->Draw(&_image, _graphicalPos.GetX(), _graphicalPos.GetY(), (float) _scale);
+	_g->Draw(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), (float) _scale);
 }
 
 void GameBoardObject::DrawAllObjects()
@@ -79,5 +79,5 @@ void GameBoardObject::SetImageScale(double scale)
 
 void GameBoardObject::SetImage(std::string imagePath, TupleInt imageSize)
 {
-	_g->LoadImageFromFile(imagePath, &_image, imageSize.GetX(), imageSize.GetY());
+	_image = _g->LoadImageFromFile(imagePath, imageSize.GetX(), imageSize.GetY());
 }

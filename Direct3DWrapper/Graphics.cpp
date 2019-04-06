@@ -2,8 +2,6 @@
 
 namespace GraphicsNS
 {
-	Graphics::Graphics() {};
-
 	Graphics::Graphics(HWND hWnd)
 	{
 		char tempPath[MAX_PATH];
@@ -86,11 +84,10 @@ namespace GraphicsNS
 		}
 
 		//load pixel Images
-		LoadImageFromFile("Pixel/Red.png", &redPixel);
-		LoadImageFromFile("Pixel/Blue.png", &bluePixel);
-		LoadImageFromFile("Pixel/Black.png", &blackPixel);
-		LoadImageFromFile("Pixel/White.png", &whitePixel);
-		LoadImageFromFile("Pixel/Green.png", &greenPixel);
+		redPixel = LoadImageFromFile("Pixel/Red.png");
+		bluePixel = LoadImageFromFile("Pixel/Blue.png");
+		whitePixel = LoadImageFromFile("Pixel/White.png");
+		greenPixel = LoadImageFromFile("Pixel/Green.png");
 	}
 
 	Graphics::~Graphics()
@@ -138,52 +135,72 @@ namespace GraphicsNS
 	}
 
 	//Används då man bara har en bild, dvs inte flera tiles
-	void Graphics::LoadImageFromFile(std::string fileName, Image* image)
+	Image* Graphics::LoadImageFromFile(std::string fileName)
 	{
-		LoadImageFromFile(fileName, image, 0, 0, 0, 0);
+		return LoadImageFromFile(fileName, 0, 0, 0, 0);
 	}
 
 	//Används då man bara har en bild, dvs inte flera tiles och definierad storlek
-	void Graphics::LoadImageFromFile(std::string fileName, Image* image, int imageXSize, int imageYSize)
+	Image* Graphics::LoadImageFromFile(std::string fileName, int imageXSize, int imageYSize)
 	{
-		LoadImageFromFile(fileName, image, imageXSize, imageYSize, 0, 0);
+		Image* image = LoadImageFromFile(fileName, imageXSize, imageYSize, 0, 0);
 		image->SetXSize(imageXSize);
 		image->SetYSize(imageXSize);
+		return image;
 	}
 
 	//Används då man har flera tiles
-	void Graphics::LoadImageFromFile(std::string fileName, Image* image, int imageXSize, int imageYSize,
+	Image* Graphics::LoadImageFromFile(std::string fileName, int imageXSize, int imageYSize,
 		int partImageSizeX, int partImageSizeY)
 	{
-		std::string path = imagePath + fileName;
-		HRESULT hr = D3DXCreateTextureFromFileEx(
-			_d3dDevice,
-			path.c_str(),
-			imageXSize, imageYSize,
-			1,
-			0,
-			D3DFMT_UNKNOWN,
-			D3DPOOL_MANAGED,
-			D3DX_DEFAULT,
-			D3DX_DEFAULT,
-			D3DCOLOR_XRGB(0, 0, 0),
-			0, 0,
-			image->GetTexture());
-		if (FAILED(hr))
+		//TODO gör så att man kan använda samma image för att rita ut flera sprites
+		/*if (Image::ImageExist(fileName))
 		{
-			OutputDebugString("Cannot load image\n\n");
-		}
-		else
-		{
-			imageVector.push_back(image);
 			char result[100];
 			strcpy_s(result, "Image ");
 			strcat_s(result, fileName.c_str());
-			strcat_s(result, " was loaded\n\n");
+			strcat_s(result, " was already loaded\n\n");
 			OutputDebugString(result);
+
+			Image* image = Image::GetImage(fileName);
+			imageVector.push_back(image);
+			return image;
 		}
-		image->SetXSize(partImageSizeX);
-		image->SetYSize(partImageSizeY);
+		else
+		{*/
+			Image* image = Image::CreateImage(fileName);
+			std::string path = imagePath + fileName;
+			HRESULT hr = D3DXCreateTextureFromFileEx(
+				_d3dDevice,
+				path.c_str(),
+				imageXSize, imageYSize,
+				1,
+				0,
+				D3DFMT_UNKNOWN,
+				D3DPOOL_MANAGED,
+				D3DX_DEFAULT,
+				D3DX_DEFAULT,
+				D3DCOLOR_XRGB(0, 0, 0),
+				0, 0,
+				image->GetTexture());
+			if (FAILED(hr))
+			{
+				OutputDebugString("Cannot load image\n\n");
+			}
+			else
+			{
+				imageVector.push_back(image);
+				char result[100];
+				strcpy_s(result, "Image ");
+				strcat_s(result, fileName.c_str());
+				strcat_s(result, " was loaded\n\n");
+				OutputDebugString(result);
+			}
+			image->SetXSize(partImageSizeX);
+			image->SetYSize(partImageSizeY);
+			return image;
+		/*}
+		return NULL;*/
 	}
 
 	void Graphics::StartDrawing()
@@ -337,27 +354,27 @@ namespace GraphicsNS
 		{
 		case WHITE:
 		{
-			image = &whitePixel;
+			image = whitePixel;
 			break;
 		}
 		case BLACK:
 		{
-			image = &blackPixel;
+			image = blackPixel;
 			break;
 		}
 		case RED:
 		{
-			image = &redPixel;
+			image = redPixel;
 			break;
 		}
 		case BLUE:
 		{
-			image = &bluePixel;
+			image = bluePixel;
 			break;
 		}
 		case GREEN:
 		{
-			image = &greenPixel;
+			image = greenPixel;
 			break;
 		}
 		default:

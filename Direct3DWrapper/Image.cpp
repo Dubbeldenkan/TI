@@ -2,6 +2,21 @@
 
 namespace GraphicsNS
 {
+	std::map<std::string, Image> Image::_imageMap;
+
+	Image* Image::CreateImage(std::string stringKey)
+	{
+		Image* image = new Image(stringKey);
+		return image;
+	}
+
+	Image::Image()
+	{}
+
+	Image::Image(std::string filePath)
+	{
+		_imageMap[filePath] = *this;
+	}
 
 	int Image::GetXSize()
 	{
@@ -38,5 +53,15 @@ namespace GraphicsNS
 	LPDIRECT3DTEXTURE9* Image::GetTexture()
 	{
 		return &_texture;
+	}
+
+	bool Image::ImageExist(std::string key)
+	{
+		return !(_imageMap.find(key) == _imageMap.end());
+	}
+
+	Image* Image::GetImage(std::string key)
+	{
+		return &_imageMap[key];
 	}
 }

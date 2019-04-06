@@ -3,6 +3,8 @@
 
 #include <d3dx9.h>
 
+#include <map>
+
 namespace GraphicsNS
 {
 
@@ -11,9 +13,12 @@ namespace GraphicsNS
 		int _xSize = 0;
 		int _ySize = 0;
 		LPDIRECT3DTEXTURE9 _texture;
-	public:
 
-		Image() {};
+	public:
+		Image();
+		Image(std::string);
+
+		static Image* CreateImage(std::string);
 
 		int GetXSize();
 		int GetYSize();
@@ -22,6 +27,12 @@ namespace GraphicsNS
 		void SetYSize(int);
 
 		LPDIRECT3DTEXTURE9* GetTexture();
+
+		static bool ImageExist(std::string);
+		static Image* GetImage(std::string);
+
+	private:
+		static std::map<std::string, Image> _imageMap;
 	};
 }
 

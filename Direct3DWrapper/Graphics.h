@@ -33,14 +33,13 @@ namespace GraphicsNS
 		std::vector<Image*> imageVector;
 		std::string imagePath;
 
-		Image redPixel;
-		Image bluePixel;
-		Image whitePixel;
-		Image blackPixel;
-		Image greenPixel;
+		Image* redPixel;
+		Image* bluePixel;
+		Image* whitePixel;
+		Image* blackPixel;
+		Image* greenPixel;
 
 	public:
-		Graphics();
 		Graphics(HWND hWnd);
 		~Graphics();
 
@@ -49,9 +48,9 @@ namespace GraphicsNS
 		void StartDrawing();
 		void StopDrawing();
 
-		void LoadImageFromFile(std::string, Image*);
-		void LoadImageFromFile(std::string, Image*, int, int);
-		void LoadImageFromFile(std::string, Image*, int, int, int, int);
+		Image* LoadImageFromFile(std::string);
+		Image* LoadImageFromFile(std::string, int, int);
+		Image* LoadImageFromFile(std::string, int, int, int, int);
 
 		void Draw(Image*, int, int, float);
 		void DrawTile(Image*, int, int, int, int);
