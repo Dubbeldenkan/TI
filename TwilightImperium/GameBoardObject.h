@@ -13,6 +13,7 @@ class GameBoardObject
 protected:
 	TupleInt _graphicalPos;
 	double _scale = 1.0;
+	//TODO ändra så att detta blir en pekare istället
 	GraphicsNS::Image _image;
 	const int _objectId;
 	static GraphicsNS::Graphics* _g;
@@ -31,6 +32,7 @@ public:
 
 	// Beskriver var kartan är på skärmen
 	static TupleInt GetMapPos();
+	TupleInt GetGraphicalPos() const;
 
 	void SetGraphicalPos(TupleInt);
 	void SetImageScale(double);
@@ -41,6 +43,7 @@ protected:
 	GameBoardObject(TupleInt, TupleInt, std::string);
 	~GameBoardObject();
 
+	void SetImage(std::string, TupleInt);
 	virtual void DrawObject();
 };
 

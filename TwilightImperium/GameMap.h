@@ -30,7 +30,7 @@ public:
 
 	void CreateGameMap();
 	std::vector<MapTile*> GetNeighbourSystems(TupleInt);
-	std::map<TupleInt, MapTile> GetMap() const;
+	const std::map<TupleInt, MapTile>* GetMap() const;
 
 private:
 	void CreateAllSystems();

@@ -6,6 +6,10 @@ BaronyOfLetnev
 		Wren Terra
 		Arc Prime
 	}
+	ImagePath
+	{
+		"Race/Test.png"
+	}
 	//TradeCards
 	//{
 		//1

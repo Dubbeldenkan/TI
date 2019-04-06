@@ -327,6 +327,9 @@ namespace GraphicsNS
 		PrintText15((char*)buffer, xPos, yPos, color);
 	}
 
+	/*
+	xPos, yPos, xSize, ySize, Color
+	*/
 	void Graphics::DrawRectangle(int xPos, int yPos, int xSize, int ySize, D3DCOLOR color)
 	{
 		Image* image = NULL;

@@ -34,6 +34,6 @@ void Game::InitGame()
 {
 	for (int playerCount = 0; playerCount < _numberOfPlayers; playerCount++)
 	{
-		_players.push_back(Player(Race::BaronyOfLetnev, _gameBoard.GetMapMap()));
+		_players.push_back(Player(Race::BaronyOfLetnev, Player::Red, _gameBoard.GetMapMap()));
 	}
 }

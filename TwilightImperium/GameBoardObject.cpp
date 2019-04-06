@@ -9,7 +9,9 @@ const TupleInt GameBoardObject::_mapPos = TupleInt(0, 0);
 
 GameBoardObject::GameBoardObject() : 
 	_objectId(++_latestObjectId)
-{}
+{
+	_gameBoardObjects[_objectId] = this;
+}
 
 GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image image) :
 	_objectId(++_latestObjectId)
@@ -60,6 +62,11 @@ TupleInt GameBoardObject::GetMapPos()
 	return _mapPos;
 }
 
+TupleInt GameBoardObject::GetGraphicalPos() const
+{
+	return _graphicalPos;
+}
+
 void GameBoardObject::SetGraphicalPos(TupleInt pos)
 {
 	_graphicalPos = pos;
@@ -68,4 +75,9 @@ void GameBoardObject::SetGraphicalPos(TupleInt pos)
 void GameBoardObject::SetImageScale(double scale)
 {
 	_scale = scale;
+}
+
+void GameBoardObject::SetImage(std::string imagePath, TupleInt imageSize)
+{
+	_g->LoadImageFromFile(imagePath, &_image, imageSize.GetX(), imageSize.GetY());
 }

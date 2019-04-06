@@ -91,7 +91,12 @@ void MapTile::SetPlanetsPositions()
 
 }
 
-std::vector<Planet> MapTile::GetPlanets()
+const std::vector<Planet>* MapTile::GetPlanets() const
 {
-	return _planets;
+	return &_planets;
+}
+
+const Planet* MapTile::GetPlanet(int planetCount) const
+{
+	return &_planets[planetCount];
 }
