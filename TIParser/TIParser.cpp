@@ -41,8 +41,10 @@ namespace TIParserNS
 		std::string line;
 		while (std::getline(*file, line))
 		{
+			line.erase(std::remove(line.begin(), line.end(), '\t'), line.end());
 			if (line.find("//") == 0 || line.empty())
 			{
+				int test = 0;
 				//This is a comment or an empty line
 			}
 			else if (line.find("{") != -1)
@@ -61,7 +63,6 @@ namespace TIParserNS
 			}
 			else
 			{
-				line.erase(std::remove(line.begin(), line.end(), '\t'), line.end());
 				//line.erase(std::remove(line.begin(), line.end(), ' '), line.end()); //TODO gör så att man tar bort alla mellanslag före och efter texten men inte mellan 
 				ListNode* tempNode = new ListNode(line);
 				currentNode->SetNext(tempNode);
