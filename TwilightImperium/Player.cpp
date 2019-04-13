@@ -14,15 +14,11 @@ Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<Tupl
 	}
 	TIParserNS::ListNode* raceData = TIParserNS::TIParser::ReadFile(_race.GetDataFilePath());
 	raceData->GetChild(&raceData);
-	/*TIParserNS::ListNode* startPlanets = NULL;
-	raceData->GetNext(&startPlanets);*/
-	//TODO planeterna blir inte rätt. 
 	SetStartPlanets(raceData, map);
 	raceData->GetNext(&raceData);
-	SetImage(raceData->GetData(), TupleInt(10, 10)); //TODO ändra så att storleken är rätt. 
-
-	//_graphicalPos = TupleInt(-1, -1);
-	//SetStartUnits(raceData);
+	SetPlayerImage(raceData);
+	raceData->GetNext(&raceData);
+	SetStartUnits(raceData);
 }
 
 Player& Player::operator=(const Player& player)
@@ -39,7 +35,7 @@ Player::Player(const Player &player) :
 
 void Player::CopyPlayer(const Player& player)
 {
-	_unitMap = _unitMap;
+	_unitMap = player._unitMap;
 	_color = player._color;
 	_race = player._race;
 	_planets = player._planets;
@@ -64,6 +60,7 @@ void Player::SetStartPlanets(TIParserNS::ListNode* startPlanets, const std::map<
 			{
 				if (planetName.compare(system.second.GetPlanet(planetCount)->GetName()) == 0)
 				{
+					_homeSystem = system.first;
 					systemFound = true;
 					break;
 				}
@@ -81,13 +78,55 @@ void Player::SetStartPlanets(TIParserNS::ListNode* startPlanets, const std::map<
 	} while (!planet->GetNext(&planet) && !systemFound);
 }
 
-void Player::SetStartUnits(TIParserNS::ListNode* ListNode)
+void Player::SetPlayerImage(TIParserNS::ListNode* listNode)
 {
+	listNode->GetChild(&listNode);
+	SetImage(listNode->GetData(), TupleInt(10, 10)); //TODO ändra så att storleken är rätt. 
+}
 
-	for (int numberOfUnits = 0; numberOfUnits < 2; numberOfUnits++)
+void Player::SetStartUnits(TIParserNS::ListNode* listNode)
+{
+	listNode->GetChild(&listNode);
+	_unitMap.insert(std::pair<TupleInt, UnitStack>(_homeSystem, UnitStack()));
+	do
 	{
-		_unitMap.insert(std::make_pair(TupleInt(0, 0), GroundForce()));
-	}
+		std::string unitName = listNode->GetData();
+		TIParserNS::ListNode* tempNode = NULL;
+		listNode->GetChild(&tempNode);
+		int numberOfUnits = atoi(tempNode->GetData().c_str());
+
+		UnitStack::UnitType unitType;
+
+		if (unitName.compare("Carrier") == 0)
+		{
+			unitType = UnitStack::Carrier;
+		}
+		else if (unitName.compare("Cruiser") == 0)
+		{
+			unitType = UnitStack::Cruiser;
+		}
+		else if (unitName.compare("Destroyer") == 0)
+		{
+			unitType = UnitStack::Destroyer;
+		}
+		else if (unitName.compare("Dreadnought") == 0)
+		{
+			unitType = UnitStack::Dreadnought;
+		}
+		else if (unitName.compare("GroundForce") == 0)
+		{
+			unitType = UnitStack::GroundForce;
+		}
+		else if (unitName.compare("SpaceDock") == 0)
+		{
+			unitType = UnitStack::SpaceDock;
+		}
+		else
+		{
+			int temp = 1; //TODO lägg till felhantering här
+		}
+		_unitMap[_homeSystem].AddUnits(unitType, numberOfUnits);
+	} while (!listNode->GetNext(&listNode));
 }
 
 void Player::DrawObject()
@@ -111,6 +150,7 @@ void Player::DrawObject()
 	default:
 		break;
 	}
+
 	std::map<std::string, const Planet*>::iterator it;
 	for (it = _planets.begin(); it != _planets.end(); it++)
 	{

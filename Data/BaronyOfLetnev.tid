@@ -8,7 +8,7 @@ BaronyOfLetnev
 	}
 	ImagePath
 	{
-		"Race/Test.png"
+		Race/Test.png
 	}
 	//TradeCards
 	//{
@@ -21,7 +21,7 @@ BaronyOfLetnev
 		{
 			1
 		}
-		GroungForces
+		GroundForce
 		{
 			3
 		}

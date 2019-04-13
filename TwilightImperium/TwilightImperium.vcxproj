@@ -32,9 +32,8 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameBoardObject.h" />
-    <ClInclude Include="GroundForce.h" />
     <ClInclude Include="Race.h" />
-    <ClInclude Include="Unit.h" />
+    <ClInclude Include="UnitStack.h" />
     <ClInclude Include="UtilityClasses.h" />
     <ClInclude Include="HumanPlayer.h" />
     <ClInclude Include="IO.h" />
@@ -49,7 +48,6 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameBoard.cpp" />
     <ClCompile Include="GameBoardObject.cpp" />
-    <ClCompile Include="GroundForce.cpp" />
     <ClCompile Include="HumanPlayer.cpp" />
     <ClCompile Include="IO.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -58,7 +56,7 @@
     <ClCompile Include="Planet.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Race.cpp" />
-    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="UnitStack.cpp" />
     <ClCompile Include="UtilityClasses.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
