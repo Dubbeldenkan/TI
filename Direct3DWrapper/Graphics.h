@@ -12,6 +12,18 @@
 
 namespace GraphicsNS
 {
+	struct DrawStruct
+	{
+		float scale = 1.0f;
+		RECT* rect = 0;
+		D3DXVECTOR3* position = 0;
+		D3DXVECTOR3* tilePosition = 0;
+		D3DCOLOR color = D3DCOLOR_XRGB(255, 255, 255);
+		D3DXMATRIX transformMatrix;
+
+		DrawStruct();
+	};
+
 	class Graphics
 	{
 	public:
@@ -35,11 +47,7 @@ namespace GraphicsNS
 		std::vector<Image*> imageVector;
 		std::string imagePath;
 
-		Image* redPixel;
-		Image* bluePixel;
 		Image* whitePixel;
-		Image* blackPixel;
-		Image* greenPixel;
 
 	public:
 		Graphics(HWND hWnd);
@@ -54,7 +62,9 @@ namespace GraphicsNS
 		Image* LoadImageFromFile(std::string, int, int);
 		Image* LoadImageFromFile(std::string, int, int, int, int);
 
+		void Draw(DrawStruct, Image*);
 		void Draw(Image*, int, int, float);
+		void DrawColor(Image*, int, int, D3DCOLOR);
 		void DrawTile(Image*, int, int, int, int);
 		void DrawAnimation(Image*, int, int, int, int);
 		void DrawRotateImage(Image*, int, int, double, int);
