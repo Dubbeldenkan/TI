@@ -58,13 +58,16 @@ namespace GraphicsNS
 		void StartDrawing();
 		void StopDrawing();
 
+		//Används då man bara har en bild, dvs inte flera tiles
 		Image* LoadImageFromFile(std::string);
+		//Används då man bara har en bild, dvs inte flera tiles och definierad storlek
 		Image* LoadImageFromFile(std::string, int, int);
+		//Används då man har flera tiles
 		Image* LoadImageFromFile(std::string, int, int, int, int);
 
 		void Draw(DrawStruct, Image*);
 		void Draw(Image*, int, int, float);
-		void DrawColor(Image*, int, int, D3DCOLOR);
+		void DrawWithColor(Image*, int, int, D3DCOLOR);
 		void DrawTile(Image*, int, int, int, int);
 		void DrawAnimation(Image*, int, int, int, int);
 		void DrawRotateImage(Image*, int, int, double, int);

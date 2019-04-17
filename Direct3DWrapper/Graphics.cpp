@@ -136,13 +136,11 @@ namespace GraphicsNS
 		}
 	}
 
-	//Används då man bara har en bild, dvs inte flera tiles
 	Image* Graphics::LoadImageFromFile(std::string fileName)
 	{
 		return LoadImageFromFile(fileName, 0, 0, 0, 0);
 	}
 
-	//Används då man bara har en bild, dvs inte flera tiles och definierad storlek
 	Image* Graphics::LoadImageFromFile(std::string fileName, int imageXSize, int imageYSize)
 	{
 		Image* image = LoadImageFromFile(fileName, imageXSize, imageYSize, 0, 0);
@@ -151,7 +149,6 @@ namespace GraphicsNS
 		return image;
 	}
 
-	//Används då man har flera tiles
 	Image* Graphics::LoadImageFromFile(std::string fileName, int imageXSize, int imageYSize,
 		int partImageSizeX, int partImageSizeY)
 	{
@@ -217,6 +214,7 @@ namespace GraphicsNS
 
 	void Graphics::Draw(DrawStruct dS, Image* image)
 	{
+		//TODO lägg in try catch 
 		_sprite->Begin(D3DXSPRITE_ALPHABLEND);
 		_sprite->SetTransform(&(dS.transformMatrix));
 		_sprite->Draw(
@@ -237,7 +235,7 @@ namespace GraphicsNS
 		Draw(dS, image);
 	}
 
-	void Graphics::DrawColor(Image* image, int x, int y, D3DCOLOR color)
+	void Graphics::DrawWithColor(Image* image, int x, int y, D3DCOLOR color)
 	{
 		DrawStruct dS = DrawStruct();
 		dS.color = color;

@@ -23,11 +23,12 @@ private:
 	std::map<std::string, const Planet*> _planets; //TODO borde detta vara en vector istället?
 	TupleInt _homeSystem;
 
-	//TODO använd en speciell bild istället för rectangeln. 
-	//GraphicsNS::Image* _shipIndicator;
-	const int _shipIndicator = 10;
 
-	//TODO förbättra indikationen
+	GraphicsNS::Image* _shipIndicator;
+	static const std::string _shipIndicatorPath;
+	const int _shipIndicatorSize = 10;
+
+	//TODO förbättra indikationen, byt ut mot en flagga
 	const int _planetIndicatorSize = 7;
 
 public:

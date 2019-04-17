@@ -1,5 +1,7 @@
 #include "Player.h"
 
+const std::string Player::_shipIndicatorPath = "Unit/ShipIndicator.png";
+
 Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<TupleInt, MapTile>* map) :
 	GameBoardObject()
 {
@@ -13,6 +15,8 @@ Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<Tupl
 	SetPlayerImage(raceData);
 	raceData->GetNext(&raceData);
 	SetStartUnits(raceData);
+
+	_shipIndicator = _g->LoadImageFromFile(_shipIndicatorPath, _shipIndicatorSize, _shipIndicatorSize);
 }
 
 Player& Player::operator=(const Player& player)
@@ -33,6 +37,7 @@ void Player::CopyPlayer(const Player& player)
 	_color = player._color;
 	_race = player._race;
 	_planets = player._planets;
+	_shipIndicator = player._shipIndicator;
 }
 
 Player::~Player()
@@ -142,8 +147,7 @@ void Player::DrawUnits(D3DCOLOR color)
 	{
 		int numberOfShips = it->second.GetSum();
 		TupleInt graphicalPos = GameMap::CalculateGraphicalPosForTile(it->first) + _unitPosInTile;
-		_g->DrawRectangle(graphicalPos.GetX(), graphicalPos.GetY(),
-			_shipIndicator, _shipIndicator, color);
-		_g->PrintText15(numberOfShips, graphicalPos.GetX() + _shipIndicator, graphicalPos.GetY(), color);
+		_g->DrawWithColor(_shipIndicator, graphicalPos.GetX(), graphicalPos.GetY(), color);
+		_g->PrintText15(numberOfShips, graphicalPos.GetX() + _shipIndicator->GetXSize(), graphicalPos.GetY(), color);
 	}
 }
