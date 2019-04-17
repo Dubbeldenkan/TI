@@ -22,6 +22,8 @@ namespace GraphicsNS
 		const static D3DCOLOR RED = D3DCOLOR_XRGB(255, 0, 0);
 		const static D3DCOLOR BLUE = D3DCOLOR_XRGB(0, 0, 255);
 		const static D3DCOLOR GREEN = D3DCOLOR_XRGB(0, 255, 0);
+		const static D3DCOLOR YELLOW = D3DCOLOR_XRGB(255, 255, 0);
+		const static D3DCOLOR PURPLE = D3DCOLOR_XRGB(255, 0, 255);
 
 	private:
 		LPDIRECT3D9 _d3d;
