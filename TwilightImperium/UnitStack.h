@@ -10,42 +10,19 @@ class UnitStack
 public: 
 	enum UnitType { Carrier, Cruiser, Destroyer, Dreadnought, Fighter, GroundForce, PDS, SpaceDock, WarSun };
 
-// TODO Behövs detta?
-/*protected:
-	std::string _name;
-	int _cost;
-	int _unitsAvailable;
-	int _battle;
-	int _movement;*/
-
 public:
-	UnitStack(); //TODO behövs denna?
-	//UnitStack(std::string, int, int, int, int, TupleInt, std::string, TupleInt);
+	UnitStack();
 	UnitStack(const UnitStack&);
 	UnitStack& operator=(const UnitStack&);
 	void CopyUnitStack(const UnitStack&);
-
 	~UnitStack();
 
-	void AddUnits(UnitType, int);
-
-	//TODO remove
-	/*std::string GetName();
-	int GetCost();
-	int GetUnitsAvailable();
-	int GetBattle();
-	int GetMovement();*/
+	bool AddUnits(std::string, int);
+	//använd både till att lägga till och ta bort gubbar, om UnitStack är tom returneras true
+	bool AddUnits(UnitType, int);
 
 private:
-	int _numberOfCarriers = 0;
-	int _numberOfCruisers = 0;
-	int _numberOfDestroyers = 0;
-	int _numberOfDreadnoughts = 0;
-	int _numberOfFighters = 0;
-	int _numberOfGroundForces = 0;
-	int _numberOfPDS = 0;
-	int _numberOfSpaceDocks = 0;
-	int _numberOfWarSuns = 0;
+	std::map<UnitType, int> _numberOfUnits;
 };
 
 #endif // !UNIT_H

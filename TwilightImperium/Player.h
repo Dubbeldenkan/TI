@@ -38,6 +38,8 @@ private:
 	void SetPlayerImage(TIParserNS::ListNode*);
 
 	void DrawObject();
+	void DrawPlanetMarkers();
+	void DrawUnits();
 };
 
 #endif // !PLAYER_H

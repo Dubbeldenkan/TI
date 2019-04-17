@@ -95,41 +95,17 @@ void Player::SetStartUnits(TIParserNS::ListNode* listNode)
 		listNode->GetChild(&tempNode);
 		int numberOfUnits = atoi(tempNode->GetData().c_str());
 
-		UnitStack::UnitType unitType;
-
-		if (unitName.compare("Carrier") == 0)
-		{
-			unitType = UnitStack::Carrier;
-		}
-		else if (unitName.compare("Cruiser") == 0)
-		{
-			unitType = UnitStack::Cruiser;
-		}
-		else if (unitName.compare("Destroyer") == 0)
-		{
-			unitType = UnitStack::Destroyer;
-		}
-		else if (unitName.compare("Dreadnought") == 0)
-		{
-			unitType = UnitStack::Dreadnought;
-		}
-		else if (unitName.compare("GroundForce") == 0)
-		{
-			unitType = UnitStack::GroundForce;
-		}
-		else if (unitName.compare("SpaceDock") == 0)
-		{
-			unitType = UnitStack::SpaceDock;
-		}
-		else
-		{
-			int temp = 1; //TODO lägg till felhantering här
-		}
-		_unitMap[_homeSystem].AddUnits(unitType, numberOfUnits);
+		_unitMap[_homeSystem].AddUnits(unitName, numberOfUnits);
 	} while (!listNode->GetNext(&listNode));
 }
 
 void Player::DrawObject()
+{
+	DrawPlanetMarkers();
+	DrawUnits();
+}
+
+void Player::DrawPlanetMarkers()
 {
 	D3DCOLOR color;
 	switch (_color)
@@ -157,5 +133,20 @@ void Player::DrawObject()
 		TupleInt planetPos = it->second->GetGraphicalPos();
 		_g->DrawRectangle(planetPos.GetX(), planetPos.GetY(),
 			_planetIndicatorSize, _planetIndicatorSize, color);
+	}
+}
+
+void Player::DrawUnits()
+{
+	std::map<TupleInt, UnitStack>::iterator it;
+	for (it = _unitMap.begin(); it != _unitMap.end(); it++)
+	{
+		
+		/*it->second
+			_g->DrawRectangle(planetPos.GetX(), planetPos.GetY(),
+				_planetIndicatorSize, _planetIndicatorSize, color);
+		TupleInt planetPos = it->second->GetGraphicalPos();
+		_g->DrawRectangle(planetPos.GetX(), planetPos.GetY(),
+			_planetIndicatorSize, _planetIndicatorSize, color);*/
 	}
 }

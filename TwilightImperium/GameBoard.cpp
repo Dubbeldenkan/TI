@@ -15,7 +15,7 @@ void GameBoard::Draw()
 	GameBoardObject::DrawAllObjects();
 }
 
-const std::map<TupleInt, MapTile>* GameBoard::GetMapMap()
+const std::map<TupleInt, MapTile>* GameBoard::GetMapMap() const
 {
 	return _gameMap.GetMap();
 }

@@ -13,7 +13,7 @@ public:
 
 	void Draw();
 
-	const std::map<TupleInt, MapTile>* GetMapMap();
+	const std::map<TupleInt, MapTile>* GetMapMap() const;
 
 private:
 	GameMap _gameMap;
