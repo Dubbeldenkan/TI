@@ -32,8 +32,10 @@ bool Game::GetGameOver()
 
 void Game::InitGame()
 {
-	for (int playerCount = 0; playerCount < _numberOfPlayers; playerCount++)
-	{
-		_players.push_back(Player(Race::BaronyOfLetnev, Player::Red, _gameBoard.GetMapMap()));
-	}
+	_players.push_back(Player(Race::BaronyOfLetnev, Player::Red, _gameBoard.GetMapMap()));
+	_players.push_back(Player(Race::EmiratesOfHacan, Player::Blue, _gameBoard.GetMapMap()));
+	_players.push_back(Player(Race::FederationOfSol, Player::Purple, _gameBoard.GetMapMap()));
+	_players.push_back(Player(Race::L1Z1XMindnet, Player::Yellow, _gameBoard.GetMapMap()));
+	_players.push_back(Player(Race::MentakCoalition, Player::Green, _gameBoard.GetMapMap()));
+	_players.push_back(Player(Race::NaaluCollective, Player::White, _gameBoard.GetMapMap()));
 }

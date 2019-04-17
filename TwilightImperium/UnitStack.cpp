@@ -47,17 +47,21 @@ bool UnitStack::AddUnits(std::string unitName, int numberOfUnits)
 	{
 		unitType = UnitStack::Dreadnought;
 	}
-	else if (unitName.compare("GroundForce") == 0)
+	else if (unitName.compare("GroundForce") == 0) //TODO denna borde inte vara med här
 	{
 		unitType = UnitStack::GroundForce;
 	}
-	else if (unitName.compare("SpaceDock") == 0)
+	else if (unitName.compare("SpaceDock") == 0) //TODO denna borde inte vara med här
 	{
 		unitType = UnitStack::SpaceDock;
 	}
 	else if (unitName.compare("Fighter") == 0) //TODO denna borde inte vara med här
 	{
 		unitType = UnitStack::Fighter;
+	}
+	else if (unitName.compare("PDS") == 0) //TODO denna borde inte vara med här
+	{
+		unitType = UnitStack::PDS;
 	}
 	else
 	{

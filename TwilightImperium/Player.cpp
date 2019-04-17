@@ -4,14 +4,8 @@ Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<Tupl
 	GameBoardObject()
 {
 	_color = color;
-	switch (raceType)
-	{
-	case Race::BaronyOfLetnev:
-		_race = BaronyOfLetnev();
-		break;
-	default:
-		break;
-	}
+	_race = Race::CreateRace(raceType);
+	
 	TIParserNS::ListNode* raceData = TIParserNS::TIParser::ReadFile(_race.GetDataFilePath());
 	raceData->GetChild(&raceData);
 	SetStartPlanets(raceData, map);
@@ -108,14 +102,19 @@ void Player::DrawObject()
 		color = GraphicsNS::Graphics::RED;
 		break;
 	case Player::Blue:
+		color = GraphicsNS::Graphics::BLUE;
 		break;
-	case Player::Black:
+	case Player::White:
+		color = GraphicsNS::Graphics::WHITE;
 		break;
 	case Player::Yellow:
+		color = GraphicsNS::Graphics::YELLOW;
 		break;
 	case Player::Green:
+		color = GraphicsNS::Graphics::GREEN;
 		break;
-	case Player::Orange:
+	case Player::Purple:
+		color = GraphicsNS::Graphics::PURPLE;
 		break;
 	default:
 		break;

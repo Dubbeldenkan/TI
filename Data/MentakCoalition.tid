@@ -1,0 +1,40 @@
+//TODO lägg till tech och trade
+L1Z1X
+{
+	StartPlanets
+	{
+		Moll Primus
+	}
+	ImagePath
+	{
+		Race/Test.png
+	}
+	//TradeCards
+	//{
+		//1
+		//1
+	//}
+	StartUnits
+	{
+		SpaceDock
+		{
+			1
+		}
+		GroundForce
+		{
+			4
+		}
+		Carrier
+		{
+			1
+		}
+		PDS
+		{
+			1
+		}
+		Cruiser
+		{
+			3
+		}
+	}
+}

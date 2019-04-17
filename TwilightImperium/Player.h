@@ -13,7 +13,7 @@ class Player : public GameBoardObject
 {
 public:
 	//TODO kan man använda color från graphics istället?
-	enum Color { Red, Blue, Black, Yellow, Green, Orange}; //TODO stora bokstäver? fyll på med färg
+	enum Color { Red, Blue, White, Yellow, Green, Purple}; //TODO stora bokstäver? fyll på med färg
 
 private:
 	std::map<TupleInt, UnitStack> _unitMap;

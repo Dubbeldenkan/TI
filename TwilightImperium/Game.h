@@ -17,7 +17,6 @@ public:
 	~Game() {};
 
 private:
-	const int _numberOfPlayers = 1; // TODO ändra till 6;
 	std::vector<Player> _players;
 	GameBoard _gameBoard = GameBoard();
 

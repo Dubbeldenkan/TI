@@ -1,0 +1,36 @@
+//TODO lägg till tech och trade
+FederationOfSol
+{
+	StartPlanets
+	{
+		Jord
+	}
+	ImagePath
+	{
+		Race/Test.png
+	}
+	//TradeCards
+	//{
+		//1
+		//1
+	//}
+	StartUnits
+	{
+		SpaceDock
+		{
+			1
+		}
+		GroundForce
+		{
+			5
+		}
+		Carrier
+		{
+			2
+		}
+		Destroyer
+		{
+			1
+		}
+	}
+}

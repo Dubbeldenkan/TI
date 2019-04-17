@@ -1,0 +1,42 @@
+//TODO lägg till tech och trade
+EmiratesOfHacan
+{
+	StartPlanets
+	{
+		Arretze
+		Hercant
+        Kamdorn
+	}
+	ImagePath
+	{
+		Race/Test.png
+	}
+	//TradeCards
+	//{
+		//1
+		//1
+	//}
+	StartUnits
+	{
+		SpaceDock
+		{
+			1
+		}
+		GroundForce
+		{
+			4
+		}
+		Carrier
+		{
+			2
+		}
+		Fighter
+		{
+			2
+		}
+		Cruiser
+        {
+            1
+        }
+	}
+}
