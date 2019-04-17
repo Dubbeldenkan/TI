@@ -8,6 +8,8 @@ GraphicsNS::Graphics* GameBoardObject::_g = NULL;
 const TupleInt GameBoardObject::_gameMapPos = TupleInt(0, 0);
 const TupleInt GameBoardObject::_unitPosInTile = TupleInt(25, 60);
 
+const TupleInt GameBoardObject::_playerSheetPos = TupleInt(650, 0);
+
 GameBoardObject::GameBoardObject() : 
 	_objectId(++_latestObjectId)
 {
@@ -37,7 +39,7 @@ GameBoardObject::~GameBoardObject()
 
 void GameBoardObject::DrawObject()
 {
-	_g->Draw(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), (float) _scale);
+	_g->Draw(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), _scale);
 }
 
 void GameBoardObject::DrawAllObjects()
@@ -73,7 +75,7 @@ void GameBoardObject::SetGraphicalPos(TupleInt pos)
 	_graphicalPos = pos;
 }
 
-void GameBoardObject::SetImageScale(double scale)
+void GameBoardObject::SetImageScale(float scale)
 {
 	_scale = scale;
 }

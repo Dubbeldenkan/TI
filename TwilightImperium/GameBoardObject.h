@@ -12,7 +12,7 @@ class GameBoardObject
 {
 protected:
 	TupleInt _graphicalPos;
-	double _scale = 1.0;
+	float _scale = 1.0;
 	GraphicsNS::Image* _image;
 	const int _objectId;
 	static GraphicsNS::Graphics* _g;
@@ -20,6 +20,8 @@ protected:
 	//Objects graphical position
 	static const TupleInt _gameMapPos;
 	static const TupleInt _unitPosInTile;
+	
+	static const TupleInt _playerSheetPos;
 
 private:
 	static int _latestObjectId;
@@ -36,7 +38,7 @@ public:
 	TupleInt GetGraphicalPos() const;
 
 	void SetGraphicalPos(TupleInt);
-	void SetImageScale(double);
+	void SetImageScale(float);
 
 protected:
 	GameBoardObject();

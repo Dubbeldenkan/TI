@@ -67,7 +67,7 @@ void MapTile::SetPlanetsPositions()
 		for (int planetCount = 0; planetCount < numberOfPlanets; planetCount++)
 		{
 			_planets[planetCount].SetGraphicalPos(planetPos + _tileSize.Division(3.5)*((double) planetCount));
-			_planets[planetCount].SetImageScale(1.0/1.2);
+			_planets[planetCount].SetImageScale(static_cast<float>(1.0/1.2));
 		}
 		break;
 	}
@@ -81,7 +81,7 @@ void MapTile::SetPlanetsPositions()
 		_planets[2].SetGraphicalPos(planetPos + TupleInt(_tileSize.GetX()/5, _tileSize.GetY()/3));
 		for (int planetCount = 0; planetCount < numberOfPlanets; planetCount++)
 		{
-			_planets[planetCount].SetImageScale(1.0/1.5);
+			_planets[planetCount].SetImageScale(static_cast<float>(1.0/1.5));
 		}
 		break;
 	}

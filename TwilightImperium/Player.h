@@ -20,8 +20,21 @@ private:
 
 	Player::Color _color;
 	Race _race;
-	std::map<std::string, const Planet*> _planets; //TODO borde detta vara en vector istället?
+	std::map<std::string, const Planet*> _planets;
 	TupleInt _homeSystem;
+
+	int _strategyAllocation = 2;
+	int _fleetSupply = 3;
+	int _commandPool = 3;
+	int _tradeGoods = 0;
+	int _resources = 0;
+	int _influence = 0;
+
+	int _playerGraphicalPos;
+	static const TupleInt _playerSheetSize;
+	static const TupleInt _playerMetricFirstPos;
+	static const TupleInt _playerMetricDiffPos;
+	static const TupleInt _commandCounterPos;
 
 
 	GraphicsNS::Image* _shipIndicator;
@@ -31,8 +44,10 @@ private:
 	//TODO förbättra indikationen, byt ut mot en flagga
 	const int _planetIndicatorSize = 7;
 
+
+
 public:
-	Player(Race::RaceEnum, Player::Color, const std::map<TupleInt, MapTile>*);
+	Player(Race::RaceEnum, Player::Color, const std::map<TupleInt, MapTile>*, int);
 	Player& operator=(const Player&);
 	Player(Player const&);
 	~Player();
@@ -46,6 +61,7 @@ private:
 	void DrawObject();
 	void DrawPlanetMarkers(D3DCOLOR);
 	void DrawUnits(D3DCOLOR);
+	void DrawPlayerSheet(D3DCOLOR);
 };
 
 #endif // !PLAYER_H

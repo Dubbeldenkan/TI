@@ -95,6 +95,16 @@ LRESULT CALLBACK IO::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		SetKeyAction(_game, true, wParam);
 		break;
 	}
+	case WM_LBUTTONUP:
+
+	case WM_LBUTTONDOWN:
+	{
+		int x = LOWORD(lParam);
+		int y = HIWORD(lParam);
+		//TODO implementera mouseClick
+		//MouseClick();
+		break;
+	}
 	case WM_KEYUP:
 	{
 		SetKeyAction(_game, false, wParam);

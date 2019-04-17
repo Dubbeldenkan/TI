@@ -65,7 +65,6 @@ namespace GraphicsNS
 		//Används då man har flera tiles
 		Image* LoadImageFromFile(std::string, int, int, int, int);
 
-		void Draw(DrawStruct, Image*);
 		void Draw(Image*, int, int, float);
 		void DrawWithColor(Image*, int, int, D3DCOLOR);
 		void DrawTile(Image*, int, int, int, int);
@@ -78,6 +77,9 @@ namespace GraphicsNS
 		void PrintText15(int, int, int, D3DCOLOR);
 
 		void DrawRectangle(int, int, int, int, D3DCOLOR);
+
+	private:
+		void Draw(DrawStruct, Image*);
 	};
 }
 

@@ -1,8 +1,12 @@
 #include "Player.h"
 
 const std::string Player::_shipIndicatorPath = "Unit/ShipIndicator.png";
+const TupleInt Player::_playerSheetSize = TupleInt(350, 120);
+const TupleInt Player::_playerMetricFirstPos = TupleInt(40, 90);
+const TupleInt Player::_playerMetricDiffPos = TupleInt(65, 0);
+const TupleInt Player::_commandCounterPos = TupleInt(290, 25);
 
-Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<TupleInt, MapTile>* map) :
+Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<TupleInt, MapTile>* map, int playerGraphicalPos) :
 	GameBoardObject()
 {
 	_color = color;
@@ -17,6 +21,8 @@ Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<Tupl
 	SetStartUnits(raceData);
 
 	_shipIndicator = _g->LoadImageFromFile(_shipIndicatorPath, _shipIndicatorSize, _shipIndicatorSize);
+
+	_playerGraphicalPos = playerGraphicalPos;
 }
 
 Player& Player::operator=(const Player& player)
@@ -38,6 +44,8 @@ void Player::CopyPlayer(const Player& player)
 	_race = player._race;
 	_planets = player._planets;
 	_shipIndicator = player._shipIndicator;
+	_playerGraphicalPos = player._playerGraphicalPos;
+	_image = player._image;
 }
 
 Player::~Player()
@@ -80,7 +88,7 @@ void Player::SetStartPlanets(TIParserNS::ListNode* startPlanets, const std::map<
 void Player::SetPlayerImage(TIParserNS::ListNode* listNode)
 {
 	listNode->GetChild(&listNode);
-	SetImage(listNode->GetData(), TupleInt(10, 10)); //TODO ändra så att storleken är rätt. 
+	SetImage(listNode->GetData(), _playerSheetSize);
 }
 
 void Player::SetStartUnits(TIParserNS::ListNode* listNode)
@@ -127,6 +135,7 @@ void Player::DrawObject()
 
 	DrawPlanetMarkers(color);
 	DrawUnits(color);
+	DrawPlayerSheet(color);
 }
 
 void Player::DrawPlanetMarkers(D3DCOLOR color)
@@ -150,4 +159,19 @@ void Player::DrawUnits(D3DCOLOR color)
 		_g->DrawWithColor(_shipIndicator, graphicalPos.GetX(), graphicalPos.GetY(), color);
 		_g->PrintText15(numberOfShips, graphicalPos.GetX() + _shipIndicator->GetXSize(), graphicalPos.GetY(), color);
 	}
+}
+
+void Player::DrawPlayerSheet(D3DCOLOR color)
+{
+	TupleInt graphPos = TupleInt(_playerSheetPos.GetX(), _playerSheetPos.GetY() + (_playerSheetSize.GetY()*_playerGraphicalPos));
+	_g->Draw(_image, graphPos.GetX(), graphPos.GetY(), _scale);
+	_g->PrintText15(_race.GetRaceName(), graphPos.GetX(), graphPos.GetY(), color);
+	_g->PrintText15(_commandPool, graphPos.GetX() + _commandCounterPos.GetX(), graphPos.GetY() + _commandCounterPos.GetY(), color);
+
+	graphPos = TupleInt(graphPos.GetX() + _playerMetricFirstPos.GetX(), graphPos.GetY() + _playerMetricFirstPos.GetY());
+	_g->PrintText15(_tradeGoods, graphPos.GetX(), graphPos.GetY(), color);
+	_g->PrintText15(_resources, graphPos.GetX() + _playerMetricDiffPos.GetX(), graphPos.GetY(), color);
+	_g->PrintText15(_influence, graphPos.GetX() + 2*_playerMetricDiffPos.GetX(), graphPos.GetY(), color);
+	_g->PrintText15(_strategyAllocation, graphPos.GetX() + 3 * _playerMetricDiffPos.GetX(), graphPos.GetY(), color);
+	_g->PrintText15(_fleetSupply, graphPos.GetX() + 4 * _playerMetricDiffPos.GetX(), graphPos.GetY(), color);
 }
