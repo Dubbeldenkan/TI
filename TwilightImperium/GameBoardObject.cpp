@@ -5,7 +5,8 @@ std::map<int, GameBoardObject*> GameBoardObject::_gameBoardObjects;
 GraphicsNS::Graphics* GameBoardObject::_g = NULL;
 
 //Objects graphical position
-const TupleInt GameBoardObject::_mapPos = TupleInt(0, 0);
+const TupleInt GameBoardObject::_gameMapPos = TupleInt(0, 0);
+const TupleInt GameBoardObject::_unitPosInTile = TupleInt(25, 60);
 
 GameBoardObject::GameBoardObject() : 
 	_objectId(++_latestObjectId)
@@ -57,9 +58,9 @@ void GameBoardObject::SetGraphics(HWND* hWnd)
 	_g = new GraphicsNS::Graphics(*hWnd);
 }
 
-TupleInt GameBoardObject::GetMapPos()
+TupleInt GameBoardObject::GetGameMapPos()
 {
-	return _mapPos;
+	return _gameMapPos;
 }
 
 TupleInt GameBoardObject::GetGraphicalPos() const

@@ -17,12 +17,13 @@ protected:
 	const int _objectId;
 	static GraphicsNS::Graphics* _g;
 
+	//Objects graphical position
+	static const TupleInt _gameMapPos;
+	static const TupleInt _unitPosInTile;
+
 private:
 	static int _latestObjectId;
 	static std::map<int, GameBoardObject*> _gameBoardObjects;
-
-	//Objects graphical position
-	static const TupleInt _mapPos;
 
 public:
 	static void DrawAllObjects();
@@ -30,7 +31,8 @@ public:
 	static void SetGraphics(HWND* hWnd);
 
 	// Beskriver var kartan är på skärmen
-	static TupleInt GetMapPos();
+	static TupleInt GetGameMapPos();
+
 	TupleInt GetGraphicalPos() const;
 
 	void SetGraphicalPos(TupleInt);

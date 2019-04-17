@@ -12,7 +12,6 @@ GameMap& GameMap::operator=(const GameMap& gameMap)
 	return *this;
 }
 
-
 GameMap::~GameMap()
 {
 }
@@ -240,12 +239,17 @@ double GameMap::degSin(int deg)
 	return sin(rad);
 }
 
+TupleInt GameMap::CalculateGraphicalPosForTile(TupleInt mapPos)
+{
+	return CalculateGraphicalPosForTile(mapPos.GetX(), mapPos.GetY());
+}
+
 TupleInt GameMap::CalculateGraphicalPosForTile(int r, int t)
 {
 	TupleInt tileSize = MapTile::GetTileSize();
 	//gör detta till en const istället eftersom att den inte ändras
-	TupleInt middleTilePos = TupleInt(tileSize.GetX()*_numberOfLayers + GameBoardObject::GetMapPos().GetX(),
-		tileSize.GetY()*_numberOfLayers + GameBoardObject::GetMapPos().GetY());
+	TupleInt middleTilePos = TupleInt(tileSize.GetX()*_numberOfLayers + GameBoardObject::GetGameMapPos().GetX(),
+		tileSize.GetY()*_numberOfLayers + GameBoardObject::GetGameMapPos().GetY());
 
 	int xPos;
 	int yPos;

@@ -83,3 +83,14 @@ bool UnitStack::AddUnits(UnitStack::UnitType unitType, int numberOfUnits)
 	}
 	return stackEmpty;
 }
+
+int UnitStack::GetSum() const
+{
+	int sum = 0;
+	std::map<UnitStack::UnitType, int>::const_iterator it;
+	for (it = _numberOfUnits.begin(); it != _numberOfUnits.end(); it++)
+	{
+		sum += it->second;
+	}
+	return sum;
+}

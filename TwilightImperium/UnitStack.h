@@ -20,6 +20,7 @@ public:
 	bool AddUnits(std::string, int);
 	//använd både till att lägga till och ta bort gubbar, om UnitStack är tom returneras true
 	bool AddUnits(UnitType, int);
+	int GetSum() const;
 
 private:
 	std::map<UnitType, int> _numberOfUnits;

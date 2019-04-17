@@ -15,7 +15,7 @@ private:
 	std::map<TupleInt, MapTile> _map;
 	std::vector<MapTile> _allSystemVector;
 	std::vector<MapTile> _homeSystemVector;
-	const int _numberOfLayers = 3;
+	static const int _numberOfLayers = 3;
 	const int _numberOfRandomSystemsToRemove = 2;
 	const int _numberOfRegularSystems = 39;
 	const int _numberOfAstroidSystems = 2;
@@ -32,6 +32,8 @@ public:
 	std::vector<MapTile*> GetNeighbourSystems(TupleInt);
 	const std::map<TupleInt, MapTile>* GetMap() const;
 
+	static TupleInt CalculateGraphicalPosForTile(TupleInt);
+
 private:
 	void CreateAllSystems();
 	MapTile CreateSystem(std::string);
@@ -39,9 +41,9 @@ private:
 	void CreateAndAddMecatolRex();
 	void RemoveRandomTiles();
 
-	double degCos(int);
-	double degSin(int);
-	TupleInt CalculateGraphicalPosForTile(int, int);
+	static double degCos(int);
+	static double degSin(int);
+	static TupleInt CalculateGraphicalPosForTile(int, int);
 };
 
 #endif // !GAME_MAP_H

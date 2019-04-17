@@ -1,6 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include "GameMap.h"
 #include "MapTile.h"
 #include "Race.h"
 #include "TIParser.h"
@@ -22,6 +23,10 @@ private:
 	std::map<std::string, const Planet*> _planets; //TODO borde detta vara en vector istället?
 	TupleInt _homeSystem;
 
+	//TODO använd en speciell bild istället för rectangeln. 
+	//GraphicsNS::Image* _shipIndicator;
+	const int _shipIndicator = 10;
+
 	//TODO förbättra indikationen
 	const int _planetIndicatorSize = 7;
 
@@ -38,8 +43,8 @@ private:
 	void SetPlayerImage(TIParserNS::ListNode*);
 
 	void DrawObject();
-	void DrawPlanetMarkers();
-	void DrawUnits();
+	void DrawPlanetMarkers(D3DCOLOR);
+	void DrawUnits(D3DCOLOR);
 };
 
 #endif // !PLAYER_H

@@ -101,12 +101,6 @@ void Player::SetStartUnits(TIParserNS::ListNode* listNode)
 
 void Player::DrawObject()
 {
-	DrawPlanetMarkers();
-	DrawUnits();
-}
-
-void Player::DrawPlanetMarkers()
-{
 	D3DCOLOR color;
 	switch (_color)
 	{
@@ -127,6 +121,12 @@ void Player::DrawPlanetMarkers()
 		break;
 	}
 
+	DrawPlanetMarkers(color);
+	DrawUnits(color);
+}
+
+void Player::DrawPlanetMarkers(D3DCOLOR color)
+{
 	std::map<std::string, const Planet*>::iterator it;
 	for (it = _planets.begin(); it != _planets.end(); it++)
 	{
@@ -136,17 +136,15 @@ void Player::DrawPlanetMarkers()
 	}
 }
 
-void Player::DrawUnits()
+void Player::DrawUnits(D3DCOLOR color)
 {
 	std::map<TupleInt, UnitStack>::iterator it;
 	for (it = _unitMap.begin(); it != _unitMap.end(); it++)
 	{
-		
-		/*it->second
-			_g->DrawRectangle(planetPos.GetX(), planetPos.GetY(),
-				_planetIndicatorSize, _planetIndicatorSize, color);
-		TupleInt planetPos = it->second->GetGraphicalPos();
-		_g->DrawRectangle(planetPos.GetX(), planetPos.GetY(),
-			_planetIndicatorSize, _planetIndicatorSize, color);*/
+		int numberOfShips = it->second.GetSum();
+		TupleInt graphicalPos = GameMap::CalculateGraphicalPosForTile(it->first) + _unitPosInTile;
+		_g->DrawRectangle(graphicalPos.GetX(), graphicalPos.GetY(),
+			_shipIndicator, _shipIndicator, color);
+		_g->PrintText15(numberOfShips, graphicalPos.GetX() + _shipIndicator, graphicalPos.GetY(), color);
 	}
 }
