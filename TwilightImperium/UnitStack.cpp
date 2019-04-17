@@ -17,9 +17,9 @@ UnitStack& UnitStack::operator=(const UnitStack& unitStack)
 void UnitStack::CopyUnitStack(const UnitStack& unitStack)
 {
 	std::map<UnitStack::UnitType, int>::const_iterator it;
-	for (it = unitStack._numberOfUnits.begin(); it != unitStack._numberOfUnits.end(); it++)
+	for (it = unitStack._unitMap.begin(); it != unitStack._unitMap.end(); it++)
 	{
-		_numberOfUnits.insert(std::make_pair(it->first, it->second));
+		_unitMap.insert(std::make_pair(it->first, it->second));
 	}
 }
 
@@ -55,6 +55,10 @@ bool UnitStack::AddUnits(std::string unitName, int numberOfUnits)
 	{
 		unitType = UnitStack::SpaceDock;
 	}
+	else if (unitName.compare("Fighter") == 0) //TODO denna borde inte vara med här
+	{
+		unitType = UnitStack::Fighter;
+	}
 	else
 	{
 		int temp = 1; //TODO lägg till felhantering här
@@ -65,18 +69,18 @@ bool UnitStack::AddUnits(std::string unitName, int numberOfUnits)
 bool UnitStack::AddUnits(UnitStack::UnitType unitType, int numberOfUnits)
 {
 	bool stackEmpty = false;
-	if (static_cast<bool>(_numberOfUnits.count(unitType)))
+	if (static_cast<bool>(_unitMap.count(unitType)))
 	{
-		_numberOfUnits[unitType] = _numberOfUnits[unitType] + numberOfUnits;
+		_unitMap[unitType] = _unitMap[unitType] + numberOfUnits;
 	}
 	else
 	{
-		_numberOfUnits.insert(std::make_pair(unitType, numberOfUnits));
+		_unitMap.insert(std::make_pair(unitType, numberOfUnits));
 	}
-	if (_numberOfUnits[unitType] == 0)
+	if (_unitMap[unitType] == 0)
 	{
-		_numberOfUnits.erase(unitType);
-		if (_numberOfUnits.size() == 0)
+		_unitMap.erase(unitType);
+		if (_unitMap.size() == 0)
 		{
 			stackEmpty = true;
 		}
@@ -88,7 +92,7 @@ int UnitStack::GetSum() const
 {
 	int sum = 0;
 	std::map<UnitStack::UnitType, int>::const_iterator it;
-	for (it = _numberOfUnits.begin(); it != _numberOfUnits.end(); it++)
+	for (it = _unitMap.begin(); it != _unitMap.end(); it++)
 	{
 		sum += it->second;
 	}

@@ -23,7 +23,7 @@ public:
 	int GetSum() const;
 
 private:
-	std::map<UnitType, int> _numberOfUnits;
+	std::map<UnitType, int> _unitMap;
 };
 
 #endif // !UNIT_H
