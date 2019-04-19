@@ -6,6 +6,26 @@ const TupleInt Player::_playerMetricFirstPos = TupleInt(40, 90);
 const TupleInt Player::_playerMetricDiffPos = TupleInt(65, 0);
 const TupleInt Player::_commandCounterPos = TupleInt(290, 25);
 
+PlanetContainer::PlanetContainer(const Planet* planet)
+{
+	_planet = planet;
+}
+
+const Planet* PlanetContainer::GetPlanet() const
+{
+	return _planet;
+}
+
+void PlanetContainer::SetToExhausted()
+{
+	_exhausted = true;
+}
+
+void PlanetContainer::UnsetExhausted()
+{
+	_exhausted = false;
+}
+
 Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<TupleInt, MapTile>* map, int playerGraphicalPos) :
 	GameBoardObject()
 {
@@ -51,23 +71,23 @@ void Player::CopyPlayer(const Player& player)
 Player::~Player()
 {}
 
-void Player::SetStartPlanets(TIParserNS::ListNode* startPlanets, const std::map<TupleInt, MapTile>* map)
+void Player::SetStartPlanets(TIParserNS::ListNode* startPlanets, const std::map<TupleInt, MapTile>* gameMap)
 {
 	TIParserNS::ListNode* planet = NULL;
 	startPlanets->GetChild(&planet);
 	bool systemFound = false;
 	do
 	{
-		//std::map<TupleInt, MapTile>::iterator mapIt;
+		std::map<TupleInt, MapTile>::const_iterator mapIt;
 		std::string planetName = planet->GetData();
-		for (auto const& system : *map)
+		for (mapIt = gameMap->begin(); mapIt != gameMap->end(); mapIt++)
 		{
-			const std::vector<Planet>* systemPlanets = system.second.GetPlanets();
+			const std::vector<Planet>* systemPlanets = mapIt->second.GetPlanets();
 			for(int planetCount = 0; planetCount < static_cast<int>(systemPlanets->size()); planetCount++)
 			{
-				if (planetName.compare(system.second.GetPlanet(planetCount)->GetName()) == 0)
+				if (planetName.compare(mapIt->second.GetPlanet(planetCount)->GetName()) == 0)
 				{
-					_homeSystem = system.first;
+					_homeSystem = mapIt->first;
 					systemFound = true;
 					break;
 				}
@@ -76,8 +96,8 @@ void Player::SetStartPlanets(TIParserNS::ListNode* startPlanets, const std::map<
 			{
 				for (int planetCount = 0; planetCount < static_cast<int>(systemPlanets->size()); planetCount++)
 				{
-					const Planet* planet = system.second.GetPlanet(planetCount);
-					_planets.insert(std::make_pair(planet->GetName(), planet));
+					const Planet* planet = mapIt->second.GetPlanet(planetCount);
+					_planets.insert(std::make_pair(planet->GetName(), PlanetContainer(planet)));
 				}
 				break;
 			}
@@ -140,10 +160,10 @@ void Player::DrawObject()
 
 void Player::DrawPlanetMarkers(D3DCOLOR color)
 {
-	std::map<std::string, const Planet*>::iterator it;
+	std::map<std::string, PlanetContainer>::iterator it;
 	for (it = _planets.begin(); it != _planets.end(); it++)
 	{
-		TupleInt planetPos = it->second->GetGraphicalPos();
+		TupleInt planetPos = it->second.GetPlanet()->GetGraphicalPos();
 		_g->DrawRectangle(planetPos.GetX(), planetPos.GetY(),
 			_planetIndicatorSize, _planetIndicatorSize, color);
 	}
@@ -174,4 +194,42 @@ void Player::DrawPlayerSheet(D3DCOLOR color)
 	_g->PrintText15(_influence, graphPos.GetX() + 2*_playerMetricDiffPos.GetX(), graphPos.GetY(), color);
 	_g->PrintText15(_strategyAllocation, graphPos.GetX() + 3 * _playerMetricDiffPos.GetX(), graphPos.GetY(), color);
 	_g->PrintText15(_fleetSupply, graphPos.GetX() + 4 * _playerMetricDiffPos.GetX(), graphPos.GetY(), color);
+}
+
+void Player::PrepareForGameRound()
+{
+	ResetPlanets();
+	_resources = CalculateResources();
+	_influence = CalculateInfluence();
+}
+
+void Player::ResetPlanets()
+{
+	std::map<std::string, PlanetContainer>::iterator it;
+	for (it = _planets.begin(); it != _planets.end(); it++)
+	{
+		it->second.UnsetExhausted();
+	}
+}
+
+int Player::CalculateResources()
+{
+	int resources = 0;
+	std::map<std::string, PlanetContainer>::iterator it;
+	for (it = _planets.begin(); it != _planets.end(); it++)
+	{
+		resources += it->second.GetPlanet()->GetResources();
+	}
+	return resources;
+}
+
+int Player::CalculateInfluence()
+{
+	int influence = 0;
+	std::map<std::string, PlanetContainer>::iterator it;
+	for (it = _planets.begin(); it != _planets.end(); it++)
+	{
+		influence += it->second.GetPlanet()->GetInfluence();
+	}
+	return influence;
 }

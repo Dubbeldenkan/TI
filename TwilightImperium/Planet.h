@@ -28,6 +28,8 @@ public:
 	~Planet();
 
 	std::string GetName() const;
+	int GetResources() const;
+	int GetInfluence() const;
 
 private:
 	void CopyPlanet(Planet const&);

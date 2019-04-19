@@ -80,3 +80,13 @@ std::string Planet::GetName() const
 {
 	return _name;
 }
+
+int Planet::GetResources() const
+{
+	return _resourceValue;
+}
+
+int Planet::GetInfluence() const
+{
+	return _influenceValue;
+}

@@ -9,6 +9,19 @@
 
 #include <memory>
 
+struct PlanetContainer
+{
+private:
+	const Planet* _planet;
+	bool _exhausted = true;
+public:
+	PlanetContainer(const Planet*);
+	const Planet* GetPlanet() const;
+
+	void SetToExhausted();
+	void UnsetExhausted();
+};
+
 class Player : public GameBoardObject
 {
 public:
@@ -20,7 +33,7 @@ private:
 
 	Player::Color _color;
 	Race _race;
-	std::map<std::string, const Planet*> _planets;
+	std::map<std::string, PlanetContainer> _planets;
 	TupleInt _homeSystem;
 
 	int _strategyAllocation = 2;
@@ -44,13 +57,13 @@ private:
 	//TODO förbättra indikationen, byt ut mot en flagga
 	const int _planetIndicatorSize = 7;
 
-
-
 public:
 	Player(Race::RaceEnum, Player::Color, const std::map<TupleInt, MapTile>*, int);
 	Player& operator=(const Player&);
 	Player(Player const&);
 	~Player();
+
+	void PrepareForGameRound();
 
 private:
 	void CopyPlayer(Player const&);
@@ -62,6 +75,10 @@ private:
 	void DrawPlanetMarkers(D3DCOLOR);
 	void DrawUnits(D3DCOLOR);
 	void DrawPlayerSheet(D3DCOLOR);
+
+	void ResetPlanets();
+	int CalculateResources();
+	int CalculateInfluence();
 };
 
 #endif // !PLAYER_H
