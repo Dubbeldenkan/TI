@@ -23,6 +23,9 @@ public:
 
 	static LRESULT CALLBACK MsgProc(HWND, UINT, WPARAM, LPARAM);
 	static void SetKeyAction(Game* game, bool keyDown, WPARAM);
+
+private:
+	static void MouseClick(int, int);
 };
 
 void InitWinMain(HINSTANCE*, std::string, IO*);

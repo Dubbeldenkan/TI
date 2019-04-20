@@ -48,6 +48,11 @@ protected:
 
 	void SetImage(std::string, TupleInt);
 	virtual void DrawObject();
+
+private:
+	bool PosInObject(TupleInt);
+
+	friend class GameBoard;
 };
 
 #endif // ! GAME_BOARD_OBJECT_H

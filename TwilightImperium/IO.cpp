@@ -99,10 +99,9 @@ LRESULT CALLBACK IO::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 	case WM_LBUTTONDOWN:
 	{
-		int x = LOWORD(lParam);
-		int y = HIWORD(lParam);
-		//TODO implementera mouseClick
-		//MouseClick();
+		int xPos = LOWORD(lParam);
+		int yPos = HIWORD(lParam);
+		MouseClick(xPos, yPos);
 		break;
 	}
 	case WM_KEYUP:
@@ -134,4 +133,10 @@ void IO::EndGame()
 	{
 		PostQuitMessage(0);
 	}
+}
+
+void IO::MouseClick(int xPos, int yPos)
+{
+	TupleInt clickPos = TupleInt(xPos, yPos);
+	std::vector<GameBoardObject*> clickedObjects = GameBoard::GetGameBoardObjectByPosition(clickPos);
 }

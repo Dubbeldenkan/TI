@@ -43,7 +43,8 @@ private:
 	int _resources = 0;
 	int _influence = 0;
 
-	int _playerGraphicalPos;
+	//Position of player in player sheet list
+	int _posInPlayerOrder;
 	static const TupleInt _playerSheetSize;
 	static const TupleInt _playerMetricFirstPos;
 	static const TupleInt _playerMetricDiffPos;

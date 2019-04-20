@@ -84,3 +84,12 @@ void GameBoardObject::SetImage(std::string imagePath, TupleInt imageSize)
 {
 	_image = _g->LoadImageFromFile(imagePath, imageSize.GetX(), imageSize.GetY());
 }
+
+bool GameBoardObject::PosInObject(TupleInt pos)
+{
+	bool withInX = ((_graphicalPos.GetX() <= pos.GetX()) &&
+		(pos.GetX() <= (_graphicalPos.GetX() + _image->GetXSize())));
+	bool withInY = ((_graphicalPos.GetY() <= pos.GetY()) &&
+		(pos.GetY() <= (_graphicalPos.GetY() + _image->GetYSize())));
+	return (withInX && withInY);
+}

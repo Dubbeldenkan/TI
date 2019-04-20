@@ -42,7 +42,8 @@ Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<Tupl
 
 	_shipIndicator = _g->LoadImageFromFile(_shipIndicatorPath, _shipIndicatorSize, _shipIndicatorSize);
 
-	_playerGraphicalPos = playerGraphicalPos;
+	_posInPlayerOrder = playerGraphicalPos;
+	_graphicalPos = TupleInt(_playerSheetPos.GetX(), _playerSheetPos.GetY() + (_playerSheetSize.GetY()*_posInPlayerOrder));
 }
 
 Player& Player::operator=(const Player& player)
@@ -64,8 +65,9 @@ void Player::CopyPlayer(const Player& player)
 	_race = player._race;
 	_planets = player._planets;
 	_shipIndicator = player._shipIndicator;
-	_playerGraphicalPos = player._playerGraphicalPos;
+	_posInPlayerOrder = player._posInPlayerOrder;
 	_image = player._image;
+	_graphicalPos = player._graphicalPos;
 }
 
 Player::~Player()
@@ -183,17 +185,18 @@ void Player::DrawUnits(D3DCOLOR color)
 
 void Player::DrawPlayerSheet(D3DCOLOR color)
 {
-	TupleInt graphPos = TupleInt(_playerSheetPos.GetX(), _playerSheetPos.GetY() + (_playerSheetSize.GetY()*_playerGraphicalPos));
-	_g->Draw(_image, graphPos.GetX(), graphPos.GetY(), _scale);
-	_g->PrintText15(_race.GetRaceName(), graphPos.GetX(), graphPos.GetY(), color);
-	_g->PrintText15(_commandPool, graphPos.GetX() + _commandCounterPos.GetX(), graphPos.GetY() + _commandCounterPos.GetY(), color);
+	_g->Draw(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), _scale);
+	_g->PrintText15(_race.GetRaceName(), _graphicalPos.GetX(), _graphicalPos.GetY(), color);
+	_g->PrintText15(_commandPool, _graphicalPos.GetX() + _commandCounterPos.GetX(), 
+		_graphicalPos.GetY() + _commandCounterPos.GetY(), color);
 
-	graphPos = TupleInt(graphPos.GetX() + _playerMetricFirstPos.GetX(), graphPos.GetY() + _playerMetricFirstPos.GetY());
-	_g->PrintText15(_tradeGoods, graphPos.GetX(), graphPos.GetY(), color);
-	_g->PrintText15(_resources, graphPos.GetX() + _playerMetricDiffPos.GetX(), graphPos.GetY(), color);
-	_g->PrintText15(_influence, graphPos.GetX() + 2*_playerMetricDiffPos.GetX(), graphPos.GetY(), color);
-	_g->PrintText15(_strategyAllocation, graphPos.GetX() + 3 * _playerMetricDiffPos.GetX(), graphPos.GetY(), color);
-	_g->PrintText15(_fleetSupply, graphPos.GetX() + 4 * _playerMetricDiffPos.GetX(), graphPos.GetY(), color);
+	TupleInt playerMetricGraphPos = TupleInt(_graphicalPos.GetX() + _playerMetricFirstPos.GetX(), 
+		_graphicalPos.GetY() + _playerMetricFirstPos.GetY());
+	_g->PrintText15(_tradeGoods, playerMetricGraphPos.GetX(), playerMetricGraphPos.GetY(), color);
+	_g->PrintText15(_resources, playerMetricGraphPos.GetX() + _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), color);
+	_g->PrintText15(_influence, playerMetricGraphPos.GetX() + 2*_playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), color);
+	_g->PrintText15(_strategyAllocation, playerMetricGraphPos.GetX() + 3 * _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), color);
+	_g->PrintText15(_fleetSupply, playerMetricGraphPos.GetX() + 4 * _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), color);
 }
 
 void Player::PrepareForGameRound()

@@ -7,6 +7,9 @@
 #pragma once
 class GameBoard
 {
+private:
+	GameMap _gameMap;
+
 public:
 	GameBoard();
 	~GameBoard();
@@ -14,9 +17,7 @@ public:
 	void Draw();
 
 	const std::map<TupleInt, MapTile>* GetMapMap() const;
-
-private:
-	GameMap _gameMap;
+	static std::vector<GameBoardObject*> GetGameBoardObjectByPosition(TupleInt);
 };
 
 #endif // !GAME_BOARD_H
