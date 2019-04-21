@@ -145,7 +145,7 @@ namespace GraphicsNS
 	{
 		Image* image = LoadImageFromFile(fileName, imageXSize, imageYSize, 0, 0);
 		image->SetXSize(imageXSize);
-		image->SetYSize(imageXSize);
+		image->SetYSize(imageYSize);
 		return image;
 	}
 
