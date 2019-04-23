@@ -45,11 +45,9 @@ private:
 
 	//Position of player in player sheet list
 	int _posInPlayerOrder;
-	static const TupleInt _playerSheetSize;
 	static const TupleInt _playerMetricFirstPos;
 	static const TupleInt _playerMetricDiffPos;
 	static const TupleInt _commandCounterPos;
-
 
 	GraphicsNS::Image* _shipIndicator;
 	static const std::string _shipIndicatorPath;
@@ -58,6 +56,8 @@ private:
 	//TODO förbättra indikationen, byt ut mot en flagga
 	const int _planetIndicatorSize = 7;
 
+	bool _playerHasPassed;
+
 public:
 	Player(Race::RaceEnum, Player::Color, const std::map<TupleInt, MapTile>*, int);
 	Player& operator=(const Player&);
@@ -65,6 +65,14 @@ public:
 	~Player();
 
 	void PrepareForGameRound();
+
+	bool TurnIsFinished() const;
+	int GetPosInPlayerOrder() const;
+	bool GetPlayerHasPassed() const;
+	
+	void Action(GameBoardObject*);
+
+	void SetToPassed();
 
 private:
 	void CopyPlayer(Player const&);

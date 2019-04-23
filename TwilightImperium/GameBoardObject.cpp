@@ -7,8 +7,10 @@ GraphicsNS::Graphics* GameBoardObject::_g = NULL;
 //Objects graphical position
 const TupleInt GameBoardObject::_gameMapPos = TupleInt(0, 0);
 const TupleInt GameBoardObject::_unitPosInTile = TupleInt(25, 60);
-
 const TupleInt GameBoardObject::_playerSheetPos = TupleInt(650, 0);
+const TupleInt GameBoardObject::_passButtonPos = TupleInt(1020, 20);
+
+const TupleInt GameBoardObject::_playerSheetSize = TupleInt(350, 120);
 
 GameBoardObject::GameBoardObject() : 
 	_objectId(++_latestObjectId)
@@ -70,6 +72,11 @@ TupleInt GameBoardObject::GetGraphicalPos() const
 	return _graphicalPos;
 }
 
+int GameBoardObject::GetObjectID() const
+{
+	return _objectId;
+}
+
 void GameBoardObject::SetGraphicalPos(TupleInt pos)
 {
 	_graphicalPos = pos;
@@ -93,3 +100,6 @@ bool GameBoardObject::PosInObject(TupleInt pos)
 		(pos.GetY() <= (_graphicalPos.GetY() + _image->GetYSize())));
 	return (withInX && withInY);
 }
+
+void GameBoardObject::Action(GameBoardObject* object)
+{}

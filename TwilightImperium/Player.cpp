@@ -1,7 +1,6 @@
 #include "Player.h"
 
 const std::string Player::_shipIndicatorPath = "Unit/ShipIndicator.png";
-const TupleInt Player::_playerSheetSize = TupleInt(350, 120);
 const TupleInt Player::_playerMetricFirstPos = TupleInt(40, 90);
 const TupleInt Player::_playerMetricDiffPos = TupleInt(65, 0);
 const TupleInt Player::_commandCounterPos = TupleInt(290, 25);
@@ -204,6 +203,7 @@ void Player::PrepareForGameRound()
 	ResetPlanets();
 	_resources = CalculateResources();
 	_influence = CalculateInfluence();
+	_playerHasPassed = false;
 }
 
 void Player::ResetPlanets()
@@ -235,4 +235,38 @@ int Player::CalculateInfluence()
 		influence += it->second.GetPlanet()->GetInfluence();
 	}
 	return influence;
+}
+
+bool Player::TurnIsFinished() const
+{
+	bool playerIsFinished = false;
+	if (_playerHasPassed) // TODO Fixa så att man inte kan göra detta under en pågående omgång
+	{
+		playerIsFinished = true;
+	}
+	return playerIsFinished;
+}
+
+int Player::GetPosInPlayerOrder() const
+{
+	return _posInPlayerOrder;
+}
+
+bool Player::GetPlayerHasPassed() const
+{
+	return _playerHasPassed;
+}
+
+void Player::Action(GameBoardObject* gbo)
+{
+	Player* player = static_cast<Player*>(gbo);
+	if (this->_objectId == player->GetObjectID())
+	{
+		int temp = 1; // TODO fortsätt här
+	}
+}
+
+void Player::SetToPassed()
+{
+	_playerHasPassed = true;
 }

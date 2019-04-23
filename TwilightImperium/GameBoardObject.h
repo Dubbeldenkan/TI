@@ -1,9 +1,9 @@
 #ifndef GAME_BOARD_OBJECT_H
 #define GAME_BOARD_OBJECT_H
 
+#include "Graphics.h"
 #include "Image.h"
 #include "UtilityClasses.h"
-#include "Graphics.h"
 
 #include <string>
 #include <map>
@@ -20,8 +20,10 @@ protected:
 	//Objects graphical position
 	static const TupleInt _gameMapPos;
 	static const TupleInt _unitPosInTile;
+	static const TupleInt _passButtonPos;
 	
 	static const TupleInt _playerSheetPos;
+	static const TupleInt _playerSheetSize;
 
 private:
 	static int _latestObjectId;
@@ -36,9 +38,12 @@ public:
 	static TupleInt GetGameMapPos();
 
 	TupleInt GetGraphicalPos() const;
+	int GetObjectID() const;
 
 	void SetGraphicalPos(TupleInt);
 	void SetImageScale(float);
+
+	virtual void Action(GameBoardObject*);
 
 protected:
 	GameBoardObject();

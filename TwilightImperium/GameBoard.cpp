@@ -4,6 +4,7 @@ GameBoard::GameBoard()
 {
 	_gameMap = GameMap();
 	_gameMap.CreateGameMap();
+	_passButton = PassButton();
 }
 
 GameBoard::~GameBoard()
@@ -33,4 +34,9 @@ std::vector<GameBoardObject*> GameBoard::GetGameBoardObjectByPosition(TupleInt p
 		}
 	}
 	return objectVector;
+}
+
+void GameBoard::Run(Player* currentPlayer)
+{
+	_passButton.SetGraphicalPosBasedOnPlayer(currentPlayer);
 }

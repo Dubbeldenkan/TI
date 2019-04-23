@@ -139,4 +139,5 @@ void IO::MouseClick(int xPos, int yPos)
 {
 	TupleInt clickPos = TupleInt(xPos, yPos);
 	std::vector<GameBoardObject*> clickedObjects = GameBoard::GetGameBoardObjectByPosition(clickPos);
+	Game::ClickAction(clickedObjects);
 }

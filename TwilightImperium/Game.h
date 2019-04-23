@@ -21,6 +21,9 @@ private:
 	GameBoard _gameBoard = GameBoard();
 
 	bool _gameOver = false;
+	bool _initPhase = true;
+
+	static Player* _currentPlayer;
 
 public:
 	Game();
@@ -30,13 +33,15 @@ public:
 
 	bool GetGameOver();
 
+	static void ClickAction(std::vector<GameBoardObject*>);
 private:
 	void DrawScreen();
 	void InitGame();
 
-	void StrategyPhase();
+	void InitStrategyPhase();
+	void InitActionPhase();
 	void ActionPhase();
-	void StatusPhase();
+	void InitStatusPhase();
 };
 
 #endif // !GAME_H
