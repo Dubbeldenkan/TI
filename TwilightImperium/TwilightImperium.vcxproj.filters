@@ -13,6 +13,12 @@
     <Filter Include="Source Files\Map">
       <UniqueIdentifier>{cdfa4d62-3293-45fd-aa4b-14deb259d5ff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameBoard">
+      <UniqueIdentifier>{03118ee6-29de-44de-9742-d38fc4187a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameBoard">
+      <UniqueIdentifier>{7e3c6111-163c-4cc0-b0da-7a2323a0b9d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -36,12 +42,6 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameBoard.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GameBoardObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="UtilityClasses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -60,8 +60,14 @@
     <ClCompile Include="UnitStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GameBoard.cpp">
+      <Filter>Source Files\GameBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBoardObject.cpp">
+      <Filter>Source Files\GameBoard</Filter>
+    </ClCompile>
     <ClCompile Include="PassButton.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\GameBoard</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -83,12 +89,6 @@
     <ClInclude Include="IO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GameBoard.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameBoardObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="UtilityClasses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -107,8 +107,14 @@
     <ClInclude Include="UnitStack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GameBoard.h">
+      <Filter>Header Files\GameBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBoardObject.h">
+      <Filter>Header Files\GameBoard</Filter>
+    </ClInclude>
     <ClInclude Include="PassButton.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\GameBoard</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
