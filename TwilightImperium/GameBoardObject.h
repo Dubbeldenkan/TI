@@ -17,6 +17,8 @@ protected:
 	const int _objectId;
 	static GraphicsNS::Graphics* _g;
 
+	static GameBoardObject* _selectedObject;
+
 	//Objects graphical position
 	static const TupleInt _gameMapPos;
 	static const TupleInt _unitPosInTile;
@@ -31,6 +33,7 @@ private:
 
 public:
 	static void DrawAllObjects();
+	void DrawSelectedObject();
 
 	static void SetGraphics(HWND* hWnd);
 

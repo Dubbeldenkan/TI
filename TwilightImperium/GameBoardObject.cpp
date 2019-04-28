@@ -3,6 +3,7 @@
 int GameBoardObject::_latestObjectId = 0;
 std::map<int, GameBoardObject*> GameBoardObject::_gameBoardObjects;
 GraphicsNS::Graphics* GameBoardObject::_g = NULL;
+GameBoardObject* GameBoardObject::_selectedObject = NULL;
 
 //Objects graphical position
 const TupleInt GameBoardObject::_gameMapPos = TupleInt(0, 0);
@@ -52,6 +53,10 @@ void GameBoardObject::DrawAllObjects()
 	for (it = _gameBoardObjects.begin(); it != _gameBoardObjects.end(); it++)
 	{
 		it->second->DrawObject();
+	}
+	if (_selectedObject != NULL)
+	{
+		_selectedObject->DrawSelectedObject();
 	}
 	_g->StopDrawing();
 	_g->Flip();
@@ -103,3 +108,11 @@ bool GameBoardObject::PosInObject(TupleInt pos)
 
 void GameBoardObject::Action(GameBoardObject* object)
 {}
+
+void GameBoardObject::DrawSelectedObject()
+{
+	//TODO fixa pos
+	// TODO, ändra pekare till vector av pekare för att kunna markera flera
+	_g->DrawWithColor(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), GraphicsNS::Graphics::GREEN, 1.1f);
+	DrawObject();
+}

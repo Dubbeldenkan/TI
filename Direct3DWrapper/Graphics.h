@@ -67,6 +67,7 @@ namespace GraphicsNS
 
 		void Draw(Image*, int, int, float);
 		void DrawWithColor(Image*, int, int, D3DCOLOR);
+		void DrawWithColor(Image*, int, int, D3DCOLOR, float);
 		void DrawTile(Image*, int, int, int, int);
 		void DrawAnimation(Image*, int, int, int, int);
 		void DrawRotateImage(Image*, int, int, double, int);

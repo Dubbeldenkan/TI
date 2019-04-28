@@ -262,7 +262,7 @@ void Player::Action(GameBoardObject* gbo)
 	Player* player = static_cast<Player*>(gbo);
 	if (this->_objectId == player->GetObjectID())
 	{
-		int temp = 1; // TODO fortsätt här
+		_selectedObject = this;
 	}
 }
 

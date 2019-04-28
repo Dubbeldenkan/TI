@@ -243,6 +243,16 @@ namespace GraphicsNS
 		Draw(dS, image);
 	}
 
+	void Graphics::DrawWithColor(Image* image, int x, int y, D3DCOLOR color, float scale)
+	{
+		DrawStruct dS = DrawStruct();
+		dS.color = color;
+		dS.scale = scale;
+		dS.position = &D3DXVECTOR3(x / dS.scale, y / dS.scale, 0);
+		D3DXMatrixScaling(&dS.transformMatrix, scale, scale, 0.0f);
+		Draw(dS, image);
+	}
+
 	void Graphics::DrawTile(Image* image, int x, int y, int tileIndex, int orientation)
 	{
 		DrawStruct dS = DrawStruct();
