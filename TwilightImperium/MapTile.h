@@ -9,7 +9,7 @@ class MapTile : public GameBoardObject
 {
 public:
 	enum TileType {RegularSystem, HomeSystem, AstroidSystem, NebulaSystem, SupernovaSystem};
-
+	   
 private:
 	static const TupleInt _tileSize;
 	TupleInt _tilePos;
@@ -31,6 +31,10 @@ public:
 
 	const std::vector<Planet>* GetPlanets() const;
 	const Planet* GetPlanet(int) const;
+
+	void Action(GameBoardObject*);
+
+	bool isMapTile();
 
 private:
 	void CopyMapTile(const MapTile&);

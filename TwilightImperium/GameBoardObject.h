@@ -10,6 +10,7 @@
 
 class GameBoardObject
 {
+
 protected:
 	TupleInt _graphicalPos;
 	float _scale = 1.0;
@@ -47,6 +48,7 @@ public:
 	void SetImageScale(float);
 
 	virtual void Action(GameBoardObject*);
+	virtual bool isMapTile();
 
 protected:
 	GameBoardObject();

@@ -109,10 +109,17 @@ bool GameBoardObject::PosInObject(TupleInt pos)
 void GameBoardObject::Action(GameBoardObject* object)
 {}
 
+bool GameBoardObject::isMapTile() {
+	return false;
+}
+
 void GameBoardObject::DrawSelectedObject()
 {
-	//TODO fixa pos
 	// TODO, ändra pekare till vector av pekare för att kunna markera flera
-	_g->DrawWithColor(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), GraphicsNS::Graphics::GREEN, 1.1f);
+	float scalingFactor = 1.05f;
+	//flytta x till vänster skillnaden mellan skalad storlek och normal storlek delat på 2
+	int x = _graphicalPos.GetX() - ((_image->GetXSize() * scalingFactor) - (_image->GetXSize())) / 2;
+	int y = _graphicalPos.GetY() - ((_image->GetYSize() * scalingFactor) - (_image->GetYSize())) / 2;
+	_g->DrawWithColor(_image, x, y, GraphicsNS::Graphics::BLUE, scalingFactor);
 	DrawObject();
 }
