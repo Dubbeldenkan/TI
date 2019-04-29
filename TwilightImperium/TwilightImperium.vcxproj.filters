@@ -69,6 +69,9 @@
     <ClCompile Include="PassButton.cpp">
       <Filter>Source Files\GameBoard</Filter>
     </ClCompile>
+    <ClCompile Include="CommandCounter.cpp">
+      <Filter>Source Files\GameBoard</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -114,6 +117,9 @@
       <Filter>Header Files\GameBoard</Filter>
     </ClInclude>
     <ClInclude Include="PassButton.h">
+      <Filter>Header Files\GameBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandCounter.h">
       <Filter>Header Files\GameBoard</Filter>
     </ClInclude>
   </ItemGroup>

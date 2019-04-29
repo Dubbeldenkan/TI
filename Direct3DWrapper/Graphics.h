@@ -27,17 +27,20 @@ namespace GraphicsNS
 	class Graphics
 	{
 	public:
+		enum Color { WHITE, BLACK, RED, BLUE, GREEN, YELLOW, PURPLE };
+
 		const static int FONT_SIZE_SMALL = 8;
 		const static int FONT_SIZE_BIG = 15;
-		const static D3DCOLOR WHITE = D3DCOLOR_XRGB(255, 255, 255);
-		const static D3DCOLOR BLACK = D3DCOLOR_XRGB(0, 0, 0);
-		const static D3DCOLOR RED = D3DCOLOR_XRGB(255, 0, 0);
-		const static D3DCOLOR BLUE = D3DCOLOR_XRGB(0, 0, 255);
-		const static D3DCOLOR GREEN = D3DCOLOR_XRGB(0, 255, 0);
-		const static D3DCOLOR YELLOW = D3DCOLOR_XRGB(255, 255, 0);
-		const static D3DCOLOR PURPLE = D3DCOLOR_XRGB(255, 0, 255);
 
 	private:
+		const static D3DCOLOR D3DWHITE = D3DCOLOR_XRGB(255, 255, 255);
+		const static D3DCOLOR D3DBLACK = D3DCOLOR_XRGB(0, 0, 0);
+		const static D3DCOLOR D3DRED = D3DCOLOR_XRGB(255, 0, 0);
+		const static D3DCOLOR D3DBLUE = D3DCOLOR_XRGB(0, 0, 255);
+		const static D3DCOLOR D3DGREEN = D3DCOLOR_XRGB(0, 255, 0);
+		const static D3DCOLOR D3DYELLOW = D3DCOLOR_XRGB(255, 255, 0);
+		const static D3DCOLOR D3DPURPLE = D3DCOLOR_XRGB(255, 0, 255);
+
 		LPDIRECT3D9 _d3d;
 		LPDIRECT3DDEVICE9 _d3dDevice;
 		LPD3DXFONT _font8;
@@ -66,20 +69,21 @@ namespace GraphicsNS
 		Image* LoadImageFromFile(std::string, int, int, int, int);
 
 		void Draw(Image*, int, int, float);
-		void DrawWithColor(Image*, int, int, D3DCOLOR);
+		void DrawWithColor(Image*, int, int, Color);
 		void DrawTile(Image*, int, int, int, int);
 		void DrawAnimation(Image*, int, int, int, int);
 		void DrawRotateImage(Image*, int, int, double, int);
 
-		void PrintText8(std::string, int, int, D3DCOLOR);
-		void PrintText15(std::string, int, int, D3DCOLOR);
-		void PrintText8(int, int, int, D3DCOLOR);
-		void PrintText15(int, int, int, D3DCOLOR);
+		void PrintText8(std::string, int, int, Color);
+		void PrintText15(std::string, int, int, Color);
+		void PrintText8(int, int, int, Color);
+		void PrintText15(int, int, int, Color);
 
-		void DrawRectangle(int, int, int, int, D3DCOLOR);
+		void DrawRectangle(int, int, int, int, Color);
 
 	private:
 		void Draw(DrawStruct, Image*);
+		D3DCOLOR ConvertToD3DCOLOR(Color);
 	};
 }
 

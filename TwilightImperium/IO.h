@@ -26,6 +26,7 @@ public:
 
 private:
 	static void MouseClick(int, int);
+	static void MouseMove(int, int);
 };
 
 void InitWinMain(HINSTANCE*, std::string, IO*);

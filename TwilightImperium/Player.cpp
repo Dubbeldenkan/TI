@@ -3,7 +3,7 @@
 const std::string Player::_shipIndicatorPath = "Unit/ShipIndicator.png";
 const TupleInt Player::_playerMetricFirstPos = TupleInt(40, 90);
 const TupleInt Player::_playerMetricDiffPos = TupleInt(65, 0);
-const TupleInt Player::_commandCounterPos = TupleInt(290, 25);
+const TupleInt Player::_commandCounterMetricPos = TupleInt(290, 25);
 
 PlanetContainer::PlanetContainer(const Planet* planet)
 {
@@ -25,7 +25,7 @@ void PlanetContainer::UnsetExhausted()
 	_exhausted = false;
 }
 
-Player::Player(Race::RaceEnum raceType, Player::Color color, const std::map<TupleInt, MapTile>* map, int playerGraphicalPos) :
+Player::Player(Race::RaceEnum raceType, GraphicsNS::Graphics::Color color, const std::map<TupleInt, MapTile>* map, int playerGraphicalPos) :
 	GameBoardObject()
 {
 	_color = color;
@@ -129,73 +129,48 @@ void Player::SetStartUnits(TIParserNS::ListNode* listNode)
 
 void Player::DrawObject()
 {
-	D3DCOLOR color;
-	switch (_color)
-	{
-	case Player::Red:
-		color = GraphicsNS::Graphics::RED;
-		break;
-	case Player::Blue:
-		color = GraphicsNS::Graphics::BLUE;
-		break;
-	case Player::White:
-		color = GraphicsNS::Graphics::WHITE;
-		break;
-	case Player::Yellow:
-		color = GraphicsNS::Graphics::YELLOW;
-		break;
-	case Player::Green:
-		color = GraphicsNS::Graphics::GREEN;
-		break;
-	case Player::Purple:
-		color = GraphicsNS::Graphics::PURPLE;
-		break;
-	default:
-		break;
-	}
-
-	DrawPlanetMarkers(color);
-	DrawUnits(color);
-	DrawPlayerSheet(color);
+	DrawPlanetMarkers();
+	DrawUnits();
+	DrawPlayerSheet();
 }
 
-void Player::DrawPlanetMarkers(D3DCOLOR color)
+void Player::DrawPlanetMarkers()
 {
 	std::map<std::string, PlanetContainer>::iterator it;
 	for (it = _planets.begin(); it != _planets.end(); it++)
 	{
 		TupleInt planetPos = it->second.GetPlanet()->GetGraphicalPos();
 		_g->DrawRectangle(planetPos.GetX(), planetPos.GetY(),
-			_planetIndicatorSize, _planetIndicatorSize, color);
+			_planetIndicatorSize, _planetIndicatorSize, _color);
 	}
 }
 
-void Player::DrawUnits(D3DCOLOR color)
+void Player::DrawUnits()
 {
 	std::map<TupleInt, UnitStack>::iterator it;
 	for (it = _unitMap.begin(); it != _unitMap.end(); it++)
 	{
 		int numberOfShips = it->second.GetSum();
 		TupleInt graphicalPos = GameMap::CalculateGraphicalPosForTile(it->first) + _unitPosInTile;
-		_g->DrawWithColor(_shipIndicator, graphicalPos.GetX(), graphicalPos.GetY(), color);
-		_g->PrintText15(numberOfShips, graphicalPos.GetX() + _shipIndicator->GetXSize(), graphicalPos.GetY(), color);
+		_g->DrawWithColor(_shipIndicator, graphicalPos.GetX(), graphicalPos.GetY(), _color);
+		_g->PrintText15(numberOfShips, graphicalPos.GetX() + _shipIndicator->GetXSize(), graphicalPos.GetY(), _color);
 	}
 }
 
-void Player::DrawPlayerSheet(D3DCOLOR color)
+void Player::DrawPlayerSheet()
 {
 	_g->Draw(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), _scale);
-	_g->PrintText15(_race.GetRaceName(), _graphicalPos.GetX(), _graphicalPos.GetY(), color);
-	_g->PrintText15(_commandPool, _graphicalPos.GetX() + _commandCounterPos.GetX(), 
-		_graphicalPos.GetY() + _commandCounterPos.GetY(), color);
+	_g->PrintText15(_race.GetRaceName(), _graphicalPos.GetX(), _graphicalPos.GetY(), _color);
+	_g->PrintText15(_commandPool, _graphicalPos.GetX() + _commandCounterMetricPos.GetX(),
+		_graphicalPos.GetY() + _commandCounterMetricPos.GetY(), _color);
 
 	TupleInt playerMetricGraphPos = TupleInt(_graphicalPos.GetX() + _playerMetricFirstPos.GetX(), 
 		_graphicalPos.GetY() + _playerMetricFirstPos.GetY());
-	_g->PrintText15(_tradeGoods, playerMetricGraphPos.GetX(), playerMetricGraphPos.GetY(), color);
-	_g->PrintText15(_resources, playerMetricGraphPos.GetX() + _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), color);
-	_g->PrintText15(_influence, playerMetricGraphPos.GetX() + 2*_playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), color);
-	_g->PrintText15(_strategyAllocation, playerMetricGraphPos.GetX() + 3 * _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), color);
-	_g->PrintText15(_fleetSupply, playerMetricGraphPos.GetX() + 4 * _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), color);
+	_g->PrintText15(_tradeGoods, playerMetricGraphPos.GetX(), playerMetricGraphPos.GetY(), _color);
+	_g->PrintText15(_resources, playerMetricGraphPos.GetX() + _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), _color);
+	_g->PrintText15(_influence, playerMetricGraphPos.GetX() + 2*_playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), _color);
+	_g->PrintText15(_strategyAllocation, playerMetricGraphPos.GetX() + 3 * _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), _color);
+	_g->PrintText15(_fleetSupply, playerMetricGraphPos.GetX() + 4 * _playerMetricDiffPos.GetX(), playerMetricGraphPos.GetY(), _color);
 }
 
 void Player::PrepareForGameRound()
@@ -257,16 +232,32 @@ bool Player::GetPlayerHasPassed() const
 	return _playerHasPassed;
 }
 
+Player::PlayerActionState Player::GetPlayerActionState() const
+{
+	return _playerActionState;
+}
+
 void Player::Action(GameBoardObject* gbo)
 {
 	Player* player = static_cast<Player*>(gbo);
 	if (this->_objectId == player->GetObjectID())
 	{
-		int temp = 1; // TODO fortsätt här
+		if (_commandPool > 0)
+		{
+			_playerActionState = TACTICAL_ACTION;
+			_commandPool--;
+			CommandCounter commandCounter = CommandCounter(_color, _graphicalPos);
+			_commandCounterVector.push_back(commandCounter);
+		}
 	}
 }
 
 void Player::SetToPassed()
 {
 	_playerHasPassed = true;
+}
+
+void Player::SetCommandCounterPos(TupleInt pos)
+{
+	_commandCounterVector[_commandCounterVector.size() - 1].SetGraphicalPos(pos);
 }

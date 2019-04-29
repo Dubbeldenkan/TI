@@ -65,12 +65,12 @@ bool Game::GetGameOver()
 
 void Game::InitGame()
 {
-	_players.push_back(Player(Race::BaronyOfLetnev, Player::Red, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::EmiratesOfHacan, Player::Blue, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::FederationOfSol, Player::Purple, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::L1Z1XMindnet, Player::Yellow, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::MentakCoalition, Player::Green, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::NaaluCollective, Player::White, _gameBoard.GetMapMap(), _players.size()));
+	_players.push_back(Player(Race::BaronyOfLetnev, GraphicsNS::Graphics::RED, _gameBoard.GetMapMap(), _players.size()));
+	_players.push_back(Player(Race::EmiratesOfHacan, GraphicsNS::Graphics::BLUE, _gameBoard.GetMapMap(), _players.size()));
+	_players.push_back(Player(Race::FederationOfSol, GraphicsNS::Graphics::PURPLE, _gameBoard.GetMapMap(), _players.size()));
+	_players.push_back(Player(Race::L1Z1XMindnet, GraphicsNS::Graphics::YELLOW, _gameBoard.GetMapMap(), _players.size()));
+	_players.push_back(Player(Race::MentakCoalition, GraphicsNS::Graphics::GREEN, _gameBoard.GetMapMap(), _players.size()));
+	_players.push_back(Player(Race::NaaluCollective, GraphicsNS::Graphics::WHITE, _gameBoard.GetMapMap(), _players.size()));
 	
 	_currentPlayer = &_players[rand() % _players.size()];
 
@@ -127,11 +127,20 @@ void Game::InitStatusPhase()
 	_initPhase = false;
 }
 
-void Game::ClickAction(std::vector<GameBoardObject*> objectVector)
+void Game::MouseClicked(TupleInt mouseClickedPos)
 {
-	for (int vectorCount = 0; vectorCount < static_cast<int>(objectVector.size()); vectorCount++)
+	std::vector<GameBoardObject*> clickedObjects = GameBoard::GetGameBoardObjectByPosition(mouseClickedPos);
+	for (int vectorCount = 0; vectorCount < static_cast<int>(clickedObjects.size()); vectorCount++)
 	{
-		GameBoardObject* object = objectVector[vectorCount];
+		GameBoardObject* object = clickedObjects[vectorCount];
 		object->Action(_currentPlayer);
+	}
+}
+
+void Game::MouseMoved(TupleInt mousePos)
+{
+	if (_currentPlayer->GetPlayerActionState() == Player::TACTICAL_ACTION)
+	{
+		_currentPlayer->SetCommandCounterPos(mousePos);
 	}
 }

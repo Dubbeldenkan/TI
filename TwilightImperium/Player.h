@@ -1,6 +1,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include "CommandCounter.h"
 #include "GameMap.h"
 #include "MapTile.h"
 #include "Race.h"
@@ -25,13 +26,13 @@ public:
 class Player : public GameBoardObject
 {
 public:
-	//TODO kan man använda color från graphics istället?
-	enum Color { Red, Blue, White, Yellow, Green, Purple}; //TODO stora bokstäver? fyll på med färg
+	enum PlayerActionState {NONE, TACTICAL_ACTION};
 
 private:
 	std::map<TupleInt, UnitStack> _unitMap;
+	std::vector<CommandCounter> _commandCounterVector;
 
-	Player::Color _color;
+	GraphicsNS::Graphics::Color _color;
 	Race _race;
 	std::map<std::string, PlanetContainer> _planets;
 	TupleInt _homeSystem;
@@ -47,7 +48,7 @@ private:
 	int _posInPlayerOrder;
 	static const TupleInt _playerMetricFirstPos;
 	static const TupleInt _playerMetricDiffPos;
-	static const TupleInt _commandCounterPos;
+	static const TupleInt _commandCounterMetricPos;
 
 	GraphicsNS::Image* _shipIndicator;
 	static const std::string _shipIndicatorPath;
@@ -57,9 +58,10 @@ private:
 	const int _planetIndicatorSize = 7;
 
 	bool _playerHasPassed;
+	PlayerActionState _playerActionState = NONE;
 
 public:
-	Player(Race::RaceEnum, Player::Color, const std::map<TupleInt, MapTile>*, int);
+	Player(Race::RaceEnum, GraphicsNS::Graphics::Color, const std::map<TupleInt, MapTile>*, int);
 	Player& operator=(const Player&);
 	Player(Player const&);
 	~Player();
@@ -69,10 +71,12 @@ public:
 	bool TurnIsFinished() const;
 	int GetPosInPlayerOrder() const;
 	bool GetPlayerHasPassed() const;
+	PlayerActionState GetPlayerActionState() const;
 	
 	void Action(GameBoardObject*);
 
 	void SetToPassed();
+	void SetCommandCounterPos(TupleInt);
 
 private:
 	void CopyPlayer(Player const&);
@@ -81,9 +85,9 @@ private:
 	void SetPlayerImage(TIParserNS::ListNode*);
 
 	void DrawObject();
-	void DrawPlanetMarkers(D3DCOLOR);
-	void DrawUnits(D3DCOLOR);
-	void DrawPlayerSheet(D3DCOLOR);
+	void DrawPlanetMarkers();
+	void DrawUnits();
+	void DrawPlayerSheet();
 
 	void ResetPlanets();
 	int CalculateResources();

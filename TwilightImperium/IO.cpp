@@ -96,7 +96,16 @@ LRESULT CALLBACK IO::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		break;
 	}
 	case WM_LBUTTONUP:
-
+	{
+		break;
+	}
+	case WM_MOUSEMOVE:
+	{
+		int xPos = LOWORD(lParam);
+		int yPos = HIWORD(lParam);
+		MouseMove(xPos, yPos);
+		break;
+	}
 	case WM_LBUTTONDOWN:
 	{
 		int xPos = LOWORD(lParam);
@@ -138,6 +147,11 @@ void IO::EndGame()
 void IO::MouseClick(int xPos, int yPos)
 {
 	TupleInt clickPos = TupleInt(xPos, yPos);
-	std::vector<GameBoardObject*> clickedObjects = GameBoard::GetGameBoardObjectByPosition(clickPos);
-	Game::ClickAction(clickedObjects);
+	Game::MouseClicked(clickPos);
+}
+
+void IO::MouseMove(int xPos, int yPos)
+{
+	TupleInt movePos = TupleInt(xPos, yPos);
+	Game::MouseMoved(movePos);
 }

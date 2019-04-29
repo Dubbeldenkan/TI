@@ -33,7 +33,8 @@ public:
 
 	bool GetGameOver();
 
-	static void ClickAction(std::vector<GameBoardObject*>);
+	static void MouseClicked(TupleInt);
+	static void MouseMoved(TupleInt);
 private:
 	void DrawScreen();
 	void InitGame();

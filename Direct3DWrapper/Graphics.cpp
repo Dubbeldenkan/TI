@@ -235,10 +235,11 @@ namespace GraphicsNS
 		Draw(dS, image);
 	}
 
-	void Graphics::DrawWithColor(Image* image, int x, int y, D3DCOLOR color)
+	void Graphics::DrawWithColor(Image* image, int x, int y, Color color)
 	{
+		D3DCOLOR D3DColor = ConvertToD3DCOLOR(color);
 		DrawStruct dS = DrawStruct();
-		dS.color = color;
+		dS.color = D3DColor;
 		dS.position = &D3DXVECTOR3(x / dS.scale, y / dS.scale, 0);
 		Draw(dS, image);
 	}
@@ -310,8 +311,9 @@ namespace GraphicsNS
 		Draw(dS, image);
 	}
 
-	void Graphics::PrintText8(std::string text, int xPos, int yPos, D3DCOLOR color)
+	void Graphics::PrintText8(std::string text, int xPos, int yPos, Color color)
 	{
+		D3DCOLOR D3DColor = ConvertToD3DCOLOR(color);
 		RECT rectangle = { xPos, yPos, 0, 0 };
 		_font8->DrawText(
 			0,
@@ -319,10 +321,10 @@ namespace GraphicsNS
 			-1,
 			&rectangle,
 			DT_NOCLIP,
-			color);
+			D3DColor);
 	}
 
-	void Graphics::PrintText8(int number, int xPos, int yPos, D3DCOLOR color)
+	void Graphics::PrintText8(int number, int xPos, int yPos, Color color)
 	{
 		std::string str;
 		str = std::to_string(number);
@@ -330,8 +332,9 @@ namespace GraphicsNS
 		PrintText8((char*)buffer, xPos, yPos, color);
 	}
 
-	void Graphics::PrintText15(std::string text, int xPos, int yPos, D3DCOLOR color)
+	void Graphics::PrintText15(std::string text, int xPos, int yPos, Color color)
 	{
+		D3DCOLOR D3DColor = ConvertToD3DCOLOR(color);
 		RECT rectangle = { xPos, yPos, 0, 0 };
 		_font15->DrawText(
 			0,
@@ -339,10 +342,10 @@ namespace GraphicsNS
 			-1,
 			&rectangle,
 			DT_NOCLIP,
-			color);
+			D3DColor);
 	}
 
-	void Graphics::PrintText15(int number, int xPos, int yPos, D3DCOLOR color)
+	void Graphics::PrintText15(int number, int xPos, int yPos, Color color)
 	{
 		std::string str;
 		str = std::to_string(number);
@@ -353,8 +356,9 @@ namespace GraphicsNS
 	/*
 	xPos, yPos, xSize, ySize, Color
 	*/
-	void Graphics::DrawRectangle(int xPos, int yPos, int xSize, int ySize, D3DCOLOR color)
+	void Graphics::DrawRectangle(int xPos, int yPos, int xSize, int ySize, Color color)
 	{
+		D3DCOLOR D3DColor = ConvertToD3DCOLOR(color);
 		Image* image = whitePixel;
 		D3DXVECTOR3 position((float)xPos / (float)xSize, (float)yPos / (float)ySize, 0.0f);
 		_sprite->Begin(D3DXSPRITE_ALPHABLEND);
@@ -366,7 +370,39 @@ namespace GraphicsNS
 			0,
 			0,
 			&position,
-			color);
+			D3DColor);
 		_sprite->End();
+	}
+
+	D3DCOLOR Graphics::ConvertToD3DCOLOR(Color color)
+	{
+		D3DCOLOR resultColor;
+		switch (color)
+		{
+		case GraphicsNS::Graphics::WHITE:
+			resultColor = D3DWHITE;
+			break;
+		case GraphicsNS::Graphics::BLACK:
+			resultColor = D3DBLACK;
+			break;
+		case GraphicsNS::Graphics::RED:
+			resultColor = D3DRED;
+			break;
+		case GraphicsNS::Graphics::BLUE:
+			resultColor = D3DBLUE;
+			break;
+		case GraphicsNS::Graphics::GREEN:
+			resultColor = D3DGREEN;
+			break;
+		case GraphicsNS::Graphics::YELLOW:
+			resultColor = D3DYELLOW;
+			break;
+		case GraphicsNS::Graphics::PURPLE:
+			resultColor = D3DPURPLE;
+			break;
+		default:
+			break;
+		}
+		return resultColor;
 	}
 }
