@@ -3,6 +3,7 @@
 int GameBoardObject::_latestObjectId = 0;
 std::map<int, GameBoardObject*> GameBoardObject::_gameBoardObjects;
 GraphicsNS::Graphics* GameBoardObject::_g = NULL;
+GameBoardObject* GameBoardObject::_selectedObject = NULL;
 
 //Objects graphical position
 const TupleInt GameBoardObject::_gameMapPos = TupleInt(0, 0);
@@ -52,6 +53,10 @@ void GameBoardObject::DrawAllObjects()
 	for (it = _gameBoardObjects.begin(); it != _gameBoardObjects.end(); it++)
 	{
 		it->second->DrawObject();
+	}
+	if (_selectedObject != NULL)
+	{
+		_selectedObject->DrawSelectedObject();
 	}
 	_g->StopDrawing();
 	_g->Flip();
@@ -103,3 +108,18 @@ bool GameBoardObject::PosInObject(TupleInt pos)
 
 void GameBoardObject::Action(GameBoardObject* object)
 {}
+
+bool GameBoardObject::isMapTile() {
+	return false;
+}
+
+void GameBoardObject::DrawSelectedObject()
+{
+	// TODO, ändra pekare till vector av pekare för att kunna markera flera
+	float scalingFactor = 1.05f;
+	//flytta x till vänster skillnaden mellan skalad storlek och normal storlek delat på 2
+	int x = _graphicalPos.GetX() - ((_image->GetXSize() * scalingFactor) - (_image->GetXSize())) / 2;
+	int y = _graphicalPos.GetY() - ((_image->GetYSize() * scalingFactor) - (_image->GetYSize())) / 2;
+	_g->DrawWithColor(_image, x, y, GraphicsNS::Graphics::BLUE, scalingFactor);
+	DrawObject();
+}

@@ -10,12 +10,15 @@
 
 class GameBoardObject
 {
+
 protected:
 	TupleInt _graphicalPos;
 	float _scale = 1.0;
 	GraphicsNS::Image* _image;
 	const int _objectId;
 	static GraphicsNS::Graphics* _g;
+
+	static GameBoardObject* _selectedObject;
 
 	//Objects graphical position
 	static const TupleInt _gameMapPos;
@@ -31,6 +34,7 @@ private:
 
 public:
 	static void DrawAllObjects();
+	void DrawSelectedObject();
 
 	static void SetGraphics(HWND* hWnd);
 
@@ -44,6 +48,7 @@ public:
 	void SetImageScale(float);
 
 	virtual void Action(GameBoardObject*);
+	virtual bool isMapTile();
 
 protected:
 	GameBoardObject();

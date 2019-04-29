@@ -248,6 +248,7 @@ void Player::Action(GameBoardObject* gbo)
 			_commandPool--;
 			CommandCounter commandCounter = CommandCounter(_color, _graphicalPos);
 			_commandCounterVector.push_back(commandCounter);
+			_selectedObject = this;
 		}
 	}
 }

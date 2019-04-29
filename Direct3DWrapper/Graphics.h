@@ -70,6 +70,7 @@ namespace GraphicsNS
 
 		void Draw(Image*, int, int, float);
 		void DrawWithColor(Image*, int, int, Color);
+		void DrawWithColor(Image*, int, int, Color, float);
 		void DrawTile(Image*, int, int, int, int);
 		void DrawAnimation(Image*, int, int, int, int);
 		void DrawRotateImage(Image*, int, int, double, int);
