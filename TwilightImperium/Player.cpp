@@ -133,6 +133,13 @@ void Player::DrawObject()
 	DrawPlanetMarkers();
 	DrawUnits();
 	DrawPlayerSheet();
+	if (_playerHasPassed)
+	{
+		_g->DrawRectangle(_passButtonPos.GetX(), _passButtonPos.GetY() + _posInPlayerOrder*_playerSheetSize.GetY(), 
+			PassButton::_imageSize.GetX(), PassButton::_imageSize.GetY(), _color);
+		_g->PrintText15("Passed", _passButtonPos.GetX(), _passButtonPos.GetY() + _posInPlayerOrder * _playerSheetSize.GetY(),
+			GraphicsNS::Graphics::BLACK);
+	}
 }
 
 void Player::DrawPlanetMarkers()
@@ -289,7 +296,9 @@ void Player::TacticalAction(GameBoardObject* gbo)
 		{
 			//TODO checka så att det blir rätt maptile eftersom att de överlappar
 			_subActionState = MOVE_SHIPS_INTO_THE_SYSTEM;
-			SetCommandCounterPos(gbo->GetGraphicalPos() + _commandCounterVector[_commandCounterVector.size() -1].GetRelativePos(_homeSystem));
+			SetCommandCounterPos(gbo->GetGraphicalPos() + 
+				_commandCounterVector[_commandCounterVector.size() -1].GetRelativePos(_homeSystem));
+			_activatedSystem = static_cast<MapTile*>(gbo);
 		}
 		break;
 	case Player::MOVE_SHIPS_INTO_THE_SYSTEM:

@@ -40,9 +40,11 @@ private:
 	void InitGame();
 
 	void InitStrategyPhase();
+	void StrategyPhase();
 	void InitActionPhase();
 	void ActionPhase();
 	void InitStatusPhase();
+	void StatusPhase();
 };
 
 #endif // !GAME_H

@@ -5,9 +5,10 @@
 
 class PassButton : public GameBoardObject
 {
+public:
+	static const TupleInt _imageSize;
 private:
 	static std::string _imagePath;
-	static const TupleInt _imageSize;
 
 public:
 	PassButton();

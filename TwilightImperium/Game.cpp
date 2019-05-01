@@ -21,8 +21,7 @@ void Game::Run()
 			}
 			else
 			{
-				_initPhase = true;
-				_gamePhase = ACTION_PHASE;
+				StrategyPhase();
 			}
 			break;
 		case Game::ACTION_PHASE:
@@ -39,6 +38,10 @@ void Game::Run()
 			if (_initPhase)
 			{
 				InitStatusPhase();
+			}
+			else
+			{
+				StatusPhase();
 			}
 			break;
 		default:
@@ -82,6 +85,12 @@ void Game::InitStrategyPhase()
 	_initPhase = false;
 }
 
+void Game::StrategyPhase()
+{
+	_initPhase = true;
+	_gamePhase = ACTION_PHASE;
+}
+
 void Game::InitActionPhase()
 {
 	_initPhase = false;
@@ -108,6 +117,7 @@ void Game::ActionPhase()
 			{
 				_gamePhase = STATUS_PHASE; //Är detta rätt sätt att göra det på?
 				_initPhase = true;
+				nextPlayerIsSet = true;
 			}
 			else
 			{
@@ -125,6 +135,12 @@ void Game::ActionPhase()
 void Game::InitStatusPhase()
 {
 	_initPhase = false;
+}
+
+void Game::StatusPhase()
+{
+	_gamePhase = STRATEGY_PHASE;
+	_initPhase = true;
 }
 
 void Game::MouseClicked(TupleInt mouseClickedPos)

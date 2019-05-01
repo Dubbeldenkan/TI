@@ -33,6 +33,7 @@ public:
 private:
 	std::map<TupleInt, UnitStack> _unitMap;
 	std::vector<CommandCounter> _commandCounterVector;
+	MapTile* _activatedSystem = NULL;
 
 	GraphicsNS::Graphics::Color _color;
 	Race _race;
@@ -60,6 +61,7 @@ private:
 	const int _planetIndicatorSize = 7;
 
 	bool _playerHasPassed;
+
 	ActionState _actionState = ActionState::START_ACTION;
 	SubActionState _subActionState = SubActionState::NONE;
 
