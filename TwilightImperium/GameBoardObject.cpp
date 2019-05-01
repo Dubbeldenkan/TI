@@ -6,12 +6,13 @@ GraphicsNS::Graphics* GameBoardObject::_g = NULL;
 GameBoardObject* GameBoardObject::_selectedObject = NULL;
 
 //Objects graphical position
-const TupleInt GameBoardObject::_gameMapPos = TupleInt(0, 0);
-const TupleInt GameBoardObject::_unitPosInTile = TupleInt(25, 60);
-const TupleInt GameBoardObject::_playerSheetPos = TupleInt(650, 0);
-const TupleInt GameBoardObject::_passButtonPos = TupleInt(1020, 20);
+const TupleInt GameBoardObject::_gameMapPos = TupleInt(-60, 0);
+const TupleInt GameBoardObject::_playerSheetPos = TupleInt(590, 0);
+const TupleInt GameBoardObject::_passButtonPos = TupleInt(960, 20);
 
 const TupleInt GameBoardObject::_playerSheetSize = TupleInt(350, 120);
+
+const TupleInt GameBoardObject::_unitPosInTile = TupleInt(25, 60);
 
 GameBoardObject::GameBoardObject() : 
 	_objectId(++_latestObjectId)
@@ -54,10 +55,10 @@ void GameBoardObject::DrawAllObjects()
 	{
 		it->second->DrawObject();
 	}
-	if (_selectedObject != NULL)
+	/*if (_selectedObject != NULL) //TODO fixa detta
 	{
 		_selectedObject->DrawSelectedObject();
-	}
+	}*/
 	_g->StopDrawing();
 	_g->Flip();
 }
@@ -106,19 +107,13 @@ bool GameBoardObject::PosInObject(TupleInt pos)
 	return (withInX && withInY);
 }
 
-void GameBoardObject::Action(GameBoardObject* object)
-{}
-
-bool GameBoardObject::isMapTile() {
-	return false;
-}
-
 void GameBoardObject::DrawSelectedObject()
 {
 	// TODO, ändra pekare till vector av pekare för att kunna markera flera
 	float scalingFactor = 1.05f;
 	//flytta x till vänster skillnaden mellan skalad storlek och normal storlek delat på 2
-	int x = _graphicalPos.GetX() - ((_image->GetXSize() * scalingFactor) - (_image->GetXSize())) / 2;
+	//TODO borde detta castas till en float?
+	int x = _graphicalPos.GetX() - ((_image->GetXSize() * scalingFactor) - (_image->GetXSize())) / 2; 
 	int y = _graphicalPos.GetY() - ((_image->GetYSize() * scalingFactor) - (_image->GetYSize())) / 2;
 	_g->DrawWithColor(_image, x, y, GraphicsNS::Graphics::BLUE, scalingFactor);
 	DrawObject();

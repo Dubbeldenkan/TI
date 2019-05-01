@@ -67,6 +67,7 @@ void Player::CopyPlayer(const Player& player)
 	_posInPlayerOrder = player._posInPlayerOrder;
 	_image = player._image;
 	_graphicalPos = player._graphicalPos;
+	_homeSystem = player._homeSystem;
 }
 
 Player::~Player()
@@ -232,19 +233,43 @@ bool Player::GetPlayerHasPassed() const
 	return _playerHasPassed;
 }
 
-Player::PlayerActionState Player::GetPlayerActionState() const
+Player::ActionState Player::GetActionState() const
 {
-	return _playerActionState;
+	return _actionState;
+}
+
+Player::SubActionState Player::GetSubActionState() const
+{
+	return _subActionState;
 }
 
 void Player::Action(GameBoardObject* gbo)
 {
-	Player* player = static_cast<Player*>(gbo);
-	if (this->_objectId == player->GetObjectID())
+	switch (_actionState)
 	{
-		if (_commandPool > 0)
+	case Player::START_ACTION:
+		StartAction(gbo);
+		break;
+	case Player::TACTICAL_ACTION:
+		TacticalAction(gbo);
+		break;
+	default:
+		break;
+	}
+}
+
+void Player::StartAction(GameBoardObject* gbo)
+{
+	if (typeid(*gbo) == typeid(PassButton))
+	{
+		_playerHasPassed = true;
+	}
+	else if (typeid(*gbo) == typeid(Player))
+	{
+		if (this->_objectId == gbo->GetObjectID() && _commandPool > 0)
 		{
-			_playerActionState = TACTICAL_ACTION;
+			_actionState = TACTICAL_ACTION;
+			_subActionState = ACTIVATE_A_SYSTEM;
 			_commandPool--;
 			CommandCounter commandCounter = CommandCounter(_color, _graphicalPos);
 			_commandCounterVector.push_back(commandCounter);
@@ -253,9 +278,25 @@ void Player::Action(GameBoardObject* gbo)
 	}
 }
 
-void Player::SetToPassed()
+void Player::TacticalAction(GameBoardObject* gbo)
 {
-	_playerHasPassed = true;
+	switch (_subActionState)
+	{
+	case Player::NONE:
+		break;
+	case Player::ACTIVATE_A_SYSTEM:
+		if (typeid(*gbo) == typeid(MapTile))
+		{
+			//TODO checka så att det blir rätt maptile eftersom att de överlappar
+			_subActionState = MOVE_SHIPS_INTO_THE_SYSTEM;
+			SetCommandCounterPos(gbo->GetGraphicalPos() + _commandCounterVector[_commandCounterVector.size() -1].GetRelativePos(_homeSystem));
+		}
+		break;
+	case Player::MOVE_SHIPS_INTO_THE_SYSTEM:
+		break;
+	default:
+		break;
+	}
 }
 
 void Player::SetCommandCounterPos(TupleInt pos)

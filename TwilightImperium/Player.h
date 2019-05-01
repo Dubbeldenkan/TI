@@ -4,6 +4,7 @@
 #include "CommandCounter.h"
 #include "GameMap.h"
 #include "MapTile.h"
+#include "PassButton.h"
 #include "Race.h"
 #include "TIParser.h"
 #include "UnitStack.h"
@@ -26,7 +27,8 @@ public:
 class Player : public GameBoardObject
 {
 public:
-	enum PlayerActionState {NONE, TACTICAL_ACTION};
+	enum ActionState {START_ACTION, TACTICAL_ACTION};
+	enum SubActionState {NONE, ACTIVATE_A_SYSTEM, MOVE_SHIPS_INTO_THE_SYSTEM};
 
 private:
 	std::map<TupleInt, UnitStack> _unitMap;
@@ -58,7 +60,8 @@ private:
 	const int _planetIndicatorSize = 7;
 
 	bool _playerHasPassed;
-	PlayerActionState _playerActionState = NONE;
+	ActionState _actionState = ActionState::START_ACTION;
+	SubActionState _subActionState = SubActionState::NONE;
 
 public:
 	Player(Race::RaceEnum, GraphicsNS::Graphics::Color, const std::map<TupleInt, MapTile>*, int);
@@ -71,11 +74,11 @@ public:
 	bool TurnIsFinished() const;
 	int GetPosInPlayerOrder() const;
 	bool GetPlayerHasPassed() const;
-	PlayerActionState GetPlayerActionState() const;
+	ActionState GetActionState() const;
+	SubActionState GetSubActionState() const;
 	
 	void Action(GameBoardObject*);
 
-	void SetToPassed();
 	void SetCommandCounterPos(TupleInt);
 
 private:
@@ -92,6 +95,9 @@ private:
 	void ResetPlanets();
 	int CalculateResources();
 	int CalculateInfluence();
+
+	void StartAction(GameBoardObject*);
+	void TacticalAction(GameBoardObject*);
 };
 
 #endif // !PLAYER_H

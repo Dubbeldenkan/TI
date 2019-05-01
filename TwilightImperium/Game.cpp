@@ -133,13 +133,15 @@ void Game::MouseClicked(TupleInt mouseClickedPos)
 	for (int vectorCount = 0; vectorCount < static_cast<int>(clickedObjects.size()); vectorCount++)
 	{
 		GameBoardObject* object = clickedObjects[vectorCount];
-		object->Action(_currentPlayer);
+		_currentPlayer->Action(object);
 	}
 }
 
 void Game::MouseMoved(TupleInt mousePos)
 {
-	if (_currentPlayer->GetPlayerActionState() == Player::TACTICAL_ACTION)
+	//TODO ska denna logik flyttas in i Player?
+	if (_currentPlayer->GetActionState() == Player::TACTICAL_ACTION && 
+		_currentPlayer->GetSubActionState() == Player::ACTIVATE_A_SYSTEM)
 	{
 		_currentPlayer->SetCommandCounterPos(mousePos);
 	}

@@ -26,3 +26,9 @@ void CommandCounter::DrawObject()
 {
 	_g->DrawWithColor(_image, _graphicalPos.GetX(), _graphicalPos.GetY(), _color);
 }
+
+TupleInt CommandCounter::GetRelativePos(TupleInt playerPos)
+{
+	TupleInt tupleInt = _commandCounterPos[playerPos.second / 60];
+	return tupleInt;
+}

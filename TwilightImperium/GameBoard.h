@@ -4,6 +4,7 @@
 #include "GameBoardObject.h"
 #include "GameMap.h"
 #include "PassButton.h"
+#include "Player.h"
 
 #pragma once
 class GameBoard

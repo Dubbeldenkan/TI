@@ -32,10 +32,6 @@ public:
 	const std::vector<Planet>* GetPlanets() const;
 	const Planet* GetPlanet(int) const;
 
-	void Action(GameBoardObject*);
-
-	bool isMapTile();
-
 private:
 	void CopyMapTile(const MapTile&);
 };

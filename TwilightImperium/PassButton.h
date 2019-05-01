@@ -2,7 +2,6 @@
 #define PASS_BUTTON_H
 
 #include "GameBoardObject.h"
-#include "Player.h"
 
 class PassButton : public GameBoardObject
 {
@@ -15,8 +14,7 @@ public:
 	PassButton& operator=(const PassButton&);
 	~PassButton();
 
-	void Action(GameBoardObject*);
-	void SetGraphicalPosBasedOnPlayer(Player*);
+	void SetGraphicalPosBasedOnPlayer(int);
 };
 
 #endif // !PASS_BUTTON_H

@@ -35,24 +35,7 @@ void IO::InitIO(Game* game)
 }
 
 void IO::SetKeyAction(Game* game, bool keyDown, WPARAM wParam)
-{
-	/*if (wParam == playerInput.right)
-	{
-		_game->SetPlayerKeyDown(Game::EAST, keyDown);
-	}
-	if (wParam == playerInput.left)
-	{
-		_game->SetPlayerKeyDown(Game::WEST, keyDown);
-	}
-	if (wParam == playerInput.up)
-	{
-		_game->SetPlayerKeyDown(Game::NORTH, keyDown);
-	}
-	if (wParam == playerInput.down)
-	{
-		_game->SetPlayerKeyDown(Game::SOUTH, keyDown);
-	}*/
-}
+{}
 
 void InitWinMain(HINSTANCE* hInst, std::string winName, IO* io)
 {

@@ -230,7 +230,7 @@ void GameMap::RemoveRandomTiles()
 double GameMap::degCos(int deg)
 {
 	double rad = PI * double(deg) / 180.0;
-	return cos(rad);
+	return -cos(rad);
 }
 
 double GameMap::degSin(int deg)

@@ -15,13 +15,7 @@ PassButton& PassButton::operator=(const PassButton& passButton)
 PassButton::~PassButton()
 {};
 
-void PassButton::Action(GameBoardObject* gbo)
+void PassButton::SetGraphicalPosBasedOnPlayer(int playerPos)
 {
-	Player* activePlayer = static_cast<Player*>(gbo);
-	activePlayer->SetToPassed();
-}
-
-void PassButton::SetGraphicalPosBasedOnPlayer(Player* currentPlayer)
-{
-	_graphicalPos = TupleInt(_passButtonPos.GetX(), _passButtonPos.GetY() + _playerSheetSize.GetY()*currentPlayer->GetPosInPlayerOrder());
+	_graphicalPos = TupleInt(_passButtonPos.GetX(), _passButtonPos.GetY() + _playerSheetSize.GetY()*playerPos);
 }

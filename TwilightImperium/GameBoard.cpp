@@ -38,5 +38,5 @@ std::vector<GameBoardObject*> GameBoard::GetGameBoardObjectByPosition(TupleInt p
 
 void GameBoard::Run(Player* currentPlayer)
 {
-	_passButton.SetGraphicalPosBasedOnPlayer(currentPlayer);
+	_passButton.SetGraphicalPosBasedOnPlayer(currentPlayer->GetPosInPlayerOrder());
 }

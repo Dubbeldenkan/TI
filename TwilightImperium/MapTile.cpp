@@ -100,13 +100,3 @@ const Planet* MapTile::GetPlanet(int planetCount) const
 {
 	return &_planets[planetCount];
 }
-
-void MapTile::Action(GameBoardObject *)
-{
-	_selectedObject = this;
-}
-
-
-bool MapTile::isMapTile() {
-	return true;
-}

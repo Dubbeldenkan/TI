@@ -47,9 +47,6 @@ public:
 	void SetGraphicalPos(TupleInt);
 	void SetImageScale(float);
 
-	virtual void Action(GameBoardObject*);
-	virtual bool isMapTile();
-
 protected:
 	GameBoardObject();
 	GameBoardObject(TupleInt, GraphicsNS::Image*);
