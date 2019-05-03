@@ -14,22 +14,21 @@ const TupleInt GameBoardObject::_playerSheetSize = TupleInt(350, 120);
 
 const TupleInt GameBoardObject::_unitPosInTile = TupleInt(25, 60);
 
-GameBoardObject::GameBoardObject() : 
-	_objectId(++_latestObjectId)
+GameBoardObject::GameBoardObject() : _layer(0), _objectId(++_latestObjectId)
 {
 	_gameBoardObjects[_objectId] = this;
 }
 
-GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image* image) :
-	_objectId(++_latestObjectId)
+GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image* image, int layer) :
+	_layer(layer), _objectId(++_latestObjectId)
 {
 	_graphicalPos = graphicalPos;
 	_image = image;
 	_gameBoardObjects[_objectId] = this;
 }
 
-GameBoardObject::GameBoardObject(TupleInt graphicalPos, TupleInt imageSize, std::string imagePath) :
-	_objectId(++_latestObjectId)
+GameBoardObject::GameBoardObject(TupleInt graphicalPos, TupleInt imageSize, std::string imagePath, int layer) :
+	_layer(layer), _objectId(++_latestObjectId)
 {
 	_graphicalPos = graphicalPos;
 	_image = _g->LoadImageFromFile(imagePath, imageSize.GetX(), imageSize.GetY());
@@ -50,15 +49,28 @@ void GameBoardObject::DrawAllObjects()
 {
 	_g->Clear();
 	_g->StartDrawing();
+
+	std::vector<GameBoardObject*> layerVector[_numberOfLayers];
 	std::map<int, GameBoardObject*>::iterator it;
 	for (it = _gameBoardObjects.begin(); it != _gameBoardObjects.end(); it++)
 	{
-		it->second->DrawObject();
+		if(_selectedObject == NULL || it->second->GetObjectID() != _selectedObject->GetObjectID())
+		{
+			layerVector[it->second->_layer].push_back(it->second);
+		}
 	}
-	/*if (_selectedObject != NULL) //TODO fixa detta
+	for (int layerCount = 0; layerCount < _numberOfLayers; layerCount++)
 	{
-		_selectedObject->DrawSelectedObject();
-	}*/
+		for (int vectorCount = 0; vectorCount < static_cast<int>(layerVector[layerCount].size()); vectorCount++)
+		{
+			layerVector[layerCount][vectorCount]->DrawObject();
+		}
+		if (_selectedObject != NULL && _selectedObject->_layer == layerCount)
+		{
+			_selectedObject->DrawSelectedObject();
+		}
+	}
+
 	_g->StopDrawing();
 	_g->Flip();
 }
@@ -110,11 +122,11 @@ bool GameBoardObject::PosInObject(TupleInt pos)
 void GameBoardObject::DrawSelectedObject()
 {
 	// TODO, ändra pekare till vector av pekare för att kunna markera flera
-	float scalingFactor = 1.05f;
 	//flytta x till vänster skillnaden mellan skalad storlek och normal storlek delat på 2
-	//TODO borde detta castas till en float?
-	int x = _graphicalPos.GetX() - ((_image->GetXSize() * scalingFactor) - (_image->GetXSize())) / 2; 
-	int y = _graphicalPos.GetY() - ((_image->GetYSize() * scalingFactor) - (_image->GetYSize())) / 2;
-	_g->DrawWithColor(_image, x, y, GraphicsNS::Graphics::BLUE, scalingFactor);
+	int xPos = _graphicalPos.GetX() - 
+		static_cast<int>(((_image->GetXSize() * _selectecObjectScalingFactor) - (_image->GetXSize())) / 2);
+	int yPos = _graphicalPos.GetY() - 
+		static_cast<int>(((_image->GetYSize() * _selectecObjectScalingFactor) - (_image->GetYSize())) / 2);
+	_g->DrawWithColor(_image, xPos, yPos, GraphicsNS::Graphics::BLUE, _selectecObjectScalingFactor);
 	DrawObject();
 }

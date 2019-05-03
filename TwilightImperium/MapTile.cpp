@@ -1,16 +1,17 @@
 #include "MapTile.h"
 
 const TupleInt MapTile::_tileSize = TupleInt(100, 86);
+const int MapTile::_layerValue = 0;
 
 MapTile::MapTile()
 {}
 
 MapTile::MapTile(MapTile::TileType tileType,  std::string imagePath) :
-	_tileType(tileType), GameBoardObject(TupleInt(0, 0), _tileSize, imagePath)
+	_tileType(tileType), GameBoardObject(TupleInt(0, 0), _tileSize, imagePath, _layerValue)
 {}
 
 MapTile::MapTile(const MapTile &mapTile) : 
-	GameBoardObject(mapTile._graphicalPos, mapTile._image)
+	GameBoardObject(mapTile._graphicalPos, mapTile._image, _layerValue)
 {
 	CopyMapTile(mapTile);
 }
@@ -99,4 +100,10 @@ const std::vector<Planet>* MapTile::GetPlanets() const
 const Planet* MapTile::GetPlanet(int planetCount) const
 {
 	return &_planets[planetCount];
+}
+
+int MapTile::CalculateDistanceToTile(MapTile* mapTile) const
+{
+	//TODO
+	return 1;
 }

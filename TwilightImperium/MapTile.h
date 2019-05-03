@@ -15,6 +15,7 @@ private:
 	TupleInt _tilePos;
 	TileType _tileType;
 	std::vector<Planet> _planets;
+	static const int _layerValue;
 
 public:
 	MapTile();
@@ -31,6 +32,8 @@ public:
 
 	const std::vector<Planet>* GetPlanets() const;
 	const Planet* GetPlanet(int) const;
+
+	int CalculateDistanceToTile(MapTile*) const;
 
 private:
 	void CopyMapTile(const MapTile&);

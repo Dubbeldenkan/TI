@@ -18,6 +18,7 @@ private:
 	TechnologySpeciality _technologySpeciality;
 
 	static const std::string _imagePath;
+	static const int _layerValue;
 
 public:
 	Planet();

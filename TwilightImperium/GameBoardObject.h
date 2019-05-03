@@ -19,6 +19,8 @@ protected:
 	static GraphicsNS::Graphics* _g;
 
 	static GameBoardObject* _selectedObject;
+	const int _numberOfLayers = 2;
+	const int _layer;
 
 	//Objects graphical position
 	static const TupleInt _gameMapPos;
@@ -31,6 +33,7 @@ protected:
 private:
 	static int _latestObjectId;
 	static std::map<int, GameBoardObject*> _gameBoardObjects;
+	const float _selectecObjectScalingFactor = 1.15f;
 
 public:
 	static void DrawAllObjects();
@@ -49,8 +52,8 @@ public:
 
 protected:
 	GameBoardObject();
-	GameBoardObject(TupleInt, GraphicsNS::Image*);
-	GameBoardObject(TupleInt, TupleInt, std::string);
+	GameBoardObject(TupleInt, GraphicsNS::Image*, int);
+	GameBoardObject(TupleInt, TupleInt, std::string, int);
 	~GameBoardObject();
 
 	void SetImage(std::string, TupleInt);

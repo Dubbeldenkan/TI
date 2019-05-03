@@ -2,9 +2,10 @@
 
 const TupleInt CommandCounter::_imageSize = TupleInt(20, 14);
 const std::string CommandCounter::_imagePath = "Race/CommandCounter.png";
+const int CommandCounter::_layerValue = 1;
 
 CommandCounter::CommandCounter(GraphicsNS::Graphics::Color color, TupleInt pos) : _color(color),
-	GameBoardObject(pos, _imageSize, _imagePath)
+	GameBoardObject(pos, _imageSize, _imagePath, _layerValue)
 {}
 
 CommandCounter& CommandCounter::operator=(const CommandCounter& commandCounter)
@@ -14,7 +15,7 @@ CommandCounter& CommandCounter::operator=(const CommandCounter& commandCounter)
 }
 
 CommandCounter::CommandCounter(const CommandCounter& commandCounter) :
-	GameBoardObject(commandCounter._graphicalPos, commandCounter._image)
+	GameBoardObject(commandCounter._graphicalPos, commandCounter._image, _layerValue)
 {
 	_color = commandCounter._color;
 }

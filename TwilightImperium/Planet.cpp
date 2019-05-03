@@ -2,12 +2,13 @@
 
 const TupleInt Planet::_imageSize = TupleInt(40, 40);
 const std::string Planet::_imagePath = "Map/Planet.png";
+const int Planet::_layerValue = 1;
 
 Planet::Planet()
 {}
 
 Planet::Planet(std::string name, int resourceValue, int influenceValue, std::string techSpec) :
-	GameBoardObject(TupleInt(0, 0),  _imageSize, _imagePath)
+	GameBoardObject(TupleInt(0, 0),  _imageSize, _imagePath, _layerValue)
 {
 	_name = name;
 	_resourceValue = resourceValue;
@@ -47,7 +48,7 @@ Planet& Planet::operator=(const Planet& planet)
 }
 
 Planet::Planet(const Planet &planet) :
-	GameBoardObject(planet._graphicalPos, planet._image)
+	GameBoardObject(planet._graphicalPos, planet._image, _layerValue)
 {
 	CopyPlanet(planet);
 }

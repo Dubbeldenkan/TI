@@ -52,7 +52,7 @@ Player& Player::operator=(const Player& player)
 }
 
 Player::Player(const Player &player) :
-	GameBoardObject(player._graphicalPos, player._image)
+	GameBoardObject(player._graphicalPos, player._image, _layerValue)
 {
 	CopyPlayer(player);
 }
@@ -299,9 +299,33 @@ void Player::TacticalAction(GameBoardObject* gbo)
 			SetCommandCounterPos(gbo->GetGraphicalPos() + 
 				_commandCounterVector[_commandCounterVector.size() -1].GetRelativePos(_homeSystem));
 			_activatedSystem = static_cast<MapTile*>(gbo);
+			_selectedObject = gbo;
 		}
 		break;
 	case Player::MOVE_SHIPS_INTO_THE_SYSTEM:
+		if (typeid(*gbo) == typeid(MapTile))
+		{
+			MapTile* clickedSystem = static_cast<MapTile*>(gbo);
+			//TODO gör så att man kollar på movement för skeppen
+			if (_activatedSystem->CalculateDistanceToTile(clickedSystem) == 1)
+			{
+				//TODO gör så att man kan välja vilka gubbar man ska flytta
+				_subActionState = PDS_FIRE;
+								
+			}
+		}
+		break;
+	case Player::PDS_FIRE:
+		_subActionState = SPACE_BATTLE;
+		break;
+	case Player::SPACE_BATTLE:
+		_subActionState = PLANETARY_LANDING;
+		break;
+	case Player::PLANETARY_LANDING:
+		_subActionState = INVASION_COMBAT;
+		break;
+	case Player::INVASION_COMBAT:
+		_subActionState = PRODUCE_UNITS;
 		break;
 	default:
 		break;

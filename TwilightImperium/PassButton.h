@@ -9,6 +9,7 @@ public:
 	static const TupleInt _imageSize;
 private:
 	static std::string _imagePath;
+	static const int _layerValue;
 
 public:
 	PassButton();

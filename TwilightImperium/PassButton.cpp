@@ -2,9 +2,10 @@
 
 std::string PassButton::_imagePath = "GameBoard/PassButton.png";
 const TupleInt PassButton::_imageSize = TupleInt(66, 20);
+const int PassButton::_layerValue = 0;
 
 PassButton::PassButton() :
-	GameBoardObject(_passButtonPos, _imageSize, _imagePath)
+	GameBoardObject(_passButtonPos, _imageSize, _imagePath, _layerValue)
 {}
 
 PassButton& PassButton::operator=(const PassButton& passButton)

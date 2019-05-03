@@ -28,7 +28,8 @@ class Player : public GameBoardObject
 {
 public:
 	enum ActionState {START_ACTION, TACTICAL_ACTION};
-	enum SubActionState {NONE, ACTIVATE_A_SYSTEM, MOVE_SHIPS_INTO_THE_SYSTEM};
+	enum SubActionState {NONE, ACTIVATE_A_SYSTEM, MOVE_SHIPS_INTO_THE_SYSTEM, PDS_FIRE, SPACE_BATTLE, PLANETARY_LANDING, 
+		INVASION_COMBAT, PRODUCE_UNITS};
 
 private:
 	std::map<TupleInt, UnitStack> _unitMap;
@@ -55,6 +56,7 @@ private:
 
 	GraphicsNS::Image* _shipIndicator;
 	static const std::string _shipIndicatorPath;
+	static const int _layerValue = 0;
 	const int _shipIndicatorSize = 10;
 
 	//TODO förbättra indikationen, byt ut mot en flagga
