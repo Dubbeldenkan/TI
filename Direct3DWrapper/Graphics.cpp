@@ -237,9 +237,8 @@ namespace GraphicsNS
 
 	void Graphics::DrawWithColor(Image* image, int x, int y, Color color)
 	{
-		D3DCOLOR D3DColor = ConvertToD3DCOLOR(color);
 		DrawStruct dS = DrawStruct();
-		dS.color = D3DColor;
+		dS.color = ConvertToD3DCOLOR(color);
 		dS.position = &D3DXVECTOR3(x / dS.scale, y / dS.scale, 0);
 		Draw(dS, image);
 	}
@@ -247,9 +246,9 @@ namespace GraphicsNS
 	void Graphics::DrawWithColor(Image* image, int x, int y, Color color, float scale)
 	{
 		DrawStruct dS = DrawStruct();
-		dS.color = color;
+		dS.color = ConvertToD3DCOLOR(color);
 		dS.scale = scale;
-		dS.position = &D3DXVECTOR3(x / dS.scale, y / dS.scale, 0);
+		dS.position = &D3DXVECTOR3(x/scale, y/scale, 0);
 		D3DXMatrixScaling(&dS.transformMatrix, scale, scale, 0.0f);
 		Draw(dS, image);
 	}
