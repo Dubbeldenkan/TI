@@ -19,7 +19,7 @@ protected:
 	static GraphicsNS::Graphics* _g;
 
 	static GameBoardObject* _selectedObject;
-	const int _numberOfLayers = 2;
+	static const int _numberOfLayers;
 	const int _layer;
 
 	//Objects graphical position

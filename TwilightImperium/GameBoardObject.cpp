@@ -4,6 +4,7 @@ int GameBoardObject::_latestObjectId = 0;
 std::map<int, GameBoardObject*> GameBoardObject::_gameBoardObjects;
 GraphicsNS::Graphics* GameBoardObject::_g = NULL;
 GameBoardObject* GameBoardObject::_selectedObject = NULL;
+const int GameBoardObject::_numberOfLayers = 2;
 
 //Objects graphical position
 const TupleInt GameBoardObject::_gameMapPos = TupleInt(-60, 0);
