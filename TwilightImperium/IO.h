@@ -11,26 +11,33 @@ class IO
 #define SCREENXSIZE 1200
 #define SCREENYSIZE 800
 
-private:
-	static Game* _game;
+public:
+	static const int ID_NEW_GAME = 0;
+	static const int ID_SAVE = 1;
+	static const int ID_LOAD = 2;
+	static const int ID_EXIT = 3;
+
+	static const int ID_HELP = 10;
+	static const int ID_CONTROLS = 11;
 
 public:
 	IO();
 	~IO() {};
 
-	void InitIO(Game*);
 	void EndGame();
 
 	static LRESULT CALLBACK MsgProc(HWND, UINT, WPARAM, LPARAM);
-	static void SetKeyAction(Game* game, bool keyDown, WPARAM);
 
 private:
 	static void MouseClick(int, int);
 	static void MouseMove(int, int);
+	static void MenuOption(int);
 };
 
 void InitWinMain(HINSTANCE*, std::string, IO*);
 
 HWND InitWindow(HINSTANCE*, std::string, IO*);
+
+HMENU CreateMainMenu();
 
 #endif // !CONTROL_H

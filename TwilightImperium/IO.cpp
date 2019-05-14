@@ -1,40 +1,6 @@
 #include "IO.h"
 
-const int ID_NEW_GAME = 0;
-const int ID_EXIT = 1;
-const int ID_HELP = 10;
-const int ID_CONTROLS = 11;
-
-struct PlayerInput
-{
-	int up;
-	int down;
-	int right;
-	int left;
-	PlayerInput() {};
-	PlayerInput(int upIn, int downIn, int rightIn, int leftIn)
-	{
-		up = upIn;
-		down = downIn;
-		right = rightIn;
-		left = leftIn;
-	}
-};
-
-Game* IO::_game;
-
-const PlayerInput playerInput =
-PlayerInput(VK_UP, VK_DOWN, VK_RIGHT, VK_LEFT);
-
 IO::IO()
-{}
-
-void IO::InitIO(Game* game)
-{
-	_game = game;
-}
-
-void IO::SetKeyAction(Game* game, bool keyDown, WPARAM wParam)
 {}
 
 void InitWinMain(HINSTANCE* hInst, std::string winName, IO* io)
@@ -62,7 +28,7 @@ HWND InitWindow(HINSTANCE* hInst, std::string winName, IO* io)
 		windowRect.right - windowRect.left,
 		windowRect.bottom - windowRect.top,
 		NULL,
-		NULL,
+		CreateMainMenu(),
 		*hInst,
 		NULL);
 
@@ -75,7 +41,12 @@ LRESULT CALLBACK IO::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	{
 	case WM_KEYDOWN:
 	{
-		SetKeyAction(_game, true, wParam);
+		//TODO lägg till keys pressed här
+		break;
+	}
+	case WM_KEYUP:
+	{
+		//TODO lägg till keys released här
 		break;
 	}
 	case WM_LBUTTONUP:
@@ -96,9 +67,10 @@ LRESULT CALLBACK IO::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		MouseClick(xPos, yPos);
 		break;
 	}
-	case WM_KEYUP:
+	case WM_COMMAND:
 	{
-		SetKeyAction(_game, false, wParam);
+		int menuId = LOWORD(wParam);
+		MenuOption(menuId);
 		break;
 	}
 	case WM_DESTROY:
@@ -109,6 +81,26 @@ LRESULT CALLBACK IO::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		return 0;
 	}
 	return DefWindowProc(hWnd, msg, wParam, lParam);
+}
+
+HMENU CreateMainMenu()
+{
+	HMENU main = CreateMenu();
+
+	HMENU file = CreateMenu();
+	AppendMenu(file, MF_STRING, IO::ID_NEW_GAME, "Nytt Spel");
+	AppendMenu(file, MF_STRING, IO::ID_SAVE, "Spara Spel");
+	AppendMenu(file, MF_STRING, IO::ID_LOAD, "Ladda Spel");
+	AppendMenu(file, MF_SEPARATOR, 0, 0);
+	AppendMenu(file, MF_STRING, IO::ID_EXIT, "Avsluta");
+	AppendMenu(main, MF_POPUP, (UINT_PTR)file, "Meny");
+
+	HMENU help = CreateMenu();
+	AppendMenu(help, MF_STRING, IO::ID_CONTROLS, "Kontroller");
+	AppendMenu(help, MF_STRING, IO::ID_HELP, "Hjälp");
+	AppendMenu(main, MF_POPUP, (UINT_PTR)help, "Hjälp");
+
+	return main;
 }
 
 void IO::EndGame()
@@ -137,4 +129,50 @@ void IO::MouseMove(int xPos, int yPos)
 {
 	TupleInt movePos = TupleInt(xPos, yPos);
 	Game::MouseMoved(movePos);
+}
+
+void IO::MenuOption(int menuId)
+{
+	switch (menuId)
+	{
+	case ID_NEW_GAME:
+	{
+		int result = MessageBox(NULL, "Säker att du vill starta ett nytt spel och avsluta nuvarande?",
+			"Nytt Spel", MB_YESNO);
+		if (result == IDYES)
+		{
+			Game::SetInitNewGame();
+		}
+		break;
+	}
+	case ID_SAVE:
+	{
+		Game::SetSaveGame();
+		break;
+	}
+	case ID_LOAD:
+	{
+		Game::SetLoadGame();
+		break;
+	}
+	case ID_HELP:
+	{
+		MessageBox(NULL,
+			"TODO",	"Hjälp", MB_OK);
+		break;
+	}
+	case ID_CONTROLS:
+	{
+		MessageBox(NULL,
+			"TODO",	"Kontroller", MB_OK);
+		break;
+	}
+	case ID_EXIT:
+	{
+		PostQuitMessage(0);
+		break;
+	}
+	default:
+		break;
+	}
 }

@@ -1,6 +1,9 @@
 #include "Game.h"
 
 Player* Game::_currentPlayer = NULL;
+bool Game::_initNewGame = false;
+bool Game::_saveGame = false;
+bool Game::_loadGame = false;
 
 Game::Game()
 {
@@ -9,8 +12,21 @@ Game::Game()
 
 void Game::Run()
 {
+	if (_saveGame)
+	{
+		//TODO spara spel här
+	}
+
+	if (_initNewGame)
+	{
+		//TODO starta om ett spel här..
+	}
+	else if (_loadGame)
+	{
+		//TODO ladda ett spel här
+	}
 	//TODO ändra till ett lämpligt villkor
-	if (true)
+	else if (true)
 	{
 		switch (_gamePhase)
 		{
@@ -64,6 +80,21 @@ void Game::DrawScreen()
 bool Game::GetGameOver()
 {
 	return _gameOver;
+}
+
+void Game::SetInitNewGame()
+{
+	_initNewGame = true;
+}
+
+void Game::SetSaveGame()
+{
+	_saveGame = true;
+}
+
+void Game::SetLoadGame()
+{
+	_loadGame = true;
 }
 
 void Game::InitGame()

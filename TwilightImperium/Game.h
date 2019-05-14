@@ -25,6 +25,10 @@ private:
 
 	static Player* _currentPlayer;
 
+	static bool _initNewGame;
+	static bool _saveGame;
+	static bool _loadGame;
+
 public:
 	Game();
 	~Game() {};
@@ -32,6 +36,9 @@ public:
 	void Run();
 
 	bool GetGameOver();
+	static void SetInitNewGame();
+	static void SetSaveGame();
+	static void SetLoadGame();
 
 	static void MouseClicked(TupleInt);
 	static void MouseMoved(TupleInt);
