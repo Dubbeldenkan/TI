@@ -27,17 +27,14 @@ public:
 	void EndGame();
 
 	static LRESULT CALLBACK MsgProc(HWND, UINT, WPARAM, LPARAM);
+	static void InitWinMain(HINSTANCE*, std::string, IO*);
+	static HWND InitWindow(HINSTANCE*, std::string, IO*);
+	static HMENU CreateMainMenu();
 
 private:
 	static void MouseClick(int, int);
 	static void MouseMove(int, int);
 	static void MenuOption(int);
 };
-
-void InitWinMain(HINSTANCE*, std::string, IO*);
-
-HWND InitWindow(HINSTANCE*, std::string, IO*);
-
-HMENU CreateMainMenu();
 
 #endif // !CONTROL_H

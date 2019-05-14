@@ -3,7 +3,7 @@
 IO::IO()
 {}
 
-void InitWinMain(HINSTANCE* hInst, std::string winName, IO* io)
+void IO::InitWinMain(HINSTANCE* hInst, std::string winName, IO* io)
 {
 	WNDCLASS wc = { 0 };
 	wc.lpfnWndProc = io->MsgProc;
@@ -13,7 +13,7 @@ void InitWinMain(HINSTANCE* hInst, std::string winName, IO* io)
 	RegisterClass(&wc);
 }
 
-HWND InitWindow(HINSTANCE* hInst, std::string winName, IO* io)
+HWND IO::InitWindow(HINSTANCE* hInst, std::string winName, IO* io)
 {
 	InitWinMain(hInst, winName, io);
 
@@ -83,7 +83,7 @@ LRESULT CALLBACK IO::MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
-HMENU CreateMainMenu()
+HMENU IO::CreateMainMenu()
 {
 	HMENU main = CreateMenu();
 
