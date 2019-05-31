@@ -3,6 +3,7 @@
 
 #include "Graphics.h"
 #include "Image.h"
+#include "TIParser.h"
 #include "UtilityClasses.h"
 
 #include <string>
@@ -49,6 +50,7 @@ public:
 
 	void SetGraphicalPos(TupleInt);
 	void SetImageScale(float);
+	void Save(TIParserNS::ListNode**) const;
 
 protected:
 	GameBoardObject();

@@ -82,6 +82,7 @@ public:
 	SubActionState GetSubActionState() const;
 	
 	void Action(GameBoardObject*);
+	void Save(TIParserNS::ListNode**) const;
 
 	void SetCommandCounterPos(TupleInt);
 

@@ -52,6 +52,10 @@ private:
 	void ActionPhase();
 	void InitStatusPhase();
 	void StatusPhase();
+
+	void SaveGame();
+	void CreateSaveNode(TIParserNS::ListNode*);
+	void SaveToFile(TIParserNS::ListNode*);
 };
 
 #endif // !GAME_H

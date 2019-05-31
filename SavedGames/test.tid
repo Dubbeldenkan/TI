@@ -1,0 +1,48 @@
+Game
+{
+	Players
+	{
+		The Barony of Letnev
+		{
+			playerOrder
+			{
+				0
+			}
+		}
+		The Emirates of Hacan
+		{
+			playerOrder
+			{
+				1
+			}
+		}
+		The Federation of Sol
+		{
+			playerOrder
+			{
+				2
+			}
+		}
+		The L1Z1X Mindnet
+		{
+			playerOrder
+			{
+				3
+			}
+		}
+		The Mentak Coalition
+		{
+			playerOrder
+			{
+				4
+			}
+		}
+		The Naalu Collective
+		{
+			playerOrder
+			{
+				5
+			}
+		}
+	}
+}

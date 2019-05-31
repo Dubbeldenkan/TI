@@ -6,6 +6,10 @@ namespace TIParserNS
 		: _data(data)
 	{}
 
+	ListNode::ListNode(int data)
+		: _data(std::to_string(data))
+	{}
+
 	bool ListNode::GetChild(ListNode** child)
 	{
 		bool childIsNull = (_child == NULL);
@@ -17,7 +21,10 @@ namespace TIParserNS
 	{
 		bool nextIsNull = (_next == NULL);
 		*next = _next;
-		delete this;
+		if (!nextIsNull)
+		{
+			delete this;
+		}
 		return nextIsNull;
 	}
 

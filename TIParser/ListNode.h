@@ -14,6 +14,7 @@ namespace TIParserNS
 
 	public:
 		ListNode(std::string);
+		ListNode(int);
 		~ListNode() {};
 
 		std::string GetData();

@@ -336,3 +336,35 @@ void Player::SetCommandCounterPos(TupleInt pos)
 {
 	_commandCounterVector[_commandCounterVector.size() - 1].SetGraphicalPos(pos);
 }
+
+void Player::Save(TIParserNS::ListNode** playerNode) const
+{
+	*playerNode = new TIParserNS::ListNode(_race.GetRaceName());
+	TIParserNS::ListNode* posInPlayerOrderNodeName = new TIParserNS::ListNode("playerOrder");
+	TIParserNS::ListNode* posInPlayerOrderNodeData = new TIParserNS::ListNode(_posInPlayerOrder);
+	posInPlayerOrderNodeName->SetChild(posInPlayerOrderNodeData);
+
+	(*playerNode)->SetChild(posInPlayerOrderNodeName);
+	
+	/*TIParserNS::ListNode planets("Planets");
+	TIParserNS::ListNode* previousPlanet = new TIParserNS::ListNode("");
+	planets.SetChild(previousPlanet);
+	std::map<std::string, PlanetContainer>::const_iterator it;
+	for (it = _planets.begin(); it != _planets.end(); it++)
+	{
+		TIParserNS::ListNode* tempNode = new TIParserNS::ListNode(it->second.GetPlanet()->GetName());
+		currentPlanet->SetNext(tempNode);
+		currentPlanet = tempNode;
+	}
+	posInPlayerOrderNode.SetNext(&planets);*/
+
+	//return playerNode;
+
+	/*	_unitMap = player._unitMap;
+	_color = player._color;
+	_planets = player._planets;
+	_shipIndicator = player._shipIndicator;
+	_image = player._image;
+	_graphicalPos = player._graphicalPos;
+	_homeSystem = player._homeSystem;*/
+}

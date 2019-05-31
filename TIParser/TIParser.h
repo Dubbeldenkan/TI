@@ -19,9 +19,13 @@ namespace TIParserNS
 		~TIParser() {};
 
 		static ListNode* ReadFile(std::string);
+		static void WriteToFile(ListNode*, std::string);
 
 	private:
 		static void AddNewItem(ListNode*, std::ifstream*);
+		static std::string CreateSaveString(ListNode*);
+		static std::string AddStringPart(ListNode*, int);
+		static std::string AddIndentation(int);
 	};
 }
 

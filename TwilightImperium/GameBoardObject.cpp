@@ -96,6 +96,9 @@ int GameBoardObject::GetObjectID() const
 	return _objectId;
 }
 
+void GameBoardObject::Save(TIParserNS::ListNode** savedGame) const
+{}
+
 void GameBoardObject::SetGraphicalPos(TupleInt pos)
 {
 	_graphicalPos = pos;

@@ -14,7 +14,7 @@ void Game::Run()
 {
 	if (_saveGame)
 	{
-		//TODO spara spel här
+		SaveGame();
 	}
 
 	if (_initNewGame)
@@ -192,4 +192,39 @@ void Game::MouseMoved(TupleInt mousePos)
 	{
 		_currentPlayer->SetCommandCounterPos(mousePos);
 	}
+}
+
+void Game::SaveGame()
+{
+	_saveGame = false;
+	TIParserNS::ListNode gameToSave = TIParserNS::ListNode("Game");
+	CreateSaveNode(&gameToSave);
+	SaveToFile(&gameToSave);
+}
+
+void Game::CreateSaveNode(TIParserNS::ListNode* gameNode)
+{
+	TIParserNS::ListNode* playersNode = new TIParserNS::ListNode("Players");
+	gameNode->SetChild(playersNode);
+	TIParserNS::ListNode* currentNode = new TIParserNS::ListNode("");
+	TIParserNS::ListNode* oldNode = NULL;
+	for (int playerCount = 0; playerCount < static_cast<int>(_players.size()); playerCount++)
+	{
+		_players[playerCount].Save(&currentNode);
+		if (oldNode == NULL) //TODO kan man göra detta på ett snyggare sätt?
+		{
+			playersNode->SetChild(currentNode);
+		}
+		else
+		{
+			oldNode->SetNext(currentNode);
+		}
+		oldNode = currentNode;
+	}
+}
+
+void Game::SaveToFile(TIParserNS::ListNode* gameToSave)
+{
+	std::string fileName = "test";
+	TIParserNS::TIParser::WriteToFile(gameToSave, fileName);
 }
