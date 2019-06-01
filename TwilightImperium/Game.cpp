@@ -206,7 +206,7 @@ void Game::CreateSaveNode(TIParserNS::ListNode* gameNode)
 {
 	TIParserNS::ListNode* playersNode = new TIParserNS::ListNode("Players");
 	gameNode->SetChild(playersNode);
-	TIParserNS::ListNode* currentNode = new TIParserNS::ListNode("");
+	TIParserNS::ListNode* currentNode = new TIParserNS::ListNode(""); //TODO är detta en poteentiell minnesläcka?
 	TIParserNS::ListNode* oldNode = NULL;
 	for (int playerCount = 0; playerCount < static_cast<int>(_players.size()); playerCount++)
 	{

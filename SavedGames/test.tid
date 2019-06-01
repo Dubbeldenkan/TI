@@ -8,12 +8,53 @@ Game
 			{
 				0
 			}
+			color
+			{
+				2
+			}
+			homeSystem
+			{
+				X
+				{
+					3
+				}
+				Y
+				{
+					300
+				}
+			}
+			Planets
+			{
+				Arc Prime
+				Wren Terra
+			}
 		}
 		The Emirates of Hacan
 		{
 			playerOrder
 			{
 				1
+			}
+			color
+			{
+				3
+			}
+			homeSystem
+			{
+				X
+				{
+					3
+				}
+				Y
+				{
+					60
+				}
+			}
+			Planets
+			{
+				Arretze
+				Hercant
+				Kamdorn
 			}
 		}
 		The Federation of Sol
@@ -22,12 +63,50 @@ Game
 			{
 				2
 			}
+			color
+			{
+				6
+			}
+			homeSystem
+			{
+				X
+				{
+					3
+				}
+				Y
+				{
+					180
+				}
+			}
+			Planets
+			{
+				Jord
+			}
 		}
 		The L1Z1X Mindnet
 		{
 			playerOrder
 			{
 				3
+			}
+			color
+			{
+				5
+			}
+			homeSystem
+			{
+				X
+				{
+					3
+				}
+				Y
+				{
+					240
+				}
+			}
+			Planets
+			{
+				[0,0,0]
 			}
 		}
 		The Mentak Coalition
@@ -36,12 +115,51 @@ Game
 			{
 				4
 			}
+			color
+			{
+				4
+			}
+			homeSystem
+			{
+				X
+				{
+					3
+				}
+				Y
+				{
+					120
+				}
+			}
+			Planets
+			{
+				Moll Primus
+			}
 		}
 		The Naalu Collective
 		{
 			playerOrder
 			{
 				5
+			}
+			color
+			{
+				0
+			}
+			homeSystem
+			{
+				X
+				{
+					3
+				}
+				Y
+				{
+					0
+				}
+			}
+			Planets
+			{
+				Druaa
+				Maaluuk
 			}
 		}
 	}

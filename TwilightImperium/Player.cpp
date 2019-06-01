@@ -340,31 +340,45 @@ void Player::SetCommandCounterPos(TupleInt pos)
 void Player::Save(TIParserNS::ListNode** playerNode) const
 {
 	*playerNode = new TIParserNS::ListNode(_race.GetRaceName());
+
+	//playerOrder
 	TIParserNS::ListNode* posInPlayerOrderNodeName = new TIParserNS::ListNode("playerOrder");
 	TIParserNS::ListNode* posInPlayerOrderNodeData = new TIParserNS::ListNode(_posInPlayerOrder);
 	posInPlayerOrderNodeName->SetChild(posInPlayerOrderNodeData);
-
 	(*playerNode)->SetChild(posInPlayerOrderNodeName);
-	
-	/*TIParserNS::ListNode planets("Planets");
-	TIParserNS::ListNode* previousPlanet = new TIParserNS::ListNode("");
-	planets.SetChild(previousPlanet);
+
+	//color
+	TIParserNS::ListNode* colorNodeName = new TIParserNS::ListNode("color");
+	TIParserNS::ListNode* colorNodeData = new TIParserNS::ListNode(_color);
+	colorNodeName->SetChild(colorNodeData);
+	posInPlayerOrderNodeName->SetNext(colorNodeName);
+
+	//homeSystem
+	TIParserNS::ListNode* homeSystemNodeName = new TIParserNS::ListNode("homeSystem");
+	TIParserNS::ListNode* homeSystemNodeData = _homeSystem.ToListNode();
+	homeSystemNodeName->SetChild(homeSystemNodeData);
+	colorNodeName->SetNext(homeSystemNodeName);
+
+	//Planets
+	TIParserNS::ListNode* planetsNode = new TIParserNS::ListNode("Planets");
+	homeSystemNodeName->SetNext(planetsNode);
+
 	std::map<std::string, PlanetContainer>::const_iterator it;
+	TIParserNS::ListNode* currentNode = new TIParserNS::ListNode("");
+	TIParserNS::ListNode* oldNode = NULL;
 	for (it = _planets.begin(); it != _planets.end(); it++)
 	{
-		TIParserNS::ListNode* tempNode = new TIParserNS::ListNode(it->second.GetPlanet()->GetName());
-		currentPlanet->SetNext(tempNode);
-		currentPlanet = tempNode;
+		currentNode = new TIParserNS::ListNode(it->second.GetPlanet()->GetName());
+		if (oldNode == NULL) //TODO kan man göra detta på ett snyggare sätt?
+		{
+			planetsNode->SetChild(currentNode);
+		}
+		else
+		{
+			oldNode->SetNext(currentNode);
+		}
+		oldNode = currentNode;
 	}
-	posInPlayerOrderNode.SetNext(&planets);*/
 
-	//return playerNode;
-
-	/*	_unitMap = player._unitMap;
-	_color = player._color;
-	_planets = player._planets;
-	_shipIndicator = player._shipIndicator;
-	_image = player._image;
-	_graphicalPos = player._graphicalPos;
-	_homeSystem = player._homeSystem;*/
+	//_unitMap = player._unitMap;
 }

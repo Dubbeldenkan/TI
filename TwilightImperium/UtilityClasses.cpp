@@ -45,3 +45,17 @@ TupleInt TupleInt::Division(double denominator) const
 	res.second = static_cast<int>(second / denominator);
 	return res;
 }
+
+TIParserNS::ListNode* TupleInt::ToListNode() const
+{
+	TIParserNS::ListNode* listNodeXName = new TIParserNS::ListNode("X");
+	TIParserNS::ListNode* listNodeXData = new TIParserNS::ListNode(first);
+	listNodeXName->SetChild(listNodeXData);
+
+	TIParserNS::ListNode* listNodeYName = new TIParserNS::ListNode("Y");
+	TIParserNS::ListNode* listNodeYData = new TIParserNS::ListNode(second);
+	listNodeYName->SetChild(listNodeYData);
+
+	listNodeXName->SetNext(listNodeYName);
+	return listNodeXName;
+}
