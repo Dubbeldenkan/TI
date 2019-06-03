@@ -47,7 +47,7 @@ bool UnitStack::AddUnits(std::string unitName, int numberOfUnits)
 	{
 		unitType = UnitStack::Dreadnought;
 	}
-	else if (unitName.compare("GroundForce") == 0) //TODO denna borde inte vara med här
+	else if (unitName.compare("GroundForce") == 0) //TODO denna borde inte vara med här eftersom att det egentligen inte är ett skepp
 	{
 		unitType = UnitStack::GroundForce;
 	}
@@ -101,4 +101,36 @@ int UnitStack::GetSum() const
 		sum += it->second;
 	}
 	return sum;
+}
+
+TIParserNS::ListNode* UnitStack::ToListNode(TIParserNS::ListNode* posListNode) const
+{
+	TIParserNS::ListNode* unitMapEntity = new TIParserNS::ListNode("unitMapEntity");
+	TIParserNS::ListNode* unitMapPos = new TIParserNS::ListNode("unitMapPos");
+	TIParserNS::ListNode* unitStackNode = new TIParserNS::ListNode("UnitStack");
+	TIParserNS::ListNode* currentNode = new TIParserNS::ListNode("");
+	TIParserNS::ListNode* oldNode = NULL;
+
+	std::map<UnitType, int>::const_iterator unitMapIt;
+	for (unitMapIt = _unitMap.begin(); unitMapIt != _unitMap.end(); unitMapIt++)
+	{
+		currentNode = new TIParserNS::ListNode(unitMapIt->first);
+		TIParserNS::ListNode* shipValue = new TIParserNS::ListNode(unitMapIt->second);
+		currentNode->SetChild(shipValue);
+		if (oldNode == NULL) //TODO kan man göra detta på ett snyggare sätt?
+		{
+			unitStackNode->SetChild(currentNode);
+		}
+		else
+		{
+			oldNode->SetNext(currentNode);
+		}
+		oldNode = currentNode;
+	}
+
+	unitMapEntity->SetChild(unitMapPos);
+	unitMapPos->SetChild(posListNode);
+	unitMapPos->SetNext(unitStackNode);
+
+	return unitMapEntity;
 }

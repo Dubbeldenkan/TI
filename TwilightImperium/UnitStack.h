@@ -22,6 +22,8 @@ public:
 	bool AddUnits(UnitType, int);
 	int GetSum() const;
 
+	TIParserNS::ListNode* ToListNode(TIParserNS::ListNode*) const;
+
 private:
 	std::map<UnitType, int> _unitMap;
 };

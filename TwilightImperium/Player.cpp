@@ -380,5 +380,24 @@ void Player::Save(TIParserNS::ListNode** playerNode) const
 		oldNode = currentNode;
 	}
 
-	//_unitMap = player._unitMap;
+	//unitMap
+	TIParserNS::ListNode* unitMapNode = new TIParserNS::ListNode("UnitMap");
+	planetsNode->SetNext(unitMapNode);
+
+	std::map<TupleInt, UnitStack>::const_iterator unitMapIt;
+	currentNode = new TIParserNS::ListNode("");
+	oldNode = NULL;
+	for (unitMapIt = _unitMap.begin(); unitMapIt != _unitMap.end(); unitMapIt++)
+	{
+		currentNode = unitMapIt->second.ToListNode(unitMapIt->first.ToListNode());
+		if (oldNode == NULL) //TODO kan man göra detta på ett snyggare sätt?
+		{
+			unitMapNode->SetChild(currentNode);
+		}
+		else
+		{
+			oldNode->SetNext(currentNode);
+		}
+		oldNode = currentNode;
+	}
 }
