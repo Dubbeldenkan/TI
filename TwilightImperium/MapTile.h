@@ -15,7 +15,7 @@ private:
 	TupleInt _tilePos;
 	TileType _tileType;
 	std::vector<Planet> _planets;
-	static const int _layerValue;
+	static const GameBoardObject::LayerEnum _layerValue;
 
 public:
 	MapTile();

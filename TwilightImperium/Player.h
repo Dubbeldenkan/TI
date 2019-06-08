@@ -56,7 +56,7 @@ private:
 
 	GraphicsNS::Image* _shipIndicator;
 	static const std::string _shipIndicatorPath;
-	static const int _layerValue = 0;
+	static const GameBoardObject::LayerEnum _layerValue = GameBoardObject::PlayerLayer;
 	const int _shipIndicatorSize = 10;
 
 	//TODO förbättra indikationen, byt ut mot en flagga

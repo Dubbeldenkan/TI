@@ -1,7 +1,7 @@
 #include "MapTile.h"
 
 const TupleInt MapTile::_tileSize = TupleInt(100, 86);
-const int MapTile::_layerValue = 0;
+const GameBoardObject::LayerEnum MapTile::_layerValue = GameBoardObject::SystemLayer;
 
 MapTile::MapTile()
 {}

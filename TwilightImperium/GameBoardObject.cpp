@@ -4,7 +4,7 @@ int GameBoardObject::_latestObjectId = 0;
 std::map<int, GameBoardObject*> GameBoardObject::_gameBoardObjects;
 GraphicsNS::Graphics* GameBoardObject::_g = NULL;
 GameBoardObject* GameBoardObject::_selectedObject = NULL;
-const int GameBoardObject::_numberOfLayers = 2;
+const int GameBoardObject::_numberOfLayers = 6;
 
 //Objects graphical position
 const TupleInt GameBoardObject::_gameMapPos = TupleInt(-60, 0);
@@ -15,12 +15,12 @@ const TupleInt GameBoardObject::_playerSheetSize = TupleInt(350, 120);
 
 const TupleInt GameBoardObject::_unitPosInTile = TupleInt(25, 60);
 
-GameBoardObject::GameBoardObject() : _layer(0), _objectId(++_latestObjectId)
+GameBoardObject::GameBoardObject() : _layer(LayerEnum::SystemLayer), _objectId(++_latestObjectId)
 {
 	_gameBoardObjects[_objectId] = this;
 }
 
-GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image* image, int layer) :
+GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image* image, LayerEnum layer) :
 	_layer(layer), _objectId(++_latestObjectId)
 {
 	_graphicalPos = graphicalPos;
@@ -28,7 +28,7 @@ GameBoardObject::GameBoardObject(TupleInt graphicalPos, GraphicsNS::Image* image
 	_gameBoardObjects[_objectId] = this;
 }
 
-GameBoardObject::GameBoardObject(TupleInt graphicalPos, TupleInt imageSize, std::string imagePath, int layer) :
+GameBoardObject::GameBoardObject(TupleInt graphicalPos, TupleInt imageSize, std::string imagePath, LayerEnum layer) :
 	_layer(layer), _objectId(++_latestObjectId)
 {
 	_graphicalPos = graphicalPos;
@@ -57,7 +57,7 @@ void GameBoardObject::DrawAllObjects()
 	{
 		if(_selectedObject == NULL || it->second->GetObjectID() != _selectedObject->GetObjectID())
 		{
-			layerVector[it->second->_layer].push_back(it->second);
+			layerVector[static_cast<int>(it->second->_layer)].push_back(it->second);
 		}
 	}
 	for (int layerCount = 0; layerCount < _numberOfLayers; layerCount++)
@@ -66,7 +66,7 @@ void GameBoardObject::DrawAllObjects()
 		{
 			layerVector[layerCount][vectorCount]->DrawObject();
 		}
-		if (_selectedObject != NULL && _selectedObject->_layer == layerCount)
+		if (_selectedObject != NULL && static_cast<int>(_selectedObject->_layer) == layerCount)
 		{
 			_selectedObject->DrawSelectedObject();
 		}

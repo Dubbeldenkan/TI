@@ -18,7 +18,7 @@ private:
 	TechnologySpeciality _technologySpeciality;
 
 	static const std::string _imagePath;
-	static const int _layerValue;
+	static const GameBoardObject::LayerEnum _layerValue;
 
 public:
 	Planet();

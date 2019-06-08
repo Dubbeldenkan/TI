@@ -2,7 +2,7 @@
 
 const TupleInt Planet::_imageSize = TupleInt(40, 40);
 const std::string Planet::_imagePath = "Map/Planet.png";
-const int Planet::_layerValue = 1;
+const GameBoardObject::LayerEnum Planet::_layerValue = GameBoardObject::PlanetLayer;
 
 Planet::Planet()
 {}

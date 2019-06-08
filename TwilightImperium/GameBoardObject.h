@@ -13,6 +13,7 @@ class GameBoardObject
 {
 
 protected:
+	enum LayerEnum { SystemLayer, PlanetLayer, PlayerLayer, CommandCounterLayer, MenuBG, MenuData};
 	TupleInt _graphicalPos;
 	float _scale = 1.0;
 	GraphicsNS::Image* _image;
@@ -20,8 +21,8 @@ protected:
 	static GraphicsNS::Graphics* _g;
 
 	static GameBoardObject* _selectedObject;
-	static const int _numberOfLayers;
-	const int _layer;
+	static const int _numberOfLayers; //TODO sätt denna beroende på antalet i LayerEnum
+	const LayerEnum _layer;
 
 	//Objects graphical position
 	static const TupleInt _gameMapPos;
@@ -54,8 +55,8 @@ public:
 
 protected:
 	GameBoardObject();
-	GameBoardObject(TupleInt, GraphicsNS::Image*, int);
-	GameBoardObject(TupleInt, TupleInt, std::string, int);
+	GameBoardObject(TupleInt, GraphicsNS::Image*, LayerEnum);
+	GameBoardObject(TupleInt, TupleInt, std::string, LayerEnum);
 	~GameBoardObject();
 
 	void SetImage(std::string, TupleInt);

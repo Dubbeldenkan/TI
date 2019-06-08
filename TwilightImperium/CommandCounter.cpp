@@ -2,7 +2,7 @@
 
 const TupleInt CommandCounter::_imageSize = TupleInt(20, 14);
 const std::string CommandCounter::_imagePath = "Race/CommandCounter.png";
-const int CommandCounter::_layerValue = 1;
+const GameBoardObject::LayerEnum CommandCounter::_layerValue = GameBoardObject::CommandCounterLayer;
 
 CommandCounter::CommandCounter(GraphicsNS::Graphics::Color color, TupleInt pos) : _color(color),
 	GameBoardObject(pos, _imageSize, _imagePath, _layerValue)

@@ -9,7 +9,7 @@ public:
 	static const TupleInt _imageSize;
 private:
 	static std::string _imagePath;
-	static const int _layerValue;
+	static const GameBoardObject::LayerEnum _layerValue;
 
 public:
 	PassButton();

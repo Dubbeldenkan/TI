@@ -10,7 +10,7 @@ private:
 
 	static const TupleInt _imageSize;
 	static const std::string _imagePath;
-	static const int _layerValue;
+	static const GameBoardObject::LayerEnum _layerValue;
 
 	const TupleInt _commandCounterPos[6] = { TupleInt(25, 0), TupleInt(55, 0), TupleInt(75, 35),
 		TupleInt(55, 70), TupleInt(25, 70), TupleInt(5, 35) };
