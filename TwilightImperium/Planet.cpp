@@ -71,7 +71,7 @@ void Planet::DrawObject()
 		GraphicsNS::Graphics::GREEN);
 	_g->PrintText8(_influenceValue, _graphicalPos.GetX() + static_cast<int>(_imageSize.GetX()*_scale) - 8,
 		_graphicalPos.GetY() + static_cast<int>(_imageSize.GetY()*_scale)/2, GraphicsNS::Graphics::RED);
-	_g->PrintText8(_name, _graphicalPos.GetX(),	_graphicalPos.GetY(), GraphicsNS::Graphics::WHITE);
+	_g->PrintText8(_name, _graphicalPos.GetX() + 6,	_graphicalPos.GetY() - 2, GraphicsNS::Graphics::WHITE); //TODO lägg till diff som variabler i klassen
 }
 
 Planet::~Planet()
