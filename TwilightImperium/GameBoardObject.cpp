@@ -10,6 +10,7 @@ const int GameBoardObject::_numberOfLayers = 6;
 const TupleInt GameBoardObject::_gameMapPos = TupleInt(-60, 0);
 const TupleInt GameBoardObject::_playerSheetPos = TupleInt(590, 0);
 const TupleInt GameBoardObject::_passButtonPos = TupleInt(960, 20);
+const TupleInt GameBoardObject::_menuPos = TupleInt(100, 100);
 
 const TupleInt GameBoardObject::_playerSheetSize = TupleInt(350, 120);
 

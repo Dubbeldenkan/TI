@@ -13,7 +13,7 @@ class GameBoardObject
 {
 
 protected:
-	enum LayerEnum { SystemLayer, PlanetLayer, PlayerLayer, CommandCounterLayer, MenuBG, MenuData};
+	enum LayerEnum { SystemLayer, PlanetLayer, PlayerLayer, CommandCounterLayer, MenuLayer};
 	TupleInt _graphicalPos;
 	float _scale = 1.0;
 	GraphicsNS::Image* _image;
@@ -28,6 +28,7 @@ protected:
 	static const TupleInt _gameMapPos;
 	static const TupleInt _unitPosInTile;
 	static const TupleInt _passButtonPos;
+	static const TupleInt _menuPos;
 	
 	static const TupleInt _playerSheetPos;
 	static const TupleInt _playerSheetSize;

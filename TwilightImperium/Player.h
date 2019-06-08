@@ -4,6 +4,7 @@
 #include "CommandCounter.h"
 #include "GameMap.h"
 #include "MapTile.h"
+#include "Menu.h"
 #include "PassButton.h"
 #include "Race.h"
 #include "TIParser.h"
@@ -40,6 +41,7 @@ private:
 	Race _race;
 	std::map<std::string, PlanetContainer> _planets;
 	TupleInt _homeSystem;
+	Menu _menu = Menu();
 
 	int _strategyAllocation = 2;
 	int _fleetSupply = 3;

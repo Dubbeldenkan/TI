@@ -362,9 +362,9 @@ namespace GraphicsNS
 		PrintText15((char*)buffer, xPos, yPos, color);
 	}
 
-	/*
-	xPos, yPos, xSize, ySize, Color
-	*/
+	///
+	///xPos, yPos, xSize, ySize, Color
+	///
 	void Graphics::DrawRectangle(int xPos, int yPos, int xSize, int ySize, Color color)
 	{
 		D3DCOLOR D3DColor = ConvertToD3DCOLOR(color);

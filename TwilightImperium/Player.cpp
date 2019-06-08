@@ -305,6 +305,7 @@ void Player::TacticalAction(GameBoardObject* gbo)
 	case Player::MOVE_SHIPS_INTO_THE_SYSTEM:
 		if (typeid(*gbo) == typeid(MapTile))
 		{
+			_menu.SetMenuState(Menu::MoveUnits);
 			MapTile* clickedSystem = static_cast<MapTile*>(gbo);
 			//TODO gör så att man kollar på movement för skeppen
 			if (_activatedSystem->CalculateDistanceToTile(clickedSystem) == 1)

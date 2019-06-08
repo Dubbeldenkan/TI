@@ -33,6 +33,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameBoard.h" />
     <ClInclude Include="GameBoardObject.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="PassButton.h" />
     <ClInclude Include="Race.h" />
     <ClInclude Include="UnitStack.h" />
@@ -56,6 +57,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="GameMap.cpp" />
     <ClCompile Include="MapTile.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="PassButton.cpp" />
     <ClCompile Include="Planet.cpp" />
     <ClCompile Include="Player.cpp" />
