@@ -204,6 +204,7 @@ void Game::SaveGame()
 
 void Game::CreateSaveNode(TIParserNS::ListNode* gameNode)
 {
+	// Players
 	TIParserNS::ListNode* playersNode = new TIParserNS::ListNode("Players");
 	gameNode->SetChild(playersNode);
 	TIParserNS::ListNode* currentNode = new TIParserNS::ListNode(""); //TODO är detta en poteentiell minnesläcka?
@@ -221,10 +222,24 @@ void Game::CreateSaveNode(TIParserNS::ListNode* gameNode)
 		}
 		oldNode = currentNode;
 	}
+
+	//Map
+	TIParserNS::ListNode* mapNode = new TIParserNS::ListNode("Map");
+	playersNode->SetNext(mapNode);
 }
 
 void Game::SaveToFile(TIParserNS::ListNode* gameToSave)
 {
-	std::string fileName = "test";
+	time_t rawtime = time(NULL);
+	struct tm timeInfo;
+	char buffer[80];
+
+	time(&rawtime);
+	localtime_s(&timeInfo, &rawtime);
+	strftime(buffer, sizeof(buffer), "%d-%m-%Y_%H-%M-%S", &timeInfo);
+
+	std::string fileName = "savedGame_";
+	fileName = fileName + buffer;
+
 	TIParserNS::TIParser::WriteToFile(gameToSave, fileName);
 }

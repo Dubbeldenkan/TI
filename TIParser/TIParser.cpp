@@ -79,8 +79,8 @@ namespace TIParserNS
 		str.erase(str.rfind('\\'));
 		str.erase(str.rfind('\\'));
 		std::string folderPath = str + "\\SavedGames\\";
-
 		std::string filePath = folderPath + fileName + fileType;
+
 		std::fstream file;
 		file.open(filePath, std::fstream::in | std::fstream::app);
 

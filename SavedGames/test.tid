@@ -826,3 +826,10 @@ Game
 		}
 	}
 }
+Game
+{
+	Players
+	{
+		Map
+	}
+}
