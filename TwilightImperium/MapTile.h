@@ -32,6 +32,7 @@ public:
 
 	const std::vector<Planet>* GetPlanets() const;
 	const Planet* GetPlanet(int) const;
+	TileType GetTileType() const;
 
 	int CalculateDistanceToTile(MapTile*) const;
 

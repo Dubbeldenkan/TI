@@ -34,6 +34,8 @@ public:
 
 	static TupleInt CalculateGraphicalPosForTile(TupleInt);
 
+	TIParserNS::ListNode* Save() const;
+
 private:
 	void CreateAllSystems();
 	MapTile CreateSystem(std::string);

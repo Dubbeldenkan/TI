@@ -40,3 +40,14 @@ void GameBoard::Run(Player* currentPlayer)
 {
 	_passButton.SetGraphicalPosBasedOnPlayer(currentPlayer->GetPosInPlayerOrder());
 }
+
+TIParserNS::ListNode* GameBoard::Save() const
+{
+	TIParserNS::ListNode* gameBoardNode = new TIParserNS::ListNode("GameBoard");
+
+	//Map
+	TIParserNS::ListNode* gameMapNode = _gameMap.Save();
+	gameBoardNode->SetChild(gameMapNode);
+	
+	return gameBoardNode;
+}

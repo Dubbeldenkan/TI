@@ -19,6 +19,7 @@ public:
 
 	void Draw();
 	void Run(Player*);
+	TIParserNS::ListNode* Save() const;
 
 	const std::map<TupleInt, MapTile>* GetMapMap() const;
 	static std::vector<GameBoardObject*> GetGameBoardObjectByPosition(TupleInt);

@@ -282,3 +282,55 @@ const std::map<TupleInt, MapTile>* GameMap::GetMap() const
 {
 	return &_map;
 }
+
+TIParserNS::ListNode* GameMap::Save() const
+{
+	TIParserNS::ListNode* gameMapNode = new TIParserNS::ListNode("GameMap");
+
+	TIParserNS::ListNode* currentNode = new TIParserNS::ListNode("");
+	TIParserNS::ListNode* oldNode = NULL;
+	
+	std::map<TupleInt, MapTile>::const_iterator it;
+	for (it = _map.begin(); it != _map.end(); it++)
+	{
+		currentNode = new TIParserNS::ListNode("MapTile");
+		TIParserNS::ListNode* mapPosHead = new TIParserNS::ListNode("MapPos");
+		TIParserNS::ListNode* mapPos = it->first.ToListNode();
+		mapPosHead->SetChild(mapPos);
+
+		TIParserNS::ListNode* systemType = new TIParserNS::ListNode(it->second.GetTileType());
+		currentNode->SetChild(mapPosHead);
+		mapPosHead->SetNext(systemType);
+
+		if (it->second.GetTileType() == MapTile::RegularSystem)
+		{
+			const std::vector<Planet>* planets = it->second.GetPlanets();
+			TIParserNS::ListNode* currentPlanetNode = new TIParserNS::ListNode(""); //TODO minnesläcka?
+			TIParserNS::ListNode* oldPlanetNode = NULL;
+			for (int planetCount = 0; planetCount < static_cast<int>(planets->size()); planetCount++)
+			{
+				currentPlanetNode = new TIParserNS::ListNode((planets->at(planetCount)).GetName());
+				if (oldPlanetNode == NULL) //TODO kan man göra detta på ett snyggare sätt?
+				{
+					systemType->SetChild(currentPlanetNode);
+				}
+				else
+				{
+					oldPlanetNode->SetNext(currentPlanetNode);
+				}
+				oldPlanetNode = currentPlanetNode;
+			}
+		}
+		if (oldNode == NULL) //TODO kan man göra detta på ett snyggare sätt?
+		{
+			gameMapNode->SetChild(currentNode);
+		}
+		else
+		{
+			oldNode->SetNext(currentNode);
+		}
+		oldNode = currentNode;
+	}
+
+	return gameMapNode;
+}

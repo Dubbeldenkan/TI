@@ -107,3 +107,8 @@ int MapTile::CalculateDistanceToTile(MapTile* mapTile) const
 	//TODO
 	return 1;
 }
+
+MapTile::TileType MapTile::GetTileType() const
+{
+	return _tileType;
+}

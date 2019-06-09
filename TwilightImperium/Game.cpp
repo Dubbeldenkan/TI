@@ -223,9 +223,9 @@ void Game::CreateSaveNode(TIParserNS::ListNode* gameNode)
 		oldNode = currentNode;
 	}
 
-	//Map
-	TIParserNS::ListNode* mapNode = new TIParserNS::ListNode("Map");
-	playersNode->SetNext(mapNode);
+	//Gameboard
+	TIParserNS::ListNode* gameBoardNode = _gameBoard.Save();
+	playersNode->SetNext(gameBoardNode);
 }
 
 void Game::SaveToFile(TIParserNS::ListNode* gameToSave)
