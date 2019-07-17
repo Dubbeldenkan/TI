@@ -56,6 +56,8 @@ private:
 	static const TupleInt _playerMetricDiffPos;
 	static const TupleInt _commandCounterMetricPos;
 
+	const std::string _playerSheetPath = "Race/PlayerSheet.png";
+
 	GraphicsNS::Image* _shipIndicator;
 	static const std::string _shipIndicatorPath;
 	static const GameBoardObject::LayerEnum _layerValue = GameBoardObject::PlayerLayer;
@@ -70,7 +72,9 @@ private:
 	SubActionState _subActionState = SubActionState::NONE;
 
 public:
-	Player(Race::RaceEnum, GraphicsNS::Graphics::Color, const std::map<TupleInt, MapTile>*, int);
+	Player(Race::RaceEnum, GraphicsNS::Graphics::Color, const GameMap*, int);
+	Player(TIParserNS::ListNode*, const GameMap*);
+
 	Player& operator=(const Player&);
 	Player(Player const&);
 	~Player();
@@ -90,7 +94,7 @@ public:
 
 private:
 	void CopyPlayer(Player const&);
-	void SetStartPlanets(TIParserNS::ListNode*, const std::map<TupleInt, MapTile>*);
+	void SetStartPlanets(TIParserNS::ListNode*, const GameMap*);
 	void SetStartUnits(TIParserNS::ListNode*);
 	void SetPlayerImage(TIParserNS::ListNode*);
 

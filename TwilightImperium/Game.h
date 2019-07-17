@@ -56,6 +56,9 @@ private:
 	void SaveGame();
 	void CreateSaveNode(TIParserNS::ListNode*);
 	void SaveToFile(TIParserNS::ListNode*);
+
+	void LoadGame();
+	TIParserNS::ListNode* LoadFromFile(std::string);
 };
 
 #endif // !GAME_H

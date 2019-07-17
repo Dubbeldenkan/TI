@@ -1,11 +1,5 @@
 #include "Race.h"
 
-const std::string BaronyOfLetnev::_dataFilePathValue = "BaronyOfLetnev";
-const std::string EmiratesOfHacan::_dataFilePathValue = "EmiratesOfHacan";
-const std::string FederationOfSol::_dataFilePathValue = "FederationOfSol";
-const std::string L1Z1XMindnet::_dataFilePathValue = "L1Z1XMindnet";
-const std::string MentakCoalition::_dataFilePathValue = "MentakCoalition";
-const std::string NaaluCollective::_dataFilePathValue = "NaaluCollective";
 
 const std::string BaronyOfLetnev::_raceNameValue = "The Barony of Letnev";
 const std::string EmiratesOfHacan::_raceNameValue = "The Emirates of Hacan";
@@ -14,18 +8,18 @@ const std::string L1Z1XMindnet::_raceNameValue = "The L1Z1X Mindnet";
 const std::string MentakCoalition::_raceNameValue = "The Mentak Coalition";
 const std::string NaaluCollective::_raceNameValue = "The Naalu Collective";
 
+const std::map<std::string, std::string> Race::_dataFilePathMap = Race::CreateRaceNameMap();
+
 Race::Race() 
 {}
 
-Race::Race(const std::string dataFilePath, const std::string raceName)
+Race::Race(const std::string raceName)
 {
 	_raceName = raceName;
-	_dataFilePath = dataFilePath;
 }
 
 Race &Race::operator=(const Race& race)
 {
-	_dataFilePath = race._dataFilePath;
 	_raceName = race._raceName;
 	return *this;
 }
@@ -65,7 +59,7 @@ Race Race::CreateRace(RaceEnum raceEnum)
 
 std::string Race::GetDataFilePath() const
 {
-	return _dataFilePath;
+	return _dataFilePathMap.at(_raceName);
 }
 
 std::string Race::GetRaceName() const
@@ -73,27 +67,40 @@ std::string Race::GetRaceName() const
 	return _raceName;
 }
 
+const std::map<std::string, std::string> Race::CreateRaceNameMap()
+{
+	std::map<std::string, std::string> map;
+	map[BaronyOfLetnev::_raceNameValue] = "BaronyOfLetnev";
+	map[EmiratesOfHacan::_raceNameValue] = "EmiratesOfHacan";
+	map[FederationOfSol::_raceNameValue] = "FederationOfSol";
+	map[L1Z1XMindnet::_raceNameValue] = "L1Z1XMindnet";
+	map[MentakCoalition::_raceNameValue] = "MentakCoalition";
+	map[NaaluCollective::_raceNameValue] = "NaaluCollective";
+
+	return map;
+}
+
 //TODO går detta att göra på ett snyggare sätt?
 BaronyOfLetnev::BaronyOfLetnev() : 
-	Race(_dataFilePathValue, _raceNameValue)
+	Race(_raceNameValue)
 {}
 
 EmiratesOfHacan::EmiratesOfHacan() :
-	Race(_dataFilePathValue, _raceNameValue)
+	Race(_raceNameValue)
 {}
 
 FederationOfSol::FederationOfSol() :
-	Race(_dataFilePathValue, _raceNameValue)
+	Race(_raceNameValue)
 {}
 
 L1Z1XMindnet::L1Z1XMindnet() :
-	Race(_dataFilePathValue, _raceNameValue)
+	Race(_raceNameValue)
 {}
 
 MentakCoalition::MentakCoalition() :
-	Race(_dataFilePathValue, _raceNameValue)
+	Race(_raceNameValue)
 {}
 
 NaaluCollective::NaaluCollective() :
-	Race(_dataFilePathValue, _raceNameValue)
+	Race(_raceNameValue)
 {}

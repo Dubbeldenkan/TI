@@ -2,12 +2,18 @@
 
 const TupleInt MapTile::_tileSize = TupleInt(100, 86);
 const GameBoardObject::LayerEnum MapTile::_layerValue = GameBoardObject::SystemLayer;
+const std::map<MapTile::TileType, std::string> MapTile::_systemNamePathMap = {
+	{MapTile::RegularSystem, "RegularSystem"},
+	{MapTile::HomeSystem, "HomeSystem"},
+	{MapTile::AstroidSystem, "AstroidSystem"},
+	{MapTile::SupernovaSystem, "SupernovaSystem"},
+	{MapTile::NebulaSystem, "NebulaSystem"} };
 
 MapTile::MapTile()
 {}
 
-MapTile::MapTile(MapTile::TileType tileType,  std::string imagePath) :
-	_tileType(tileType), GameBoardObject(TupleInt(0, 0), _tileSize, imagePath, _layerValue)
+MapTile::MapTile(MapTile::TileType tileType) :
+	_tileType(tileType), GameBoardObject(TupleInt(0, 0), _tileSize, "Map/" + _systemNamePathMap.at(tileType) + ".png", _layerValue)
 {}
 
 MapTile::MapTile(const MapTile &mapTile) : 
@@ -32,7 +38,8 @@ void MapTile::CopyMapTile(const MapTile& mapTile)
 }
 
 MapTile::~MapTile()
-{}
+{
+}
 
 TupleInt MapTile::GetTileSize()
 {
@@ -111,4 +118,20 @@ int MapTile::CalculateDistanceToTile(MapTile* mapTile) const
 MapTile::TileType MapTile::GetTileType() const
 {
 	return _tileType;
+}
+
+MapTile::TileType MapTile::GetSystemType(std::string systemTypeString)
+{
+	std::map<TileType, std::string>::const_iterator mapIt;
+	TileType tileType;
+
+	for (mapIt = _systemNamePathMap.begin(); mapIt != _systemNamePathMap.end(); mapIt++)
+	{
+		if (systemTypeString.compare(mapIt->second) == 0)
+		{
+			tileType = mapIt->first;
+			break;
+		}
+	}
+	return tileType;
 }

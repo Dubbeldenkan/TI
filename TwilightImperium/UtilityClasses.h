@@ -9,10 +9,11 @@ class TupleInt : public std::pair<int, int>
 {
 
 public:
-	TupleInt()
-	{}
-
+	TupleInt();
 	TupleInt(int, int);
+	TupleInt(TIParserNS::ListNode*);
+
+	~TupleInt();
 
 	int GetX() const;
 	int GetY() const;

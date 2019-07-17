@@ -30,11 +30,18 @@ public:
 
 	void CreateGameMap();
 	std::vector<MapTile*> GetNeighbourSystems(TupleInt);
-	const std::map<TupleInt, MapTile>* GetMap() const;
+
+	void CleanUpMap();
 
 	static TupleInt CalculateGraphicalPosForTile(TupleInt);
 
 	TIParserNS::ListNode* Save() const;
+	void Load(TIParserNS::ListNode*);
+
+	TupleInt GetSystemFromPlanetName(std::string) const;
+	const std::vector<Planet>* GetPlanetsFromSystem(TupleInt) const;
+
+	const Planet* GetPlanetFromName(std::string) const;
 
 private:
 	void CreateAllSystems();

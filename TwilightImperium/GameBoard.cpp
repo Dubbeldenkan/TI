@@ -7,6 +7,11 @@ GameBoard::GameBoard()
 	_passButton = PassButton();
 }
 
+void GameBoard::CleanUpGameBoard()
+{
+	_gameMap.CleanUpMap();
+}
+
 GameBoard::~GameBoard()
 {
 }
@@ -14,11 +19,6 @@ GameBoard::~GameBoard()
 void GameBoard::Draw()
 {
 	GameBoardObject::DrawAllObjects();
-}
-
-const std::map<TupleInt, MapTile>* GameBoard::GetMapMap() const
-{
-	return _gameMap.GetMap();
 }
 
 std::vector<GameBoardObject*> GameBoard::GetGameBoardObjectByPosition(TupleInt position)
@@ -50,4 +50,16 @@ TIParserNS::ListNode* GameBoard::Save() const
 	gameBoardNode->SetChild(gameMapNode);
 	
 	return gameBoardNode;
+}
+
+void GameBoard::Load(TIParserNS::ListNode* gameBoardNode)
+{
+	TIParserNS::ListNode* gameMapNode = NULL;
+	gameBoardNode->GetChild(&gameMapNode);
+	_gameMap.Load(gameMapNode);
+}
+
+const GameMap* GameBoard::GetGameMap() const
+{
+	return &_gameMap;
 }

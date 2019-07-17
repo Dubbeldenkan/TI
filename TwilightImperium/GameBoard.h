@@ -6,7 +6,6 @@
 #include "PassButton.h"
 #include "Player.h"
 
-#pragma once
 class GameBoard
 {
 private:
@@ -17,11 +16,14 @@ public:
 	GameBoard();
 	~GameBoard();
 
+	void CleanUpGameBoard();
 	void Draw();
 	void Run(Player*);
 	TIParserNS::ListNode* Save() const;
+	void Load(TIParserNS::ListNode*);
 
-	const std::map<TupleInt, MapTile>* GetMapMap() const;
+	const GameMap* GetGameMap() const;
+
 	static std::vector<GameBoardObject*> GetGameBoardObjectByPosition(TupleInt);
 };
 

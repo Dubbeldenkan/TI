@@ -12,6 +12,8 @@ public:
 	   
 private:
 	static const TupleInt _tileSize;
+	static const std::map<TileType, std::string> _systemNamePathMap;
+
 	TupleInt _tilePos;
 	TileType _tileType;
 	std::vector<Planet> _planets;
@@ -19,13 +21,15 @@ private:
 
 public:
 	MapTile();
-	MapTile(TileType, std::string);
+	MapTile(TileType);
 	
 	MapTile& operator=(const MapTile&);
 	MapTile(MapTile const&);
 	~MapTile();
 
 	static TupleInt GetTileSize();
+	static TileType GetSystemType(std::string);
+
 	void SetTilePos(int, int);
 	void AddPlanet(Planet*);
 	void SetPlanetsPositions();

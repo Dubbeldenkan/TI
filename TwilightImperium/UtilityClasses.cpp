@@ -1,7 +1,25 @@
 #include "UtilityClasses.h"
 
+TupleInt::TupleInt()
+{}
+
 TupleInt::TupleInt(int xIn, int yIn) :
 	std::pair<int, int>(xIn, yIn)
+{}
+
+TupleInt::TupleInt(TIParserNS::ListNode* listNode)
+{
+	TIParserNS::ListNode* xPos = NULL;
+	TIParserNS::ListNode* yPos = NULL;
+
+	listNode->GetChild(&xPos);
+	listNode->GetNext(&listNode);
+	listNode->GetChild(&yPos);
+	first = stoi(xPos->GetData());
+	second = stoi(yPos->GetData());
+}
+
+TupleInt::~TupleInt()
 {}
 
 int TupleInt::GetX() const

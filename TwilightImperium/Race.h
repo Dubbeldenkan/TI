@@ -2,18 +2,19 @@
 #define RACE_H
 
 #include <string>
+#include <map>
 
 class Race
 {
 public:
 	enum RaceEnum {BaronyOfLetnev, EmiratesOfHacan, FederationOfSol, L1Z1XMindnet, MentakCoalition, NaaluCollective};
 private:
-	std::string _dataFilePath;
+	static const std::map<std::string, std::string> _dataFilePathMap;
 	std::string _raceName;
 
 public:
 	Race();
-	Race(std::string, std::string);
+	Race(std::string);
 	Race &Race::operator=(const Race&);
 
 	~Race();
@@ -22,12 +23,13 @@ public:
 	std::string GetRaceName() const;
 
 	static Race CreateRace(RaceEnum);
+
+	static const std::map<std::string, std::string> CreateRaceNameMap();
 };
 
 class BaronyOfLetnev : public Race
 {
-private:
-	static const std::string _dataFilePathValue;
+public:
 	static const std::string _raceNameValue;
 public:
 	BaronyOfLetnev();
@@ -35,40 +37,35 @@ public:
 
 class EmiratesOfHacan : public Race
 {
-private:
-	static const std::string _dataFilePathValue;
+public:
 	static const std::string _raceNameValue;
 public: EmiratesOfHacan();
 };
 
 class FederationOfSol : public Race
 {
-private:
-	static const std::string _dataFilePathValue;
+public:
 	static const std::string _raceNameValue;
 public: FederationOfSol();
 };
 
 class L1Z1XMindnet: public Race
 {
-private:
-	static const std::string _dataFilePathValue;
+public:
 	static const std::string _raceNameValue;
 public: L1Z1XMindnet();
 };
 
 class MentakCoalition : public Race
 {
-private:
-	static const std::string _dataFilePathValue;
+public:
 	static const std::string _raceNameValue;
 public: MentakCoalition();
 };
 
 class NaaluCollective : public Race
 {
-private:
-	static const std::string _dataFilePathValue;
+public:
 	static const std::string _raceNameValue;
 public: NaaluCollective();
 };

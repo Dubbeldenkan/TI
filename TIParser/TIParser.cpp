@@ -7,16 +7,35 @@ namespace TIParserNS
 	TIParser::TIParser()
 	{};
 
-	ListNode* TIParser::ReadFile(std::string fileName)
+	std::string TIParser::GetLocalPath()
 	{
 		char tempPath[MAX_PATH];
 		GetModuleFileName(NULL, tempPath, MAX_PATH);
 		std::string str = std::string(tempPath);
 		str.erase(str.rfind('\\'));
 		str.erase(str.rfind('\\'));
-		std::string folderPath = str + "\\Data\\";
+		return str;
+	}
+
+	ListNode* TIParser::ReadDataFile(std::string fileName)
+	{
+		std::string folderPath = GetLocalPath() +"\\Data\\";
 
 		std::string filePath = folderPath + fileName + fileType;
+		return ReadFile(filePath);
+	}
+
+	ListNode* TIParser::ReadSaveFile(std::string fileName)
+	{
+		std::string folderPath = GetLocalPath() + "\\SavedGames\\";
+
+		std::string filePath = folderPath + fileName + fileType;
+		return ReadFile(filePath);
+	}
+
+	ListNode* TIParser::ReadFile(std::string filePath)
+	{
+
 		std::ifstream file;
 		file.open(filePath);
 

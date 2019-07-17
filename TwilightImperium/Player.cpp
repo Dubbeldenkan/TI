@@ -25,15 +25,15 @@ void PlanetContainer::UnsetExhausted()
 	_exhausted = false;
 }
 
-Player::Player(Race::RaceEnum raceType, GraphicsNS::Graphics::Color color, const std::map<TupleInt, MapTile>* map, int playerGraphicalPos) :
+Player::Player(Race::RaceEnum raceType, GraphicsNS::Graphics::Color color, const GameMap* gameMap, int playerGraphicalPos) :
 	GameBoardObject()
 {
 	_color = color;
 	_race = Race::CreateRace(raceType);
 	
-	TIParserNS::ListNode* raceData = TIParserNS::TIParser::ReadFile(_race.GetDataFilePath());
+	TIParserNS::ListNode* raceData = TIParserNS::TIParser::ReadDataFile(_race.GetDataFilePath());
 	raceData->GetChild(&raceData);
-	SetStartPlanets(raceData, map);
+	SetStartPlanets(raceData, gameMap);
 	raceData->GetNext(&raceData);
 	SetPlayerImage(raceData);
 	raceData->GetNext(&raceData);
@@ -42,6 +42,63 @@ Player::Player(Race::RaceEnum raceType, GraphicsNS::Graphics::Color color, const
 	_shipIndicator = _g->LoadImageFromFile(_shipIndicatorPath, _shipIndicatorSize, _shipIndicatorSize);
 
 	_posInPlayerOrder = playerGraphicalPos;
+	_graphicalPos = TupleInt(_playerSheetPos.GetX(), _playerSheetPos.GetY() + (_playerSheetSize.GetY()*_posInPlayerOrder));
+}
+
+Player::Player(TIParserNS::ListNode* playerToLoad, const GameMap* gameMap) :
+	GameBoardObject()
+{
+	_race = Race(playerToLoad->GetData());
+	_shipIndicator = _g->LoadImageFromFile(_shipIndicatorPath, _shipIndicatorSize, _shipIndicatorSize);
+	SetImage(_playerSheetPath, _playerSheetSize);
+
+	playerToLoad->GetChild(&playerToLoad);
+	TIParserNS::ListNode* valueNode = NULL;
+	do {
+		if (playerToLoad->GetData().compare("playerOrder") == 0) //TODO borde man göra detta mer generiskt för att inte råka ha stavfel?
+		{
+			playerToLoad->GetChild(&valueNode);
+			_posInPlayerOrder = stoi(valueNode->GetData());
+		}
+		else if (playerToLoad->GetData().compare("color") == 0)
+		{
+			playerToLoad->GetChild(&valueNode);
+			_color = static_cast<GraphicsNS::Graphics::Color>(stoi(valueNode->GetData()));
+		}
+		else if (playerToLoad->GetData().compare("homeSystem") == 0)
+		{
+			playerToLoad->GetChild(&valueNode);
+			_homeSystem = TupleInt(valueNode);
+		}
+		else if (playerToLoad->GetData().compare("Planets") == 0)
+		{
+			TIParserNS::ListNode* planet = NULL;
+			playerToLoad->GetChild(&planet);
+			do {
+				std::string planetName = planet->GetData();
+				_planets.insert(std::make_pair(planetName, PlanetContainer(gameMap->GetPlanetFromName(planetName))));
+			} while (!planet->GetNext(&planet));
+		}
+		else if (playerToLoad->GetData().compare("UnitMap") == 0)
+		{
+
+			TIParserNS::ListNode* unitMapEntity = NULL;
+			playerToLoad->GetChild(&unitMapEntity);
+			do
+			{
+				TIParserNS::ListNode* unitStackNode = NULL;
+				TIParserNS::ListNode* systemNode = NULL;
+
+				unitMapEntity->GetChild(&valueNode);
+				valueNode->GetChild(&systemNode);
+				TupleInt system = TupleInt(systemNode);
+				valueNode->GetNext(&unitStackNode);
+				_unitMap[system] = UnitStack(unitStackNode);
+
+			} while (!unitMapEntity->GetNext(&unitMapEntity));
+		}
+	} while (!playerToLoad->GetNext(&playerToLoad));
+
 	_graphicalPos = TupleInt(_playerSheetPos.GetX(), _playerSheetPos.GetY() + (_playerSheetSize.GetY()*_posInPlayerOrder));
 }
 
@@ -73,38 +130,19 @@ void Player::CopyPlayer(const Player& player)
 Player::~Player()
 {}
 
-void Player::SetStartPlanets(TIParserNS::ListNode* startPlanets, const std::map<TupleInt, MapTile>* gameMap)
+void Player::SetStartPlanets(TIParserNS::ListNode* startPlanets, const GameMap* gameMap)
 {
 	TIParserNS::ListNode* planet = NULL;
 	startPlanets->GetChild(&planet);
-	bool systemFound = false;
-	do
+	std::string planetName = planet->GetData();
+	_homeSystem = gameMap->GetSystemFromPlanetName(planetName);
+
+	const std::vector<Planet>* systemPlanets = gameMap->GetPlanetsFromSystem(_homeSystem);
+	for (int planetCount = 0; planetCount < static_cast<int>(systemPlanets->size()); planetCount++)
 	{
-		std::map<TupleInt, MapTile>::const_iterator mapIt;
-		std::string planetName = planet->GetData();
-		for (mapIt = gameMap->begin(); mapIt != gameMap->end(); mapIt++)
-		{
-			const std::vector<Planet>* systemPlanets = mapIt->second.GetPlanets();
-			for(int planetCount = 0; planetCount < static_cast<int>(systemPlanets->size()); planetCount++)
-			{
-				if (planetName.compare(mapIt->second.GetPlanet(planetCount)->GetName()) == 0)
-				{
-					_homeSystem = mapIt->first;
-					systemFound = true;
-					break;
-				}
-			}
-			if (systemFound)
-			{
-				for (int planetCount = 0; planetCount < static_cast<int>(systemPlanets->size()); planetCount++)
-				{
-					const Planet* planet = mapIt->second.GetPlanet(planetCount);
-					_planets.insert(std::make_pair(planet->GetName(), PlanetContainer(planet)));
-				}
-				break;
-			}
-		}
-	} while (!planet->GetNext(&planet) && !systemFound);
+		const Planet* planet = &(systemPlanets->at(planetCount));
+		_planets.insert(std::make_pair(planet->GetName(), PlanetContainer(planet)));
+	}
 }
 
 void Player::SetPlayerImage(TIParserNS::ListNode* listNode)

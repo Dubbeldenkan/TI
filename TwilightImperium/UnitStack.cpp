@@ -8,6 +8,19 @@ UnitStack::UnitStack(const UnitStack& unitStack)
 	CopyUnitStack(unitStack);
 }
 
+UnitStack::UnitStack(TIParserNS::ListNode* listNode)
+{
+	TIParserNS::ListNode* valueNode;
+	TIParserNS::ListNode* unitTypeNode;
+
+	listNode->GetChild(&unitTypeNode);
+	do{
+		UnitType unitType = static_cast<UnitType>(stoi(unitTypeNode->GetData()));
+		unitTypeNode->GetChild(&valueNode);
+		_unitMap[unitType] = stoi(valueNode->GetData());
+	} while (unitTypeNode->GetNext(&unitTypeNode));
+}
+
 UnitStack& UnitStack::operator=(const UnitStack& unitStack)
 {
 	CopyUnitStack(unitStack);

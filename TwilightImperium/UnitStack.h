@@ -13,6 +13,7 @@ public:
 public:
 	UnitStack();
 	UnitStack(const UnitStack&);
+	UnitStack(TIParserNS::ListNode*);
 	UnitStack& operator=(const UnitStack&);
 	void CopyUnitStack(const UnitStack&);
 	~UnitStack();

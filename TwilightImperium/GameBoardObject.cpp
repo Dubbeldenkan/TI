@@ -135,3 +135,15 @@ void GameBoardObject::DrawSelectedObject()
 	_g->DrawWithColor(_image, xPos, yPos, GraphicsNS::Graphics::BLUE, _selectecObjectScalingFactor);
 	DrawObject();
 }
+
+/*void GameBoardObject::CleanUpGameObjectMap()
+{
+	//TODO ta bort funktionen, den ska inte användas. 
+	while (_gameBoardObjects.size() > 0)
+	{
+		std::map<int, GameBoardObject*>::iterator it;
+		it = _gameBoardObjects.begin();
+		it->second->~GameBoardObject();
+	}
+
+}*/

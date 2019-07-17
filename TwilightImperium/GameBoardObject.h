@@ -54,11 +54,14 @@ public:
 	void SetImageScale(float);
 	void Save(TIParserNS::ListNode**) const;
 
+	//TODO ska denna funktion vara så lätt att nå? Behövs funktionen?
+	//static void CleanUpGameObjectMap(); 
+
 protected:
 	GameBoardObject();
 	GameBoardObject(TupleInt, GraphicsNS::Image*, LayerEnum);
 	GameBoardObject(TupleInt, TupleInt, std::string, LayerEnum);
-	~GameBoardObject();
+	virtual ~GameBoardObject();
 
 	void SetImage(std::string, TupleInt);
 	virtual void DrawObject();

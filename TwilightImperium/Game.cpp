@@ -23,8 +23,9 @@ void Game::Run()
 	}
 	else if (_loadGame)
 	{
-		//TODO ladda ett spel här
+		LoadGame();
 	}
+
 	//TODO ändra till ett lämpligt villkor
 	else if (true)
 	{
@@ -99,12 +100,12 @@ void Game::SetLoadGame()
 
 void Game::InitGame()
 {
-	_players.push_back(Player(Race::BaronyOfLetnev, GraphicsNS::Graphics::RED, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::EmiratesOfHacan, GraphicsNS::Graphics::BLUE, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::FederationOfSol, GraphicsNS::Graphics::PURPLE, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::L1Z1XMindnet, GraphicsNS::Graphics::YELLOW, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::MentakCoalition, GraphicsNS::Graphics::GREEN, _gameBoard.GetMapMap(), _players.size()));
-	_players.push_back(Player(Race::NaaluCollective, GraphicsNS::Graphics::WHITE, _gameBoard.GetMapMap(), _players.size()));
+	_players.push_back(Player(Race::BaronyOfLetnev, GraphicsNS::Graphics::RED, _gameBoard.GetGameMap(), _players.size()));
+	_players.push_back(Player(Race::EmiratesOfHacan, GraphicsNS::Graphics::BLUE, _gameBoard.GetGameMap(), _players.size()));
+	_players.push_back(Player(Race::FederationOfSol, GraphicsNS::Graphics::PURPLE, _gameBoard.GetGameMap(), _players.size()));
+	_players.push_back(Player(Race::L1Z1XMindnet, GraphicsNS::Graphics::YELLOW, _gameBoard.GetGameMap(), _players.size()));
+	_players.push_back(Player(Race::MentakCoalition, GraphicsNS::Graphics::GREEN, _gameBoard.GetGameMap(), _players.size()));
+	_players.push_back(Player(Race::NaaluCollective, GraphicsNS::Graphics::WHITE, _gameBoard.GetGameMap(), _players.size()));
 	
 	_currentPlayer = &_players[rand() % _players.size()];
 
@@ -204,9 +205,13 @@ void Game::SaveGame()
 
 void Game::CreateSaveNode(TIParserNS::ListNode* gameNode)
 {
+	//Gameboard
+	TIParserNS::ListNode* gameBoardNode = _gameBoard.Save();
+	gameNode->SetChild(gameBoardNode);
+
 	// Players
 	TIParserNS::ListNode* playersNode = new TIParserNS::ListNode("Players");
-	gameNode->SetChild(playersNode);
+	gameBoardNode->SetNext(playersNode);
 	TIParserNS::ListNode* currentNode = new TIParserNS::ListNode(""); //TODO är detta en poteentiell minnesläcka?
 	TIParserNS::ListNode* oldNode = NULL;
 	for (int playerCount = 0; playerCount < static_cast<int>(_players.size()); playerCount++)
@@ -222,10 +227,6 @@ void Game::CreateSaveNode(TIParserNS::ListNode* gameNode)
 		}
 		oldNode = currentNode;
 	}
-
-	//Gameboard
-	TIParserNS::ListNode* gameBoardNode = _gameBoard.Save();
-	playersNode->SetNext(gameBoardNode);
 }
 
 void Game::SaveToFile(TIParserNS::ListNode* gameToSave)
@@ -242,4 +243,38 @@ void Game::SaveToFile(TIParserNS::ListNode* gameToSave)
 	fileName = fileName + buffer;
 
 	TIParserNS::TIParser::WriteToFile(gameToSave, fileName);
+}
+
+void Game::LoadGame()
+{
+	//TODO det verkar vara en minnesförlust när man laddar. Varje gång man gör det ökar ram med 4 MB
+	_loadGame = false;
+	_gameBoard.CleanUpGameBoard();
+	_players.clear();
+	//GameBoardObject::CleanUpGameObjectMap(); //TODO ta bort anropet
+
+	TIParserNS::ListNode* loadedGame = LoadFromFile("savedGame_12-07-2019_10-15-29"); //TODO gör så att man kan välja fil
+
+	//Gameboard
+	TIParserNS::ListNode* gameBoardNode = NULL;
+	loadedGame->GetChild(&gameBoardNode);
+	_gameBoard.Load(gameBoardNode);
+	
+	// Players
+	TIParserNS::ListNode* players = NULL;
+	TIParserNS::ListNode* player = NULL;
+	gameBoardNode->GetNext(&players);
+	
+	players->GetChild(&player);
+	int playerCounter = 0;
+	do
+	{
+		_players.push_back(Player(player, _gameBoard.GetGameMap()));
+		//_players[playerCounter++].Load(player, _gameBoard.GetGameMap());
+	} while (!player->GetNext(&player));
+}
+
+TIParserNS::ListNode* Game::LoadFromFile(std::string fileName)
+{
+	return TIParserNS::TIParser::ReadSaveFile(fileName);
 }
