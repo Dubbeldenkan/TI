@@ -19,9 +19,8 @@ GameMap::~GameMap()
 void GameMap::CreateGameMap()
 {
 	CreateAllSystems();
+	AddMecatolRexToMap();
 	RemoveRandomTiles();
-
-	CreateAndAddMecatolRex();
 
 	for (int r = 1; r <= _numberOfLayers; r++)
 	{
@@ -42,20 +41,40 @@ void GameMap::CreateGameMap()
 	_allSystemVector.clear();
 }
 
-void GameMap::CreateAndAddMecatolRex()
+void GameMap::AddMecatolRexToMap()
 {
-	MapTile tempSystem;
-	tempSystem = MapTile(MapTile::RegularSystem);
-	std::string planetName = "Mecatol Rex";
-	int resourceValue = 1;
-	int influenceValue = 6;
-	std::string techSpec = "None";
-	tempSystem.SetGraphicalPos(CalculateGraphicalPosForTile(0, 0));
+	std::string MecatolRexName = "Mecatol Rex";
+	bool mecatolRexFound = false;
+	
+	std::vector<MapTile>::iterator it;
+	for (it = _allSystemVector.begin(); it != _allSystemVector.end(); it++)
+	{
+		const std::vector<Planet>* systemPlanets = it ->GetPlanets();
 
-	tempSystem.AddPlanet(&Planet(planetName, resourceValue, influenceValue, techSpec));
-	tempSystem.SetPlanetsPositions();
-	tempSystem.SetTilePos(0, 0);
-	_map.insert(std::make_pair(TupleInt(0, 0), tempSystem));
+		if (0 < static_cast<int>(systemPlanets->size()))
+		{
+			const Planet firstPlanet = systemPlanets->at(0);
+			if (firstPlanet.GetName().compare(MecatolRexName) == 0)
+			{
+				int resourceValue = firstPlanet.GetResources();
+				int influenceValue = firstPlanet.GetInfluence();
+
+				MapTile tempSystem = MapTile(MapTile::RegularSystem);
+				tempSystem.AddPlanet(&Planet(MecatolRexName, resourceValue, influenceValue, "None"));
+				tempSystem.SetGraphicalPos(CalculateGraphicalPosForTile(0, 0));
+				tempSystem.SetPlanetsPositions();
+				_map.insert(std::make_pair(TupleInt(0, 0), tempSystem));
+				_allSystemVector.erase(it);
+				mecatolRexFound = true;
+				break;
+			}
+		}
+	}
+
+	if (!mecatolRexFound)
+	{
+		OutputDebugString(std::string("Unable to open Mecatol Rex in System.tid").c_str());
+	}
 }
 
 void GameMap::CreateAllSystems()
@@ -310,7 +329,6 @@ TIParserNS::ListNode* GameMap::Save() const
 
 void GameMap::Load(TIParserNS::ListNode* gameMapNode)
 {
-	//TODO fixa mecatol rex
 	TIParserNS::ListNode* mapTileNode = NULL;
 	gameMapNode->GetChild(&mapTileNode);
 

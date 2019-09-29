@@ -55,6 +55,10 @@ Game
 					}
 				}
 				0
+				{
+					Arnor
+					Lor
+				}
 			}
 			MapTile
 			{
@@ -69,11 +73,7 @@ Game
 						120
 					}
 				}
-				0
-				{
-					Lazar
-					Sakulag
-				}
+				2
 			}
 			MapTile
 			{
@@ -89,6 +89,9 @@ Game
 					}
 				}
 				0
+				{
+					Lodor
+				}
 			}
 			MapTile
 			{
@@ -104,6 +107,9 @@ Game
 					}
 				}
 				0
+				{
+					Mehar Xull
+				}
 			}
 			MapTile
 			{
@@ -116,6 +122,81 @@ Game
 					Y
 					{
 						300
+					}
+				}
+				0
+			}
+			MapTile
+			{
+				MapPos
+				{
+					X
+					{
+						2
+					}
+					Y
+					{
+						0
+					}
+				}
+				0
+			}
+			MapTile
+			{
+				MapPos
+				{
+					X
+					{
+						2
+					}
+					Y
+					{
+						30
+					}
+				}
+				0
+			}
+			MapTile
+			{
+				MapPos
+				{
+					X
+					{
+						2
+					}
+					Y
+					{
+						60
+					}
+				}
+				3
+			}
+			MapTile
+			{
+				MapPos
+				{
+					X
+					{
+						2
+					}
+					Y
+					{
+						90
+					}
+				}
+				0
+			}
+			MapTile
+			{
+				MapPos
+				{
+					X
+					{
+						2
+					}
+					Y
+					{
+						120
 					}
 				}
 				0
@@ -133,95 +214,13 @@ Game
 					}
 					Y
 					{
-						0
-					}
-				}
-				0
-				{
-					Arinam
-					Meer
-				}
-			}
-			MapTile
-			{
-				MapPos
-				{
-					X
-					{
-						2
-					}
-					Y
-					{
-						30
-					}
-				}
-				0
-				{
-					Lodor
-				}
-			}
-			MapTile
-			{
-				MapPos
-				{
-					X
-					{
-						2
-					}
-					Y
-					{
-						60
-					}
-				}
-				0
-			}
-			MapTile
-			{
-				MapPos
-				{
-					X
-					{
-						2
-					}
-					Y
-					{
-						90
-					}
-				}
-				0
-				{
-					Thibah
-				}
-			}
-			MapTile
-			{
-				MapPos
-				{
-					X
-					{
-						2
-					}
-					Y
-					{
-						120
-					}
-				}
-				2
-			}
-			MapTile
-			{
-				MapPos
-				{
-					X
-					{
-						2
-					}
-					Y
-					{
 						150
 					}
 				}
 				0
+				{
+					Tar'mann
+				}
 			}
 			MapTile
 			{
@@ -236,11 +235,7 @@ Game
 						180
 					}
 				}
-				0
-				{
-					Coorneeq
-					Resculon
-				}
+				2
 			}
 			MapTile
 			{
@@ -253,6 +248,24 @@ Game
 					Y
 					{
 						210
+					}
+				}
+				0
+				{
+					Quann
+				}
+			}
+			MapTile
+			{
+				MapPos
+				{
+					X
+					{
+						2
+					}
+					Y
+					{
+						240
 					}
 				}
 				0
@@ -270,28 +283,13 @@ Game
 					}
 					Y
 					{
-						240
-					}
-				}
-				0
-			}
-			MapTile
-			{
-				MapPos
-				{
-					X
-					{
-						2
-					}
-					Y
-					{
 						270
 					}
 				}
 				0
 				{
-					New Albion
-					Starpoint
+					Dal Bootha
+					Xxehan
 				}
 			}
 			MapTile
@@ -307,7 +305,11 @@ Game
 						300
 					}
 				}
-				2
+				0
+				{
+					Centuri
+					Gral
+				}
 			}
 			MapTile
 			{
@@ -341,9 +343,11 @@ Game
 						0
 					}
 				}
-				0
+				1
 				{
-					Moll Primus
+					Arretze
+					Hercant
+					Kamdorn
 				}
 			}
 			MapTile
@@ -360,6 +364,10 @@ Game
 					}
 				}
 				0
+				{
+					Lazar
+					Sakulag
+				}
 			}
 			MapTile
 			{
@@ -376,7 +384,8 @@ Game
 				}
 				0
 				{
-					Mehar Xull
+					Coorneeq
+					Resculon
 				}
 			}
 			MapTile
@@ -392,9 +401,9 @@ Game
 						60
 					}
 				}
-				0
+				1
 				{
-					Jord
+					Moll Primus
 				}
 			}
 			MapTile
@@ -410,7 +419,11 @@ Game
 						80
 					}
 				}
-				2
+				0
+				{
+					New Albion
+					Starpoint
+				}
 			}
 			MapTile
 			{
@@ -427,7 +440,8 @@ Game
 				}
 				0
 				{
-					Vefut II
+					Arinam
+					Meer
 				}
 			}
 			MapTile
@@ -443,9 +457,9 @@ Game
 						120
 					}
 				}
-				0
+				1
 				{
-					[0,0,0]
+					Jord
 				}
 			}
 			MapTile
@@ -462,10 +476,6 @@ Game
 					}
 				}
 				0
-				{
-					Arnor
-					Lor
-				}
 			}
 			MapTile
 			{
@@ -480,10 +490,7 @@ Game
 						160
 					}
 				}
-				0
-				{
-					Quann
-				}
+				2
 			}
 			MapTile
 			{
@@ -498,11 +505,10 @@ Game
 						180
 					}
 				}
-				0
+				1
 				{
-					Arretze
-					Hercant
-					Kamdorn
+					Wren Terra
+					Arc Prime
 				}
 			}
 			MapTile
@@ -520,8 +526,8 @@ Game
 				}
 				0
 				{
-					Abyz
-					Fria
+					Mellon
+					Zohbat
 				}
 			}
 			MapTile
@@ -537,7 +543,7 @@ Game
 						220
 					}
 				}
-				4
+				0
 			}
 			MapTile
 			{
@@ -552,10 +558,9 @@ Game
 						240
 					}
 				}
-				0
+				1
 				{
-					Wren Terra
-					Arc Prime
+					[0,0,0]
 				}
 			}
 			MapTile
@@ -573,8 +578,7 @@ Game
 				}
 				0
 				{
-					Centuri
-					Gral
+					Thibah
 				}
 			}
 			MapTile
@@ -590,7 +594,11 @@ Game
 						280
 					}
 				}
-				3
+				0
+				{
+					Tequ'ran
+					Torkan
+				}
 			}
 			MapTile
 			{
@@ -605,7 +613,7 @@ Game
 						300
 					}
 				}
-				0
+				1
 				{
 					Maaluuk
 					Druaa
@@ -624,11 +632,7 @@ Game
 						320
 					}
 				}
-				0
-				{
-					Dal Bootha
-					Xxehan
-				}
+				4
 			}
 			MapTile
 			{
@@ -644,10 +648,6 @@ Game
 					}
 				}
 				0
-				{
-					Tequ'ran
-					Torkan
-				}
 			}
 		}
 	}
@@ -671,7 +671,7 @@ Game
 				}
 				Y
 				{
-					240
+					180
 				}
 			}
 			Planets
@@ -691,7 +691,7 @@ Game
 						}
 						Y
 						{
-							240
+							180
 						}
 					}
 					UnitStack
@@ -738,7 +738,7 @@ Game
 				}
 				Y
 				{
-					180
+					0
 				}
 			}
 			Planets
@@ -759,7 +759,7 @@ Game
 						}
 						Y
 						{
-							180
+							0
 						}
 					}
 					UnitStack
@@ -806,7 +806,7 @@ Game
 				}
 				Y
 				{
-					60
+					120
 				}
 			}
 			Planets
@@ -825,7 +825,7 @@ Game
 						}
 						Y
 						{
-							60
+							120
 						}
 					}
 					UnitStack
@@ -868,7 +868,7 @@ Game
 				}
 				Y
 				{
-					120
+					240
 				}
 			}
 			Planets
@@ -887,7 +887,7 @@ Game
 						}
 						Y
 						{
-							120
+							240
 						}
 					}
 					UnitStack
@@ -938,7 +938,7 @@ Game
 				}
 				Y
 				{
-					0
+					60
 				}
 			}
 			Planets
@@ -957,7 +957,7 @@ Game
 						}
 						Y
 						{
-							0
+							60
 						}
 					}
 					UnitStack

@@ -251,9 +251,8 @@ void Game::LoadGame()
 	_loadGame = false;
 	_gameBoard.CleanUpGameBoard();
 	_players.clear();
-	//GameBoardObject::CleanUpGameObjectMap(); //TODO ta bort anropet
 
-	TIParserNS::ListNode* loadedGame = LoadFromFile("savedGame_12-07-2019_10-15-29"); //TODO gör så att man kan välja fil
+	TIParserNS::ListNode* loadedGame = LoadFromFile("savedGame_29-09-2019_22-44-33"); //TODO gör så att man kan välja fil
 
 	//Gameboard
 	TIParserNS::ListNode* gameBoardNode = NULL;

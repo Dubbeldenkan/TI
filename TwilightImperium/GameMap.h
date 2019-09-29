@@ -47,7 +47,7 @@ private:
 	void CreateAllSystems();
 	MapTile CreateSystem(std::string);
 	void Add2Map(int, int);
-	void CreateAndAddMecatolRex();
+	void AddMecatolRexToMap();
 	void RemoveRandomTiles();
 
 	static double degCos(int);
