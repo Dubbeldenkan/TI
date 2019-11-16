@@ -85,10 +85,18 @@ bool UnitStack::AddUnits(std::string unitName, int numberOfUnits)
 
 bool UnitStack::AddUnits(UnitStack::UnitType unitType, int numberOfUnits)
 {
-	bool stackEmpty = false;
+	bool stackEmpty = true;
 	if (static_cast<bool>(_unitMap.count(unitType)))
 	{
-		_unitMap[unitType] = _unitMap[unitType] + numberOfUnits;
+		if (numberOfUnits < 0 && (_unitMap[unitType] < (-1)*numberOfUnits))
+		{
+			stackEmpty = true;
+		}
+		else
+		{
+			_unitMap[unitType] = _unitMap[unitType] + numberOfUnits;
+			stackEmpty = false;
+		}
 	}
 	else
 	{
@@ -97,12 +105,16 @@ bool UnitStack::AddUnits(UnitStack::UnitType unitType, int numberOfUnits)
 	if (_unitMap[unitType] == 0)
 	{
 		_unitMap.erase(unitType);
-		if (_unitMap.size() == 0)
-		{
-			stackEmpty = true;
-		}
 	}
-	return stackEmpty;
+	return !stackEmpty;
+}
+
+void UnitStack::AddUnits(UnitStack* unitStack)
+{
+	for (int counter = 0; counter < _numberOfUnitsTypes; counter++)
+	{
+		_unitMap[static_cast<UnitType>(counter)] += unitStack->GetAmountOfAUnitType(static_cast<UnitType>(counter));
+	}
 }
 
 int UnitStack::GetSum() const
@@ -146,4 +158,27 @@ TIParserNS::ListNode* UnitStack::ToListNode(TIParserNS::ListNode* posListNode) c
 	unitMapPos->SetNext(unitStackNode);
 
 	return unitMapEntity;
+}
+
+int UnitStack::GetNumberOfUnitsTypes() const
+{
+	return _numberOfUnitsTypes;
+}
+
+int UnitStack::GetAmountOfAUnitType(UnitType unitType)
+{
+	return _unitMap[unitType];
+}
+
+std::string UnitStack::GetUnitString(UnitType unitType)
+{
+	return unitStrings[static_cast<int>(unitType)];
+}
+
+void UnitStack::Reset()
+{
+	for (int counter = 0; counter < _numberOfUnitsTypes; counter++)
+	{
+		_unitMap[static_cast<UnitType>(counter)] = 0;
+	}
 }

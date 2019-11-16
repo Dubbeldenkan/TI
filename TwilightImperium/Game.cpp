@@ -181,7 +181,10 @@ void Game::MouseClicked(TupleInt mouseClickedPos)
 	for (int vectorCount = 0; vectorCount < static_cast<int>(clickedObjects.size()); vectorCount++)
 	{
 		GameBoardObject* object = clickedObjects[vectorCount];
-		_currentPlayer->Action(object);
+		if (_currentPlayer->Action(object, mouseClickedPos))
+		{
+			break;
+		}
 	}
 }
 

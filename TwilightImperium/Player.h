@@ -87,7 +87,7 @@ public:
 	ActionState GetActionState() const;
 	SubActionState GetSubActionState() const;
 	
-	void Action(GameBoardObject*);
+	bool Action(GameBoardObject*, TupleInt);
 	void Save(TIParserNS::ListNode**) const;
 
 	void SetCommandCounterPos(TupleInt);
@@ -107,8 +107,8 @@ private:
 	int CalculateResources();
 	int CalculateInfluence();
 
-	void StartAction(GameBoardObject*);
-	void TacticalAction(GameBoardObject*);
+	bool StartAction(GameBoardObject*);
+	bool TacticalAction(GameBoardObject*, TupleInt);
 };
 
 #endif // !PLAYER_H

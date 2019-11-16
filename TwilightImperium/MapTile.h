@@ -30,6 +30,7 @@ public:
 	static TupleInt GetTileSize();
 	static TileType GetSystemType(std::string);
 
+	TupleInt GetTilePos() const;
 	void SetTilePos(int, int);
 	void AddPlanet(Planet*);
 	void SetPlanetsPositions();

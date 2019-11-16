@@ -135,3 +135,8 @@ MapTile::TileType MapTile::GetSystemType(std::string systemTypeString)
 	}
 	return tileType;
 }
+
+TupleInt MapTile::GetTilePos() const
+{
+	return _tilePos;
+}

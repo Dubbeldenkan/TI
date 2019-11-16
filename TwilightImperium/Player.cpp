@@ -197,9 +197,12 @@ void Player::DrawUnits()
 	for (it = _unitMap.begin(); it != _unitMap.end(); it++)
 	{
 		int numberOfShips = it->second.GetSum();
-		TupleInt graphicalPos = GameMap::CalculateGraphicalPosForTile(it->first) + _unitPosInTile;
-		_g->DrawWithColor(_shipIndicator, graphicalPos.GetX(), graphicalPos.GetY(), _color);
-		_g->PrintText15(numberOfShips, graphicalPos.GetX() + _shipIndicator->GetXSize(), graphicalPos.GetY(), _color);
+		if (0 < numberOfShips)
+		{
+			TupleInt graphicalPos = GameMap::CalculateGraphicalPosForTile(it->first) + _unitPosInTile;
+			_g->DrawWithColor(_shipIndicator, graphicalPos.GetX(), graphicalPos.GetY(), _color);
+			_g->PrintText15(numberOfShips, graphicalPos.GetX() + _shipIndicator->GetXSize(), graphicalPos.GetY(), _color);
+		}
 	}
 }
 
@@ -288,26 +291,30 @@ Player::SubActionState Player::GetSubActionState() const
 	return _subActionState;
 }
 
-void Player::Action(GameBoardObject* gbo)
+bool Player::Action(GameBoardObject* gbo, TupleInt clickedPos)
 {
+	bool actionTaken = false;
 	switch (_actionState)
 	{
 	case Player::START_ACTION:
-		StartAction(gbo);
+		actionTaken = StartAction(gbo);
 		break;
 	case Player::TACTICAL_ACTION:
-		TacticalAction(gbo);
+		actionTaken = TacticalAction(gbo, clickedPos);
 		break;
 	default:
 		break;
 	}
+	return actionTaken;
 }
 
-void Player::StartAction(GameBoardObject* gbo)
+bool Player::StartAction(GameBoardObject* gbo)
 {
+	bool actionTaken = false;
 	if (typeid(*gbo) == typeid(PassButton))
 	{
 		_playerHasPassed = true;
+		actionTaken = true;
 	}
 	else if (typeid(*gbo) == typeid(Player))
 	{
@@ -319,12 +326,15 @@ void Player::StartAction(GameBoardObject* gbo)
 			CommandCounter commandCounter = CommandCounter(_color, _graphicalPos);
 			_commandCounterVector.push_back(commandCounter);
 			_selectedObject = this;
+			actionTaken = true;
 		}
 	}
+	return actionTaken;
 }
 
-void Player::TacticalAction(GameBoardObject* gbo)
+bool Player::TacticalAction(GameBoardObject* gbo, TupleInt clickedPos)
 {
+	bool actionTaken = false;
 	switch (_subActionState)
 	{
 	case Player::NONE:
@@ -338,37 +348,56 @@ void Player::TacticalAction(GameBoardObject* gbo)
 				_commandCounterVector[_commandCounterVector.size() -1].GetRelativePos(_homeSystem));
 			_activatedSystem = static_cast<MapTile*>(gbo);
 			_selectedObject = gbo;
+			actionTaken = true;
 		}
 		break;
 	case Player::MOVE_SHIPS_INTO_THE_SYSTEM:
-		if (typeid(*gbo) == typeid(MapTile))
+		if (typeid(*gbo) == typeid(MapTile) && _menu.GetMenuState() == Menu::NoMenu)
 		{
 			_menu.SetMenuState(Menu::MoveUnits);
 			MapTile* clickedSystem = static_cast<MapTile*>(gbo);
+			_menu.SetUnitStackPointer(&_unitMap[clickedSystem->GetTilePos()], &_unitMap[_activatedSystem->GetTilePos()]);
 			//TODO gör så att man kollar på movement för skeppen
-			if (_activatedSystem->CalculateDistanceToTile(clickedSystem) == 1)
-			{
+			/*if (_activatedSystem->CalculateDistanceToTile(clickedSystem) == 1)
+			{*/
 				//TODO gör så att man kan välja vilka gubbar man ska flytta
-				_subActionState = PDS_FIRE;
+			
 								
-			}
+			//}
+			actionTaken = true;
+		}
+		else if (typeid(*gbo) == typeid(Menu) && _menu.GetMenuState() != Menu::NoMenu && _menu.GetObjectID() == gbo->GetObjectID())
+		{
+			_menu.Pressed(clickedPos);
+			actionTaken = true;
+		}
+		else if (typeid(*gbo) == typeid(Player))
+		{
+			_menu.SetMenuState(Menu::NoMenu);
+			_subActionState = PDS_FIRE;
+			actionTaken = true;
 		}
 		break;
 	case Player::PDS_FIRE:
 		_subActionState = SPACE_BATTLE;
+		actionTaken = true;
 		break;
 	case Player::SPACE_BATTLE:
 		_subActionState = PLANETARY_LANDING;
+		actionTaken = true;
 		break;
 	case Player::PLANETARY_LANDING:
 		_subActionState = INVASION_COMBAT;
+		actionTaken = true;
 		break;
 	case Player::INVASION_COMBAT:
 		_subActionState = PRODUCE_UNITS;
+		actionTaken = true;
 		break;
 	default:
 		break;
 	}
+	return actionTaken;
 }
 
 void Player::SetCommandCounterPos(TupleInt pos)
